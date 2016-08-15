@@ -1,0 +1,176 @@
+header{
+  .overlay{
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background: #916763;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0;
+  }
+}
+.main-nav-container{
+  background: #333;
+  height: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#553f18+0,ffffff+100&1+0,0+100 */
+  background: -moz-linear-gradient(top, #916763 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #916763 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #916763 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#553f18', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+  &.sticked{
+    background: #916763;
+  }
+}
+
+.main-nav{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  position: relative;
+  
+  &:after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+  }
+  .logo{
+    display: inline-block;
+    margin-top: 7px;
+    img{
+      width: 150px; 
+    }
+  }
+  nav{
+    display: none;
+    float: right;
+    ul{
+      margin: 0;
+      padding: 0;
+      li{
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 10px;
+        a{
+          color: #fff;
+          text-decoration: none;
+          display: block;
+          padding: 4px 10px 6px;
+          font-size: 16px;
+          font-family: $font_semibold;
+          transition: all 0.3s;
+          &.signup{
+            border: 3px solid #fff;
+            border-radius: 2px;
+            &:hover{
+              background: #fff;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-graphics{
+  background-image: url(../images/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  .content{
+    position: relative;
+    top: 50%;
+    display: block;
+    padding: 10px;
+    max-width: 400px;
+    margin: -100px auto 0;
+
+    h1{
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      font-family: $font_bold;
+      font-weight: normal;
+    }
+    .try-it-form{
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      margin: 0;
+      font-size: 0;
+      border-radius: 5px;
+      input{
+        padding: 5px;
+        border: 0;
+        width: 70%;
+      }
+      button{
+        background: #00C26B;
+        border-radius: 0 3px 3px 0;
+        border: 0;
+        padding: 5px;
+        color: #fff;
+        width: 26%;
+        font-family: $font_semibold;
+        cursor: pointer;
+      }
+    }
+    .meet-consultant{
+      text-align: center;
+      padding-top: 30px;
+      a{
+        font-size: 14px;
+        color: #fff;
+        font-family: $font_semibold;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px){
+  .main-nav{
+    nav{
+      display: block;
+    }
+  }
+  .header-graphics{
+    height: 650px;
+    .content{
+      max-width: 600px;
+      margin-top: -200px;
+      h1{
+        font-size: 48px;
+        margin-bottom: 50px;
+      }
+      .try-it-form{
+        max-width: 450px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        input{
+          font-size: 18px;
+          padding: 7px;
+        }
+        button{
+          font-size: 18px;
+          line-height: 19px;
+          padding: 8px;
+        }
+      }
+      .meet-consultant{
+        padding-top: 120px;
+        a{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

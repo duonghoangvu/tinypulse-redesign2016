@@ -1,0 +1,300 @@
+.main-content{
+  background: #fff;
+  box-shadow: 0 0 10px #666;
+  margin-bottom: 10px;
+  .container{
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+.brands{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
+	background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding: 30px 10px 20px 10px;
+	text-align: center;
+	img{
+		margin-bottom: 20px;
+		display: inline-block;
+		vertical-align: middle;
+
+		&:nth-child(2n){
+			margin-left: 30px;
+		}
+	}
+}
+
+.content-block{
+	padding-top: 50px;
+	.block-title{
+		font-size: 18px;
+		text-align: center;
+		margin: 0 0 10px 0;
+	}
+	.block-desc{
+		font-size: 14px;
+		color: #9B9B9B;
+		margin: 0 0 40px 0;
+		text-align: center;
+	}
+	.block-content{
+		text-align: center;
+	}
+}
+
+.features{
+	.tile{
+		display: inline-block;
+		max-width: 320px;
+		text-align: center;
+		margin-bottom: 30px;
+		a{
+			padding: 30px 15px;
+			display: block;
+			transition: all 0.3s;
+			&:hover{
+				background: #E8F4FD;
+				.icon{
+					background-position-y: -90px;
+				}
+			}
+		}
+		.icon{
+			width: 59px;
+			height: 65px;
+			display: inline-block;
+			background-image: url(../images/feature-icons-sprite.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+		.feature-2{
+			background-position: -99px 0;
+		}
+		.feature-3{
+			background-position:-99*2px 0;
+		}
+		.feature-4{
+			background-position: -99*3px 0;
+		}
+		.feature-5{
+			background-position: -99*4px 0;
+		}
+		.feature-6{
+			background-position: -99*5px 0;
+		}
+		p{
+			font-size: 14px;
+			color: #9B9B9B;
+		}
+	}
+}
+
+.success-stories{
+	.story{
+		display: inline-block;
+		max-width: 320px;
+		text-align: center;
+		margin-bottom: 50px;
+		vertical-align: top;
+		p, span{
+			font-size: 14px;
+			color: #9B9B9B;
+		}
+		p{
+			color: #000
+		}
+		strong{
+			display: block;
+			font-family: $font_bold;	
+		}
+	}
+	.more-stories{
+		text-align: center;
+		margin: 40px 0 80px;
+		a{
+			padding: 5px 20px 7px;
+			border: 1px solid #dadada;
+			border-radius: 2px;
+			display: inline-block;
+			color: #9B9B9B;
+			transition: all 0.3s;
+			&:hover{
+				background: #dadada;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.ctas{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
+	background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding: 30px 10px;
+	.block-title{
+		font-size: 30px;
+		color: #fff;
+	}
+	div{
+		text-align: center;
+	}
+	a{
+		display: inline-block;
+		padding: 7px 20px;
+		color: #fff;
+		border: 1px solid #fff;
+		border-radius: 2px;
+		transition: all 0.3s;
+		font-size: 14px;
+		margin: 10px 0;
+		&:hover{
+			background: #fff;
+			color: #333;
+		}
+	}
+}
+
+.quote{
+	padding: 20px 0;
+	.block-desc{
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 960px){
+  .main-content{
+    margin-bottom: 220px;
+  }
+  .brands{
+  	img{
+			margin-left: 0;
+			margin-right: 20px;
+			&:first-child{
+				margin: 0;
+			}
+  	}
+  }
+  .content-block{
+  	.block-title{
+  		font-size: 36px;
+  	}  	
+  }
+  .features{
+  	.tile{
+  		max-width: 250px;
+  	}
+  }
+  .products-desktop{
+  	height: 1620px;
+    background-color: #A39D66;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  	.content{
+      height: 810px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      .text{
+        top: 0;
+        left: 0;
+        color: #fff;
+        position: absolute;
+	      left: 61%;
+	      width: 400px;
+	      top: 32%;
+	      .title{
+	      	font-size: 36px;
+        	line-height: 34px;
+	      }
+	      .desc{
+	      	font-size: 20px;
+	      	text-shadow: 0 0 10px #333;
+	      }
+	      a{
+	      	margin-top: 20px;
+	      	display: inline-block;
+	      	padding: 10px 30px;
+	      	border: 2px solid #fff;
+	      	border-radius: 2px;
+	      	color: #fff;
+	      	transition: all 0.3s;
+	      	&:hover{
+	      		background: #fff;
+	      		color: #333;
+	      	}
+	      }
+      }
+    }
+  	.masked-images{
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      width: 50%;
+      .masked-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        div{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          -webkit-transform: translate3d(0,0,0);
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+      }
+      .masked-image-1{
+      	div{
+      		background-image: url(../images/engage-bg.png);
+      	}
+      }
+      .masked-image-2{
+      	div{
+      		background-image: url(../images/perform-bg.png);
+      	}
+      }
+    }
+  }
+  .success-stories{
+  	.story{
+  		max-width: 300px;
+  		padding: 0 20px;
+  		box-sizing: border-box;
+  		.icon{
+  			margin: 10px 0 50px 0;
+  		}
+  		p, span{
+  			text-align: left;
+  			display: block;
+  		}
+  	}
+  }
+  .ctas{
+  	a{
+  		padding: 7px 30px;
+  		&:nth-child(2){
+  			margin-left: 50px;
+  			margin-right: 50px;
+  		}
+  	}
+  }
+  .quote{
+  	padding: 30px;
+  	.block-title{
+  		font-size: 26px;
+  	}
+  }
+}
