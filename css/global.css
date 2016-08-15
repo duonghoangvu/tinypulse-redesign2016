@@ -472,8 +472,9 @@ header .overlay {
     width: 100%;
     overflow: hidden;
     position: relative;
+    z-index: 2;
   }
-  /* line 202, ../sass/_content.scss */
+  /* line 203, ../sass/_content.scss */
   .products-desktop .content .text {
     top: 0;
     left: 0;
@@ -483,17 +484,17 @@ header .overlay {
     width: 400px;
     top: 32%;
   }
-  /* line 210, ../sass/_content.scss */
+  /* line 211, ../sass/_content.scss */
   .products-desktop .content .text .title {
     font-size: 36px;
     line-height: 34px;
   }
-  /* line 214, ../sass/_content.scss */
+  /* line 215, ../sass/_content.scss */
   .products-desktop .content .text .desc {
     font-size: 20px;
     text-shadow: 0 0 10px #333;
   }
-  /* line 218, ../sass/_content.scss */
+  /* line 219, ../sass/_content.scss */
   .products-desktop .content .text a {
     margin-top: 20px;
     display: inline-block;
@@ -503,20 +504,20 @@ header .overlay {
     color: #fff;
     transition: all 0.3s;
   }
-  /* line 226, ../sass/_content.scss */
+  /* line 227, ../sass/_content.scss */
   .products-desktop .content .text a:hover {
     background: #fff;
     color: #333;
   }
-  /* line 233, ../sass/_content.scss */
+  /* line 234, ../sass/_content.scss */
   .products-desktop .masked-images {
     position: absolute;
     top: 0;
     left: 0;
     transform: matrix(1, 0, 0, 1, 0, 0);
-    width: 50%;
+    width: 100%;
   }
-  /* line 239, ../sass/_content.scss */
+  /* line 240, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image {
     position: absolute;
     top: 0;
@@ -524,7 +525,7 @@ header .overlay {
     width: 100%;
     overflow: hidden;
   }
-  /* line 245, ../sass/_content.scss */
+  /* line 246, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image div {
     position: absolute;
     top: 0;
@@ -538,46 +539,46 @@ header .overlay {
     background-size: cover;
     background-position: center;
   }
-  /* line 260, ../sass/_content.scss */
+  /* line 261, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image-1 div {
     background-image: url(../images/engage-bg.png);
   }
-  /* line 265, ../sass/_content.scss */
+  /* line 266, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image-2 div {
     background-image: url(../images/perform-bg.png);
   }
 
-  /* line 272, ../sass/_content.scss */
+  /* line 273, ../sass/_content.scss */
   .success-stories .story {
     max-width: 300px;
     padding: 0 20px;
     box-sizing: border-box;
   }
-  /* line 276, ../sass/_content.scss */
+  /* line 277, ../sass/_content.scss */
   .success-stories .story .icon {
     margin: 10px 0 50px 0;
   }
-  /* line 279, ../sass/_content.scss */
+  /* line 280, ../sass/_content.scss */
   .success-stories .story p, .success-stories .story span {
     text-align: left;
     display: block;
   }
 
-  /* line 286, ../sass/_content.scss */
+  /* line 287, ../sass/_content.scss */
   .ctas a {
     padding: 7px 30px;
   }
-  /* line 288, ../sass/_content.scss */
+  /* line 289, ../sass/_content.scss */
   .ctas a:nth-child(2) {
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  /* line 294, ../sass/_content.scss */
+  /* line 295, ../sass/_content.scss */
   .quote {
     padding: 30px;
   }
-  /* line 296, ../sass/_content.scss */
+  /* line 297, ../sass/_content.scss */
   .quote .block-title {
     font-size: 26px;
   }

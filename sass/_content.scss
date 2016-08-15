@@ -199,6 +199,7 @@
       width: 100%;
       overflow: hidden;
       position: relative;
+      z-index: 2;
       .text{
         top: 0;
         left: 0;
@@ -235,7 +236,7 @@
       top: 0;
       left: 0;
       transform: matrix(1, 0, 0, 1, 0, 0);
-      width: 50%;
+      width: 100%;
       .masked-image{
         position: absolute;
         top: 0;
