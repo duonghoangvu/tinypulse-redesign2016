@@ -34,6 +34,7 @@ a{
 		margin-bottom: 20px;
 		display: inline-block;
 		vertical-align: middle;
+		width: 100px;
 
 		&:nth-child(2n){
 			margin-left: 30px;
@@ -49,9 +50,9 @@ a{
 .content-block{
 	padding-top: 50px;
 	.container{
-    max-width: 960px;
-    margin: 0 auto;
-  }
+	    max-width: 960px;
+	    margin: 0 auto;
+	  }
 	.block-title{
 		font-size: 18px;
 		text-align: center;
@@ -195,11 +196,12 @@ a{
   }
   .brands{
   	a{
-			margin-left: 0;
-			margin-right: 20px;
-			&:first-child{
-				margin: 0;
-			}
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		&:first-child{
+			margin: 0;
+		}
   	}
   }
   .content-block{
