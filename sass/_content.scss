@@ -3,6 +3,7 @@ body{
   padding: 0;
   margin: 0;
   font-family: $font_regular;
+  perspective: 2000px;
 }
 a{
 	text-decoration: none;
@@ -16,7 +17,9 @@ a{
   position: relative;
   z-index: 0;
 }
-
+.main-wrapper{
+	transition: all 0.5s;
+}
 .main-content{
   background: #fff;
   box-shadow: 0 0 10px #666;
@@ -320,7 +323,11 @@ a{
   		}
   	}
   }
+  .products-mobile{
+  	display: none;
+  }
   .products-desktop{
+  	display: block;
   	height: 1620px;
     background-color: #A39D66;
     overflow: hidden;
