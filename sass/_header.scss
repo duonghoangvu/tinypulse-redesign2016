@@ -112,160 +112,144 @@ header{
 }
 
 .main-mobile-nav-container{
-  background: #333;
   position: fixed;
-  top: 0;
+  z-index: 9;
+  transform: translate3d(0,0,0);
   left: 0;
   right: 0;
-  z-index: 999;
-  transform: translate3d(0,0,0);
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#553f18+0,ffffff+100&1+0,0+100 */
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#553f18', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-  height: 56px;
-  &.sticked{
+  top: 0;
+  height: 45px;
+  overflow: hidden;
+  .triggers{
+    padding: 15px 15px 10px;
     background: rgba(0,0,0,0.6);
-  }
-}
-
-.main-mobile-nav{
-  max-width: 1220px;
-  margin: 0 auto;
-  padding: 20px 10px;
-  position: relative;
-  height: 100%;
-  
-  &:after{
-    content: "";
-    width: 100%;
-    height: 1px;
-    display: inline-block;
   }
   .logo{
     display: inline-block;
     width: 99px;
+    z-index: 10;
+    position: relative;
     img{
       width: 100%;
     }
   }
-  .mobile-nav {
-    float: right;
-    .hamburger{
-      background: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      line-height: 45px;
-      padding: 0px 15px;
-      color: #fff;
-      border: 0;
-      font-size: 1.4em;
-      font-weight: bold;
-      cursor: pointer;
-      outline: none;
-      display: block;
+  .hamburger{
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 45px;
+    padding: 0px 15px;
+    color: #fff;
+    border: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    z-index: 10;
+  }
+  .cross{
+    background: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 5px 15px 0px;
+    color: #FFF;
+    border: 0;
+    font-size: 3em;
+    line-height: 65px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+    display: none;
+  }
+  nav{
+    width: 250px;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: left;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-top: 40px;
+    transition: all 0.3s;
+    position: absolute;
+    transform: translateX(250px);
+    overflow: auto;
+    z-index: 1;
+    ul{
+      margin: 0;
+      padding: 0;
     }
-    .cross{
-      background: none;
-      position: absolute;
-      top: 0px;
-      right: 0;
-      padding: 5px 15px 0px;
-      color: #FFF;
-      border: 0;
-      font-size: 3em;
-      line-height: 65px;
-      font-weight: bold;
-      cursor: pointer;
-      outline: none;
-      z-index: 10;
-      display: none;
-    }
-    .menu{
-      width: 250px; 
-      background: rgba(0,0,0,0.9);  
-      position: fixed; 
-      text-align: left;
-      top: 0;
-      right: 0;
-      height: 100%;
-      padding-top: 40px;
-      transition: all 0.3s;
-      transform: translateX(100%);
-      ul{
-        margin: 0;
-        padding: 0;
-      }
-      > ul {
-        margin: 0;
-        li {
-          list-style: none;
-          a {
-            color: #FFF;
-            text-transform: uppercase;
-            padding: 10px 15px;
-            display: inline-block;
-            width: 100%;
-            position: relative;
-            &.active{
-              &:before{
-                content: "";
-                width: 3px;
-                top: 5px;
-                bottom: 5px;
-                left: 0;
-                position: absolute;
-                background: #fff;
-              }
+    > ul {
+      margin: 0;
+      li {
+        list-style: none;
+        a {
+          color: #FFF;
+          text-transform: uppercase;
+          padding: 10px 15px;
+          display: inline-block;
+          width: 100%;
+          position: relative;
+          &.active{
+            &:before{
+              content: "";
+              width: 3px;
+              top: 5px;
+              bottom: 5px;
+              left: 0;
+              position: absolute;
+              background: #fff;
             }
           }
         }
-        > li{
-          border-bottom: 1px solid #333;
-        }
       }
-      .sub{
-        margin-left: 10px;
-        margin-bottom: 10px;
+      > li{
+        border-bottom: 1px solid #333;
       }
     }
-    .overlay{
-      background: rgba(0,0,0,0.5);
-      left: 0;
-      right: 250px;
-      top: 0;
-      bottom: 0;
-      position: fixed;
-      opacity: 0;
-      visibility: hidden;
+    .sub{
+      margin-left: 10px;
+      margin-bottom: 10px;
     }
   }
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 0;
+  }
 }
+
 .mobile-nav-opened{
-  .main-mobile-nav{
-    .mobile-nav{
-      .cross{
-        display: block;
-      }
-      .hamburger{
-        display: none;
-      }
-      .menu{
-        transform: translateX(0);
-      }
-      .overlay{
-        opacity: 1;
-        visibility: visible;
-        transition: all 0.5s 0.3s;
-      }
+  .main-mobile-nav-container{
+    height: 100%;
+    .cross{
+      display: block;
+    }
+    .hamburger{
+      display: none;
+    }
+    nav{
+      transform: translateX(0);
+    }
+    .overlay{
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.5s;
     }
   }
   .main-wrapper{
-    transform: translate3d(0, -700px, -490px);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+    // transform: translate3d(0, -700px, -490px);
+    // -webkit-transform-style: preserve-3d;
+    // transform-style: preserve-3d;
   }
 }
 
