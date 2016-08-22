@@ -31,14 +31,12 @@ a{
 	padding: 30px 10px 20px 10px;
 	text-align: center;
 	a{
-		margin-bottom: 20px;
-		display: inline-block;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		display: block;
 		vertical-align: middle;
-		width: 100px;
+		width: 183px;
 
-		&:nth-child(2n){
-			margin-left: 30px;
-		}
 		img{
 			max-width: 100%;
 			width: 100%;
@@ -48,21 +46,33 @@ a{
 }
 
 .content-block{
-	padding-top: 50px;
+	padding-top: 30px;
 	.container{
 	    max-width: 960px;
 	    margin: 0 auto;
+	    box-sizing: border-box;
 	  }
 	.block-title{
-		font-size: 18px;
 		text-align: center;
 		margin: 0 0 10px 0;
+		padding: 0 30px;
+		font-weight: normal;
+		font-family: $font_regular;
+		font-size: 24px;
+		color: #000000;
+		letter-spacing: 0.75px;
+		text-align: center;
+		font-weight: normal;
 	}
 	.block-desc{
-		font-size: 14px;
-		color: #9B9B9B;
 		margin: 0 0 40px 0;
-		text-align: center;
+		padding: 0 30px;
+		font-family: $font_regular;
+		font-size:18px;
+		font-weight: normal;
+		color:#9b9b9b;
+		letter-spacing:0px;
+		text-align:center;
 	}
 	.block-content{
 		text-align: center;
@@ -110,11 +120,76 @@ a{
 			background-position: -99*5px 0;
 		}
 		p{
-			font-size: 14px;
-			color: #9B9B9B;
+			font-family: $font_regular;
+			font-size:18px;
+			color:#9b9b9b;
+			letter-spacing:0px;
+			text-align:center;
 		}
 	}
 }
+
+.products-desktop{
+  display: none;
+}
+
+.products-mobile{
+  display: block;
+  .content{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 0px 15px;
+    position: relative;
+  }
+  .mask-1{
+      background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg.png);
+  }
+  .mask-2{
+      background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/perform-bg.png);
+  }
+  .text{
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    .title{
+      font-size: 24px;
+      line-height: 32px;
+      text-shadow: 0 2px 15px rgba(0,0,0,0.42);
+      width: 230px;
+      letter-spacing: 0.75px;
+    }
+    .desc{
+      font-size: 17px;
+      text-shadow: 0 2px 15px rgba(0,0,0,0.42);
+      width: 290px;
+      font-family: 'Lato-Light';
+    }
+    a{
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 30px;
+      border: 2px solid #fff;
+      border-radius: 2px;
+      color: #fff;
+      transition: all .3s;
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 175px;
+      text-align: center;
+      &:hover {
+        background: #fff;
+        color: #333;
+      }
+    }
+  }
+}
+
 
 .success-stories{
 	.story{
@@ -126,9 +201,20 @@ a{
 		p, span{
 			font-size: 14px;
 			color: #9B9B9B;
+			display: block;
+			text-align: left;
+			font-family: $font_regular;
 		}
 		p{
-			color: #000
+			color: #000;
+			font-size:20px;
+			line-height:30px;
+		}
+		span{
+			font-size:18px;
+			color:#9b9b9b;
+			line-height:24px;
+			text-align:left;
 		}
 		strong{
 			display: block;
@@ -161,21 +247,30 @@ a{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	padding: 30px 10px;
 	.block-title{
-		font-size: 30px;
 		color: #fff;
+		padding: 0 20px;
 	}
 	div{
 		text-align: center;
+		padding: 0 15px;
+		margin: 50px 0 30px 0;
 	}
 	a{
 		display: inline-block;
-		padding: 7px 20px;
 		color: #fff;
+		padding: 10px 0;
 		border: 1px solid #fff;
 		border-radius: 2px;
 		transition: all 0.3s;
-		font-size: 14px;
 		margin: 10px 0;
+		width: 100%;
+
+		font-family: $font_semibold;
+		font-size:20px;
+		color:#ffffff;
+		letter-spacing:0.14px;
+		text-align:center;
+
 		&:hover{
 			background: #fff;
 			color: #333;
@@ -185,33 +280,44 @@ a{
 
 .quote{
 	padding: 20px 0;
+	.block-title{
+		font-size: 20px;
+		padding: 0 10px;
+	}
 	.block-desc{
 		margin: 0;
+		font-size: 16px;
 	}
 }
 
 @media screen and (min-width: 960px){
   .main-content{
-    margin-bottom: 160px;
+    margin-bottom: 210px;
   }
   .brands{
   	a{
-		margin-left: 20px;
-		margin-right: 20px;
-		margin-bottom: 10px;
-		&:first-child{
-			margin: 0;
-		}
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			width: 100px;
+			display: inline-block;
+			&:first-child{
+				margin: 0;
+			}
   	}
   }
   .content-block{
+  	padding-top: 50px;
   	.block-title{
   		font-size: 36px;
   	}  	
   }
   .features{
   	.tile{
-  		max-width: 250px;
+  		max-width: 300px;
+  		p{
+  			font-size: 14px;
+  		}
   	}
   }
   .products-desktop{
@@ -226,6 +332,12 @@ a{
       overflow: hidden;
       position: relative;
       z-index: 2;
+      .container{
+      	max-width: 920px;
+      	margin: 0 auto;
+      	height: 100%;
+      	position: relative;
+      }
       .text{
         top: 0;
         left: 0;
@@ -233,10 +345,11 @@ a{
         position: absolute;
 	      left: 61%;
 	      width: 400px;
-	      top: 32%;
+	      top: 50%;
+  			margin-top: -150px;
 	      .title{
 	      	font-size: 36px;
-        	line-height: 34px;
+        	line-height: 48px;
 	      }
 	      .desc{
 	      	font-size: 20px;
@@ -255,6 +368,9 @@ a{
 	      		color: #333;
 	      	}
 	      }
+      }
+      .text-1{
+      	left: 0;
       }
     }
   	.masked-images{
@@ -285,12 +401,12 @@ a{
       }
       .masked-image-1{
       	div{
-      		background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg.png);
+      		background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/perform-bg.png);
       	}
       }
       .masked-image-2{
       	div{
-      		background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/perform-bg.png);
+      		background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg.png);
       	}
       }
     }
@@ -306,16 +422,28 @@ a{
   		p, span{
   			text-align: left;
   			display: block;
+  			font-size: 14px;
+  			line-height: 20px;
   		}
   	}
   }
   .ctas{
+  	.block-title{
+			font-size: 30px;
+			color: #fff;
+		}
   	a{
   		padding: 7px 30px;
+  		font-size: 14px;
+  		width: auto;
   		&:nth-child(2){
   			margin-left: 50px;
   			margin-right: 50px;
   		}
+  	}
+  	div{
+  		margin: 0;
+  		padding: 0;
   	}
   }
   .quote{

@@ -1,12 +1,42 @@
 footer{
+	.container{
+		padding: 20px 30px;
+	}
 	ul{
-		padding: 10px;
 		margin: 0;
+		padding: 0;
 		margin-bottom: 20px;
+		padding-bottom: 10px;
 		box-sizing: border-box;
+		border-bottom: 1px solid #f1f2f2;
+		&:last-child{
+			border-bottom: 0;
+			margin: 0;
+		}
 		li{
-			font-size: 14px;
+			font-size: 18px;	
 			list-style-type: none;
+			margin-bottom: 6px;
+			display: none;
+			cursor: pointer;
+
+			&:first-child{
+				display: block;
+				position: relative;
+				width: 100%;
+				&:focus{
+					outline: none;
+				}
+				&:after{
+					content: "+";
+					color: #9B9B9B;
+					position: absolute;
+					right: 0;
+					top: -7px;
+					font-size: 30px;
+					font-family: $font_light;
+				}
+			}
 			strong{
 				font-family: $font_bold;
 				margin-bottom: 5px;
@@ -17,11 +47,24 @@ footer{
 				text-decoration: none;
 			}
 		}
+		&.expanded{
+			li:first-child:after{
+				content: "-";
+		    font-size: 50px;
+		    top: -22px;
+			}
+			li{
+				display: block;
+			}
+		}
 	}
 	.copyright{
 		background: #F1F2F1;
+		text-align: center;
+		line-height: 30px;
 		.container{
 			padding: 10px;
+			box-sizing: border-box;
 		}
 		span{
 			display: block;
@@ -44,9 +87,34 @@ footer{
 			margin: 0 auto;
 		}
 		ul{
-			width: 25%;
 			float: left;
 			margin: 0;
+			border: 0;
+			&:nth-child(1){
+				width: 25%;
+			}
+			&:nth-child(2){
+				width: 35%;
+			}
+			&:nth-child(3){
+				width: 24%;
+			}
+			&:nth-child(4){
+				width: 13%;
+			}
+			li{
+				margin-bottom: 5px;
+				font-size: 14px;
+				display: block;
+				&:first-child{
+					&:after{
+						display: none;
+					}
+				}
+				a{
+					font-family: $font_light;
+				}
+			}
 		}
 		.copyright{
 			margin-top: 20px;
@@ -55,6 +123,10 @@ footer{
 			clear: both;
 			text-align: center;
 			font-size: 0;
+			line-height: normal;
+			.container{
+				padding: 20px 0;
+			}
 			span{
 				display: inline-block;
 				&:first-child{

@@ -45,12 +45,22 @@ Scroller.prototype = {
     /**
      * Do The Dirty Work Here
      */
-    var slowScroll = currentScrollY / 4
+    var slowScroll = (currentScrollY - ($(window).height() + 300)) / 4
       , blurScroll = currentScrollY * 1.5;
 
     this.dom.blur.css({
       'opacity' : blurScroll / this.wHeight
     });
+
+    $('.masked-image-2').css({
+      'transform': 'translateY(-' + slowScroll + 'px)'
+    });
+
+    if (currentScrollY + 76 < $('.text-2').offset().top){
+      $('.masked-image-1').css({
+        'transform': 'translateY(-' + slowScroll/2 + 'px)'
+      });      
+    }
     
     if (currentScrollY >= this.wHeight - 150){
       this.dom.nav.addClass('sticked');
@@ -96,6 +106,10 @@ $(document).ready(function(){
       });
       maskedImages.find('div').css({
           'height': windowH
+      });
+
+      $('.masked-image-1').css({
+        'top': '100px'
       });
 
       animationStartOffset = getStartOffset(productsBlock);
@@ -181,16 +195,6 @@ $(document).ready(function(){
                   } else if ( calc < '0' ) {
                       calc = 0;
                   }
-
-                  // texts.find('.text-1').css({
-                  //     'opacity': calc, 
-                  //     'z-index': calc
-                  // });
-
-                  // texts.find('.text-2').css({
-                  //     'opacity': 1 - calc,
-                  //     'z-index': 1 - calc
-                  // });
               }
           })
           .on(_event, $.debounce(600, function(){
