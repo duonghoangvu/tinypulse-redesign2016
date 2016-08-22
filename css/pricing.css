@@ -1232,142 +1232,302 @@ a {
 }
 
 /* line 16, ../sass/pricing.scss */
-.header-graphics {
-  height: 400px;
+.header-graphics > .content {
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
 }
 
-/* line 20, ../sass/pricing.scss */
-.header-graphics .content {
-  top: auto;
-  margin-top: 116px;
+/* line 22, ../sass/pricing.scss */
+.content .author-avatar {
+  display: none;
 }
 
 /* line 25, ../sass/pricing.scss */
+.author .author-avatar {
+  width: 15%;
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 31, ../sass/pricing.scss */
+.author .author-info .job-title {
+  font-family: Lato-Regular;
+  font-size: 16px;
+  color: #9B9B9B;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+/* line 39, ../sass/pricing.scss */
+.author .author-info .author {
+  font-family: Lato-Bold;
+  font-size: 16px;
+  color: #9B9B9B;
+  line-height: 20px;
+  margin-top: 0;
+}
+
+/* line 47, ../sass/pricing.scss */
 .header-graphics .content h1 {
+  font-family: Lato-Black;
+  font-size: 48px;
+  color: #FFFFFF;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
+  margin-top: 169px;
   margin-bottom: 15px;
 }
 
-/* line 29, ../sass/pricing.scss */
+/* line 57, ../sass/pricing.scss */
 .header-graphics .sub-headline {
   font-family: Lato-Bold;
   font-size: 24px;
   color: #FFFFFF;
   letter-spacing: 0px;
-  text-align: center;
 }
 
-/* line 37, ../sass/pricing.scss */
-.main-content .contact {
-  margin: 60px 160px;
+/* line 64, ../sass/pricing.scss */
+.contact {
+  padding: 38px;
 }
 
-/* line 41, ../sass/pricing.scss */
-.contact .contact-form {
-  width: 50%;
-}
-
-/* line 45, ../sass/pricing.scss */
-.information {
-  width: 50%;
-  float: right;
-}
-
-/* line 50, ../sass/pricing.scss */
+/* line 68, ../sass/pricing.scss */
 .information p {
   font-family: Lato-Light;
   font-size: 16px;
   color: #000000;
   letter-spacing: 0px;
   line-height: 24px;
+  text-align: justify;
 }
 
-/* line 58, ../sass/pricing.scss */
+/* line 77, ../sass/pricing.scss */
 .information p b {
   font-family: Lato-Bold;
 }
 
-/* line 62, ../sass/pricing.scss */
+/* line 81, ../sass/pricing.scss */
 .information .separate-line {
   width: 100%;
   height: 2px;
   background: #F1F2F1;
 }
 
-/* line 68, ../sass/pricing.scss */
+/* line 87, ../sass/pricing.scss */
 .information .quote {
   padding: 0;
 }
 
-/* line 72, ../sass/pricing.scss */
+/* line 91, ../sass/pricing.scss */
 .information .quote .content p {
   font-family: Lato-Bold;
   font-size: 16px;
   color: #000000;
   line-height: 27px;
-  width: 85%;
-  display: inline-block;
 }
 
-/* line 81, ../sass/pricing.scss */
-.information .quote .content img {
-  float: right;
-  margin-top: 30px;
-}
-
-/* line 86, ../sass/pricing.scss */
-.information .quote .job-title {
-  font-family: Lato-Regular;
-  font-size: 14px;
-  color: #9B9B9B;
-  line-height: 20px;
-}
-
-/* line 93, ../sass/pricing.scss */
-.information .quote .author {
-  font-family: Lato-Bold;
-  font-size: 14px;
-  color: #9B9B9B;
-  line-height: 20px;
-}
-
-/* line 100, ../sass/pricing.scss */
-.clear {
-  clear: both;
-}
-
-/* line 104, ../sass/pricing.scss */
+/* line 98, ../sass/pricing.scss */
 .press {
-  background-image: linear-gradient(-60deg, rgba(123, 32, 138, 0.82) 0%, #FF5C5C 100%);
-  padding: 20px 190px 34px;
-  margin-top: 64px;
+  display: none;
 }
 
-/* line 110, ../sass/pricing.scss */
-.press .title {
-  font-family: Lato-Regular;
-  font-size: 20px;
-  color: #FFFFFF;
-  letter-spacing: 0px;
-  margin-bottom: 10px;
+/* line 102, ../sass/pricing.scss */
+.press-mobile {
+  background-image: linear-gradient(-60deg, rgba(123, 32, 138, 0.82) 0%, #FF5C5C 100%);
+  padding: 20px;
   text-align: center;
 }
 
-/* line 119, ../sass/pricing.scss */
-.press .logos {
+/* line 108, ../sass/pricing.scss */
+.press-mobile .title {
+  font-family: Lato-Regular;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  line-height: 27px;
+  text-align: center;
+  margin: 0 20px 40px;
+}
+
+/* line 118, ../sass/pricing.scss */
+.press-mobile .logos {
   height: 61px;
   margin-top: 20px;
 }
 
-/* line 124, ../sass/pricing.scss */
-.press .logos a:hover {
+/* line 123, ../sass/pricing.scss */
+.press-mobile .logos a:hover {
   cursor: pointer;
 }
 
-/* line 128, ../sass/pricing.scss */
-.press .logos img {
-  margin-left: 20px;
-  margin-right: 20px;
-  width: 110px;
+/* line 127, ../sass/pricing.scss */
+.press-mobile .logos img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 96px;
   max-height: 61px;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 136, ../sass/pricing.scss */
+  .header-graphics {
+    height: 400px;
+  }
+
+  /* line 140, ../sass/pricing.scss */
+  .header-graphics .content {
+    top: auto;
+    margin-top: 116px;
+  }
+
+  /* line 145, ../sass/pricing.scss */
+  .header-graphics .content h1 {
+    margin-bottom: 15px;
+  }
+
+  /* line 149, ../sass/pricing.scss */
+  .header-graphics .sub-headline {
+    font-family: Lato-Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  /* line 157, ../sass/pricing.scss */
+  .main-content .contact {
+    margin: 60px 160px;
+  }
+
+  /* line 161, ../sass/pricing.scss */
+  .contact .contact-form {
+    width: 50%;
+  }
+
+  /* line 165, ../sass/pricing.scss */
+  .information {
+    width: 50%;
+    float: right;
+  }
+
+  /* line 170, ../sass/pricing.scss */
+  .information p {
+    font-family: Lato-Light;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0px;
+    line-height: 24px;
+  }
+
+  /* line 178, ../sass/pricing.scss */
+  .information p b {
+    font-family: Lato-Bold;
+  }
+
+  /* line 182, ../sass/pricing.scss */
+  .information .separate-line {
+    width: 100%;
+    height: 2px;
+    background: #F1F2F1;
+  }
+
+  /* line 188, ../sass/pricing.scss */
+  .information .quote {
+    padding: 0;
+  }
+
+  /* line 192, ../sass/pricing.scss */
+  .content {
+    margin: 0;
+    text-align: left;
+  }
+
+  /* line 196, ../sass/pricing.scss */
+  .information .quote .content p {
+    font-family: Lato-Bold;
+    font-size: 16px;
+    color: #000000;
+    line-height: 27px;
+    width: 85%;
+    display: inline-block;
+  }
+
+  /* line 205, ../sass/pricing.scss */
+  .information .quote .content img {
+    float: right;
+    margin-top: 30px;
+    display: block;
+  }
+
+  /* line 211, ../sass/pricing.scss */
+  .information .quote .job-title {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: #9B9B9B;
+    line-height: 20px;
+  }
+
+  /* line 218, ../sass/pricing.scss */
+  .information .quote .author {
+    font-family: Lato-Bold;
+    font-size: 14px;
+    color: #9B9B9B;
+    line-height: 20px;
+  }
+
+  /* line 225, ../sass/pricing.scss */
+  .information .quote .author .author-avatar {
+    display: none;
+  }
+
+  /* line 229, ../sass/pricing.scss */
+  .clear {
+    clear: both;
+  }
+
+  /* line 233, ../sass/pricing.scss */
+  .press-mobile {
+    display: none;
+  }
+
+  /* line 237, ../sass/pricing.scss */
+  .press {
+    display: block;
+    background-image: linear-gradient(-60deg, rgba(123, 32, 138, 0.82) 0%, #FF5C5C 100%);
+    padding: 20px 190px 34px;
+    margin-top: 64px;
+  }
+
+  /* line 244, ../sass/pricing.scss */
+  .press .title {
+    font-family: Lato-Regular;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* line 253, ../sass/pricing.scss */
+  .press .logos {
+    height: 61px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* line 259, ../sass/pricing.scss */
+  .press .logos a:hover {
+    cursor: pointer;
+  }
+
+  /* line 263, ../sass/pricing.scss */
+  .press .logos img {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 110px;
+    max-height: 61px;
+    vertical-align: middle;
+  }
 }

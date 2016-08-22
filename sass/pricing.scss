@@ -13,16 +13,44 @@ a {
   text-decoration: none;
 }
 
-.header-graphics {
-  height: 400px;
+.header-graphics > .content {
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
 }
 
-.header-graphics .content {
-  top: auto;
-  margin-top: 116px;
+.content .author-avatar {
+  display: none;
+}
+.author .author-avatar {
+  width: 15%;
+  float: left;
+  margin-right: 20px;
+}
+
+.author .author-info .job-title {
+  font-family: Lato-Regular;
+  font-size: 16px;
+  color: #9B9B9B;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.author .author-info .author {
+  font-family: Lato-Bold;
+  font-size: 16px;
+  color: #9B9B9B;
+  line-height: 20px;
+  margin-top: 0;
 }
 
 .header-graphics .content h1 {
+  font-family: Lato-Black;
+  font-size: 48px;
+  color: #FFFFFF;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 2px 15px rgba(0,0,0,0.80);
+  margin-top: 169px;
   margin-bottom: 15px;
 }
 
@@ -31,20 +59,10 @@ a {
   font-size: 24px;
   color: #FFFFFF;
   letter-spacing: 0px;
-  text-align: center;
 }
 
-.main-content .contact {
-  margin: 60px 160px;
-}
-
-.contact .contact-form {
-  width: 50%;
-}
-
-.information {
-  width: 50%;
-  float: right;
+.contact {
+  padding: 38px;
 }
 
 .information p {
@@ -53,6 +71,7 @@ a {
   color: #000000;
   letter-spacing: 0px;
   line-height: 24px;
+  text-align: justify;
 }
 
 .information p b {
@@ -74,61 +93,178 @@ a {
   font-size: 16px;
   color: #000000;
   line-height: 27px;
-  width: 85%;
-  display: inline-block;
-}
-
-.information .quote .content img {
-  float: right;
-  margin-top: 30px;
-}
-
-.information .quote .job-title {
-  font-family: Lato-Regular;
-  font-size: 14px;
-  color: #9B9B9B;
-  line-height: 20px;
-}
-
-.information .quote .author {
-  font-family: Lato-Bold;
-  font-size: 14px;
-  color: #9B9B9B;
-  line-height: 20px;
-}
-
-.clear {
-  clear: both;
 }
 
 .press {
-  background-image: linear-gradient(-60deg, rgba(123,32,138,0.82) 0%, #FF5C5C 100%);
-  padding: 20px 190px 34px;
-  margin-top: 64px;
+  display: none;
 }
 
-.press .title {
-  font-family: Lato-Regular;
-  font-size: 20px;
-  color: #FFFFFF;
-  letter-spacing: 0px;
-  margin-bottom: 10px;
+.press-mobile {
+  background-image: linear-gradient(-60deg, rgba(123,32,138,0.82) 0%, #FF5C5C 100%);
+  padding: 20px;
   text-align: center;
 }
 
-.press .logos {
+.press-mobile .title {
+  font-family: Lato-Regular;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  line-height: 27px;
+  text-align: center;
+  margin: 0 20px 40px;
+}
+
+.press-mobile .logos {
   height: 61px;
   margin-top: 20px;
 }
 
-.press .logos a:hover {
+.press-mobile .logos a:hover {
   cursor: pointer;
 }
 
-.press .logos img {
-  margin-left: 20px;
-  margin-right: 20px; 
-  width: 110px;
+.press-mobile .logos img {
+  margin-left: 10px;
+  margin-right: 10px; 
+  width: 96px;
   max-height: 61px;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 960px){
+  .header-graphics {
+    height: 400px;
+  }
+
+  .header-graphics .content {
+    top: auto;
+    margin-top: 116px;
+  }
+
+  .header-graphics .content h1 {
+    margin-bottom: 15px;
+  }
+
+  .header-graphics .sub-headline {
+    font-family: Lato-Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .main-content .contact {
+    margin: 60px 160px;
+  }
+
+  .contact .contact-form {
+    width: 50%;
+  }
+
+  .information {
+    width: 50%;
+    float: right;
+  }
+
+  .information p {
+    font-family: Lato-Light;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0px;
+    line-height: 24px;
+  }
+
+  .information p b {
+    font-family: Lato-Bold;
+  }
+
+  .information .separate-line {
+    width: 100%;
+    height: 2px;
+    background: #F1F2F1;
+  }
+
+  .information .quote {
+    padding: 0;
+  }
+
+  .content {
+    margin: 0;
+    text-align: left;
+  }
+  .information .quote .content p {
+    font-family: Lato-Bold;
+    font-size: 16px;
+    color: #000000;
+    line-height: 27px;
+    width: 85%;
+    display: inline-block;
+  }
+
+  .information .quote .content img {
+    float: right;
+    margin-top: 30px;
+    display: block;
+  }
+
+  .information .quote .job-title {
+    font-family: Lato-Regular;
+    font-size: 14px;
+    color: #9B9B9B;
+    line-height: 20px;
+  }
+
+  .information .quote .author {
+    font-family: Lato-Bold;
+    font-size: 14px;
+    color: #9B9B9B;
+    line-height: 20px;
+  }
+  
+  .information .quote .author .author-avatar {
+    display: none;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .press-mobile {
+    display: none;
+  }
+
+  .press {
+    display: block;
+    background-image: linear-gradient(-60deg, rgba(123,32,138,0.82) 0%, #FF5C5C 100%);
+    padding: 20px 190px 34px;
+    margin-top: 64px;
+  }
+
+  .press .title {
+    font-family: Lato-Regular;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .press .logos {
+    height: 61px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .press .logos a:hover {
+    cursor: pointer;
+  }
+
+  .press .logos img {
+    margin-left: 20px;
+    margin-right: 20px; 
+    width: 110px;
+    max-height: 61px;
+    vertical-align: middle;
+  }
 }
