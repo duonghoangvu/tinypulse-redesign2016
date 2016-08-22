@@ -1,0 +1,150 @@
+.engage-header-graphics{
+  background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:linear-gradient(-180deg, #000000 0%, rgba(171,171,171,0.19) 38%, rgba(0,0,0,0.58) 90%);
+  }
+  .content{
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+    h1{
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      font-family: $font_bold;
+      font-weight: normal;
+
+      // font-family:Lato-Black;
+      font-size:36px;
+      color:#ffffff;
+      letter-spacing:1.12px;
+      text-shadow:0px 2px 15px rgba(0,0,0,0.80);
+      text-align:center;
+    }
+    .try-it-form{
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      margin: 70px 0 50px 0;
+      font-size: 0;
+      border-radius: 5px;
+      input{
+        font-size: 18px;
+        padding: 7px;
+        min-height: inherit;
+        height: inherit;
+        line-height: 21px;
+        border-radius: 4px;
+        width: 100%;
+        border: 0;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        font-family: $font_semibold;
+        font-size:14px;
+        color:#9b9b9b;
+        letter-spacing:0px;
+        text-align:left;
+      }
+      button{
+        background: #00C26B;
+        border-radius: 4px;
+        border: 0;
+        padding: 5px;
+        color: #fff;
+        width: 100%;
+        font-family: $font_semibold;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 19px;
+        padding: 8px;
+        text-transform: none;
+        margin: 0;
+        vertical-align: top;
+      }
+    }
+    .meet-consultant{
+      text-align: center;
+      padding-top: 30px;
+      a{
+        font-size: 14px;
+        color: #fff;
+        font-family: $font_semibold;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.engage-subnav{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
+	background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	text-align: left;
+  overflow-x: visible;
+  overflow-y: hidden;
+  .container{
+    width: 500px;
+  }
+	a{
+		margin: 0 auto;
+		display: inline-block;
+		vertical-align: middle;
+    font-size: 16px;
+    color: #FFF;
+    padding: 30px 15px;
+    font-family: $font_semibold;
+    border-bottom: 5px solid transparent;
+	}
+  a.active{
+    font-family: $font_bold;
+    border-bottom: 5px solid #FFF;
+  }
+}
+.overview{
+  padding-left: 15px;
+  padding-right: 15px;
+  .title {
+    color: #1C94EE;
+    font-size: 20px;
+    font-family: $font_regular;
+    text-align: left;
+  }
+  .content-desc{
+    font-size: 18px;
+    color: #000;
+    font-family: $font_light;
+    margin: 15px 0px;
+    text-align: left;
+    line-height: 25px;
+  }
+  .slide-icon {
+    img {
+      width: 85px;
+      margin: 30px;
+    }
+  }
+  .overview-img {
+    img {
+      width: 100%;
+      margin-right: -30px;
+    }
+  }
+  .inactive {
+    display: none;
+  }
+}
