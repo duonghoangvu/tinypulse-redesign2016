@@ -23,7 +23,29 @@ header{
   transform: translate3d(0,0,0);
   &.sticked{
     background: rgba(0,0,0,0.6);
-    box-shadow: 0 0 10px #666;
+    // box-shadow: 0 0 10px #666;
+    border-bottom: 1px solid #DADADA;
+    .main-nav{
+      nav{
+        ul{
+          li{
+            &:hover, &.active{  
+              background: rgba(115, 115, 115, 0.3);
+            }
+            a{
+              color: #4A4A4A;
+            }
+          }
+        }   
+        .sub{
+          background: #fff;
+          border-color: #DADADA;
+          border-style: solid;
+          border-width: 0 1px 1px 1px;
+          top: 55px;
+        }     
+      }
+    }
   }
 }
 
@@ -68,11 +90,14 @@ header{
         &.has-sub{
           &:before{
             content: "";
-            height: 50px;
+            height: 70px;
             width: 100%;
-            display: block;
+            display: none;
             position: absolute;
             z-index: 0;
+          }
+          &:hover:before{
+            display: block;
           }
         }
         &.contact-sales{
@@ -96,6 +121,7 @@ header{
             border: 2px solid #fff;
             border-radius: 3px;
             padding: 6px 20px 8px;
+            line-height: normal;
             &:hover{
               background: #fff;
               color: #000;
@@ -111,7 +137,7 @@ header{
       overflow: hidden;
       position: absolute;
       background: rgba(0,0,0,0.5);
-      border-radius: 3px;
+      border-radius: 0 0 3px 3px;
       top: 45px;
       left: 0;
 
@@ -136,17 +162,46 @@ header{
   left: 0;
   right: 0;
   top: 0;
+  &.sticked{
+    box-shadow: 0 0 5px #333;
+    .triggers{
+      background: rgba(255, 255, 255, 1);
+      .hamburger, .cross{
+        color: #000!important;
+      }
+    }
+    .logo{
+      .color{
+        opacity: 1;
+      }
+      .white{
+        opacity: 0;
+      }
+    }
+  }
   .triggers{
     padding: 10px 15px;
-    background: rgba(0,0,0,0.6);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    transition: all 0.3s;
   }
   .logo{
     display: inline-block;
     width: 99px;
+    height: 17px;
     z-index: 10;
     position: relative;
     img{
+      transition: all 0.3s;
       width: 100%;
+      position: absolute;
+      top: 2px;
+    }
+    .color{
+      opacity: 0;
     }
   }
   .hamburger{
@@ -164,6 +219,7 @@ header{
     outline: none;
     display: block;
     z-index: 10;
+    margin: 0;
   }
   .cross{
     background: none;
@@ -174,12 +230,13 @@ header{
     color: #FFF;
     border: 0;
     font-size: 3em;
-    line-height: 60px;
+    line-height: 40px;
     font-weight: bold;
     cursor: pointer;
     outline: none;
     z-index: 10;
     display: none;
+    margin: 0;
   }
   nav{
     width: 250px;
@@ -239,7 +296,7 @@ header{
     bottom: 0;
     opacity: 0;
     visibility: hidden;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 0;
   }
 }
@@ -247,6 +304,13 @@ header{
 .mobile-nav-opened{
   .main-mobile-nav-container{
     height: 100%;
+    &.sticked{
+      .triggers{
+        .cross, .hamburger{
+          color: #fff!important;
+        }
+      }
+    }
     .cross{
       display: block;
     }
@@ -261,11 +325,6 @@ header{
       visibility: visible;
       transition: all 0.5s;
     }
-  }
-  .main-wrapper{
-    // transform: translate3d(0, -700px, -490px);
-    // -webkit-transform-style: preserve-3d;
-    // transform-style: preserve-3d;
   }
 }
 
@@ -292,7 +351,7 @@ header{
     display: block;
     padding: 10px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 110px;
     h1{
       font-size: 20px;
       text-align: center;
@@ -339,16 +398,6 @@ header{
         color: #fff;
         font-family: $font_bold;
         font-size: 16px;
-      }
-    }
-    .meet-consultant{
-      text-align: center;
-      padding-top: 30px;
-      a{
-        font-size: 14px;
-        color: #fff;
-        font-family: $font_semibold;
-        text-decoration: underline;
       }
     }
   }
@@ -423,7 +472,7 @@ header{
       position: relative;
       top: 50%;
       max-width: 600px;
-      margin-top: -200px;
+      margin-top: -118px;
       h1{
         font-size: 48px;
         margin-bottom: 50px;

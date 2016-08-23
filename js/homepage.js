@@ -19,7 +19,8 @@ function Scroller()
   this.wHeight            = 650;
   this.dom                = {
                               blur: '',
-                              nav: ''
+                              nav: '',
+                              mobileNav: ''
                             }
 }
 
@@ -45,6 +46,17 @@ Scroller.prototype = {
     /**
      * Do The Dirty Work Here
      */
+    if (currentScrollY >= this.wHeight - 150){
+      this.dom.nav.addClass('sticked');
+      this.dom.mobileNav.addClass('sticked');
+    } else {
+      this.dom.nav.removeClass('sticked');      
+      this.dom.mobileNav.removeClass('sticked');      
+    }
+
+    if ($(window).width() < 960){
+      return;
+    }
     var slowScroll = (currentScrollY - ($(window).height() + 300)) / 4
       , blurScroll = currentScrollY * 1.5;
 
@@ -61,12 +73,6 @@ Scroller.prototype = {
         'transform': 'translateY(-' + slowScroll/2 + 'px)'
       });      
     }
-    
-    if (currentScrollY >= this.wHeight - 150){
-      this.dom.nav.addClass('sticked');
-    } else {
-      this.dom.nav.removeClass('sticked');      
-    }
   }
 };
 
@@ -77,6 +83,7 @@ $(document).ready(function(){
   var scroller = new Scroller();
   scroller.dom.blur = $('header .overlay');
   scroller.dom.nav = $('header .main-nav-container');
+  scroller.dom.mobileNav = $('.main-mobile-nav-container');
   scroller.init();  
 });
 
@@ -202,23 +209,26 @@ $(document).ready(function(){
           }
       })
       .on(_event, $.debounce(600, function(){
-          var scrollTop = $(window).scrollTop() - topMenuH + windowH/2, 
-              contents = productsBlock.find('.content');
+        if ($(window).width() < 960){
+          return;
+        }
+        var scrollTop = $(window).scrollTop() - topMenuH + windowH/2, 
+            contents = productsBlock.find('.content');
 
-          contents.each(function(index, content){
-              var currentContent = $(content), 
-                  currentContentTop = currentContent.offset().top,
-                  currentContentBottom = currentContentTop + currentContent.height(), 
-                  color = currentContent.data('color'), 
-                  text = currentContent.data('text');
-              if (scrollTop > currentContentTop && scrollTop < currentContentBottom){
-                  $('body, html').animate({
-                      scrollTop: currentContentTop,
-                  }, 500, 'easeOutQuad', function(){
-                      productsBlock.css('background-color', color);
-                  });
-              }
-          });
+        contents.each(function(index, content){
+            var currentContent = $(content), 
+                currentContentTop = currentContent.offset().top,
+                currentContentBottom = currentContentTop + currentContent.height(), 
+                color = currentContent.data('color'), 
+                text = currentContent.data('text');
+            if (scrollTop > currentContentTop && scrollTop < currentContentBottom){
+                $('body, html').animate({
+                    scrollTop: currentContentTop,
+                }, 500, 'easeOutQuad', function(){
+                    productsBlock.css('background-color', color);
+                });
+            }
+        });
       })).trigger('resize');
     }
   });
