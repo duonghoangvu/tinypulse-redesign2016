@@ -1,3 +1,7 @@
+@import "_typography";
+@import "_header";
+@import "_footer";
+
 .engage-header-graphics{
   background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg.png);
   background-size: cover;
@@ -88,8 +92,8 @@
     }
   }
 }
-.inactive {
-  display: none;
+.active {
+  display: block !important;
 }
 .engage-subnav{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
@@ -174,7 +178,7 @@
       border-bottom: 1px solid #DADADA;
     }
   }
-  .inactive {
+  .block-content{
     display: none;
   }
 }
@@ -214,7 +218,9 @@
     line-height: 24px;
     font-size: 16px;
     font-family: $font_light;
-    display: block;
+    display: none;
+    height: 600px;
+    position: relative;
   }
   img {
     width: 70px;
@@ -232,8 +238,13 @@
     text-align: left;
     padding: 0 15px;
   }
-  .slide-icon img {
-    width: 135px;
+  .slide-icon{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    img {
+      width: 135px;
+    }
   }
 }
 .why {
@@ -265,6 +276,7 @@
     font-size: 14px;
     line-height: 20px;
     font-family: $font_light;
+    display: none;
     .speaker-content {
       background-color: rgba(255,255,255,0.2);
       height: 500px;
