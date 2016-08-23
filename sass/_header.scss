@@ -2,7 +2,7 @@ header{
   .overlay{
     position: absolute;
     top: 0; right: 0; left: 0; bottom: 0;
-    background: #916763;
+    background: #fff;
     background-size: cover;
     z-index: 0;
     opacity: 0;
@@ -10,7 +10,7 @@ header{
 }
 .main-nav-container{
   display: none;
-  background: #333;
+  // background: #333;
   height: 56px;
   position: fixed;
   top: 0;
@@ -23,6 +23,7 @@ header{
   transform: translate3d(0,0,0);
   &.sticked{
     background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 10px #666;
   }
 }
 
@@ -58,7 +59,7 @@ header{
         transition: all 0.3s;
         border-radius: 3px;
         &:hover, &.active{  
-          background: rgba(0,0,0,0.3);
+          background: rgba(0,0,0,0.5);
           .sub{
             height: inherit;
             opacity: 1;
@@ -109,7 +110,7 @@ header{
       height: 0;
       overflow: hidden;
       position: absolute;
-      background: rgba(0,0,0,0.3);
+      background: rgba(0,0,0,0.5);
       border-radius: 3px;
       top: 45px;
       left: 0;
@@ -358,13 +359,49 @@ header{
     height: 76px;
     display: block;
     &.sticked{
-      background: #916763;
+      background: #fff;
+      nav{
+        ul{
+          li{
+            a{
+              color: #000;
+              &.signup{
+                border-color: #00C26B;
+                color: #00C26B;
+                &:hover{
+                  background: #00C26B;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+      .main-nav{
+        .logo{
+          .color{
+            opacity: 1;
+          }
+          .white{
+            opacity: 0;
+          }          
+        }
+      }
     }
   }
   .main-nav{
     .logo{
       width: 150px;
+      height: 28px;
       margin-top: 7px;
+      position: relative;
+      img{
+        transition: all 0.3s;
+        position: absolute;
+      }
+      .color{
+        opacity: 0;
+      }
     }
     nav{
       display: block;
