@@ -77,10 +77,18 @@
     </header>  
     
     <div class="main-content">
-      <!-- main content goes here! -->
       <div class="contact">
         <div class="contact-form">
-          Contact form
+          <!--[if lte IE 8]>
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+          <![endif]-->
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+          <script>
+            hbspt.forms.create({ 
+              portalId: '443262',
+              formId: 'c64f744e-cc8d-4389-be66-c1792545ea68'
+            });
+          </script>
         </div>
         <div class="information">
           <p>Is TINYpulse a good fit for your company?  Give us <b>10 minutes</b> to understand your needs so that we can make it easy for you to determine next steps and find the <b> best plan </b> for your company.</p>
@@ -200,5 +208,6 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/global.js"></script>
+  <script src="js/pricing-form.js"></script>
   <script src="js/nav.js"></script>
 </body>
