@@ -149,22 +149,26 @@ a{
     position: relative;
   }
   .mask-1{
-      background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg.png);
+  	padding: 30px 15px;
+    background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg.png);
   }
   .mask-2{
-      background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/perform-bg.png);
+  	padding: 30px 15px;
+    background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/perform-bg.png);
   }
   .text{
     color: #FFF;
     height: 100%;
     width: 100%;
     display: inline-block;
+    position: relative;
     .title{
       font-size: 24px;
       line-height: 32px;
       text-shadow: 0 2px 15px rgba(0,0,0,0.42);
       width: 230px;
       letter-spacing: 0.75px;
+      margin: 0;
     }
     .desc{
       font-size: 17px;
@@ -185,8 +189,8 @@ a{
       left: 0;
       right: 0;
       margin: 0 auto;
-      width: 175px;
       text-align: center;
+      max-width: 300px;
       &:hover {
         background: #fff;
         color: #333;
@@ -286,18 +290,26 @@ a{
 
 .quote{
 	padding: 20px 0;
+	background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	.block-title{
+		font-family: $font_regular;
+		color: #fff;
 		font-size: 20px;
 		padding: 0 10px;
 	}
 	.block-desc{
+		font-family: $font_regular;
+		color: #fff;
 		margin: 0;
 		font-size: 16px;
 	}
 }
 
 @media screen and (min-width: 960px){
-	.main-content{
+	.header-graphics, .main-content{
 		position: relative;
 		z-index: 1;
 	}
