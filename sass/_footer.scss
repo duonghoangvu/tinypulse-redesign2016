@@ -81,13 +81,14 @@ footer{
 		left: 0;
 		right: 0;
 		bottom: 0;
-		z-index: -1;
+		transform: translate3d(0,0,0);
 		.container{
 			max-width: 960px;
 			margin: 0 auto;
 		}
 		ul{
-			float: left;
+			display: inline-block;
+			vertical-align: top;
 			margin: 0;
 			border: 0;
 			&:nth-child(1){
@@ -117,7 +118,6 @@ footer{
 			}
 		}
 		.copyright{
-			margin-top: 20px;
 			display: inline-block;
 			width: 100%;
 			clear: both;

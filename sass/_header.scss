@@ -281,8 +281,6 @@ header{
       color: #fff;
       font-family: $font_bold;
       font-weight: normal;
-
-      // font-family:Lato-Black;
       font-size:36px;
       color:#ffffff;
       letter-spacing:1.12px;
@@ -295,38 +293,31 @@ header{
       margin: 70px 0 50px 0;
       font-size: 0;
       border-radius: 5px;
-      input{
-        font-size: 18px;
-        padding: 7px;
-        min-height: inherit;
-        height: inherit;
-        line-height: 21px;
-        border-radius: 4px;
-        width: 100%;
-        border: 0;
-        box-sizing: border-box;
-        margin-bottom: 10px;
+      input, button{
+        display: inline-block;
+        vertical-align: top;  
+        padding: 0;
+        font-size: 14px;
         font-family: $font_semibold;
-        font-size:14px;
+        border-radius: 4px;
+        margin: 0;
+        border: 0;
+        transition: width 0.3s;
+        box-sizing: border-box;
+        height: 33px;
+        padding: 0 10px;
+      }
+      input{
+        width: 100%;
         color:#9b9b9b;
-        letter-spacing:0px;
-        text-align:left;
+        text-align:center;
+        margin-bottom: 10px;
       }
       button{
-        background: #00C26B;
-        border-radius: 4px;
-        border: 0;
-        padding: 5px;
-        color: #fff;
         width: 100%;
-        font-family: $font_semibold;
-        cursor: pointer;
-        font-size: 18px;
-        line-height: 19px;
-        padding: 8px;
-        text-transform: none;
-        margin: 0;
-        vertical-align: top;
+        background: #00C26B;
+        color: #fff;
+        height: 33px;
       }
     }
     .meet-consultant{
@@ -384,16 +375,16 @@ header{
         max-width: 450px;
         box-sizing: border-box;
         margin: 0 auto;
+        font-size: 0;
         input{
           font-size: 18px;
-          padding: 7px;
           width: 72%;
           border-radius: 4px 0 0 4px;
+          margin: 0;
+          text-align: left;
         }
         button{
           font-size: 18px;
-          line-height: 19px;
-          padding: 8px;
           width: 28%;
           border-radius: 0 4px 4px 0;
         }
