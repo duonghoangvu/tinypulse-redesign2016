@@ -1322,6 +1322,11 @@ footer .copyright span {
 }
 
 /* line 91, ../sass/_engage.scss */
+.inactive {
+  display: none;
+}
+
+/* line 94, ../sass/_engage.scss */
 .engage-subnav {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -1334,18 +1339,18 @@ footer .copyright span {
   /* IE6-9 fallback on horizontal gradient */
   text-align: left;
 }
-/* line 98, ../sass/_engage.scss */
+/* line 101, ../sass/_engage.scss */
 .engage-subnav ul {
   margin: 0 auto;
   padding-left: 15px;
   width: 90%;
   display: inline-block;
 }
-/* line 104, ../sass/_engage.scss */
+/* line 107, ../sass/_engage.scss */
 .engage-subnav li {
   list-style: none;
 }
-/* line 107, ../sass/_engage.scss */
+/* line 110, ../sass/_engage.scss */
 .engage-subnav a {
   display: block;
   vertical-align: middle;
@@ -1355,7 +1360,7 @@ footer .copyright span {
   border-bottom: 5px solid transparent;
 }
 
-/* line 117, ../sass/_engage.scss */
+/* line 120, ../sass/_engage.scss */
 .overview .title {
   color: #1C94EE;
   font-size: 20px;
@@ -1363,7 +1368,7 @@ footer .copyright span {
   text-align: left;
   padding: 0 15px;
 }
-/* line 124, ../sass/_engage.scss */
+/* line 127, ../sass/_engage.scss */
 .overview .content-desc {
   font-size: 18px;
   color: #000;
@@ -1373,22 +1378,22 @@ footer .copyright span {
   line-height: 25px;
   padding: 0 15px;
 }
-/* line 134, ../sass/_engage.scss */
+/* line 137, ../sass/_engage.scss */
 .overview .slide-icon img {
   width: 85px;
   margin: 30px;
 }
-/* line 140, ../sass/_engage.scss */
+/* line 143, ../sass/_engage.scss */
 .overview .overview-img img {
   width: 100%;
   border-bottom: 1px solid #DADADA;
 }
-/* line 145, ../sass/_engage.scss */
+/* line 148, ../sass/_engage.scss */
 .overview .inactive {
   display: none;
 }
 
-/* line 150, ../sass/_engage.scss */
+/* line 153, ../sass/_engage.scss */
 .features .feature {
   text-align: left;
   font-size: 16px;
@@ -1396,49 +1401,49 @@ footer .copyright span {
   line-height: 24px;
   padding-bottom: 30px;
 }
-/* line 157, ../sass/_engage.scss */
+/* line 160, ../sass/_engage.scss */
 .features .content-title {
   font-size: 20px;
   font-family: "Lato-Regular";
   padding: 0 15px;
 }
-/* line 162, ../sass/_engage.scss */
+/* line 165, ../sass/_engage.scss */
 .features p {
   padding: 0 15px;
 }
-/* line 165, ../sass/_engage.scss */
+/* line 168, ../sass/_engage.scss */
 .features img {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 169, ../sass/_engage.scss */
+/* line 172, ../sass/_engage.scss */
 .features .feature-2, .features .feature-3 {
   border-top: 1px solid #DADADA;
   padding: 0 30px;
 }
-/* line 173, ../sass/_engage.scss */
+/* line 176, ../sass/_engage.scss */
 .features .feature-3 img {
   margin-top: 20px;
 }
-/* line 176, ../sass/_engage.scss */
+/* line 179, ../sass/_engage.scss */
 .features strong {
   font-family: "Lato-Bold";
 }
 
-/* line 181, ../sass/_engage.scss */
+/* line 184, ../sass/_engage.scss */
 .how-it-works .block-content {
   line-height: 24px;
   font-size: 16px;
   font-family: "Lato-Light";
   display: block;
 }
-/* line 187, ../sass/_engage.scss */
+/* line 190, ../sass/_engage.scss */
 .how-it-works img {
   width: 70px;
   margin-bottom: 30px;
   margin-top: 15px;
 }
-/* line 192, ../sass/_engage.scss */
+/* line 195, ../sass/_engage.scss */
 .how-it-works .content-title {
   font-size: 20px;
   color: #1C94EE;
@@ -1446,17 +1451,17 @@ footer .copyright span {
   text-align: left;
   padding: 0 15px;
 }
-/* line 199, ../sass/_engage.scss */
+/* line 202, ../sass/_engage.scss */
 .how-it-works p {
   text-align: left;
   padding: 0 15px;
 }
-/* line 203, ../sass/_engage.scss */
-.how-it-works .inactive {
-  display: none;
+/* line 206, ../sass/_engage.scss */
+.how-it-works .slide-icon img {
+  width: 135px;
 }
 
-/* line 207, ../sass/_engage.scss */
+/* line 210, ../sass/_engage.scss */
 .why {
   font-size: 14px;
   color: #FFF;
@@ -1466,20 +1471,72 @@ footer .copyright span {
   background: -webkit-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
   /* Chrome10-25,Safari5.1-6 */
   background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
+  padding-bottom: 40px;
 }
-/* line 214, ../sass/_engage.scss */
+/* line 218, ../sass/_engage.scss */
 .why .block-desc, .why .block-title {
   color: #FFF;
 }
-/* line 217, ../sass/_engage.scss */
+/* line 221, ../sass/_engage.scss */
 .why .content-title {
   font-size: 16px;
   font-family: "Lato-Semibold";
   line-height: 19px;
 }
-/* line 222, ../sass/_engage.scss */
-.why img {
+/* line 226, ../sass/_engage.scss */
+.why .icon img {
   width: 100px;
+  margin: 20px 0px;
+}
+/* line 230, ../sass/_engage.scss */
+.why .content-desc {
+  max-width: 200px;
+  margin: 0 auto 40px;
+}
+/* line 234, ../sass/_engage.scss */
+.why .speaker {
+  margin: 0 15px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Lato-Light";
+}
+/* line 239, ../sass/_engage.scss */
+.why .speaker .speaker-content {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 500px;
+}
+/* line 243, ../sass/_engage.scss */
+.why .speaker img {
+  width: 100%;
+}
+/* line 246, ../sass/_engage.scss */
+.why .speaker p {
+  padding: 5px 15px;
+}
+/* line 249, ../sass/_engage.scss */
+.why .speaker .slide-icon {
+  text-align: center;
+}
+/* line 251, ../sass/_engage.scss */
+.why .speaker .slide-icon img {
+  width: 85px;
+  margin: 30px 0px;
+}
+/* line 256, ../sass/_engage.scss */
+.why .speaker .speaker-name {
+  font-family: "Lato-Regular";
+  line-height: 22px;
+}
+/* line 261, ../sass/_engage.scss */
+.why .read-more {
+  width: 300px;
+  border: 2px solid #FFF;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: "Lato-Bold";
 }
 
 /* line 7, ../sass/global.scss */
