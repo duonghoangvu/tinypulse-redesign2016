@@ -96,21 +96,50 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	text-align: left;
   ul{
-    margin: 0 auto;
-    padding-left: 15px;
-    width: 90%;
-    display: inline-block;
+    margin: 0;
+    padding: 5px 0;
+    position: relative;
+    max-height: 30px;
+    overflow: hidden;
+    transition: max-height 0.75s;
+    &.expanded{
+      max-height: 300px;
+      li:first-child{
+        a:after{
+          content: "\f077";
+        }
+      }
+    }
   }
   li{
     list-style: none;
+    display: inline-block;
+    width: 100%;
+    &:first-child{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      a{
+        display: block;
+        padding: 0;
+        height: 100%;
+        &:after{
+          content: "\f078";
+          position: absolute;
+          right: 15px;
+          top: 12px;
+          font: normal normal normal 14px/1 FontAwesome;
+          -webkit-font-smoothing: antialiased;
+        }
+      }
+    }
   }
 	a{
 		display: block;
-		vertical-align: middle;
     font-size: 16px;
     color: #FFF;
-    font-family: $font_semibold;
-    border-bottom: 5px solid transparent;
+    font-family: $font_regular;
+    padding: 5px 15px 8px;
 	}
 }
 .overview{

@@ -4,4 +4,9 @@ jQuery(document).ready(function($) {
 			$(this).closest('ul').toggleClass('expanded');
 		});
 	}
+
+	$('#sub-nav-trigger').on('click', function(e){
+		e.preventDefault();
+		$(this).closest('ul').toggleClass('expanded');
+	});
 });
