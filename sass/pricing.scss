@@ -1,3 +1,11 @@
+.main-content {
+  margin-bottom: 0;
+}
+
+.quote {
+  background: none;
+}
+
 .header-graphics > .content {
   margin-left: 80px;
   margin-right: 80px;
@@ -8,7 +16,7 @@
   display: none;
 }
 .author .author-avatar {
-  width: 15%;
+  width: 54px;
   float: left;
   margin-right: 20px;
 }
@@ -27,23 +35,6 @@
   color: #9B9B9B;
   line-height: 20px;
   margin-top: 0;
-}
-
-.header-graphics .content h1 {
-  font-family: Lato-Black;
-  font-size: 48px;
-  color: #FFFFFF;
-  letter-spacing: 1.5px;
-  text-shadow: 0px 2px 15px rgba(0,0,0,0.80);
-  margin-top: 169px;
-  margin-bottom: 15px;
-}
-
-.header-graphics .sub-headline {
-  font-family: Lato-Bold;
-  font-size: 24px;
-  color: #FFFFFF;
-  letter-spacing: 0px;
 }
 
 .contact {
@@ -118,6 +109,11 @@
 }
 
 // Hubspot form styling
+.hbspt-form {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
 .hs-form input:not([type="image"]), .hs-form textarea{
   box-sizing: border-box!important;
 }
@@ -206,19 +202,6 @@
     margin: 116px auto;
   }
 
-  .header-graphics .content h1 {
-    margin-bottom: 15px;
-    margin-top: 110px;
-  }
-
-  .header-graphics .sub-headline {
-    font-family: Lato-Bold;
-    font-size: 24px;
-    color: #FFFFFF;
-    letter-spacing: 0px;
-    text-align: center;
-  }
-
   .main-content .contact {
     max-width: 960px;
     margin: auto;
@@ -273,20 +256,23 @@
   .content {
     margin: 0;
     text-align: left;
+    margin-top: 30px;
   }
   .information .quote .content p {
+    width: calc(100% - 64px);
+    margin-right: 10px;
     font-family: Lato-Bold;
     font-size: 16px;
     color: #000000;
     line-height: 27px;
-    width: 85%;
     display: inline-block;
   }
 
-  .information .quote .content img {
+  .information .quote .content .author-avatar {
+    width: 54px;
     float: right;
-    margin-top: 30px;
     display: block;
+    vertical-align: top;
   }
 
   .information .quote .job-title {
@@ -302,7 +288,7 @@
     color: #9B9B9B;
     line-height: 20px;
   }
-  
+
   .information .quote .author .author-avatar {
     display: none;
   }
@@ -346,6 +332,12 @@
   }
 
   // Hubspot form styling
+
+  .hbspt-form {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .hs-form-required {
     display: none;
   }
@@ -411,3 +403,4 @@
     display: block;
   }
 }
+
