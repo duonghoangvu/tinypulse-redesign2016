@@ -1,12 +1,13 @@
 jQuery(document).ready(function($) {
-	if ($(window).width() < 960){
-		$('#site-footer').find('ul li:first-child').on('click', function(e){
-			$(this).closest('ul').toggleClass('expanded');
-		});
-	}
-
 	$('#sub-nav-trigger').on('click', function(e){
 		e.preventDefault();
 		$(this).closest('ul').toggleClass('expanded');
 	});
+	$(window).on('resize', function(){
+		if ($(window).width() < 960){
+			$('#site-footer').find('ul li:first-child').off('click').on('click', function(e){
+				$(this).closest('ul').toggleClass('expanded');
+			});
+		}
+	})
 });

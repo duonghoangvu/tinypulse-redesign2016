@@ -19,7 +19,8 @@ function Scroller()
   this.wHeight            = 650;
   this.dom                = {
                               blur: '',
-                              nav: ''
+                              nav: '',
+                              mobileNav: ''
                             }
 }
 
@@ -45,6 +46,17 @@ Scroller.prototype = {
     /**
      * Do The Dirty Work Here
      */
+    if (currentScrollY >= this.wHeight - 150){
+      this.dom.nav.addClass('sticked');
+      this.dom.mobileNav.addClass('sticked');
+    } else {
+      this.dom.nav.removeClass('sticked');      
+      this.dom.mobileNav.removeClass('sticked');      
+    }
+
+    if ($(window).width() < 960){
+      return;
+    }
     var slowScroll = (currentScrollY - ($(window).height() + 300)) / 4
       , blurScroll = currentScrollY * 1.5;
 
@@ -61,12 +73,6 @@ Scroller.prototype = {
         'transform': 'translateY(-' + slowScroll/2 + 'px)'
       });      
     }
-    
-    if (currentScrollY >= this.wHeight - 150){
-      this.dom.nav.addClass('sticked');
-    } else {
-      this.dom.nav.removeClass('sticked');      
-    }
   }
 };
 
@@ -77,159 +83,167 @@ $(document).ready(function(){
   var scroller = new Scroller();
   scroller.dom.blur = $('header .overlay');
   scroller.dom.nav = $('header .main-nav-container');
+  scroller.dom.mobileNav = $('.main-mobile-nav-container');
   scroller.init();  
 });
 
 $(document).ready(function(){
   var windowW = $(window).width(),
-      windowH = $(window).height(),
-      topMenuH = 76,
-      productsBlock = $('#products'),
-      calc,
-      range = 200, 
-      isFirefox = navigator.userAgent.indexOf('Firefox') != -1, 
-      isiPad = navigator.userAgent.indexOf('iPad') != -1, 
-      isTouchDevice = 'ontouchstart' in window;
+    windowH = $(window).height(),
+    topMenuH = 76,
+    productsBlock = $('#products'),
+    calc,
+    range = 200, 
+    isFirefox = navigator.userAgent.indexOf('Firefox') != -1, 
+    isiPad = navigator.userAgent.indexOf('iPad') != -1, 
+    isTouchDevice = 'ontouchstart' in window;
 
   var maskedImagesContainer = productsBlock.find('.masked-images'),
-      maskedImages = productsBlock.find('.masked-image');
+    maskedImages = productsBlock.find('.masked-image');
 
   var initStage = function(){
-      windowW = $(window).width();
-      windowH = $(window).height();
+    windowW = $(window).width();
+    windowH = $(window).height();
 
-      productsBlock.css('height', windowH*2).find('.content').css({
-          'height': windowH
-      });
-      maskedImages.css({
-          'height': windowH
-      });
-      maskedImages.find('div').css({
-          'height': windowH
-      });
+    productsBlock.css('height', windowH*2).find('.content').css({
+        'height': windowH
+    });
+    maskedImages.css({
+        'height': windowH
+    });
+    maskedImages.find('div').css({
+        'height': windowH
+    });
 
-      $('.masked-image-1').css({
-        'top': '100px'
-      });
+    $('.masked-image-1').css({
+      'top': '100px'
+    });
 
-      animationStartOffset = getStartOffset(productsBlock);
-      animationStopOffset = getEndOffset(productsBlock);
+    animationStartOffset = getStartOffset(productsBlock);
+    animationStopOffset = getEndOffset(productsBlock);
 
-      $(window).scroll();
+    $(window).scroll();
   }, 
   getStartOffset = function(ele){
-      ele = $(ele); 
-      return ele.offset().top;
+    ele = $(ele); 
+    return ele.offset().top;
   }, 
   getEndOffset = function(ele){
-      ele = $(ele);
-      return (ele.offset().top + ele.height());
+    ele = $(ele);
+    return (ele.offset().top + ele.height());
   };
 
   var animationStartOffset = getStartOffset(productsBlock), 
-      animationStopOffset = getEndOffset(productsBlock);
+    animationStopOffset = getEndOffset(productsBlock);
 
   jQuery(document).ready(function($) {
-      var _event = 'scroll';
+    var _event = 'scroll';
 
-      if (!isTouchDevice){
-          initStage();            
-      }
+    if (!isTouchDevice){
+      initStage();            
+    }
 
-      if(isFirefox){
-          $('body').addClass('firefox');
-      }        
+    if(isFirefox){
+      $('body').addClass('firefox');
+    }        
 
-      if (!('ontouchstart' in window)){
-          $(window)
-          .on('resize', $.debounce(200, initStage))
-          .on(_event, function(delta){
-              var scrollTop = $(window).scrollTop(), 
-                  windowH = $(window).height();
+    if (!('ontouchstart' in window)){
+      $(window)
+      .on('resize', $.debounce(200, initStage))
+      .on(_event, function(delta){
+          if ($(window).width() < 960){
+            return;
+          }
+          
+          var scrollTop = $(window).scrollTop(), 
+              windowH = $(window).height();
 
-              if (scrollTop + topMenuH > animationStartOffset && scrollTop + windowH < animationStopOffset){
-                  maskedImagesContainer.css({
-                      'position': 'fixed',
-                      'top': topMenuH
-                  });
-              } else {
-                  if (scrollTop + windowH >= animationStopOffset){
-                      maskedImagesContainer.css({
-                          'position': 'absolute',
-                          'top': windowH + topMenuH,
-                      });  
-                  } else {
-                      maskedImagesContainer.css({
-                          'position': 'absolute',
-                          'top': 0
-                      });    
-                  }                    
-              }
-              if (scrollTop + topMenuH > animationStartOffset && scrollTop + windowH < animationStopOffset + windowH){
-
-                  var index = ((scrollTop - animationStartOffset + windowH) / windowH).toString().substring(0, 1), 
-                      value = Math.abs(windowH - (scrollTop - animationStartOffset) + normalized);
-                             
-                  if (value <= 30){
-                      productsBlock.css('background-color', '#A39D66');
-                  } else {
-                      productsBlock.css('background-color', '');
-                  }
-                  
-                  if (scrollTop + windowH > animationStopOffset){
-                      maskedImagesContainer.find('.masked-image-2').css({
-                          'height': 0
-                      }); 
-                      productsBlock.css('background-color', '#65B0E5');
-                  } else {
-                      maskedImagesContainer.find('.masked-image-2').css({
-                          'height': value
-                      }); 
-                  }
-
-                  contentOffsetTop = animationStartOffset + windowH;
-                  calc = 1 - ($(window).scrollTop() - contentOffsetTop + range) / range;
-
-                  if ( calc > '1' ) {
-                      calc = 1;
-                  } else if ( calc < '0' ) {
-                      calc = 0;
-                  }
-              }
-          })
-          .on(_event, $.debounce(600, function(){
-              var scrollTop = $(window).scrollTop() + windowH/2, 
-                  contents = productsBlock.find('.content');
-
-              contents.each(function(index, content){
-                  var currentContent = $(content), 
-                      currentContentTop = currentContent.offset().top,
-                      currentContentBottom = currentContentTop + currentContent.height(), 
-                      color = currentContent.data('color'), 
-                      text = currentContent.data('text');
-                  if (scrollTop > currentContentTop && scrollTop < currentContentBottom){
-                      $('body, html').animate({
-                          scrollTop: currentContentTop,
-                      }, 500, 'easeOutQuad', function(){
-                          productsBlock.css('background-color', color);
-                      });
-                  }
+          if (scrollTop + topMenuH > animationStartOffset && scrollTop + windowH < animationStopOffset){
+              maskedImagesContainer.css({
+                  'position': 'fixed',
+                  'top': topMenuH
               });
-          })).trigger('resize');
-      }
+          } else {
+              if (scrollTop + windowH >= animationStopOffset){
+                  maskedImagesContainer.css({
+                      'position': 'absolute',
+                      'top': windowH + topMenuH,
+                  });  
+              } else {
+                  maskedImagesContainer.css({
+                      'position': 'absolute',
+                      'top': 0
+                  });    
+              }                    
+          }
+          if (scrollTop + topMenuH > animationStartOffset && scrollTop + windowH < animationStopOffset + windowH){
+
+              var index = ((scrollTop - animationStartOffset + windowH) / windowH).toString().substring(0, 1), 
+                  value = Math.abs(windowH - (scrollTop - animationStartOffset) + normalized);
+                         
+              if (value <= 30){
+                  productsBlock.css('background-color', '#A39D66');
+              } else {
+                  productsBlock.css('background-color', '');
+              }
+              
+              if (scrollTop + windowH > animationStopOffset){
+                  maskedImagesContainer.find('.masked-image-2').css({
+                      'height': 0
+                  }); 
+                  productsBlock.css('background-color', '#65B0E5');
+              } else {
+                  maskedImagesContainer.find('.masked-image-2').css({
+                      'height': value
+                  }); 
+              }
+
+              contentOffsetTop = animationStartOffset + windowH;
+              calc = 1 - ($(window).scrollTop() - contentOffsetTop + range) / range;
+
+              if ( calc > '1' ) {
+                  calc = 1;
+              } else if ( calc < '0' ) {
+                  calc = 0;
+              }
+          }
+      })
+      .on(_event, $.debounce(600, function(){
+        if ($(window).width() < 960){
+          return;
+        }
+        var scrollTop = $(window).scrollTop() - topMenuH + windowH/2, 
+            contents = productsBlock.find('.content');
+
+        contents.each(function(index, content){
+            var currentContent = $(content), 
+                currentContentTop = currentContent.offset().top,
+                currentContentBottom = currentContentTop + currentContent.height(), 
+                color = currentContent.data('color'), 
+                text = currentContent.data('text');
+            if (scrollTop > currentContentTop && scrollTop < currentContentBottom){
+                $('body, html').animate({
+                    scrollTop: currentContentTop,
+                }, 500, 'easeOutQuad', function(){
+                    productsBlock.css('background-color', color);
+                });
+            }
+        });
+      })).trigger('resize');
+    }
   });
 
   var normalized;
   function normalizeWheelSpeed(event) {
-      if (event.wheelDelta) {
-          normalized = (event.wheelDelta % 120 - 0) == -0 ? event.wheelDelta / 120 : event.wheelDelta / 12;
-      } else {
-          var rawAmmount = event.deltaY ? event.deltaY : event.detail;
-          normalized = -(rawAmmount % 3 ? rawAmmount * 10 : rawAmmount / 3);
-      }
-      if (isFirefox){
-          normalized = 0.5;
-      }
+    if (event.wheelDelta) {
+      normalized = (event.wheelDelta % 120 - 0) == -0 ? event.wheelDelta / 120 : event.wheelDelta / 12;
+    } else {
+      var rawAmmount = event.deltaY ? event.deltaY : event.detail;
+      normalized = -(rawAmmount % 3 ? rawAmmount * 10 : rawAmmount / 3);
+    }
+    if (isFirefox){
+      normalized = 0.5;
+    }
   }
   window.addEventListener('mousewheel', normalizeWheelSpeed);
   window.addEventListener('DOMMouseScroll', normalizeWheelSpeed);
