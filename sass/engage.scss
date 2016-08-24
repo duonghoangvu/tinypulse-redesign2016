@@ -2,8 +2,11 @@
 @import "_header";
 @import "_footer";
 
+.clearfix {
+  clear: both;
+}
 .engage-header-graphics{
-  background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg.png);
+  background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-mobile-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -18,7 +21,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image:linear-gradient(-180deg, #000000 0%, rgba(171,171,171,0.19) 38%, rgba(0,0,0,0.58) 90%);
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.45) 20%, rgba(246,107,28,0.15) 100%);
   }
   .content{
     position: relative;
@@ -149,6 +152,9 @@
     padding: 5px 15px 8px;
 	}
 }
+.overview-desktop {
+  display: none;
+}
 .overview{
   .title {
     color: #1C94EE;
@@ -189,6 +195,7 @@
     font-family: $font_light;
     line-height: 24px;
     padding-bottom: 30px;
+    display: block;
   }
   .content-title {
     font-size: 20px;
@@ -198,20 +205,36 @@
   p{
     padding: 0 15px;
   }
+  .icon {
+    text-align: center;
+  }
   img {
     width: 100%;
     margin-bottom: 30px;
   }
+  .feature-1 img {
+    max-width: 450px;
+  }
+  .feature-2 img {
+    max-width: 298px;
+  }
   .feature-2, .feature-3 {
     border-top: 1px solid #DADADA;
-    padding: 0 30px;
   }
   .feature-3 img{
     margin-top: 20px;
+    max-width: 395px;
+  }
+  .feature-desc {
+    max-width: 570px;
+    margin: 0 auto;
   }
   strong{
     font-family: $font_bold;
   }
+}
+.how-it-works-desktop {
+  display: none;
 }
 .how-it-works{
   .block-content {
@@ -219,8 +242,10 @@
     font-size: 16px;
     font-family: $font_light;
     display: none;
-    height: 600px;
+    height: 570px;
     position: relative;
+    max-width: 570px;
+    margin: 0 auto;
   }
   img {
     width: 70px;
@@ -248,7 +273,6 @@
   }
 }
 .why {
-  font-size: 14px;
   color: #FFF;
   font-family: $font_light;
 	background: -moz-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);/* FF3.6-15 */
@@ -270,28 +294,35 @@
   .content-desc {
     max-width: 200px;
     margin: 0 auto 40px;
+    font-size: 14px;
   }
   .speaker{
     margin: 0 15px;
-    font-size: 14px;
     line-height: 20px;
     font-family: $font_light;
     display: none;
     .speaker-content {
       background-color: rgba(255,255,255,0.2);
       height: 500px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .speaker-desc {
+      font-size: 14px;
     }
     img {
       width: 100%;
+      display: block;
+      max-width: 300px;
     }
     p {
       padding: 5px 15px;
     }
     .slide-icon{
       text-align: center;
+      margin: 30px 0px;
       img {
         width: 85px;
-        margin: 30px 0px;
       }
     }
     .speaker-name{
@@ -332,12 +363,14 @@
     text-align: center;
     img {
       width: 80%;
+      max-width: 180px;
     }
   }
   .try-it-form{
     padding: 30px 20px 50px;
     font-size: 0;
     border-radius: 5px;
+    text-align: center;
     input{
       font-size: 18px;
       padding: 7px;
@@ -354,6 +387,7 @@
       color:#9b9b9b;
       letter-spacing:0px;
       text-align:left;
+      max-width: 500px;
     }
     button{
       background: #00C26B;
@@ -370,6 +404,136 @@
       text-transform: none;
       margin: 0;
       vertical-align: top;
+      max-width: 500px;
+    }
+  }
+}
+@media screen and (min-width: 960px){
+  .engage-header-graphics{
+    background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
+    height: 650px;
+    &:before{
+      display: none;
+    }
+    .content{
+      position: relative;
+      top: 50%;
+      max-width: 600px;
+      margin-top: -200px;
+      h1{
+        font-size: 48px;
+        margin-bottom: 50px;
+      }
+      .try-it-form{
+        max-width: 450px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        input{
+          font-size: 18px;
+          padding: 7px;
+          width: 72%;
+          border-radius: 4px 0 0 4px;
+        }
+        button{
+          font-size: 18px;
+          line-height: 19px;
+          padding: 8px;
+          width: 28%;
+          border-radius: 0 4px 4px 0;
+        }
+      }
+    }
+  }
+  .overview {
+    display: none;
+  }
+  .overview-desktop {
+    display: block;
+  }
+  .features {
+    font-size: 0;
+    .icon  {
+      display: inline-block;
+      width: 50%;
+    }
+    .feature-desc {
+      display: inline-block;
+      width: 50%;
+    }
+    .feature-2 {
+      float: right;
+      text-align: center;
+    }
+    .feature-desc-1, .feature-desc-3 {
+      float: right;
+    }
+  }
+  .why {
+    .block-content {
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+      font-size: 0;
+    }
+    .speakers {
+      .speaker {
+        .slide-icon {
+          display: none;
+        }
+        .speaker-img {
+          display: inline-block;
+        }
+        .speaker-desc {
+          max-width: 500px;
+          display: inline-block;
+          vertical-align: top;
+          height: 100%;
+        }
+        .speaker-content {
+          max-width: 800px;
+          font-size: 0;
+          height: 200px;
+          p {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+    .read-more {
+      margin-top: 50px;
+    }
+  }
+  .how-it-works {
+    display: none;
+  }
+  .clients {
+    .client {
+      width: 15%;
+      text-align: center;
+    }
+    .client-logos {
+      text-align: center;
+    }
+    .block-title {
+      width: 100%;
+    }
+    .try-it-form{
+      max-width: 450px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      input{
+        font-size: 14px;
+        padding: 7px;
+        width: 67%;
+        border-radius: 4px 0 0 4px;
+      }
+      button{
+        font-size: 14px;
+        line-height: 19px;
+        padding: 8px;
+        width: 33%;
+        border-radius: 0 4px 4px 0;
+      }
     }
   }
 }
