@@ -107,28 +107,33 @@
 	text-align: left;
   ul{
     margin: 0;
-    padding: 5px 0;
+    padding: 0;
     position: relative;
-    max-height: 30px;
+    max-height: 40px;
     overflow: hidden;
     transition: max-height 0.75s;
     &.expanded{
       max-height: 300px;
-      li:first-child{
-        a:after{
-          content: "\f077";
+      li{
+        display: inline-block;
+        &:first-child{
+          height: 0;
+          a:after{
+            content: "\f077";
+          }
         }
       }
     }
   }
   li{
     list-style: none;
-    display: inline-block;
+    display: none;
     width: 100%;
     &:first-child{
       position: absolute;
       top: 0;
       bottom: 0;
+      display: block;
       a{
         display: block;
         padding: 0;
@@ -143,13 +148,17 @@
         }
       }
     }
+    &.active{
+      display: block;
+      font-family: $font_bold;
+    }
   }
 	a{
 		display: block;
     font-size: 16px;
     color: #FFF;
     font-family: $font_regular;
-    padding: 5px 15px 8px;
+    padding: 8px 15px 10px;
 	}
 }
 .overview-desktop {
