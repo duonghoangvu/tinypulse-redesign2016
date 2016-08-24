@@ -1346,33 +1346,103 @@ footer .copyright span {
     display: none;
   }
 
-  /* line 510, ../sass/engage.scss */
+  /* line 509, ../sass/engage.scss */
+  .how-it-works-desktop {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 513, ../sass/engage.scss */
+  .how-it-works-desktop .block-content {
+    display: none;
+    margin-bottom: 100px;
+    margin-top: 60px;
+  }
+  /* line 517, ../sass/engage.scss */
+  .how-it-works-desktop .block-content .content-title {
+    font-size: 20px;
+    color: #1C94EE;
+    font-family: "Lato-Regular";
+    text-align: left;
+    padding: 0 15px;
+  }
+  /* line 524, ../sass/engage.scss */
+  .how-it-works-desktop .block-content p {
+    text-align: left;
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: "Lato-Light";
+    line-height: 24px;
+  }
+  /* line 532, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-size: 0px;
+  }
+  /* line 537, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-icon {
+    display: inline-block;
+    width: 20%;
+  }
+  /* line 541, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .icon {
+    width: 63px;
+    height: 94px;
+    display: inline-block;
+    background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/engage/how-it-works/hiw-small-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  /* line 549, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-2 {
+    background-position: -85px 0;
+  }
+  /* line 552, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-3 {
+    background-position: -168px 0;
+  }
+  /* line 555, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-4 {
+    background-position: -253px 0;
+  }
+  /* line 558, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-5 {
+    background-position: -338px 0;
+  }
+  /* line 562, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-icon:hover .icon {
+    background-position-y: -115.5px;
+  }
+
+  /* line 569, ../sass/engage.scss */
   .clients .client {
     width: 15%;
     text-align: center;
   }
-  /* line 514, ../sass/engage.scss */
+  /* line 573, ../sass/engage.scss */
   .clients .client-logos {
     text-align: center;
   }
-  /* line 517, ../sass/engage.scss */
+  /* line 576, ../sass/engage.scss */
   .clients .block-title {
     width: 100%;
   }
-  /* line 520, ../sass/engage.scss */
+  /* line 579, ../sass/engage.scss */
   .clients .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
   }
-  /* line 524, ../sass/engage.scss */
+  /* line 583, ../sass/engage.scss */
   .clients .try-it-form input {
     font-size: 14px;
     padding: 7px;
     width: 67%;
     border-radius: 4px 0 0 4px;
   }
-  /* line 530, ../sass/engage.scss */
+  /* line 589, ../sass/engage.scss */
   .clients .try-it-form button {
     font-size: 14px;
     line-height: 19px;

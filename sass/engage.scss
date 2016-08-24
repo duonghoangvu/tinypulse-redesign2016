@@ -506,6 +506,65 @@
   .how-it-works {
     display: none;
   }
+  .how-it-works-desktop {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    .block-content {
+      display: none;
+      margin-bottom: 100px;
+      margin-top: 60px;
+      .content-title {
+        font-size: 20px;
+        color: #1C94EE;
+        font-family: $font_regular;
+        text-align: left;
+        padding: 0 15px;
+      }
+      p{
+        text-align: left;
+        padding: 0 15px;
+        font-size: 16px;
+        font-family: $font_light;
+        line-height: 24px;
+      }
+    }
+    .hiw-icons {
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
+      font-size: 0px;
+      .hiw-icon {
+        display: inline-block;
+        width: 20%;
+      }
+      .icon {
+        width: 63px;
+        height: 94px;
+        display: inline-block;
+        background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/engage/how-it-works/hiw-small-sprite.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+      .hiw-2 {
+        background-position: -85px 0;
+      }
+      .hiw-3 {
+        background-position: -168px 0;
+      }
+      .hiw-4 {
+        background-position: -253px 0;
+      }
+      .hiw-5 {
+        background-position: -338px 0;
+      }
+      .hiw-icon:hover {
+        .icon{
+          background-position-y: -115.5px;
+        }
+      }
+    }
+  }
   .clients {
     .client {
       width: 15%;
