@@ -339,15 +339,6 @@ header{
   position: relative;
   display: inline-block;
   width: 100%;
-  &:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:linear-gradient(-180deg, #000000 0%, rgba(171,171,171,0.19) 38%, rgba(0,0,0,0.58) 90%);
-  }
   .content{
     position: relative;
     display: block;
@@ -399,8 +390,8 @@ header{
         color:#9b9b9b;
         text-align:center;
         margin-bottom: 10px;
-        font-family: $font_semibold;
-        font-size: 14px;
+        font-family: $font_regular;
+        font-size: 15px;
       }
       button{
         width: 100%;
@@ -475,9 +466,6 @@ header{
   .header-graphics{
     background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/large/header-bg.png);
     height: 650px;
-    &:before{
-      display: none;
-    }
     .content{
       position: relative;
       top: 20%;
