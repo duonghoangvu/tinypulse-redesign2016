@@ -449,6 +449,76 @@
   }
   .overview-desktop {
     display: block;
+    font-size: 0px;
+    .overview-content {
+      position: relative;
+      height: 495px;
+      border-bottom: 1px solid #DADADA;
+    }
+    .block-content {
+      text-align: left;
+      padding: 15px;
+      width: 45%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .content-desc {
+      font-size: 16px;
+      font-family: $font_light;
+      line-height: 24px;
+    }
+    .title {
+      font-size: 24px;
+      font-family: $font_regular;
+      line-height: 29px;
+      color: #1C94EE;
+      margin-bottom: 15px;
+    }
+    .right-side {
+      width: 48%;
+      display: inline-block;
+      float: right;
+      right: 0;
+      position: absolute;
+      top: 0;
+      .overview-img {
+        height: 495px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: none;
+      }
+      .img-1 {
+        background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-insight.png);
+      }
+      .img-2 {
+        background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-actionable.png);
+      }
+      .img-3 {
+        background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-empowered.png);
+      }
+    }
+    .overview-default .block-content{
+      margin-top: 30px;
+    }
+    .overview-content:hover .overview-block:hover , .overview-content .overview-default {
+      .overview-img {
+        display: block;
+        transition: all ease .5s;
+      }
+      .block-content {
+        background-color: rgba(28,148,238,0.1);
+        transition: all .3s;
+      }
+    }
+    .overview-img, .overview-content:hover .overview-img {
+      display: none;
+      transition: all ease .5s;
+    }
+    .block-content, .overview-content:hover .block-content{
+      background-color: #FFF;
+      transition: all .3s;
+    }
   }
   .features {
     font-size: 0;
@@ -464,8 +534,28 @@
       float: right;
       text-align: center;
     }
-    .feature-desc-1, .feature-desc-3 {
+    .feature-desc-1 {
       float: right;
+      margin-top: 20px;
+    }
+    .feature-desc-2 {
+      border-top: 1px solid #DADADA;
+      .content-title {
+        margin-top: 90px;
+      }
+    }
+    .feature-3 img {
+      margin-top: 100px;
+    }
+    .feature-desc-3 {
+      float: right;
+      border-top: 1px solid #DADADA;
+      .content-title {
+        margin-top: 120px;
+      }
+    }
+    p {
+      padding: 10px 15px;
     }
   }
   .why {
