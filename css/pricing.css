@@ -9,25 +9,23 @@
 }
 
 /* line 9, ../sass/pricing.scss */
-.header-graphics > .content {
-  margin-left: 80px;
-  margin-right: 80px;
-  text-align: center;
+.header-graphics .content {
+  top: 10%;
 }
 
-/* line 15, ../sass/pricing.scss */
+/* line 12, ../sass/pricing.scss */
 .content .author-avatar {
   display: none;
 }
 
-/* line 18, ../sass/pricing.scss */
+/* line 15, ../sass/pricing.scss */
 .author .author-avatar {
   width: 54px;
   float: left;
   margin-right: 20px;
 }
 
-/* line 24, ../sass/pricing.scss */
+/* line 21, ../sass/pricing.scss */
 .author .author-info .job-title {
   font-family: Lato-Regular;
   font-size: 16px;
@@ -36,7 +34,7 @@
   margin-bottom: 0;
 }
 
-/* line 32, ../sass/pricing.scss */
+/* line 29, ../sass/pricing.scss */
 .author .author-info .author {
   font-family: Lato-Bold;
   font-size: 16px;
@@ -45,12 +43,12 @@
   margin-top: 0;
 }
 
-/* line 40, ../sass/pricing.scss */
+/* line 37, ../sass/pricing.scss */
 .contact {
   padding: 15px 15px 40px 15px;
 }
 
-/* line 44, ../sass/pricing.scss */
+/* line 42, ../sass/pricing.scss */
 .information p {
   font-family: Lato-Light;
   font-size: 16px;
@@ -59,25 +57,25 @@
   line-height: 24px;
   text-align: justify;
 }
-
-/* line 53, ../sass/pricing.scss */
+/* line 49, ../sass/pricing.scss */
 .information p b {
   font-family: Lato-Bold;
 }
-
-/* line 57, ../sass/pricing.scss */
+/* line 54, ../sass/pricing.scss */
 .information .separate-line {
   width: 100%;
   height: 2px;
   background: #F1F2F1;
 }
-
-/* line 63, ../sass/pricing.scss */
+/* line 60, ../sass/pricing.scss */
 .information .quote {
   padding: 0;
 }
-
-/* line 67, ../sass/pricing.scss */
+/* line 62, ../sass/pricing.scss */
+.information .quote .content {
+  margin-top: 30px;
+}
+/* line 64, ../sass/pricing.scss */
 .information .quote .content p {
   font-family: Lato-Bold;
   font-size: 16px;
@@ -96,30 +94,25 @@
   padding: 20px;
   text-align: center;
 }
-
-/* line 84, ../sass/pricing.scss */
+/* line 82, ../sass/pricing.scss */
 .press-mobile .title {
   font-family: Lato-Regular;
   font-size: 18px;
   color: #FFFFFF;
-  letter-spacing: 0px;
   line-height: 27px;
   text-align: center;
   margin: 0 20px 40px;
 }
-
-/* line 94, ../sass/pricing.scss */
+/* line 91, ../sass/pricing.scss */
 .press-mobile .logos {
   height: 61px;
   margin-top: 20px;
 }
-
-/* line 99, ../sass/pricing.scss */
+/* line 97, ../sass/pricing.scss */
 .press-mobile .logos a:hover {
   cursor: pointer;
 }
-
-/* line 103, ../sass/pricing.scss */
+/* line 101, ../sass/pricing.scss */
 .press-mobile .logos img {
   margin-left: 10px;
   margin-right: 10px;
@@ -158,14 +151,13 @@
   font-family: Lato-Semibold;
   font-size: 14px;
   color: #9B9B9B;
-  letter-spacing: 0px;
   padding-left: 10px !important;
   height: 45px !important;
   width: 100% !important;
   max-width: 100% !important;
 }
 
-/* line 143, ../sass/pricing.scss */
+/* line 142, ../sass/pricing.scss */
 .hs-button.primary.large {
   background: #00C26B;
   border-radius: 3px;
@@ -176,6 +168,7 @@
   width: 100%;
   height: 45px;
   border: 0;
+  -webkit-appearance: none;
 }
 
 /* line 155, ../sass/pricing.scss */
@@ -194,53 +187,48 @@
   font-family: Lato-Regular;
   font-size: 18px;
   color: #9B9B9B;
-  letter-spacing: 0px;
   text-align: center;
   margin-bottom: 100px;
 }
-
-/* line 173, ../sass/pricing.scss */
+/* line 171, ../sass/pricing.scss */
+.submitted-message:before {
+  content: "Thank you!";
+  font-family: Lato-Bold;
+  font-size: 48px;
+  color: #00C26B;
+  text-align: center;
+  margin-bottom: 40px;
+  display: block;
+}
+/* line 181, ../sass/pricing.scss */
 .submitted-message:after {
   content: "";
   font-size: 20px;
-  background: url("../images/thumb-up.png");
+  background: url("http://www.tinypulse.com/hubfs/redesign_2016/thumb-up.png");
   width: 117px;
   height: 133px;
   display: block;
   margin: 50px auto 0;
 }
 
-/* line 183, ../sass/pricing.scss */
-.submitted-message:before {
-  content: "Thank you!";
-  font-family: Lato-Bold;
-  font-size: 48px;
-  color: #00C26B;
-  letter-spacing: 0px;
-  text-align: center;
-  margin-bottom: 40px;
-  display: block;
+/* line 192, ../sass/pricing.scss */
+.hs-error-msgs li label {
+  color: #FE2851;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 196, ../sass/pricing.scss */
+  /* line 197, ../sass/pricing.scss */
   .header-graphics {
     height: 400px;
   }
 
-  /* line 200, ../sass/pricing.scss */
-  .header-graphics > .content {
-    top: auto;
-    margin: 116px auto;
-  }
-
-  /* line 205, ../sass/pricing.scss */
+  /* line 201, ../sass/pricing.scss */
   .main-content .contact {
     max-width: 960px;
     margin: auto;
     padding: 70px 0 0 0;
   }
-  /* line 209, ../sass/pricing.scss */
+  /* line 205, ../sass/pricing.scss */
   .main-content .contact:after {
     content: "";
     width: 100%;
@@ -248,7 +236,7 @@
     display: inline-block;
   }
 
-  /* line 217, ../sass/pricing.scss */
+  /* line 213, ../sass/pricing.scss */
   .contact .contact-form {
     width: 50%;
     float: left;
@@ -256,52 +244,18 @@
     padding-right: 50px;
   }
 
-  /* line 224, ../sass/pricing.scss */
+  /* line 220, ../sass/pricing.scss */
   .information {
     width: 50%;
     float: right;
     box-sizing: border-box;
     padding-left: 50px;
   }
-
-  /* line 231, ../sass/pricing.scss */
-  .information p {
-    font-family: Lato-Light;
-    font-size: 16px;
-    color: #000000;
-    letter-spacing: 0px;
-    line-height: 24px;
-  }
-  /* line 237, ../sass/pricing.scss */
+  /* line 225, ../sass/pricing.scss */
   .information p:first-child {
     margin-top: 0;
   }
-
-  /* line 242, ../sass/pricing.scss */
-  .information p b {
-    font-family: Lato-Bold;
-  }
-
-  /* line 246, ../sass/pricing.scss */
-  .information .separate-line {
-    width: 100%;
-    height: 2px;
-    background: #F1F2F1;
-  }
-
-  /* line 252, ../sass/pricing.scss */
-  .information .quote {
-    padding: 0;
-  }
-
-  /* line 256, ../sass/pricing.scss */
-  .content {
-    margin: 0;
-    text-align: left;
-    margin-top: 30px;
-  }
-
-  /* line 261, ../sass/pricing.scss */
+  /* line 229, ../sass/pricing.scss */
   .information .quote .content p {
     width: calc(100% - 64px);
     margin-right: 10px;
@@ -311,72 +265,53 @@
     line-height: 27px;
     display: inline-block;
   }
-
-  /* line 271, ../sass/pricing.scss */
+  /* line 238, ../sass/pricing.scss */
   .information .quote .content .author-avatar {
     width: 54px;
     float: right;
     display: block;
     vertical-align: top;
   }
-
-  /* line 278, ../sass/pricing.scss */
-  .information .quote .job-title {
-    font-family: Lato-Regular;
-    font-size: 14px;
-    color: #9B9B9B;
-    line-height: 20px;
-  }
-
-  /* line 285, ../sass/pricing.scss */
+  /* line 245, ../sass/pricing.scss */
   .information .quote .author {
-    font-family: Lato-Bold;
     font-size: 14px;
-    color: #9B9B9B;
-    line-height: 20px;
   }
-
-  /* line 292, ../sass/pricing.scss */
+  /* line 247, ../sass/pricing.scss */
   .information .quote .author .author-avatar {
     display: none;
   }
 
-  /* line 296, ../sass/pricing.scss */
+  /* line 254, ../sass/pricing.scss */
   .press-mobile {
     display: none;
   }
 
-  /* line 300, ../sass/pricing.scss */
+  /* line 258, ../sass/pricing.scss */
   .press {
     display: block;
     background-image: linear-gradient(-60deg, rgba(123, 32, 138, 0.82) 0%, #FF5C5C 100%);
     padding: 20px 190px 34px;
     margin-top: 64px;
   }
-
-  /* line 307, ../sass/pricing.scss */
+  /* line 263, ../sass/pricing.scss */
   .press .title {
     font-family: Lato-Regular;
     font-size: 20px;
     color: #FFFFFF;
-    letter-spacing: 0px;
     margin-bottom: 10px;
     text-align: center;
   }
-
-  /* line 316, ../sass/pricing.scss */
+  /* line 270, ../sass/pricing.scss */
   .press .logos {
     height: 61px;
     margin-top: 20px;
     text-align: center;
   }
-
-  /* line 322, ../sass/pricing.scss */
+  /* line 274, ../sass/pricing.scss */
   .press .logos a:hover {
     cursor: pointer;
   }
-
-  /* line 326, ../sass/pricing.scss */
+  /* line 277, ../sass/pricing.scss */
   .press .logos img {
     margin-left: 20px;
     margin-right: 20px;
@@ -385,18 +320,18 @@
     vertical-align: middle;
   }
 
-  /* line 336, ../sass/pricing.scss */
+  /* line 289, ../sass/pricing.scss */
   .hbspt-form {
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  /* line 341, ../sass/pricing.scss */
+  /* line 294, ../sass/pricing.scss */
   .hs-form-required {
     display: none;
   }
 
-  /* line 345, ../sass/pricing.scss */
+  /* line 298, ../sass/pricing.scss */
   .hs-input {
     background: #FFFFFF;
     border: 1px solid #DADADA;
@@ -404,11 +339,18 @@
     font-family: Lato-Semibold;
     font-size: 14px;
     color: #9B9B9B;
-    letter-spacing: 0px;
   }
 
-  /* line 355, ../sass/pricing.scss */
-  .hs-button.primary.large {
+  /* line 306, ../sass/pricing.scss */
+  .hs_submit {
+    margin-top: 50px;
+  }
+  /* line 308, ../sass/pricing.scss */
+  .hs_submit .actions {
+    text-align: center;
+  }
+  /* line 311, ../sass/pricing.scss */
+  .hs_submit .actions .hs-button.primary.large {
     background: #00C26B;
     border-radius: 3px;
     font-family: Lato-Bold;
@@ -417,50 +359,23 @@
     letter-spacing: 0.14px;
     height: 45px;
     border: 0;
+    max-width: 250px;
   }
 
-  /* line 366, ../sass/pricing.scss */
+  /* line 325, ../sass/pricing.scss */
   .hs-form .hs-button:hover:not(.inactive), .hs-form .hs-button:focus:not(.inactive) {
     border: 0 !important;
     box-shadow: none !important;
   }
 
-  /* line 371, ../sass/pricing.scss */
+  /* line 330, ../sass/pricing.scss */
   .hs-form .hs-button:active {
     background: #00C26B !important;
   }
 
-  /* line 375, ../sass/pricing.scss */
+  /* line 334, ../sass/pricing.scss */
   .submitted-message {
-    font-family: Lato-Regular;
-    font-size: 18px;
-    color: #9B9B9B;
-    letter-spacing: 0px;
-    text-align: center;
     margin-bottom: 50px;
     padding-right: 100px;
-  }
-
-  /* line 385, ../sass/pricing.scss */
-  .submitted-message:after {
-    content: "";
-    font-size: 20px;
-    background: url("../images/thumb-up.png");
-    width: 117px;
-    height: 133px;
-    display: block;
-    margin: 50px auto 0;
-  }
-
-  /* line 395, ../sass/pricing.scss */
-  .submitted-message:before {
-    content: "Thank you!";
-    font-family: Lato-Bold;
-    font-size: 48px;
-    color: #00C26B;
-    letter-spacing: 0px;
-    text-align: center;
-    margin-bottom: 40px;
-    display: block;
   }
 }
