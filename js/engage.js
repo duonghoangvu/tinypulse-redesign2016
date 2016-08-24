@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
   function showNextBlock(elementClass, element) {
     $(elementClass).removeClass('active');
-    nextBlock = $(element).next();
+    nextBlock = $(element).next(elementClass);
     if(nextBlock.length == 1){
       nextBlock.addClass('active');
     }else{
@@ -50,18 +50,38 @@ jQuery(document).ready(function($) {
     showNextBlock('.how-it-works .block-content', this);
   });
 
-  $(".why .speaker").swipe({
-    swipe:function (event, direction, distance, duration, fingerCount) {
-      if(direction == 'left'){
-        showNextBlock('.why .speaker', this);
-      }else{
-        showPrevBlock('.why .speaker', this);
-      }
-    },
-    fingers:$.fn.swipe.fingers.ALL,
-    triggerOnTouchEnd:false,
-    threshold:150
-  }).on("click",function(){
-    showNextBlock('.why .speaker', this);
+  function speakerMobileAction(){
+    $(".why .speaker").swipe({
+      swipe:function (event, direction, distance, duration, fingerCount) {
+        if(direction == 'left'){
+          showNextBlock('.why .speaker', this);
+        }else{
+          showPrevBlock('.why .speaker', this);
+        }
+      },
+      fingers:$.fn.swipe.fingers.ALL,
+      triggerOnTouchEnd:false,
+      threshold:150
+    }).on("click",function(){
+      showNextBlock('.why .speaker', this);
+    });
+  }
+  $(window).on('resize', function(){
+    if ($(window).width() < 960){
+      speakerMobileAction();
+    } else {
+      $(".why .speaker").on("click",function(){});
+    }
+  });
+  if ($(window).width() < 960){
+    speakerMobileAction();
+  } else {
+    $(".why .speaker").on("click",function(){});
+  }
+  $('.prev-speaker').click(function(){
+    showPrevBlock('.speaker', $(this).parent());
+  });
+  $('.next-speaker').click(function(){
+    showNextBlock('.speaker', $(this).parent());
   });
 });

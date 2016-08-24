@@ -323,12 +323,16 @@
       margin: 30px 0px;
       img {
         width: 85px;
+        margin: 0 auto;
       }
     }
     .speaker-name{
       font-family: $font_regular;
       line-height: 22px;
     }
+  }
+  .prev-speaker, .next-speaker {
+    display: none;
   }
   .read-more {
     width: 300px;
@@ -566,6 +570,7 @@
       font-size: 0;
     }
     .speakers {
+      text-align: center;
       .speaker {
         .slide-icon {
           display: none;
@@ -578,19 +583,45 @@
           display: inline-block;
           vertical-align: top;
           height: 100%;
+          position: relative;
+          text-align: left;
+          .speaker-name {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+          }
         }
         .speaker-content {
           max-width: 800px;
           font-size: 0;
           height: 200px;
+          display: inline-block;
           p {
             padding: 0 15px;
           }
         }
       }
     }
+    .prev-speaker, .next-speaker {
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      height: 200px;
+      top: 50%;
+      transform: translate(0, 35%);
+    }
+    .prev-speaker {
+      margin-right: 15px;
+    }
+    .next-speaker {
+      margin-left: 15px;
+    }
     .read-more {
       margin-top: 50px;
+    }
+    .control-button img {
+      display: inline-block;
+      max-width: 30px;
     }
   }
   .how-it-works {
@@ -600,10 +631,13 @@
     display: block;
     padding-left: 15px;
     padding-right: 15px;
+    height: 500px;
     .block-content {
-      display: none;
       margin-bottom: 100px;
       margin-top: 60px;
+      width: 900px;
+      position: absolute;
+      left: 0;
       .content-title {
         font-size: 20px;
         color: #1C94EE;
@@ -624,9 +658,15 @@
       padding-right: 15px;
       text-align: center;
       font-size: 0px;
-      .hiw-icon {
+      position: relative;
+      .hiw-content {
         display: inline-block;
         width: 20%;
+        vertical-align: top;
+      }
+      .hiw-icon {
+        text-align: center;
+        position: relative;
       }
       .icon {
         width: 63px;
@@ -634,6 +674,8 @@
         display: inline-block;
         background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/engage/how-it-works/hiw-small-sprite.png);
         background-repeat: no-repeat;
+      }
+      .hiw-1 {
         background-position: 0 0;
       }
       .hiw-2 {
@@ -648,11 +690,40 @@
       .hiw-5 {
         background-position: -338px 0;
       }
-      .hiw-icon:hover {
-        .icon{
-          background-position-y: -115.5px;
-        }
+    }
+    .hiw-wrapper {
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      top: 18px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+    .hiw-icons:hover .hiw-content:hover ,.hiw-icons:focus .hiw-content:focus, .hiw-icons .hiw-default {
+      .icon {
+        background-position-y: -115.5px;
       }
+      .block-content {
+        display: block;
+        transition: all .3s;
+      }
+      .hiw-wrapper {
+        background-color: rgba(28, 148, 238, 0.1);
+      }
+    }
+    .hiw-icon, .hiw-icons:hover .hiw-icon, .hiw-icons:focus .hiw-icon {
+      .icon {
+        background-position-y: 0px;
+      }
+      .hiw-wrapper {
+        background-color: transparent;
+      }
+    }
+    .block-content, .hiw-icons:hover .block-content {
+      display: none;
+      transition: all .3s;
     }
   }
   .clients {
