@@ -974,21 +974,40 @@ footer .copyright span {
 }
 
 /* line 15, ../sass/contact.scss */
-.contact-form .alert-error, .contact-form label {
-  display: none;
+.contact-form .block-desc {
+  margin: 0;
 }
 /* line 18, ../sass/contact.scss */
-.contact-form .input {
-  width: 100%;
+.contact-form .alert-error {
+  font-size: 14px;
+  font-family: "Lato-Bold";
+  color: #b94a48;
+  padding: 15px;
+  opacity: 0;
 }
-/* line 21, ../sass/contact.scss */
-.contact-form ul {
+/* line 25, ../sass/contact.scss */
+.contact-form .error {
+  border: 1px solid #b94a48;
+}
+/* line 28, ../sass/contact.scss */
+.contact-form label, .contact-form ul {
   display: none !important;
 }
-/* line 24, ../sass/contact.scss */
+/* line 31, ../sass/contact.scss */
+.contact-form fieldset {
+  margin: 0 auto !important;
+  -webkit-appearance: none;
+}
+/* line 35, ../sass/contact.scss */
+.contact-form form {
+  padding: 0 15px;
+}
+/* line 38, ../sass/contact.scss */
+.contact-form input.hs-input, .contact-form textarea, .contact-form select {
+  width: 100% !important;
+}
+/* line 41, ../sass/contact.scss */
 .contact-form input, .contact-form textarea, .contact-form select {
-  max-width: 315px;
-  width: 100%;
   border: 1px solid #DADADA;
   border-radius: 2px;
   margin-bottom: 20px;
@@ -997,33 +1016,33 @@ footer .copyright span {
   font-family: "Lato-Semibold";
   box-sizing: border-box;
 }
-/* line 35, ../sass/contact.scss */
+/* line 50, ../sass/contact.scss */
 .contact-form input {
   height: 45px;
   padding: 0 15px;
 }
-/* line 39, ../sass/contact.scss */
+/* line 54, ../sass/contact.scss */
 .contact-form select {
   height: 45px;
   padding: 0 15px;
   background: transparent;
   -webkit-appearance: none;
 }
-/* line 45, ../sass/contact.scss */
+/* line 60, ../sass/contact.scss */
 .contact-form .hs_type {
   position: relative;
 }
-/* line 47, ../sass/contact.scss */
+/* line 62, ../sass/contact.scss */
 .contact-form .hs_type .input:after {
   content: "\f078";
   position: absolute;
-  right: 37px;
-  top: 15px;
+  right: 24px;
+  top: 16px;
   font: normal normal normal 14px/1 FontAwesome;
   -webkit-font-smoothing: antialiased;
   color: #9B9B9B;
 }
-/* line 57, ../sass/contact.scss */
+/* line 72, ../sass/contact.scss */
 .contact-form .actions input {
   color: #FFF;
   background-color: #00C26B;
@@ -1032,10 +1051,103 @@ footer .copyright span {
   padding: 10px 15px;
   border: none;
   width: auto;
+  margin-bottom: 0px;
 }
-/* line 66, ../sass/contact.scss */
+/* line 82, ../sass/contact.scss */
 .contact-form textarea {
   height: 153px;
   resize: none;
   padding: 15px;
+}
+
+/* line 89, ../sass/contact.scss */
+.social-share hr {
+  color: #DADADA;
+  width: 30%;
+  margin: 0 auto;
+}
+/* line 94, ../sass/contact.scss */
+.social-share .block-title {
+  font-size: 16px;
+  color: #4A4A4A;
+  font-family: "Lato-Semibold";
+  line-height: 19px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 102, ../sass/contact.scss */
+.social-share .icons {
+  width: 100%;
+  text-align: center;
+}
+/* line 106, ../sass/contact.scss */
+.social-share .social-share-icon {
+  display: inline-block;
+  background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/social-share-sprite.png);
+  background-repeat: no-repeat;
+  margin-right: 15px;
+  margin-bottom: 50px;
+}
+/* line 112, ../sass/contact.scss */
+.social-share .social-share-icon:hover {
+  background-position-y: -35px;
+}
+/* line 116, ../sass/contact.scss */
+.social-share .fb {
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  background-size: 133px 65px;
+}
+/* line 122, ../sass/contact.scss */
+.social-share .tw {
+  width: 32px;
+  height: 30px;
+  background-position: -34px 0;
+  background-size: 133px 65px;
+}
+/* line 128, ../sass/contact.scss */
+.social-share .in {
+  width: 32px;
+  height: 30px;
+  background-position: -67px 0;
+  background-size: 133px 65px;
+}
+/* line 134, ../sass/contact.scss */
+.social-share .gg {
+  width: 35px;
+  height: 30px;
+  background-position: -100px 0;
+  background-size: 133px 65px;
+  margin-right: 0px;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 143, ../sass/contact.scss */
+  .hs-form fieldset {
+    max-width: none !important;
+  }
+
+  /* line 146, ../sass/contact.scss */
+  .social-share {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  /* line 149, ../sass/contact.scss */
+  .social-share .container {
+    padding: 0 15px;
+  }
+  /* line 152, ../sass/contact.scss */
+  .social-share hr {
+    margin-left: 0px;
+  }
+  /* line 155, ../sass/contact.scss */
+  .social-share .block-title {
+    text-align: left;
+    padding: 0;
+  }
+  /* line 159, ../sass/contact.scss */
+  .social-share .icons {
+    text-align: left;
+  }
 }
