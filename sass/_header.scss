@@ -193,8 +193,8 @@ header{
   }
   .logo{
     display: inline-block;
-    width: 99px;
-    height: 17px;
+    width: 120px;
+    height: 20px;
     z-index: 10;
     position: relative;
     img{
@@ -211,6 +211,7 @@ header{
   .hamburger{
     position: absolute;
     right: 15px;
+    top: 13px;
     span{
       width: 25px;
       height: 3px;
@@ -294,7 +295,8 @@ header{
     bottom: 0;
     right: 0;
     padding: 60px 10px 40px;
-    width: 320px;
+    width: 100%;
+    max-width: 375px;
     box-sizing: border-box;
     transform: translateX(400px);
     transition: all 0.3s;
@@ -325,6 +327,9 @@ header{
       padding: 0;
       position: relative;
       z-index: 1;
+      overflow: scroll;
+      height: 100%;
+
       li{
         list-style-type: none;
         display: inline-block;
