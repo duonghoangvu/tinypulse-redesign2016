@@ -1,6 +1,8 @@
 jQuery(document).ready(function($) {
 	var subnav = $('.subnav'), 
-		body = $('body');
+		body = $('body'), 
+    topMenuH = 0,
+    scroolStop = 0;
 
   $('.main-mobile-nav-container nav').height($(window).height());
   
@@ -13,6 +15,9 @@ jQuery(document).ready(function($) {
   });
   
   $(window).on('resize', function(){
+    topMenuH = ($(window).width() >= 960) ? 76 : 0;
+    scrollStop = ($(window).width() >= 960) ? 126 : 40;
+
     if ($(window).width() < 960){
 			$('#site-footer').find('ul li:first-child').off('click').on('click', function(e){
 				$(this).closest('ul').toggleClass('expanded');
@@ -21,20 +26,38 @@ jQuery(document).ready(function($) {
       	e.preventDefault();
 	  		$(this).closest('ul').toggleClass('expanded');
 	  	});
-      $('.subnav').find('a:not(#sub-nav-trigger)').off('click').on('click', function(e){
-        e.preventDefault();
-        $('.subnav li').removeClass('active');
-        $(this).closest('li').addClass('active');
-        $('#sub-nav-trigger').trigger('click');
-      });
-		}
+    }
+    $('.subnav').find('a:not(#sub-nav-trigger)').off('click').on('click', function(e){
+      e.preventDefault();
+      $('.subnav li').removeClass('active');
+      $(this).closest('li').addClass('active');
+      $('#sub-nav-trigger').trigger('click');
+      var content = $(this).data('content'), 
+        block = $('[data-block=' + content + ']').filter(':visible');
+      if (block.length > 0){
+        scrollTo(block);      
+      }
+    });
 	}).on('scroll', function(){
 		var scrollTop = $(window).scrollTop();
-		if (scrollTop >= subnav.offset().top){
-			body.addClass('subnav-sticked');
-		} else {
-			body.removeClass('subnav-sticked');
-		}
+    // *********************************************** subnav
+    if (scrollTop + topMenuH >= subnav.offset().top){
+      body.addClass('subnav-sticked');
+    } else {
+      body.removeClass('subnav-sticked');
+    }
+
+    var blocks = $('[data-block]');
+    blocks.each(function(index, block){
+        var currentBlock = $(block), 
+            currentBlockTop = currentBlock.offset().top,
+            currentBlockBottom = currentBlockTop + currentBlock.height();
+        if (scrollTop + scrollStop >= currentBlockTop && scrollTop + scrollStop <= currentBlockBottom){
+            var destinationBlock = currentBlock.attr('data-block');
+            subnav.find('li').removeClass('active');
+            subnav.find('[data-content=' + destinationBlock + ']').closest('li').addClass('active');
+        }
+    });
 	}).trigger('resize');
 
 	var scroller = new Scroller();
@@ -42,6 +65,13 @@ jQuery(document).ready(function($) {
 	scroller.dom.nav = $('header .main-nav-container');
 	scroller.dom.mobileNav = $('.main-mobile-nav-container');
 	scroller.init();
+
+  var scrollTo = function(sel){
+    var ele = $(sel);
+    $('body, html').animate({
+      scrollTop: ele.offset().top - scrollStop
+    }, 750);
+  }
 });
 
 window.requestAnimFrame = (function()
