@@ -3,15 +3,14 @@ jQuery(document).ready(function($) {
 		body = $('body'), 
     topMenuH = 0,
     scroolStop = 0;
-
-  $('.main-mobile-nav-container nav').height($(window).height());
   
-  $('.hamburger').click(function() {
-    $('body').addClass('mobile-nav-opened');
+  $('.hamburger').click(function(e) {
+    e.preventDefault();
+    $('body').toggleClass('mobile-nav-opened');
   });
-  
-  $(".cross").click(function() {
-    $('body').removeClass('mobile-nav-opened');
+  $('.main-mobile-nav-container').find('.has-sub a').off('click').on('click', function(e){
+    e.preventDefault();
+    $(this).closest('li').toggleClass('expanded');
   });
   
   $(window).on('resize', function(){
