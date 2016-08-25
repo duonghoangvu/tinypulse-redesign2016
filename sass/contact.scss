@@ -47,10 +47,11 @@
     .input:after {
       content: "\f078";
       position: absolute;
-      right: 15px;
-      top: 12px;
+      right: 37px;
+      top: 15px;
       font: normal normal normal 14px/1 FontAwesome;
       -webkit-font-smoothing: antialiased;
+      color: #9B9B9B;
     }
   }
   .actions input {
