@@ -460,7 +460,7 @@ header{
       }
     }
     &.active{
-      display: block;
+      display: inline-block;
       font-family: $font_bold;
     }
   }
@@ -581,6 +581,54 @@ header{
         padding-top: 120px;
         a{
           font-size: 24px;
+        }
+      }
+    }
+  }
+  .subnav{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
+    background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    height: 50px;
+    .container{
+      max-width: 960px;
+      margin: 0 auto;
+      background: none;
+    }
+    ul{
+      text-align: center;
+      max-height: inherit;
+      li{
+        display: inline-block;
+        width: 150px;
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          height: 3px;
+          left: 0;
+          right: 0;
+          transition: all 0.3s;
+          background: #fff;
+          transform: scaleX(0);
+        }
+        &:first-child{
+          display: none;
+        }
+        &.active, &:hover{
+          &:before{
+            transform: scaleX(1);
+          }
+          a{
+            font-family: $font_bold;
+          }
+        }
+        a{
+          font-size: 16px;
+          padding: 14px 15px 17px;
         }
       }
     }

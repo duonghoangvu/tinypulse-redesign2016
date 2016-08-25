@@ -96,70 +96,7 @@
   }
 }
 .active {
-  display: block !important;
-}
-.engage-subnav{
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
-	background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	text-align: left;
-  ul{
-    margin: 0;
-    padding: 0;
-    position: relative;
-    max-height: 40px;
-    overflow: hidden;
-    transition: max-height 0.75s;
-    &.expanded{
-      max-height: 300px;
-      li{
-        display: inline-block;
-        &:first-child{
-          height: 0;
-          a:after{
-            content: "\f077";
-          }
-        }
-      }
-    }
-  }
-  li{
-    list-style: none;
-    display: none;
-    width: 100%;
-    &:first-child{
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      display: block;
-      a{
-        display: block;
-        padding: 0;
-        height: 100%;
-        &:after{
-          content: "\f078";
-          position: absolute;
-          right: 15px;
-          top: 12px;
-          font: normal normal normal 14px/1 FontAwesome;
-          -webkit-font-smoothing: antialiased;
-        }
-      }
-    }
-    &.active{
-      display: block;
-      font-family: $font_bold;
-    }
-  }
-	a{
-		display: block;
-    font-size: 16px;
-    color: #FFF;
-    font-family: $font_regular;
-    padding: 8px 15px 10px;
-	}
+  display: block;
 }
 .overview-desktop {
   display: none;
