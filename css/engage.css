@@ -1,0 +1,1661 @@
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("fonts/Lato-Regular.eot");
+  src: url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("fonts/Lato-Light.eot");
+  src: url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url("fonts/Lato-Semibold.eot");
+  src: url("fonts/Lato-Semibold.woff2") format("woff2"), url("fonts/Lato-Semibold.woff") format("woff"), url("fonts/Lato-Semibold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("fonts/Lato-Bold.eot");
+  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
+}
+/* line 2, ../sass/_header.scss */
+header .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0;
+}
+
+/* line 11, ../sass/_header.scss */
+.main-nav-container {
+  display: none;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  transform: translate3d(0, 0, 0);
+}
+/* line 24, ../sass/_header.scss */
+.main-nav-container.sticked {
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #DADADA;
+}
+/* line 32, ../sass/_header.scss */
+.main-nav-container.sticked .main-nav nav ul li:hover, .main-nav-container.sticked .main-nav nav ul li.active {
+  background: rgba(115, 115, 115, 0.3);
+}
+/* line 35, ../sass/_header.scss */
+.main-nav-container.sticked .main-nav nav ul li a {
+  color: #4A4A4A;
+}
+/* line 40, ../sass/_header.scss */
+.main-nav-container.sticked .main-nav nav .sub {
+  background: #fff;
+  border-color: #DADADA;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  top: 55px;
+}
+
+/* line 52, ../sass/_header.scss */
+.main-nav {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  position: relative;
+}
+/* line 58, ../sass/_header.scss */
+.main-nav:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+}
+/* line 64, ../sass/_header.scss */
+.main-nav .logo {
+  display: inline-block;
+  width: 99px;
+}
+/* line 67, ../sass/_header.scss */
+.main-nav .logo img {
+  width: 100%;
+}
+/* line 71, ../sass/_header.scss */
+.main-nav nav {
+  float: right;
+}
+/* line 73, ../sass/_header.scss */
+.main-nav nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 76, ../sass/_header.scss */
+.main-nav nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+/* line 83, ../sass/_header.scss */
+.main-nav nav ul li:hover, .main-nav nav ul li.active {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 85, ../sass/_header.scss */
+.main-nav nav ul li:hover .sub, .main-nav nav ul li.active .sub {
+  height: inherit;
+  opacity: 1;
+}
+/* line 91, ../sass/_header.scss */
+.main-nav nav ul li.has-sub:before {
+  content: "";
+  height: 70px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  z-index: 0;
+}
+/* line 99, ../sass/_header.scss */
+.main-nav nav ul li.has-sub:hover:before {
+  display: block;
+}
+/* line 103, ../sass/_header.scss */
+.main-nav nav ul li.contact-sales {
+  position: relative;
+  top: 3px;
+}
+/* line 106, ../sass/_header.scss */
+.main-nav nav ul li.contact-sales a {
+  font-size: 24px;
+  padding: 0 10px;
+}
+/* line 111, ../sass/_header.scss */
+.main-nav nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 4px 10px 6px;
+  font-size: 16px;
+  font-family: "Lato-Semibold";
+  transition: all 0.3s;
+  position: relative;
+}
+/* line 120, ../sass/_header.scss */
+.main-nav nav ul li a.signup {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  padding: 6px 20px 8px;
+  line-height: normal;
+}
+/* line 125, ../sass/_header.scss */
+.main-nav nav ul li a.signup:hover {
+  background: #fff;
+  color: #000;
+}
+/* line 133, ../sass/_header.scss */
+.main-nav nav .sub {
+  transition: opacity 0.3s;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 3px 3px;
+  top: 45px;
+  left: 0;
+}
+/* line 144, ../sass/_header.scss */
+.main-nav nav .sub li {
+  border-radius: 0;
+  margin-left: 0;
+  display: inline-block;
+  width: 100%;
+  min-width: 150px;
+}
+/* line 150, ../sass/_header.scss */
+.main-nav nav .sub li a {
+  padding: 8px 10px 10px;
+}
+
+/* line 158, ../sass/_header.scss */
+.main-mobile-nav-container {
+  position: fixed;
+  z-index: 9;
+  transform: translate3d(0, 0, 0);
+  left: 0;
+  right: 0;
+  top: 0;
+}
+/* line 165, ../sass/_header.scss */
+.main-mobile-nav-container.sticked {
+  box-shadow: 0 0 5px #333;
+}
+/* line 167, ../sass/_header.scss */
+.main-mobile-nav-container.sticked .triggers {
+  background: white;
+}
+/* line 169, ../sass/_header.scss */
+.main-mobile-nav-container.sticked .triggers .hamburger, .main-mobile-nav-container.sticked .triggers .cross {
+  color: #000 !important;
+}
+/* line 174, ../sass/_header.scss */
+.main-mobile-nav-container.sticked .logo .color {
+  opacity: 1;
+}
+/* line 177, ../sass/_header.scss */
+.main-mobile-nav-container.sticked .logo .white {
+  opacity: 0;
+}
+/* line 182, ../sass/_header.scss */
+.main-mobile-nav-container .triggers {
+  padding: 10px 15px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+  transition: all 0.3s;
+}
+/* line 191, ../sass/_header.scss */
+.main-mobile-nav-container .logo {
+  display: inline-block;
+  width: 99px;
+  height: 17px;
+  z-index: 10;
+  position: relative;
+}
+/* line 197, ../sass/_header.scss */
+.main-mobile-nav-container .logo img {
+  transition: all 0.3s;
+  width: 100%;
+  position: absolute;
+  top: 2px;
+}
+/* line 203, ../sass/_header.scss */
+.main-mobile-nav-container .logo .color {
+  opacity: 0;
+}
+/* line 207, ../sass/_header.scss */
+.main-mobile-nav-container .hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 37px;
+  padding: 0px 15px;
+  color: #fff;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  z-index: 10;
+  margin: 0;
+}
+/* line 224, ../sass/_header.scss */
+.main-mobile-nav-container .cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 5px 15px 0px;
+  color: #FFF;
+  border: 0;
+  font-size: 3em;
+  line-height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10;
+  display: none;
+  margin: 0;
+}
+/* line 241, ../sass/_header.scss */
+.main-mobile-nav-container nav {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: left;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding-top: 40px;
+  transition: all 0.3s;
+  position: absolute;
+  transform: translateX(250px);
+  overflow: auto;
+  z-index: 1;
+}
+/* line 254, ../sass/_header.scss */
+.main-mobile-nav-container nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 258, ../sass/_header.scss */
+.main-mobile-nav-container nav > ul {
+  margin: 0;
+}
+/* line 260, ../sass/_header.scss */
+.main-mobile-nav-container nav > ul li {
+  list-style: none;
+}
+/* line 262, ../sass/_header.scss */
+.main-mobile-nav-container nav > ul li a {
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+/* line 270, ../sass/_header.scss */
+.main-mobile-nav-container nav > ul li a.active:before {
+  content: "";
+  width: 3px;
+  top: 5px;
+  bottom: 5px;
+  left: 0;
+  position: absolute;
+  background: #fff;
+}
+/* line 282, ../sass/_header.scss */
+.main-mobile-nav-container nav > ul > li {
+  border-bottom: 1px solid #333;
+}
+/* line 286, ../sass/_header.scss */
+.main-mobile-nav-container nav .sub {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+/* line 291, ../sass/_header.scss */
+.main-mobile-nav-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* line 305, ../sass/_header.scss */
+.mobile-nav-opened .main-mobile-nav-container {
+  height: 100%;
+}
+/* line 309, ../sass/_header.scss */
+.mobile-nav-opened .main-mobile-nav-container.sticked .triggers .cross, .mobile-nav-opened .main-mobile-nav-container.sticked .triggers .hamburger {
+  color: #fff !important;
+}
+/* line 314, ../sass/_header.scss */
+.mobile-nav-opened .main-mobile-nav-container .cross {
+  display: block;
+}
+/* line 317, ../sass/_header.scss */
+.mobile-nav-opened .main-mobile-nav-container .hamburger {
+  display: none;
+}
+/* line 320, ../sass/_header.scss */
+.mobile-nav-opened .main-mobile-nav-container nav {
+  transform: translateX(0);
+}
+/* line 323, ../sass/_header.scss */
+.mobile-nav-opened .main-mobile-nav-container .overlay {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+/* line 331, ../sass/_header.scss */
+.header-graphics {
+  background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+/* line 340, ../sass/_header.scss */
+.header-graphics:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(-180deg, #000000 0%, rgba(171, 171, 171, 0.19) 38%, rgba(0, 0, 0, 0.58) 90%);
+}
+/* line 349, ../sass/_header.scss */
+.header-graphics .content {
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 110px;
+}
+/* line 355, ../sass/_header.scss */
+.header-graphics .content h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Lato-Bold";
+  font-weight: normal;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 1.12px;
+  text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+/* line 367, ../sass/_header.scss */
+.header-graphics .content .try-it-form {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  margin: 70px 0 50px 0;
+  font-size: 0;
+  border-radius: 5px;
+}
+/* line 373, ../sass/_header.scss */
+.header-graphics .content .try-it-form input, .header-graphics .content .try-it-form button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  border-radius: 4px;
+  margin: 0;
+  border: 0;
+  transition: width 0.3s;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 0 10px;
+  min-height: inherit;
+  text-transform: none;
+}
+/* line 387, ../sass/_header.scss */
+.header-graphics .content .try-it-form input {
+  width: 100%;
+  color: #9b9b9b;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Lato-Semibold";
+  font-size: 14px;
+}
+/* line 395, ../sass/_header.scss */
+.header-graphics .content .try-it-form button {
+  width: 100%;
+  background: #00C26B;
+  color: #fff;
+  font-family: "Lato-Bold";
+  font-size: 16px;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 407, ../sass/_header.scss */
+  .main-nav-container {
+    height: 76px;
+    display: block;
+  }
+  /* line 410, ../sass/_header.scss */
+  .main-nav-container.sticked {
+    background: #fff;
+  }
+  /* line 415, ../sass/_header.scss */
+  .main-nav-container.sticked nav ul li a {
+    color: #000;
+  }
+  /* line 417, ../sass/_header.scss */
+  .main-nav-container.sticked nav ul li a.signup {
+    border-color: #00C26B;
+    color: #00C26B;
+  }
+  /* line 420, ../sass/_header.scss */
+  .main-nav-container.sticked nav ul li a.signup:hover {
+    background: #00C26B;
+    color: #fff;
+  }
+  /* line 431, ../sass/_header.scss */
+  .main-nav-container.sticked .main-nav .logo .color {
+    opacity: 1;
+  }
+  /* line 434, ../sass/_header.scss */
+  .main-nav-container.sticked .main-nav .logo .white {
+    opacity: 0;
+  }
+
+  /* line 442, ../sass/_header.scss */
+  .main-nav .logo {
+    width: 150px;
+    height: 28px;
+    margin-top: 7px;
+    position: relative;
+  }
+  /* line 447, ../sass/_header.scss */
+  .main-nav .logo img {
+    transition: all 0.3s;
+    position: absolute;
+  }
+  /* line 451, ../sass/_header.scss */
+  .main-nav .logo .color {
+    opacity: 0;
+  }
+  /* line 455, ../sass/_header.scss */
+  .main-nav nav {
+    display: block;
+    margin-top: -5px;
+  }
+
+  /* line 461, ../sass/_header.scss */
+  .main-mobile-nav-container {
+    display: none;
+  }
+
+  /* line 465, ../sass/_header.scss */
+  .header-graphics {
+    background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/large/header-bg.png);
+    height: 650px;
+  }
+  /* line 468, ../sass/_header.scss */
+  .header-graphics:before {
+    display: none;
+  }
+  /* line 471, ../sass/_header.scss */
+  .header-graphics .content {
+    position: relative;
+    top: 50%;
+    max-width: 600px;
+    margin-top: -118px;
+  }
+  /* line 476, ../sass/_header.scss */
+  .header-graphics .content h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  /* line 480, ../sass/_header.scss */
+  .header-graphics .content .try-it-form {
+    max-width: 450px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 0;
+  }
+  /* line 485, ../sass/_header.scss */
+  .header-graphics .content .try-it-form input {
+    width: 68%;
+    border-radius: 4px 0 0 4px;
+    margin: 0;
+    text-align: left;
+  }
+  /* line 491, ../sass/_header.scss */
+  .header-graphics .content .try-it-form button {
+    width: 32%;
+    border-radius: 0 4px 4px 0;
+    font-size: 18px;
+  }
+  /* line 497, ../sass/_header.scss */
+  .header-graphics .content .meet-consultant {
+    padding-top: 120px;
+  }
+  /* line 499, ../sass/_header.scss */
+  .header-graphics .content .meet-consultant a {
+    font-size: 24px;
+  }
+}
+/* line 2, ../sass/_footer.scss */
+footer .container {
+  padding: 20px 30px;
+}
+/* line 5, ../sass/_footer.scss */
+footer ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f1f2f2;
+}
+/* line 12, ../sass/_footer.scss */
+footer ul:last-child {
+  border-bottom: 0;
+  margin: 0;
+}
+/* line 16, ../sass/_footer.scss */
+footer ul li {
+  font-size: 18px;
+  list-style-type: none;
+  margin-bottom: 6px;
+  display: none;
+  cursor: pointer;
+  line-height: normal;
+}
+/* line 24, ../sass/_footer.scss */
+footer ul li:first-child {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 28, ../sass/_footer.scss */
+footer ul li:first-child:focus {
+  outline: none;
+}
+/* line 31, ../sass/_footer.scss */
+footer ul li:first-child:after {
+  content: "+";
+  color: #9B9B9B;
+  position: absolute;
+  right: 0;
+  top: -7px;
+  font-size: 30px;
+  font-family: "Lato-Light";
+}
+/* line 41, ../sass/_footer.scss */
+footer ul li strong {
+  font-family: "Lato-Bold";
+  margin-bottom: 5px;
+  display: inline-block;
+}
+/* line 46, ../sass/_footer.scss */
+footer ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+/* line 52, ../sass/_footer.scss */
+footer ul.expanded li:first-child:after {
+  content: "-";
+  font-size: 50px;
+  top: -22px;
+}
+/* line 57, ../sass/_footer.scss */
+footer ul.expanded li {
+  display: block;
+}
+/* line 62, ../sass/_footer.scss */
+footer .copyright {
+  background: #F1F2F1;
+  text-align: center;
+  line-height: 30px;
+}
+/* line 66, ../sass/_footer.scss */
+footer .copyright .container {
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* line 70, ../sass/_footer.scss */
+footer .copyright span {
+  display: block;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 79, ../sass/_footer.scss */
+  footer {
+    padding: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  /* line 86, ../sass/_footer.scss */
+  footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  /* line 90, ../sass/_footer.scss */
+  footer ul {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    border: 0;
+  }
+  /* line 95, ../sass/_footer.scss */
+  footer ul:nth-child(1) {
+    width: 25%;
+  }
+  /* line 98, ../sass/_footer.scss */
+  footer ul:nth-child(2) {
+    width: 35%;
+  }
+  /* line 101, ../sass/_footer.scss */
+  footer ul:nth-child(3) {
+    width: 24%;
+  }
+  /* line 104, ../sass/_footer.scss */
+  footer ul:nth-child(4) {
+    width: 13%;
+  }
+  /* line 107, ../sass/_footer.scss */
+  footer ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+  }
+  /* line 112, ../sass/_footer.scss */
+  footer ul li:first-child:after {
+    display: none;
+  }
+  /* line 116, ../sass/_footer.scss */
+  footer ul li a {
+    font-family: "Lato-Light";
+  }
+  /* line 121, ../sass/_footer.scss */
+  footer .copyright {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    font-size: 0;
+    line-height: normal;
+  }
+  /* line 128, ../sass/_footer.scss */
+  footer .copyright .container {
+    padding: 20px 0;
+  }
+  /* line 131, ../sass/_footer.scss */
+  footer .copyright span {
+    display: inline-block;
+  }
+  /* line 133, ../sass/_footer.scss */
+  footer .copyright span:first-child {
+    width: 25%;
+    text-align: left;
+  }
+  /* line 137, ../sass/_footer.scss */
+  footer .copyright span:first-child + span {
+    width: 50%;
+    text-align: center;
+  }
+  /* line 141, ../sass/_footer.scss */
+  footer .copyright span:first-child + span + span {
+    width: 25%;
+  }
+}
+/* line 5, ../sass/engage.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 8, ../sass/engage.scss */
+.engage-header-graphics {
+  background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-mobile-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+/* line 17, ../sass/engage.scss */
+.engage-header-graphics:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 20%, rgba(246, 107, 28, 0.15) 100%);
+}
+/* line 26, ../sass/engage.scss */
+.engage-header-graphics .content {
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+/* line 32, ../sass/engage.scss */
+.engage-header-graphics .content h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Lato-Bold";
+  font-weight: normal;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 1.12px;
+  text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+/* line 46, ../sass/engage.scss */
+.engage-header-graphics .content .try-it-form {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 70px 0 50px 0;
+  font-size: 0;
+  border-radius: 5px;
+}
+/* line 52, ../sass/engage.scss */
+.engage-header-graphics .content .try-it-form input {
+  font-size: 18px;
+  padding: 7px;
+  min-height: inherit;
+  height: inherit;
+  line-height: 21px;
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-family: "Lato-Semibold";
+  font-size: 14px;
+  color: #9b9b9b;
+  letter-spacing: 0px;
+  text-align: left;
+}
+/* line 69, ../sass/engage.scss */
+.engage-header-graphics .content .try-it-form button {
+  background: #00C26B;
+  border-radius: 4px;
+  border: 0;
+  padding: 5px;
+  color: #fff;
+  width: 100%;
+  font-family: "Lato-Semibold";
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 19px;
+  padding: 8px;
+  text-transform: none;
+  margin: 0;
+  vertical-align: top;
+}
+/* line 86, ../sass/engage.scss */
+.engage-header-graphics .content .meet-consultant {
+  text-align: center;
+  padding-top: 30px;
+}
+/* line 89, ../sass/engage.scss */
+.engage-header-graphics .content .meet-consultant a {
+  font-size: 14px;
+  color: #fff;
+  font-family: "Lato-Semibold";
+  text-decoration: underline;
+}
+
+/* line 98, ../sass/engage.scss */
+.active {
+  display: block !important;
+}
+
+/* line 101, ../sass/engage.scss */
+.engage-subnav {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  text-align: left;
+}
+/* line 108, ../sass/engage.scss */
+.engage-subnav ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-height: 40px;
+  overflow: hidden;
+  transition: max-height 0.75s;
+}
+/* line 115, ../sass/engage.scss */
+.engage-subnav ul.expanded {
+  max-height: 300px;
+}
+/* line 117, ../sass/engage.scss */
+.engage-subnav ul.expanded li {
+  display: inline-block;
+}
+/* line 119, ../sass/engage.scss */
+.engage-subnav ul.expanded li:first-child {
+  height: 0;
+}
+/* line 121, ../sass/engage.scss */
+.engage-subnav ul.expanded li:first-child a:after {
+  content: "\f077";
+}
+/* line 128, ../sass/engage.scss */
+.engage-subnav li {
+  list-style: none;
+  display: none;
+  width: 100%;
+}
+/* line 132, ../sass/engage.scss */
+.engage-subnav li:first-child {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: block;
+}
+/* line 137, ../sass/engage.scss */
+.engage-subnav li:first-child a {
+  display: block;
+  padding: 0;
+  height: 100%;
+}
+/* line 141, ../sass/engage.scss */
+.engage-subnav li:first-child a:after {
+  content: "\f078";
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  font: normal normal normal 14px/1 FontAwesome;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 151, ../sass/engage.scss */
+.engage-subnav li.active {
+  display: block;
+  font-family: "Lato-Bold";
+}
+/* line 156, ../sass/engage.scss */
+.engage-subnav a {
+  display: block;
+  font-size: 16px;
+  color: #FFF;
+  font-family: "Lato-Regular";
+  padding: 8px 15px 10px;
+}
+
+/* line 164, ../sass/engage.scss */
+.overview-desktop {
+  display: none;
+}
+
+/* line 168, ../sass/engage.scss */
+.overview .title {
+  color: #1C94EE;
+  font-size: 20px;
+  font-family: "Lato-Regular";
+  text-align: left;
+  padding: 0 15px;
+}
+/* line 175, ../sass/engage.scss */
+.overview .content-desc {
+  font-size: 18px;
+  color: #000;
+  font-family: "Lato-Light";
+  margin: 15px 0px;
+  text-align: left;
+  line-height: 25px;
+  padding: 0 15px;
+}
+/* line 185, ../sass/engage.scss */
+.overview .slide-icon img {
+  width: 85px;
+  margin: 30px;
+}
+/* line 191, ../sass/engage.scss */
+.overview .overview-img img {
+  width: 100%;
+  border-bottom: 1px solid #DADADA;
+}
+/* line 196, ../sass/engage.scss */
+.overview .block-content {
+  display: none;
+}
+
+/* line 201, ../sass/engage.scss */
+.features .feature {
+  text-align: left;
+  font-size: 16px;
+  font-family: "Lato-Light";
+  line-height: 24px;
+  padding-bottom: 30px;
+  display: block;
+}
+/* line 209, ../sass/engage.scss */
+.features .content-title {
+  font-size: 20px;
+  font-family: "Lato-Regular";
+  padding: 0 15px;
+}
+/* line 214, ../sass/engage.scss */
+.features p {
+  padding: 0 15px;
+}
+/* line 217, ../sass/engage.scss */
+.features .icon {
+  text-align: center;
+}
+/* line 220, ../sass/engage.scss */
+.features img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* line 224, ../sass/engage.scss */
+.features .feature-1 img {
+  max-width: 450px;
+}
+/* line 227, ../sass/engage.scss */
+.features .feature-2 img {
+  max-width: 298px;
+}
+/* line 230, ../sass/engage.scss */
+.features .feature-2, .features .feature-3 {
+  border-top: 1px solid #DADADA;
+}
+/* line 233, ../sass/engage.scss */
+.features .feature-3 img {
+  margin-top: 20px;
+  max-width: 395px;
+}
+/* line 237, ../sass/engage.scss */
+.features .feature-desc {
+  max-width: 570px;
+  margin: 0 auto;
+}
+/* line 241, ../sass/engage.scss */
+.features strong {
+  font-family: "Lato-Bold";
+}
+
+/* line 245, ../sass/engage.scss */
+.how-it-works-desktop {
+  display: none;
+}
+
+/* line 249, ../sass/engage.scss */
+.how-it-works .block-content {
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "Lato-Light";
+  display: none;
+  height: 570px;
+  position: relative;
+  max-width: 570px;
+  margin: 0 auto;
+}
+/* line 259, ../sass/engage.scss */
+.how-it-works img {
+  width: 70px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+/* line 264, ../sass/engage.scss */
+.how-it-works .content-title {
+  font-size: 20px;
+  color: #1C94EE;
+  font-family: "Lato-Regular";
+  text-align: left;
+  padding: 0 15px;
+}
+/* line 271, ../sass/engage.scss */
+.how-it-works p {
+  text-align: left;
+  padding: 0 15px;
+}
+/* line 275, ../sass/engage.scss */
+.how-it-works .slide-icon {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+/* line 279, ../sass/engage.scss */
+.how-it-works .slide-icon img {
+  width: 135px;
+}
+
+/* line 284, ../sass/engage.scss */
+.why {
+  color: #FFF;
+  font-family: "Lato-Light";
+  background: -moz-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
+  /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
+  padding-bottom: 40px;
+}
+/* line 291, ../sass/engage.scss */
+.why .block-desc, .why .block-title {
+  color: #FFF;
+}
+/* line 294, ../sass/engage.scss */
+.why .content-title {
+  font-size: 16px;
+  font-family: "Lato-Semibold";
+  line-height: 19px;
+}
+/* line 299, ../sass/engage.scss */
+.why .icon img {
+  width: 100px;
+  margin: 20px 0px;
+}
+/* line 303, ../sass/engage.scss */
+.why .content-desc {
+  max-width: 200px;
+  margin: 0 auto 40px;
+  font-size: 14px;
+}
+/* line 308, ../sass/engage.scss */
+.why .speaker {
+  margin: 0 15px;
+  line-height: 20px;
+  font-family: "Lato-Light";
+  display: none;
+}
+/* line 313, ../sass/engage.scss */
+.why .speaker .speaker-content {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 500px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* line 319, ../sass/engage.scss */
+.why .speaker .speaker-desc {
+  font-size: 14px;
+}
+/* line 322, ../sass/engage.scss */
+.why .speaker img {
+  width: 100%;
+  display: block;
+  max-width: 300px;
+}
+/* line 327, ../sass/engage.scss */
+.why .speaker p {
+  padding: 5px 15px;
+}
+/* line 330, ../sass/engage.scss */
+.why .speaker .slide-icon {
+  text-align: center;
+  margin: 30px 0px;
+}
+/* line 333, ../sass/engage.scss */
+.why .speaker .slide-icon img {
+  width: 85px;
+  margin: 0 auto;
+}
+/* line 338, ../sass/engage.scss */
+.why .speaker .speaker-name {
+  font-family: "Lato-Regular";
+  line-height: 22px;
+}
+/* line 343, ../sass/engage.scss */
+.why .prev-speaker, .why .next-speaker {
+  display: none;
+}
+/* line 346, ../sass/engage.scss */
+.why .read-more {
+  width: 300px;
+  border: 2px solid #FFF;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: "Lato-Bold";
+}
+
+/* line 357, ../sass/engage.scss */
+.clients {
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  font-size: 0;
+}
+/* line 363, ../sass/engage.scss */
+.clients .block-title {
+  color: #FFF;
+  font-size: 30px;
+  font-family: "Lato-Regular";
+  line-height: 36px;
+  width: 80%;
+}
+/* line 370, ../sass/engage.scss */
+.clients .client-logos {
+  padding: 30px 15px;
+}
+/* line 373, ../sass/engage.scss */
+.clients .client {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+/* line 377, ../sass/engage.scss */
+.clients .client img {
+  width: 80%;
+  max-width: 180px;
+}
+/* line 382, ../sass/engage.scss */
+.clients .try-it-form {
+  padding: 30px 20px 50px;
+  font-size: 0;
+  border-radius: 5px;
+  text-align: center;
+}
+/* line 387, ../sass/engage.scss */
+.clients .try-it-form input {
+  font-size: 18px;
+  padding: 7px;
+  min-height: inherit;
+  height: inherit;
+  line-height: 21px;
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-family: "Lato-Semibold";
+  font-size: 14px;
+  color: #9b9b9b;
+  letter-spacing: 0px;
+  text-align: left;
+  max-width: 500px;
+}
+/* line 405, ../sass/engage.scss */
+.clients .try-it-form button {
+  background: #00C26B;
+  border-radius: 4px;
+  border: 0;
+  padding: 5px;
+  color: #fff;
+  width: 100%;
+  font-family: "Lato-Semibold";
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 19px;
+  padding: 8px;
+  text-transform: none;
+  margin: 0;
+  vertical-align: top;
+  max-width: 500px;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 425, ../sass/engage.scss */
+  .engage-header-graphics {
+    background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
+    height: 650px;
+  }
+  /* line 428, ../sass/engage.scss */
+  .engage-header-graphics:before {
+    display: none;
+  }
+  /* line 431, ../sass/engage.scss */
+  .engage-header-graphics .content {
+    position: relative;
+    top: 50%;
+    max-width: 600px;
+    margin-top: -200px;
+  }
+  /* line 436, ../sass/engage.scss */
+  .engage-header-graphics .content h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  /* line 440, ../sass/engage.scss */
+  .engage-header-graphics .content .try-it-form {
+    max-width: 450px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  /* line 444, ../sass/engage.scss */
+  .engage-header-graphics .content .try-it-form input {
+    font-size: 18px;
+    padding: 7px;
+    width: 72%;
+    border-radius: 4px 0 0 4px;
+  }
+  /* line 450, ../sass/engage.scss */
+  .engage-header-graphics .content .try-it-form button {
+    font-size: 18px;
+    line-height: 19px;
+    padding: 8px;
+    width: 28%;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* line 460, ../sass/engage.scss */
+  .overview {
+    display: none;
+  }
+
+  /* line 463, ../sass/engage.scss */
+  .overview-desktop {
+    display: block;
+    font-size: 0px;
+  }
+  /* line 466, ../sass/engage.scss */
+  .overview-desktop .overview-content {
+    position: relative;
+    height: 495px;
+    border-bottom: 1px solid #DADADA;
+  }
+  /* line 471, ../sass/engage.scss */
+  .overview-desktop .block-content {
+    text-align: left;
+    padding: 15px;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 478, ../sass/engage.scss */
+  .overview-desktop .content-desc {
+    font-size: 16px;
+    font-family: "Lato-Light";
+    line-height: 24px;
+  }
+  /* line 483, ../sass/engage.scss */
+  .overview-desktop .title {
+    font-size: 24px;
+    font-family: "Lato-Regular";
+    line-height: 29px;
+    color: #1C94EE;
+    margin-bottom: 15px;
+  }
+  /* line 490, ../sass/engage.scss */
+  .overview-desktop .right-side {
+    width: 48%;
+    display: inline-block;
+    float: right;
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+  /* line 497, ../sass/engage.scss */
+  .overview-desktop .right-side .overview-img {
+    height: 495px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+  }
+  /* line 504, ../sass/engage.scss */
+  .overview-desktop .right-side .img-1 {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-insight.png);
+  }
+  /* line 507, ../sass/engage.scss */
+  .overview-desktop .right-side .img-2 {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-actionable.png);
+  }
+  /* line 510, ../sass/engage.scss */
+  .overview-desktop .right-side .img-3 {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-empowered.png);
+  }
+  /* line 514, ../sass/engage.scss */
+  .overview-desktop .overview-default .block-content {
+    margin-top: 30px;
+  }
+  /* line 518, ../sass/engage.scss */
+  .overview-desktop .overview-content:hover .overview-block:hover .overview-img, .overview-desktop .overview-content .overview-default .overview-img {
+    display: block;
+    transition: all ease .5s;
+  }
+  /* line 522, ../sass/engage.scss */
+  .overview-desktop .overview-content:hover .overview-block:hover .block-content, .overview-desktop .overview-content .overview-default .block-content {
+    background-color: rgba(28, 148, 238, 0.1);
+    transition: all .3s;
+  }
+  /* line 527, ../sass/engage.scss */
+  .overview-desktop .overview-img, .overview-desktop .overview-content:hover .overview-img {
+    display: none;
+    transition: all ease .5s;
+  }
+  /* line 531, ../sass/engage.scss */
+  .overview-desktop .block-content, .overview-desktop .overview-content:hover .block-content {
+    background-color: #FFF;
+    transition: all .3s;
+  }
+
+  /* line 536, ../sass/engage.scss */
+  .features {
+    font-size: 0;
+  }
+  /* line 538, ../sass/engage.scss */
+  .features .icon {
+    display: inline-block;
+    width: 50%;
+  }
+  /* line 542, ../sass/engage.scss */
+  .features .feature-desc {
+    display: inline-block;
+    width: 50%;
+  }
+  /* line 546, ../sass/engage.scss */
+  .features .feature-2 {
+    float: right;
+    text-align: center;
+  }
+  /* line 550, ../sass/engage.scss */
+  .features .feature-desc-1 {
+    float: right;
+    margin-top: 20px;
+  }
+  /* line 554, ../sass/engage.scss */
+  .features .feature-desc-2 {
+    border-top: 1px solid #DADADA;
+  }
+  /* line 556, ../sass/engage.scss */
+  .features .feature-desc-2 .content-title {
+    margin-top: 90px;
+  }
+  /* line 560, ../sass/engage.scss */
+  .features .feature-3 img {
+    margin-top: 100px;
+  }
+  /* line 563, ../sass/engage.scss */
+  .features .feature-desc-3 {
+    float: right;
+    border-top: 1px solid #DADADA;
+  }
+  /* line 566, ../sass/engage.scss */
+  .features .feature-desc-3 .content-title {
+    margin-top: 120px;
+  }
+  /* line 570, ../sass/engage.scss */
+  .features p {
+    padding: 10px 15px;
+  }
+
+  /* line 575, ../sass/engage.scss */
+  .why .block-content {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-size: 0;
+  }
+  /* line 581, ../sass/engage.scss */
+  .why .speakers {
+    text-align: center;
+  }
+  /* line 584, ../sass/engage.scss */
+  .why .speakers .speaker .slide-icon {
+    display: none;
+  }
+  /* line 587, ../sass/engage.scss */
+  .why .speakers .speaker .speaker-img {
+    display: inline-block;
+  }
+  /* line 590, ../sass/engage.scss */
+  .why .speakers .speaker .speaker-desc {
+    max-width: 500px;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    position: relative;
+    text-align: left;
+  }
+  /* line 597, ../sass/engage.scss */
+  .why .speakers .speaker .speaker-desc .speaker-name {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  /* line 603, ../sass/engage.scss */
+  .why .speakers .speaker .speaker-content {
+    max-width: 800px;
+    font-size: 0;
+    height: 200px;
+    display: inline-block;
+  }
+  /* line 608, ../sass/engage.scss */
+  .why .speakers .speaker .speaker-content p {
+    padding: 0 15px;
+  }
+  /* line 614, ../sass/engage.scss */
+  .why .prev-speaker, .why .next-speaker {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 200px;
+    top: 50%;
+    transform: translate(0, 35%);
+  }
+  /* line 622, ../sass/engage.scss */
+  .why .prev-speaker {
+    margin-right: 15px;
+  }
+  /* line 625, ../sass/engage.scss */
+  .why .next-speaker {
+    margin-left: 15px;
+  }
+  /* line 628, ../sass/engage.scss */
+  .why .read-more {
+    margin-top: 50px;
+  }
+  /* line 631, ../sass/engage.scss */
+  .why .control-button img {
+    display: inline-block;
+    max-width: 30px;
+  }
+
+  /* line 636, ../sass/engage.scss */
+  .how-it-works {
+    display: none;
+  }
+
+  /* line 639, ../sass/engage.scss */
+  .how-it-works-desktop {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 500px;
+  }
+  /* line 644, ../sass/engage.scss */
+  .how-it-works-desktop .block-content {
+    margin-bottom: 100px;
+    margin-top: 60px;
+    width: 900px;
+    position: absolute;
+    left: 0;
+  }
+  /* line 650, ../sass/engage.scss */
+  .how-it-works-desktop .block-content .content-title {
+    font-size: 20px;
+    color: #1C94EE;
+    font-family: "Lato-Regular";
+    text-align: left;
+    padding: 0 15px;
+  }
+  /* line 657, ../sass/engage.scss */
+  .how-it-works-desktop .block-content p {
+    text-align: left;
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: "Lato-Light";
+    line-height: 24px;
+  }
+  /* line 665, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-size: 0px;
+    position: relative;
+  }
+  /* line 671, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-content {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+  }
+  /* line 676, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-icon {
+    text-align: center;
+    position: relative;
+  }
+  /* line 680, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .icon {
+    width: 63px;
+    height: 94px;
+    display: inline-block;
+    background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/engage/how-it-works/hiw-small-sprite.png);
+    background-repeat: no-repeat;
+  }
+  /* line 687, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-1 {
+    background-position: 0 0;
+  }
+  /* line 690, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-2 {
+    background-position: -85px 0;
+  }
+  /* line 693, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-3 {
+    background-position: -168px 0;
+  }
+  /* line 696, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-4 {
+    background-position: -253px 0;
+  }
+  /* line 699, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons .hiw-5 {
+    background-position: -338px 0;
+  }
+  /* line 703, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-wrapper {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  /* line 714, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .icon, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .icon, .how-it-works-desktop .hiw-icons .hiw-default .icon {
+    background-position-y: -115.5px;
+  }
+  /* line 717, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .block-content, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .block-content, .how-it-works-desktop .hiw-icons .hiw-default .block-content {
+    display: block;
+    transition: all .3s;
+  }
+  /* line 721, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .hiw-wrapper, .how-it-works-desktop .hiw-icons .hiw-default .hiw-wrapper {
+    background-color: rgba(28, 148, 238, 0.1);
+  }
+  /* line 726, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icon .icon, .how-it-works-desktop .hiw-icons:hover .hiw-icon .icon, .how-it-works-desktop .hiw-icons:focus .hiw-icon .icon {
+    background-position-y: 0px;
+  }
+  /* line 729, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:hover .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-icon .hiw-wrapper {
+    background-color: transparent;
+  }
+  /* line 733, ../sass/engage.scss */
+  .how-it-works-desktop .block-content, .how-it-works-desktop .hiw-icons:hover .block-content {
+    display: none;
+    transition: all .3s;
+  }
+
+  /* line 739, ../sass/engage.scss */
+  .clients .client {
+    width: 15%;
+    text-align: center;
+  }
+  /* line 743, ../sass/engage.scss */
+  .clients .client-logos {
+    text-align: center;
+  }
+  /* line 746, ../sass/engage.scss */
+  .clients .block-title {
+    width: 100%;
+  }
+  /* line 749, ../sass/engage.scss */
+  .clients .try-it-form {
+    max-width: 450px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  /* line 753, ../sass/engage.scss */
+  .clients .try-it-form input {
+    font-size: 14px;
+    padding: 7px;
+    width: 67%;
+    border-radius: 4px 0 0 4px;
+  }
+  /* line 759, ../sass/engage.scss */
+  .clients .try-it-form button {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 8px;
+    width: 33%;
+    border-radius: 0 4px 4px 0;
+  }
+}
