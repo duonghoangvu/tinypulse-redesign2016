@@ -85,15 +85,10 @@ a{
 		text-align: center;
 		margin-bottom: 30px;
 		a{
-			padding: 30px 15px;
 			display: block;
+			cursor: default;	
 			transition: all 0.3s;
-			&:hover{
-				background: #E8F4FD;
-				.icon{
-					background-position-y: -90px;
-				}
-			}
+			padding: 0 15px;	
 		}
 		.title{
 			font-family: $font_regular;
@@ -229,6 +224,12 @@ a{
 			display: block;
 			font-family: $font_bold;	
 		}
+		.icon{
+			img{
+				width: 180px;
+				height: 180px;
+			}
+		}
 	}
 	.more-stories{
 		text-align: center;
@@ -334,6 +335,16 @@ a{
   .features{
   	.tile{
   		max-width: 300px;
+  		a{
+  			padding: 30px 15px;
+				cursor: pointer;	
+  			&:hover{
+					background: #E8F4FD;
+					.icon{
+						background-position-y: -90px;
+					}
+				}
+  		}
   		p{
   			font-size: 14px;
   		}

@@ -238,56 +238,6 @@ header{
     display: none;
     margin: 0;
   }
-  // nav{
-  //   width: 250px;
-  //   background: rgba(0, 0, 0, 0.9);
-  //   text-align: left;
-  //   top: 0;
-  //   right: 0;
-  //   height: 100%;
-  //   padding-top: 40px;
-  //   transition: all 0.3s;
-  //   position: absolute;
-  //   transform: translateX(250px);
-  //   overflow: auto;
-  //   z-index: 1;
-  //   ul{
-  //     margin: 0;
-  //     padding: 0;
-  //   }
-  //   > ul {
-  //     margin: 0;
-  //     li {
-  //       list-style: none;
-  //       a {
-  //         font-size: 24px;
-  //         color: #FFF;
-  //         padding: 10px 15px;
-  //         display: inline-block;
-  //         width: 100%;
-  //         position: relative;
-  //         &.active{
-  //           &:before{
-  //             content: "";
-  //             width: 3px;
-  //             top: 5px;
-  //             bottom: 5px;
-  //             left: 0;
-  //             position: absolute;
-  //             background: #fff;
-  //           }
-  //         }
-  //       }
-  //     }
-  //     > li{
-  //       border-bottom: 1px solid #333;
-  //     }
-  //   }
-  //   .sub{
-  //     margin-left: 10px;
-  //     margin-bottom: 10px;
-  //   }
-  // }
   nav{
     position: fixed;
     z-index: 9;
@@ -658,7 +608,7 @@ header{
 
   .header-graphics{
     background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/large/header-bg.png);
-    height: 650px;
+    height: 620px;
     .content{
       position: relative;
       top: 20%;
