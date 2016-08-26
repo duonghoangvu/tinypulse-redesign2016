@@ -235,8 +235,8 @@ header .overlay {
 /* line 194, ../sass/_header.scss */
 .main-mobile-nav-container .logo {
   display: inline-block;
-  width: 99px;
-  height: 17px;
+  width: 120px;
+  height: 20px;
   z-index: 10;
   position: relative;
 }
@@ -256,8 +256,9 @@ header .overlay {
 .main-mobile-nav-container .hamburger {
   position: absolute;
   right: 15px;
+  top: 13px;
 }
-/* line 214, ../sass/_header.scss */
+/* line 215, ../sass/_header.scss */
 .main-mobile-nav-container .hamburger span {
   width: 25px;
   height: 3px;
@@ -266,7 +267,7 @@ header .overlay {
   display: block;
   transition: all 0.3s;
 }
-/* line 223, ../sass/_header.scss */
+/* line 224, ../sass/_header.scss */
 .main-mobile-nav-container .cross {
   background: none;
   position: absolute;
@@ -284,7 +285,7 @@ header .overlay {
   display: none;
   margin: 0;
 }
-/* line 290, ../sass/_header.scss */
+/* line 241, ../sass/_header.scss */
 .main-mobile-nav-container nav {
   position: fixed;
   z-index: 9;
@@ -292,13 +293,14 @@ header .overlay {
   bottom: 0;
   right: 0;
   padding: 60px 10px 40px;
-  width: 320px;
+  width: 100%;
+  max-width: 375px;
   box-sizing: border-box;
   transform: translateX(400px);
   transition: all 0.3s;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 302, ../sass/_header.scss */
+/* line 254, ../sass/_header.scss */
 .main-mobile-nav-container nav:before {
   content: "";
   position: absolute;
@@ -311,7 +313,7 @@ header .overlay {
   -moz-filter: blur(15px);
   filter: blur(15px);
 }
-/* line 314, ../sass/_header.scss */
+/* line 266, ../sass/_header.scss */
 .main-mobile-nav-container nav:after {
   content: "";
   position: absolute;
@@ -321,14 +323,16 @@ header .overlay {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 323, ../sass/_header.scss */
+/* line 275, ../sass/_header.scss */
 .main-mobile-nav-container nav ul {
   margin: 0;
   padding: 0;
   position: relative;
   z-index: 1;
+  overflow: scroll;
+  height: 100%;
 }
-/* line 328, ../sass/_header.scss */
+/* line 283, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -338,7 +342,7 @@ header .overlay {
   border-radius: 3px;
   margin-bottom: 15px;
 }
-/* line 337, ../sass/_header.scss */
+/* line 292, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub:after {
   content: "\f078";
   color: #fff;
@@ -350,29 +354,29 @@ header .overlay {
   -webkit-font-smoothing: antialiased;
   transition: all 0.3s;
 }
-/* line 349, ../sass/_header.scss */
+/* line 304, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub.expanded > a {
   font-family: "Lato-Bold";
 }
-/* line 352, ../sass/_header.scss */
+/* line 307, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub.expanded .sub {
   max-height: 300px;
 }
-/* line 355, ../sass/_header.scss */
+/* line 310, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub.expanded:after {
   transform: rotate(180deg);
 }
-/* line 360, ../sass/_header.scss */
+/* line 315, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.contact-sales {
   position: relative;
   top: 3px;
 }
-/* line 363, ../sass/_header.scss */
+/* line 318, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.contact-sales a {
   font-size: 24px;
   padding: 0 10px;
 }
-/* line 368, ../sass/_header.scss */
+/* line 323, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -383,7 +387,7 @@ header .overlay {
   transition: all 0.3s;
   position: relative;
 }
-/* line 377, ../sass/_header.scss */
+/* line 332, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li a.signup {
   border-radius: 3px;
   padding: 6px 20px 8px;
@@ -392,50 +396,50 @@ header .overlay {
   text-align: center;
   margin-top: 20px;
 }
-/* line 384, ../sass/_header.scss */
+/* line 339, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li a.signup:hover {
   background: #fff;
   color: #00C26B;
 }
-/* line 392, ../sass/_header.scss */
+/* line 347, ../sass/_header.scss */
 .main-mobile-nav-container nav .sub {
   transition: max-height 0.3s;
   overflow: hidden;
   max-height: 0;
 }
-/* line 396, ../sass/_header.scss */
+/* line 351, ../sass/_header.scss */
 .main-mobile-nav-container nav .sub li {
   margin-top: 10px;
   margin-bottom: 0;
   margin-left: 20px;
 }
-/* line 400, ../sass/_header.scss */
+/* line 355, ../sass/_header.scss */
 .main-mobile-nav-container nav .sub li a {
   font-size: 18px;
 }
 
-/* line 413, ../sass/_header.scss */
+/* line 368, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container .triggers .hamburger span:first-child {
   transform: rotate(39deg) translateY(5px) translateX(3px);
 }
-/* line 415, ../sass/_header.scss */
+/* line 370, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container .triggers .hamburger span:first-child + span {
   transform: scale(0);
 }
-/* line 419, ../sass/_header.scss */
+/* line 374, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container .triggers .hamburger span:last-child {
   transform: rotate(-39deg) translateY(-7px) translateX(5px);
 }
-/* line 428, ../sass/_header.scss */
+/* line 383, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container.sticked .triggers .hamburger span {
   background: #000;
 }
-/* line 434, ../sass/_header.scss */
+/* line 389, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container nav {
   transform: translateX(0);
 }
 
-/* line 440, ../sass/_header.scss */
+/* line 395, ../sass/_header.scss */
 .header-graphics {
   background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/header-bg.png);
   background-size: cover;
@@ -446,7 +450,7 @@ header .overlay {
   display: inline-block;
   width: 100%;
 }
-/* line 449, ../sass/_header.scss */
+/* line 404, ../sass/_header.scss */
 .header-graphics .content {
   position: relative;
   display: block;
@@ -454,7 +458,7 @@ header .overlay {
   margin: 0 auto;
   margin-top: 110px;
 }
-/* line 455, ../sass/_header.scss */
+/* line 410, ../sass/_header.scss */
 .header-graphics .content h1 {
   font-size: 20px;
   text-align: center;
@@ -467,7 +471,7 @@ header .overlay {
   text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
   text-align: center;
 }
-/* line 468, ../sass/_header.scss */
+/* line 423, ../sass/_header.scss */
 .header-graphics .content .sub-headline {
   font-family: "Lato-Bold";
   font-size: 24px;
@@ -475,7 +479,12 @@ header .overlay {
   margin-top: -10px;
   text-align: center;
 }
-/* line 476, ../sass/_header.scss */
+/* line 430, ../sass/_header.scss */
+.header-graphics .content .hbspt-form {
+  height: 0;
+  overflow: hidden;
+}
+/* line 434, ../sass/_header.scss */
 .header-graphics .content .try-it-form {
   background: rgba(0, 0, 0, 0.6);
   padding: 25px;
@@ -483,7 +492,7 @@ header .overlay {
   font-size: 0;
   border-radius: 5px;
 }
-/* line 482, ../sass/_header.scss */
+/* line 440, ../sass/_header.scss */
 .header-graphics .content .try-it-form input, .header-graphics .content .try-it-form button {
   display: inline-block;
   vertical-align: top;
@@ -498,7 +507,7 @@ header .overlay {
   min-height: inherit;
   text-transform: none;
 }
-/* line 496, ../sass/_header.scss */
+/* line 454, ../sass/_header.scss */
 .header-graphics .content .try-it-form input {
   width: 100%;
   color: #9b9b9b;
@@ -507,7 +516,7 @@ header .overlay {
   font-family: "Lato-Regular";
   font-size: 15px;
 }
-/* line 504, ../sass/_header.scss */
+/* line 462, ../sass/_header.scss */
 .header-graphics .content .try-it-form button {
   width: 100%;
   background: #00C26B;
@@ -516,12 +525,12 @@ header .overlay {
   font-size: 16px;
 }
 
-/* line 515, ../sass/_header.scss */
+/* line 473, ../sass/_header.scss */
 .subnav {
   text-align: left;
   height: 40px;
 }
-/* line 518, ../sass/_header.scss */
+/* line 476, ../sass/_header.scss */
 .subnav .container {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100
 background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
@@ -532,7 +541,7 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 525, ../sass/_header.scss */
+/* line 483, ../sass/_header.scss */
 .subnav ul {
   margin: 0;
   padding: 0;
@@ -541,42 +550,42 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   overflow: hidden;
   transition: max-height 0.75s;
 }
-/* line 532, ../sass/_header.scss */
+/* line 490, ../sass/_header.scss */
 .subnav ul.expanded {
   max-height: 300px;
 }
-/* line 534, ../sass/_header.scss */
+/* line 492, ../sass/_header.scss */
 .subnav ul.expanded li {
   display: inline-block;
 }
-/* line 536, ../sass/_header.scss */
+/* line 494, ../sass/_header.scss */
 .subnav ul.expanded li:first-child {
   height: 0;
 }
-/* line 538, ../sass/_header.scss */
+/* line 496, ../sass/_header.scss */
 .subnav ul.expanded li:first-child a:after {
   content: "\f077";
 }
-/* line 545, ../sass/_header.scss */
+/* line 503, ../sass/_header.scss */
 .subnav li {
   list-style: none;
   display: none;
   width: 100%;
 }
-/* line 549, ../sass/_header.scss */
+/* line 507, ../sass/_header.scss */
 .subnav li:first-child {
   position: absolute;
   top: 0;
   bottom: 0;
   display: block;
 }
-/* line 554, ../sass/_header.scss */
+/* line 512, ../sass/_header.scss */
 .subnav li:first-child a {
   display: block;
   padding: 0;
   height: 100%;
 }
-/* line 558, ../sass/_header.scss */
+/* line 516, ../sass/_header.scss */
 .subnav li:first-child a:after {
   content: "\f078";
   position: absolute;
@@ -585,12 +594,12 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   font: normal normal normal 14px/1 FontAwesome;
   -webkit-font-smoothing: antialiased;
 }
-/* line 568, ../sass/_header.scss */
+/* line 526, ../sass/_header.scss */
 .subnav li.active {
   display: inline-block;
   font-family: "Lato-Bold";
 }
-/* line 573, ../sass/_header.scss */
+/* line 531, ../sass/_header.scss */
 .subnav a {
   display: block;
   font-size: 16px;
@@ -599,11 +608,11 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   padding: 8px 15px 13px;
 }
 
-/* line 582, ../sass/_header.scss */
+/* line 540, ../sass/_header.scss */
 .subnav-sticked .main-mobile-nav-container {
   transform: translateY(-50px);
 }
-/* line 586, ../sass/_header.scss */
+/* line 544, ../sass/_header.scss */
 .subnav-sticked .subnav .container {
   position: fixed;
   top: 0;
@@ -612,116 +621,116 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
 }
 
 @media screen and (min-width: 960px) {
-  /* line 596, ../sass/_header.scss */
+  /* line 554, ../sass/_header.scss */
   .main-nav-container {
     height: 76px;
     display: block;
   }
-  /* line 599, ../sass/_header.scss */
+  /* line 557, ../sass/_header.scss */
   .main-nav-container.sticked {
     background: #fff;
   }
-  /* line 604, ../sass/_header.scss */
+  /* line 562, ../sass/_header.scss */
   .main-nav-container.sticked nav ul li a {
     color: #000;
   }
-  /* line 606, ../sass/_header.scss */
+  /* line 564, ../sass/_header.scss */
   .main-nav-container.sticked nav ul li a.signup {
     border-color: #00C26B;
     color: #00C26B;
   }
-  /* line 609, ../sass/_header.scss */
+  /* line 567, ../sass/_header.scss */
   .main-nav-container.sticked nav ul li a.signup:hover {
     background: #00C26B;
     color: #fff;
   }
-  /* line 620, ../sass/_header.scss */
+  /* line 578, ../sass/_header.scss */
   .main-nav-container.sticked .main-nav .logo .color {
     opacity: 1;
   }
-  /* line 623, ../sass/_header.scss */
+  /* line 581, ../sass/_header.scss */
   .main-nav-container.sticked .main-nav .logo .white {
     opacity: 0;
   }
 
-  /* line 631, ../sass/_header.scss */
+  /* line 589, ../sass/_header.scss */
   .main-nav .logo {
     width: 150px;
     height: 28px;
     margin-top: 7px;
     position: relative;
   }
-  /* line 636, ../sass/_header.scss */
+  /* line 594, ../sass/_header.scss */
   .main-nav .logo img {
     transition: all 0.3s;
     position: absolute;
   }
-  /* line 640, ../sass/_header.scss */
+  /* line 598, ../sass/_header.scss */
   .main-nav .logo .color {
     opacity: 0;
   }
-  /* line 644, ../sass/_header.scss */
+  /* line 602, ../sass/_header.scss */
   .main-nav nav {
     display: block;
     margin-top: -5px;
   }
 
-  /* line 650, ../sass/_header.scss */
+  /* line 608, ../sass/_header.scss */
   .main-mobile-nav-container {
     display: none;
   }
 
-  /* line 654, ../sass/_header.scss */
+  /* line 612, ../sass/_header.scss */
   .header-graphics {
     background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/large/header-bg.png);
-    height: 650px;
+    height: 620px;
   }
-  /* line 657, ../sass/_header.scss */
+  /* line 615, ../sass/_header.scss */
   .header-graphics .content {
     position: relative;
     top: 20%;
     max-width: 600px;
   }
-  /* line 661, ../sass/_header.scss */
+  /* line 619, ../sass/_header.scss */
   .header-graphics .content h1 {
     font-size: 48px;
     margin-bottom: 50px;
   }
-  /* line 665, ../sass/_header.scss */
+  /* line 623, ../sass/_header.scss */
   .header-graphics .content .sub-headline {
     font-size: 24px;
     margin-top: -35px;
   }
-  /* line 669, ../sass/_header.scss */
+  /* line 627, ../sass/_header.scss */
   .header-graphics .content .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
     font-size: 0;
   }
-  /* line 674, ../sass/_header.scss */
+  /* line 632, ../sass/_header.scss */
   .header-graphics .content .try-it-form input {
     width: 68%;
     border-radius: 4px 0 0 4px;
     margin: 0;
     text-align: left;
   }
-  /* line 680, ../sass/_header.scss */
+  /* line 638, ../sass/_header.scss */
   .header-graphics .content .try-it-form button {
     width: 32%;
     border-radius: 0 4px 4px 0;
     font-size: 18px;
   }
-  /* line 686, ../sass/_header.scss */
+  /* line 644, ../sass/_header.scss */
   .header-graphics .content .meet-consultant {
     padding-top: 120px;
   }
-  /* line 688, ../sass/_header.scss */
+  /* line 646, ../sass/_header.scss */
   .header-graphics .content .meet-consultant a {
     font-size: 24px;
   }
 
-  /* line 694, ../sass/_header.scss */
+  /* line 652, ../sass/_header.scss */
   .subnav {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
     background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -734,24 +743,24 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     /* IE6-9 fallback on horizontal gradient */
     height: 50px;
   }
-  /* line 701, ../sass/_header.scss */
+  /* line 659, ../sass/_header.scss */
   .subnav .container {
     max-width: 960px;
     margin: 0 auto;
     background: none;
   }
-  /* line 706, ../sass/_header.scss */
+  /* line 664, ../sass/_header.scss */
   .subnav ul {
     text-align: center;
     max-height: inherit;
   }
-  /* line 709, ../sass/_header.scss */
+  /* line 667, ../sass/_header.scss */
   .subnav ul li {
     display: inline-block;
     width: 150px;
     position: relative;
   }
-  /* line 713, ../sass/_header.scss */
+  /* line 671, ../sass/_header.scss */
   .subnav ul li:before {
     content: "";
     position: absolute;
@@ -763,25 +772,25 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     background: #fff;
     transform: scaleX(0);
   }
-  /* line 724, ../sass/_header.scss */
+  /* line 682, ../sass/_header.scss */
   .subnav ul li:first-child {
     display: none;
   }
-  /* line 728, ../sass/_header.scss */
+  /* line 686, ../sass/_header.scss */
   .subnav ul li.active:before, .subnav ul li:hover:before {
     transform: scaleX(1);
   }
-  /* line 731, ../sass/_header.scss */
+  /* line 689, ../sass/_header.scss */
   .subnav ul li.active a, .subnav ul li:hover a {
     font-family: "Lato-Bold";
   }
-  /* line 735, ../sass/_header.scss */
+  /* line 693, ../sass/_header.scss */
   .subnav ul li a {
     font-size: 16px;
     padding: 14px 15px 17px;
   }
 
-  /* line 744, ../sass/_header.scss */
+  /* line 702, ../sass/_header.scss */
   .subnav-sticked .subnav .container {
     background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
     /* FF3.6-15 */

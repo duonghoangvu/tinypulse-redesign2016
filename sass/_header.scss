@@ -427,7 +427,10 @@ header{
       margin-top: -10px;
       text-align: center;
     }
-
+    .hbspt-form {
+      height: 0;
+      overflow: hidden;
+    }
     .try-it-form{
       background: rgba(0,0,0,0.6);
       padding: 25px;
