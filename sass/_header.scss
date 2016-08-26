@@ -477,7 +477,11 @@ header{
       margin-top: -10px;
       text-align: center;
     }
-
+    .hbspt-form {
+      position: absolute;
+      top: -9999em;
+      left: -9999em;
+    }
     .try-it-form{
       background: rgba(0,0,0,0.6);
       padding: 25px;
