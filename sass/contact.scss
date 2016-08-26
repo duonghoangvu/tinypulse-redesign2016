@@ -207,6 +207,15 @@ $font_light: 'Lato-Light';
   }
 }
 @media screen and (min-width: 960px){
+  .contact-header-graphics {
+    height: 400px;
+    .content {
+      top: 0px;
+      h1 {
+        margin-bottom: 0px;
+      }
+    }
+  }
   .hs-form fieldset {
     max-width: none !important;
   }

@@ -160,17 +160,31 @@
 .map {
   width: 100%;
   height: 500px;
-  background: red;
   position: relative;
+  padding-top: 0;
 }
 /* line 149, ../sass/contact.scss */
+.map:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+/* line 159, ../sass/contact.scss */
+.map.map-clicked:before {
+  display: none;
+}
+/* line 163, ../sass/contact.scss */
 .map .container {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  z-index: 2;
 }
-/* line 156, ../sass/contact.scss */
+/* line 170, ../sass/contact.scss */
 .map .contact-info {
   position: absolute;
   bottom: 0;
@@ -183,19 +197,19 @@
   left: 0;
   right: 0;
 }
-/* line 167, ../sass/contact.scss */
+/* line 181, ../sass/contact.scss */
 .map .contact-info p {
   margin: 0;
   font-size: 14px;
   font-family: "Lato-Light";
   margin-bottom: 12px;
 }
-/* line 172, ../sass/contact.scss */
+/* line 186, ../sass/contact.scss */
 .map .contact-info p i {
   margin-right: 10px;
   margin-left: 3px;
 }
-/* line 177, ../sass/contact.scss */
+/* line 191, ../sass/contact.scss */
 .map .contact-info .title {
   font-size: 22px;
   position: relative;
@@ -203,7 +217,7 @@
   font-family: "Lato-Regular";
   margin-bottom: 15px;
 }
-/* line 183, ../sass/contact.scss */
+/* line 197, ../sass/contact.scss */
 .map .contact-info .title:before {
   content: "";
   background: #F37122;
@@ -215,35 +229,52 @@
 }
 
 @media screen and (min-width: 960px) {
-  /* line 196, ../sass/contact.scss */
+  /* line 210, ../sass/contact.scss */
+  .contact-header-graphics {
+    height: 400px;
+  }
+  /* line 212, ../sass/contact.scss */
+  .contact-header-graphics .content {
+    top: 0px;
+  }
+  /* line 214, ../sass/contact.scss */
+  .contact-header-graphics .content h1 {
+    margin-bottom: 0px;
+  }
+
+  /* line 219, ../sass/contact.scss */
   .hs-form fieldset {
     max-width: none !important;
   }
 
-  /* line 199, ../sass/contact.scss */
+  /* line 222, ../sass/contact.scss */
   .social-share {
     margin-left: 30px;
     margin-right: 30px;
   }
-  /* line 202, ../sass/contact.scss */
+  /* line 225, ../sass/contact.scss */
   .social-share .container {
     padding: 0 15px;
   }
-  /* line 205, ../sass/contact.scss */
+  /* line 228, ../sass/contact.scss */
   .social-share hr {
     margin-left: 0px;
   }
-  /* line 208, ../sass/contact.scss */
+  /* line 231, ../sass/contact.scss */
   .social-share .block-title {
     text-align: left;
     padding: 0;
   }
-  /* line 212, ../sass/contact.scss */
+  /* line 235, ../sass/contact.scss */
   .social-share .icons {
     text-align: left;
   }
 
-  /* line 218, ../sass/contact.scss */
+  /* line 241, ../sass/contact.scss */
+  .map .container {
+    top: 0;
+  }
+  /* line 244, ../sass/contact.scss */
   .map .contact-info {
     left: 0;
     right: auto;
