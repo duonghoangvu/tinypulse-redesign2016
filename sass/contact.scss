@@ -144,13 +144,27 @@ $font_light: 'Lato-Light';
 .map{
   width: 100%; 
   height: 500px;
-  background: red;
   position: relative;
+  padding-top: 0;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &.map-clicked{
+    &:before{
+      display: none;
+    }
+  }    
   .container{
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    z-index: 2;
   }
 
   .contact-info{
@@ -215,6 +229,9 @@ $font_light: 'Lato-Light';
   }
 
   .map{
+    .container{
+      top: 0;
+    }
     .contact-info{
       left: 0;
       right: auto;

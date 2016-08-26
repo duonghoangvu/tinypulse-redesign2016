@@ -11,4 +11,7 @@ jQuery(document).ready(function($) {
     }
   }
   callErrorMessage();
+  $('.map').on('click', function(){
+    $(this).addClass('map-clicked');
+  });
 });
