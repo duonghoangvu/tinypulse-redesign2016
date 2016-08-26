@@ -1,0 +1,249 @@
+$font_regular: 'Lato-Regular';
+$font_semibold: 'Lato-Semibold';
+$font_bold: 'Lato-Bold';
+$font_light: 'Lato-Light';
+
+.contact-header-graphics {
+  h2 {
+    font-size: 24px;
+    color: #FFF;
+    font-family: $font_bold;
+    line-height: 29px;
+    text-align: center;
+  }
+}
+.contact-form {
+  .block-desc {
+    margin: 0;
+  }
+  .alert-error {
+    font-size: 14px;
+    font-family: $font_bold;
+    color: #b94a48;
+    padding: 15px;
+    opacity: 0;
+  }
+  .error {
+    border: 1px solid #b94a48;
+  }
+  label, ul{
+    display: none !important;
+  }
+  fieldset {
+    margin: 0 auto !important;
+    -webkit-appearance: none;
+  }
+  form {
+    padding: 0 15px;
+  }
+  input.hs-input, textarea, select {
+    width: 100% !important;
+  }
+  input, textarea, select {
+    border: 1px solid #DADADA;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    color: #9B9B9B;
+    font-size: 14px;
+    font-family: $font_semibold;
+    box-sizing: border-box;
+  }
+  input {
+    height: 45px;
+    padding: 0 15px;
+  }
+  select {
+    height: 45px;
+    padding: 0 15px;
+    background: transparent;
+    -webkit-appearance: none;
+  }
+  .hs_type {
+    position: relative;
+    .input:after {
+      content: "\f078";
+      position: absolute;
+      right: 24px;
+      top: 16px;
+      font: normal normal normal 14px/1 FontAwesome;
+      -webkit-font-smoothing: antialiased;
+      color: #9B9B9B;
+    }
+  }
+  .actions input {
+    color: #FFF;
+    background-color: #00C26B;
+    font-size: 18px;
+    font-family: $font_bold;
+    padding: 10px 15px;
+    border: none;
+    width: auto;
+    margin-bottom: 0px;
+  }
+  textarea {
+    height: 153px;
+    resize: none;
+    padding: 15px;
+  }
+}
+.social-share {
+  hr {
+    color: #DADADA;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .block-title {
+    font-size: 16px;
+    color: #4A4A4A;
+    font-family: $font_semibold;
+    line-height: 19px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .icons {
+    width: 100%;
+    text-align: center;
+  }
+  .social-share-icon {
+    display: inline-block;
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/social-share-sprite.png);
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    margin-bottom: 50px;
+    &:hover {
+      background-position-y: -35px;
+    }
+  }
+  .fb {
+    width: 30px;
+    height: 30px;
+    background-position: 0 0;
+    background-size: 133px 65px;
+  }
+  .tw {
+    width: 32px;
+    height: 30px;
+    background-position: -34px 0;
+    background-size: 133px 65px;
+  }
+  .in {
+    width: 32px;
+    height: 30px;
+    background-position: -67px 0;
+    background-size: 133px 65px;
+  }
+  .gg {
+    width: 35px;
+    height: 30px;
+    background-position: -100px 0;
+    background-size: 133px 65px;
+    margin-right: 0px;
+  }
+}
+
+.map{
+  width: 100%; 
+  height: 500px;
+  position: relative;
+  padding-top: 0;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &.map-clicked{
+    &:before{
+      display: none;
+    }
+  }    
+  .container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .contact-info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    padding: 30px 15px 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    p{
+      margin: 0;
+      font-size: 14px;
+      font-family: $font_light;
+      margin-bottom: 12px;
+      i{
+        margin-right: 10px;
+        margin-left: 3px;
+      }
+    }
+    .title{
+      font-size: 22px;
+      position: relative;
+      padding-top: 10px;
+      font-family: $font_regular;
+      margin-bottom: 15px;
+      &:before{
+        content: "";
+        background: #F37122;
+        height: 2px;
+        top: 0;
+        left: 0;
+        width: 30px;
+        position: absolute;
+      }
+    }
+  }
+}
+@media screen and (min-width: 960px){
+  .header-graphics {
+    height: 400px;
+    .content {
+      top: 0px;
+    }
+  }
+  .hs-form fieldset {
+    max-width: none !important;
+  }
+  .social-share {
+    margin-left: 30px;
+    margin-right: 30px;
+    .container {
+      padding: 0 15px;
+    }
+    hr {
+      margin-left: 0px;
+    }
+    .block-title {
+      text-align: left;
+      padding: 0;
+    }
+    .icons {
+      text-align: left;
+    }
+  }
+
+  .map{
+    .container{
+      top: 0;
+    }
+    .contact-info{
+      left: 0;
+      right: auto;
+      top: 200px;
+      width: 375px;
+      bottom: auto;
+    }
+  }
+}
