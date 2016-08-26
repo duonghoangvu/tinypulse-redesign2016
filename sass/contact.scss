@@ -1,6 +1,7 @@
-@import "_typography";
-@import "_header";
-@import "_footer";
+$font_regular: 'Lato-Regular';
+$font_semibold: 'Lato-Semibold';
+$font_bold: 'Lato-Bold';
+$font_light: 'Lato-Light';
 
 .contact-header-graphics {
   h2 {
@@ -139,6 +140,58 @@
     margin-right: 0px;
   }
 }
+
+.map{
+  width: 100%; 
+  height: 500px;
+  background: red;
+  position: relative;
+  .container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .contact-info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    padding: 30px 15px 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    p{
+      margin: 0;
+      font-size: 14px;
+      font-family: $font_light;
+      margin-bottom: 12px;
+      i{
+        margin-right: 10px;
+        margin-left: 3px;
+      }
+    }
+    .title{
+      font-size: 22px;
+      position: relative;
+      padding-top: 10px;
+      font-family: $font_regular;
+      margin-bottom: 15px;
+      &:before{
+        content: "";
+        background: #F37122;
+        height: 2px;
+        top: 0;
+        left: 0;
+        width: 30px;
+        position: absolute;
+      }
+    }
+  }
+}
 @media screen and (min-width: 960px){
   .hs-form fieldset {
     max-width: none !important;
@@ -158,6 +211,16 @@
     }
     .icons {
       text-align: left;
+    }
+  }
+
+  .map{
+    .contact-info{
+      left: 0;
+      right: auto;
+      top: 200px;
+      width: 375px;
+      bottom: auto;
     }
   }
 }

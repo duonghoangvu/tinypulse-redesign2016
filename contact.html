@@ -113,6 +113,47 @@
           </div>
         </div>
       </div>
+      <div class="content-block map">
+        <div class="map" id="map"></div>
+        <div class="container">
+          <div class="contact-info">
+            <p class="title">Headquarters</p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i><span>200 West Thomas St. Seattle, WA 98119</span></p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i><span>(206) 455-9424</span></p>
+          </div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArRVa0WfPe-DIu1ZrAfK-t7OdMBh66Tsk" type="text/javascript"></script>
+        <script>
+          function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+              center: new google.maps.LatLng(47.6212049, -122.35973),
+              zoom: 17,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var currentCenter = map.getCenter();
+            window.onresize = function(){
+              google.maps.event.trigger(map, 'resize');
+              map.setCenter(currentCenter);
+            };
+            var marker = new google.maps.Marker({
+              position: {lat: 47.6212049, lng: -122.35973},
+              map: map,
+              title: 'Map of TINYpulse', 
+              icon: 'http://www.tinypulse.com/hubfs/redesign_2016/marker.png'
+            });
+            secretMessage = "Address: 200 West Thomas St. Seattle, WA 98119 <br/></br> Phone: +1 (206) 455-9424"
+            var infowindow = new google.maps.InfoWindow({
+              content: secretMessage
+            });
+            marker.addListener('click', function() {
+              infowindow.open(marker.get('map'), marker);
+            });
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+      </div>
     </div>
     <footer id="site-footer">
       <div class="container">
