@@ -66,7 +66,6 @@ jQuery(document).ready(function($) {
 	scroller.dom.nav = $('header .main-nav-container');
 	scroller.dom.mobileNav = $('.main-mobile-nav-container');
   scroller.wHeight = $('.header-graphics').height();
-  console.log(scroller.wHeight);
 	scroller.init();
 
   var scrollTo = function(sel){
