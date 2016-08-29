@@ -258,7 +258,7 @@ header{
       left: 0;
       right: 0;
       bottom: 0;
-      background: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg-small.png);
+      background: url(https://www.tinypulse.com/hubfs/redesign_2016/engage-bg-small.png);
       -webkit-filter: blur(15px);
       -moz-filter: blur(15px);
       filter: blur(15px);
@@ -393,7 +393,7 @@ header{
 }
 
 .header-graphics{
-  background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/header-bg.png);
+  background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -463,8 +463,12 @@ header{
         width: 100%;
         background: #00C26B;
         color: #fff;
-        font-family: $font_bold;
+        font-family: $font_semibold;
         font-size: 16px;
+        &:hover {
+          opacity: 0.9;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -610,7 +614,7 @@ header{
   }
 
   .header-graphics{
-    background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/large/header-bg.png);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/large/header-bg.png);
     height: 620px;
     .content{
       position: relative;
