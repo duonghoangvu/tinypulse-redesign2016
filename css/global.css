@@ -18,7 +18,33 @@
   src: url("fonts/Lato-Bold.eot");
   src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
 }
-/* line 2, ../sass/_header.scss */
+/* line 1, ../sass/_header.scss */
+.banner {
+  width: 100%;
+  font-family: "Lato-Semibold";
+  letter-spacing: 4px;
+  line-height: 23px;
+  vertical-align: text-bottom;
+  text-align: center;
+  background: -moz-linear-gradient(45deg, #ff5c5c 0, rgba(152, 44, 129, 0.86) 100%);
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0, rgba(152, 44, 129, 0.86) 100%);
+  background: linear-gradient(45deg, #ff5c5c 0, rgba(152, 44, 129, 0.86) 100%);
+  box-sizing: border-box;
+  position: fixed;
+}
+/* line 13, ../sass/_header.scss */
+.banner a {
+  color: #FFF;
+}
+
+/* line 17, ../sass/_header.scss */
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
+
+/* line 23, ../sass/_header.scss */
 header .overlay {
   position: absolute;
   top: 0;
@@ -31,7 +57,7 @@ header .overlay {
   opacity: 0;
 }
 
-/* line 11, ../sass/_header.scss */
+/* line 32, ../sass/_header.scss */
 .main-nav-container {
   display: none;
   height: 56px;
@@ -48,20 +74,20 @@ header .overlay {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   transform: translate3d(0, 0, 0);
 }
-/* line 24, ../sass/_header.scss */
+/* line 45, ../sass/_header.scss */
 .main-nav-container.sticked {
   background: rgba(0, 0, 0, 0.6);
   border-bottom: 1px solid #DADADA;
 }
-/* line 32, ../sass/_header.scss */
+/* line 53, ../sass/_header.scss */
 .main-nav-container.sticked .main-nav nav ul li:hover, .main-nav-container.sticked .main-nav nav ul li.active {
   background: rgba(115, 115, 115, 0.3);
 }
-/* line 35, ../sass/_header.scss */
+/* line 56, ../sass/_header.scss */
 .main-nav-container.sticked .main-nav nav ul li a {
   color: #4A4A4A;
 }
-/* line 40, ../sass/_header.scss */
+/* line 61, ../sass/_header.scss */
 .main-nav-container.sticked .main-nav nav .sub {
   background: #fff;
   border-color: #DADADA;
@@ -71,40 +97,40 @@ header .overlay {
   top: 57px;
 }
 
-/* line 53, ../sass/_header.scss */
+/* line 74, ../sass/_header.scss */
 .main-nav {
   max-width: 1220px;
   margin: 0 auto;
   padding: 20px 10px;
   position: relative;
 }
-/* line 59, ../sass/_header.scss */
+/* line 80, ../sass/_header.scss */
 .main-nav:after {
   content: "";
   width: 100%;
   height: 1px;
   display: inline-block;
 }
-/* line 65, ../sass/_header.scss */
+/* line 86, ../sass/_header.scss */
 .main-nav .logo {
   display: inline-block;
   width: 99px;
 }
-/* line 68, ../sass/_header.scss */
+/* line 89, ../sass/_header.scss */
 .main-nav .logo img {
   width: 100%;
   height: auto;
 }
-/* line 73, ../sass/_header.scss */
+/* line 94, ../sass/_header.scss */
 .main-nav nav {
   float: right;
 }
-/* line 75, ../sass/_header.scss */
+/* line 96, ../sass/_header.scss */
 .main-nav nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 78, ../sass/_header.scss */
+/* line 99, ../sass/_header.scss */
 .main-nav nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -113,16 +139,16 @@ header .overlay {
   transition: all 0.3s;
   border-radius: 3px;
 }
-/* line 85, ../sass/_header.scss */
+/* line 106, ../sass/_header.scss */
 .main-nav nav ul li:hover, .main-nav nav ul li.active {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 87, ../sass/_header.scss */
+/* line 108, ../sass/_header.scss */
 .main-nav nav ul li:hover .sub, .main-nav nav ul li.active .sub {
   height: inherit;
   opacity: 1;
 }
-/* line 93, ../sass/_header.scss */
+/* line 114, ../sass/_header.scss */
 .main-nav nav ul li.has-sub:before {
   content: "";
   height: 70px;
@@ -131,21 +157,21 @@ header .overlay {
   position: absolute;
   z-index: 0;
 }
-/* line 101, ../sass/_header.scss */
+/* line 122, ../sass/_header.scss */
 .main-nav nav ul li.has-sub:hover:before {
   display: block;
 }
-/* line 105, ../sass/_header.scss */
+/* line 126, ../sass/_header.scss */
 .main-nav nav ul li.contact-sales {
   position: relative;
   top: 3px;
 }
-/* line 108, ../sass/_header.scss */
+/* line 129, ../sass/_header.scss */
 .main-nav nav ul li.contact-sales a {
   font-size: 24px;
   padding: 0 10px;
 }
-/* line 113, ../sass/_header.scss */
+/* line 134, ../sass/_header.scss */
 .main-nav nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -156,19 +182,19 @@ header .overlay {
   transition: all 0.3s;
   position: relative;
 }
-/* line 122, ../sass/_header.scss */
+/* line 143, ../sass/_header.scss */
 .main-nav nav ul li a.signup {
   border: 2px solid #fff;
   border-radius: 3px;
   padding: 6px 20px 8px;
   line-height: normal;
 }
-/* line 127, ../sass/_header.scss */
+/* line 148, ../sass/_header.scss */
 .main-nav nav ul li a.signup:hover {
   background: #fff;
   color: #000;
 }
-/* line 135, ../sass/_header.scss */
+/* line 156, ../sass/_header.scss */
 .main-nav nav .sub {
   transition: opacity 0.3s;
   opacity: 0;
@@ -180,7 +206,7 @@ header .overlay {
   top: 45px;
   left: 0;
 }
-/* line 146, ../sass/_header.scss */
+/* line 167, ../sass/_header.scss */
 .main-nav nav .sub li {
   border-radius: 0;
   margin-left: 0;
@@ -188,33 +214,33 @@ header .overlay {
   width: 100%;
   min-width: 150px;
 }
-/* line 152, ../sass/_header.scss */
+/* line 173, ../sass/_header.scss */
 .main-nav nav .sub li a {
   padding: 8px 10px 10px;
 }
 
-/* line 160, ../sass/_header.scss */
+/* line 181, ../sass/_header.scss */
 .main-mobile-nav-container {
   transition: all 0.3s;
 }
-/* line 163, ../sass/_header.scss */
+/* line 184, ../sass/_header.scss */
 .main-mobile-nav-container.sticked .triggers {
   background: white;
   box-shadow: 0 0 5px #333;
 }
-/* line 167, ../sass/_header.scss */
+/* line 188, ../sass/_header.scss */
 .main-mobile-nav-container.sticked .triggers .hamburger span {
   background: #000;
 }
-/* line 173, ../sass/_header.scss */
+/* line 194, ../sass/_header.scss */
 .main-mobile-nav-container.sticked .logo .color {
   opacity: 1;
 }
-/* line 176, ../sass/_header.scss */
+/* line 197, ../sass/_header.scss */
 .main-mobile-nav-container.sticked .logo .white {
   opacity: 0;
 }
-/* line 181, ../sass/_header.scss */
+/* line 202, ../sass/_header.scss */
 .main-mobile-nav-container .triggers {
   padding: 10px 15px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
@@ -233,7 +259,14 @@ header .overlay {
   left: 0;
   right: 0;
 }
-/* line 195, ../sass/_header.scss */
+/* line 216, ../sass/_header.scss */
+.main-mobile-nav-container .banner {
+  top: 43px;
+  z-index: 8;
+  font-size: 15px;
+  padding: 0 15px;
+}
+/* line 222, ../sass/_header.scss */
 .main-mobile-nav-container .logo {
   display: inline-block;
   width: 120px;
@@ -241,7 +274,7 @@ header .overlay {
   z-index: 10;
   position: relative;
 }
-/* line 201, ../sass/_header.scss */
+/* line 228, ../sass/_header.scss */
 .main-mobile-nav-container .logo img {
   transition: all 0.3s;
   width: 100%;
@@ -249,17 +282,17 @@ header .overlay {
   position: absolute;
   top: 2px;
 }
-/* line 208, ../sass/_header.scss */
+/* line 235, ../sass/_header.scss */
 .main-mobile-nav-container .logo .color {
   opacity: 0;
 }
-/* line 212, ../sass/_header.scss */
+/* line 239, ../sass/_header.scss */
 .main-mobile-nav-container .hamburger {
   position: absolute;
   right: 15px;
   top: 13px;
 }
-/* line 216, ../sass/_header.scss */
+/* line 243, ../sass/_header.scss */
 .main-mobile-nav-container .hamburger span {
   width: 25px;
   height: 3px;
@@ -268,7 +301,7 @@ header .overlay {
   display: block;
   transition: all 0.3s;
 }
-/* line 225, ../sass/_header.scss */
+/* line 252, ../sass/_header.scss */
 .main-mobile-nav-container .cross {
   background: none;
   position: absolute;
@@ -286,7 +319,7 @@ header .overlay {
   display: none;
   margin: 0;
 }
-/* line 242, ../sass/_header.scss */
+/* line 269, ../sass/_header.scss */
 .main-mobile-nav-container nav {
   position: fixed;
   z-index: 9;
@@ -301,7 +334,7 @@ header .overlay {
   transition: all 0.3s;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 255, ../sass/_header.scss */
+/* line 282, ../sass/_header.scss */
 .main-mobile-nav-container nav:before {
   content: "";
   position: absolute;
@@ -314,7 +347,7 @@ header .overlay {
   -moz-filter: blur(15px);
   filter: blur(15px);
 }
-/* line 267, ../sass/_header.scss */
+/* line 294, ../sass/_header.scss */
 .main-mobile-nav-container nav:after {
   content: "";
   position: absolute;
@@ -324,7 +357,7 @@ header .overlay {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 276, ../sass/_header.scss */
+/* line 303, ../sass/_header.scss */
 .main-mobile-nav-container nav ul {
   margin: 0;
   padding: 0;
@@ -333,7 +366,7 @@ header .overlay {
   overflow: auto;
   height: 100%;
 }
-/* line 284, ../sass/_header.scss */
+/* line 311, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -343,7 +376,7 @@ header .overlay {
   border-radius: 3px;
   margin-bottom: 15px;
 }
-/* line 293, ../sass/_header.scss */
+/* line 320, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub:before {
   content: "\f078";
   color: #fff;
@@ -355,29 +388,29 @@ header .overlay {
   -webkit-font-smoothing: antialiased;
   transition: all 0.3s;
 }
-/* line 305, ../sass/_header.scss */
+/* line 332, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub.expanded > a {
   font-family: "Lato-Bold";
 }
-/* line 308, ../sass/_header.scss */
+/* line 335, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub.expanded .sub {
   max-height: 300px;
 }
-/* line 311, ../sass/_header.scss */
+/* line 338, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub.expanded:before {
   transform: rotate(180deg);
 }
-/* line 316, ../sass/_header.scss */
+/* line 343, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.contact-sales {
   position: relative;
   top: 3px;
 }
-/* line 319, ../sass/_header.scss */
+/* line 346, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.contact-sales a {
   font-size: 24px;
   padding: 0 10px;
 }
-/* line 324, ../sass/_header.scss */
+/* line 351, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -388,7 +421,7 @@ header .overlay {
   transition: all 0.3s;
   position: relative;
 }
-/* line 333, ../sass/_header.scss */
+/* line 360, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li a.signup {
   border-radius: 3px;
   padding: 6px 20px 8px;
@@ -397,50 +430,50 @@ header .overlay {
   text-align: center;
   margin-top: 20px;
 }
-/* line 340, ../sass/_header.scss */
+/* line 367, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li a.signup:hover {
   background: #fff;
   color: #00C26B;
 }
-/* line 348, ../sass/_header.scss */
+/* line 375, ../sass/_header.scss */
 .main-mobile-nav-container nav .sub {
   transition: max-height 0.3s;
   overflow: hidden;
   max-height: 0;
 }
-/* line 352, ../sass/_header.scss */
+/* line 379, ../sass/_header.scss */
 .main-mobile-nav-container nav .sub li {
   margin-top: 10px;
   margin-bottom: 0;
   margin-left: 20px;
 }
-/* line 356, ../sass/_header.scss */
+/* line 383, ../sass/_header.scss */
 .main-mobile-nav-container nav .sub li a {
   font-size: 18px;
 }
 
-/* line 369, ../sass/_header.scss */
+/* line 396, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container .triggers .hamburger span:first-child {
   transform: rotate(39deg) translateY(5px) translateX(3px);
 }
-/* line 371, ../sass/_header.scss */
+/* line 398, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container .triggers .hamburger span:first-child + span {
   transform: scale(0);
 }
-/* line 375, ../sass/_header.scss */
+/* line 402, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container .triggers .hamburger span:last-child {
   transform: rotate(-39deg) translateY(-7px) translateX(5px);
 }
-/* line 384, ../sass/_header.scss */
+/* line 411, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container.sticked .triggers .hamburger span {
   background: #000;
 }
-/* line 390, ../sass/_header.scss */
+/* line 417, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container nav {
   transform: translateX(0);
 }
 
-/* line 396, ../sass/_header.scss */
+/* line 423, ../sass/_header.scss */
 .header-graphics {
   background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/header-bg.png);
   background-size: cover;
@@ -451,7 +484,7 @@ header .overlay {
   display: inline-block;
   width: 100%;
 }
-/* line 405, ../sass/_header.scss */
+/* line 432, ../sass/_header.scss */
 .header-graphics .content {
   position: relative;
   display: block;
@@ -459,7 +492,7 @@ header .overlay {
   margin: 0 auto;
   margin-top: 110px;
 }
-/* line 411, ../sass/_header.scss */
+/* line 438, ../sass/_header.scss */
 .header-graphics .content h1 {
   font-size: 20px;
   text-align: center;
@@ -472,7 +505,7 @@ header .overlay {
   text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
   text-align: center;
 }
-/* line 424, ../sass/_header.scss */
+/* line 451, ../sass/_header.scss */
 .header-graphics .content .sub-headline {
   font-family: "Lato-Bold";
   font-size: 24px;
@@ -480,12 +513,12 @@ header .overlay {
   margin-top: -10px;
   text-align: center;
 }
-/* line 431, ../sass/_header.scss */
+/* line 458, ../sass/_header.scss */
 .header-graphics .content .hbspt-form {
   height: 0;
   overflow: hidden;
 }
-/* line 435, ../sass/_header.scss */
+/* line 462, ../sass/_header.scss */
 .header-graphics .content .try-it-form {
   background: rgba(0, 0, 0, 0.6);
   padding: 25px;
@@ -493,7 +526,7 @@ header .overlay {
   font-size: 0;
   border-radius: 5px;
 }
-/* line 441, ../sass/_header.scss */
+/* line 468, ../sass/_header.scss */
 .header-graphics .content .try-it-form input, .header-graphics .content .try-it-form button {
   display: inline-block;
   vertical-align: top;
@@ -508,7 +541,7 @@ header .overlay {
   min-height: inherit;
   text-transform: none;
 }
-/* line 455, ../sass/_header.scss */
+/* line 482, ../sass/_header.scss */
 .header-graphics .content .try-it-form input {
   width: 100%;
   color: #9b9b9b;
@@ -517,7 +550,7 @@ header .overlay {
   font-family: "Lato-Regular";
   font-size: 15px;
 }
-/* line 463, ../sass/_header.scss */
+/* line 490, ../sass/_header.scss */
 .header-graphics .content .try-it-form button {
   width: 100%;
   background: #00C26B;
@@ -525,18 +558,18 @@ header .overlay {
   font-family: "Lato-Semibold";
   font-size: 16px;
 }
-/* line 469, ../sass/_header.scss */
+/* line 496, ../sass/_header.scss */
 .header-graphics .content .try-it-form button:hover {
   opacity: 0.9;
   cursor: pointer;
 }
 
-/* line 478, ../sass/_header.scss */
+/* line 505, ../sass/_header.scss */
 .subnav {
   text-align: left;
   height: 40px;
 }
-/* line 481, ../sass/_header.scss */
+/* line 508, ../sass/_header.scss */
 .subnav .container {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100
 background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
@@ -547,7 +580,7 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 488, ../sass/_header.scss */
+/* line 515, ../sass/_header.scss */
 .subnav ul {
   margin: 0;
   padding: 0;
@@ -556,42 +589,42 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   overflow: hidden;
   transition: max-height 0.75s;
 }
-/* line 495, ../sass/_header.scss */
+/* line 522, ../sass/_header.scss */
 .subnav ul.expanded {
   max-height: 300px;
 }
-/* line 497, ../sass/_header.scss */
+/* line 524, ../sass/_header.scss */
 .subnav ul.expanded li {
   display: inline-block;
 }
-/* line 499, ../sass/_header.scss */
+/* line 526, ../sass/_header.scss */
 .subnav ul.expanded li:first-child {
   height: 0;
 }
-/* line 501, ../sass/_header.scss */
+/* line 528, ../sass/_header.scss */
 .subnav ul.expanded li:first-child a:after {
   content: "\f077";
 }
-/* line 508, ../sass/_header.scss */
+/* line 535, ../sass/_header.scss */
 .subnav li {
   list-style: none;
   display: none;
   width: 100%;
 }
-/* line 512, ../sass/_header.scss */
+/* line 539, ../sass/_header.scss */
 .subnav li:first-child {
   position: absolute;
   top: 0;
   bottom: 0;
   display: block;
 }
-/* line 517, ../sass/_header.scss */
+/* line 544, ../sass/_header.scss */
 .subnav li:first-child a {
   display: block;
   padding: 0;
   height: 100%;
 }
-/* line 521, ../sass/_header.scss */
+/* line 548, ../sass/_header.scss */
 .subnav li:first-child a:after {
   content: "\f078";
   position: absolute;
@@ -600,12 +633,12 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   font: normal normal normal 14px/1 FontAwesome;
   -webkit-font-smoothing: antialiased;
 }
-/* line 531, ../sass/_header.scss */
+/* line 558, ../sass/_header.scss */
 .subnav li.active {
   display: inline-block;
   font-family: "Lato-Bold";
 }
-/* line 536, ../sass/_header.scss */
+/* line 563, ../sass/_header.scss */
 .subnav a {
   display: block;
   font-size: 16px;
@@ -614,11 +647,11 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   padding: 8px 15px 13px;
 }
 
-/* line 545, ../sass/_header.scss */
+/* line 572, ../sass/_header.scss */
 .subnav-sticked .main-mobile-nav-container {
   transform: translateY(-50px);
 }
-/* line 549, ../sass/_header.scss */
+/* line 576, ../sass/_header.scss */
 .subnav-sticked .subnav .container {
   position: fixed;
   top: 0;
@@ -627,116 +660,131 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
 }
 
 @media screen and (min-width: 960px) {
-  /* line 559, ../sass/_header.scss */
+  /* line 586, ../sass/_header.scss */
+  .banner {
+    top: 0;
+    z-index: 8;
+    font-size: 24px;
+    line-height: 31px;
+    padding: 10px 15px;
+  }
+
+  /* line 593, ../sass/_header.scss */
+  .close-button {
+    right: 15px;
+  }
+
+  /* line 596, ../sass/_header.scss */
   .main-nav-container {
     height: 76px;
     display: block;
+    top: 51px;
   }
-  /* line 562, ../sass/_header.scss */
+  /* line 600, ../sass/_header.scss */
   .main-nav-container.sticked {
     background: #fff;
   }
-  /* line 567, ../sass/_header.scss */
+  /* line 605, ../sass/_header.scss */
   .main-nav-container.sticked nav ul li a {
     color: #000;
   }
-  /* line 569, ../sass/_header.scss */
+  /* line 607, ../sass/_header.scss */
   .main-nav-container.sticked nav ul li a.signup {
     border-color: #00C26B;
     color: #00C26B;
   }
-  /* line 572, ../sass/_header.scss */
+  /* line 610, ../sass/_header.scss */
   .main-nav-container.sticked nav ul li a.signup:hover {
     background: #00C26B;
     color: #fff;
   }
-  /* line 583, ../sass/_header.scss */
+  /* line 621, ../sass/_header.scss */
   .main-nav-container.sticked .main-nav .logo .color {
     opacity: 1;
   }
-  /* line 586, ../sass/_header.scss */
+  /* line 624, ../sass/_header.scss */
   .main-nav-container.sticked .main-nav .logo .white {
     opacity: 0;
   }
 
-  /* line 594, ../sass/_header.scss */
+  /* line 632, ../sass/_header.scss */
   .main-nav .logo {
     width: 150px;
     height: 28px;
     margin-top: 7px;
     position: relative;
   }
-  /* line 599, ../sass/_header.scss */
+  /* line 637, ../sass/_header.scss */
   .main-nav .logo img {
     transition: all 0.3s;
     position: absolute;
   }
-  /* line 603, ../sass/_header.scss */
+  /* line 641, ../sass/_header.scss */
   .main-nav .logo .color {
     opacity: 0;
   }
-  /* line 607, ../sass/_header.scss */
+  /* line 645, ../sass/_header.scss */
   .main-nav nav {
     display: block;
     margin-top: -5px;
   }
 
-  /* line 613, ../sass/_header.scss */
+  /* line 651, ../sass/_header.scss */
   .main-mobile-nav-container {
     display: none;
   }
 
-  /* line 617, ../sass/_header.scss */
+  /* line 655, ../sass/_header.scss */
   .header-graphics {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/large/header-bg.png);
     height: 620px;
   }
-  /* line 620, ../sass/_header.scss */
+  /* line 658, ../sass/_header.scss */
   .header-graphics .content {
     position: relative;
     top: 10%;
     max-width: 600px;
   }
-  /* line 624, ../sass/_header.scss */
+  /* line 662, ../sass/_header.scss */
   .header-graphics .content h1 {
     font-size: 48px;
     margin-bottom: 50px;
   }
-  /* line 628, ../sass/_header.scss */
+  /* line 666, ../sass/_header.scss */
   .header-graphics .content .sub-headline {
     font-size: 24px;
     margin-top: -35px;
   }
-  /* line 632, ../sass/_header.scss */
+  /* line 670, ../sass/_header.scss */
   .header-graphics .content .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
     font-size: 0;
   }
-  /* line 637, ../sass/_header.scss */
+  /* line 675, ../sass/_header.scss */
   .header-graphics .content .try-it-form input {
     width: 68%;
     border-radius: 4px 0 0 4px;
     margin: 0;
     text-align: left;
   }
-  /* line 643, ../sass/_header.scss */
+  /* line 681, ../sass/_header.scss */
   .header-graphics .content .try-it-form button {
     width: 32%;
     border-radius: 0 4px 4px 0;
     font-size: 18px;
   }
-  /* line 649, ../sass/_header.scss */
+  /* line 687, ../sass/_header.scss */
   .header-graphics .content .meet-consultant {
     padding-top: 120px;
   }
-  /* line 651, ../sass/_header.scss */
+  /* line 689, ../sass/_header.scss */
   .header-graphics .content .meet-consultant a {
     font-size: 24px;
   }
 
-  /* line 657, ../sass/_header.scss */
+  /* line 695, ../sass/_header.scss */
   .subnav {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
     background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -749,24 +797,24 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     /* IE6-9 fallback on horizontal gradient */
     height: 50px;
   }
-  /* line 664, ../sass/_header.scss */
+  /* line 702, ../sass/_header.scss */
   .subnav .container {
     max-width: 960px;
     margin: 0 auto;
     background: none;
   }
-  /* line 669, ../sass/_header.scss */
+  /* line 707, ../sass/_header.scss */
   .subnav ul {
     text-align: center;
     max-height: inherit;
   }
-  /* line 672, ../sass/_header.scss */
+  /* line 710, ../sass/_header.scss */
   .subnav ul li {
     display: inline-block;
     width: 150px;
     position: relative;
   }
-  /* line 676, ../sass/_header.scss */
+  /* line 714, ../sass/_header.scss */
   .subnav ul li:before {
     content: "";
     position: absolute;
@@ -778,25 +826,25 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     background: #fff;
     transform: scaleX(0);
   }
-  /* line 687, ../sass/_header.scss */
+  /* line 725, ../sass/_header.scss */
   .subnav ul li:first-child {
     display: none;
   }
-  /* line 691, ../sass/_header.scss */
+  /* line 729, ../sass/_header.scss */
   .subnav ul li.active:before, .subnav ul li:hover:before {
     transform: scaleX(1);
   }
-  /* line 694, ../sass/_header.scss */
+  /* line 732, ../sass/_header.scss */
   .subnav ul li.active a, .subnav ul li:hover a {
     font-family: "Lato-Bold";
   }
-  /* line 698, ../sass/_header.scss */
+  /* line 736, ../sass/_header.scss */
   .subnav ul li a {
     font-size: 16px;
     padding: 14px 15px 17px;
   }
 
-  /* line 707, ../sass/_header.scss */
+  /* line 745, ../sass/_header.scss */
   .subnav-sticked .subnav .container {
     background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
     /* FF3.6-15 */
