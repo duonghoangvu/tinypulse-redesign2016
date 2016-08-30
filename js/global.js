@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
-	var subnav = $('.subnav'), 
-		body = $('body'), 
+    var subnav = $('.subnav'), 
+    body = $('body'), 
     topMenuH = 0,
     scroolStop = 0;
   
@@ -15,16 +15,16 @@ jQuery(document).ready(function($) {
   
   $(window).on('resize', function(){
     topMenuH = ($(window).width() >= 960) ? 76 : 0;
-    scrollStop = ($(window).width() >= 960) ? 126 : 40;
+    scrollStop = ($(window).width() >= 960) ? 121 : 40;
 
     if ($(window).width() < 960){
-			$('#site-footer').find('ul li:first-child').off('click').on('click', function(e){
-				$(this).closest('ul').toggleClass('expanded');
-			});
+      $('#site-footer').find('ul li:first-child').off('click').on('click', function(e){
+        $(this).closest('ul').toggleClass('expanded');
+      });
       $('#sub-nav-trigger').off('click').on('click', function(e){
-      	e.preventDefault();
-	  		$(this).closest('ul').toggleClass('expanded');
-	  	});
+        e.preventDefault();
+        $(this).closest('ul').toggleClass('expanded');
+      });
     }
     $('.subnav').find('a:not(#sub-nav-trigger)').off('click').on('click', function(e){
       e.preventDefault();
@@ -37,8 +37,8 @@ jQuery(document).ready(function($) {
         scrollTo(block);      
       }
     });
-	}).on('scroll', function(){
-		var scrollTop = $(window).scrollTop();
+  }).on('scroll', function(){
+    var scrollTop = $(window).scrollTop();
     // *********************************************** subnav
     if (subnav.length > 0){
       if (scrollTop + topMenuH >= subnav.offset().top){
@@ -59,14 +59,14 @@ jQuery(document).ready(function($) {
           }
       });      
     }
-	}).trigger('resize');
+  }).trigger('resize');
 
-	var scroller = new Scroller();
-	scroller.dom.blur = $('header .overlay');
-	scroller.dom.nav = $('header .main-nav-container');
-	scroller.dom.mobileNav = $('.main-mobile-nav-container');
+  var scroller = new Scroller();
+  scroller.dom.blur = $('header .overlay');
+  scroller.dom.nav = $('header .main-nav-container');
+  scroller.dom.mobileNav = $('.main-mobile-nav-container');
   scroller.wHeight = $('.header-graphics').height();
-	scroller.init();
+  scroller.init();
 
   var scrollTo = function(sel){
     var ele = $(sel);

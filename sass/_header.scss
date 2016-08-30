@@ -1,3 +1,25 @@
+.banner {
+  width: 100%;
+  font-family: $font_semibold;
+  letter-spacing: 4px;
+  line-height: 23px;
+  vertical-align: text-bottom;
+  text-align: center;
+  background: -moz-linear-gradient(45deg,#ff5c5c 0,rgba(152,44,129,0.86) 100%);
+  background: -webkit-linear-gradient(45deg,#ff5c5c 0,rgba(152,44,129,0.86) 100%);
+  background: linear-gradient(45deg,#ff5c5c 0,rgba(152,44,129,0.86) 100%);
+  box-sizing: border-box;
+  position: fixed;
+  display: none;
+  a {
+    color: #FFF;
+  }
+}
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
 header{
   .overlay{
     position: absolute;
@@ -42,7 +64,8 @@ header{
           border-color: #DADADA;
           border-style: solid;
           border-width: 0 1px 1px 1px;
-          top: 55px;
+          border-radius: 0 0 3px 3px;
+          top: 57px;
         }     
       }
     }
@@ -52,7 +75,7 @@ header{
 .main-nav{
   max-width: 1220px;
   margin: 0 auto;
-  padding: 20px 10px;
+  padding: 20px 10px 0; 
   position: relative;
   
   &:after{
@@ -138,7 +161,7 @@ header{
       overflow: hidden;
       position: absolute;
       background: rgba(0,0,0,0.5);
-      border-radius: 0 0 3px 3px;
+      border-radius: 3px;
       top: 45px;
       left: 0;
 
@@ -190,6 +213,12 @@ header{
     top: 0;
     left: 0;
     right: 0;
+  }
+  .banner {
+    top: 43px;
+    z-index: 8;
+    font-size: 15px;
+    padding: 0 15px;
   }
   .logo{
     display: inline-block;
@@ -258,7 +287,7 @@ header{
       left: 0;
       right: 0;
       bottom: 0;
-      background: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg-small.png);
+      background: url(https://www.tinypulse.com/hubfs/redesign_2016/engage-bg-small.png);
       -webkit-filter: blur(15px);
       -moz-filter: blur(15px);
       filter: blur(15px);
@@ -393,7 +422,7 @@ header{
 }
 
 .header-graphics{
-  background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/header-bg.png);
+  background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -463,8 +492,12 @@ header{
         width: 100%;
         background: #00C26B;
         color: #fff;
-        font-family: $font_bold;
+        font-family: $font_semibold;
         font-size: 16px;
+        &:hover {
+          opacity: 0.9;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -473,6 +506,7 @@ header{
 .subnav{
   text-align: left;
   height: 40px;
+  position: relative;
   .container{
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100
     background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
@@ -551,11 +585,22 @@ header{
 }
 
 @media screen and (min-width: 960px){
+  .banner {
+    z-index: 8;
+    font-size: 24px;
+    line-height: 31px;
+    padding: 10px 15px;
+    position: static;
+  }
+  .close-button {
+    right: 15px;
+  }
   .main-nav-container{
     height: 76px;
     display: block;
     &.sticked{
       background: #fff;
+      height: auto;
       nav{
         ul{
           li{
@@ -589,7 +634,7 @@ header{
     .logo{
       width: 150px;
       height: 28px;
-      margin-top: 7px;
+      margin-top: 0;
       position: relative;
       img{
         transition: all 0.3s;
@@ -610,7 +655,7 @@ header{
   }
 
   .header-graphics{
-    background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/large/header-bg.png);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/large/header-bg.png);
     height: 620px;
     .content{
       position: relative;
@@ -705,7 +750,7 @@ header{
         background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-        top: 77px;
+        top: 72px;
         max-width: inherit;
       }
     }
