@@ -144,11 +144,11 @@ a{
   }
   .mask-1{
   	padding: 30px 15px;
-    background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg.png);
+    background-image: url(//www.tinypulse.com/hubfs/redesign_2016/engage-bg-small.png);
   }
   .mask-2{
   	padding: 30px 15px;
-    background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/perform-bg.png);
+    background-image: url(//www.tinypulse.com/hubfs/redesign_2016/Perform_mobile.png);
   }
   .text{
     color: #FFF;
@@ -159,14 +159,14 @@ a{
     .title{
       font-size: 24px;
       line-height: 32px;
-      text-shadow: 0 2px 15px rgba(0,0,0,0.42);
-      width: 230px;
+      width: 300px;
+      text-shadow: 0 2px 10px #333;
       letter-spacing: 0.75px;
       margin: 0;
     }
     .desc{
       font-size: 17px;
-      text-shadow: 0 2px 15px rgba(0,0,0,0.42);
+      text-shadow: 0 2px 10px #333;
       width: 290px;
       font-family: 'Lato-Light';
     }
@@ -307,6 +307,31 @@ a{
 		font-size: 16px;
 	}
 }
+.press{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
+	background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding: 30px 10px 20px 10px;
+	text-align: center;
+  .title {
+    font-family: $font_regular;
+    font-size:18px;
+    color:#ffffff;
+    letter-spacing:0px;
+    line-height:30px;
+    text-align:center;
+  }
+	img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 110px;
+    height: auto;
+    margin: 10px;
+	}
+}
+
 
 @media screen and (min-width: 960px){
 	.header-graphics, .main-content{
@@ -377,13 +402,13 @@ a{
         left: 0;
         color: #fff;
         position: absolute;
-	      left: 61%;
 	      width: 400px;
 	      top: 50%;
   			margin-top: -150px;
 	      .title{
 	      	font-size: 36px;
         	line-height: 48px;
+          text-shadow: 0 2px 10px #333;
 	      }
 	      .desc{
 	      	font-size: 20px;
@@ -435,12 +460,12 @@ a{
       }
       .masked-image-1{
       	div{
-      		background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/perform-bg.png);
+      		background-image: url(//www.tinypulse.com/hubfs/Client_logo/Perform.png);
       	}
       }
       .masked-image-2{
       	div{
-      		background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg.png);
+      		background-image: url(//www.tinypulse.com/hubfs/redesign_2016/engage-bg.png);
       	}
       }
     }
@@ -485,5 +510,13 @@ a{
   	.block-title{
   		font-size: 26px;
   	}
+  }
+  .press img {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    width: 100px;
+    display: inline-block;
   }
 }

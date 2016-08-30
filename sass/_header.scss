@@ -671,6 +671,7 @@ header{
       }
       .sub-headline {
         font-size: 22px;
+        letter-spacing: 1px;
       }
       .try-it-form{
         max-width: 450px;
@@ -715,7 +716,7 @@ header{
       max-height: inherit;
       li{
         display: inline-block;
-        width: 150px;
+        width: 200px;
         position: relative;
         &:before{
           content: "";

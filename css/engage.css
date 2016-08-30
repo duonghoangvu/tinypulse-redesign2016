@@ -765,8 +765,9 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   /* line 672, ../sass/_header.scss */
   .header-graphics .content .sub-headline {
     font-size: 22px;
+    letter-spacing: 1px;
   }
-  /* line 675, ../sass/_header.scss */
+  /* line 676, ../sass/_header.scss */
   .header-graphics .content .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
@@ -774,29 +775,29 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     font-size: 0;
     margin-top: 40px;
   }
-  /* line 681, ../sass/_header.scss */
+  /* line 682, ../sass/_header.scss */
   .header-graphics .content .try-it-form input {
     width: 68%;
     border-radius: 4px 0 0 4px;
     margin: 0;
     text-align: left;
   }
-  /* line 687, ../sass/_header.scss */
+  /* line 688, ../sass/_header.scss */
   .header-graphics .content .try-it-form button {
     width: 32%;
     border-radius: 0 4px 4px 0;
     font-size: 18px;
   }
-  /* line 693, ../sass/_header.scss */
+  /* line 694, ../sass/_header.scss */
   .header-graphics .content .meet-consultant {
     padding-top: 120px;
   }
-  /* line 695, ../sass/_header.scss */
+  /* line 696, ../sass/_header.scss */
   .header-graphics .content .meet-consultant a {
     font-size: 24px;
   }
 
-  /* line 701, ../sass/_header.scss */
+  /* line 702, ../sass/_header.scss */
   .subnav {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
     background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -809,24 +810,24 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     /* IE6-9 fallback on horizontal gradient */
     height: 50px;
   }
-  /* line 708, ../sass/_header.scss */
+  /* line 709, ../sass/_header.scss */
   .subnav .container {
     max-width: 960px;
     margin: 0 auto;
     background: none;
   }
-  /* line 713, ../sass/_header.scss */
+  /* line 714, ../sass/_header.scss */
   .subnav ul {
     text-align: center;
     max-height: inherit;
   }
-  /* line 716, ../sass/_header.scss */
+  /* line 717, ../sass/_header.scss */
   .subnav ul li {
     display: inline-block;
-    width: 150px;
+    width: 200px;
     position: relative;
   }
-  /* line 720, ../sass/_header.scss */
+  /* line 721, ../sass/_header.scss */
   .subnav ul li:before {
     content: "";
     position: absolute;
@@ -838,25 +839,25 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     background: #fff;
     transform: scaleX(0);
   }
-  /* line 731, ../sass/_header.scss */
+  /* line 732, ../sass/_header.scss */
   .subnav ul li:first-child {
     display: none;
   }
-  /* line 735, ../sass/_header.scss */
+  /* line 736, ../sass/_header.scss */
   .subnav ul li.active:before, .subnav ul li:hover:before {
     transform: scaleX(1);
   }
-  /* line 738, ../sass/_header.scss */
+  /* line 739, ../sass/_header.scss */
   .subnav ul li.active a, .subnav ul li:hover a {
     font-family: "Lato-Bold";
   }
-  /* line 742, ../sass/_header.scss */
+  /* line 743, ../sass/_header.scss */
   .subnav ul li a {
     font-size: 16px;
     padding: 14px 15px 17px;
   }
 
-  /* line 751, ../sass/_header.scss */
+  /* line 752, ../sass/_header.scss */
   .subnav-sticked .subnav .container {
     background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
     /* FF3.6-15 */
@@ -1046,7 +1047,7 @@ footer .copyright span {
 
 /* line 8, ../sass/engage.scss */
 .engage-header-graphics {
-  background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-mobile-bg.png);
+  background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage-header-mobile-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1089,45 +1090,47 @@ footer .copyright span {
 /* line 46, ../sass/engage.scss */
 .engage-header-graphics .content .try-it-form {
   background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
+  padding: 25px;
   margin: 70px 0 50px 0;
   font-size: 0;
   border-radius: 5px;
 }
 /* line 52, ../sass/engage.scss */
-.engage-header-graphics .content .try-it-form input {
-  font-size: 18px;
-  padding: 7px;
-  min-height: inherit;
-  height: inherit;
-  line-height: 21px;
-  border-radius: 4px;
-  width: 100%;
-  border: 0;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  font-family: "Lato-Semibold";
-  font-size: 14px;
-  color: #9b9b9b;
-  letter-spacing: 0px;
-  text-align: left;
-}
-/* line 69, ../sass/engage.scss */
-.engage-header-graphics .content .try-it-form button {
-  background: #00C26B;
-  border-radius: 4px;
-  border: 0;
-  padding: 5px;
-  color: #fff;
-  width: 100%;
-  font-family: "Lato-Semibold";
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 19px;
-  padding: 8px;
-  text-transform: none;
-  margin: 0;
+.engage-header-graphics .content .try-it-form input, .engage-header-graphics .content .try-it-form button {
+  display: inline-block;
   vertical-align: top;
+  padding: 0;
+  border-radius: 4px;
+  margin: 0;
+  border: 0;
+  transition: width 0.3s;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 0 10px;
+  min-height: inherit;
+  text-transform: none;
+}
+/* line 66, ../sass/engage.scss */
+.engage-header-graphics .content .try-it-form input {
+  width: 100%;
+  color: #9b9b9b;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Lato-Regular";
+  font-size: 15px;
+}
+/* line 74, ../sass/engage.scss */
+.engage-header-graphics .content .try-it-form button {
+  width: 100%;
+  background: #00C26B;
+  color: #fff;
+  font-family: "Lato-Semibold";
+  font-size: 16px;
+}
+/* line 80, ../sass/engage.scss */
+.engage-header-graphics .content .try-it-form button:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
 /* line 86, ../sass/engage.scss */
 .engage-header-graphics .content .meet-consultant {
@@ -1184,8 +1187,12 @@ footer .copyright span {
 .overview .block-content {
   display: none;
 }
+/* line 136, ../sass/engage.scss */
+.overview .active {
+  display: block !important;
+}
 
-/* line 138, ../sass/engage.scss */
+/* line 141, ../sass/engage.scss */
 .features .feature {
   text-align: left;
   font-size: 16px;
@@ -1194,58 +1201,62 @@ footer .copyright span {
   padding-bottom: 30px;
   display: block;
 }
-/* line 146, ../sass/engage.scss */
+/* line 149, ../sass/engage.scss */
 .features .content-title {
   font-size: 20px;
   font-family: "Lato-Regular";
   padding: 0 15px;
 }
-/* line 151, ../sass/engage.scss */
+/* line 154, ../sass/engage.scss */
 .features p {
   padding: 0 15px;
 }
-/* line 154, ../sass/engage.scss */
+/* line 157, ../sass/engage.scss */
 .features .icon {
   text-align: center;
 }
-/* line 157, ../sass/engage.scss */
+/* line 160, ../sass/engage.scss */
 .features img {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 161, ../sass/engage.scss */
+/* line 164, ../sass/engage.scss */
 .features .feature-1 img {
   max-width: 450px;
 }
-/* line 164, ../sass/engage.scss */
+/* line 167, ../sass/engage.scss */
 .features .feature-2 img {
   max-width: 298px;
 }
-/* line 167, ../sass/engage.scss */
+/* line 170, ../sass/engage.scss */
 .features .feature-2, .features .feature-3 {
   border-top: 1px solid #DADADA;
 }
-/* line 170, ../sass/engage.scss */
+/* line 173, ../sass/engage.scss */
 .features .feature-3 img {
   margin-top: 20px;
   max-width: 395px;
 }
-/* line 174, ../sass/engage.scss */
+/* line 177, ../sass/engage.scss */
 .features .feature-desc {
   max-width: 570px;
   margin: 0 auto;
 }
-/* line 178, ../sass/engage.scss */
+/* line 181, ../sass/engage.scss */
 .features strong {
   font-family: "Lato-Bold";
 }
+/* line 184, ../sass/engage.scss */
+.features .mobile-download {
+  display: none;
+}
 
-/* line 182, ../sass/engage.scss */
+/* line 188, ../sass/engage.scss */
 .how-it-works-desktop {
   display: none;
 }
 
-/* line 186, ../sass/engage.scss */
+/* line 192, ../sass/engage.scss */
 .how-it-works .block-content {
   line-height: 24px;
   font-size: 16px;
@@ -1256,13 +1267,13 @@ footer .copyright span {
   max-width: 570px;
   margin: 0 auto;
 }
-/* line 196, ../sass/engage.scss */
+/* line 202, ../sass/engage.scss */
 .how-it-works img {
   width: 70px;
   margin-bottom: 30px;
   margin-top: 15px;
 }
-/* line 201, ../sass/engage.scss */
+/* line 207, ../sass/engage.scss */
 .how-it-works .content-title {
   font-size: 20px;
   color: #1C94EE;
@@ -1270,23 +1281,27 @@ footer .copyright span {
   text-align: left;
   padding: 0 15px;
 }
-/* line 208, ../sass/engage.scss */
+/* line 214, ../sass/engage.scss */
 .how-it-works p {
   text-align: left;
   padding: 0 15px;
 }
-/* line 212, ../sass/engage.scss */
+/* line 218, ../sass/engage.scss */
 .how-it-works .slide-icon {
   position: absolute;
   bottom: 0px;
   width: 100%;
 }
-/* line 216, ../sass/engage.scss */
+/* line 222, ../sass/engage.scss */
 .how-it-works .slide-icon img {
   width: 135px;
 }
+/* line 226, ../sass/engage.scss */
+.how-it-works .active {
+  display: block !important;
+}
 
-/* line 221, ../sass/engage.scss */
+/* line 230, ../sass/engage.scss */
 .why {
   color: #FFF;
   font-family: "Lato-Light";
@@ -1297,77 +1312,82 @@ footer .copyright span {
   background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
   padding-bottom: 40px;
 }
-/* line 228, ../sass/engage.scss */
+/* line 237, ../sass/engage.scss */
 .why .block-desc, .why .block-title {
   color: #FFF;
 }
-/* line 231, ../sass/engage.scss */
+/* line 240, ../sass/engage.scss */
 .why .content-title {
   font-size: 16px;
   font-family: "Lato-Semibold";
   line-height: 19px;
 }
-/* line 236, ../sass/engage.scss */
+/* line 245, ../sass/engage.scss */
 .why .icon img {
-  width: 100px;
+  width: 60px;
   margin: 20px 0px;
 }
-/* line 240, ../sass/engage.scss */
+/* line 249, ../sass/engage.scss */
 .why .content-desc {
   max-width: 200px;
   margin: 0 auto 40px;
   font-size: 14px;
 }
-/* line 245, ../sass/engage.scss */
+/* line 254, ../sass/engage.scss */
 .why .speaker {
   margin: 0 15px;
   line-height: 20px;
   font-family: "Lato-Light";
   display: none;
 }
-/* line 250, ../sass/engage.scss */
+/* line 259, ../sass/engage.scss */
 .why .speaker .speaker-content {
   background-color: rgba(255, 255, 255, 0.2);
   height: 500px;
   max-width: 300px;
   margin: 0 auto;
 }
-/* line 256, ../sass/engage.scss */
+/* line 265, ../sass/engage.scss */
 .why .speaker .speaker-desc {
   font-size: 14px;
 }
-/* line 259, ../sass/engage.scss */
+/* line 268, ../sass/engage.scss */
 .why .speaker img {
   width: 100%;
   display: block;
   max-width: 300px;
 }
-/* line 264, ../sass/engage.scss */
+/* line 273, ../sass/engage.scss */
 .why .speaker p {
   padding: 5px 15px;
 }
-/* line 267, ../sass/engage.scss */
+/* line 276, ../sass/engage.scss */
 .why .speaker .slide-icon {
   text-align: center;
   margin: 30px 0px;
 }
-/* line 270, ../sass/engage.scss */
+/* line 279, ../sass/engage.scss */
 .why .speaker .slide-icon img {
   width: 85px;
   margin: 0 auto;
 }
-/* line 275, ../sass/engage.scss */
+/* line 284, ../sass/engage.scss */
 .why .speaker .speaker-name {
   font-family: "Lato-Regular";
   line-height: 22px;
 }
-/* line 280, ../sass/engage.scss */
+/* line 289, ../sass/engage.scss */
 .why .prev-speaker, .why .next-speaker {
   display: none;
 }
-/* line 283, ../sass/engage.scss */
+/* line 292, ../sass/engage.scss */
+.why .read-more-section {
+  margin: 0 15px;
+}
+/* line 295, ../sass/engage.scss */
 .why .read-more {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   border: 2px solid #FFF;
   text-align: center;
   margin: 0 auto;
@@ -1375,9 +1395,20 @@ footer .copyright span {
   border-radius: 2px;
   font-size: 20px;
   font-family: "Lato-Bold";
+  color: #FFF;
+  box-sizing: border-box;
+}
+/* line 307, ../sass/engage.scss */
+.why .read-more:hover {
+  background: #fff;
+  color: #333;
+}
+/* line 312, ../sass/engage.scss */
+.why .active {
+  display: block !important;
 }
 
-/* line 294, ../sass/engage.scss */
+/* line 316, ../sass/engage.scss */
 .clients {
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
   /* FF3.6-15 */
@@ -1388,111 +1419,126 @@ footer .copyright span {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
   font-size: 0;
+  padding: 30px 10px 20px 10px;
+  /*.client {*/
+  /*display: inline-block;*/
+  /*width: 50%;*/
+  /*text-align: center;*/
+  /*img {*/
+  /*width: 80%;*/
+  /*max-width: 180px;*/
+  /*}*/
+  /*}*/
 }
-/* line 300, ../sass/engage.scss */
+/* line 323, ../sass/engage.scss */
+.clients .container {
+  max-width: 100%;
+}
+/* line 326, ../sass/engage.scss */
 .clients .block-title {
   color: #FFF;
   font-size: 30px;
   font-family: "Lato-Regular";
   line-height: 36px;
   width: 80%;
+  margin-bottom: 7px;
 }
-/* line 307, ../sass/engage.scss */
+/* line 334, ../sass/engage.scss */
 .clients .client-logos {
   padding: 30px 15px;
 }
-/* line 310, ../sass/engage.scss */
-.clients .client {
+/* line 337, ../sass/engage.scss */
+.clients img {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  margin-top: 0;
+  width: 100px;
   display: inline-block;
-  width: 50%;
-  text-align: center;
+  vertical-align: middle;
 }
-/* line 314, ../sass/engage.scss */
-.clients .client img {
-  width: 80%;
-  max-width: 180px;
-}
-/* line 319, ../sass/engage.scss */
+/* line 355, ../sass/engage.scss */
 .clients .try-it-form {
-  padding: 30px 20px 50px;
+  padding: 17px 20px 50px;
+  margin: 70px 0 50px 0;
   font-size: 0;
   border-radius: 5px;
-  text-align: center;
 }
-/* line 324, ../sass/engage.scss */
-.clients .try-it-form input {
-  font-size: 18px;
-  padding: 7px;
-  min-height: inherit;
-  height: inherit;
-  line-height: 21px;
-  border-radius: 4px;
-  width: 100%;
-  border: 0;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  font-family: "Lato-Semibold";
-  font-size: 14px;
-  color: #9b9b9b;
-  letter-spacing: 0px;
-  text-align: left;
-  max-width: 500px;
-}
-/* line 342, ../sass/engage.scss */
-.clients .try-it-form button {
-  background: #00C26B;
-  border-radius: 4px;
-  border: 0;
-  padding: 5px;
-  color: #fff;
-  width: 100%;
-  font-family: "Lato-Semibold";
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 19px;
-  padding: 8px;
-  text-transform: none;
-  margin: 0;
+/* line 360, ../sass/engage.scss */
+.clients .try-it-form input, .clients .try-it-form button {
+  display: inline-block;
   vertical-align: top;
-  max-width: 500px;
+  padding: 0;
+  border-radius: 4px;
+  margin: 0;
+  border: 0;
+  transition: width 0.3s;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 0 10px;
+  min-height: inherit;
+  text-transform: none;
+}
+/* line 374, ../sass/engage.scss */
+.clients .try-it-form input {
+  width: 100%;
+  color: #9b9b9b;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Lato-Regular";
+  font-size: 15px;
+}
+/* line 382, ../sass/engage.scss */
+.clients .try-it-form button {
+  width: 100%;
+  background: #00C26B;
+  color: #fff;
+  font-family: "Lato-Semibold";
+  font-size: 16px;
+}
+/* line 388, ../sass/engage.scss */
+.clients .try-it-form button:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 362, ../sass/engage.scss */
+  /* line 396, ../sass/engage.scss */
   .engage-header-graphics {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
     height: 650px;
   }
-  /* line 365, ../sass/engage.scss */
+  /* line 399, ../sass/engage.scss */
   .engage-header-graphics:before {
     display: none;
   }
-  /* line 368, ../sass/engage.scss */
+  /* line 402, ../sass/engage.scss */
   .engage-header-graphics .content {
     position: relative;
     top: 50%;
     max-width: 600px;
     margin-top: -200px;
   }
-  /* line 373, ../sass/engage.scss */
+  /* line 407, ../sass/engage.scss */
   .engage-header-graphics .content h1 {
     font-size: 48px;
     margin-bottom: 50px;
   }
-  /* line 377, ../sass/engage.scss */
+  /* line 411, ../sass/engage.scss */
   .engage-header-graphics .content .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
   }
-  /* line 381, ../sass/engage.scss */
+  /* line 415, ../sass/engage.scss */
   .engage-header-graphics .content .try-it-form input {
     font-size: 18px;
     padding: 7px;
     width: 72%;
     border-radius: 4px 0 0 4px;
+    text-align: left;
   }
-  /* line 387, ../sass/engage.scss */
+  /* line 422, ../sass/engage.scss */
   .engage-header-graphics .content .try-it-form button {
     font-size: 18px;
     line-height: 19px;
@@ -1501,23 +1547,23 @@ footer .copyright span {
     border-radius: 0 4px 4px 0;
   }
 
-  /* line 397, ../sass/engage.scss */
+  /* line 432, ../sass/engage.scss */
   .overview {
     display: none;
   }
 
-  /* line 400, ../sass/engage.scss */
+  /* line 435, ../sass/engage.scss */
   .overview-desktop {
     display: block;
     font-size: 0px;
   }
-  /* line 403, ../sass/engage.scss */
+  /* line 438, ../sass/engage.scss */
   .overview-desktop .overview-content {
     position: relative;
     height: 495px;
     border-bottom: 1px solid #DADADA;
   }
-  /* line 408, ../sass/engage.scss */
+  /* line 443, ../sass/engage.scss */
   .overview-desktop .block-content {
     text-align: left;
     padding: 15px;
@@ -1525,13 +1571,13 @@ footer .copyright span {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 415, ../sass/engage.scss */
+  /* line 450, ../sass/engage.scss */
   .overview-desktop .content-desc {
     font-size: 16px;
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 420, ../sass/engage.scss */
+  /* line 455, ../sass/engage.scss */
   .overview-desktop .title {
     font-size: 24px;
     font-family: "Lato-Regular";
@@ -1539,7 +1585,7 @@ footer .copyright span {
     color: #1C94EE;
     margin-bottom: 15px;
   }
-  /* line 427, ../sass/engage.scss */
+  /* line 462, ../sass/engage.scss */
   .overview-desktop .right-side {
     width: 48%;
     display: inline-block;
@@ -1548,7 +1594,7 @@ footer .copyright span {
     position: absolute;
     top: 0;
   }
-  /* line 434, ../sass/engage.scss */
+  /* line 469, ../sass/engage.scss */
   .overview-desktop .right-side .overview-img {
     height: 495px;
     background-size: cover;
@@ -1556,113 +1602,135 @@ footer .copyright span {
     background-position: center;
     display: none;
   }
-  /* line 441, ../sass/engage.scss */
+  /* line 476, ../sass/engage.scss */
   .overview-desktop .right-side .img-1 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-insight.png);
   }
-  /* line 444, ../sass/engage.scss */
+  /* line 479, ../sass/engage.scss */
   .overview-desktop .right-side .img-2 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-actionable.png);
   }
-  /* line 447, ../sass/engage.scss */
+  /* line 482, ../sass/engage.scss */
   .overview-desktop .right-side .img-3 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-empowered.png);
   }
-  /* line 451, ../sass/engage.scss */
+  /* line 486, ../sass/engage.scss */
   .overview-desktop .overview-default .block-content {
     margin-top: 30px;
   }
-  /* line 455, ../sass/engage.scss */
+  /* line 490, ../sass/engage.scss */
   .overview-desktop .overview-content:hover .overview-block:hover .overview-img, .overview-desktop .overview-content .overview-default .overview-img {
     display: block;
     transition: all ease .5s;
   }
-  /* line 459, ../sass/engage.scss */
+  /* line 494, ../sass/engage.scss */
   .overview-desktop .overview-content:hover .overview-block:hover .block-content, .overview-desktop .overview-content .overview-default .block-content {
     background-color: rgba(28, 148, 238, 0.1);
     transition: all .3s;
   }
-  /* line 464, ../sass/engage.scss */
+  /* line 499, ../sass/engage.scss */
   .overview-desktop .overview-img, .overview-desktop .overview-content:hover .overview-img {
     display: none;
     transition: all ease .5s;
   }
-  /* line 468, ../sass/engage.scss */
+  /* line 503, ../sass/engage.scss */
   .overview-desktop .block-content, .overview-desktop .overview-content:hover .block-content {
     background-color: #FFF;
     transition: all .3s;
   }
 
-  /* line 473, ../sass/engage.scss */
+  /* line 508, ../sass/engage.scss */
   .features {
     font-size: 0;
   }
-  /* line 475, ../sass/engage.scss */
+  /* line 510, ../sass/engage.scss */
   .features .icon {
     display: inline-block;
     width: 50%;
   }
-  /* line 479, ../sass/engage.scss */
+  /* line 514, ../sass/engage.scss */
   .features .feature-desc {
     display: inline-block;
     width: 50%;
   }
-  /* line 483, ../sass/engage.scss */
+  /* line 518, ../sass/engage.scss */
   .features .feature-2 {
     float: right;
     text-align: center;
   }
-  /* line 487, ../sass/engage.scss */
+  /* line 522, ../sass/engage.scss */
   .features .feature-desc-1 {
     float: right;
     margin-top: 20px;
   }
-  /* line 491, ../sass/engage.scss */
+  /* line 526, ../sass/engage.scss */
   .features .feature-desc-2 {
     border-top: 1px solid #DADADA;
   }
-  /* line 493, ../sass/engage.scss */
+  /* line 528, ../sass/engage.scss */
   .features .feature-desc-2 .content-title {
     margin-top: 90px;
   }
-  /* line 497, ../sass/engage.scss */
+  /* line 532, ../sass/engage.scss */
   .features .feature-3 img {
     margin-top: 100px;
   }
-  /* line 500, ../sass/engage.scss */
+  /* line 535, ../sass/engage.scss */
   .features .feature-desc-3 {
     float: right;
     border-top: 1px solid #DADADA;
   }
-  /* line 503, ../sass/engage.scss */
+  /* line 538, ../sass/engage.scss */
   .features .feature-desc-3 .content-title {
     margin-top: 120px;
   }
-  /* line 507, ../sass/engage.scss */
+  /* line 542, ../sass/engage.scss */
   .features p {
     padding: 10px 15px;
   }
+  /* line 545, ../sass/engage.scss */
+  .features .mobile-download {
+    display: block;
+    font-size: 18px;
+    font-family: "Lato-Regular";
+    line-height: 22px;
+    color: #9B9B9B;
+    padding: 0px 15px;
+  }
+  /* line 552, ../sass/engage.scss */
+  .features .mobile-download span {
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  /* line 556, ../sass/engage.scss */
+  .features .mobile-download img {
+    max-width: 100px;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
 
-  /* line 512, ../sass/engage.scss */
+  /* line 566, ../sass/engage.scss */
   .why .block-content {
     display: inline-block;
     width: 33%;
     text-align: center;
     font-size: 0;
   }
-  /* line 518, ../sass/engage.scss */
+  /* line 572, ../sass/engage.scss */
   .why .speakers {
     text-align: center;
   }
-  /* line 521, ../sass/engage.scss */
+  /* line 575, ../sass/engage.scss */
   .why .speakers .speaker .slide-icon {
     display: none;
   }
-  /* line 524, ../sass/engage.scss */
+  /* line 578, ../sass/engage.scss */
   .why .speakers .speaker .speaker-img {
     display: inline-block;
   }
-  /* line 527, ../sass/engage.scss */
+  /* line 581, ../sass/engage.scss */
   .why .speakers .speaker .speaker-desc {
     max-width: 500px;
     display: inline-block;
@@ -1671,24 +1739,24 @@ footer .copyright span {
     position: relative;
     text-align: left;
   }
-  /* line 534, ../sass/engage.scss */
+  /* line 588, ../sass/engage.scss */
   .why .speakers .speaker .speaker-desc .speaker-name {
     position: absolute;
     right: 0;
     bottom: 0;
   }
-  /* line 540, ../sass/engage.scss */
+  /* line 594, ../sass/engage.scss */
   .why .speakers .speaker .speaker-content {
     max-width: 800px;
     font-size: 0;
     height: 200px;
     display: inline-block;
   }
-  /* line 545, ../sass/engage.scss */
+  /* line 599, ../sass/engage.scss */
   .why .speakers .speaker .speaker-content p {
     padding: 0 15px;
   }
-  /* line 551, ../sass/engage.scss */
+  /* line 605, ../sass/engage.scss */
   .why .prev-speaker, .why .next-speaker {
     display: inline-block;
     position: relative;
@@ -1697,37 +1765,37 @@ footer .copyright span {
     top: 50%;
     transform: translate(0, 35%);
   }
-  /* line 559, ../sass/engage.scss */
+  /* line 613, ../sass/engage.scss */
   .why .prev-speaker {
     margin-right: 15px;
   }
-  /* line 562, ../sass/engage.scss */
+  /* line 616, ../sass/engage.scss */
   .why .next-speaker {
     margin-left: 15px;
   }
-  /* line 565, ../sass/engage.scss */
+  /* line 619, ../sass/engage.scss */
   .why .read-more {
     margin-top: 50px;
   }
-  /* line 568, ../sass/engage.scss */
+  /* line 622, ../sass/engage.scss */
   .why .control-button img {
     display: inline-block;
     max-width: 30px;
   }
 
-  /* line 573, ../sass/engage.scss */
+  /* line 627, ../sass/engage.scss */
   .how-it-works {
     display: none;
   }
 
-  /* line 576, ../sass/engage.scss */
+  /* line 630, ../sass/engage.scss */
   .how-it-works-desktop {
     display: block;
     padding-left: 15px;
     padding-right: 15px;
     height: 500px;
   }
-  /* line 581, ../sass/engage.scss */
+  /* line 635, ../sass/engage.scss */
   .how-it-works-desktop .block-content {
     margin-bottom: 100px;
     margin-top: 60px;
@@ -1735,7 +1803,7 @@ footer .copyright span {
     position: absolute;
     left: 0;
   }
-  /* line 587, ../sass/engage.scss */
+  /* line 641, ../sass/engage.scss */
   .how-it-works-desktop .block-content .content-title {
     font-size: 20px;
     color: #1C94EE;
@@ -1743,7 +1811,7 @@ footer .copyright span {
     text-align: left;
     padding: 0 15px;
   }
-  /* line 594, ../sass/engage.scss */
+  /* line 648, ../sass/engage.scss */
   .how-it-works-desktop .block-content p {
     text-align: left;
     padding: 0 15px;
@@ -1751,7 +1819,7 @@ footer .copyright span {
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 602, ../sass/engage.scss */
+  /* line 656, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons {
     padding-left: 15px;
     padding-right: 15px;
@@ -1759,18 +1827,18 @@ footer .copyright span {
     font-size: 0px;
     position: relative;
   }
-  /* line 608, ../sass/engage.scss */
+  /* line 662, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-content {
     display: inline-block;
     width: 20%;
     vertical-align: top;
   }
-  /* line 613, ../sass/engage.scss */
+  /* line 667, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-icon {
     text-align: center;
     position: relative;
   }
-  /* line 617, ../sass/engage.scss */
+  /* line 671, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .icon {
     width: 63px;
     height: 94px;
@@ -1778,27 +1846,27 @@ footer .copyright span {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/engage/how-it-works/hiw-small-sprite.png);
     background-repeat: no-repeat;
   }
-  /* line 624, ../sass/engage.scss */
+  /* line 678, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-1 {
     background-position: 0 0;
   }
-  /* line 627, ../sass/engage.scss */
+  /* line 681, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-2 {
     background-position: -85px 0;
   }
-  /* line 630, ../sass/engage.scss */
+  /* line 684, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-3 {
     background-position: -168px 0;
   }
-  /* line 633, ../sass/engage.scss */
+  /* line 687, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-4 {
     background-position: -253px 0;
   }
-  /* line 636, ../sass/engage.scss */
+  /* line 690, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-5 {
     background-position: -338px 0;
   }
-  /* line 640, ../sass/engage.scss */
+  /* line 694, ../sass/engage.scss */
   .how-it-works-desktop .hiw-wrapper {
     width: 90px;
     height: 90px;
@@ -1809,60 +1877,71 @@ footer .copyright span {
     left: 0;
     right: 0;
   }
-  /* line 651, ../sass/engage.scss */
+  /* line 705, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .icon, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .icon, .how-it-works-desktop .hiw-icons .hiw-default .icon {
     background-position-y: -117px;
   }
-  /* line 654, ../sass/engage.scss */
+  /* line 708, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .block-content, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .block-content, .how-it-works-desktop .hiw-icons .hiw-default .block-content {
     display: block;
     transition: all .3s;
   }
-  /* line 658, ../sass/engage.scss */
+  /* line 712, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .hiw-wrapper, .how-it-works-desktop .hiw-icons .hiw-default .hiw-wrapper {
     background-color: rgba(28, 148, 238, 0.1);
   }
-  /* line 663, ../sass/engage.scss */
+  /* line 717, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icon .icon, .how-it-works-desktop .hiw-icons:hover .hiw-icon .icon, .how-it-works-desktop .hiw-icons:focus .hiw-icon .icon {
     background-position-y: 0px;
   }
-  /* line 666, ../sass/engage.scss */
+  /* line 720, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:hover .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-icon .hiw-wrapper {
     background-color: transparent;
   }
-  /* line 670, ../sass/engage.scss */
+  /* line 724, ../sass/engage.scss */
   .how-it-works-desktop .block-content, .how-it-works-desktop .hiw-icons:hover .block-content {
     display: none;
     transition: all .3s;
   }
 
-  /* line 676, ../sass/engage.scss */
+  /* line 730, ../sass/engage.scss */
   .clients .client {
     width: 15%;
     text-align: center;
   }
-  /* line 680, ../sass/engage.scss */
+  /* line 734, ../sass/engage.scss */
   .clients .client-logos {
     text-align: center;
   }
-  /* line 683, ../sass/engage.scss */
+  /* line 737, ../sass/engage.scss */
   .clients .block-title {
     width: 100%;
+    margin-top: 20px;
   }
-  /* line 686, ../sass/engage.scss */
+  /* line 741, ../sass/engage.scss */
+  .clients img {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    width: 100px;
+    display: inline-block;
+  }
+  /* line 749, ../sass/engage.scss */
   .clients .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
   }
-  /* line 690, ../sass/engage.scss */
+  /* line 753, ../sass/engage.scss */
   .clients .try-it-form input {
     font-size: 14px;
-    padding: 7px;
+    padding: 7px 17px;
     width: 67%;
     border-radius: 4px 0 0 4px;
+    text-align: left;
   }
-  /* line 696, ../sass/engage.scss */
+  /* line 760, ../sass/engage.scss */
   .clients .try-it-form button {
     font-size: 14px;
     line-height: 19px;

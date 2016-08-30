@@ -6,7 +6,7 @@
   clear: both;
 }
 .engage-header-graphics{
-  background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-mobile-bg.png);
+  background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage-header-mobile-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -45,42 +45,42 @@
     }
     .try-it-form{
       background: rgba(0,0,0,0.6);
-      padding: 20px;
+      padding: 25px;
       margin: 70px 0 50px 0;
       font-size: 0;
       border-radius: 5px;
-      input{
-        font-size: 18px;
-        padding: 7px;
-        min-height: inherit;
-        height: inherit;
-        line-height: 21px;
+      input, button{
+        display: inline-block;
+        vertical-align: top;  
+        padding: 0;
         border-radius: 4px;
-        width: 100%;
+        margin: 0;
         border: 0;
+        transition: width 0.3s;
         box-sizing: border-box;
-        margin-bottom: 10px;
-        font-family: $font_semibold;
-        font-size:14px;
+        height: 45px;
+        padding: 0 10px;
+        min-height: inherit;
+        text-transform: none;
+      }
+      input{
+        width: 100%;
         color:#9b9b9b;
-        letter-spacing:0px;
-        text-align:left;
+        text-align:center;
+        margin-bottom: 10px;
+        font-family: $font_regular;
+        font-size: 15px;
       }
       button{
-        background: #00C26B;
-        border-radius: 4px;
-        border: 0;
-        padding: 5px;
-        color: #fff;
         width: 100%;
+        background: #00C26B;
+        color: #fff;
         font-family: $font_semibold;
-        cursor: pointer;
-        font-size: 18px;
-        line-height: 19px;
-        padding: 8px;
-        text-transform: none;
-        margin: 0;
-        vertical-align: top;
+        font-size: 16px;
+        &:hover {
+          opacity: 0.9;
+          cursor: pointer;
+        }
       }
     }
     .meet-consultant{
@@ -133,6 +133,9 @@
   .block-content{
     display: none;
   }
+  .active {
+    display: block !important;
+  }
 }
 .features{
   .feature{
@@ -178,6 +181,9 @@
   strong{
     font-family: $font_bold;
   }
+  .mobile-download {
+    display: none;
+  }
 }
 .how-it-works-desktop {
   display: none;
@@ -217,6 +223,9 @@
       width: 135px;
     }
   }
+  .active {
+    display: block !important;
+  }
 }
 .why {
   color: #FFF;
@@ -234,7 +243,7 @@
     line-height: 19px;
   }
   .icon img {
-    width: 100px;
+    width: 60px;
     margin: 20px 0px;
   }
   .content-desc {
@@ -280,8 +289,12 @@
   .prev-speaker, .next-speaker {
     display: none;
   }
+  .read-more-section {
+    margin: 0 15px;
+  }
   .read-more {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     border: 2px solid #FFF;
     text-align: center;
     margin: 0 auto;
@@ -289,6 +302,15 @@
     border-radius: 2px;
     font-size: 20px;
     font-family: $font_bold;
+    color: #FFF;
+    box-sizing: border-box;
+    &:hover {
+      background: #fff;
+      color: #333;
+    }
+  }
+  .active {
+    display: block !important;
   }
 }
 .clients {
@@ -297,64 +319,76 @@
 	background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   font-size: 0;
+  padding: 30px 10px 20px 10px;
+  .container {
+    max-width: 100%;
+  }
   .block-title {
     color: #FFF;
     font-size: 30px;
     font-family: $font_regular;
     line-height: 36px;
     width: 80%;
+    margin-bottom: 7px;
   }
   .client-logos {
     padding: 30px 15px;
   }
-  .client {
+  img {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    width: 100px;
     display: inline-block;
-    width: 50%;
-    text-align: center;
-    img {
-      width: 80%;
-      max-width: 180px;
-    }
+    vertical-align: middle;
   }
+  /*.client {*/
+    /*display: inline-block;*/
+    /*width: 50%;*/
+    /*text-align: center;*/
+    /*img {*/
+      /*width: 80%;*/
+      /*max-width: 180px;*/
+    /*}*/
+  /*}*/
   .try-it-form{
-    padding: 30px 20px 50px;
+    padding: 17px 20px 50px;
+    margin: 70px 0 50px 0;
     font-size: 0;
     border-radius: 5px;
-    text-align: center;
-    input{
-      font-size: 18px;
-      padding: 7px;
-      min-height: inherit;
-      height: inherit;
-      line-height: 21px;
+    input, button{
+      display: inline-block;
+      vertical-align: top;  
+      padding: 0;
       border-radius: 4px;
-      width: 100%;
+      margin: 0;
       border: 0;
+      transition: width 0.3s;
       box-sizing: border-box;
-      margin-bottom: 10px;
-      font-family: $font_semibold;
-      font-size:14px;
+      height: 45px;
+      padding: 0 10px;
+      min-height: inherit;
+      text-transform: none;
+    }
+    input{
+      width: 100%;
       color:#9b9b9b;
-      letter-spacing:0px;
-      text-align:left;
-      max-width: 500px;
+      text-align:center;
+      margin-bottom: 10px;
+      font-family: $font_regular;
+      font-size: 15px;
     }
     button{
-      background: #00C26B;
-      border-radius: 4px;
-      border: 0;
-      padding: 5px;
-      color: #fff;
       width: 100%;
+      background: #00C26B;
+      color: #fff;
       font-family: $font_semibold;
-      cursor: pointer;
-      font-size: 18px;
-      line-height: 19px;
-      padding: 8px;
-      text-transform: none;
-      margin: 0;
-      vertical-align: top;
-      max-width: 500px;
+      font-size: 16px;
+      &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -383,6 +417,7 @@
           padding: 7px;
           width: 72%;
           border-radius: 4px 0 0 4px;
+          text-align: left;
         }
         button{
           font-size: 18px;
@@ -506,6 +541,25 @@
     }
     p {
       padding: 10px 15px;
+    }
+    .mobile-download {
+      display: block;
+      font-size: 18px;
+      font-family: $font_regular;
+      line-height: 22px;
+      color: #9B9B9B;
+      padding: 0px 15px;
+      span {
+        vertical-align: middle;
+        margin-right: 20px;
+      }
+      img {
+        max-width: 100px;
+        margin-bottom: 0;
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+      }
     }
   }
   .why {
@@ -682,6 +736,15 @@
     }
     .block-title {
       width: 100%;
+      margin-top: 20px;
+    }
+    img {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-top: 0;
+      width: 100px;
+      display: inline-block;
     }
     .try-it-form{
       max-width: 450px;
@@ -689,9 +752,10 @@
       margin: 0 auto;
       input{
         font-size: 14px;
-        padding: 7px;
+        padding: 7px 17px;
         width: 67%;
         border-radius: 4px 0 0 4px;
+        text-align: left;
       }
       button{
         font-size: 14px;

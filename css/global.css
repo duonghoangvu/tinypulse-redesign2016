@@ -765,8 +765,9 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   /* line 672, ../sass/_header.scss */
   .header-graphics .content .sub-headline {
     font-size: 22px;
+    letter-spacing: 1px;
   }
-  /* line 675, ../sass/_header.scss */
+  /* line 676, ../sass/_header.scss */
   .header-graphics .content .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
@@ -774,29 +775,29 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     font-size: 0;
     margin-top: 40px;
   }
-  /* line 681, ../sass/_header.scss */
+  /* line 682, ../sass/_header.scss */
   .header-graphics .content .try-it-form input {
     width: 68%;
     border-radius: 4px 0 0 4px;
     margin: 0;
     text-align: left;
   }
-  /* line 687, ../sass/_header.scss */
+  /* line 688, ../sass/_header.scss */
   .header-graphics .content .try-it-form button {
     width: 32%;
     border-radius: 0 4px 4px 0;
     font-size: 18px;
   }
-  /* line 693, ../sass/_header.scss */
+  /* line 694, ../sass/_header.scss */
   .header-graphics .content .meet-consultant {
     padding-top: 120px;
   }
-  /* line 695, ../sass/_header.scss */
+  /* line 696, ../sass/_header.scss */
   .header-graphics .content .meet-consultant a {
     font-size: 24px;
   }
 
-  /* line 701, ../sass/_header.scss */
+  /* line 702, ../sass/_header.scss */
   .subnav {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
     background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -809,24 +810,24 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     /* IE6-9 fallback on horizontal gradient */
     height: 50px;
   }
-  /* line 708, ../sass/_header.scss */
+  /* line 709, ../sass/_header.scss */
   .subnav .container {
     max-width: 960px;
     margin: 0 auto;
     background: none;
   }
-  /* line 713, ../sass/_header.scss */
+  /* line 714, ../sass/_header.scss */
   .subnav ul {
     text-align: center;
     max-height: inherit;
   }
-  /* line 716, ../sass/_header.scss */
+  /* line 717, ../sass/_header.scss */
   .subnav ul li {
     display: inline-block;
-    width: 150px;
+    width: 200px;
     position: relative;
   }
-  /* line 720, ../sass/_header.scss */
+  /* line 721, ../sass/_header.scss */
   .subnav ul li:before {
     content: "";
     position: absolute;
@@ -838,25 +839,25 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     background: #fff;
     transform: scaleX(0);
   }
-  /* line 731, ../sass/_header.scss */
+  /* line 732, ../sass/_header.scss */
   .subnav ul li:first-child {
     display: none;
   }
-  /* line 735, ../sass/_header.scss */
+  /* line 736, ../sass/_header.scss */
   .subnav ul li.active:before, .subnav ul li:hover:before {
     transform: scaleX(1);
   }
-  /* line 738, ../sass/_header.scss */
+  /* line 739, ../sass/_header.scss */
   .subnav ul li.active a, .subnav ul li:hover a {
     font-family: "Lato-Bold";
   }
-  /* line 742, ../sass/_header.scss */
+  /* line 743, ../sass/_header.scss */
   .subnav ul li a {
     font-size: 16px;
     padding: 14px 15px 17px;
   }
 
-  /* line 751, ../sass/_header.scss */
+  /* line 752, ../sass/_header.scss */
   .subnav-sticked .subnav .container {
     background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
     /* FF3.6-15 */
@@ -1054,12 +1055,12 @@ a {
 /* line 145, ../sass/_content.scss */
 .products-mobile .mask-1 {
   padding: 30px 15px;
-  background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg.png);
+  background-image: url(//www.tinypulse.com/hubfs/redesign_2016/engage-bg-small.png);
 }
 /* line 149, ../sass/_content.scss */
 .products-mobile .mask-2 {
   padding: 30px 15px;
-  background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/perform-bg.png);
+  background-image: url(//www.tinypulse.com/hubfs/redesign_2016/Perform_mobile.png);
 }
 /* line 153, ../sass/_content.scss */
 .products-mobile .text {
@@ -1073,15 +1074,15 @@ a {
 .products-mobile .text .title {
   font-size: 24px;
   line-height: 32px;
-  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.42);
-  width: 230px;
+  width: 300px;
+  text-shadow: 0 2px 10px #333;
   letter-spacing: 0.75px;
   margin: 0;
 }
 /* line 167, ../sass/_content.scss */
 .products-mobile .text .desc {
   font-size: 17px;
-  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.42);
+  text-shadow: 0 2px 10px #333;
   width: 290px;
   font-family: 'Lato-Light';
 }
@@ -1241,19 +1242,51 @@ a {
   font-size: 16px;
 }
 
+/* line 310, ../sass/_content.scss */
+.press {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  padding: 30px 10px 20px 10px;
+  text-align: center;
+}
+/* line 318, ../sass/_content.scss */
+.press .title {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0px;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 326, ../sass/_content.scss */
+.press img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 110px;
+  height: auto;
+  margin: 10px;
+}
+
 @media screen and (min-width: 960px) {
-  /* line 312, ../sass/_content.scss */
+  /* line 337, ../sass/_content.scss */
   .header-graphics, .main-content {
     position: relative;
     z-index: 1;
   }
 
-  /* line 316, ../sass/_content.scss */
+  /* line 341, ../sass/_content.scss */
   .main-wrapper {
     padding-bottom: 266px;
   }
 
-  /* line 320, ../sass/_content.scss */
+  /* line 345, ../sass/_content.scss */
   .brands img {
     margin-left: 20px;
     margin-right: 20px;
@@ -1263,43 +1296,43 @@ a {
     display: inline-block;
   }
 
-  /* line 329, ../sass/_content.scss */
+  /* line 354, ../sass/_content.scss */
   .content-block {
     padding-top: 50px;
   }
-  /* line 331, ../sass/_content.scss */
+  /* line 356, ../sass/_content.scss */
   .content-block .block-title {
     font-size: 36px;
   }
 
-  /* line 336, ../sass/_content.scss */
+  /* line 361, ../sass/_content.scss */
   .features .tile {
     max-width: 300px;
   }
-  /* line 338, ../sass/_content.scss */
+  /* line 363, ../sass/_content.scss */
   .features .tile a {
     padding: 30px 15px;
     cursor: pointer;
   }
-  /* line 341, ../sass/_content.scss */
+  /* line 366, ../sass/_content.scss */
   .features .tile a:hover {
     background: #E8F4FD;
   }
-  /* line 343, ../sass/_content.scss */
+  /* line 368, ../sass/_content.scss */
   .features .tile a:hover .icon {
     background-position-y: -90px;
   }
-  /* line 348, ../sass/_content.scss */
+  /* line 373, ../sass/_content.scss */
   .features .tile p {
     font-size: 14px;
   }
 
-  /* line 353, ../sass/_content.scss */
+  /* line 378, ../sass/_content.scss */
   .products-mobile {
     display: none;
   }
 
-  /* line 356, ../sass/_content.scss */
+  /* line 381, ../sass/_content.scss */
   .products-desktop {
     display: block;
     height: 1620px;
@@ -1308,7 +1341,7 @@ a {
     position: relative;
     transition: background-color 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  /* line 363, ../sass/_content.scss */
+  /* line 388, ../sass/_content.scss */
   .products-desktop .content {
     height: 810px;
     width: 100%;
@@ -1316,35 +1349,35 @@ a {
     position: relative;
     z-index: 2;
   }
-  /* line 369, ../sass/_content.scss */
+  /* line 394, ../sass/_content.scss */
   .products-desktop .content .container {
     max-width: 920px;
     margin: 0 auto;
     height: 100%;
     position: relative;
   }
-  /* line 375, ../sass/_content.scss */
+  /* line 400, ../sass/_content.scss */
   .products-desktop .content .text {
     top: 0;
     left: 0;
     color: #fff;
     position: absolute;
-    left: 61%;
     width: 400px;
     top: 50%;
     margin-top: -150px;
   }
-  /* line 384, ../sass/_content.scss */
+  /* line 408, ../sass/_content.scss */
   .products-desktop .content .text .title {
     font-size: 36px;
     line-height: 48px;
+    text-shadow: 0 2px 10px #333;
   }
-  /* line 388, ../sass/_content.scss */
+  /* line 413, ../sass/_content.scss */
   .products-desktop .content .text .desc {
     font-size: 20px;
     text-shadow: 0 0 10px #333;
   }
-  /* line 392, ../sass/_content.scss */
+  /* line 417, ../sass/_content.scss */
   .products-desktop .content .text a {
     margin-top: 20px;
     display: inline-block;
@@ -1354,16 +1387,16 @@ a {
     color: #fff;
     transition: all 0.3s;
   }
-  /* line 400, ../sass/_content.scss */
+  /* line 425, ../sass/_content.scss */
   .products-desktop .content .text a:hover {
     background: #fff;
     color: #333;
   }
-  /* line 406, ../sass/_content.scss */
+  /* line 431, ../sass/_content.scss */
   .products-desktop .content .text-1 {
     left: 0;
   }
-  /* line 410, ../sass/_content.scss */
+  /* line 435, ../sass/_content.scss */
   .products-desktop .masked-images {
     position: absolute;
     top: 0;
@@ -1371,7 +1404,7 @@ a {
     transform: matrix(1, 0, 0, 1, 0, 0);
     width: 100%;
   }
-  /* line 416, ../sass/_content.scss */
+  /* line 441, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image {
     position: absolute;
     top: 0;
@@ -1379,7 +1412,7 @@ a {
     width: 100%;
     overflow: hidden;
   }
-  /* line 422, ../sass/_content.scss */
+  /* line 447, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image div {
     position: absolute;
     top: 0;
@@ -1393,26 +1426,26 @@ a {
     background-size: cover;
     background-position: center;
   }
-  /* line 437, ../sass/_content.scss */
+  /* line 462, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image-1 div {
-    background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/perform-bg.png);
+    background-image: url(//www.tinypulse.com/hubfs/Client_logo/Perform.png);
   }
-  /* line 442, ../sass/_content.scss */
+  /* line 467, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image-2 div {
-    background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/engage-bg.png);
+    background-image: url(//www.tinypulse.com/hubfs/redesign_2016/engage-bg.png);
   }
 
-  /* line 449, ../sass/_content.scss */
+  /* line 474, ../sass/_content.scss */
   .success-stories .story {
     max-width: 300px;
     padding: 0 20px;
     box-sizing: border-box;
   }
-  /* line 453, ../sass/_content.scss */
+  /* line 478, ../sass/_content.scss */
   .success-stories .story .icon {
     margin: 10px 0 50px 0;
   }
-  /* line 456, ../sass/_content.scss */
+  /* line 481, ../sass/_content.scss */
   .success-stories .story p, .success-stories .story span {
     text-align: left;
     display: block;
@@ -1420,35 +1453,45 @@ a {
     line-height: 20px;
   }
 
-  /* line 465, ../sass/_content.scss */
+  /* line 490, ../sass/_content.scss */
   .ctas .block-title {
     font-size: 30px;
     color: #fff;
   }
-  /* line 469, ../sass/_content.scss */
+  /* line 494, ../sass/_content.scss */
   .ctas a {
     padding: 7px 30px;
     font-size: 14px;
     width: auto;
   }
-  /* line 473, ../sass/_content.scss */
+  /* line 498, ../sass/_content.scss */
   .ctas a:nth-child(2) {
     margin-left: 50px;
     margin-right: 50px;
   }
-  /* line 478, ../sass/_content.scss */
+  /* line 503, ../sass/_content.scss */
   .ctas div {
     margin: 0;
     padding: 0;
   }
 
-  /* line 483, ../sass/_content.scss */
+  /* line 508, ../sass/_content.scss */
   .quote {
     padding: 30px;
   }
-  /* line 485, ../sass/_content.scss */
+  /* line 510, ../sass/_content.scss */
   .quote .block-title {
     font-size: 26px;
+  }
+
+  /* line 514, ../sass/_content.scss */
+  .press img {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    width: 100px;
+    display: inline-block;
   }
 }
 /* line 2, ../sass/_footer.scss */
