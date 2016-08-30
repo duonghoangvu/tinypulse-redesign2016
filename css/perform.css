@@ -1,0 +1,894 @@
+/* line 7, ../sass/perform.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 10, ../sass/perform.scss */
+.engage-header-graphics {
+  background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-mobile-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+/* line 19, ../sass/perform.scss */
+.engage-header-graphics:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 20%, rgba(246, 107, 28, 0.15) 100%);
+}
+/* line 28, ../sass/perform.scss */
+.engage-header-graphics .content {
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+/* line 34, ../sass/perform.scss */
+.engage-header-graphics .content h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Lato-Bold";
+  font-weight: normal;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 1.12px;
+  text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+/* line 48, ../sass/perform.scss */
+.engage-header-graphics .content .try-it-form {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 70px 0 50px 0;
+  font-size: 0;
+  border-radius: 5px;
+}
+/* line 54, ../sass/perform.scss */
+.engage-header-graphics .content .try-it-form input {
+  font-size: 18px;
+  padding: 7px;
+  min-height: inherit;
+  height: inherit;
+  line-height: 21px;
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-family: "Lato-Semibold";
+  font-size: 14px;
+  color: #9b9b9b;
+  letter-spacing: 0px;
+  text-align: left;
+}
+/* line 71, ../sass/perform.scss */
+.engage-header-graphics .content .try-it-form button {
+  background: #00C26B;
+  border-radius: 4px;
+  border: 0;
+  padding: 5px;
+  color: #fff;
+  width: 100%;
+  font-family: "Lato-Semibold";
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 19px;
+  padding: 8px;
+  text-transform: none;
+  margin: 0;
+  vertical-align: top;
+}
+/* line 88, ../sass/perform.scss */
+.engage-header-graphics .content .meet-consultant {
+  text-align: center;
+  padding-top: 30px;
+}
+/* line 91, ../sass/perform.scss */
+.engage-header-graphics .content .meet-consultant a {
+  font-size: 14px;
+  color: #fff;
+  font-family: "Lato-Semibold";
+  text-decoration: underline;
+}
+
+/* line 100, ../sass/perform.scss */
+.active {
+  display: block;
+}
+
+/* line 103, ../sass/perform.scss */
+.overview-desktop {
+  display: none;
+}
+
+/* line 107, ../sass/perform.scss */
+.overview .title {
+  color: #1C94EE;
+  font-size: 20px;
+  font-family: "Lato-Regular";
+  text-align: left;
+  padding: 0 15px;
+}
+/* line 114, ../sass/perform.scss */
+.overview .content-desc {
+  font-size: 18px;
+  color: #000;
+  font-family: "Lato-Light";
+  margin: 15px 0px;
+  text-align: left;
+  line-height: 25px;
+  padding: 0 15px;
+}
+/* line 124, ../sass/perform.scss */
+.overview .slide-icon img {
+  width: 85px;
+  margin: 30px;
+}
+/* line 130, ../sass/perform.scss */
+.overview .overview-img img {
+  width: 100%;
+  border-bottom: 1px solid #DADADA;
+}
+/* line 135, ../sass/perform.scss */
+.overview .block-content {
+  display: none;
+}
+/* line 137, ../sass/perform.scss */
+.overview .block-content.active {
+  display: block;
+}
+
+/* line 143, ../sass/perform.scss */
+.features .feature {
+  text-align: left;
+  font-size: 16px;
+  font-family: "Lato-Light";
+  line-height: 24px;
+  padding-bottom: 30px;
+  display: block;
+}
+/* line 151, ../sass/perform.scss */
+.features .content-title {
+  font-size: 20px;
+  font-family: "Lato-Regular";
+  padding: 0 15px;
+}
+/* line 156, ../sass/perform.scss */
+.features p {
+  padding: 0 15px;
+}
+/* line 159, ../sass/perform.scss */
+.features .icon {
+  text-align: center;
+}
+/* line 162, ../sass/perform.scss */
+.features img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* line 166, ../sass/perform.scss */
+.features .feature-1 {
+  padding-bottom: 0;
+  max-height: 398px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+/* line 171, ../sass/perform.scss */
+.features .feature-1 img {
+  max-width: 298px;
+}
+/* line 175, ../sass/perform.scss */
+.features .feature-2 img {
+  max-width: 380px;
+  margin: 70px 0 50px;
+}
+/* line 179, ../sass/perform.scss */
+.features .feature-2, .features .feature-3 {
+  border-top: 1px solid #DADADA;
+}
+/* line 182, ../sass/perform.scss */
+.features .feature-3 img {
+  margin-top: 20px;
+  max-width: 450px;
+}
+/* line 186, ../sass/perform.scss */
+.features .feature-desc {
+  max-width: 570px;
+  margin: 0 auto;
+}
+/* line 190, ../sass/perform.scss */
+.features strong {
+  font-family: "Lato-Bold";
+}
+/* line 194, ../sass/perform.scss */
+.features .download span, .features .download a {
+  display: none;
+  vertical-align: middle;
+}
+/* line 198, ../sass/perform.scss */
+.features .download .download-app {
+  display: block;
+  color: #1C94EE;
+}
+
+/* line 204, ../sass/perform.scss */
+.how-it-works-desktop {
+  display: none;
+}
+
+/* line 208, ../sass/perform.scss */
+.how-it-works .block-content {
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "Lato-Light";
+  display: none;
+  height: 570px;
+  position: relative;
+  max-width: 570px;
+  margin: 0 auto;
+}
+/* line 217, ../sass/perform.scss */
+.how-it-works .block-content.active {
+  display: block;
+}
+/* line 221, ../sass/perform.scss */
+.how-it-works img {
+  width: 70px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+/* line 226, ../sass/perform.scss */
+.how-it-works .content-title {
+  font-size: 20px;
+  color: #1C94EE;
+  font-family: "Lato-Regular";
+  text-align: left;
+  padding: 0 15px;
+}
+/* line 233, ../sass/perform.scss */
+.how-it-works p {
+  text-align: left;
+  padding: 0 15px;
+}
+/* line 237, ../sass/perform.scss */
+.how-it-works .slide-icon {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+/* line 241, ../sass/perform.scss */
+.how-it-works .slide-icon img {
+  width: 135px;
+}
+
+/* line 246, ../sass/perform.scss */
+.why {
+  color: #FFF;
+  font-family: "Lato-Light";
+  background: -moz-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
+  /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
+  padding-bottom: 40px;
+}
+/* line 253, ../sass/perform.scss */
+.why .block-desc, .why .block-title {
+  color: #FFF;
+}
+/* line 256, ../sass/perform.scss */
+.why .content-title {
+  font-size: 16px;
+  font-family: "Lato-Semibold";
+  line-height: 19px;
+}
+/* line 261, ../sass/perform.scss */
+.why .icon img {
+  width: 100px;
+  margin: 20px 0px;
+}
+/* line 265, ../sass/perform.scss */
+.why .content-desc {
+  max-width: 200px;
+  margin: 0 auto 40px;
+  font-size: 14px;
+}
+/* line 270, ../sass/perform.scss */
+.why .speaker {
+  margin: 0 15px;
+  line-height: 20px;
+  font-family: "Lato-Light";
+  display: none;
+}
+/* line 275, ../sass/perform.scss */
+.why .speaker.active {
+  display: block;
+}
+/* line 278, ../sass/perform.scss */
+.why .speaker .speaker-content {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 500px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* line 284, ../sass/perform.scss */
+.why .speaker .speaker-desc {
+  font-size: 14px;
+}
+/* line 287, ../sass/perform.scss */
+.why .speaker img {
+  width: 100%;
+  display: block;
+  max-width: 300px;
+}
+/* line 292, ../sass/perform.scss */
+.why .speaker p {
+  padding: 5px 15px;
+}
+/* line 295, ../sass/perform.scss */
+.why .speaker .slide-icon {
+  text-align: center;
+  margin: 30px 0px;
+}
+/* line 298, ../sass/perform.scss */
+.why .speaker .slide-icon img {
+  width: 85px;
+  margin: 0 auto;
+}
+/* line 303, ../sass/perform.scss */
+.why .speaker .speaker-name {
+  font-family: "Lato-Regular";
+  line-height: 22px;
+}
+/* line 308, ../sass/perform.scss */
+.why .prev-speaker, .why .next-speaker {
+  display: none;
+}
+/* line 311, ../sass/perform.scss */
+.why .read-more {
+  width: 300px;
+  border: 2px solid #FFF;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: "Lato-Bold";
+}
+
+/* line 322, ../sass/perform.scss */
+.clients {
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  font-size: 0;
+}
+/* line 328, ../sass/perform.scss */
+.clients .block-title {
+  color: #FFF;
+  font-size: 30px;
+  font-family: "Lato-Regular";
+  line-height: 36px;
+  width: 80%;
+}
+/* line 335, ../sass/perform.scss */
+.clients .client-logos {
+  padding: 30px 15px;
+}
+/* line 338, ../sass/perform.scss */
+.clients .client {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+/* line 342, ../sass/perform.scss */
+.clients .client img {
+  width: 80%;
+  max-width: 180px;
+}
+/* line 347, ../sass/perform.scss */
+.clients .try-it-form {
+  padding: 30px 20px 50px;
+  font-size: 0;
+  border-radius: 5px;
+  text-align: center;
+}
+/* line 352, ../sass/perform.scss */
+.clients .try-it-form input {
+  font-size: 18px;
+  padding: 7px;
+  min-height: inherit;
+  height: inherit;
+  line-height: 21px;
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-family: "Lato-Semibold";
+  font-size: 14px;
+  color: #9b9b9b;
+  letter-spacing: 0px;
+  text-align: left;
+  max-width: 500px;
+}
+/* line 370, ../sass/perform.scss */
+.clients .try-it-form button {
+  background: #00C26B;
+  border-radius: 4px;
+  border: 0;
+  padding: 5px;
+  color: #fff;
+  width: 100%;
+  font-family: "Lato-Semibold";
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 19px;
+  padding: 8px;
+  text-transform: none;
+  margin: 0;
+  vertical-align: top;
+  max-width: 500px;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 390, ../sass/perform.scss */
+  .engage-header-graphics {
+    background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
+    height: 650px;
+  }
+  /* line 393, ../sass/perform.scss */
+  .engage-header-graphics:before {
+    display: none;
+  }
+  /* line 396, ../sass/perform.scss */
+  .engage-header-graphics .content {
+    position: relative;
+    top: 50%;
+    max-width: 600px;
+    margin-top: -200px;
+  }
+  /* line 401, ../sass/perform.scss */
+  .engage-header-graphics .content h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  /* line 405, ../sass/perform.scss */
+  .engage-header-graphics .content .try-it-form {
+    max-width: 450px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  /* line 409, ../sass/perform.scss */
+  .engage-header-graphics .content .try-it-form input {
+    font-size: 18px;
+    padding: 7px;
+    width: 72%;
+    border-radius: 4px 0 0 4px;
+  }
+  /* line 415, ../sass/perform.scss */
+  .engage-header-graphics .content .try-it-form button {
+    font-size: 18px;
+    line-height: 19px;
+    padding: 8px;
+    width: 28%;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* line 425, ../sass/perform.scss */
+  .overview {
+    display: none;
+  }
+
+  /* line 428, ../sass/perform.scss */
+  .overview-desktop {
+    display: block;
+    font-size: 0px;
+  }
+  /* line 431, ../sass/perform.scss */
+  .overview-desktop .overview-content {
+    position: relative;
+    height: 495px;
+    border-bottom: 1px solid #DADADA;
+  }
+  /* line 436, ../sass/perform.scss */
+  .overview-desktop .block-content {
+    text-align: left;
+    padding: 15px;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 443, ../sass/perform.scss */
+  .overview-desktop .content-desc {
+    font-size: 16px;
+    font-family: "Lato-Light";
+    line-height: 24px;
+  }
+  /* line 448, ../sass/perform.scss */
+  .overview-desktop .title {
+    font-size: 24px;
+    font-family: "Lato-Regular";
+    line-height: 29px;
+    color: #1C94EE;
+    margin-bottom: 15px;
+  }
+  /* line 455, ../sass/perform.scss */
+  .overview-desktop .right-side {
+    width: 48%;
+    display: inline-block;
+    float: right;
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+  /* line 462, ../sass/perform.scss */
+  .overview-desktop .right-side .overview-img {
+    height: 495px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: none;
+  }
+  /* line 469, ../sass/perform.scss */
+  .overview-desktop .right-side .img-1 {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/perform/overview/overview-1.png);
+  }
+  /* line 472, ../sass/perform.scss */
+  .overview-desktop .right-side .img-2 {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/perform/overview/overview-2.png);
+  }
+  /* line 475, ../sass/perform.scss */
+  .overview-desktop .right-side .img-3 {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/perform/overview/overview-3.png);
+  }
+  /* line 479, ../sass/perform.scss */
+  .overview-desktop .overview-default .block-content {
+    margin-top: 30px;
+  }
+  /* line 483, ../sass/perform.scss */
+  .overview-desktop .overview-content:hover .overview-block:hover .overview-img, .overview-desktop .overview-content .overview-default .overview-img {
+    display: block;
+    transition: all ease .5s;
+  }
+  /* line 487, ../sass/perform.scss */
+  .overview-desktop .overview-content:hover .overview-block:hover .block-content, .overview-desktop .overview-content .overview-default .block-content {
+    background-color: rgba(28, 148, 238, 0.1);
+    transition: all .3s;
+  }
+  /* line 492, ../sass/perform.scss */
+  .overview-desktop .overview-img, .overview-desktop .overview-content:hover .overview-img {
+    display: none;
+    transition: all ease .5s;
+  }
+  /* line 496, ../sass/perform.scss */
+  .overview-desktop .block-content, .overview-desktop .overview-content:hover .block-content {
+    background-color: #FFF;
+    transition: all .3s;
+  }
+
+  /* line 501, ../sass/perform.scss */
+  .features {
+    font-size: 0;
+  }
+  /* line 503, ../sass/perform.scss */
+  .features .feature:first-child {
+    padding-bottom: 0;
+  }
+  /* line 506, ../sass/perform.scss */
+  .features .icon {
+    display: inline-block;
+    width: 50%;
+  }
+  /* line 510, ../sass/perform.scss */
+  .features .feature-desc {
+    display: inline-block;
+    width: 50%;
+  }
+  /* line 514, ../sass/perform.scss */
+  .features .feature-1 {
+    margin-bottom: 0;
+    position: relative;
+    top: 7px;
+  }
+  /* line 519, ../sass/perform.scss */
+  .features .feature-2 {
+    float: right;
+    text-align: center;
+  }
+  /* line 523, ../sass/perform.scss */
+  .features .feature-desc-1 {
+    float: right;
+    margin-top: 20px;
+  }
+  /* line 527, ../sass/perform.scss */
+  .features .feature-desc-2 {
+    border-top: 1px solid #DADADA;
+  }
+  /* line 529, ../sass/perform.scss */
+  .features .feature-desc-2 .content-title {
+    margin-top: 90px;
+  }
+  /* line 533, ../sass/perform.scss */
+  .features .feature-3 img {
+    margin-top: 110px;
+  }
+  /* line 536, ../sass/perform.scss */
+  .features .feature-desc-3 {
+    float: right;
+    border-top: 1px solid #DADADA;
+  }
+  /* line 539, ../sass/perform.scss */
+  .features .feature-desc-3 .content-title {
+    margin-top: 120px;
+  }
+  /* line 543, ../sass/perform.scss */
+  .features p {
+    padding: 10px 15px;
+  }
+  /* line 547, ../sass/perform.scss */
+  .features .download .download-app {
+    display: none;
+  }
+  /* line 550, ../sass/perform.scss */
+  .features .download span {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  /* line 554, ../sass/perform.scss */
+  .features .download .store {
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    font-size: 0;
+    margin-right: 3px;
+    background: url(http://www.tinypulse.com/hubfs/redesign_2016/stores.png) no-repeat;
+  }
+  /* line 562, ../sass/perform.scss */
+  .features .download .google-store {
+    background-position: -110px 0;
+  }
+
+  /* line 568, ../sass/perform.scss */
+  .why .block-content {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-size: 0;
+  }
+  /* line 574, ../sass/perform.scss */
+  .why .speakers {
+    text-align: center;
+  }
+  /* line 577, ../sass/perform.scss */
+  .why .speakers .speaker .slide-icon {
+    display: none;
+  }
+  /* line 580, ../sass/perform.scss */
+  .why .speakers .speaker .speaker-img {
+    display: inline-block;
+  }
+  /* line 583, ../sass/perform.scss */
+  .why .speakers .speaker .speaker-desc {
+    max-width: 500px;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    position: relative;
+    text-align: left;
+  }
+  /* line 590, ../sass/perform.scss */
+  .why .speakers .speaker .speaker-desc .speaker-name {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  /* line 596, ../sass/perform.scss */
+  .why .speakers .speaker .speaker-content {
+    max-width: 800px;
+    font-size: 0;
+    height: 200px;
+    display: inline-block;
+  }
+  /* line 601, ../sass/perform.scss */
+  .why .speakers .speaker .speaker-content p {
+    padding: 0 15px;
+  }
+  /* line 607, ../sass/perform.scss */
+  .why .prev-speaker, .why .next-speaker {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 200px;
+    top: 50%;
+    transform: translate(0, 35%);
+  }
+  /* line 615, ../sass/perform.scss */
+  .why .prev-speaker {
+    margin-right: 15px;
+  }
+  /* line 618, ../sass/perform.scss */
+  .why .next-speaker {
+    margin-left: 15px;
+  }
+  /* line 621, ../sass/perform.scss */
+  .why .read-more {
+    margin-top: 50px;
+  }
+  /* line 624, ../sass/perform.scss */
+  .why .control-button img {
+    display: inline-block;
+    max-width: 30px;
+  }
+
+  /* line 629, ../sass/perform.scss */
+  .how-it-works {
+    display: none;
+  }
+
+  /* line 632, ../sass/perform.scss */
+  .how-it-works-desktop {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 500px;
+  }
+  /* line 637, ../sass/perform.scss */
+  .how-it-works-desktop .block-content {
+    margin-bottom: 100px;
+    margin-top: 60px;
+    width: 900px;
+    position: absolute;
+    left: 0;
+  }
+  /* line 643, ../sass/perform.scss */
+  .how-it-works-desktop .block-content .content-title {
+    font-size: 20px;
+    color: #1C94EE;
+    font-family: "Lato-Regular";
+    text-align: left;
+    padding: 0 15px;
+  }
+  /* line 650, ../sass/perform.scss */
+  .how-it-works-desktop .block-content p {
+    text-align: left;
+    padding: 0 15px;
+    font-size: 16px;
+    font-family: "Lato-Light";
+    line-height: 24px;
+  }
+  /* line 658, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-size: 0px;
+    position: relative;
+  }
+  /* line 664, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons .hiw-content {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+  }
+  /* line 669, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons .hiw-icon {
+    text-align: center;
+    position: relative;
+  }
+  /* line 673, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons .icon {
+    width: 63px;
+    height: 94px;
+    display: inline-block;
+    background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/perform/how-it-works/perform-hiw-small-sprite.png);
+    background-repeat: no-repeat;
+  }
+  /* line 680, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons .hiw-1 {
+    background-position: 0 0;
+  }
+  /* line 683, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons .hiw-2 {
+    background-position: -83px 0;
+  }
+  /* line 686, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons .hiw-3 {
+    background-position: -168px 0;
+  }
+  /* line 689, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons .hiw-4 {
+    background-position: -253px 0;
+  }
+  /* line 692, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons .hiw-5 {
+    background-position: -338px 0;
+  }
+  /* line 696, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-wrapper {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  /* line 707, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .icon, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .icon, .how-it-works-desktop .hiw-icons .hiw-default .icon {
+    background-position-y: -117px;
+  }
+  /* line 710, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .block-content, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .block-content, .how-it-works-desktop .hiw-icons .hiw-default .block-content {
+    display: block;
+    transition: all .3s;
+  }
+  /* line 714, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .hiw-wrapper, .how-it-works-desktop .hiw-icons .hiw-default .hiw-wrapper {
+    background-color: rgba(28, 148, 238, 0.1);
+  }
+  /* line 719, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icon .icon, .how-it-works-desktop .hiw-icons:hover .hiw-icon .icon, .how-it-works-desktop .hiw-icons:focus .hiw-icon .icon {
+    background-position-y: 2px;
+  }
+  /* line 722, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:hover .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-icon .hiw-wrapper {
+    background-color: transparent;
+  }
+  /* line 726, ../sass/perform.scss */
+  .how-it-works-desktop .block-content, .how-it-works-desktop .hiw-icons:hover .block-content {
+    display: none;
+    transition: all .3s;
+  }
+
+  /* line 732, ../sass/perform.scss */
+  .clients .client {
+    width: 15%;
+    text-align: center;
+  }
+  /* line 736, ../sass/perform.scss */
+  .clients .client-logos {
+    text-align: center;
+  }
+  /* line 739, ../sass/perform.scss */
+  .clients .block-title {
+    width: 100%;
+  }
+  /* line 742, ../sass/perform.scss */
+  .clients .try-it-form {
+    max-width: 450px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  /* line 746, ../sass/perform.scss */
+  .clients .try-it-form input {
+    font-size: 14px;
+    padding: 7px;
+    width: 67%;
+    border-radius: 4px 0 0 4px;
+  }
+  /* line 752, ../sass/perform.scss */
+  .clients .try-it-form button {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 8px;
+    width: 33%;
+    border-radius: 0 4px 4px 0;
+  }
+}
