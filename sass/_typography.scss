@@ -2,6 +2,7 @@ $font_regular: 'Lato-Regular';
 $font_semibold: 'Lato-Semibold';
 $font_bold: 'Lato-Bold';
 $font_light: 'Lato-Light';
+$font_thin: 'Lato-Thin';
 
 $font-url: 'fonts/';
 @font-face {
@@ -34,4 +35,12 @@ $font-url: 'fonts/';
   src: url($font-url + 'Lato-Bold.woff2') format('woff2'),
   url($font-url + 'Lato-Bold.woff') format('woff'),
   url($font-url + 'Lato-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url($font-url + 'Lato-Thin.eot');
+  src: url($font-url + 'Lato-Thin.woff2') format('woff2'),
+  url($font-url + 'Lato-Thin.woff') format('woff'),
+  url($font-url + 'Lato-Thin.ttf') format('truetype');
 }

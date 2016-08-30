@@ -406,7 +406,7 @@ header{
     display: block;
     padding: 10px;
     margin: 0 auto;
-    margin-top: 110px;
+    margin-top: 30px;
     h1{
       font-size: 20px;
       text-align: center;
@@ -415,14 +415,14 @@ header{
       font-weight: normal;
       font-size:36px;
       color:#ffffff;
-      letter-spacing:1.12px;
+      letter-spacing:1.5px;
       text-shadow:0px 2px 15px rgba(0,0,0,0.80);
       text-align:center;
     }
     
     .sub-headline {
-      font-family: $font_bold;
-      font-size: 24px;
+      font-family: $font_regular;
+      font-size: 16px;
       color: #FFFFFF ;
       margin-top: -10px;
       text-align: center;
@@ -614,21 +614,22 @@ header{
     height: 620px;
     .content{
       position: relative;
-      top: 20%;
+      top: 5%;
+      margin-top: 110px;
       max-width: 600px;
       h1{
         font-size: 48px;
         margin-bottom: 50px;
       }
       .sub-headline {
-        font-size: 24px;
-        margin-top: -35px;
+        font-size: 22px;
       }
       .try-it-form{
         max-width: 450px;
         box-sizing: border-box;
         margin: 0 auto;
         font-size: 0;
+        margin-top: 40px;
         input{
           width: 68%;
           border-radius: 4px 0 0 4px;
