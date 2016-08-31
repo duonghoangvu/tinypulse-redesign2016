@@ -127,9 +127,6 @@ jQuery(document).ready(function($) {
     } else {
       activeSlide = currentSlide;
     }
-    console.log('current ' + currentSlide);
-    console.log('active ' +activeSlide);
-
     $('.indicator').removeClass('active');
     $('#indicator-' + activeSlide).addClass('active');
   },
@@ -237,7 +234,7 @@ jQuery(document).ready(function($) {
     settings = $.extend(true, defaults, options);
     init(this);
   }
-  $('.speakers').xsSlider({
+  $('.speaker').xsSlider({
     width: 960,
     height: 'auto'
   });
