@@ -234,12 +234,12 @@ jQuery(document).ready(function($) {
     settings = $.extend(true, defaults, options);
     init(this);
   }
-  $('.speaker').xsSlider({
+  $('.speakers').xsSlider({
     width: 960,
     height: 'auto'
   });
   if($(window).width() < 960){
-    $('.speakers').click(function(){
+    $('.speaker').click(function(){
       currentSlide += 1;
       moveStage();
     });
