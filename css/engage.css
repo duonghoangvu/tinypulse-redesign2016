@@ -1831,8 +1831,9 @@ footer .copyright span {
     width: 900px;
     position: absolute;
     left: 0;
+    display: none;
   }
-  /* line 655, ../sass/engage.scss */
+  /* line 656, ../sass/engage.scss */
   .how-it-works-desktop .block-content .content-title {
     font-size: 20px;
     color: #1C94EE;
@@ -1840,7 +1841,7 @@ footer .copyright span {
     text-align: left;
     padding: 0 15px;
   }
-  /* line 662, ../sass/engage.scss */
+  /* line 663, ../sass/engage.scss */
   .how-it-works-desktop .block-content p {
     text-align: left;
     padding: 0 15px;
@@ -1848,7 +1849,7 @@ footer .copyright span {
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 670, ../sass/engage.scss */
+  /* line 671, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons {
     padding-left: 15px;
     padding-right: 15px;
@@ -1856,18 +1857,18 @@ footer .copyright span {
     font-size: 0px;
     position: relative;
   }
-  /* line 676, ../sass/engage.scss */
+  /* line 677, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-content {
     display: inline-block;
     width: 20%;
     vertical-align: top;
   }
-  /* line 681, ../sass/engage.scss */
+  /* line 682, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-icon {
     text-align: center;
     position: relative;
   }
-  /* line 685, ../sass/engage.scss */
+  /* line 686, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .icon {
     width: 63px;
     height: 94px;
@@ -1875,27 +1876,27 @@ footer .copyright span {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/engage/how-it-works/hiw-small-sprite.png);
     background-repeat: no-repeat;
   }
-  /* line 692, ../sass/engage.scss */
+  /* line 693, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-1 {
     background-position: 0 0;
   }
-  /* line 695, ../sass/engage.scss */
+  /* line 696, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-2 {
     background-position: -85px 0;
   }
-  /* line 698, ../sass/engage.scss */
+  /* line 699, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-3 {
     background-position: -168px 0;
   }
-  /* line 701, ../sass/engage.scss */
+  /* line 702, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-4 {
     background-position: -253px 0;
   }
-  /* line 704, ../sass/engage.scss */
+  /* line 705, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-5 {
     background-position: -338px 0;
   }
-  /* line 708, ../sass/engage.scss */
+  /* line 709, ../sass/engage.scss */
   .how-it-works-desktop .hiw-wrapper {
     width: 90px;
     height: 90px;
@@ -1906,35 +1907,35 @@ footer .copyright span {
     left: 0;
     right: 0;
   }
-  /* line 719, ../sass/engage.scss */
+  /* line 720, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content.selected .icon {
     background-position-y: -117px;
   }
-  /* line 722, ../sass/engage.scss */
+  /* line 723, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content.selected .block-content {
     display: block;
     transition: all .3s;
   }
-  /* line 726, ../sass/engage.scss */
+  /* line 727, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content.selected .hiw-wrapper {
     background-color: rgba(28, 148, 238, 0.1);
   }
 
-  /* line 748, ../sass/engage.scss */
+  /* line 749, ../sass/engage.scss */
   .clients .client {
     width: 15%;
     text-align: center;
   }
-  /* line 752, ../sass/engage.scss */
+  /* line 753, ../sass/engage.scss */
   .clients .client-logos {
     text-align: center;
   }
-  /* line 755, ../sass/engage.scss */
+  /* line 756, ../sass/engage.scss */
   .clients .block-title {
     width: 100%;
     margin-top: 20px;
   }
-  /* line 759, ../sass/engage.scss */
+  /* line 760, ../sass/engage.scss */
   .clients img {
     margin-left: 20px;
     margin-right: 20px;
@@ -1943,14 +1944,14 @@ footer .copyright span {
     width: 100px;
     display: inline-block;
   }
-  /* line 767, ../sass/engage.scss */
+  /* line 768, ../sass/engage.scss */
   .clients .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
     padding-bottom: 30px;
   }
-  /* line 772, ../sass/engage.scss */
+  /* line 773, ../sass/engage.scss */
   .clients .try-it-form input {
     font-size: 14px;
     padding: 7px 17px;
@@ -1958,7 +1959,7 @@ footer .copyright span {
     border-radius: 4px 0 0 4px;
     text-align: left;
   }
-  /* line 779, ../sass/engage.scss */
+  /* line 780, ../sass/engage.scss */
   .clients .try-it-form button {
     font-size: 14px;
     line-height: 19px;
