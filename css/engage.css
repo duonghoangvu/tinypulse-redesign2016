@@ -1449,22 +1449,19 @@ footer .copyright span {
 }
 /* line 337, ../sass/engage.scss */
 .clients img {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 0px;
-  margin-top: 0;
+  margin: 10px 20px;
   width: 100px;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 355, ../sass/engage.scss */
+/* line 352, ../sass/engage.scss */
 .clients .try-it-form {
-  padding: 17px 20px 50px;
-  margin: 70px 0 50px 0;
+  padding: 17px 20px;
+  margin: 0px 0 50px 0;
   font-size: 0;
   border-radius: 5px;
 }
-/* line 360, ../sass/engage.scss */
+/* line 357, ../sass/engage.scss */
 .clients .try-it-form input, .clients .try-it-form button {
   display: inline-block;
   vertical-align: top;
@@ -1479,7 +1476,7 @@ footer .copyright span {
   min-height: inherit;
   text-transform: none;
 }
-/* line 374, ../sass/engage.scss */
+/* line 371, ../sass/engage.scss */
 .clients .try-it-form input {
   width: 100%;
   color: #9b9b9b;
@@ -1488,7 +1485,7 @@ footer .copyright span {
   font-family: "Lato-Regular";
   font-size: 15px;
 }
-/* line 382, ../sass/engage.scss */
+/* line 379, ../sass/engage.scss */
 .clients .try-it-form button {
   width: 100%;
   background: #00C26B;
@@ -1496,41 +1493,41 @@ footer .copyright span {
   font-family: "Lato-Semibold";
   font-size: 16px;
 }
-/* line 388, ../sass/engage.scss */
+/* line 385, ../sass/engage.scss */
 .clients .try-it-form button:hover {
   opacity: 0.9;
   cursor: pointer;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 396, ../sass/engage.scss */
+  /* line 393, ../sass/engage.scss */
   .engage-header-graphics {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
     height: 650px;
   }
-  /* line 399, ../sass/engage.scss */
+  /* line 396, ../sass/engage.scss */
   .engage-header-graphics:before {
     display: none;
   }
-  /* line 402, ../sass/engage.scss */
+  /* line 399, ../sass/engage.scss */
   .engage-header-graphics .content {
     position: relative;
     top: 50%;
     max-width: 600px;
     margin-top: -200px;
   }
-  /* line 407, ../sass/engage.scss */
+  /* line 404, ../sass/engage.scss */
   .engage-header-graphics .content h1 {
     font-size: 48px;
     margin-bottom: 50px;
   }
-  /* line 411, ../sass/engage.scss */
+  /* line 408, ../sass/engage.scss */
   .engage-header-graphics .content .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
   }
-  /* line 415, ../sass/engage.scss */
+  /* line 412, ../sass/engage.scss */
   .engage-header-graphics .content .try-it-form input {
     font-size: 18px;
     padding: 7px;
@@ -1538,7 +1535,7 @@ footer .copyright span {
     border-radius: 4px 0 0 4px;
     text-align: left;
   }
-  /* line 422, ../sass/engage.scss */
+  /* line 419, ../sass/engage.scss */
   .engage-header-graphics .content .try-it-form button {
     font-size: 18px;
     line-height: 19px;
@@ -1547,45 +1544,67 @@ footer .copyright span {
     border-radius: 0 4px 4px 0;
   }
 
-  /* line 432, ../sass/engage.scss */
+  /* line 429, ../sass/engage.scss */
   .overview {
     display: none;
   }
 
-  /* line 435, ../sass/engage.scss */
+  /* line 432, ../sass/engage.scss */
   .overview-desktop {
     display: block;
     font-size: 0px;
+    /*.overview-content:hover .overview-block:hover {*/
+    /*.overview-img {*/
+    /*display: block;*/
+    /*transition: all ease .5s;*/
+    /*}*/
+    /*.block-content {*/
+    /*[>background-color: rgba(28,148,238,0.1);<]*/
+    /*transition: all .3s;*/
+    /*.title {*/
+    /*color: #1C94EE;*/
+    /*}*/
+    /*}*/
+    /*}*/
+    /*.overview-img, .overview-content:hover .overview-img{*/
+    /*display: none;*/
+    /*transition: all ease .5s;*/
+    /*}*/
+    /*.block-content, .overview-content:hover .block-content{*/
+    /*background-color: #FFF;*/
+    /*transition: all .3s;*/
+    /*}*/
   }
-  /* line 438, ../sass/engage.scss */
+  /* line 435, ../sass/engage.scss */
   .overview-desktop .overview-content {
     position: relative;
     height: 495px;
     border-bottom: 1px solid #DADADA;
   }
-  /* line 443, ../sass/engage.scss */
+  /* line 440, ../sass/engage.scss */
   .overview-desktop .block-content {
     text-align: left;
     padding: 15px;
     width: 45%;
     display: inline-block;
     vertical-align: top;
+    border-radius: 3px;
   }
-  /* line 450, ../sass/engage.scss */
+  /* line 448, ../sass/engage.scss */
   .overview-desktop .content-desc {
     font-size: 16px;
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 455, ../sass/engage.scss */
+  /* line 453, ../sass/engage.scss */
   .overview-desktop .title {
     font-size: 24px;
     font-family: "Lato-Regular";
     line-height: 29px;
-    color: #1C94EE;
+    color: #000;
     margin-bottom: 15px;
   }
-  /* line 462, ../sass/engage.scss */
+  /* line 460, ../sass/engage.scss */
   .overview-desktop .right-side {
     width: 48%;
     display: inline-block;
@@ -1594,7 +1613,7 @@ footer .copyright span {
     position: absolute;
     top: 0;
   }
-  /* line 469, ../sass/engage.scss */
+  /* line 467, ../sass/engage.scss */
   .overview-desktop .right-side .overview-img {
     height: 495px;
     background-size: cover;
@@ -1602,93 +1621,87 @@ footer .copyright span {
     background-position: center;
     display: none;
   }
-  /* line 476, ../sass/engage.scss */
+  /* line 474, ../sass/engage.scss */
   .overview-desktop .right-side .img-1 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-insight.png);
   }
-  /* line 479, ../sass/engage.scss */
+  /* line 477, ../sass/engage.scss */
   .overview-desktop .right-side .img-2 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-actionable.png);
   }
-  /* line 482, ../sass/engage.scss */
+  /* line 480, ../sass/engage.scss */
   .overview-desktop .right-side .img-3 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-empowered.png);
   }
-  /* line 486, ../sass/engage.scss */
+  /* line 484, ../sass/engage.scss */
   .overview-desktop .overview-default .block-content {
     margin-top: 30px;
   }
-  /* line 490, ../sass/engage.scss */
-  .overview-desktop .overview-content:hover .overview-block:hover .overview-img, .overview-desktop .overview-content .overview-default .overview-img {
+  /* line 488, ../sass/engage.scss */
+  .overview-desktop .overview-block.selected .overview-img {
     display: block;
     transition: all ease .5s;
   }
-  /* line 494, ../sass/engage.scss */
-  .overview-desktop .overview-content:hover .overview-block:hover .block-content, .overview-desktop .overview-content .overview-default .block-content {
+  /* line 492, ../sass/engage.scss */
+  .overview-desktop .overview-block.selected .block-content {
     background-color: rgba(28, 148, 238, 0.1);
     transition: all .3s;
   }
-  /* line 499, ../sass/engage.scss */
-  .overview-desktop .overview-img, .overview-desktop .overview-content:hover .overview-img {
-    display: none;
-    transition: all ease .5s;
-  }
-  /* line 503, ../sass/engage.scss */
-  .overview-desktop .block-content, .overview-desktop .overview-content:hover .block-content {
-    background-color: #FFF;
-    transition: all .3s;
+  /* line 495, ../sass/engage.scss */
+  .overview-desktop .overview-block.selected .block-content .title {
+    color: #1C94EE;
   }
 
-  /* line 508, ../sass/engage.scss */
+  /* line 522, ../sass/engage.scss */
   .features {
     font-size: 0;
   }
-  /* line 510, ../sass/engage.scss */
+  /* line 524, ../sass/engage.scss */
   .features .icon {
     display: inline-block;
     width: 50%;
   }
-  /* line 514, ../sass/engage.scss */
+  /* line 528, ../sass/engage.scss */
   .features .feature-desc {
     display: inline-block;
     width: 50%;
   }
-  /* line 518, ../sass/engage.scss */
+  /* line 532, ../sass/engage.scss */
   .features .feature-2 {
     float: right;
     text-align: center;
   }
-  /* line 522, ../sass/engage.scss */
+  /* line 536, ../sass/engage.scss */
   .features .feature-desc-1 {
     float: right;
     margin-top: 20px;
   }
-  /* line 526, ../sass/engage.scss */
+  /* line 540, ../sass/engage.scss */
   .features .feature-desc-2 {
     border-top: 1px solid #DADADA;
   }
-  /* line 528, ../sass/engage.scss */
+  /* line 542, ../sass/engage.scss */
   .features .feature-desc-2 .content-title {
     margin-top: 90px;
   }
-  /* line 532, ../sass/engage.scss */
+  /* line 546, ../sass/engage.scss */
   .features .feature-3 img {
     margin-top: 100px;
   }
-  /* line 535, ../sass/engage.scss */
+  /* line 549, ../sass/engage.scss */
   .features .feature-desc-3 {
     float: right;
     border-top: 1px solid #DADADA;
   }
-  /* line 538, ../sass/engage.scss */
+  /* line 552, ../sass/engage.scss */
   .features .feature-desc-3 .content-title {
     margin-top: 120px;
   }
-  /* line 542, ../sass/engage.scss */
+  /* line 556, ../sass/engage.scss */
   .features p {
     padding: 10px 15px;
   }
-  /* line 545, ../sass/engage.scss */
+  /* line 559, ../sass/engage.scss */
   .features .mobile-download {
     display: block;
     font-size: 18px;
@@ -1697,12 +1710,12 @@ footer .copyright span {
     color: #9B9B9B;
     padding: 0px 15px;
   }
-  /* line 552, ../sass/engage.scss */
+  /* line 566, ../sass/engage.scss */
   .features .mobile-download span {
     vertical-align: middle;
     margin-right: 20px;
   }
-  /* line 556, ../sass/engage.scss */
+  /* line 570, ../sass/engage.scss */
   .features .mobile-download img {
     max-width: 100px;
     margin-bottom: 0;
@@ -1711,26 +1724,26 @@ footer .copyright span {
     vertical-align: middle;
   }
 
-  /* line 566, ../sass/engage.scss */
+  /* line 580, ../sass/engage.scss */
   .why .block-content {
     display: inline-block;
     width: 33%;
     text-align: center;
     font-size: 0;
   }
-  /* line 572, ../sass/engage.scss */
+  /* line 586, ../sass/engage.scss */
   .why .speakers {
     text-align: center;
   }
-  /* line 575, ../sass/engage.scss */
+  /* line 589, ../sass/engage.scss */
   .why .speakers .speaker .slide-icon {
     display: none;
   }
-  /* line 578, ../sass/engage.scss */
+  /* line 592, ../sass/engage.scss */
   .why .speakers .speaker .speaker-img {
     display: inline-block;
   }
-  /* line 581, ../sass/engage.scss */
+  /* line 595, ../sass/engage.scss */
   .why .speakers .speaker .speaker-desc {
     max-width: 500px;
     display: inline-block;
@@ -1739,24 +1752,24 @@ footer .copyright span {
     position: relative;
     text-align: left;
   }
-  /* line 588, ../sass/engage.scss */
+  /* line 602, ../sass/engage.scss */
   .why .speakers .speaker .speaker-desc .speaker-name {
     position: absolute;
     right: 0;
     bottom: 0;
   }
-  /* line 594, ../sass/engage.scss */
+  /* line 608, ../sass/engage.scss */
   .why .speakers .speaker .speaker-content {
     max-width: 800px;
     font-size: 0;
     height: 200px;
     display: inline-block;
   }
-  /* line 599, ../sass/engage.scss */
+  /* line 613, ../sass/engage.scss */
   .why .speakers .speaker .speaker-content p {
     padding: 0 15px;
   }
-  /* line 605, ../sass/engage.scss */
+  /* line 619, ../sass/engage.scss */
   .why .prev-speaker, .why .next-speaker {
     display: inline-block;
     position: relative;
@@ -1765,37 +1778,53 @@ footer .copyright span {
     top: 50%;
     transform: translate(0, 35%);
   }
-  /* line 613, ../sass/engage.scss */
+  /* line 627, ../sass/engage.scss */
   .why .prev-speaker {
     margin-right: 15px;
   }
-  /* line 616, ../sass/engage.scss */
+  /* line 630, ../sass/engage.scss */
   .why .next-speaker {
     margin-left: 15px;
   }
-  /* line 619, ../sass/engage.scss */
+  /* line 633, ../sass/engage.scss */
   .why .read-more {
     margin-top: 50px;
   }
-  /* line 622, ../sass/engage.scss */
+  /* line 636, ../sass/engage.scss */
   .why .control-button img {
     display: inline-block;
     max-width: 30px;
   }
 
-  /* line 627, ../sass/engage.scss */
+  /* line 641, ../sass/engage.scss */
   .how-it-works {
     display: none;
   }
 
-  /* line 630, ../sass/engage.scss */
+  /* line 644, ../sass/engage.scss */
   .how-it-works-desktop {
     display: block;
     padding-left: 15px;
     padding-right: 15px;
     height: 500px;
+    /*.hiw-icons:hover .hiw-content:hover {*/
+    /*.icon {*/
+    /*background-position-y: -117px;*/
+    /*}*/
+    /*.block-content {*/
+    /*display: block;*/
+    /*transition: all .3s;*/
+    /*}*/
+    /*.hiw-wrapper {*/
+    /*background-color: rgba(28, 148, 238, 0.1);*/
+    /*}*/
+    /*}*/
+    /*.block-content, .hiw-icons:hover .block-content{*/
+    /*display: none;*/
+    /*transition: all .3s;*/
+    /*}*/
   }
-  /* line 635, ../sass/engage.scss */
+  /* line 649, ../sass/engage.scss */
   .how-it-works-desktop .block-content {
     margin-bottom: 100px;
     margin-top: 60px;
@@ -1803,7 +1832,7 @@ footer .copyright span {
     position: absolute;
     left: 0;
   }
-  /* line 641, ../sass/engage.scss */
+  /* line 655, ../sass/engage.scss */
   .how-it-works-desktop .block-content .content-title {
     font-size: 20px;
     color: #1C94EE;
@@ -1811,7 +1840,7 @@ footer .copyright span {
     text-align: left;
     padding: 0 15px;
   }
-  /* line 648, ../sass/engage.scss */
+  /* line 662, ../sass/engage.scss */
   .how-it-works-desktop .block-content p {
     text-align: left;
     padding: 0 15px;
@@ -1819,7 +1848,7 @@ footer .copyright span {
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 656, ../sass/engage.scss */
+  /* line 670, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons {
     padding-left: 15px;
     padding-right: 15px;
@@ -1827,18 +1856,18 @@ footer .copyright span {
     font-size: 0px;
     position: relative;
   }
-  /* line 662, ../sass/engage.scss */
+  /* line 676, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-content {
     display: inline-block;
     width: 20%;
     vertical-align: top;
   }
-  /* line 667, ../sass/engage.scss */
+  /* line 681, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-icon {
     text-align: center;
     position: relative;
   }
-  /* line 671, ../sass/engage.scss */
+  /* line 685, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .icon {
     width: 63px;
     height: 94px;
@@ -1846,27 +1875,27 @@ footer .copyright span {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/engage/how-it-works/hiw-small-sprite.png);
     background-repeat: no-repeat;
   }
-  /* line 678, ../sass/engage.scss */
+  /* line 692, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-1 {
     background-position: 0 0;
   }
-  /* line 681, ../sass/engage.scss */
+  /* line 695, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-2 {
     background-position: -85px 0;
   }
-  /* line 684, ../sass/engage.scss */
+  /* line 698, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-3 {
     background-position: -168px 0;
   }
-  /* line 687, ../sass/engage.scss */
+  /* line 701, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-4 {
     background-position: -253px 0;
   }
-  /* line 690, ../sass/engage.scss */
+  /* line 704, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-5 {
     background-position: -338px 0;
   }
-  /* line 694, ../sass/engage.scss */
+  /* line 708, ../sass/engage.scss */
   .how-it-works-desktop .hiw-wrapper {
     width: 90px;
     height: 90px;
@@ -1877,48 +1906,35 @@ footer .copyright span {
     left: 0;
     right: 0;
   }
-  /* line 705, ../sass/engage.scss */
-  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .icon, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .icon, .how-it-works-desktop .hiw-icons .hiw-default .icon {
+  /* line 719, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-content.selected .icon {
     background-position-y: -117px;
   }
-  /* line 708, ../sass/engage.scss */
-  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .block-content, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .block-content, .how-it-works-desktop .hiw-icons .hiw-default .block-content {
+  /* line 722, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-content.selected .block-content {
     display: block;
     transition: all .3s;
   }
-  /* line 712, ../sass/engage.scss */
-  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .hiw-wrapper, .how-it-works-desktop .hiw-icons .hiw-default .hiw-wrapper {
+  /* line 726, ../sass/engage.scss */
+  .how-it-works-desktop .hiw-content.selected .hiw-wrapper {
     background-color: rgba(28, 148, 238, 0.1);
   }
-  /* line 717, ../sass/engage.scss */
-  .how-it-works-desktop .hiw-icon .icon, .how-it-works-desktop .hiw-icons:hover .hiw-icon .icon, .how-it-works-desktop .hiw-icons:focus .hiw-icon .icon {
-    background-position-y: 0px;
-  }
-  /* line 720, ../sass/engage.scss */
-  .how-it-works-desktop .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:hover .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-icon .hiw-wrapper {
-    background-color: transparent;
-  }
-  /* line 724, ../sass/engage.scss */
-  .how-it-works-desktop .block-content, .how-it-works-desktop .hiw-icons:hover .block-content {
-    display: none;
-    transition: all .3s;
-  }
 
-  /* line 730, ../sass/engage.scss */
+  /* line 748, ../sass/engage.scss */
   .clients .client {
     width: 15%;
     text-align: center;
   }
-  /* line 734, ../sass/engage.scss */
+  /* line 752, ../sass/engage.scss */
   .clients .client-logos {
     text-align: center;
   }
-  /* line 737, ../sass/engage.scss */
+  /* line 755, ../sass/engage.scss */
   .clients .block-title {
     width: 100%;
     margin-top: 20px;
   }
-  /* line 741, ../sass/engage.scss */
+  /* line 759, ../sass/engage.scss */
   .clients img {
     margin-left: 20px;
     margin-right: 20px;
@@ -1927,13 +1943,14 @@ footer .copyright span {
     width: 100px;
     display: inline-block;
   }
-  /* line 749, ../sass/engage.scss */
+  /* line 767, ../sass/engage.scss */
   .clients .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
+    padding-bottom: 30px;
   }
-  /* line 753, ../sass/engage.scss */
+  /* line 772, ../sass/engage.scss */
   .clients .try-it-form input {
     font-size: 14px;
     padding: 7px 17px;
@@ -1941,7 +1958,7 @@ footer .copyright span {
     border-radius: 4px 0 0 4px;
     text-align: left;
   }
-  /* line 760, ../sass/engage.scss */
+  /* line 779, ../sass/engage.scss */
   .clients .try-it-form button {
     font-size: 14px;
     line-height: 19px;
