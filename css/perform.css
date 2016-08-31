@@ -189,7 +189,7 @@
 }
 /* line 175, ../sass/perform.scss */
 .features .feature-2 img {
-  max-width: 380px;
+  max-width: 260px;
   margin: 70px 0 50px;
 }
 /* line 179, ../sass/perform.scss */
@@ -210,23 +210,40 @@
 .features strong {
   font-family: "Lato-Bold";
 }
-/* line 194, ../sass/perform.scss */
-.features .download span, .features .download a {
-  display: none;
+/* line 193, ../sass/perform.scss */
+.features .download {
+  text-align: center;
+}
+/* line 195, ../sass/perform.scss */
+.features .download span {
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 199, ../sass/perform.scss */
+.features .download a {
+  display: inline-block;
+  clear: both;
   vertical-align: middle;
 }
-/* line 198, ../sass/perform.scss */
-.features .download .download-app {
-  display: block;
-  color: #1C94EE;
+/* line 204, ../sass/perform.scss */
+.features .download .store {
+  width: 100px;
+  height: 34px;
+  font-size: 0;
+  margin-right: 8px;
+  background: url(http://www.tinypulse.com/hubfs/redesign_2016/stores.png) no-repeat;
+}
+/* line 211, ../sass/perform.scss */
+.features .download .google-store {
+  background-position: -110px 0;
 }
 
-/* line 204, ../sass/perform.scss */
+/* line 216, ../sass/perform.scss */
 .how-it-works-desktop {
   display: none;
 }
 
-/* line 208, ../sass/perform.scss */
+/* line 220, ../sass/perform.scss */
 .how-it-works .block-content {
   line-height: 24px;
   font-size: 16px;
@@ -237,17 +254,17 @@
   max-width: 570px;
   margin: 0 auto;
 }
-/* line 217, ../sass/perform.scss */
+/* line 229, ../sass/perform.scss */
 .how-it-works .block-content.active {
   display: block;
 }
-/* line 221, ../sass/perform.scss */
+/* line 233, ../sass/perform.scss */
 .how-it-works img {
   width: 70px;
   margin-bottom: 30px;
   margin-top: 15px;
 }
-/* line 226, ../sass/perform.scss */
+/* line 238, ../sass/perform.scss */
 .how-it-works .content-title {
   font-size: 20px;
   color: #1C94EE;
@@ -255,23 +272,23 @@
   text-align: left;
   padding: 0 15px;
 }
-/* line 233, ../sass/perform.scss */
+/* line 245, ../sass/perform.scss */
 .how-it-works p {
   text-align: left;
   padding: 0 15px;
 }
-/* line 237, ../sass/perform.scss */
+/* line 249, ../sass/perform.scss */
 .how-it-works .slide-icon {
   position: absolute;
   bottom: 0px;
   width: 100%;
 }
-/* line 241, ../sass/perform.scss */
+/* line 253, ../sass/perform.scss */
 .how-it-works .slide-icon img {
   width: 135px;
 }
 
-/* line 246, ../sass/perform.scss */
+/* line 258, ../sass/perform.scss */
 .why {
   color: #FFF;
   font-family: "Lato-Light";
@@ -282,91 +299,99 @@
   background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
   padding-bottom: 40px;
 }
-/* line 253, ../sass/perform.scss */
+/* line 265, ../sass/perform.scss */
 .why .block-desc, .why .block-title {
   color: #FFF;
 }
-/* line 256, ../sass/perform.scss */
+/* line 268, ../sass/perform.scss */
 .why .content-title {
   font-size: 16px;
   font-family: "Lato-Semibold";
   line-height: 19px;
 }
-/* line 261, ../sass/perform.scss */
+/* line 273, ../sass/perform.scss */
 .why .icon img {
   width: 100px;
   margin: 20px 0px;
 }
-/* line 265, ../sass/perform.scss */
+/* line 277, ../sass/perform.scss */
 .why .content-desc {
   max-width: 200px;
   margin: 0 auto 40px;
   font-size: 14px;
 }
-/* line 270, ../sass/perform.scss */
+/* line 282, ../sass/perform.scss */
 .why .speaker {
   margin: 0 15px;
   line-height: 20px;
   font-family: "Lato-Light";
   display: none;
 }
-/* line 275, ../sass/perform.scss */
+/* line 287, ../sass/perform.scss */
 .why .speaker.active {
   display: block;
 }
-/* line 278, ../sass/perform.scss */
+/* line 290, ../sass/perform.scss */
 .why .speaker .speaker-content {
   background-color: rgba(255, 255, 255, 0.2);
   height: 500px;
   max-width: 300px;
   margin: 0 auto;
 }
-/* line 284, ../sass/perform.scss */
+/* line 296, ../sass/perform.scss */
 .why .speaker .speaker-desc {
   font-size: 14px;
 }
-/* line 287, ../sass/perform.scss */
+/* line 299, ../sass/perform.scss */
 .why .speaker img {
   width: 100%;
   display: block;
   max-width: 300px;
 }
-/* line 292, ../sass/perform.scss */
+/* line 304, ../sass/perform.scss */
 .why .speaker p {
   padding: 5px 15px;
 }
-/* line 295, ../sass/perform.scss */
+/* line 307, ../sass/perform.scss */
 .why .speaker .slide-icon {
   text-align: center;
   margin: 30px 0px;
 }
-/* line 298, ../sass/perform.scss */
+/* line 310, ../sass/perform.scss */
 .why .speaker .slide-icon img {
   width: 85px;
   margin: 0 auto;
 }
-/* line 303, ../sass/perform.scss */
+/* line 315, ../sass/perform.scss */
 .why .speaker .speaker-name {
   font-family: "Lato-Regular";
   line-height: 22px;
 }
-/* line 308, ../sass/perform.scss */
+/* line 320, ../sass/perform.scss */
 .why .prev-speaker, .why .next-speaker {
   display: none;
 }
-/* line 311, ../sass/perform.scss */
+/* line 323, ../sass/perform.scss */
 .why .read-more {
   width: 300px;
   border: 2px solid #FFF;
   text-align: center;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 0;
   border-radius: 2px;
   font-size: 20px;
-  font-family: "Lato-Bold";
+  font-family: "Lato-Regular";
+  display: block;
+  color: #fff;
+  transition: all 0.3s;
+}
+/* line 335, ../sass/perform.scss */
+.why .read-more:hover {
+  background: #fff;
+  color: #000;
 }
 
-/* line 322, ../sass/perform.scss */
+/* line 341, ../sass/perform.scss */
 .clients {
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
   /* FF3.6-15 */
@@ -378,7 +403,7 @@
   /* IE6-9 fallback on horizontal gradient */
   font-size: 0;
 }
-/* line 328, ../sass/perform.scss */
+/* line 347, ../sass/perform.scss */
 .clients .block-title {
   color: #FFF;
   font-size: 30px;
@@ -386,29 +411,26 @@
   line-height: 36px;
   width: 80%;
 }
-/* line 335, ../sass/perform.scss */
-.clients .client-logos {
-  padding: 30px 15px;
+/* line 354, ../sass/perform.scss */
+.clients .brands {
+  background: none;
 }
-/* line 338, ../sass/perform.scss */
-.clients .client {
+/* line 356, ../sass/perform.scss */
+.clients .brands img {
   display: inline-block;
-  width: 50%;
-  text-align: center;
+  vertical-align: middle;
+  width: 110px;
+  height: auto;
+  margin: 10px;
 }
-/* line 342, ../sass/perform.scss */
-.clients .client img {
-  width: 80%;
-  max-width: 180px;
-}
-/* line 347, ../sass/perform.scss */
+/* line 364, ../sass/perform.scss */
 .clients .try-it-form {
   padding: 30px 20px 50px;
   font-size: 0;
   border-radius: 5px;
   text-align: center;
 }
-/* line 352, ../sass/perform.scss */
+/* line 369, ../sass/perform.scss */
 .clients .try-it-form input {
   font-size: 18px;
   padding: 7px;
@@ -427,7 +449,7 @@
   text-align: left;
   max-width: 500px;
 }
-/* line 370, ../sass/perform.scss */
+/* line 387, ../sass/perform.scss */
 .clients .try-it-form button {
   background: #00C26B;
   border-radius: 4px;
@@ -447,41 +469,41 @@
 }
 
 @media screen and (min-width: 960px) {
-  /* line 390, ../sass/perform.scss */
+  /* line 407, ../sass/perform.scss */
   .engage-header-graphics {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
     height: 650px;
   }
-  /* line 393, ../sass/perform.scss */
+  /* line 410, ../sass/perform.scss */
   .engage-header-graphics:before {
     display: none;
   }
-  /* line 396, ../sass/perform.scss */
+  /* line 413, ../sass/perform.scss */
   .engage-header-graphics .content {
     position: relative;
     top: 50%;
     max-width: 600px;
     margin-top: -200px;
   }
-  /* line 401, ../sass/perform.scss */
+  /* line 418, ../sass/perform.scss */
   .engage-header-graphics .content h1 {
     font-size: 48px;
     margin-bottom: 50px;
   }
-  /* line 405, ../sass/perform.scss */
+  /* line 422, ../sass/perform.scss */
   .engage-header-graphics .content .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
   }
-  /* line 409, ../sass/perform.scss */
+  /* line 426, ../sass/perform.scss */
   .engage-header-graphics .content .try-it-form input {
     font-size: 18px;
     padding: 7px;
     width: 72%;
     border-radius: 4px 0 0 4px;
   }
-  /* line 415, ../sass/perform.scss */
+  /* line 432, ../sass/perform.scss */
   .engage-header-graphics .content .try-it-form button {
     font-size: 18px;
     line-height: 19px;
@@ -490,23 +512,23 @@
     border-radius: 0 4px 4px 0;
   }
 
-  /* line 425, ../sass/perform.scss */
+  /* line 442, ../sass/perform.scss */
   .overview {
     display: none;
   }
 
-  /* line 428, ../sass/perform.scss */
+  /* line 445, ../sass/perform.scss */
   .overview-desktop {
     display: block;
     font-size: 0px;
   }
-  /* line 431, ../sass/perform.scss */
+  /* line 448, ../sass/perform.scss */
   .overview-desktop .overview-content {
     position: relative;
     height: 495px;
     border-bottom: 1px solid #DADADA;
   }
-  /* line 436, ../sass/perform.scss */
+  /* line 453, ../sass/perform.scss */
   .overview-desktop .block-content {
     text-align: left;
     padding: 15px;
@@ -514,13 +536,13 @@
     display: inline-block;
     vertical-align: top;
   }
-  /* line 443, ../sass/perform.scss */
+  /* line 460, ../sass/perform.scss */
   .overview-desktop .content-desc {
     font-size: 16px;
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 448, ../sass/perform.scss */
+  /* line 465, ../sass/perform.scss */
   .overview-desktop .title {
     font-size: 24px;
     font-family: "Lato-Regular";
@@ -528,7 +550,7 @@
     color: #1C94EE;
     margin-bottom: 15px;
   }
-  /* line 455, ../sass/perform.scss */
+  /* line 472, ../sass/perform.scss */
   .overview-desktop .right-side {
     width: 48%;
     display: inline-block;
@@ -537,7 +559,7 @@
     position: absolute;
     top: 0;
   }
-  /* line 462, ../sass/perform.scss */
+  /* line 479, ../sass/perform.scss */
   .overview-desktop .right-side .overview-img {
     height: 495px;
     background-size: cover;
@@ -545,145 +567,136 @@
     background-position: left center;
     display: none;
   }
-  /* line 469, ../sass/perform.scss */
+  /* line 486, ../sass/perform.scss */
   .overview-desktop .right-side .img-1 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/perform/overview/overview-1.png);
   }
-  /* line 472, ../sass/perform.scss */
+  /* line 489, ../sass/perform.scss */
   .overview-desktop .right-side .img-2 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/perform/overview/overview-2.png);
   }
-  /* line 475, ../sass/perform.scss */
+  /* line 492, ../sass/perform.scss */
   .overview-desktop .right-side .img-3 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/perform/overview/overview-3.png);
   }
-  /* line 479, ../sass/perform.scss */
+  /* line 496, ../sass/perform.scss */
   .overview-desktop .overview-default .block-content {
     margin-top: 30px;
   }
-  /* line 483, ../sass/perform.scss */
+  /* line 500, ../sass/perform.scss */
   .overview-desktop .overview-content:hover .overview-block:hover .overview-img, .overview-desktop .overview-content .overview-default .overview-img {
     display: block;
     transition: all ease .5s;
   }
-  /* line 487, ../sass/perform.scss */
+  /* line 504, ../sass/perform.scss */
   .overview-desktop .overview-content:hover .overview-block:hover .block-content, .overview-desktop .overview-content .overview-default .block-content {
     background-color: rgba(28, 148, 238, 0.1);
     transition: all .3s;
   }
-  /* line 492, ../sass/perform.scss */
+  /* line 509, ../sass/perform.scss */
   .overview-desktop .overview-img, .overview-desktop .overview-content:hover .overview-img {
     display: none;
     transition: all ease .5s;
   }
-  /* line 496, ../sass/perform.scss */
+  /* line 513, ../sass/perform.scss */
   .overview-desktop .block-content, .overview-desktop .overview-content:hover .block-content {
     background-color: #FFF;
     transition: all .3s;
   }
 
-  /* line 501, ../sass/perform.scss */
+  /* line 518, ../sass/perform.scss */
   .features {
     font-size: 0;
   }
-  /* line 503, ../sass/perform.scss */
+  /* line 520, ../sass/perform.scss */
   .features .feature:first-child {
     padding-bottom: 0;
   }
-  /* line 506, ../sass/perform.scss */
+  /* line 523, ../sass/perform.scss */
   .features .icon {
     display: inline-block;
     width: 50%;
   }
-  /* line 510, ../sass/perform.scss */
+  /* line 527, ../sass/perform.scss */
   .features .feature-desc {
     display: inline-block;
     width: 50%;
   }
-  /* line 514, ../sass/perform.scss */
+  /* line 531, ../sass/perform.scss */
   .features .feature-1 {
     margin-bottom: 0;
     position: relative;
     top: 7px;
   }
-  /* line 519, ../sass/perform.scss */
+  /* line 536, ../sass/perform.scss */
   .features .feature-2 {
     float: right;
     text-align: center;
   }
-  /* line 523, ../sass/perform.scss */
+  /* line 539, ../sass/perform.scss */
+  .features .feature-2 img {
+    max-width: 380px;
+  }
+  /* line 543, ../sass/perform.scss */
   .features .feature-desc-1 {
     float: right;
     margin-top: 20px;
   }
-  /* line 527, ../sass/perform.scss */
+  /* line 547, ../sass/perform.scss */
   .features .feature-desc-2 {
     border-top: 1px solid #DADADA;
   }
-  /* line 529, ../sass/perform.scss */
+  /* line 549, ../sass/perform.scss */
   .features .feature-desc-2 .content-title {
     margin-top: 90px;
   }
-  /* line 533, ../sass/perform.scss */
+  /* line 553, ../sass/perform.scss */
   .features .feature-3 img {
     margin-top: 110px;
   }
-  /* line 536, ../sass/perform.scss */
+  /* line 556, ../sass/perform.scss */
   .features .feature-desc-3 {
     float: right;
     border-top: 1px solid #DADADA;
   }
-  /* line 539, ../sass/perform.scss */
+  /* line 559, ../sass/perform.scss */
   .features .feature-desc-3 .content-title {
     margin-top: 120px;
   }
-  /* line 543, ../sass/perform.scss */
+  /* line 563, ../sass/perform.scss */
   .features p {
     padding: 10px 15px;
   }
-  /* line 547, ../sass/perform.scss */
-  .features .download .download-app {
-    display: none;
+  /* line 566, ../sass/perform.scss */
+  .features .download {
+    text-align: left;
   }
-  /* line 550, ../sass/perform.scss */
+  /* line 568, ../sass/perform.scss */
   .features .download span {
     display: inline-block;
     margin-right: 15px;
   }
-  /* line 554, ../sass/perform.scss */
-  .features .download .store {
-    display: inline-block;
-    width: 100px;
-    height: 34px;
-    font-size: 0;
-    margin-right: 3px;
-    background: url(http://www.tinypulse.com/hubfs/redesign_2016/stores.png) no-repeat;
-  }
-  /* line 562, ../sass/perform.scss */
-  .features .download .google-store {
-    background-position: -110px 0;
-  }
 
-  /* line 568, ../sass/perform.scss */
+  /* line 575, ../sass/perform.scss */
   .why .block-content {
     display: inline-block;
     width: 33%;
     text-align: center;
     font-size: 0;
   }
-  /* line 574, ../sass/perform.scss */
+  /* line 581, ../sass/perform.scss */
   .why .speakers {
     text-align: center;
   }
-  /* line 577, ../sass/perform.scss */
+  /* line 584, ../sass/perform.scss */
   .why .speakers .speaker .slide-icon {
     display: none;
   }
-  /* line 580, ../sass/perform.scss */
+  /* line 587, ../sass/perform.scss */
   .why .speakers .speaker .speaker-img {
     display: inline-block;
   }
-  /* line 583, ../sass/perform.scss */
+  /* line 590, ../sass/perform.scss */
   .why .speakers .speaker .speaker-desc {
     max-width: 500px;
     display: inline-block;
@@ -692,24 +705,24 @@
     position: relative;
     text-align: left;
   }
-  /* line 590, ../sass/perform.scss */
+  /* line 597, ../sass/perform.scss */
   .why .speakers .speaker .speaker-desc .speaker-name {
     position: absolute;
     right: 0;
     bottom: 0;
   }
-  /* line 596, ../sass/perform.scss */
+  /* line 603, ../sass/perform.scss */
   .why .speakers .speaker .speaker-content {
     max-width: 800px;
     font-size: 0;
     height: 200px;
     display: inline-block;
   }
-  /* line 601, ../sass/perform.scss */
+  /* line 608, ../sass/perform.scss */
   .why .speakers .speaker .speaker-content p {
     padding: 0 15px;
   }
-  /* line 607, ../sass/perform.scss */
+  /* line 614, ../sass/perform.scss */
   .why .prev-speaker, .why .next-speaker {
     display: inline-block;
     position: relative;
@@ -718,37 +731,38 @@
     top: 50%;
     transform: translate(0, 35%);
   }
-  /* line 615, ../sass/perform.scss */
+  /* line 622, ../sass/perform.scss */
   .why .prev-speaker {
     margin-right: 15px;
   }
-  /* line 618, ../sass/perform.scss */
+  /* line 625, ../sass/perform.scss */
   .why .next-speaker {
     margin-left: 15px;
   }
-  /* line 621, ../sass/perform.scss */
+  /* line 628, ../sass/perform.scss */
   .why .read-more {
     margin-top: 50px;
   }
-  /* line 624, ../sass/perform.scss */
+  /* line 631, ../sass/perform.scss */
   .why .control-button img {
     display: inline-block;
     max-width: 30px;
+    cursor: pointer;
   }
 
-  /* line 629, ../sass/perform.scss */
+  /* line 637, ../sass/perform.scss */
   .how-it-works {
     display: none;
   }
 
-  /* line 632, ../sass/perform.scss */
+  /* line 640, ../sass/perform.scss */
   .how-it-works-desktop {
     display: block;
     padding-left: 15px;
     padding-right: 15px;
     height: 500px;
   }
-  /* line 637, ../sass/perform.scss */
+  /* line 645, ../sass/perform.scss */
   .how-it-works-desktop .block-content {
     margin-bottom: 100px;
     margin-top: 60px;
@@ -756,7 +770,7 @@
     position: absolute;
     left: 0;
   }
-  /* line 643, ../sass/perform.scss */
+  /* line 651, ../sass/perform.scss */
   .how-it-works-desktop .block-content .content-title {
     font-size: 20px;
     color: #1C94EE;
@@ -764,7 +778,7 @@
     text-align: left;
     padding: 0 15px;
   }
-  /* line 650, ../sass/perform.scss */
+  /* line 658, ../sass/perform.scss */
   .how-it-works-desktop .block-content p {
     text-align: left;
     padding: 0 15px;
@@ -772,7 +786,7 @@
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 658, ../sass/perform.scss */
+  /* line 666, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons {
     padding-left: 15px;
     padding-right: 15px;
@@ -780,18 +794,18 @@
     font-size: 0px;
     position: relative;
   }
-  /* line 664, ../sass/perform.scss */
+  /* line 672, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-content {
     display: inline-block;
     width: 20%;
     vertical-align: top;
   }
-  /* line 669, ../sass/perform.scss */
+  /* line 677, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-icon {
     text-align: center;
     position: relative;
   }
-  /* line 673, ../sass/perform.scss */
+  /* line 681, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .icon {
     width: 63px;
     height: 94px;
@@ -799,27 +813,27 @@
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/perform/how-it-works/perform-hiw-small-sprite.png);
     background-repeat: no-repeat;
   }
-  /* line 680, ../sass/perform.scss */
+  /* line 688, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-1 {
     background-position: 0 0;
   }
-  /* line 683, ../sass/perform.scss */
+  /* line 691, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-2 {
     background-position: -83px 0;
   }
-  /* line 686, ../sass/perform.scss */
+  /* line 694, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-3 {
     background-position: -168px 0;
   }
-  /* line 689, ../sass/perform.scss */
+  /* line 697, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-4 {
     background-position: -253px 0;
   }
-  /* line 692, ../sass/perform.scss */
+  /* line 700, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-5 {
     background-position: -338px 0;
   }
-  /* line 696, ../sass/perform.scss */
+  /* line 704, ../sass/perform.scss */
   .how-it-works-desktop .hiw-wrapper {
     width: 90px;
     height: 90px;
@@ -830,60 +844,64 @@
     left: 0;
     right: 0;
   }
-  /* line 707, ../sass/perform.scss */
+  /* line 715, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .icon, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .icon, .how-it-works-desktop .hiw-icons .hiw-default .icon {
     background-position-y: -117px;
   }
-  /* line 710, ../sass/perform.scss */
+  /* line 718, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .block-content, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .block-content, .how-it-works-desktop .hiw-icons .hiw-default .block-content {
     display: block;
     transition: all .3s;
   }
-  /* line 714, ../sass/perform.scss */
+  /* line 722, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .hiw-wrapper, .how-it-works-desktop .hiw-icons .hiw-default .hiw-wrapper {
     background-color: rgba(28, 148, 238, 0.1);
   }
-  /* line 719, ../sass/perform.scss */
+  /* line 727, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icon .icon, .how-it-works-desktop .hiw-icons:hover .hiw-icon .icon, .how-it-works-desktop .hiw-icons:focus .hiw-icon .icon {
     background-position-y: 2px;
   }
-  /* line 722, ../sass/perform.scss */
+  /* line 730, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:hover .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-icon .hiw-wrapper {
     background-color: transparent;
   }
-  /* line 726, ../sass/perform.scss */
+  /* line 734, ../sass/perform.scss */
   .how-it-works-desktop .block-content, .how-it-works-desktop .hiw-icons:hover .block-content {
     display: none;
     transition: all .3s;
   }
 
-  /* line 732, ../sass/perform.scss */
-  .clients .client {
-    width: 15%;
-    text-align: center;
+  /* line 740, ../sass/perform.scss */
+  .clients .container {
+    max-width: 100%;
   }
-  /* line 736, ../sass/perform.scss */
-  .clients .client-logos {
-    text-align: center;
-  }
-  /* line 739, ../sass/perform.scss */
+  /* line 743, ../sass/perform.scss */
   .clients .block-title {
     width: 100%;
   }
-  /* line 742, ../sass/perform.scss */
+  /* line 747, ../sass/perform.scss */
+  .clients .brands img {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 100px;
+    display: inline-block;
+  }
+  /* line 756, ../sass/perform.scss */
   .clients .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
   }
-  /* line 746, ../sass/perform.scss */
+  /* line 760, ../sass/perform.scss */
   .clients .try-it-form input {
     font-size: 14px;
     padding: 7px;
     width: 67%;
     border-radius: 4px 0 0 4px;
   }
-  /* line 752, ../sass/perform.scss */
+  /* line 766, ../sass/perform.scss */
   .clients .try-it-form button {
     font-size: 14px;
     line-height: 19px;

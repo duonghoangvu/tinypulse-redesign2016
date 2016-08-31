@@ -444,6 +444,9 @@
       display: inline-block;
       vertical-align: top;
       border-radius: 3px;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .content-desc {
       font-size: 16px;
@@ -633,9 +636,14 @@
     .read-more {
       margin-top: 50px;
     }
-    .control-button img {
-      display: inline-block;
-      max-width: 30px;
+    .control-button {
+      &:hover {
+        cursor: pointer;
+      }
+      img {
+        display: inline-block;
+        max-width: 30px;
+      }
     }
   }
   .how-it-works {
@@ -646,6 +654,9 @@
     padding-left: 15px;
     padding-right: 15px;
     height: 500px;
+    .hiw-content:hover {
+      cursor: pointer;
+    }
     .block-content {
       margin-bottom: 100px;
       margin-top: 60px;
