@@ -13,6 +13,9 @@
   display: none;
   a {
     color: #FFF;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 .close-button {
@@ -66,7 +69,7 @@ header{
           border-style: solid;
           border-width: 0 1px 1px 1px;
           border-radius: 0 0 3px 3px;
-          top: 57px;
+          top: 52px;
         }     
       }
     }
@@ -674,6 +677,7 @@ header{
       }
       .sub-headline {
         font-size: 22px;
+        letter-spacing: 1px;
       }
       .try-it-form{
         max-width: 450px;
@@ -718,7 +722,7 @@ header{
       max-height: inherit;
       li{
         display: inline-block;
-        width: 150px;
+        width: 200px;
         position: relative;
         &:before{
           content: "";
