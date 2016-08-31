@@ -28,6 +28,7 @@ header{
     background-size: cover;
     z-index: 0;
     opacity: 0;
+    display: none;
   }
 }
 .main-nav-container{
@@ -585,6 +586,11 @@ header{
 }
 
 @media screen and (min-width: 960px){
+  header{
+    .overlay{
+      display: block;
+    }
+  }
   .banner {
     z-index: 8;
     font-size: 24px;

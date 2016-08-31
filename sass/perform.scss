@@ -173,7 +173,7 @@ $font_thin: 'Lato-Thin';
     }
   }
   .feature-2 img {
-    max-width: 380px;
+    max-width: 260px;
     margin: 70px 0 50px;
   }
   .feature-2, .feature-3 {
@@ -191,13 +191,25 @@ $font_thin: 'Lato-Thin';
     font-family: $font_bold;
   }
   .download{
-    span, a{
-      display: none;
+    text-align: center;
+    span{
+      display: block;
+      margin-bottom: 10px;
+    }
+    a{
+      display: inline-block;
+      clear: both;
       vertical-align: middle;
     }
-    .download-app{
-      display: block;
-      color: #1C94EE;
+    .store{
+      width: 100px;
+      height: 34px;
+      font-size: 0;
+      margin-right: 8px;
+      background: url(http://www.tinypulse.com/hubfs/redesign_2016/stores.png) no-repeat;
+    }
+    .google-store{
+      background-position: -110px 0;
     }
   }
 }
@@ -313,10 +325,17 @@ $font_thin: 'Lato-Thin';
     border: 2px solid #FFF;
     text-align: center;
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px 0;
     border-radius: 2px;
     font-size: 20px;
-    font-family: $font_bold;
+    font-family: $font_regular;
+    display: block;
+    color: #fff;
+    transition: all 0.3s;
+    &:hover{
+      background: #fff;
+      color: #000;
+    }
   }
 }
 .clients {
@@ -332,16 +351,14 @@ $font_thin: 'Lato-Thin';
     line-height: 36px;
     width: 80%;
   }
-  .client-logos {
-    padding: 30px 15px;
-  }
-  .client {
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    img {
-      width: 80%;
-      max-width: 180px;
+  .brands{
+    background: none;
+    img{
+      display: inline-block;
+      vertical-align: middle;
+      width: 110px;
+      height: auto;
+      margin: 10px;
     }
   }
   .try-it-form{
@@ -519,6 +536,9 @@ $font_thin: 'Lato-Thin';
     .feature-2 {
       float: right;
       text-align: center;
+      img{
+        max-width: 380px;
+      }
     }
     .feature-desc-1 {
       float: right;
@@ -544,23 +564,10 @@ $font_thin: 'Lato-Thin';
       padding: 10px 15px;
     }
     .download{
-      .download-app{
-        display: none;
-      }
+      text-align: left;
       span{
         display: inline-block;
         margin-right: 15px;
-      }
-      .store{
-        display: inline-block;
-        width: 100px;
-        height: 34px;
-        font-size: 0;
-        margin-right: 3px;
-        background: url(http://www.tinypulse.com/hubfs/redesign_2016/stores.png) no-repeat;
-      }
-      .google-store{
-        background-position: -110px 0;
       }
     }
   }
@@ -624,6 +631,7 @@ $font_thin: 'Lato-Thin';
     .control-button img {
       display: inline-block;
       max-width: 30px;
+      cursor: pointer;
     }
   }
   .how-it-works {
@@ -729,15 +737,21 @@ $font_thin: 'Lato-Thin';
     }
   }
   .clients {
-    .client {
-      width: 15%;
-      text-align: center;
-    }
-    .client-logos {
-      text-align: center;
+    .container{
+      max-width: 100%;
     }
     .block-title {
       width: 100%;
+    }
+    .brands{
+      img{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        width: 100px;
+        display: inline-block;
+      }
     }
     .try-it-form{
       max-width: 450px;
