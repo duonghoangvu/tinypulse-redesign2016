@@ -12,10 +12,34 @@ $font_light: 'Lato-Light';
     text-align: center;
   }
 }
+.field > label {
+  display: none;
+}
+.field {
+  margin-bottom: 20px;
+}
+.input {
+  margin-right: 0px !important;
+}
+.form-columns-2 .field {
+  width: 100% !important;
+}
+.hs-error-msgs {
+  margin: 0px;
+  padding: 0px;
+  li {
+    list-style: none;
+    text-align: left;
+    label {
+      color: #fe2851;
+      padding-top: 0;
+    }
+  }
+}
 .contact-form {
   h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 24px;
     letter-spacing: 1.12px;
   }
   .block-desc {
@@ -31,9 +55,6 @@ $font_light: 'Lato-Light';
   .error {
     border: 1px solid #b94a48;
   }
-  label, ul{
-    display: none !important;
-  }
   fieldset {
     margin: 0 auto !important;
     -webkit-appearance: none;
@@ -47,7 +68,7 @@ $font_light: 'Lato-Light';
   input, textarea, select {
     border: 1px solid #DADADA;
     border-radius: 2px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     font-size: 14px;
     font-family: $font_regular;
     box-sizing: border-box;
@@ -73,6 +94,7 @@ $font_light: 'Lato-Light';
       font: normal normal normal 14px/1 FontAwesome;
       -webkit-font-smoothing: antialiased;
       color: #9B9B9B;
+      z-index: -1;
     }
   }
   .actions input {
@@ -218,8 +240,19 @@ $font_light: 'Lato-Light';
       top: 0px;
     }
   }
+  .contact-form {
+    h2 {
+      font-size: 36px;
+    }
+  }
   .hs-form fieldset {
     max-width: none !important;
+  }
+  .hs_name .input, .hs_phone .input {
+    margin-right: 20px !important;
+  }
+  .form-columns-2 .field {
+    width: 50% !important;
   }
   .social-share {
     margin-left: 30px;

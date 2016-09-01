@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
       setTimeout(callErrorMessage, 500);
     }
   }
-  callErrorMessage();
+  //callErrorMessage();
   $('.map').on('click', function(){
     $(this).addClass('map-clicked');
   });
