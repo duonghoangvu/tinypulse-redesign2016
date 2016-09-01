@@ -1,3 +1,5 @@
+@import "_typography";
+
 .main-content {
   margin-bottom: 0;
 }
@@ -35,7 +37,9 @@
 }
 
 .contact {
-  padding: 15px 15px 40px 15px;
+  h2 {
+    text-align: center;
+  }
 }
 
 .information {
@@ -70,42 +74,38 @@
     }
   }
 }
-
-.press {
-  display: none;
+.contact-form, .information {
+  padding: 0 20px;
 }
-
-.press-mobile {
-  background-image: linear-gradient(-60deg, rgba(123,32,138,0.82) 0%, #FF5C5C 100%);
-  padding: 20px;
-  text-align: center;
-  .title {
-    font-family: Lato-Regular;
+.press {
+	background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  font-size: 0;
+  padding: 30px 10px 20px 10px;
+  margin-top: 50px;
+  .container {
+    max-width: 100%;
+  }
+  .block-title {
+    color: #FFF;
     font-size: 18px;
-    color: #FFFFFF;
     line-height: 27px;
+    font-family: $font_regular;
+    margin-bottom: 7px;
+    padding: 0px;
+  }
+  .press-logos {
+    padding: 30px 0px;
     text-align: center;
-    margin: 0 20px 40px;
   }
-
-  .logos {
-    height: 61px;
-    margin-top: 20px;
+  img {
+    margin: 10px 15px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
   }
-
-  .logos {
-    a:hover {
-      cursor: pointer;
-    }
-
-    img {
-      margin-left: 10px;
-      margin-right: 10px; 
-      width: 96px;
-      max-height: 61px;
-      vertical-align: middle;
-    }
-  }  
 }
 
 // Hubspot form styling
@@ -120,12 +120,15 @@
 .hs-form.stacked .actions{
   margin: 0 0 30px 0!important;
   padding: 0!important;
+  text-align: center;
 }
 
 .hs-form-required {
   display: none;
 }
-
+.input {
+  text-align: center;
+}
 .hs-input {
   background: #FFFFFF;
   border: 1px solid #DADADA;
@@ -136,17 +139,17 @@
   padding-left: 10px !important;
   height: 45px !important;
   width: 100% !important;
-  max-width: 100% !important;
+  max-width: 400px !important;
 }
 
 .hs-button.primary.large {
   background: #00C26B;
   border-radius: 3px;
-  font-family: Lato-Bold;
+  font-family: Lato-SemiBold;
   font-size: 20px;
   color: #FFFFFF;
   letter-spacing: 0.14px;
-  width: 100%;
+  width: 300px;
   height: 45px;
   border: 0;
   -webkit-appearance: none;
@@ -191,6 +194,7 @@
 
 .hs-error-msgs li label {
   color: #FE2851;
+  text-align: center !important;
 }
 // For desktop
 @media screen and (min-width: 960px){
@@ -201,7 +205,6 @@
   .main-content .contact {
     max-width: 960px;
     margin: auto;
-    padding: 70px 0 0 0;
     &:after{
       content: "";
       width: 100%;
@@ -248,39 +251,26 @@
         display: none;
       }
     }
-    
   }
-
-  .press-mobile {
-    display: none;
-  }
-
   .press {
-    display: block;
-    background-image: linear-gradient(-60deg, rgba(123,32,138,0.82) 0%, #FF5C5C 100%);
-    padding: 20px 190px 34px;
-    margin-top: 64px;
-    .title {
-      font-family: Lato-Regular;
-      font-size: 20px;
-      color: #FFFFFF;
-      margin-bottom: 10px;
-      text-align: center;
+    .container {
+      max-width: 960px;
     }
-    .logos {
-      height: 61px;
-      margin-top: 20px;
+    .press-logos {
       text-align: center;
-      a:hover {
-        cursor: pointer;
-      }
-      img {
-        margin-left: 20px;
-        margin-right: 20px; 
-        width: 110px;
-        max-height: 61px;
-        vertical-align: middle;
-      }
+      padding-bottom: 0px;
+    }
+    .block-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    img {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+      margin-top: 0;
+      width: 100px;
+      display: inline-block;
     }
   }
 

@@ -1,31 +1,56 @@
-/* line 1, ../sass/pricing.scss */
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("fonts/Lato-Regular.eot");
+  src: url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("fonts/Lato-Light.eot");
+  src: url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url("fonts/Lato-Semibold.eot");
+  src: url("fonts/Lato-Semibold.woff2") format("woff2"), url("fonts/Lato-Semibold.woff") format("woff"), url("fonts/Lato-Semibold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("fonts/Lato-Bold.eot");
+  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url("fonts/Lato-Thin.eot");
+  src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
+}
+/* line 3, ../sass/pricing.scss */
 .main-content {
   margin-bottom: 0;
 }
 
-/* line 5, ../sass/pricing.scss */
+/* line 7, ../sass/pricing.scss */
 .quote {
   background: none;
 }
 
-/* line 9, ../sass/pricing.scss */
+/* line 11, ../sass/pricing.scss */
 .header-graphics .content {
   top: 10%;
 }
 
-/* line 12, ../sass/pricing.scss */
+/* line 14, ../sass/pricing.scss */
 .content .author-avatar {
   display: none;
 }
 
-/* line 15, ../sass/pricing.scss */
+/* line 17, ../sass/pricing.scss */
 .author .author-avatar {
   width: 54px;
   float: left;
   margin-right: 20px;
 }
 
-/* line 21, ../sass/pricing.scss */
+/* line 23, ../sass/pricing.scss */
 .author .author-info .job-title {
   font-family: Lato-Regular;
   font-size: 16px;
@@ -34,7 +59,7 @@
   margin-bottom: 0;
 }
 
-/* line 29, ../sass/pricing.scss */
+/* line 31, ../sass/pricing.scss */
 .author .author-info .author {
   font-family: Lato-Bold;
   font-size: 16px;
@@ -43,12 +68,12 @@
   margin-top: 0;
 }
 
-/* line 37, ../sass/pricing.scss */
-.contact {
-  padding: 15px 15px 40px 15px;
+/* line 40, ../sass/pricing.scss */
+.contact h2 {
+  text-align: center;
 }
 
-/* line 42, ../sass/pricing.scss */
+/* line 46, ../sass/pricing.scss */
 .information p {
   font-family: Lato-Light;
   font-size: 16px;
@@ -57,25 +82,25 @@
   line-height: 24px;
   text-align: justify;
 }
-/* line 49, ../sass/pricing.scss */
+/* line 53, ../sass/pricing.scss */
 .information p b {
   font-family: Lato-Bold;
 }
-/* line 54, ../sass/pricing.scss */
+/* line 58, ../sass/pricing.scss */
 .information .separate-line {
   width: 100%;
   height: 2px;
   background: #F1F2F1;
 }
-/* line 60, ../sass/pricing.scss */
+/* line 64, ../sass/pricing.scss */
 .information .quote {
   padding: 0;
 }
-/* line 62, ../sass/pricing.scss */
+/* line 66, ../sass/pricing.scss */
 .information .quote .content {
   margin-top: 30px;
 }
-/* line 64, ../sass/pricing.scss */
+/* line 68, ../sass/pricing.scss */
 .information .quote .content p {
   font-family: Lato-Bold;
   font-size: 16px;
@@ -83,41 +108,48 @@
   line-height: 27px;
 }
 
-/* line 74, ../sass/pricing.scss */
-.press {
-  display: none;
+/* line 77, ../sass/pricing.scss */
+.contact-form, .information {
+  padding: 0 20px;
 }
 
-/* line 78, ../sass/pricing.scss */
-.press-mobile {
-  background-image: linear-gradient(-60deg, rgba(123, 32, 138, 0.82) 0%, #FF5C5C 100%);
-  padding: 20px;
-  text-align: center;
+/* line 80, ../sass/pricing.scss */
+.press {
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  font-size: 0;
+  padding: 30px 10px 20px 10px;
+  margin-top: 50px;
 }
-/* line 82, ../sass/pricing.scss */
-.press-mobile .title {
-  font-family: Lato-Regular;
-  font-size: 18px;
-  color: #FFFFFF;
-  line-height: 27px;
-  text-align: center;
-  margin: 0 20px 40px;
+/* line 88, ../sass/pricing.scss */
+.press .container {
+  max-width: 100%;
 }
 /* line 91, ../sass/pricing.scss */
-.press-mobile .logos {
-  height: 61px;
-  margin-top: 20px;
+.press .block-title {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Lato-Regular";
+  margin-bottom: 7px;
+  padding: 0px;
 }
-/* line 97, ../sass/pricing.scss */
-.press-mobile .logos a:hover {
-  cursor: pointer;
+/* line 99, ../sass/pricing.scss */
+.press .press-logos {
+  padding: 30px 0px;
+  text-align: center;
 }
-/* line 101, ../sass/pricing.scss */
-.press-mobile .logos img {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 96px;
-  max-height: 61px;
+/* line 103, ../sass/pricing.scss */
+.press img {
+  margin: 10px 15px;
+  width: 80px;
+  display: inline-block;
   vertical-align: middle;
 }
 
@@ -136,14 +168,20 @@
 .hs-form.stacked .actions {
   margin: 0 0 30px 0 !important;
   padding: 0 !important;
+  text-align: center;
 }
 
-/* line 125, ../sass/pricing.scss */
+/* line 126, ../sass/pricing.scss */
 .hs-form-required {
   display: none;
 }
 
 /* line 129, ../sass/pricing.scss */
+.input {
+  text-align: center;
+}
+
+/* line 132, ../sass/pricing.scss */
 .hs-input {
   background: #FFFFFF;
   border: 1px solid #DADADA;
@@ -154,35 +192,35 @@
   padding-left: 10px !important;
   height: 45px !important;
   width: 100% !important;
-  max-width: 100% !important;
+  max-width: 400px !important;
 }
 
-/* line 142, ../sass/pricing.scss */
+/* line 145, ../sass/pricing.scss */
 .hs-button.primary.large {
   background: #00C26B;
   border-radius: 3px;
-  font-family: Lato-Bold;
+  font-family: Lato-SemiBold;
   font-size: 20px;
   color: #FFFFFF;
   letter-spacing: 0.14px;
-  width: 100%;
+  width: 300px;
   height: 45px;
   border: 0;
   -webkit-appearance: none;
 }
 
-/* line 155, ../sass/pricing.scss */
+/* line 158, ../sass/pricing.scss */
 .hs-form .hs-button:hover:not(.inactive), .hs-form .hs-button:focus:not(.inactive) {
   border: 0 !important;
   box-shadow: none !important;
 }
 
-/* line 160, ../sass/pricing.scss */
+/* line 163, ../sass/pricing.scss */
 .hs-form .hs-button:active {
   background: #00C26B !important;
 }
 
-/* line 164, ../sass/pricing.scss */
+/* line 167, ../sass/pricing.scss */
 .submitted-message {
   font-family: Lato-Regular;
   font-size: 18px;
@@ -190,7 +228,7 @@
   text-align: center;
   margin-bottom: 100px;
 }
-/* line 171, ../sass/pricing.scss */
+/* line 174, ../sass/pricing.scss */
 .submitted-message:before {
   content: "Thank you!";
   font-family: Lato-Bold;
@@ -200,7 +238,7 @@
   margin-bottom: 40px;
   display: block;
 }
-/* line 181, ../sass/pricing.scss */
+/* line 184, ../sass/pricing.scss */
 .submitted-message:after {
   content: "";
   font-size: 20px;
@@ -211,24 +249,24 @@
   margin: 50px auto 0;
 }
 
-/* line 192, ../sass/pricing.scss */
+/* line 195, ../sass/pricing.scss */
 .hs-error-msgs li label {
   color: #FE2851;
+  text-align: center !important;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 197, ../sass/pricing.scss */
+  /* line 201, ../sass/pricing.scss */
   .header-graphics {
     height: 400px;
   }
 
-  /* line 201, ../sass/pricing.scss */
+  /* line 205, ../sass/pricing.scss */
   .main-content .contact {
     max-width: 960px;
     margin: auto;
-    padding: 70px 0 0 0;
   }
-  /* line 205, ../sass/pricing.scss */
+  /* line 208, ../sass/pricing.scss */
   .main-content .contact:after {
     content: "";
     width: 100%;
@@ -236,7 +274,7 @@
     display: inline-block;
   }
 
-  /* line 213, ../sass/pricing.scss */
+  /* line 216, ../sass/pricing.scss */
   .contact .contact-form {
     width: 50%;
     float: left;
@@ -244,18 +282,18 @@
     padding-right: 50px;
   }
 
-  /* line 220, ../sass/pricing.scss */
+  /* line 223, ../sass/pricing.scss */
   .information {
     width: 50%;
     float: right;
     box-sizing: border-box;
     padding-left: 50px;
   }
-  /* line 225, ../sass/pricing.scss */
+  /* line 228, ../sass/pricing.scss */
   .information p:first-child {
     margin-top: 0;
   }
-  /* line 229, ../sass/pricing.scss */
+  /* line 232, ../sass/pricing.scss */
   .information .quote .content p {
     width: calc(100% - 64px);
     margin-right: 10px;
@@ -265,73 +303,58 @@
     line-height: 27px;
     display: inline-block;
   }
-  /* line 238, ../sass/pricing.scss */
+  /* line 241, ../sass/pricing.scss */
   .information .quote .content .author-avatar {
     width: 54px;
     float: right;
     display: block;
     vertical-align: top;
   }
-  /* line 245, ../sass/pricing.scss */
+  /* line 248, ../sass/pricing.scss */
   .information .quote .author {
     font-size: 14px;
   }
-  /* line 247, ../sass/pricing.scss */
+  /* line 250, ../sass/pricing.scss */
   .information .quote .author .author-avatar {
     display: none;
   }
 
-  /* line 254, ../sass/pricing.scss */
-  .press-mobile {
-    display: none;
+  /* line 256, ../sass/pricing.scss */
+  .press .container {
+    max-width: 960px;
   }
-
-  /* line 258, ../sass/pricing.scss */
-  .press {
-    display: block;
-    background-image: linear-gradient(-60deg, rgba(123, 32, 138, 0.82) 0%, #FF5C5C 100%);
-    padding: 20px 190px 34px;
-    margin-top: 64px;
+  /* line 259, ../sass/pricing.scss */
+  .press .press-logos {
+    text-align: center;
+    padding-bottom: 0px;
   }
   /* line 263, ../sass/pricing.scss */
-  .press .title {
-    font-family: Lato-Regular;
+  .press .block-title {
     font-size: 20px;
-    color: #FFFFFF;
-    margin-bottom: 10px;
-    text-align: center;
+    line-height: 24px;
   }
-  /* line 270, ../sass/pricing.scss */
-  .press .logos {
-    height: 61px;
-    margin-top: 20px;
-    text-align: center;
-  }
-  /* line 274, ../sass/pricing.scss */
-  .press .logos a:hover {
-    cursor: pointer;
-  }
-  /* line 277, ../sass/pricing.scss */
-  .press .logos img {
+  /* line 267, ../sass/pricing.scss */
+  .press img {
     margin-left: 20px;
     margin-right: 20px;
-    width: 110px;
-    max-height: 61px;
-    vertical-align: middle;
+    margin-bottom: 30px;
+    margin-top: 0;
+    width: 100px;
+    display: inline-block;
   }
 
-  /* line 289, ../sass/pricing.scss */
+  /* line 279, ../sass/pricing.scss */
   .hbspt-form {
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  /* line 294, ../sass/pricing.scss */
+  /* line 284, ../sass/pricing.scss */
   .hs-form-required {
     display: none;
   }
 
-  /* line 298, ../sass/pricing.scss */
+  /* line 288, ../sass/pricing.scss */
   .hs-input {
     background: #FFFFFF;
     border: 1px solid #DADADA;
@@ -341,15 +364,15 @@
     color: #9B9B9B;
   }
 
-  /* line 306, ../sass/pricing.scss */
+  /* line 296, ../sass/pricing.scss */
   .hs_submit {
     margin-top: 50px;
   }
-  /* line 308, ../sass/pricing.scss */
+  /* line 298, ../sass/pricing.scss */
   .hs_submit .actions {
     text-align: center;
   }
-  /* line 311, ../sass/pricing.scss */
+  /* line 301, ../sass/pricing.scss */
   .hs_submit .actions .hs-button.primary.large {
     background: #00C26B;
     border-radius: 3px;
@@ -362,18 +385,18 @@
     max-width: 250px;
   }
 
-  /* line 325, ../sass/pricing.scss */
+  /* line 315, ../sass/pricing.scss */
   .hs-form .hs-button:hover:not(.inactive), .hs-form .hs-button:focus:not(.inactive) {
     border: 0 !important;
     box-shadow: none !important;
   }
 
-  /* line 330, ../sass/pricing.scss */
+  /* line 320, ../sass/pricing.scss */
   .hs-form .hs-button:active {
     background: #00C26B !important;
   }
 
-  /* line 334, ../sass/pricing.scss */
+  /* line 324, ../sass/pricing.scss */
   .submitted-message {
     margin-bottom: 50px;
     padding-right: 100px;
