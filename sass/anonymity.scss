@@ -1,0 +1,74 @@
+.anonymity-quote {
+  margin: 0 20px;
+  .img-quote {
+    background: url('../images/quote.png');
+    width: 70px;
+    height: 56px;
+  }
+  
+  .content {
+    font-family: Lato-Regular;
+    font-size: 24px;
+    top: -25px;
+    left: 40px;
+    position: relative;
+  }
+}
+
+.intro {
+  font-family: Lato-Light;
+  font-size: 18px;
+  letter-spacing: 0.12px;
+  line-height: 25px;
+  margin: 10px 30px 30px;
+}
+
+.term {
+  font-size: 0;
+  margin: 0 30px 15px;
+  .checked {
+    display: inline-block;
+    background: url('../images/checked.png');
+    width: 18px;
+    height: 15px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+  p {
+    font-family: Lato-Light;
+    display: inline-block;
+    font-size: 18px;
+    width: calc(100% - 28px);
+    margin-top: 0;
+  }
+}
+
+.feedback {
+  font-family: Lato-Light;
+  font-size: 16px;
+  letter-spacing: 0.11px;
+  margin: 20px 30px 70px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 960px) { 
+  .anonymity-page {
+    .anonymity-quote {
+      margin-left: 113px;
+      margin-right: 113px;
+    }
+    .content-block {
+      padding-top: 20px;
+    }
+    .term {
+      font-size: 0;
+      margin: 0 30px 15px;
+      .checked {
+        margin-left: 10px;
+      }
+      p {
+        width: calc(100% - 38px);        
+      }
+    }
+  }
+}

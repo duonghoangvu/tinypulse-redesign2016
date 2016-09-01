@@ -1,0 +1,84 @@
+/* line 1, ../sass/anonymity.scss */
+.anonymity-quote {
+  margin: 0 20px;
+}
+/* line 3, ../sass/anonymity.scss */
+.anonymity-quote .img-quote {
+  background: url("../images/quote.png");
+  width: 70px;
+  height: 56px;
+}
+/* line 9, ../sass/anonymity.scss */
+.anonymity-quote .content {
+  font-family: Lato-Regular;
+  font-size: 24px;
+  top: -25px;
+  left: 40px;
+  position: relative;
+}
+
+/* line 18, ../sass/anonymity.scss */
+.intro {
+  font-family: Lato-Light;
+  font-size: 18px;
+  letter-spacing: 0.12px;
+  line-height: 25px;
+  margin: 10px 30px 30px;
+}
+
+/* line 26, ../sass/anonymity.scss */
+.term {
+  font-size: 0;
+  margin: 0 30px 15px;
+}
+/* line 29, ../sass/anonymity.scss */
+.term .checked {
+  display: inline-block;
+  background: url("../images/checked.png");
+  width: 18px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+/* line 37, ../sass/anonymity.scss */
+.term p {
+  font-family: Lato-Light;
+  display: inline-block;
+  font-size: 18px;
+  width: calc(100% - 28px);
+  margin-top: 0;
+}
+
+/* line 46, ../sass/anonymity.scss */
+.feedback {
+  font-family: Lato-Light;
+  font-size: 16px;
+  letter-spacing: 0.11px;
+  margin: 20px 30px 70px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 56, ../sass/anonymity.scss */
+  .anonymity-page .anonymity-quote {
+    margin-left: 113px;
+    margin-right: 113px;
+  }
+  /* line 60, ../sass/anonymity.scss */
+  .anonymity-page .content-block {
+    padding-top: 20px;
+  }
+  /* line 63, ../sass/anonymity.scss */
+  .anonymity-page .term {
+    font-size: 0;
+    margin: 0 30px 15px;
+  }
+  /* line 66, ../sass/anonymity.scss */
+  .anonymity-page .term .checked {
+    margin-left: 10px;
+  }
+  /* line 69, ../sass/anonymity.scss */
+  .anonymity-page .term p {
+    width: calc(100% - 38px);
+  }
+}
