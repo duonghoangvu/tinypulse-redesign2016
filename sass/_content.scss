@@ -332,6 +332,79 @@ a{
 	}
 }
 
+.new-features-page{
+	.content-block{
+		padding-bottom: 50px;
+		border-bottom: 1px solid #DADADA;
+		.block-title{
+			.super{
+				font-family: $font_light;
+				color: #FE2851;
+				font-size: 12px;
+				position: relative;
+				top: -13px;
+				left: 3px;
+			}
+		}
+		.block-desc{
+			margin-bottom: 10px;
+		}
+		.block-content{
+			padding: 0 20px;
+			img{
+				max-width: 100%;
+				margin: 30px 0;
+			}
+			p{
+				text-align: left;
+				font-family: $font_light;
+				line-height: 24px;
+			}
+		}
+	}
+	.download{
+    text-align: center;
+    margin-top: 30px;
+    span{
+      display: block;
+      margin-bottom: 10px;
+    }
+    a{
+      display: inline-block;
+      clear: both;
+      vertical-align: middle;
+    }
+    .store{
+      width: 100px;
+      height: 34px;
+      font-size: 0;
+      margin-right: 8px;
+      background: url(http://www.tinypulse.com/hubfs/redesign_2016/stores.png) no-repeat;
+    }
+    .google-store{
+      background-position: -110px 0;
+    }
+  }
+  .try-it-now{
+  	border: 1px solid #dadada;
+  	margin: 30px 0;
+  	padding: 15px 10px 20px 10px;
+  	p{
+  		margin: 0 0 20px 0;
+  	}
+  	a{
+			background: #00C26B;
+			border-radius: 3px;
+			width: 100%;
+			text-align: center;
+			height: 40px;
+			line-height: 40px;
+			display: block;
+			color: #fff;
+			font-size: 16px;
+  	}
+  }
+}
 
 @media screen and (min-width: 960px){
 	.header-graphics, .main-content{
@@ -520,5 +593,57 @@ a{
     margin-top: 0;
     width: 100px;
     display: inline-block;
+  }
+
+  .new-features-page{
+  	.content-block{
+  		.block-content{
+  			&.image-right{
+  				direction: rtl;
+  			}
+  			.column{
+  				display: inline-block;
+					width: 49%;
+					box-sizing: border-box;
+					padding: 20px;
+					vertical-align: middle;
+				}
+				p{
+					direction: ltr;
+				}
+				// &:after{
+				// 	content: "";
+				// 	display: inline-block;
+				// 	width: 100%;
+				// }
+  		}
+  	}
+  	.try-it-now{
+  		display: inline-block;
+  		width: 100%;
+  		direction: ltr;
+  		p{
+  			vertical-align: middle;
+  			width: 720px;
+  			display: inline-block;
+  			margin: 0 20px 0 0;
+  			line-height: 24px;
+  			span{
+  				display: block;
+  			}
+  		}
+  		a{
+  			vertical-align: middle;
+  			width: 152px;
+  			display: inline-block;
+  		}
+  	}
+  	.download{
+      text-align: left;
+      span{
+        display: inline-block;
+        margin-right: 15px;
+      }
+    }
   }
 }
