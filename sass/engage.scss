@@ -415,6 +415,9 @@
       }
     }
   }
+  .main-content{
+    overflow: hidden;
+  }
   .overview {
     display: none;
   }
@@ -458,19 +461,20 @@
       top: 0;
       .overview-img {
         height: 495px;
-        background-size: cover;
+        width: 900px;
+        background-size: 900px auto;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
         display: none;
       }
       .img-1 {
-        background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-insight.png);
+        background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/overview1.png);
       }
       .img-2 {
-        background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-actionable.png);
+        background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/overview2.png);
       }
       .img-3 {
-        background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-empowered.png);
+        background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/overview3.png);
       }
     }
     .overview-default .block-content{
