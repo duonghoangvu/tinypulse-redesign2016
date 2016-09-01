@@ -94,9 +94,6 @@
               portalId: '443262',
               formId: 'c64f744e-cc8d-4389-be66-c1792545ea68'
             });
-            window.setTimeout(function(){
-              document.getElementById('numberofemployees_number_-c64f744e-cc8d-4389-be66-c1792545ea68').placeholder = 'Number of employees*';
-            }, 1000);
           </script>
         </div>
         <div class="information">
@@ -127,7 +124,7 @@
       <div class="clear"></div>
       <div class="content-block press">
         <div class="container">
-          <h2 class="block-title">Many great companies talk about TINYpulse, including:</h2>
+          <h2 class="block-title">Read about coverage of TINYpulse</h2>
           <div class='press-logos'>
             <a href='#'><img src="//www.tinypulse.com/hubfs/redesign_2016/press-logos/BBCNews.png"></a>
             <a href='#'><img src="//www.tinypulse.com/hubfs/redesign_2016/press-logos/HBR.png"></a>
@@ -193,6 +190,14 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/global-no-hero.js"></script>
-  <script src="js/pricing-form.js"></script>
-  <script src="js/nav.js"></script>
+  <script>
+    function addPlaceHolder() {
+      if ($('form.hs-form').length > 0) {
+        document.getElementById('numberofemployees_number_-c64f744e-cc8d-4389-be66-c1792545ea68').placeholder = 'Number of employees*';
+      } else {
+        setTimeout(addPlaceHolder, 500);
+      }
+    }
+    addPlaceHolder();
+  </script>
 </body>

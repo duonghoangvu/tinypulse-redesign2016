@@ -38,6 +38,7 @@
 
 .contact {
   h2 {
+    font-size: 24px;
     text-align: center;
   }
 }
@@ -133,7 +134,7 @@
   background: #FFFFFF;
   border: 1px solid #DADADA;
   border-radius: 3px 0px 0px 3px;
-  font-family: Lato-Semibold;
+  font-family: Lato-Semibold !important;
   font-size: 14px;
   color: #9B9B9B;
   padding-left: 10px !important;
@@ -145,7 +146,7 @@
 .hs-button.primary.large {
   background: #00C26B;
   border-radius: 3px;
-  font-family: Lato-SemiBold;
+  font-family: Lato-SemiBold !important;
   font-size: 20px;
   color: #FFFFFF;
   letter-spacing: 0.14px;
@@ -165,7 +166,7 @@
 }
 
 .submitted-message {
-  font-family: Lato-Regular;
+  font-family: Lato-Regular !important;
   font-size: 18px;
   color: #9B9B9B;
   text-align: center;
@@ -173,7 +174,7 @@
 
   &:before {
     content: "Thank you!";
-    font-family: Lato-Bold;
+    font-family: Lato-Bold !important;
     font-size: 48px;
     color: #00C26B;
     text-align: center;
@@ -192,9 +193,14 @@
   }
 }
 
+ul.hs-error-msgs {
+  width: 100% !important;
+  max-width: 400px !important;
+  margin: 0 auto !important;
+}
 .hs-error-msgs li label {
   color: #FE2851;
-  text-align: center !important;
+  font-family: $font_regular !important;
 }
 // For desktop
 @media screen and (min-width: 960px){
@@ -211,6 +217,10 @@
       height: 1px;
       display: inline-block;
     }
+  }
+  .contact h2 {
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .contact .contact-form {
