@@ -13,6 +13,11 @@ $font_light: 'Lato-Light';
   }
 }
 .contact-form {
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 1.12px;
+  }
   .block-desc {
     margin: 0;
   }
@@ -43,10 +48,10 @@ $font_light: 'Lato-Light';
     border: 1px solid #DADADA;
     border-radius: 2px;
     margin-bottom: 20px;
-    color: #9B9B9B;
     font-size: 14px;
-    font-family: $font_semibold;
+    font-family: $font_regular;
     box-sizing: border-box;
+    color: #9B9B9B;
   }
   input {
     height: 45px;

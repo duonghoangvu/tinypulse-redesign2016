@@ -555,7 +555,7 @@ header .overlay {
 /* line 487, ../sass/_header.scss */
 .header-graphics .content .try-it-form input {
   width: 100%;
-  color: #9b9b9b;
+  color: #000;
   text-align: center;
   margin-bottom: 10px;
   font-family: "Lato-Regular";
@@ -1052,116 +1052,29 @@ footer .copyright span {
 }
 
 /* line 8, ../sass/engage.scss */
-.engage-header-graphics {
+.header-graphics {
   background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage-header-mobile-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  position: relative;
-  display: inline-block;
-  width: 100%;
 }
-/* line 17, ../sass/engage.scss */
-.engage-header-graphics:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 20%, rgba(246, 107, 28, 0.15) 100%);
-}
-/* line 26, ../sass/engage.scss */
-.engage-header-graphics .content {
-  position: relative;
-  display: block;
-  padding: 10px;
-  margin: 0 auto;
+/* line 11, ../sass/engage.scss */
+.header-graphics .content h1 {
   margin-top: 50px;
 }
-/* line 32, ../sass/engage.scss */
-.engage-header-graphics .content h1 {
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  font-family: "Lato-Bold";
-  font-weight: normal;
-  font-size: 36px;
-  color: #ffffff;
-  letter-spacing: 1.12px;
-  text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
-  text-align: center;
-}
-/* line 46, ../sass/engage.scss */
-.engage-header-graphics .content .try-it-form {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 25px;
-  margin: 70px 0 50px 0;
-  font-size: 0;
-  border-radius: 5px;
-}
-/* line 52, ../sass/engage.scss */
-.engage-header-graphics .content .try-it-form input, .engage-header-graphics .content .try-it-form button {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0;
-  border-radius: 4px;
-  margin: 0;
-  border: 0;
-  transition: width 0.3s;
-  box-sizing: border-box;
-  height: 45px;
-  padding: 0 10px;
-  min-height: inherit;
-  text-transform: none;
-}
-/* line 66, ../sass/engage.scss */
-.engage-header-graphics .content .try-it-form input {
-  width: 100%;
-  color: #9b9b9b;
-  text-align: center;
-  margin-bottom: 10px;
-  font-family: "Lato-Regular";
-  font-size: 15px;
-}
-/* line 74, ../sass/engage.scss */
-.engage-header-graphics .content .try-it-form button {
-  width: 100%;
-  background: #00C26B;
-  color: #fff;
-  font-family: "Lato-Semibold";
-  font-size: 16px;
-}
-/* line 80, ../sass/engage.scss */
-.engage-header-graphics .content .try-it-form button:hover {
-  opacity: 0.9;
-  cursor: pointer;
-}
-/* line 86, ../sass/engage.scss */
-.engage-header-graphics .content .meet-consultant {
-  text-align: center;
-  padding-top: 30px;
-}
-/* line 89, ../sass/engage.scss */
-.engage-header-graphics .content .meet-consultant a {
-  font-size: 14px;
-  color: #fff;
-  font-family: "Lato-Semibold";
-  text-decoration: underline;
+/* line 14, ../sass/engage.scss */
+.header-graphics .content .try-it-form {
+  margin: 35px 0 50px 0;
 }
 
-/* line 98, ../sass/engage.scss */
+/* line 19, ../sass/engage.scss */
 .active {
   display: block;
 }
 
-/* line 101, ../sass/engage.scss */
+/* line 22, ../sass/engage.scss */
 .overview-desktop {
   display: none;
 }
 
-/* line 105, ../sass/engage.scss */
+/* line 26, ../sass/engage.scss */
 .overview .title {
   color: #1C94EE;
   font-size: 20px;
@@ -1169,7 +1082,7 @@ footer .copyright span {
   text-align: left;
   padding: 0 15px;
 }
-/* line 112, ../sass/engage.scss */
+/* line 33, ../sass/engage.scss */
 .overview .content-desc {
   font-size: 18px;
   color: #000;
@@ -1179,26 +1092,26 @@ footer .copyright span {
   line-height: 25px;
   padding: 0 15px;
 }
-/* line 122, ../sass/engage.scss */
+/* line 43, ../sass/engage.scss */
 .overview .slide-icon img {
   width: 85px;
   margin: 30px;
 }
-/* line 128, ../sass/engage.scss */
+/* line 49, ../sass/engage.scss */
 .overview .overview-img img {
   width: 100%;
   border-bottom: 1px solid #DADADA;
 }
-/* line 133, ../sass/engage.scss */
+/* line 54, ../sass/engage.scss */
 .overview .block-content {
   display: none;
 }
-/* line 136, ../sass/engage.scss */
+/* line 57, ../sass/engage.scss */
 .overview .active {
   display: block !important;
 }
 
-/* line 141, ../sass/engage.scss */
+/* line 62, ../sass/engage.scss */
 .features .feature {
   text-align: left;
   font-size: 16px;
@@ -1207,62 +1120,62 @@ footer .copyright span {
   padding-bottom: 30px;
   display: block;
 }
-/* line 149, ../sass/engage.scss */
+/* line 70, ../sass/engage.scss */
 .features .content-title {
   font-size: 20px;
   font-family: "Lato-Regular";
   padding: 0 15px;
 }
-/* line 154, ../sass/engage.scss */
+/* line 75, ../sass/engage.scss */
 .features p {
   padding: 0 15px;
 }
-/* line 157, ../sass/engage.scss */
+/* line 78, ../sass/engage.scss */
 .features .icon {
   text-align: center;
 }
-/* line 160, ../sass/engage.scss */
+/* line 81, ../sass/engage.scss */
 .features img {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 164, ../sass/engage.scss */
+/* line 85, ../sass/engage.scss */
 .features .feature-1 img {
   max-width: 450px;
 }
-/* line 167, ../sass/engage.scss */
+/* line 88, ../sass/engage.scss */
 .features .feature-2 img {
   max-width: 298px;
 }
-/* line 170, ../sass/engage.scss */
+/* line 91, ../sass/engage.scss */
 .features .feature-2, .features .feature-3 {
   border-top: 1px solid #DADADA;
 }
-/* line 173, ../sass/engage.scss */
+/* line 94, ../sass/engage.scss */
 .features .feature-3 img {
   margin-top: 20px;
   max-width: 395px;
 }
-/* line 177, ../sass/engage.scss */
+/* line 98, ../sass/engage.scss */
 .features .feature-desc {
   max-width: 570px;
   margin: 0 auto;
 }
-/* line 181, ../sass/engage.scss */
+/* line 102, ../sass/engage.scss */
 .features strong {
   font-family: "Lato-Bold";
 }
-/* line 184, ../sass/engage.scss */
+/* line 105, ../sass/engage.scss */
 .features .mobile-download {
   display: none;
 }
 
-/* line 188, ../sass/engage.scss */
+/* line 109, ../sass/engage.scss */
 .how-it-works-desktop {
   display: none;
 }
 
-/* line 192, ../sass/engage.scss */
+/* line 113, ../sass/engage.scss */
 .how-it-works .block-content {
   line-height: 24px;
   font-size: 16px;
@@ -1273,13 +1186,13 @@ footer .copyright span {
   max-width: 570px;
   margin: 0 auto;
 }
-/* line 202, ../sass/engage.scss */
+/* line 123, ../sass/engage.scss */
 .how-it-works img {
   width: 70px;
   margin-bottom: 30px;
   margin-top: 15px;
 }
-/* line 207, ../sass/engage.scss */
+/* line 128, ../sass/engage.scss */
 .how-it-works .content-title {
   font-size: 20px;
   color: #1C94EE;
@@ -1287,32 +1200,32 @@ footer .copyright span {
   text-align: left;
   padding: 0 15px;
 }
-/* line 214, ../sass/engage.scss */
+/* line 135, ../sass/engage.scss */
 .how-it-works p {
   text-align: left;
   padding: 0 15px;
 }
-/* line 218, ../sass/engage.scss */
+/* line 139, ../sass/engage.scss */
 .how-it-works .slide-icon {
   position: absolute;
   bottom: 0px;
   width: 100%;
 }
-/* line 222, ../sass/engage.scss */
+/* line 143, ../sass/engage.scss */
 .how-it-works .slide-icon img {
   width: 135px;
 }
-/* line 226, ../sass/engage.scss */
+/* line 147, ../sass/engage.scss */
 .how-it-works .active {
   display: block !important;
 }
-/* line 229, ../sass/engage.scss */
+/* line 150, ../sass/engage.scss */
 .how-it-works .icon {
   height: 150px;
   max-height: 150px;
 }
 
-/* line 234, ../sass/engage.scss */
+/* line 155, ../sass/engage.scss */
 .why {
   color: #FFF;
   font-family: "Lato-Light";
@@ -1323,36 +1236,36 @@ footer .copyright span {
   background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
   padding-bottom: 40px;
 }
-/* line 241, ../sass/engage.scss */
+/* line 162, ../sass/engage.scss */
 .why .block-desc, .why .block-title {
   color: #FFF;
 }
-/* line 244, ../sass/engage.scss */
+/* line 165, ../sass/engage.scss */
 .why .content-title {
   font-size: 16px;
   font-family: "Lato-Semibold";
   line-height: 19px;
 }
-/* line 249, ../sass/engage.scss */
+/* line 170, ../sass/engage.scss */
 .why .icon img {
   width: 60px;
   margin: 20px 0px;
 }
-/* line 253, ../sass/engage.scss */
+/* line 174, ../sass/engage.scss */
 .why .content-desc {
   max-width: 200px;
   margin: 0 auto 40px;
   font-size: 14px;
 }
-/* line 258, ../sass/engage.scss */
+/* line 179, ../sass/engage.scss */
 .why .nav-blocked .xs-slider-nav:before {
   display: block;
 }
-/* line 261, ../sass/engage.scss */
+/* line 182, ../sass/engage.scss */
 .why .touch-blocked:before {
   display: block;
 }
-/* line 264, ../sass/engage.scss */
+/* line 185, ../sass/engage.scss */
 .why .speakers {
   width: 100%;
   overflow: hidden;
@@ -1363,7 +1276,7 @@ footer .copyright span {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 273, ../sass/engage.scss */
+/* line 194, ../sass/engage.scss */
 .why .speakers:before {
   display: none;
   content: "";
@@ -1374,47 +1287,47 @@ footer .copyright span {
   bottom: 0;
   z-index: 1;
 }
-/* line 283, ../sass/engage.scss */
+/* line 204, ../sass/engage.scss */
 .why .speakers .slider-nav {
   position: absolute;
   top: 33%;
   font-size: 0;
   width: 100%;
 }
-/* line 288, ../sass/engage.scss */
+/* line 209, ../sass/engage.scss */
 .why .speakers .slider-nav .control-nav {
   position: absolute;
   cursor: pointer;
 }
-/* line 292, ../sass/engage.scss */
+/* line 213, ../sass/engage.scss */
 .why .speakers .slider-nav .prev {
   left: 0;
 }
-/* line 295, ../sass/engage.scss */
+/* line 216, ../sass/engage.scss */
 .why .speakers .slider-nav .next {
   right: 0;
 }
-/* line 298, ../sass/engage.scss */
+/* line 219, ../sass/engage.scss */
 .why .speakers .slider-nav img {
   height: 45px;
 }
-/* line 302, ../sass/engage.scss */
+/* line 223, ../sass/engage.scss */
 .why .speakers .speaker-container {
   -webkit-backface-visibility: hidden;
   height: 100%;
 }
-/* line 305, ../sass/engage.scss */
+/* line 226, ../sass/engage.scss */
 .why .speakers .speaker-container:after {
   content: "";
   width: 100%;
   height: 1px;
   display: inline-block;
 }
-/* line 311, ../sass/engage.scss */
+/* line 232, ../sass/engage.scss */
 .why .speakers .speaker-container .speaker {
   float: left;
 }
-/* line 316, ../sass/engage.scss */
+/* line 237, ../sass/engage.scss */
 .why .indicator {
   width: 12px;
   height: 12px;
@@ -1425,11 +1338,11 @@ footer .copyright span {
   border: 2px solid #FFF;
   transition: all 0.3s;
 }
-/* line 326, ../sass/engage.scss */
+/* line 247, ../sass/engage.scss */
 .why .indicator.active {
   background-color: #FFF;
 }
-/* line 329, ../sass/engage.scss */
+/* line 250, ../sass/engage.scss */
 .why .indicators-wrapper {
   width: 85px;
   padding: 10px 0 7px 0;
@@ -1438,64 +1351,64 @@ footer .copyright span {
   border-radius: 19px;
   text-align: center;
 }
-/* line 337, ../sass/engage.scss */
+/* line 258, ../sass/engage.scss */
 .why .xs-slider-indicators {
   display: block;
   margin-top: 30px;
   margin-bottom: 40px;
 }
-/* line 342, ../sass/engage.scss */
+/* line 263, ../sass/engage.scss */
 .why .slider-nav {
   display: none;
 }
-/* line 345, ../sass/engage.scss */
+/* line 266, ../sass/engage.scss */
 .why .speaker {
   /*margin: 0 15px;*/
   line-height: 20px;
   font-family: "Lato-Light";
   /*display: none;*/
 }
-/* line 350, ../sass/engage.scss */
+/* line 271, ../sass/engage.scss */
 .why .speaker .speaker-content {
   background-color: rgba(255, 255, 255, 0.2);
   height: 500px;
   max-width: 300px;
   margin: 0 auto;
 }
-/* line 356, ../sass/engage.scss */
+/* line 277, ../sass/engage.scss */
 .why .speaker .speaker-desc {
   font-size: 14px;
 }
-/* line 359, ../sass/engage.scss */
+/* line 280, ../sass/engage.scss */
 .why .speaker img {
   width: 100%;
   display: block;
   max-width: 300px;
 }
-/* line 364, ../sass/engage.scss */
+/* line 285, ../sass/engage.scss */
 .why .speaker p {
   padding: 5px 15px;
 }
-/* line 367, ../sass/engage.scss */
+/* line 288, ../sass/engage.scss */
 .why .speaker .slide-icon {
   text-align: center;
   margin: 30px 0px;
 }
-/* line 370, ../sass/engage.scss */
+/* line 291, ../sass/engage.scss */
 .why .speaker .slide-icon img {
   width: 85px;
   margin: 0 auto;
 }
-/* line 375, ../sass/engage.scss */
+/* line 296, ../sass/engage.scss */
 .why .speaker .speaker-name {
   font-family: "Lato-Regular";
   line-height: 22px;
 }
-/* line 380, ../sass/engage.scss */
+/* line 301, ../sass/engage.scss */
 .why .read-more-section {
   margin: 0 15px;
 }
-/* line 383, ../sass/engage.scss */
+/* line 304, ../sass/engage.scss */
 .why .read-more {
   width: 100%;
   max-width: 300px;
@@ -1509,13 +1422,13 @@ footer .copyright span {
   color: #FFF;
   box-sizing: border-box;
 }
-/* line 395, ../sass/engage.scss */
+/* line 316, ../sass/engage.scss */
 .why .read-more:hover {
   background: #fff;
   color: #333;
 }
 
-/* line 401, ../sass/engage.scss */
+/* line 322, ../sass/engage.scss */
 .clients {
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
   /* FF3.6-15 */
@@ -1537,11 +1450,11 @@ footer .copyright span {
   /*}*/
   /*}*/
 }
-/* line 408, ../sass/engage.scss */
+/* line 329, ../sass/engage.scss */
 .clients .container {
   max-width: 100%;
 }
-/* line 411, ../sass/engage.scss */
+/* line 332, ../sass/engage.scss */
 .clients .block-title {
   color: #FFF;
   font-size: 30px;
@@ -1550,26 +1463,26 @@ footer .copyright span {
   width: 80%;
   margin-bottom: 7px;
 }
-/* line 419, ../sass/engage.scss */
+/* line 340, ../sass/engage.scss */
 .clients .client-logos {
   padding: 30px 15px;
   text-align: center;
 }
-/* line 423, ../sass/engage.scss */
+/* line 344, ../sass/engage.scss */
 .clients img {
   margin: 10px 20px;
   width: 100px;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 438, ../sass/engage.scss */
+/* line 359, ../sass/engage.scss */
 .clients .try-it-form {
   padding: 17px 20px;
   margin: 0px 0 50px 0;
   font-size: 0;
   border-radius: 5px;
 }
-/* line 443, ../sass/engage.scss */
+/* line 364, ../sass/engage.scss */
 .clients .try-it-form input, .clients .try-it-form button {
   display: inline-block;
   vertical-align: top;
@@ -1584,16 +1497,16 @@ footer .copyright span {
   min-height: inherit;
   text-transform: none;
 }
-/* line 457, ../sass/engage.scss */
+/* line 378, ../sass/engage.scss */
 .clients .try-it-form input {
   width: 100%;
-  color: #9b9b9b;
+  color: #000;
   text-align: center;
   margin-bottom: 10px;
   font-family: "Lato-Regular";
   font-size: 15px;
 }
-/* line 465, ../sass/engage.scss */
+/* line 386, ../sass/engage.scss */
 .clients .try-it-form button {
   width: 100%;
   background: #00C26B;
@@ -1601,68 +1514,43 @@ footer .copyright span {
   font-family: "Lato-Semibold";
   font-size: 16px;
 }
-/* line 471, ../sass/engage.scss */
+/* line 392, ../sass/engage.scss */
 .clients .try-it-form button:hover {
   opacity: 0.9;
   cursor: pointer;
 }
-/* line 476, ../sass/engage.scss */
+/* line 397, ../sass/engage.scss */
 .clients .try-it-form .hbspt-form {
   height: 0;
   overflow: hidden;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 483, ../sass/engage.scss */
-  .engage-header-graphics {
+  /* line 404, ../sass/engage.scss */
+  .header-graphics {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
-    height: 650px;
+    height: 400px;
   }
-  /* line 486, ../sass/engage.scss */
-  .engage-header-graphics:before {
+  /* line 407, ../sass/engage.scss */
+  .header-graphics:before {
     display: none;
   }
-  /* line 489, ../sass/engage.scss */
-  .engage-header-graphics .content {
-    position: relative;
-    top: 50%;
-    max-width: 600px;
-    margin-top: -200px;
+  /* line 410, ../sass/engage.scss */
+  .header-graphics .content {
+    top: 0;
+    margin-top: 30px;
   }
-  /* line 494, ../sass/engage.scss */
-  .engage-header-graphics .content h1 {
-    font-size: 48px;
-    margin-bottom: 50px;
-  }
-  /* line 498, ../sass/engage.scss */
-  .engage-header-graphics .content .try-it-form {
-    max-width: 450px;
-    box-sizing: border-box;
+  /* line 413, ../sass/engage.scss */
+  .header-graphics .content .try-it-form {
     margin: 0 auto;
   }
-  /* line 502, ../sass/engage.scss */
-  .engage-header-graphics .content .try-it-form input {
-    font-size: 18px;
-    padding: 7px;
-    width: 72%;
-    border-radius: 4px 0 0 4px;
-    text-align: left;
-  }
-  /* line 509, ../sass/engage.scss */
-  .engage-header-graphics .content .try-it-form button {
-    font-size: 18px;
-    line-height: 19px;
-    padding: 8px;
-    width: 28%;
-    border-radius: 0 4px 4px 0;
-  }
 
-  /* line 519, ../sass/engage.scss */
+  /* line 418, ../sass/engage.scss */
   .overview {
     display: none;
   }
 
-  /* line 522, ../sass/engage.scss */
+  /* line 421, ../sass/engage.scss */
   .overview-desktop {
     display: block;
     font-size: 0px;
@@ -1688,13 +1576,13 @@ footer .copyright span {
     /*transition: all .3s;*/
     /*}*/
   }
-  /* line 525, ../sass/engage.scss */
+  /* line 424, ../sass/engage.scss */
   .overview-desktop .overview-content {
     position: relative;
     height: 495px;
     border-bottom: 1px solid #DADADA;
   }
-  /* line 530, ../sass/engage.scss */
+  /* line 429, ../sass/engage.scss */
   .overview-desktop .block-content {
     text-align: left;
     padding: 15px;
@@ -1703,17 +1591,17 @@ footer .copyright span {
     vertical-align: top;
     border-radius: 3px;
   }
-  /* line 537, ../sass/engage.scss */
+  /* line 436, ../sass/engage.scss */
   .overview-desktop .block-content:hover {
     cursor: pointer;
   }
-  /* line 541, ../sass/engage.scss */
+  /* line 440, ../sass/engage.scss */
   .overview-desktop .content-desc {
     font-size: 16px;
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 546, ../sass/engage.scss */
+  /* line 445, ../sass/engage.scss */
   .overview-desktop .title {
     font-size: 24px;
     font-family: "Lato-Regular";
@@ -1721,7 +1609,7 @@ footer .copyright span {
     color: #000;
     margin-bottom: 15px;
   }
-  /* line 553, ../sass/engage.scss */
+  /* line 452, ../sass/engage.scss */
   .overview-desktop .right-side {
     width: 48%;
     display: inline-block;
@@ -1730,7 +1618,7 @@ footer .copyright span {
     position: absolute;
     top: 0;
   }
-  /* line 560, ../sass/engage.scss */
+  /* line 459, ../sass/engage.scss */
   .overview-desktop .right-side .overview-img {
     height: 495px;
     background-size: cover;
@@ -1738,87 +1626,87 @@ footer .copyright span {
     background-position: center;
     display: none;
   }
-  /* line 567, ../sass/engage.scss */
+  /* line 466, ../sass/engage.scss */
   .overview-desktop .right-side .img-1 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-insight.png);
   }
-  /* line 570, ../sass/engage.scss */
+  /* line 469, ../sass/engage.scss */
   .overview-desktop .right-side .img-2 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-actionable.png);
   }
-  /* line 573, ../sass/engage.scss */
+  /* line 472, ../sass/engage.scss */
   .overview-desktop .right-side .img-3 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/engage-empowered.png);
   }
-  /* line 577, ../sass/engage.scss */
+  /* line 476, ../sass/engage.scss */
   .overview-desktop .overview-default .block-content {
     margin-top: 30px;
   }
-  /* line 581, ../sass/engage.scss */
+  /* line 480, ../sass/engage.scss */
   .overview-desktop .overview-block.selected .overview-img {
     display: block;
     transition: all ease .5s;
   }
-  /* line 585, ../sass/engage.scss */
+  /* line 484, ../sass/engage.scss */
   .overview-desktop .overview-block.selected .block-content {
     background-color: rgba(28, 148, 238, 0.1);
     transition: all .3s;
   }
-  /* line 588, ../sass/engage.scss */
+  /* line 487, ../sass/engage.scss */
   .overview-desktop .overview-block.selected .block-content .title {
     color: #1C94EE;
   }
 
-  /* line 615, ../sass/engage.scss */
+  /* line 514, ../sass/engage.scss */
   .features {
     font-size: 0;
   }
-  /* line 617, ../sass/engage.scss */
+  /* line 516, ../sass/engage.scss */
   .features .icon {
     display: inline-block;
     width: 50%;
   }
-  /* line 621, ../sass/engage.scss */
+  /* line 520, ../sass/engage.scss */
   .features .feature-desc {
     display: inline-block;
     width: 50%;
   }
-  /* line 625, ../sass/engage.scss */
+  /* line 524, ../sass/engage.scss */
   .features .feature-2 {
     float: right;
     text-align: center;
   }
-  /* line 629, ../sass/engage.scss */
+  /* line 528, ../sass/engage.scss */
   .features .feature-desc-1 {
     float: right;
     margin-top: 20px;
   }
-  /* line 633, ../sass/engage.scss */
+  /* line 532, ../sass/engage.scss */
   .features .feature-desc-2 {
     border-top: 1px solid #DADADA;
   }
-  /* line 635, ../sass/engage.scss */
+  /* line 534, ../sass/engage.scss */
   .features .feature-desc-2 .content-title {
     margin-top: 90px;
   }
-  /* line 639, ../sass/engage.scss */
+  /* line 538, ../sass/engage.scss */
   .features .feature-3 img {
     margin-top: 100px;
   }
-  /* line 642, ../sass/engage.scss */
+  /* line 541, ../sass/engage.scss */
   .features .feature-desc-3 {
     float: right;
     border-top: 1px solid #DADADA;
   }
-  /* line 645, ../sass/engage.scss */
+  /* line 544, ../sass/engage.scss */
   .features .feature-desc-3 .content-title {
     margin-top: 120px;
   }
-  /* line 649, ../sass/engage.scss */
+  /* line 548, ../sass/engage.scss */
   .features p {
     padding: 10px 15px;
   }
-  /* line 652, ../sass/engage.scss */
+  /* line 551, ../sass/engage.scss */
   .features .mobile-download {
     display: block;
     font-size: 18px;
@@ -1827,12 +1715,12 @@ footer .copyright span {
     color: #9B9B9B;
     padding: 0px 15px;
   }
-  /* line 659, ../sass/engage.scss */
+  /* line 558, ../sass/engage.scss */
   .features .mobile-download span {
     vertical-align: middle;
     margin-right: 20px;
   }
-  /* line 663, ../sass/engage.scss */
+  /* line 562, ../sass/engage.scss */
   .features .mobile-download img {
     max-width: 100px;
     margin-bottom: 0;
@@ -1841,26 +1729,26 @@ footer .copyright span {
     vertical-align: middle;
   }
 
-  /* line 673, ../sass/engage.scss */
+  /* line 572, ../sass/engage.scss */
   .why .block-content {
     display: inline-block;
     width: 33%;
     text-align: center;
     font-size: 0;
   }
-  /* line 679, ../sass/engage.scss */
+  /* line 578, ../sass/engage.scss */
   .why .speakers {
     text-align: center;
   }
-  /* line 682, ../sass/engage.scss */
+  /* line 581, ../sass/engage.scss */
   .why .speakers .speaker .slide-icon {
     display: none;
   }
-  /* line 685, ../sass/engage.scss */
+  /* line 584, ../sass/engage.scss */
   .why .speakers .speaker .speaker-img {
     display: inline-block;
   }
-  /* line 688, ../sass/engage.scss */
+  /* line 587, ../sass/engage.scss */
   .why .speakers .speaker .speaker-desc {
     max-width: 500px;
     display: inline-block;
@@ -1869,24 +1757,24 @@ footer .copyright span {
     position: relative;
     text-align: left;
   }
-  /* line 695, ../sass/engage.scss */
+  /* line 594, ../sass/engage.scss */
   .why .speakers .speaker .speaker-desc .speaker-name {
     position: absolute;
     right: 0;
     bottom: 0;
   }
-  /* line 701, ../sass/engage.scss */
+  /* line 600, ../sass/engage.scss */
   .why .speakers .speaker .speaker-content {
     max-width: 800px;
     font-size: 0;
     height: 200px;
     display: inline-block;
   }
-  /* line 706, ../sass/engage.scss */
+  /* line 605, ../sass/engage.scss */
   .why .speakers .speaker .speaker-content p {
     padding: 0 15px;
   }
-  /* line 712, ../sass/engage.scss */
+  /* line 611, ../sass/engage.scss */
   .why .prev-speaker, .why .next-speaker {
     display: inline-block;
     position: relative;
@@ -1895,34 +1783,34 @@ footer .copyright span {
     top: 50%;
     transform: translate(0, 35%);
   }
-  /* line 720, ../sass/engage.scss */
+  /* line 619, ../sass/engage.scss */
   .why .prev-speaker {
     margin-right: 15px;
   }
-  /* line 723, ../sass/engage.scss */
+  /* line 622, ../sass/engage.scss */
   .why .next-speaker {
     margin-left: 15px;
   }
-  /* line 726, ../sass/engage.scss */
+  /* line 625, ../sass/engage.scss */
   .why .read-more {
     margin-top: 50px;
   }
-  /* line 730, ../sass/engage.scss */
+  /* line 629, ../sass/engage.scss */
   .why .control-button:hover {
     cursor: pointer;
   }
-  /* line 733, ../sass/engage.scss */
+  /* line 632, ../sass/engage.scss */
   .why .control-button img {
     display: inline-block;
     max-width: 30px;
   }
 
-  /* line 739, ../sass/engage.scss */
+  /* line 638, ../sass/engage.scss */
   .how-it-works {
     display: none;
   }
 
-  /* line 742, ../sass/engage.scss */
+  /* line 641, ../sass/engage.scss */
   .how-it-works-desktop {
     display: block;
     padding-left: 15px;
@@ -1945,11 +1833,11 @@ footer .copyright span {
     /*transition: all .3s;*/
     /*}*/
   }
-  /* line 747, ../sass/engage.scss */
+  /* line 646, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content:hover {
     cursor: pointer;
   }
-  /* line 750, ../sass/engage.scss */
+  /* line 649, ../sass/engage.scss */
   .how-it-works-desktop .block-content {
     margin-bottom: 100px;
     margin-top: 60px;
@@ -1958,7 +1846,7 @@ footer .copyright span {
     left: 0;
     display: none;
   }
-  /* line 757, ../sass/engage.scss */
+  /* line 656, ../sass/engage.scss */
   .how-it-works-desktop .block-content .content-title {
     font-size: 20px;
     color: #1C94EE;
@@ -1966,7 +1854,7 @@ footer .copyright span {
     text-align: left;
     padding: 0 15px;
   }
-  /* line 764, ../sass/engage.scss */
+  /* line 663, ../sass/engage.scss */
   .how-it-works-desktop .block-content p {
     text-align: left;
     padding: 0 15px;
@@ -1974,7 +1862,7 @@ footer .copyright span {
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 772, ../sass/engage.scss */
+  /* line 671, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons {
     padding-left: 15px;
     padding-right: 15px;
@@ -1982,18 +1870,18 @@ footer .copyright span {
     font-size: 0px;
     position: relative;
   }
-  /* line 778, ../sass/engage.scss */
+  /* line 677, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-content {
     display: inline-block;
     width: 20%;
     vertical-align: top;
   }
-  /* line 783, ../sass/engage.scss */
+  /* line 682, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-icon {
     text-align: center;
     position: relative;
   }
-  /* line 787, ../sass/engage.scss */
+  /* line 686, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .icon {
     width: 63px;
     height: 94px;
@@ -2001,27 +1889,27 @@ footer .copyright span {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/engage/how-it-works/hiw-small-sprite.png);
     background-repeat: no-repeat;
   }
-  /* line 794, ../sass/engage.scss */
+  /* line 693, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-1 {
     background-position: 0 0;
   }
-  /* line 797, ../sass/engage.scss */
+  /* line 696, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-2 {
     background-position: -85px 0;
   }
-  /* line 800, ../sass/engage.scss */
+  /* line 699, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-3 {
     background-position: -168px 0;
   }
-  /* line 803, ../sass/engage.scss */
+  /* line 702, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-4 {
     background-position: -253px 0;
   }
-  /* line 806, ../sass/engage.scss */
+  /* line 705, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-5 {
     background-position: -338px 0;
   }
-  /* line 810, ../sass/engage.scss */
+  /* line 709, ../sass/engage.scss */
   .how-it-works-desktop .hiw-wrapper {
     width: 90px;
     height: 90px;
@@ -2032,35 +1920,35 @@ footer .copyright span {
     left: 0;
     right: 0;
   }
-  /* line 821, ../sass/engage.scss */
+  /* line 720, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content.selected .icon {
     background-position-y: -117px;
   }
-  /* line 824, ../sass/engage.scss */
+  /* line 723, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content.selected .block-content {
     display: block;
     transition: all .3s;
   }
-  /* line 828, ../sass/engage.scss */
+  /* line 727, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content.selected .hiw-wrapper {
     background-color: rgba(28, 148, 238, 0.1);
   }
 
-  /* line 850, ../sass/engage.scss */
+  /* line 749, ../sass/engage.scss */
   .clients .client {
     width: 15%;
     text-align: center;
   }
-  /* line 854, ../sass/engage.scss */
+  /* line 753, ../sass/engage.scss */
   .clients .client-logos {
     text-align: center;
   }
-  /* line 857, ../sass/engage.scss */
+  /* line 756, ../sass/engage.scss */
   .clients .block-title {
     width: 100%;
     margin-top: 20px;
   }
-  /* line 861, ../sass/engage.scss */
+  /* line 760, ../sass/engage.scss */
   .clients img {
     margin-left: 20px;
     margin-right: 20px;
@@ -2069,14 +1957,14 @@ footer .copyright span {
     width: 100px;
     display: inline-block;
   }
-  /* line 869, ../sass/engage.scss */
+  /* line 768, ../sass/engage.scss */
   .clients .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
     padding-bottom: 30px;
   }
-  /* line 874, ../sass/engage.scss */
+  /* line 773, ../sass/engage.scss */
   .clients .try-it-form input {
     font-size: 14px;
     padding: 7px 17px;
@@ -2084,7 +1972,7 @@ footer .copyright span {
     border-radius: 4px 0 0 4px;
     text-align: left;
   }
-  /* line 881, ../sass/engage.scss */
+  /* line 780, ../sass/engage.scss */
   .clients .try-it-form button {
     font-size: 14px;
     line-height: 19px;
@@ -2093,12 +1981,12 @@ footer .copyright span {
     border-radius: 0 4px 4px 0;
   }
 
-  /* line 890, ../sass/engage.scss */
+  /* line 789, ../sass/engage.scss */
   .slider-nav {
     display: block !important;
   }
 
-  /* line 893, ../sass/engage.scss */
+  /* line 792, ../sass/engage.scss */
   .xs-slider-indicators {
     display: none !important;
   }
