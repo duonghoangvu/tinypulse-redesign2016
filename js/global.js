@@ -2,7 +2,8 @@ jQuery(document).ready(function($) {
     var subnav = $('.subnav'), 
     body = $('body'), 
     topMenuH = 0,
-    scroolStop = 0;
+    scroolStop = 0, 
+    popup = $('#popup');
   
   $('.hamburger').click(function(e) {
     e.preventDefault();
@@ -37,6 +38,7 @@ jQuery(document).ready(function($) {
         scrollTo(block);      
       }
     });
+    // alert($(window).height());
   }).on('scroll', function(){
     var scrollTop = $(window).scrollTop();
     // *********************************************** subnav
@@ -60,6 +62,21 @@ jQuery(document).ready(function($) {
       });      
     }
   }).trigger('resize');
+
+  if (!localStorage.hidePopup){
+    window.setTimeout(function(){
+      popup.fadeIn(150);
+    }, 2000);
+  }
+
+  popup.find('.overlay').on('click', function(){
+    popup.fadeOut(300);
+  });
+  popup.find('.close-btn').on('click', function(){
+    localStorage.setItem('hidePopup', 'true');
+    popup.fadeOut(300);
+    return false;
+  });
 
   var scroller = new Scroller();
   scroller.dom.blur = $('header .overlay');
