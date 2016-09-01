@@ -982,56 +982,61 @@ a {
   text-align: center;
 }
 
-/* line 82, ../sass/_content.scss */
+/* line 80, ../sass/_content.scss */
+.content-block-no-hero {
+  padding-top: 70px;
+}
+
+/* line 85, ../sass/_content.scss */
 .features .tile {
   display: inline-block;
   max-width: 320px;
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 87, ../sass/_content.scss */
+/* line 90, ../sass/_content.scss */
 .features .tile a {
   display: block;
   cursor: default;
   transition: all 0.3s;
   padding: 0 15px;
 }
-/* line 93, ../sass/_content.scss */
+/* line 96, ../sass/_content.scss */
 .features .tile .title {
   font-family: "Lato-Regular";
   color: #000;
   margin-bottom: 20px;
 }
-/* line 98, ../sass/_content.scss */
+/* line 101, ../sass/_content.scss */
 .features .tile .icon {
   width: 59px;
   height: 65px;
   display: inline-block;
-  background-image: url(https://www.tinypulse.com/hubfs/feature-icons-sprite.png);
+  background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/feature-icons-sprite.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-/* line 106, ../sass/_content.scss */
+/* line 109, ../sass/_content.scss */
 .features .tile .feature-2 {
   background-position: -99px 0;
 }
-/* line 109, ../sass/_content.scss */
+/* line 112, ../sass/_content.scss */
 .features .tile .feature-3 {
   background-position: -198px 0;
 }
-/* line 112, ../sass/_content.scss */
+/* line 115, ../sass/_content.scss */
 .features .tile .feature-4 {
   background-position: -297px 0;
 }
-/* line 115, ../sass/_content.scss */
+/* line 118, ../sass/_content.scss */
 .features .tile .feature-5 {
   background-position: -396px 0;
 }
-/* line 118, ../sass/_content.scss */
+/* line 121, ../sass/_content.scss */
 .features .tile .feature-6 {
   background-position: -495px 0;
 }
-/* line 121, ../sass/_content.scss */
+/* line 124, ../sass/_content.scss */
 .features .tile p {
   font-family: "Lato-Thin";
   font-size: 18px;
@@ -1040,16 +1045,16 @@ a {
   text-align: center;
 }
 
-/* line 131, ../sass/_content.scss */
+/* line 134, ../sass/_content.scss */
 .products-desktop {
   display: none;
 }
 
-/* line 135, ../sass/_content.scss */
+/* line 138, ../sass/_content.scss */
 .products-mobile {
   display: block;
 }
-/* line 137, ../sass/_content.scss */
+/* line 140, ../sass/_content.scss */
 .products-mobile .content {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1058,17 +1063,17 @@ a {
   padding: 0px 15px;
   position: relative;
 }
-/* line 145, ../sass/_content.scss */
+/* line 148, ../sass/_content.scss */
 .products-mobile .mask-1 {
   padding: 30px 15px;
   background-image: url(//www.tinypulse.com/hubfs/redesign_2016/engage-bg-small.png);
 }
-/* line 149, ../sass/_content.scss */
+/* line 152, ../sass/_content.scss */
 .products-mobile .mask-2 {
   padding: 30px 15px;
   background-image: url(//www.tinypulse.com/hubfs/redesign_2016/Perform_mobile.png);
 }
-/* line 153, ../sass/_content.scss */
+/* line 156, ../sass/_content.scss */
 .products-mobile .text {
   color: #FFF;
   height: 100%;
@@ -1076,7 +1081,7 @@ a {
   display: inline-block;
   position: relative;
 }
-/* line 159, ../sass/_content.scss */
+/* line 162, ../sass/_content.scss */
 .products-mobile .text .title {
   font-size: 24px;
   line-height: 32px;
@@ -1085,14 +1090,14 @@ a {
   letter-spacing: 0.75px;
   margin: 0;
 }
-/* line 167, ../sass/_content.scss */
+/* line 170, ../sass/_content.scss */
 .products-mobile .text .desc {
   font-size: 17px;
   text-shadow: 0 2px 10px #333;
   width: 290px;
   font-family: 'Lato-Light';
 }
-/* line 173, ../sass/_content.scss */
+/* line 176, ../sass/_content.scss */
 .products-mobile .text a {
   margin-top: 20px;
   display: inline-block;
@@ -1109,13 +1114,13 @@ a {
   text-align: center;
   max-width: 300px;
 }
-/* line 188, ../sass/_content.scss */
+/* line 191, ../sass/_content.scss */
 .products-mobile .text a:hover {
   background: #fff;
   color: #333;
 }
 
-/* line 198, ../sass/_content.scss */
+/* line 201, ../sass/_content.scss */
 .success-stories .story {
   display: inline-block;
   max-width: 320px;
@@ -1124,7 +1129,7 @@ a {
   vertical-align: top;
   padding: 0 20px;
 }
-/* line 205, ../sass/_content.scss */
+/* line 208, ../sass/_content.scss */
 .success-stories .story p, .success-stories .story span {
   font-size: 14px;
   color: #9B9B9B;
@@ -1132,35 +1137,35 @@ a {
   text-align: left;
   font-family: "Lato-Regular";
 }
-/* line 212, ../sass/_content.scss */
+/* line 215, ../sass/_content.scss */
 .success-stories .story p {
   color: #000;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 217, ../sass/_content.scss */
+/* line 220, ../sass/_content.scss */
 .success-stories .story span {
   font-size: 18px;
   color: #9b9b9b;
   line-height: 24px;
   text-align: left;
 }
-/* line 223, ../sass/_content.scss */
+/* line 226, ../sass/_content.scss */
 .success-stories .story strong {
   display: block;
   font-family: "Lato-Bold";
 }
-/* line 228, ../sass/_content.scss */
+/* line 231, ../sass/_content.scss */
 .success-stories .story .icon img {
   width: 180px;
   height: 180px;
 }
-/* line 234, ../sass/_content.scss */
+/* line 237, ../sass/_content.scss */
 .success-stories .more-stories {
   text-align: center;
   margin: 40px 0 80px;
 }
-/* line 237, ../sass/_content.scss */
+/* line 240, ../sass/_content.scss */
 .success-stories .more-stories a {
   padding: 5px 20px 7px;
   border: 1px solid #dadada;
@@ -1169,13 +1174,13 @@ a {
   color: #9B9B9B;
   transition: all 0.3s;
 }
-/* line 244, ../sass/_content.scss */
+/* line 247, ../sass/_content.scss */
 .success-stories .more-stories a:hover {
   background: #dadada;
   color: #fff;
 }
 
-/* line 252, ../sass/_content.scss */
+/* line 255, ../sass/_content.scss */
 .ctas {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -1188,18 +1193,18 @@ a {
   /* IE6-9 fallback on horizontal gradient */
   padding: 30px 10px;
 }
-/* line 259, ../sass/_content.scss */
+/* line 262, ../sass/_content.scss */
 .ctas .block-title {
   color: #fff;
   padding: 0 20px;
 }
-/* line 263, ../sass/_content.scss */
+/* line 266, ../sass/_content.scss */
 .ctas div {
   text-align: center;
   padding: 0 15px;
   margin: 50px 0 30px 0;
 }
-/* line 268, ../sass/_content.scss */
+/* line 271, ../sass/_content.scss */
 .ctas a {
   display: inline-block;
   color: #fff;
@@ -1215,13 +1220,13 @@ a {
   letter-spacing: 0.14px;
   text-align: center;
 }
-/* line 284, ../sass/_content.scss */
+/* line 287, ../sass/_content.scss */
 .ctas a:hover {
   background: #fff;
   color: #333;
 }
 
-/* line 291, ../sass/_content.scss */
+/* line 294, ../sass/_content.scss */
 .quote {
   padding: 20px 0;
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -1233,14 +1238,14 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 297, ../sass/_content.scss */
+/* line 300, ../sass/_content.scss */
 .quote .block-title {
   font-family: "Lato-Regular";
   color: #fff;
   font-size: 20px;
   padding: 0 10px;
 }
-/* line 303, ../sass/_content.scss */
+/* line 306, ../sass/_content.scss */
 .quote .block-desc {
   font-family: "Lato-Regular";
   color: #fff;
@@ -1248,7 +1253,7 @@ a {
   font-size: 16px;
 }
 
-/* line 310, ../sass/_content.scss */
+/* line 313, ../sass/_content.scss */
 .press {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -1262,7 +1267,7 @@ a {
   padding: 30px 10px 20px 10px;
   text-align: center;
 }
-/* line 318, ../sass/_content.scss */
+/* line 321, ../sass/_content.scss */
 .press .title {
   font-family: "Lato-Regular";
   font-size: 18px;
@@ -1271,7 +1276,7 @@ a {
   line-height: 30px;
   text-align: center;
 }
-/* line 326, ../sass/_content.scss */
+/* line 329, ../sass/_content.scss */
 .press img {
   display: inline-block;
   vertical-align: middle;
@@ -1280,19 +1285,103 @@ a {
   margin: 10px;
 }
 
+/* line 339, ../sass/_content.scss */
+.new-features-page .content-block {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #DADADA;
+}
+/* line 343, ../sass/_content.scss */
+.new-features-page .content-block .block-title .super {
+  font-family: "Lato-Light";
+  color: #FE2851;
+  font-size: 12px;
+  position: relative;
+  top: -13px;
+  left: 3px;
+}
+/* line 352, ../sass/_content.scss */
+.new-features-page .content-block .block-desc {
+  margin-bottom: 10px;
+}
+/* line 355, ../sass/_content.scss */
+.new-features-page .content-block .block-content {
+  padding: 0 20px;
+}
+/* line 357, ../sass/_content.scss */
+.new-features-page .content-block .block-content img {
+  max-width: 100%;
+  margin: 30px 0;
+}
+/* line 361, ../sass/_content.scss */
+.new-features-page .content-block .block-content p {
+  text-align: left;
+  font-family: "Lato-Light";
+  line-height: 24px;
+}
+/* line 368, ../sass/_content.scss */
+.new-features-page .download {
+  text-align: center;
+  margin-top: 30px;
+}
+/* line 371, ../sass/_content.scss */
+.new-features-page .download span {
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 375, ../sass/_content.scss */
+.new-features-page .download a {
+  display: inline-block;
+  clear: both;
+  vertical-align: middle;
+}
+/* line 380, ../sass/_content.scss */
+.new-features-page .download .store {
+  width: 100px;
+  height: 34px;
+  font-size: 0;
+  margin-right: 8px;
+  background: url(http://www.tinypulse.com/hubfs/redesign_2016/stores.png) no-repeat;
+}
+/* line 387, ../sass/_content.scss */
+.new-features-page .download .google-store {
+  background-position: -110px 0;
+}
+/* line 391, ../sass/_content.scss */
+.new-features-page .try-it-now {
+  border: 1px solid #dadada;
+  margin: 30px 0;
+  padding: 15px 10px 20px 10px;
+}
+/* line 395, ../sass/_content.scss */
+.new-features-page .try-it-now p {
+  margin: 0 0 20px 0;
+}
+/* line 398, ../sass/_content.scss */
+.new-features-page .try-it-now a {
+  background: #00C26B;
+  border-radius: 3px;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+}
+
 @media screen and (min-width: 960px) {
-  /* line 337, ../sass/_content.scss */
+  /* line 413, ../sass/_content.scss */
   .header-graphics, .main-content {
     position: relative;
     z-index: 1;
   }
 
-  /* line 341, ../sass/_content.scss */
+  /* line 417, ../sass/_content.scss */
   .main-wrapper {
     padding-bottom: 266px;
   }
 
-  /* line 345, ../sass/_content.scss */
+  /* line 421, ../sass/_content.scss */
   .brands img {
     margin-left: 20px;
     margin-right: 20px;
@@ -1302,43 +1391,48 @@ a {
     display: inline-block;
   }
 
-  /* line 354, ../sass/_content.scss */
+  /* line 430, ../sass/_content.scss */
   .content-block {
     padding-top: 50px;
   }
-  /* line 356, ../sass/_content.scss */
+  /* line 432, ../sass/_content.scss */
   .content-block .block-title {
     font-size: 36px;
   }
 
-  /* line 361, ../sass/_content.scss */
+  /* line 436, ../sass/_content.scss */
+  .content-block-no-hero {
+    padding-top: 90px;
+  }
+
+  /* line 440, ../sass/_content.scss */
   .features .tile {
     max-width: 300px;
   }
-  /* line 363, ../sass/_content.scss */
+  /* line 442, ../sass/_content.scss */
   .features .tile a {
     padding: 30px 15px;
     cursor: pointer;
   }
-  /* line 366, ../sass/_content.scss */
+  /* line 445, ../sass/_content.scss */
   .features .tile a:hover {
     background: #E8F4FD;
   }
-  /* line 368, ../sass/_content.scss */
+  /* line 447, ../sass/_content.scss */
   .features .tile a:hover .icon {
     background-position-y: -90px;
   }
-  /* line 373, ../sass/_content.scss */
+  /* line 452, ../sass/_content.scss */
   .features .tile p {
     font-size: 14px;
   }
 
-  /* line 378, ../sass/_content.scss */
+  /* line 457, ../sass/_content.scss */
   .products-mobile {
     display: none;
   }
 
-  /* line 381, ../sass/_content.scss */
+  /* line 460, ../sass/_content.scss */
   .products-desktop {
     display: block;
     height: 1620px;
@@ -1347,7 +1441,7 @@ a {
     position: relative;
     transition: background-color 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  /* line 388, ../sass/_content.scss */
+  /* line 467, ../sass/_content.scss */
   .products-desktop .content {
     height: 810px;
     width: 100%;
@@ -1355,14 +1449,14 @@ a {
     position: relative;
     z-index: 2;
   }
-  /* line 394, ../sass/_content.scss */
+  /* line 473, ../sass/_content.scss */
   .products-desktop .content .container {
     max-width: 920px;
     margin: 0 auto;
     height: 100%;
     position: relative;
   }
-  /* line 400, ../sass/_content.scss */
+  /* line 479, ../sass/_content.scss */
   .products-desktop .content .text {
     top: 0;
     left: 0;
@@ -1372,18 +1466,18 @@ a {
     top: 50%;
     margin-top: -150px;
   }
-  /* line 408, ../sass/_content.scss */
+  /* line 487, ../sass/_content.scss */
   .products-desktop .content .text .title {
     font-size: 36px;
     line-height: 48px;
     text-shadow: 0 2px 10px #333;
   }
-  /* line 413, ../sass/_content.scss */
+  /* line 492, ../sass/_content.scss */
   .products-desktop .content .text .desc {
     font-size: 20px;
     text-shadow: 0 0 10px #333;
   }
-  /* line 417, ../sass/_content.scss */
+  /* line 496, ../sass/_content.scss */
   .products-desktop .content .text a {
     margin-top: 20px;
     display: inline-block;
@@ -1393,16 +1487,16 @@ a {
     color: #fff;
     transition: all 0.3s;
   }
-  /* line 425, ../sass/_content.scss */
+  /* line 504, ../sass/_content.scss */
   .products-desktop .content .text a:hover {
     background: #fff;
     color: #333;
   }
-  /* line 431, ../sass/_content.scss */
+  /* line 510, ../sass/_content.scss */
   .products-desktop .content .text-1 {
     left: 0;
   }
-  /* line 435, ../sass/_content.scss */
+  /* line 514, ../sass/_content.scss */
   .products-desktop .masked-images {
     position: absolute;
     top: 0;
@@ -1410,7 +1504,7 @@ a {
     transform: matrix(1, 0, 0, 1, 0, 0);
     width: 100%;
   }
-  /* line 441, ../sass/_content.scss */
+  /* line 520, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image {
     position: absolute;
     top: 0;
@@ -1419,7 +1513,7 @@ a {
     overflow: hidden;
     height: 810px;
   }
-  /* line 448, ../sass/_content.scss */
+  /* line 527, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image div {
     position: absolute;
     top: 0;
@@ -1434,26 +1528,26 @@ a {
     background-position: center;
     height: 810px;
   }
-  /* line 464, ../sass/_content.scss */
+  /* line 543, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image-1 div {
     background-image: url(//www.tinypulse.com/hubfs/Client_logo/Perform.png);
   }
-  /* line 469, ../sass/_content.scss */
+  /* line 548, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image-2 div {
     background-image: url(//www.tinypulse.com/hubfs/redesign_2016/engage-bg.png);
   }
 
-  /* line 476, ../sass/_content.scss */
+  /* line 555, ../sass/_content.scss */
   .success-stories .story {
     max-width: 300px;
     padding: 0 20px;
     box-sizing: border-box;
   }
-  /* line 480, ../sass/_content.scss */
+  /* line 559, ../sass/_content.scss */
   .success-stories .story .icon {
     margin: 10px 0 50px 0;
   }
-  /* line 483, ../sass/_content.scss */
+  /* line 562, ../sass/_content.scss */
   .success-stories .story p, .success-stories .story span {
     text-align: left;
     display: block;
@@ -1461,38 +1555,38 @@ a {
     line-height: 20px;
   }
 
-  /* line 492, ../sass/_content.scss */
+  /* line 571, ../sass/_content.scss */
   .ctas .block-title {
     font-size: 30px;
     color: #fff;
   }
-  /* line 496, ../sass/_content.scss */
+  /* line 575, ../sass/_content.scss */
   .ctas a {
     padding: 7px 30px;
     font-size: 14px;
     width: auto;
   }
-  /* line 500, ../sass/_content.scss */
+  /* line 579, ../sass/_content.scss */
   .ctas a:nth-child(2) {
     margin-left: 50px;
     margin-right: 50px;
   }
-  /* line 505, ../sass/_content.scss */
+  /* line 584, ../sass/_content.scss */
   .ctas div {
     margin: 0;
     padding: 0;
   }
 
-  /* line 510, ../sass/_content.scss */
+  /* line 589, ../sass/_content.scss */
   .quote {
     padding: 30px;
   }
-  /* line 512, ../sass/_content.scss */
+  /* line 591, ../sass/_content.scss */
   .quote .block-title {
     font-size: 26px;
   }
 
-  /* line 516, ../sass/_content.scss */
+  /* line 595, ../sass/_content.scss */
   .press img {
     margin-left: 20px;
     margin-right: 20px;
@@ -1500,6 +1594,56 @@ a {
     margin-top: 0;
     width: 100px;
     display: inline-block;
+  }
+
+  /* line 607, ../sass/_content.scss */
+  .new-features-page .content-block .block-content.image-right {
+    direction: rtl;
+  }
+  /* line 610, ../sass/_content.scss */
+  .new-features-page .content-block .block-content .column {
+    display: inline-block;
+    width: 49%;
+    box-sizing: border-box;
+    padding: 20px;
+    vertical-align: middle;
+  }
+  /* line 617, ../sass/_content.scss */
+  .new-features-page .content-block .block-content p {
+    direction: ltr;
+  }
+  /* line 627, ../sass/_content.scss */
+  .new-features-page .try-it-now {
+    display: inline-block;
+    width: 100%;
+    direction: ltr;
+  }
+  /* line 631, ../sass/_content.scss */
+  .new-features-page .try-it-now p {
+    vertical-align: middle;
+    width: 720px;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    line-height: 24px;
+  }
+  /* line 637, ../sass/_content.scss */
+  .new-features-page .try-it-now p span {
+    display: block;
+  }
+  /* line 641, ../sass/_content.scss */
+  .new-features-page .try-it-now a {
+    vertical-align: middle;
+    width: 152px;
+    display: inline-block;
+  }
+  /* line 647, ../sass/_content.scss */
+  .new-features-page .download {
+    text-align: left;
+  }
+  /* line 649, ../sass/_content.scss */
+  .new-features-page .download span {
+    display: inline-block;
+    margin-right: 15px;
   }
 }
 /* line 2, ../sass/_footer.scss */
@@ -1671,14 +1815,215 @@ footer .copyright span {
     width: 25%;
   }
 }
-/* line 6, ../sass/global.scss */
+/* line 7, ../sass/_popup.scss */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  z-index: 999;
+  display: none;
+}
+/* line 16, ../sass/_popup.scss */
+.popup-container .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 24, ../sass/_popup.scss */
+.popup-container .popup {
+  max-width: 320px;
+  max-height: 460px;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  height: 50%;
+}
+/* line 34, ../sass/_popup.scss */
+.popup-container .popup .close-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 50px;
+  color: #fff;
+  transform: rotate(45deg);
+  font-family: "Lato-Light";
+}
+/* line 43, ../sass/_popup.scss */
+.popup-container .popup .popup-content {
+  font-size: 0;
+  height: 100%;
+}
+/* line 46, ../sass/_popup.scss */
+.popup-container .popup .popup-content .column {
+  direction: ltr;
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+/* line 55, ../sass/_popup.scss */
+.popup-container .popup .popup-content .column.image {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  padding: 40px 30px;
+}
+/* line 63, ../sass/_popup.scss */
+.popup-container .popup .popup-content .column img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 67, ../sass/_popup.scss */
+.popup-container .popup .popup-content .column .title {
+  font-size: 24px;
+  color: #000;
+}
+/* line 71, ../sass/_popup.scss */
+.popup-container .popup .popup-content .column .desc {
+  font-size: 18px;
+  line-height: 24px;
+  color: #9b9b9b;
+}
+/* line 76, ../sass/_popup.scss */
+.popup-container .popup .popup-content .column a {
+  font-size: 22px;
+  color: #fff;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  background: #00C26B;
+  padding: 7px 0 10px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+@media screen and (min-height: 321px) and (orientation: landscape) {
+  /* line 95, ../sass/_popup.scss */
+  .popup-container .popup {
+    top: 20px;
+  }
+}
+@media screen and (min-height: 559px) and (orientation: portrait) {
+  /* line 103, ../sass/_popup.scss */
+  .popup-container .popup {
+    top: 20px;
+  }
+  /* line 106, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column {
+    height: 280px;
+    padding-top: 10px;
+  }
+  /* line 109, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column.image {
+    padding: 60px 20px;
+  }
+}
+@media screen and (max-height: 440px) and (orientation: landscape) {
+  /* line 121, ../sass/_popup.scss */
+  .popup-container .popup {
+    height: 320px;
+    max-height: inherit;
+    width: 568px;
+    max-width: inherit;
+  }
+  /* line 126, ../sass/_popup.scss */
+  .popup-container .popup .popup-content {
+    direction: rtl;
+  }
+  /* line 128, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column {
+    width: 50%;
+    vertical-align: top;
+    height: 320px;
+    padding: 5px 20px;
+    text-align: left;
+  }
+  /* line 134, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column.image {
+    padding: 80px 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-height: 1024px) and (min-height: 1024px) and (min-width: 768px) and (max-width: 768px) {
+  /* line 146, ../sass/_popup.scss */
+  .popup-container .popup {
+    top: 200px;
+  }
+  /* line 149, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column {
+    height: 280px;
+    padding-top: 10px;
+  }
+  /* line 152, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column.image {
+    padding: 60px 20px;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 162, ../sass/_popup.scss */
+  .popup-container {
+    padding-top: 20%;
+  }
+  /* line 164, ../sass/_popup.scss */
+  .popup-container .popup {
+    height: 380px;
+    max-height: inherit;
+    width: 960px;
+    max-width: inherit;
+    top: auto;
+  }
+  /* line 170, ../sass/_popup.scss */
+  .popup-container .popup .popup-content {
+    direction: rtl;
+  }
+  /* line 172, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column {
+    width: 480px;
+    vertical-align: top;
+    height: 380px;
+    padding: 70px 50px;
+    text-align: left;
+  }
+  /* line 178, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column.image {
+    padding: 90px 0;
+    text-align: center;
+  }
+  /* line 182, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column a {
+    max-width: 200px;
+  }
+  /* line 184, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column a:hover {
+    opacity: 0.9;
+  }
+}
+/* line 7, ../sass/global.scss */
 body {
   font-family: "Lato-Regular";
   padding: 0;
   margin: 0;
 }
 
-/* line 12, ../sass/global.scss */
+/* line 13, ../sass/global.scss */
 a {
   text-decoration: none;
 }
