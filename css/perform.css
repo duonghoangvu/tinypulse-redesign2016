@@ -1,117 +1,57 @@
-/* line 7, ../sass/perform.scss */
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("fonts/Lato-Regular.eot");
+  src: url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("fonts/Lato-Light.eot");
+  src: url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url("fonts/Lato-Semibold.eot");
+  src: url("fonts/Lato-Semibold.woff2") format("woff2"), url("fonts/Lato-Semibold.woff") format("woff"), url("fonts/Lato-Semibold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("fonts/Lato-Bold.eot");
+  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url("fonts/Lato-Thin.eot");
+  src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
+}
+/* line 3, ../sass/perform.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 10, ../sass/perform.scss */
-.engage-header-graphics {
-  background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-mobile-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px;
-  position: relative;
-  display: inline-block;
-  width: 100%;
+/* line 6, ../sass/perform.scss */
+.header-graphics {
+  background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage-header-mobile-bg.png);
 }
-/* line 19, ../sass/perform.scss */
-.engage-header-graphics:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 20%, rgba(246, 107, 28, 0.15) 100%);
+/* line 9, ../sass/perform.scss */
+.header-graphics .content h1 {
+  margin-top: 80px;
 }
-/* line 28, ../sass/perform.scss */
-.engage-header-graphics .content {
-  position: relative;
-  display: block;
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-/* line 34, ../sass/perform.scss */
-.engage-header-graphics .content h1 {
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  font-family: "Lato-Bold";
-  font-weight: normal;
-  font-size: 36px;
-  color: #ffffff;
-  letter-spacing: 1.12px;
-  text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
-  text-align: center;
-}
-/* line 48, ../sass/perform.scss */
-.engage-header-graphics .content .try-it-form {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  margin: 70px 0 50px 0;
-  font-size: 0;
-  border-radius: 5px;
-}
-/* line 54, ../sass/perform.scss */
-.engage-header-graphics .content .try-it-form input {
-  font-size: 18px;
-  padding: 7px;
-  min-height: inherit;
-  height: inherit;
-  line-height: 21px;
-  border-radius: 4px;
-  width: 100%;
-  border: 0;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  font-family: "Lato-Semibold";
-  font-size: 14px;
-  color: #9b9b9b;
-  letter-spacing: 0px;
-  text-align: left;
-}
-/* line 71, ../sass/perform.scss */
-.engage-header-graphics .content .try-it-form button {
-  background: #00C26B;
-  border-radius: 4px;
-  border: 0;
-  padding: 5px;
-  color: #fff;
-  width: 100%;
-  font-family: "Lato-Semibold";
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 19px;
-  padding: 8px;
-  text-transform: none;
-  margin: 0;
-  vertical-align: top;
-}
-/* line 88, ../sass/perform.scss */
-.engage-header-graphics .content .meet-consultant {
-  text-align: center;
-  padding-top: 30px;
-}
-/* line 91, ../sass/perform.scss */
-.engage-header-graphics .content .meet-consultant a {
-  font-size: 14px;
-  color: #fff;
-  font-family: "Lato-Semibold";
-  text-decoration: underline;
+/* line 12, ../sass/perform.scss */
+.header-graphics .content .try-it-form {
+  margin: 35px auto 50px;
 }
 
-/* line 100, ../sass/perform.scss */
+/* line 17, ../sass/perform.scss */
 .active {
   display: block;
 }
 
-/* line 103, ../sass/perform.scss */
+/* line 20, ../sass/perform.scss */
 .overview-desktop {
   display: none;
 }
 
-/* line 107, ../sass/perform.scss */
+/* line 24, ../sass/perform.scss */
 .overview .title {
   color: #1C94EE;
   font-size: 20px;
@@ -119,7 +59,7 @@
   text-align: left;
   padding: 0 15px;
 }
-/* line 114, ../sass/perform.scss */
+/* line 31, ../sass/perform.scss */
 .overview .content-desc {
   font-size: 18px;
   color: #000;
@@ -129,26 +69,26 @@
   line-height: 25px;
   padding: 0 15px;
 }
-/* line 124, ../sass/perform.scss */
+/* line 41, ../sass/perform.scss */
 .overview .slide-icon img {
   width: 85px;
   margin: 30px;
 }
-/* line 130, ../sass/perform.scss */
+/* line 47, ../sass/perform.scss */
 .overview .overview-img img {
   width: 100%;
   border-bottom: 1px solid #DADADA;
 }
-/* line 135, ../sass/perform.scss */
+/* line 52, ../sass/perform.scss */
 .overview .block-content {
   display: none;
 }
-/* line 137, ../sass/perform.scss */
-.overview .block-content.active {
-  display: block;
+/* line 55, ../sass/perform.scss */
+.overview .active {
+  display: block !important;
 }
 
-/* line 143, ../sass/perform.scss */
+/* line 60, ../sass/perform.scss */
 .features .feature {
   text-align: left;
   font-size: 16px;
@@ -157,75 +97,75 @@
   padding-bottom: 30px;
   display: block;
 }
-/* line 151, ../sass/perform.scss */
+/* line 68, ../sass/perform.scss */
 .features .content-title {
   font-size: 20px;
   font-family: "Lato-Regular";
   padding: 0 15px;
 }
-/* line 156, ../sass/perform.scss */
+/* line 73, ../sass/perform.scss */
 .features p {
   padding: 0 15px;
 }
-/* line 159, ../sass/perform.scss */
+/* line 76, ../sass/perform.scss */
 .features .icon {
   text-align: center;
 }
-/* line 162, ../sass/perform.scss */
+/* line 79, ../sass/perform.scss */
 .features img {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 166, ../sass/perform.scss */
+/* line 83, ../sass/perform.scss */
 .features .feature-1 {
   padding-bottom: 0;
   max-height: 398px;
   overflow: hidden;
   margin-bottom: 40px;
 }
-/* line 171, ../sass/perform.scss */
+/* line 88, ../sass/perform.scss */
 .features .feature-1 img {
   max-width: 298px;
 }
-/* line 175, ../sass/perform.scss */
+/* line 92, ../sass/perform.scss */
 .features .feature-2 img {
   max-width: 260px;
   margin: 70px 0 50px;
 }
-/* line 179, ../sass/perform.scss */
+/* line 96, ../sass/perform.scss */
 .features .feature-2, .features .feature-3 {
   border-top: 1px solid #DADADA;
 }
-/* line 182, ../sass/perform.scss */
+/* line 99, ../sass/perform.scss */
 .features .feature-3 img {
   margin-top: 20px;
   max-width: 450px;
 }
-/* line 186, ../sass/perform.scss */
+/* line 103, ../sass/perform.scss */
 .features .feature-desc {
   max-width: 570px;
   margin: 0 auto;
 }
-/* line 190, ../sass/perform.scss */
+/* line 107, ../sass/perform.scss */
 .features strong {
   font-family: "Lato-Bold";
 }
-/* line 193, ../sass/perform.scss */
+/* line 110, ../sass/perform.scss */
 .features .download {
   text-align: center;
 }
-/* line 195, ../sass/perform.scss */
+/* line 112, ../sass/perform.scss */
 .features .download span {
   display: block;
   margin-bottom: 10px;
 }
-/* line 199, ../sass/perform.scss */
+/* line 116, ../sass/perform.scss */
 .features .download a {
   display: inline-block;
   clear: both;
   vertical-align: middle;
 }
-/* line 204, ../sass/perform.scss */
+/* line 121, ../sass/perform.scss */
 .features .download .store {
   width: 100px;
   height: 34px;
@@ -233,38 +173,34 @@
   margin-right: 8px;
   background: url(http://www.tinypulse.com/hubfs/redesign_2016/stores.png) no-repeat;
 }
-/* line 211, ../sass/perform.scss */
+/* line 128, ../sass/perform.scss */
 .features .download .google-store {
   background-position: -110px 0;
 }
 
-/* line 216, ../sass/perform.scss */
+/* line 133, ../sass/perform.scss */
 .how-it-works-desktop {
   display: none;
 }
 
-/* line 220, ../sass/perform.scss */
+/* line 137, ../sass/perform.scss */
 .how-it-works .block-content {
   line-height: 24px;
   font-size: 16px;
   font-family: "Lato-Light";
   display: none;
-  height: 570px;
+  height: 500px;
   position: relative;
   max-width: 570px;
   margin: 0 auto;
 }
-/* line 229, ../sass/perform.scss */
-.how-it-works .block-content.active {
-  display: block;
-}
-/* line 233, ../sass/perform.scss */
+/* line 147, ../sass/perform.scss */
 .how-it-works img {
   width: 70px;
   margin-bottom: 30px;
   margin-top: 15px;
 }
-/* line 238, ../sass/perform.scss */
+/* line 152, ../sass/perform.scss */
 .how-it-works .content-title {
   font-size: 20px;
   color: #1C94EE;
@@ -272,23 +208,32 @@
   text-align: left;
   padding: 0 15px;
 }
-/* line 245, ../sass/perform.scss */
+/* line 159, ../sass/perform.scss */
 .how-it-works p {
   text-align: left;
   padding: 0 15px;
 }
-/* line 249, ../sass/perform.scss */
+/* line 163, ../sass/perform.scss */
 .how-it-works .slide-icon {
   position: absolute;
   bottom: 0px;
   width: 100%;
 }
-/* line 253, ../sass/perform.scss */
+/* line 167, ../sass/perform.scss */
 .how-it-works .slide-icon img {
   width: 135px;
 }
+/* line 171, ../sass/perform.scss */
+.how-it-works .active {
+  display: block !important;
+}
+/* line 174, ../sass/perform.scss */
+.how-it-works .icon {
+  height: 150px;
+  max-height: 150px;
+}
 
-/* line 258, ../sass/perform.scss */
+/* line 179, ../sass/perform.scss */
 .why {
   color: #FFF;
   font-family: "Lato-Light";
@@ -299,99 +244,175 @@
   background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
   padding-bottom: 40px;
 }
-/* line 265, ../sass/perform.scss */
+/* line 186, ../sass/perform.scss */
 .why .block-desc, .why .block-title {
   color: #FFF;
 }
-/* line 268, ../sass/perform.scss */
+/* line 189, ../sass/perform.scss */
 .why .content-title {
   font-size: 16px;
   font-family: "Lato-Semibold";
   line-height: 19px;
 }
-/* line 273, ../sass/perform.scss */
+/* line 194, ../sass/perform.scss */
 .why .icon img {
-  width: 100px;
+  width: 60px;
   margin: 20px 0px;
 }
-/* line 277, ../sass/perform.scss */
+/* line 198, ../sass/perform.scss */
 .why .content-desc {
   max-width: 200px;
   margin: 0 auto 40px;
   font-size: 14px;
 }
-/* line 282, ../sass/perform.scss */
-.why .speaker {
-  margin: 0 15px;
-  line-height: 20px;
-  font-family: "Lato-Light";
-  display: none;
-}
-/* line 287, ../sass/perform.scss */
-.why .speaker.active {
+/* line 203, ../sass/perform.scss */
+.why .nav-blocked .xs-slider-nav:before {
   display: block;
 }
-/* line 290, ../sass/perform.scss */
+/* line 206, ../sass/perform.scss */
+.why .touch-blocked:before {
+  display: block;
+}
+/* line 209, ../sass/perform.scss */
+.why .speakers {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 218, ../sass/perform.scss */
+.why .speakers:before {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+/* line 228, ../sass/perform.scss */
+.why .speakers .speaker-container {
+  -webkit-backface-visibility: hidden;
+  height: 100%;
+}
+/* line 231, ../sass/perform.scss */
+.why .speakers .speaker-container:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+}
+/* line 237, ../sass/perform.scss */
+.why .speakers .speaker-container .speaker {
+  float: left;
+}
+/* line 242, ../sass/perform.scss */
+.why .indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background: transparent;
+  display: inline-block;
+  margin: 0 3px;
+  border: 2px solid #FFF;
+  transition: all 0.3s;
+}
+/* line 252, ../sass/perform.scss */
+.why .indicator.active {
+  background-color: #FFF;
+}
+/* line 255, ../sass/perform.scss */
+.why .indicators-wrapper {
+  width: 85px;
+  padding: 10px 0 7px 0;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 19px;
+  text-align: center;
+}
+/* line 263, ../sass/perform.scss */
+.why .xs-slider-indicators {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+/* line 268, ../sass/perform.scss */
+.why .slider-nav {
+  display: none;
+}
+/* line 271, ../sass/perform.scss */
+.why .speaker {
+  /*margin: 0 15px;*/
+  line-height: 20px;
+  font-family: "Lato-Light";
+  /*display: none;*/
+}
+/* line 276, ../sass/perform.scss */
 .why .speaker .speaker-content {
   background-color: rgba(255, 255, 255, 0.2);
-  height: 500px;
+  height: 450px;
   max-width: 300px;
   margin: 0 auto;
 }
-/* line 296, ../sass/perform.scss */
+/* line 282, ../sass/perform.scss */
 .why .speaker .speaker-desc {
   font-size: 14px;
 }
-/* line 299, ../sass/perform.scss */
+/* line 285, ../sass/perform.scss */
 .why .speaker img {
   width: 100%;
   display: block;
   max-width: 300px;
 }
-/* line 304, ../sass/perform.scss */
+/* line 290, ../sass/perform.scss */
 .why .speaker p {
   padding: 5px 15px;
 }
-/* line 307, ../sass/perform.scss */
+/* line 293, ../sass/perform.scss */
 .why .speaker .slide-icon {
   text-align: center;
   margin: 30px 0px;
 }
-/* line 310, ../sass/perform.scss */
+/* line 296, ../sass/perform.scss */
 .why .speaker .slide-icon img {
   width: 85px;
   margin: 0 auto;
 }
-/* line 315, ../sass/perform.scss */
+/* line 301, ../sass/perform.scss */
 .why .speaker .speaker-name {
   font-family: "Lato-Regular";
   line-height: 22px;
 }
-/* line 320, ../sass/perform.scss */
-.why .prev-speaker, .why .next-speaker {
-  display: none;
+/* line 306, ../sass/perform.scss */
+.why .read-more-section {
+  margin: 0 15px;
 }
-/* line 323, ../sass/perform.scss */
+/* line 309, ../sass/perform.scss */
 .why .read-more {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   border: 2px solid #FFF;
   text-align: center;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px;
   border-radius: 2px;
   font-size: 20px;
-  font-family: "Lato-Regular";
-  display: block;
-  color: #fff;
-  transition: all 0.3s;
+  font-family: "Lato-Bold";
+  color: #FFF;
+  box-sizing: border-box;
 }
-/* line 335, ../sass/perform.scss */
+/* line 321, ../sass/perform.scss */
 .why .read-more:hover {
   background: #fff;
-  color: #000;
+  color: #333;
 }
 
-/* line 341, ../sass/perform.scss */
+/* line 327, ../sass/perform.scss */
 .clients {
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
   /* FF3.6-15 */
@@ -402,155 +423,174 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
   font-size: 0;
+  padding: 30px 10px 20px 10px;
 }
-/* line 347, ../sass/perform.scss */
+/* line 334, ../sass/perform.scss */
+.clients .container {
+  max-width: 100%;
+}
+/* line 337, ../sass/perform.scss */
 .clients .block-title {
   color: #FFF;
   font-size: 30px;
   font-family: "Lato-Regular";
   line-height: 36px;
   width: 80%;
+  margin-bottom: 7px;
 }
-/* line 354, ../sass/perform.scss */
-.clients .brands {
-  background: none;
-}
-/* line 356, ../sass/perform.scss */
-.clients .brands img {
-  display: inline-block;
-  vertical-align: middle;
-  width: 110px;
-  height: auto;
-  margin: 10px;
-}
-/* line 364, ../sass/perform.scss */
-.clients .try-it-form {
-  padding: 30px 20px 50px;
-  font-size: 0;
-  border-radius: 5px;
+/* line 345, ../sass/perform.scss */
+.clients .client-logos {
+  padding: 30px 15px;
   text-align: center;
 }
-/* line 369, ../sass/perform.scss */
-.clients .try-it-form input {
-  font-size: 18px;
-  padding: 7px;
-  min-height: inherit;
-  height: inherit;
-  line-height: 21px;
-  border-radius: 4px;
-  width: 100%;
-  border: 0;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  font-family: "Lato-Semibold";
-  font-size: 14px;
-  color: #9b9b9b;
-  letter-spacing: 0px;
-  text-align: left;
-  max-width: 500px;
+/* line 349, ../sass/perform.scss */
+.clients img {
+  margin: 10px 20px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
 }
-/* line 387, ../sass/perform.scss */
-.clients .try-it-form button {
-  background: #00C26B;
-  border-radius: 4px;
-  border: 0;
-  padding: 5px;
-  color: #fff;
-  width: 100%;
-  font-family: "Lato-Semibold";
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 19px;
-  padding: 8px;
-  text-transform: none;
-  margin: 0;
+/* line 355, ../sass/perform.scss */
+.clients .try-it-form {
+  padding: 17px 20px;
+  font-size: 0;
+  border-radius: 5px;
+  max-width: 380px;
+  margin: 0 auto 50px;
+}
+/* line 361, ../sass/perform.scss */
+.clients .try-it-form input, .clients .try-it-form button {
+  display: inline-block;
   vertical-align: top;
-  max-width: 500px;
+  padding: 0;
+  border-radius: 4px;
+  margin: 0;
+  border: 0;
+  transition: width 0.3s;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 0 10px;
+  min-height: inherit;
+  text-transform: none;
+}
+/* line 375, ../sass/perform.scss */
+.clients .try-it-form input {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Lato-Regular";
+  font-size: 15px;
+}
+/* line 383, ../sass/perform.scss */
+.clients .try-it-form button {
+  width: 100%;
+  background: #00C26B;
+  color: #fff;
+  font-family: "Lato-Semibold";
+  font-size: 16px;
+}
+/* line 389, ../sass/perform.scss */
+.clients .try-it-form button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+/* line 394, ../sass/perform.scss */
+.clients .try-it-form .hbspt-form {
+  height: 0;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 407, ../sass/perform.scss */
-  .engage-header-graphics {
+  /* line 401, ../sass/perform.scss */
+  .header-graphics {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
-    height: 650px;
+    height: 400px;
   }
-  /* line 410, ../sass/perform.scss */
-  .engage-header-graphics:before {
+  /* line 404, ../sass/perform.scss */
+  .header-graphics:before {
     display: none;
   }
-  /* line 413, ../sass/perform.scss */
-  .engage-header-graphics .content {
-    position: relative;
-    top: 50%;
-    max-width: 600px;
-    margin-top: -200px;
+  /* line 407, ../sass/perform.scss */
+  .header-graphics .content {
+    top: 0;
+    margin-top: 30px;
   }
-  /* line 418, ../sass/perform.scss */
-  .engage-header-graphics .content h1 {
-    font-size: 48px;
-    margin-bottom: 50px;
-  }
-  /* line 422, ../sass/perform.scss */
-  .engage-header-graphics .content .try-it-form {
-    max-width: 450px;
-    box-sizing: border-box;
+  /* line 410, ../sass/perform.scss */
+  .header-graphics .content .try-it-form {
     margin: 0 auto;
   }
-  /* line 426, ../sass/perform.scss */
-  .engage-header-graphics .content .try-it-form input {
-    font-size: 18px;
-    padding: 7px;
-    width: 72%;
-    border-radius: 4px 0 0 4px;
-  }
-  /* line 432, ../sass/perform.scss */
-  .engage-header-graphics .content .try-it-form button {
-    font-size: 18px;
-    line-height: 19px;
-    padding: 8px;
-    width: 28%;
-    border-radius: 0 4px 4px 0;
+
+  /* line 415, ../sass/perform.scss */
+  .main-content {
+    overflow: hidden;
   }
 
-  /* line 442, ../sass/perform.scss */
+  /* line 418, ../sass/perform.scss */
   .overview {
     display: none;
   }
 
-  /* line 445, ../sass/perform.scss */
+  /* line 421, ../sass/perform.scss */
   .overview-desktop {
     display: block;
     font-size: 0px;
+    /*.overview-content:hover .overview-block:hover {*/
+    /*.overview-img {*/
+    /*display: block;*/
+    /*transition: all ease .5s;*/
+    /*}*/
+    /*.block-content {*/
+    /*[>background-color: rgba(28,148,238,0.1);<]*/
+    /*transition: all .3s;*/
+    /*.title {*/
+    /*color: #1C94EE;*/
+    /*}*/
+    /*}*/
+    /*}*/
+    /*.overview-img, .overview-content:hover .overview-img{*/
+    /*display: none;*/
+    /*transition: all ease .5s;*/
+    /*}*/
+    /*.block-content, .overview-content:hover .block-content{*/
+    /*background-color: #FFF;*/
+    /*transition: all .3s;*/
+    /*}*/
   }
-  /* line 448, ../sass/perform.scss */
+  /* line 424, ../sass/perform.scss */
   .overview-desktop .overview-content {
     position: relative;
-    height: 495px;
+    height: 600px;
     border-bottom: 1px solid #DADADA;
   }
-  /* line 453, ../sass/perform.scss */
+  /* line 429, ../sass/perform.scss */
   .overview-desktop .block-content {
     text-align: left;
     padding: 15px;
     width: 45%;
     display: inline-block;
     vertical-align: top;
+    border-radius: 3px;
   }
-  /* line 460, ../sass/perform.scss */
+  /* line 436, ../sass/perform.scss */
+  .overview-desktop .block-content:hover {
+    cursor: pointer;
+  }
+  /* line 440, ../sass/perform.scss */
   .overview-desktop .content-desc {
     font-size: 16px;
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 465, ../sass/perform.scss */
+  /* line 445, ../sass/perform.scss */
   .overview-desktop .title {
     font-size: 24px;
     font-family: "Lato-Regular";
     line-height: 29px;
-    color: #1C94EE;
+    color: #000;
     margin-bottom: 15px;
   }
-  /* line 472, ../sass/perform.scss */
+  /* line 452, ../sass/perform.scss */
   .overview-desktop .right-side {
     width: 48%;
     display: inline-block;
@@ -559,144 +599,139 @@
     position: absolute;
     top: 0;
   }
-  /* line 479, ../sass/perform.scss */
+  /* line 459, ../sass/perform.scss */
   .overview-desktop .right-side .overview-img {
-    height: 495px;
-    background-size: cover;
+    height: 600px;
+    width: 900px;
+    background-size: 900px auto;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: top;
     display: none;
   }
-  /* line 486, ../sass/perform.scss */
+  /* line 467, ../sass/perform.scss */
   .overview-desktop .right-side .img-1 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/perform/overview/overview-1.png);
   }
-  /* line 489, ../sass/perform.scss */
+  /* line 470, ../sass/perform.scss */
   .overview-desktop .right-side .img-2 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/perform/overview/overview-2.png);
   }
-  /* line 492, ../sass/perform.scss */
+  /* line 473, ../sass/perform.scss */
   .overview-desktop .right-side .img-3 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/perform/overview/overview-3.png);
   }
-  /* line 496, ../sass/perform.scss */
+  /* line 477, ../sass/perform.scss */
   .overview-desktop .overview-default .block-content {
     margin-top: 30px;
   }
-  /* line 500, ../sass/perform.scss */
-  .overview-desktop .overview-content:hover .overview-block:hover .overview-img, .overview-desktop .overview-content .overview-default .overview-img {
+  /* line 481, ../sass/perform.scss */
+  .overview-desktop .overview-block.selected .overview-img {
     display: block;
     transition: all ease .5s;
   }
-  /* line 504, ../sass/perform.scss */
-  .overview-desktop .overview-content:hover .overview-block:hover .block-content, .overview-desktop .overview-content .overview-default .block-content {
+  /* line 485, ../sass/perform.scss */
+  .overview-desktop .overview-block.selected .block-content {
     background-color: rgba(28, 148, 238, 0.1);
     transition: all .3s;
   }
-  /* line 509, ../sass/perform.scss */
-  .overview-desktop .overview-img, .overview-desktop .overview-content:hover .overview-img {
-    display: none;
-    transition: all ease .5s;
-  }
-  /* line 513, ../sass/perform.scss */
-  .overview-desktop .block-content, .overview-desktop .overview-content:hover .block-content {
-    background-color: #FFF;
-    transition: all .3s;
+  /* line 488, ../sass/perform.scss */
+  .overview-desktop .overview-block.selected .block-content .title {
+    color: #1C94EE;
   }
 
-  /* line 518, ../sass/perform.scss */
+  /* line 515, ../sass/perform.scss */
   .features {
     font-size: 0;
   }
-  /* line 520, ../sass/perform.scss */
+  /* line 517, ../sass/perform.scss */
   .features .feature:first-child {
     padding-bottom: 0;
   }
-  /* line 523, ../sass/perform.scss */
+  /* line 520, ../sass/perform.scss */
   .features .icon {
     display: inline-block;
     width: 50%;
   }
-  /* line 527, ../sass/perform.scss */
+  /* line 524, ../sass/perform.scss */
   .features .feature-desc {
     display: inline-block;
     width: 50%;
   }
-  /* line 531, ../sass/perform.scss */
+  /* line 528, ../sass/perform.scss */
   .features .feature-1 {
     margin-bottom: 0;
     position: relative;
     top: 7px;
   }
-  /* line 536, ../sass/perform.scss */
+  /* line 533, ../sass/perform.scss */
   .features .feature-2 {
     float: right;
     text-align: center;
   }
-  /* line 539, ../sass/perform.scss */
+  /* line 536, ../sass/perform.scss */
   .features .feature-2 img {
     max-width: 380px;
   }
-  /* line 543, ../sass/perform.scss */
+  /* line 540, ../sass/perform.scss */
   .features .feature-desc-1 {
     float: right;
     margin-top: 20px;
   }
-  /* line 547, ../sass/perform.scss */
+  /* line 544, ../sass/perform.scss */
   .features .feature-desc-2 {
     border-top: 1px solid #DADADA;
   }
-  /* line 549, ../sass/perform.scss */
+  /* line 546, ../sass/perform.scss */
   .features .feature-desc-2 .content-title {
     margin-top: 90px;
   }
-  /* line 553, ../sass/perform.scss */
+  /* line 550, ../sass/perform.scss */
   .features .feature-3 img {
     margin-top: 110px;
   }
-  /* line 556, ../sass/perform.scss */
+  /* line 553, ../sass/perform.scss */
   .features .feature-desc-3 {
     float: right;
     border-top: 1px solid #DADADA;
   }
-  /* line 559, ../sass/perform.scss */
+  /* line 556, ../sass/perform.scss */
   .features .feature-desc-3 .content-title {
     margin-top: 120px;
   }
-  /* line 563, ../sass/perform.scss */
+  /* line 560, ../sass/perform.scss */
   .features p {
     padding: 10px 15px;
   }
-  /* line 566, ../sass/perform.scss */
+  /* line 563, ../sass/perform.scss */
   .features .download {
     text-align: left;
   }
-  /* line 568, ../sass/perform.scss */
+  /* line 565, ../sass/perform.scss */
   .features .download span {
     display: inline-block;
     margin-right: 15px;
   }
 
-  /* line 575, ../sass/perform.scss */
+  /* line 572, ../sass/perform.scss */
   .why .block-content {
     display: inline-block;
     width: 33%;
     text-align: center;
     font-size: 0;
   }
-  /* line 581, ../sass/perform.scss */
+  /* line 578, ../sass/perform.scss */
   .why .speakers {
     text-align: center;
   }
-  /* line 584, ../sass/perform.scss */
+  /* line 581, ../sass/perform.scss */
   .why .speakers .speaker .slide-icon {
     display: none;
   }
-  /* line 587, ../sass/perform.scss */
+  /* line 584, ../sass/perform.scss */
   .why .speakers .speaker .speaker-img {
     display: inline-block;
   }
-  /* line 590, ../sass/perform.scss */
+  /* line 587, ../sass/perform.scss */
   .why .speakers .speaker .speaker-desc {
     max-width: 500px;
     display: inline-block;
@@ -705,24 +740,24 @@
     position: relative;
     text-align: left;
   }
-  /* line 597, ../sass/perform.scss */
+  /* line 594, ../sass/perform.scss */
   .why .speakers .speaker .speaker-desc .speaker-name {
     position: absolute;
     right: 0;
     bottom: 0;
   }
-  /* line 603, ../sass/perform.scss */
+  /* line 600, ../sass/perform.scss */
   .why .speakers .speaker .speaker-content {
     max-width: 800px;
     font-size: 0;
     height: 200px;
     display: inline-block;
   }
-  /* line 608, ../sass/perform.scss */
+  /* line 605, ../sass/perform.scss */
   .why .speakers .speaker .speaker-content p {
     padding: 0 15px;
   }
-  /* line 614, ../sass/perform.scss */
+  /* line 611, ../sass/perform.scss */
   .why .prev-speaker, .why .next-speaker {
     display: inline-block;
     position: relative;
@@ -731,46 +766,70 @@
     top: 50%;
     transform: translate(0, 35%);
   }
-  /* line 622, ../sass/perform.scss */
+  /* line 619, ../sass/perform.scss */
   .why .prev-speaker {
     margin-right: 15px;
   }
-  /* line 625, ../sass/perform.scss */
+  /* line 622, ../sass/perform.scss */
   .why .next-speaker {
     margin-left: 15px;
   }
-  /* line 628, ../sass/perform.scss */
+  /* line 625, ../sass/perform.scss */
   .why .read-more {
     margin-top: 50px;
   }
-  /* line 631, ../sass/perform.scss */
+  /* line 629, ../sass/perform.scss */
+  .why .control-button:hover {
+    cursor: pointer;
+  }
+  /* line 632, ../sass/perform.scss */
   .why .control-button img {
     display: inline-block;
     max-width: 30px;
-    cursor: pointer;
   }
 
-  /* line 637, ../sass/perform.scss */
+  /* line 638, ../sass/perform.scss */
   .how-it-works {
     display: none;
   }
 
-  /* line 640, ../sass/perform.scss */
+  /* line 641, ../sass/perform.scss */
   .how-it-works-desktop {
     display: block;
     padding-left: 15px;
     padding-right: 15px;
     height: 500px;
+    /*.hiw-icons:hover .hiw-content:hover {*/
+    /*.icon {*/
+    /*background-position-y: -117px;*/
+    /*}*/
+    /*.block-content {*/
+    /*display: block;*/
+    /*transition: all .3s;*/
+    /*}*/
+    /*.hiw-wrapper {*/
+    /*background-color: rgba(28, 148, 238, 0.1);*/
+    /*}*/
+    /*}*/
+    /*.block-content, .hiw-icons:hover .block-content{*/
+    /*display: none;*/
+    /*transition: all .3s;*/
+    /*}*/
   }
-  /* line 645, ../sass/perform.scss */
+  /* line 646, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-content:hover {
+    cursor: pointer;
+  }
+  /* line 649, ../sass/perform.scss */
   .how-it-works-desktop .block-content {
     margin-bottom: 100px;
     margin-top: 60px;
     width: 900px;
     position: absolute;
     left: 0;
+    display: none;
   }
-  /* line 651, ../sass/perform.scss */
+  /* line 656, ../sass/perform.scss */
   .how-it-works-desktop .block-content .content-title {
     font-size: 20px;
     color: #1C94EE;
@@ -778,7 +837,7 @@
     text-align: left;
     padding: 0 15px;
   }
-  /* line 658, ../sass/perform.scss */
+  /* line 663, ../sass/perform.scss */
   .how-it-works-desktop .block-content p {
     text-align: left;
     padding: 0 15px;
@@ -786,7 +845,7 @@
     font-family: "Lato-Light";
     line-height: 24px;
   }
-  /* line 666, ../sass/perform.scss */
+  /* line 671, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons {
     padding-left: 15px;
     padding-right: 15px;
@@ -794,18 +853,18 @@
     font-size: 0px;
     position: relative;
   }
-  /* line 672, ../sass/perform.scss */
+  /* line 677, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-content {
     display: inline-block;
     width: 20%;
     vertical-align: top;
   }
-  /* line 677, ../sass/perform.scss */
+  /* line 682, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-icon {
     text-align: center;
     position: relative;
   }
-  /* line 681, ../sass/perform.scss */
+  /* line 686, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .icon {
     width: 63px;
     height: 94px;
@@ -813,27 +872,27 @@
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/perform/how-it-works/perform-hiw-small-sprite.png);
     background-repeat: no-repeat;
   }
-  /* line 688, ../sass/perform.scss */
+  /* line 693, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-1 {
     background-position: 0 0;
   }
-  /* line 691, ../sass/perform.scss */
+  /* line 696, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-2 {
     background-position: -83px 0;
   }
-  /* line 694, ../sass/perform.scss */
+  /* line 699, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-3 {
     background-position: -168px 0;
   }
-  /* line 697, ../sass/perform.scss */
+  /* line 702, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-4 {
     background-position: -253px 0;
   }
-  /* line 700, ../sass/perform.scss */
+  /* line 705, ../sass/perform.scss */
   .how-it-works-desktop .hiw-icons .hiw-5 {
     background-position: -338px 0;
   }
-  /* line 704, ../sass/perform.scss */
+  /* line 709, ../sass/perform.scss */
   .how-it-works-desktop .hiw-wrapper {
     width: 90px;
     height: 90px;
@@ -844,69 +903,99 @@
     left: 0;
     right: 0;
   }
-  /* line 715, ../sass/perform.scss */
-  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .icon, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .icon, .how-it-works-desktop .hiw-icons .hiw-default .icon {
+  /* line 720, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-content.selected .icon {
     background-position-y: -117px;
   }
-  /* line 718, ../sass/perform.scss */
-  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .block-content, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .block-content, .how-it-works-desktop .hiw-icons .hiw-default .block-content {
+  /* line 723, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-content.selected .block-content {
     display: block;
     transition: all .3s;
   }
-  /* line 722, ../sass/perform.scss */
-  .how-it-works-desktop .hiw-icons:hover .hiw-content:hover .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-content:focus .hiw-wrapper, .how-it-works-desktop .hiw-icons .hiw-default .hiw-wrapper {
+  /* line 727, ../sass/perform.scss */
+  .how-it-works-desktop .hiw-content.selected .hiw-wrapper {
     background-color: rgba(28, 148, 238, 0.1);
   }
-  /* line 727, ../sass/perform.scss */
-  .how-it-works-desktop .hiw-icon .icon, .how-it-works-desktop .hiw-icons:hover .hiw-icon .icon, .how-it-works-desktop .hiw-icons:focus .hiw-icon .icon {
-    background-position-y: 2px;
-  }
-  /* line 730, ../sass/perform.scss */
-  .how-it-works-desktop .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:hover .hiw-icon .hiw-wrapper, .how-it-works-desktop .hiw-icons:focus .hiw-icon .hiw-wrapper {
-    background-color: transparent;
-  }
-  /* line 734, ../sass/perform.scss */
-  .how-it-works-desktop .block-content, .how-it-works-desktop .hiw-icons:hover .block-content {
-    display: none;
-    transition: all .3s;
-  }
 
-  /* line 740, ../sass/perform.scss */
-  .clients .container {
-    max-width: 100%;
+  /* line 749, ../sass/perform.scss */
+  .clients .client {
+    width: 15%;
+    text-align: center;
   }
-  /* line 743, ../sass/perform.scss */
+  /* line 753, ../sass/perform.scss */
+  .clients .client-logos {
+    text-align: center;
+  }
+  /* line 756, ../sass/perform.scss */
   .clients .block-title {
     width: 100%;
+    margin-top: 20px;
   }
-  /* line 747, ../sass/perform.scss */
-  .clients .brands img {
+  /* line 760, ../sass/perform.scss */
+  .clients img {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 0;
     width: 100px;
     display: inline-block;
   }
-  /* line 756, ../sass/perform.scss */
+  /* line 768, ../sass/perform.scss */
   .clients .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
+    padding-bottom: 30px;
   }
-  /* line 760, ../sass/perform.scss */
+  /* line 773, ../sass/perform.scss */
   .clients .try-it-form input {
     font-size: 14px;
-    padding: 7px;
+    padding: 7px 17px;
     width: 67%;
     border-radius: 4px 0 0 4px;
+    text-align: left;
   }
-  /* line 766, ../sass/perform.scss */
+  /* line 780, ../sass/perform.scss */
   .clients .try-it-form button {
     font-size: 14px;
     line-height: 19px;
     padding: 8px;
     width: 33%;
     border-radius: 0 4px 4px 0;
+  }
+
+  /* line 789, ../sass/perform.scss */
+  .slider-nav {
+    display: block !important;
+  }
+
+  /* line 792, ../sass/perform.scss */
+  .xs-slider-indicators {
+    display: none !important;
+  }
+
+  /* line 795, ../sass/perform.scss */
+  .slider-nav {
+    position: absolute;
+    top: 33%;
+    font-size: 0;
+    width: 100%;
+  }
+  /* line 800, ../sass/perform.scss */
+  .slider-nav .control-nav {
+    position: absolute;
+    cursor: pointer;
+  }
+  /* line 804, ../sass/perform.scss */
+  .slider-nav .prev {
+    left: 0;
+  }
+  /* line 807, ../sass/perform.scss */
+  .slider-nav .next {
+    right: 0;
+  }
+  /* line 810, ../sass/perform.scss */
+  .slider-nav img {
+    height: 45px;
   }
 }

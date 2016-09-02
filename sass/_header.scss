@@ -467,9 +467,10 @@ header{
     .try-it-form{
       background: rgba(0,0,0,0.6);
       padding: 25px;
-      margin: 70px 0 50px 0;
       font-size: 0;
       border-radius: 5px;
+      max-width: 325px;
+      margin: 70px auto 50px;
       input, button{
         display: inline-block;
         vertical-align: top;  
