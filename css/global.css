@@ -1902,42 +1902,40 @@ footer .copyright span {
 }
 /* line 24, ../sass/_popup.scss */
 .popup-container .popup {
-  max-width: 320px;
-  max-height: 460px;
-  width: 100%;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 0;
+  width: 320px;
+  height: 500px;
   position: absolute;
-  height: 50%;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -250px;
 }
-/* line 34, ../sass/_popup.scss */
+/* line 32, ../sass/_popup.scss */
 .popup-container .popup .close-btn {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: -10px;
+  right: 5px;
   font-size: 50px;
   color: #fff;
   transform: rotate(45deg);
   font-family: "Lato-Light";
 }
-/* line 43, ../sass/_popup.scss */
+/* line 41, ../sass/_popup.scss */
 .popup-container .popup .popup-content {
   font-size: 0;
   height: 100%;
 }
-/* line 46, ../sass/_popup.scss */
+/* line 44, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column {
   direction: ltr;
   display: inline-block;
-  height: 100%;
+  /*height: 100%;*/
   text-align: center;
   background: #fff;
   box-sizing: border-box;
   padding: 0 10px;
 }
-/* line 55, ../sass/_popup.scss */
+/* line 53, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column.image {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -1950,116 +1948,123 @@ footer .copyright span {
   /* IE6-9 fallback on horizontal gradient */
   padding: 40px 30px;
 }
-/* line 63, ../sass/_popup.scss */
+/* line 61, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column img {
   max-width: 100%;
   height: auto;
 }
-/* line 67, ../sass/_popup.scss */
+/* line 65, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column .title {
   font-size: 24px;
   color: #000;
 }
-/* line 71, ../sass/_popup.scss */
+/* line 69, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column .desc {
   font-size: 18px;
   line-height: 24px;
   color: #9b9b9b;
 }
-/* line 76, ../sass/_popup.scss */
+/* line 74, ../sass/_popup.scss */
+.popup-container .popup .popup-content .column .learn-more {
+  margin: 36px 10px 30px;
+}
+/* line 77, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column a {
   font-size: 22px;
   color: #fff;
-  width: 100%;
-  max-width: 280px;
+  width: 280px;
   text-align: center;
   background: #00C26B;
-  padding: 7px 0 10px;
-  display: inline-block;
   border-radius: 3px;
-  margin-top: 20px;
+  display: block;
+  padding: 10px 0px;
 }
 
-@media screen and (min-height: 321px) and (orientation: landscape) {
-  /* line 95, ../sass/_popup.scss */
-  .popup-container .popup {
-    top: 20px;
-  }
-}
-@media screen and (min-height: 559px) and (orientation: portrait) {
-  /* line 103, ../sass/_popup.scss */
-  .popup-container .popup {
-    top: 20px;
-  }
-  /* line 106, ../sass/_popup.scss */
-  .popup-container .popup .popup-content .column {
-    height: 280px;
-    padding-top: 10px;
-  }
-  /* line 109, ../sass/_popup.scss */
-  .popup-container .popup .popup-content .column.image {
-    padding: 60px 20px;
-  }
-}
-@media screen and (max-height: 440px) and (orientation: landscape) {
-  /* line 121, ../sass/_popup.scss */
-  .popup-container .popup {
-    height: 320px;
-    max-height: inherit;
-    width: 568px;
-    max-width: inherit;
-  }
-  /* line 126, ../sass/_popup.scss */
-  .popup-container .popup .popup-content {
-    direction: rtl;
-  }
-  /* line 128, ../sass/_popup.scss */
-  .popup-container .popup .popup-content .column {
-    width: 50%;
-    vertical-align: top;
-    height: 320px;
-    padding: 5px 20px;
-    text-align: left;
-  }
-  /* line 134, ../sass/_popup.scss */
-  .popup-container .popup .popup-content .column.image {
-    padding: 80px 20px;
-    text-align: center;
-  }
-}
-@media screen and (max-height: 1024px) and (min-height: 1024px) and (min-width: 768px) and (max-width: 768px) {
-  /* line 146, ../sass/_popup.scss */
-  .popup-container .popup {
-    top: 200px;
-  }
-  /* line 149, ../sass/_popup.scss */
-  .popup-container .popup .popup-content .column {
-    height: 280px;
-    padding-top: 10px;
-  }
-  /* line 152, ../sass/_popup.scss */
-  .popup-container .popup .popup-content .column.image {
-    padding: 60px 20px;
-  }
-}
+/*@media screen and (min-height: 321px) and (orientation: landscape){*/
+/*.popup-container{*/
+/*.popup{*/
+/*top: 20px;*/
+/*}*/
+/*}*/
+/*}*/
+/*@media screen and (min-height: 559px) and (orientation: portrait){*/
+/*.popup-container{*/
+/*.popup{*/
+/*top: 20px;*/
+/*.popup-content{*/
+/*.column{*/
+/*height: 280px;*/
+/*padding-top: 10px;*/
+/*&.image{*/
+/*padding: 60px 20px;*/
+/*}*/
+/*}				*/
+/*}*/
+/*}*/
+/*}*/
+/*}*/
+/*@media screen and (max-height: 440px) and (orientation: landscape){*/
+/*.popup-container{*/
+/*.popup{*/
+/*height: 320px;*/
+/*max-height: inherit;*/
+/*width: 568px;*/
+/*max-width: inherit;*/
+/*.popup-content{*/
+/*direction: rtl;*/
+/*.column{*/
+/*width: 50%;*/
+/*vertical-align: top;*/
+/*height: 320px;*/
+/*padding: 5px 20px;*/
+/*text-align: left;*/
+/*&.image{*/
+/*padding: 80px 20px;*/
+/*text-align: center;*/
+/*}*/
+/*}				*/
+/*}*/
+/*}*/
+/*}*/
+/*}*/
+/*@media screen and (max-height: 1024px) and (min-height: 1024px) and (min-width: 768px) and (max-width: 768px){*/
+/*.popup-container{*/
+/*.popup{*/
+/*top: 200px;*/
+/*.popup-content{*/
+/*.column{*/
+/*height: 280px;*/
+/*padding-top: 10px;*/
+/*&.image{*/
+/*padding: 60px 20px;*/
+/*}*/
+/*}				*/
+/*}*/
+/*}*/
+/*}*/
+/*}*/
 @media screen and (min-width: 960px) {
-  /* line 162, ../sass/_popup.scss */
+  /* line 161, ../sass/_popup.scss */
   .popup-container {
-    padding-top: 20%;
+    /*padding-top: 20%;*/
   }
-  /* line 164, ../sass/_popup.scss */
+  /* line 163, ../sass/_popup.scss */
   .popup-container .popup {
     height: 380px;
     max-height: inherit;
     width: 960px;
     max-width: inherit;
-    top: auto;
+    /*top: auto;*/
+    top: 50%;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -190px;
   }
-  /* line 170, ../sass/_popup.scss */
+  /* line 173, ../sass/_popup.scss */
   .popup-container .popup .popup-content {
     direction: rtl;
   }
-  /* line 172, ../sass/_popup.scss */
+  /* line 175, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column {
     width: 480px;
     vertical-align: top;
@@ -2067,18 +2072,30 @@ footer .copyright span {
     padding: 70px 50px;
     text-align: left;
   }
-  /* line 178, ../sass/_popup.scss */
+  /* line 181, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column.image {
-    padding: 90px 0;
+    padding: 70px 0;
     text-align: center;
   }
-  /* line 182, ../sass/_popup.scss */
+  /* line 185, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column img {
+    width: 400px;
+  }
+  /* line 188, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column a {
     max-width: 200px;
   }
-  /* line 184, ../sass/_popup.scss */
+  /* line 190, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column a:hover {
     opacity: 0.9;
+  }
+  /* line 194, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .column .learn-more {
+    margin: 50px 0px;
+  }
+  /* line 198, ../sass/_popup.scss */
+  .popup-container .popup .popup-content .title {
+    font-size: 36px;
   }
 }
 /* line 7, ../sass/global.scss */

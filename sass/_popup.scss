@@ -22,19 +22,17 @@ $font_thin: 'Lato-Thin';
 		left: 0;
 	}
 	.popup{
-  	max-width: 320px;
-	  max-height: 460px;
-	  width: 100%;
-	  margin: 0 auto;
-	  left: 0;
-	  right: 0;
-	  top: 0;
+  	width: 320px;
+	  height: 500px;
 	  position: absolute;
-	  height: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -250px;
 	  .close-btn{
 	  	position: absolute;
-	  	top: 0;
-	  	right: 10px;
+	  	top: -10px;
+	  	right: 5px;
 			font-size: 50px;
 			color: #fff;
 			transform: rotate(45deg);
@@ -46,7 +44,7 @@ $font_thin: 'Lato-Thin';
 			.column{
 				direction: ltr;
 				display: inline-block;
-				height: 100%;
+				/*height: 100%;*/
 				text-align: center;
 				background: #fff;
 				box-sizing: border-box;
@@ -73,100 +71,105 @@ $font_thin: 'Lato-Thin';
 					line-height: 24px;
 					color: #9b9b9b;
 				}
+        .learn-more {
+          margin: 36px 10px 30px;
+        }
 				a{
 					font-size: 22px;
 			    color: #fff;
-			    width: 100%;
-			    max-width: 280px;
+			    width: 280px;
 			    text-align: center;
 			    background: #00C26B;
-			    padding: 7px 0 10px;
-			    display: inline-block;
 			    border-radius: 3px;
-			    margin-top: 20px;
+          display: block;
+          padding: 10px 0px;
 				}
 			}
 		}
 	}
 }
 
-@media screen and (min-height: 321px) and (orientation: landscape){
-	.popup-container{
-		.popup{
-			top: 20px;
-		}
-	}
-}
+/*@media screen and (min-height: 321px) and (orientation: landscape){*/
+	/*.popup-container{*/
+		/*.popup{*/
+			/*top: 20px;*/
+		/*}*/
+	/*}*/
+/*}*/
 
-@media screen and (min-height: 559px) and (orientation: portrait){
-	.popup-container{
-		.popup{
-			top: 20px;
-			.popup-content{
-				.column{
-					height: 280px;
-					padding-top: 10px;
-					&.image{
-						padding: 60px 20px;
-					}
-				}				
-			}
-		}
-	}
-}
+/*@media screen and (min-height: 559px) and (orientation: portrait){*/
+	/*.popup-container{*/
+		/*.popup{*/
+			/*top: 20px;*/
+			/*.popup-content{*/
+				/*.column{*/
+					/*height: 280px;*/
+					/*padding-top: 10px;*/
+					/*&.image{*/
+						/*padding: 60px 20px;*/
+					/*}*/
+				/*}				*/
+			/*}*/
+		/*}*/
+	/*}*/
+/*}*/
 
 
-@media screen and (max-height: 440px) and (orientation: landscape){
-	.popup-container{
-		.popup{
-			height: 320px;
-			max-height: inherit;
-			width: 568px;
-			max-width: inherit;
-			.popup-content{
-				direction: rtl;
-				.column{
-					width: 50%;
-					vertical-align: top;
-					height: 320px;
-					padding: 5px 20px;
-					text-align: left;
-					&.image{
-						padding: 80px 20px;
-    				text-align: center;
-					}
-				}				
-			}
-		}
-	}
-}
+/*@media screen and (max-height: 440px) and (orientation: landscape){*/
+	/*.popup-container{*/
+		/*.popup{*/
+			/*height: 320px;*/
+			/*max-height: inherit;*/
+			/*width: 568px;*/
+			/*max-width: inherit;*/
+			/*.popup-content{*/
+				/*direction: rtl;*/
+				/*.column{*/
+					/*width: 50%;*/
+					/*vertical-align: top;*/
+					/*height: 320px;*/
+					/*padding: 5px 20px;*/
+					/*text-align: left;*/
+					/*&.image{*/
+						/*padding: 80px 20px;*/
+            /*text-align: center;*/
+					/*}*/
+				/*}				*/
+			/*}*/
+		/*}*/
+	/*}*/
+/*}*/
 
-@media screen and (max-height: 1024px) and (min-height: 1024px) and (min-width: 768px) and (max-width: 768px){
-	.popup-container{
-		.popup{
-			top: 200px;
-			.popup-content{
-				.column{
-					height: 280px;
-					padding-top: 10px;
-					&.image{
-						padding: 60px 20px;
-					}
-				}				
-			}
-		}
-	}
-}
+/*@media screen and (max-height: 1024px) and (min-height: 1024px) and (min-width: 768px) and (max-width: 768px){*/
+	/*.popup-container{*/
+		/*.popup{*/
+			/*top: 200px;*/
+			/*.popup-content{*/
+				/*.column{*/
+					/*height: 280px;*/
+					/*padding-top: 10px;*/
+					/*&.image{*/
+						/*padding: 60px 20px;*/
+					/*}*/
+				/*}				*/
+			/*}*/
+		/*}*/
+	/*}*/
+/*}*/
 
 @media screen and (min-width: 960px){
 	.popup-container{
-		padding-top: 20%;
+		/*padding-top: 20%;*/
 		.popup{
 			height: 380px;
 			max-height: inherit;
 			width: 960px;
 			max-width: inherit;
-			top: auto;
+			/*top: auto;*/
+      top: 50%;
+      left: 50%;
+      margin-left: -480px;
+      margin-top: -190px;
 			.popup-content{
 				direction: rtl;
 				.column{
@@ -176,16 +179,25 @@ $font_thin: 'Lato-Thin';
 					padding: 70px 50px;
 					text-align: left;
 					&.image{
-						padding: 90px 0;
+						padding: 70px 0;
     				text-align: center;
 					}
+          img {
+            width: 400px
+          }
 					a{
 						max-width: 200px;
 						&:hover{
 							opacity: 0.9;
 						}
 					}
-				}				
+          .learn-more {
+            margin: 50px 0px;
+          }
+				}
+        .title {
+          font-size: 36px;
+        }
 			}
 		}
 	}
