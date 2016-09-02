@@ -10,6 +10,9 @@ body{
 a{
 	text-decoration: none;
 }
+.clearfix {
+  clear: both;
+}
 .body-container-wrapper{
   position: relative;
   z-index: 2;
@@ -102,7 +105,7 @@ a{
 			width: 59px;
 			height: 65px;
 			display: inline-block;
-			background-image: url(http://cdn2.hubspot.net/hubfs/443262/redesign_2016/feature-icons-sprite.png);
+			background-image: url(http://www.tinypulse.com/hubfs/feature-icons-sprite.png);
 			background-repeat: no-repeat;
 			background-position: 0 0;
 		}
@@ -336,10 +339,12 @@ a{
 }
 
 .new-features-page{
+  margin-top: 40px;
 	.content-block{
 		padding-bottom: 50px;
 		border-bottom: 1px solid #DADADA;
 		.block-title{
+      margin-bottom: 20px;
 			.super{
 				font-family: $font_light;
 				color: #FE2851;
@@ -353,29 +358,44 @@ a{
 			margin-bottom: 10px;
 		}
 		.block-content{
-			padding: 0 20px;
+			padding: 0 15px;
 			img{
 				max-width: 100%;
-				margin: 30px 0;
+				margin: 40px 0;
 			}
 			p{
 				text-align: left;
 				font-family: $font_light;
-				line-height: 24px;
+				line-height: 26px;
+        font-size: 18px;
 			}
 		}
 	}
+  .tp-engage {
+    img {
+      width: 496px;
+      max-width: 496px;
+    }
+  }
 	.download{
     text-align: center;
     margin-top: 30px;
     span{
       display: block;
       margin-bottom: 10px;
+      color: #9B9B9B;
     }
     a{
       display: inline-block;
       clear: both;
       vertical-align: middle;
+      img {
+        max-width: 150px !important;
+        margin: 10px 0 !important;
+      }
+    }
+    a.apple-store {
+      margin-right: 20px;
     }
     .store{
       width: 100px;
@@ -391,7 +411,7 @@ a{
   .try-it-now{
   	border: 1px solid #dadada;
   	margin: 30px 0;
-  	padding: 15px 10px 20px 10px;
+  	padding: 20px;
   	p{
   		margin: 0 0 20px 0;
   	}
@@ -405,6 +425,8 @@ a{
 			display: block;
 			color: #fff;
 			font-size: 16px;
+      max-width: 320px;
+      margin: 0 auto;
   	}
   }
 }
@@ -602,6 +624,7 @@ a{
   }
 
   .new-features-page{
+    margin-top: 70px;
   	.content-block{
   		.block-content{
   			&.image-right{
@@ -611,11 +634,17 @@ a{
   				display: inline-block;
 					width: 49%;
 					box-sizing: border-box;
-					padding: 20px;
-					vertical-align: middle;
+					/*padding: 20px;*/
+					/*vertical-align: middle;*/
+          vertical-align: top
+          img {
+            margin-top: 0px;
+          }
 				}
 				p{
 					direction: ltr;
+          font-size: 16px;
+          line-height: 24px;
 				}
 				// &:after{
 				// 	content: "";
@@ -624,10 +653,30 @@ a{
 				// }
   		}
   	}
+    .left-side {
+      text-align: left;
+      float: left;
+      padding-right: 5px;
+    }
+    .right-side {
+      float: right;
+      padding-left: 5px;
+    }
+    .livepulse-content {
+      margin-top: 18px;
+    }
+    .admin-dashboard {
+      margin-top: 15%;
+    }
+    .smartpulse {
+      margin-top: 10%;
+    }
   	.try-it-now{
   		display: inline-block;
   		width: 100%;
   		direction: ltr;
+      padding: 30px 15px;
+      box-sizing: border-box;
   		p{
   			vertical-align: middle;
   			width: 720px;
