@@ -28,14 +28,16 @@ jQuery(document).ready(function($) {
       });
     }
     $('.subnav').find('a:not(#sub-nav-trigger)').off('click').on('click', function(e){
-      e.preventDefault();
-      $('.subnav li').removeClass('active');
-      $(this).closest('li').addClass('active');
-      $('#sub-nav-trigger').trigger('click');
-      var content = $(this).data('content'), 
-        block = $('[data-block=' + content + ']').filter(':visible');
-      if (block.length > 0){
-        scrollTo(block);      
+      if ($(this).data('content')){
+        e.preventDefault();
+        $('.subnav li').removeClass('active');
+        $(this).closest('li').addClass('active');
+        $('#sub-nav-trigger').trigger('click');
+        var content = $(this).data('content'), 
+          block = $('[data-block=' + content + ']').filter(':visible');
+        if (block.length > 0){
+          scrollTo(block);      
+        }        
       }
     });
     // alert($(window).height());
