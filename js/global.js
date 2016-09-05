@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
     var subnav = $('.subnav'), 
     body = $('body'), 
     topMenuH = 0,
-    scroolStop = 0, 
+    scrollStop = 0, 
     popup = $('#popup');
   
   $('.hamburger').click(function(e) {
@@ -13,6 +13,13 @@ jQuery(document).ready(function($) {
     e.preventDefault();
     $(this).closest('li').toggleClass('expanded');
   });
+
+  var hash = window.location.hash;
+  if ($(hash).length > 0){
+    window.setTimeout(function(){
+        $(window).trigger('hashchange');
+    }, 500)
+  }
   
   $(window).on('resize', function(){
     topMenuH = ($(window).width() >= 960) ? 76 : 0;
@@ -63,6 +70,17 @@ jQuery(document).ready(function($) {
           }
       });      
     }
+  }).on('hashchange', function(e){
+    var hash = window.location.hash;
+      if ($(hash).length > 0){
+        scrollStop = ($(window).width() >= 960) ? 71 : 40;
+        var ele = $(hash);
+        window.setTimeout(function(){
+            $('body, html').animate({
+                scrollTop: ele.offset().top - scrollStop
+            }, 750);
+        }, 500);
+      }
   }).trigger('resize');
 
   if (!localStorage.hidePopup){
