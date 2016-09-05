@@ -1,0 +1,221 @@
+/* line 1, ../sass/roi.scss */
+.block-title {
+  display: none;
+}
+
+/* line 5, ../sass/roi.scss */
+.roi-calculation {
+  text-align: center;
+}
+/* line 7, ../sass/roi.scss */
+.roi-calculation img {
+  max-width: 500px;
+  width: 100%;
+}
+/* line 11, ../sass/roi.scss */
+.roi-calculation .title-responsive {
+  display: block;
+  font-family: Lato-Regular;
+  font-size: 24px;
+  color: #000000;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  margin-top: 0;
+}
+/* line 22, ../sass/roi.scss */
+.roi-calculation .roi-form {
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/* line 26, ../sass/roi.scss */
+.roi-calculation .roi-form .form-input {
+  position: relative;
+  max-width: 315px;
+  margin: auto;
+}
+/* line 30, ../sass/roi.scss */
+.roi-calculation .roi-form .form-input input {
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: right;
+  outline: none;
+  padding-right: 10px;
+}
+/* line 40, ../sass/roi.scss */
+.roi-calculation .roi-form .form-input span {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  font-family: Lato-Light;
+  font-size: 14px;
+  color: #9B9B9B;
+}
+/* line 49, ../sass/roi.scss */
+.roi-calculation .roi-form .form-range-slider {
+  text-align: left;
+  max-width: 315px;
+  margin: auto;
+}
+/* line 53, ../sass/roi.scss */
+.roi-calculation .roi-form .form-range-slider label {
+  font-family: Lato-Light;
+  font-size: 14px;
+  color: #9B9B9B;
+  margin-bottom: 10px;
+}
+/* line 60, ../sass/roi.scss */
+.roi-calculation .roi-form .form-range-slider input {
+  width: 100%;
+}
+
+/* line 67, ../sass/roi.scss */
+.roi-result {
+  background-image: linear-gradient(-60deg, rgba(123, 32, 138, 0.82) 0%, #FF5C5C 100%);
+  padding: 20px 35px;
+  color: #FFF;
+  text-align: center;
+  margin-top: 30px;
+}
+/* line 73, ../sass/roi.scss */
+.roi-result .desc {
+  font-family: Lato-Semibold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+/* line 78, ../sass/roi.scss */
+.roi-result .num {
+  font-family: Lato-Semibold;
+  font-size: 28px;
+}
+
+/* line 84, ../sass/roi.scss */
+.roi-detail {
+  text-align: center;
+}
+/* line 86, ../sass/roi.scss */
+.roi-detail .btn {
+  border: 2px solid #DADADA;
+  border-radius: 3px;
+  padding: 11px 57px;
+  background: #FFF;
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #9B9B9B;
+  letter-spacing: 0.12px;
+  margin-bottom: 40px;
+  outline: none;
+}
+/* line 101, ../sass/roi.scss */
+.roi-detail .btn-hide-detail {
+  display: none;
+}
+/* line 105, ../sass/roi.scss */
+.roi-detail .details {
+  display: none;
+}
+/* line 107, ../sass/roi.scss */
+.roi-detail .details .detail {
+  margin-bottom: 40px;
+}
+/* line 109, ../sass/roi.scss */
+.roi-detail .details .detail .number {
+  font-family: Lato-Bold;
+  font-size: 22px;
+  color: #000000;
+  letter-spacing: 0.15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+/* line 117, ../sass/roi.scss */
+.roi-detail .details .detail .description {
+  font-family: Lato-Regular;
+  font-size: 18px;
+  color: #9B9B9B;
+  letter-spacing: 0.12px;
+}
+
+/* line 127, ../sass/roi.scss */
+.roi-description {
+  padding: 0 30px 20px;
+}
+/* line 129, ../sass/roi.scss */
+.roi-description p {
+  font-family: Lato-Light;
+  font-size: 14px;
+  color: #9B9B9B;
+  margin: 0;
+}
+/* line 134, ../sass/roi.scss */
+.roi-description p a {
+  color: #1C94EE;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 141, ../sass/roi.scss */
+  .block-title {
+    display: block;
+  }
+
+  /* line 144, ../sass/roi.scss */
+  .roi-calculation {
+    font-size: 0;
+  }
+  /* line 146, ../sass/roi.scss */
+  .roi-calculation img {
+    width: 50%;
+    display: inline-block;
+  }
+  /* line 151, ../sass/roi.scss */
+  .roi-calculation .title-responsive {
+    display: none;
+  }
+  /* line 155, ../sass/roi.scss */
+  .roi-calculation .roi-form {
+    width: 50%;
+    display: inline-block;
+    margin: 55px 0 0;
+    vertical-align: top;
+  }
+  /* line 160, ../sass/roi.scss */
+  .roi-calculation .roi-form .form-input {
+    max-width: 457px;
+  }
+  /* line 164, ../sass/roi.scss */
+  .roi-calculation .roi-form .form-input input {
+    font-size: 12px;
+    width: 100%;
+  }
+  /* line 169, ../sass/roi.scss */
+  .roi-calculation .roi-form .form-range-slider {
+    text-align: left;
+    max-width: 470px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  /* line 174, ../sass/roi.scss */
+  .roi-calculation .roi-form .form-range-slider label {
+    font-family: Lato-Light;
+    font-size: 14px;
+    color: #9B9B9B;
+    margin-bottom: 10px;
+  }
+  /* line 181, ../sass/roi.scss */
+  .roi-calculation .roi-form .form-range-slider input {
+    width: 100%;
+  }
+
+  /* line 190, ../sass/roi.scss */
+  .roi-result .desc {
+    display: inline-block;
+  }
+  /* line 193, ../sass/roi.scss */
+  .roi-result .num {
+    margin-left: 43px;
+    display: inline-block;
+  }
+}
