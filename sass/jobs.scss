@@ -53,9 +53,12 @@ strong{
 		&.expanded{
 			.job-title{
 				border-color: #dadada;
+				&:after{
+					transform: rotate(0deg);
+				}
 			}
 			.job-desc{
-				max-height: 500px;
+				max-height: 800px;
 			}
 		}
 		.job-title{
@@ -67,12 +70,14 @@ strong{
 			border-bottom: 1px solid #fff;
 			transition: all 0.5s;
 			&:after{
+				transition: all 0.3s;
 				content: "\f078";
         position: absolute;
         right: 20px;
         top: 25px;
         font: normal normal normal 14px/1 FontAwesome;
         -webkit-font-smoothing: antialiased;
+				transform: rotate(-90deg);        
 			}
 		}
 		.job-desc{
@@ -80,7 +85,7 @@ strong{
 			overflow: hidden;
 			transition: max-height .3s;
 			text-align: left;
-			padding: 0 30px;
+			padding: 0 20px;
 
 			p{
 				padding-top: 10px;
