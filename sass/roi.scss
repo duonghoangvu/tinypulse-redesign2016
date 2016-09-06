@@ -57,8 +57,46 @@
         margin-bottom: 10px;
       }
 
-      input {
+      .rangeSlider {
         width: 100%;
+        background: #F1F2F1;
+        border-radius: 8px;
+        height: 8px;
+        margin-top: 60px;
+        .rangeSlider__handle {
+          background: #F37122;
+          box-shadow: 0px 2px 0px 0px #D6611A;
+          border-radius: 4px;
+          width: 14px;
+          height: 24px;
+        }
+        .rangeSlider__handle:after { 
+          background-image: none;
+          background: #1C94EE;
+          box-shadow: 0px 2px 0px 0px #4861A0;
+          color: #FFF;
+          content: attr(data-content) '%';
+          border-radius: 4px;
+          top: -65px;
+          left: -15px;
+          font-size: 12px;
+          padding: 6px 0;
+          width: 38px;
+          text-align: center;
+        }
+        .rangeSlider__handle:before { 
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid #1C94EE;
+          position: absolute;
+          top: -5px;
+          display: block;
+          content: "";
+          z-index: 10;
+        }
+        .rangeSlider__fill {
+          display: none;
+        }
       }
     }
   }
@@ -136,6 +174,8 @@
     }
   }
 }
+
+
 
 @media screen and (min-width: 960px){ 
   .block-title {
