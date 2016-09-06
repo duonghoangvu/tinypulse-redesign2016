@@ -42,5 +42,57 @@ strong{
 				margin-bottom: 5px;
 			}
 		}
+		.video{
+			iframe{
+				width: 720px;
+    		height: 405px;
+			}
+		}
+		.chart{
+			border: 1px solid #C5C5C5;
+			padding: 20px;
+			p{
+				text-align: center;
+			}
+		}
+
+	}
+}
+
+.employees{
+	.pie-chart{
+		img{
+			vertical-align: bottom;
+			margin: 40px 0 0 0;
+		}
+		.legends{
+			vertical-align: bottom;
+			width: 300px;
+			margin-left: 20px;
+			display: inline-block;
+			span{
+				position: relative;
+				padding-left: 40px;
+				text-align: left;
+				display: block;
+				margin-bottom: 10px;
+				font-size: 16px;
+				color: #9B9B9B;
+				&:before{
+					content: "";
+					width: 20px;
+					height: 20px;	
+					position: absolute;
+					left: 0;
+					border-radius: 50%;
+				}
+				&:first-child:before{
+					background-color: #008AD0;
+				}
+				&:first-child+span:before{
+					background-color: #00C26B;
+				}
+			}
+		}
 	}
 }
