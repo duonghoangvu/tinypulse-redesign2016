@@ -118,6 +118,11 @@ strong{
 }
 
 @media screen and (min-width: 960px){
+	.content-block{
+		.block-content{
+			padding: 0;
+		}
+	}
 	.video{
 		padding: 0;
 		iframe{
