@@ -628,6 +628,7 @@ a{
     margin-top: 70px;
   	.content-block{
   		.block-content{
+        padding: 0;
   			&.image-right{
   				direction: rtl;
   			}
@@ -635,8 +636,6 @@ a{
   				display: inline-block;
 					width: 49%;
 					box-sizing: border-box;
-					/*padding: 20px;*/
-					/*vertical-align: middle;*/
           vertical-align: top
           img {
             margin-top: 0px;
@@ -647,11 +646,6 @@ a{
           font-size: 16px;
           line-height: 24px;
 				}
-				// &:after{
-				// 	content: "";
-				// 	display: inline-block;
-				// 	width: 100%;
-				// }
   		}
   	}
     .left-side {

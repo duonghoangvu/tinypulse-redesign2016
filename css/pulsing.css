@@ -1,0 +1,195 @@
+/* line 7, ../sass/pulsing.scss */
+strong {
+  font-family: "Lato-Bold";
+}
+
+/* line 11, ../sass/pulsing.scss */
+.content-block {
+  padding-bottom: 50px;
+}
+/* line 13, ../sass/pulsing.scss */
+.content-block .block-title {
+  margin-bottom: 20px;
+}
+/* line 16, ../sass/pulsing.scss */
+.content-block .block-desc {
+  margin-bottom: 50px;
+}
+/* line 19, ../sass/pulsing.scss */
+.content-block .block-content {
+  padding: 0 15px;
+}
+/* line 21, ../sass/pulsing.scss */
+.content-block .block-content img {
+  max-width: 100%;
+  margin: 40px 0;
+}
+/* line 25, ../sass/pulsing.scss */
+.content-block .block-content p {
+  text-align: left;
+  font-family: "Lato-Light";
+  line-height: 26px;
+  font-size: 18px;
+}
+/* line 30, ../sass/pulsing.scss */
+.content-block .block-content p.title {
+  font-family: "Lato-Semibold";
+  margin-top: 35px;
+}
+/* line 35, ../sass/pulsing.scss */
+.content-block .block-content ul {
+  padding: 0;
+  margin: 0 0 0 18px;
+}
+/* line 38, ../sass/pulsing.scss */
+.content-block .block-content ul li {
+  text-align: left;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Lato-Light";
+  margin-bottom: 5px;
+}
+/* line 46, ../sass/pulsing.scss */
+.content-block .block-content .chart {
+  border: 1px solid #C5C5C5;
+  padding: 20px;
+}
+/* line 49, ../sass/pulsing.scss */
+.content-block .block-content .chart p {
+  text-align: center;
+}
+
+/* line 56, ../sass/pulsing.scss */
+.video {
+  position: relative;
+  padding-top: 56%;
+}
+/* line 59, ../sass/pulsing.scss */
+.video iframe {
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* line 72, ../sass/pulsing.scss */
+.screenshot {
+  border: 1px solid #C5C5C5;
+  padding: 20px;
+}
+/* line 76, ../sass/pulsing.scss */
+.screenshot img.large {
+  display: none;
+}
+
+/* line 84, ../sass/pulsing.scss */
+.employees .pie-chart img {
+  vertical-align: bottom;
+  margin: 40px 0 0 0;
+}
+/* line 88, ../sass/pulsing.scss */
+.employees .pie-chart .legends {
+  vertical-align: bottom;
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 30px;
+  display: inline-block;
+}
+/* line 94, ../sass/pulsing.scss */
+.employees .pie-chart .legends span {
+  position: relative;
+  padding-left: 40px;
+  text-align: left;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #9B9B9B;
+}
+/* line 102, ../sass/pulsing.scss */
+.employees .pie-chart .legends span:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  border-radius: 50%;
+}
+/* line 110, ../sass/pulsing.scss */
+.employees .pie-chart .legends span:first-child:before {
+  background-color: #008AD0;
+}
+/* line 113, ../sass/pulsing.scss */
+.employees .pie-chart .legends span:first-child + span:before {
+  background-color: #00C26B;
+}
+
+/* line 121, ../sass/pulsing.scss */
+.block-quote {
+  max-width: 720px;
+  margin: auto;
+}
+/* line 124, ../sass/pulsing.scss */
+.block-quote hr {
+  width: 126px;
+}
+/* line 126, ../sass/pulsing.scss */
+.block-quote hr.top {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+/* line 130, ../sass/pulsing.scss */
+.block-quote hr.bottom {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+/* line 135, ../sass/pulsing.scss */
+.block-quote .quote-content {
+  font-family: Lato-LightItalic;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 141, ../sass/pulsing.scss */
+.block-quote .name, .block-quote .position {
+  font-family: Lato-Regular;
+  font-size: 18px;
+  color: #9B9B9B;
+  text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 151, ../sass/pulsing.scss */
+  .content-block .block-content {
+    padding: 0;
+  }
+
+  /* line 155, ../sass/pulsing.scss */
+  .video {
+    padding: 0;
+  }
+  /* line 157, ../sass/pulsing.scss */
+  .video iframe {
+    position: static;
+    width: 720px;
+    height: 405px;
+  }
+
+  /* line 164, ../sass/pulsing.scss */
+  .screenshot {
+    border: 1px solid #C5C5C5;
+    padding: 20px;
+  }
+  /* line 168, ../sass/pulsing.scss */
+  .screenshot img.large {
+    display: inline-block;
+  }
+  /* line 171, ../sass/pulsing.scss */
+  .screenshot img.small {
+    display: none;
+  }
+}

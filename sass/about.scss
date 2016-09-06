@@ -1,0 +1,130 @@
+$font_regular: 'Lato-Regular';
+$font_semibold: 'Lato-Semibold';
+$font_bold: 'Lato-Bold';
+$font_light: 'Lato-Light';
+$font_thin: 'Lato-Thin';
+
+strong{
+	font-family: $font_bold;
+}
+
+.content-block{
+	padding-bottom: 50px;
+	.block-title{
+    margin-bottom: 20px;
+	}
+	.block-desc{
+		margin-bottom: 10px;
+	}
+	.block-content{
+		padding: 0 15px;
+		img{
+			max-width: 100%;
+			margin: 40px 0;
+		}
+		p{
+			text-align: left;
+			font-family: $font_light;
+			line-height: 26px;
+      font-size: 18px;
+		}
+	}
+}
+
+.delight{
+	background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	.block-title, .block-desc, .block-content p{
+		color: #fff;
+		text-align: center;
+	}
+	.values{
+		margin: 30px 0;
+		.value{
+			width: 220px;
+			text-align: center;
+			display: inline-block;
+			vertical-align: top;
+			margin: 30px 0;
+			padding: 0 20px;
+			box-sizing: border-box;
+		}
+		.icon{
+			width: 92px;
+			height: 90px;
+			background-image: url(//www.tinypulse.com/hubfs/redesign_2016/about/delight.png);
+			background-repeat: no-repeat;
+			&.icon-2{
+				background-position: -126px 0;
+			}
+			&.icon-3{
+				background-position: -230px 0;
+			}
+			&.icon-4{
+				background-position: -332px 0;
+			}
+			&.icon-5{
+				background-position: -432px 0;
+			}
+			&.icon-6{
+				background-position: -522px 0;
+			}
+			&.icon-7{
+				background-position: -622px 0;
+			}
+		}
+		.text{
+			color: #fff;
+			font-family: $font_light;
+			font-size: 16px;
+			line-height: 24px;
+			&:first-letter{
+				font-family: $font_semibold;
+			}
+		}
+		span{
+			display: inline-block;
+		}
+	}
+}
+
+.donation{
+	.activities{
+		.activity{
+			width: 300px;
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			margin-bottom: 20px;
+			.icon{
+				display: inline-block;
+				img{
+					max-width: 200px;
+					height: auto;
+					margin-bottom: 20px;
+				}
+			}
+			.text{
+				display: block;
+				font-size: 16px;
+				line-height: normal;
+			}
+		}
+	}
+}
+
+.behind-the-curtain{
+	background: -moz-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);/* FF3.6-15 */
+	background: -webkit-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%); /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
+  padding-bottom: 80px;
+  .block-title, .block-desc, p{
+		color: #fff;
+	}
+	.block-title{
+		margin-bottom: 50px;
+	}
+}

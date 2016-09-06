@@ -1633,6 +1633,10 @@ a {
   .new-features-page {
     margin-top: 70px;
   }
+  /* line 629, ../sass/_content.scss */
+  .new-features-page .content-block .block-content {
+    padding: 0;
+  }
   /* line 631, ../sass/_content.scss */
   .new-features-page .content-block .block-content.image-right {
     direction: rtl;
@@ -1642,49 +1646,39 @@ a {
     display: inline-block;
     width: 49%;
     box-sizing: border-box;
-    /*padding: 20px;*/
-    /*vertical-align: middle;*/
     vertical-align: top img;
     vertical-align-margin-top: 0px;
   }
-  /* line 645, ../sass/_content.scss */
+  /* line 643, ../sass/_content.scss */
   .new-features-page .content-block .block-content p {
     direction: ltr;
     font-size: 16px;
     line-height: 24px;
   }
-  /* line 657, ../sass/_content.scss */
+  /* line 650, ../sass/_content.scss */
   .new-features-page .left-side {
     text-align: left;
     float: left;
     padding-right: 5px;
   }
-  /* line 662, ../sass/_content.scss */
+  /* line 655, ../sass/_content.scss */
   .new-features-page .right-side {
     float: right;
     padding-left: 5px;
   }
-  /* line 666, ../sass/_content.scss */
+  /* line 659, ../sass/_content.scss */
   .new-features-page .livepulse-content {
     margin-top: 18px;
   }
-  /* line 669, ../sass/_content.scss */
+  /* line 662, ../sass/_content.scss */
   .new-features-page .admin-dashboard {
     margin-top: 15%;
   }
-  /* line 672, ../sass/_content.scss */
+  /* line 665, ../sass/_content.scss */
   .new-features-page .smartpulse {
     margin-top: 10%;
   }
-  /* line 675, ../sass/_content.scss */
-  .new-features-page .try-it-now {
-    display: inline-block;
-    width: 100%;
-    direction: ltr;
-    padding: 30px 15px;
-    box-sizing: border-box;
-  }
-  /* line 681, ../sass/_content.scss */
+  /* line 674, ../sass/_content.scss */
   .new-features-page .try-it-now p {
     vertical-align: middle;
     width: 720px;
@@ -1692,11 +1686,11 @@ a {
     margin: 0 20px 0 0;
     line-height: 24px;
   }
-  /* line 687, ../sass/_content.scss */
+  /* line 680, ../sass/_content.scss */
   .new-features-page .try-it-now p span {
     display: block;
   }
-  /* line 691, ../sass/_content.scss */
+  /* line 684, ../sass/_content.scss */
   .new-features-page .try-it-now a {
     vertical-align: middle;
     width: 152px;
@@ -1706,7 +1700,11 @@ a {
   .new-features-page .download {
     text-align: left;
   }
-  /* line 699, ../sass/_content.scss */
+  /* line 690, ../sass/_content.scss */
+  .new-features-page .download {
+    text-align: left;
+  }
+  /* line 692, ../sass/_content.scss */
   .new-features-page .download span {
     display: inline-block;
     margin-right: 15px;
