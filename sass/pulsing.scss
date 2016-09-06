@@ -1,0 +1,46 @@
+$font_regular: 'Lato-Regular';
+$font_semibold: 'Lato-Semibold';
+$font_bold: 'Lato-Bold';
+$font_light: 'Lato-Light';
+$font_thin: 'Lato-Thin';
+
+strong{
+	font-family: $font_bold;
+}
+
+.content-block{
+	padding-bottom: 50px;
+	.block-title{
+    margin-bottom: 20px;
+	}
+	.block-desc{
+		margin-bottom: 50px;
+	}
+	.block-content{
+		padding: 0 15px;
+		img{
+			max-width: 100%;
+			margin: 40px 0;
+		}
+		p{
+			text-align: left;
+			font-family: $font_light;
+			line-height: 26px;
+      font-size: 18px;
+      &.title{
+      	font-family: $font_semibold;
+      }
+		}
+		ul{
+			padding: 0;
+			margin: 0 0 0 18px;
+			li{
+				text-align: left;
+				font-size: 18px;
+				line-height: 26px;
+				font-family: $font_light;
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
