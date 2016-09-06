@@ -43,6 +43,13 @@ strong{
 				margin-bottom: 5px;
 			}
 		}
+		.chart{
+			border: 1px solid #C5C5C5;
+			padding: 20px;
+			p{
+				text-align: center;
+			}
+		}
 	}
 }
 
@@ -61,13 +68,7 @@ strong{
 		margin: 0 auto;
 	}
 }
-.chart{
-	border: 1px solid #C5C5C5;
-	padding: 20px;
-	p{
-		text-align: center;
-	}
-}
+
 .screenshot{
 	border: 1px solid #C5C5C5;
 	padding: 20px;
