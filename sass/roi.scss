@@ -56,13 +56,17 @@
         color: #9B9B9B;
         margin-bottom: 10px;
       }
-
+      .range-slider {
+        width: 100%;
+      }
       .rangeSlider {
         width: 100%;
         background: #F1F2F1;
         border-radius: 8px;
         height: 8px;
         margin-top: 60px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
         .rangeSlider__handle {
           background: #F37122;
           box-shadow: 0px 2px 0px 0px #D6611A;
