@@ -1678,6 +1678,14 @@ a {
   .new-features-page .smartpulse {
     margin-top: 10%;
   }
+  /* line 675, ../sass/_content.scss */
+  .new-features-page .try-it-now {
+    display: inline-block;
+    width: 100%;
+    direction: ltr;
+    padding: 30px 15px;
+    box-sizing: border-box;
+  }
   /* line 674, ../sass/_content.scss */
   .new-features-page .try-it-now p {
     vertical-align: middle;
