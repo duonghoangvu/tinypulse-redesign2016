@@ -118,6 +118,34 @@ strong{
 	}
 }
 
+.block-quote {
+	max-width: 720px;
+	margin: auto;
+	hr {
+		width: 126px;
+		&.top {
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+		&.bottom {
+			margin-top: 30px;
+			margin-bottom: 40px;
+		}
+	}
+	.quote-content {
+		font-family: Lato-LightItalic;
+		font-size: 24px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.name, .position {
+		font-family: Lato-Regular;
+		font-size: 18px;
+		color: #9B9B9B;
+		text-align: center;
+	}
+}
+
 @media screen and (min-width: 960px){
 	.content-block{
 		.block-content{
