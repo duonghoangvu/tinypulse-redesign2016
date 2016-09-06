@@ -1,0 +1,58 @@
+/*
+Error: Invalid CSS after "    font-family": expected ";", was ": $font_light;"
+        on line 134 of /Users/lamphuong/Working/tinypulse-redesign2016/sass/top-companies.scss
+
+129:     }
+130:   }
+131:   .employees-quotes {
+132:     font-size: 18px;
+133:     line-height: 26px
+134:     font-family: $font_light;
+135:   }
+136: }
+137: @media screen and (min-width: 960px){
+138:   .subnav li.top-companies:before {
+139:     transform: scaleX(1);
+
+Backtrace:
+/Users/lamphuong/Working/tinypulse-redesign2016/sass/top-companies.scss:134
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:777:in `block in try_declaration'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `call'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/lamphuong/.rvm/gems/ruby-2.2.4/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    font-family\": expected \";\", was \": $font_light;\"\A         on line 134 of /Users/lamphuong/Working/tinypulse-redesign2016/sass/top-companies.scss\A \A 129:     }\A 130:   }\A 131:   .employees-quotes {\A 132:     font-size: 18px;\A 133:     line-height: 26px\A 134:     font-family: $font_light;\A 135:   }\A 136: }\A 137: @media screen and (min-width: 960px){\A 138:   .subnav li.top-companies:before {\A 139:     transform: scaleX(1);"; }
