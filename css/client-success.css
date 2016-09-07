@@ -71,72 +71,107 @@
   background-color: #e1e1e1;
   color: #000;
   text-align: left;
+  position: relative;
 }
-/* line 41, ../sass/client-success.scss */
+/* line 42, ../sass/client-success.scss */
 .list-items .cs-content .title {
   font-size: 16px;
   font-family: "Lato-Regular";
   line-height: 24px;
 }
-/* line 46, ../sass/client-success.scss */
+/* line 47, ../sass/client-success.scss */
 .list-items .cs-content .desc {
   font-size: 14px;
   font-family: "Lato-Light";
   line-height: 24px;
   margin-top: 5px;
 }
-/* line 51, ../sass/client-success.scss */
+/* line 52, ../sass/client-success.scss */
 .list-items .cs-content .desc .video {
   float: right;
 }
-/* line 53, ../sass/client-success.scss */
+/* line 54, ../sass/client-success.scss */
 .list-items .cs-content .desc .video img {
   vertical-align: bottom;
 }
+/* line 59, ../sass/client-success.scss */
+.list-items .cs-content .tooltip {
+  position: absolute;
+  top: -32px;
+  left: 13px;
+  width: 85%;
+  color: #000;
+  font-size: 12px;
+  background-color: #FFF;
+  border: 1px solid #000;
+  padding: 7px;
+  border-radius: 5px;
+  display: none;
+  text-align: center;
+  transition: all 0.2 ease-in-out;
+}
+/* line 73, ../sass/client-success.scss */
+.list-items .cs-content .tooltip:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  content: '';
+  left: 50%;
+  position: absolute;
+  border-top: 9px solid #000;
+  bottom: -9px;
+  margin-left: -7px;
+}
+/* line 83, ../sass/client-success.scss */
+.list-items .cs-content .tooltip:after {
+  margin-left: -7px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 9px solid #FFF;
+  bottom: -7px;
+  content: '';
+  left: 50%;
+  position: absolute;
+}
 
-/* line 60, ../sass/client-success.scss */
+/* line 96, ../sass/client-success.scss */
 li.active-tab {
   display: inline-block;
   font-family: "Lato-Bold";
 }
 
 @media screen and (min-width: 960px) {
-  /* line 65, ../sass/client-success.scss */
+  /* line 101, ../sass/client-success.scss */
   .subnav ul li.active-tab:before {
     transform: scaleX(1);
   }
 
-  /* line 68, ../sass/client-success.scss */
+  /* line 104, ../sass/client-success.scss */
   .content-block .block-title {
     margin-bottom: 30px;
   }
 
-  /* line 71, ../sass/client-success.scss */
+  /* line 107, ../sass/client-success.scss */
   .list-items {
     padding: 15px;
     font-size: 0;
     text-align: left;
   }
-  /* line 75, ../sass/client-success.scss */
+  /* line 111, ../sass/client-success.scss */
   .list-items .block-container {
     margin-bottom: 30px;
   }
-  /* line 77, ../sass/client-success.scss */
+  /* line 113, ../sass/client-success.scss */
   .list-items .block-container:hover {
     transform: scale(1.1);
   }
-  /* line 81, ../sass/client-success.scss */
+  /* line 117, ../sass/client-success.scss */
   .list-items .block-content {
     width: 30%;
     display: inline-block;
     vertical-align: top;
     margin: 0 15px;
   }
-  /* line 87, ../sass/client-success.scss */
-  .list-items .cs-content {
-    position: relative;
-  }
-  /* line 89, ../sass/client-success.scss */
+  /* line 124, ../sass/client-success.scss */
   .list-items .cs-content .title {
     height: 48px;
     display: -webkit-box;
@@ -144,43 +179,5 @@ li.active-tab {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-  /* line 97, ../sass/client-success.scss */
-  .list-items .cs-content .tooltip {
-    position: absolute;
-    top: -32px;
-    left: 13px;
-    width: 85%;
-    color: #000;
-    font-size: 12px;
-    background-color: #FFF;
-    border: 1px solid #000;
-    padding: 7px;
-    border-radius: 5px;
-    display: none;
-    text-align: center;
-    transition: all 0.2 ease-in-out;
-  }
-  /* line 111, ../sass/client-success.scss */
-  .list-items .cs-content .tooltip:before {
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    content: '';
-    left: 50%;
-    position: absolute;
-    border-top: 9px solid #000;
-    bottom: -9px;
-    margin-left: -7px;
-  }
-  /* line 121, ../sass/client-success.scss */
-  .list-items .cs-content .tooltip:after {
-    margin-left: -7px;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 9px solid #FFF;
-    bottom: -7px;
-    content: '';
-    left: 50%;
-    position: absolute;
   }
 }
