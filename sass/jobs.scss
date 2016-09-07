@@ -98,3 +98,11 @@ strong{
 		}
 	}
 }
+
+@media screen and (min-width: 960px){
+	.content-block{
+		.block-content{
+			padding: 0;
+		}
+	}
+}
