@@ -163,32 +163,37 @@ strong {
 }
 
 @media screen and (min-width: 960px) {
-  /* line 151, ../sass/pulsing.scss */
+  /* line 150, ../sass/pulsing.scss */
+  .header-graphics {
+    height: 400px;
+  }
+
+  /* line 154, ../sass/pulsing.scss */
   .content-block .block-content {
     padding: 0;
   }
 
-  /* line 155, ../sass/pulsing.scss */
+  /* line 158, ../sass/pulsing.scss */
   .video {
     padding: 0;
   }
-  /* line 157, ../sass/pulsing.scss */
+  /* line 160, ../sass/pulsing.scss */
   .video iframe {
     position: static;
     width: 720px;
     height: 405px;
   }
 
-  /* line 164, ../sass/pulsing.scss */
+  /* line 167, ../sass/pulsing.scss */
   .screenshot {
     border: 1px solid #C5C5C5;
     padding: 20px;
   }
-  /* line 168, ../sass/pulsing.scss */
+  /* line 171, ../sass/pulsing.scss */
   .screenshot img.large {
     display: inline-block;
   }
-  /* line 171, ../sass/pulsing.scss */
+  /* line 174, ../sass/pulsing.scss */
   .screenshot img.small {
     display: none;
   }
