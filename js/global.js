@@ -20,7 +20,18 @@ jQuery(document).ready(function($) {
         $(window).trigger('hashchange');
     }, 500)
   }
-  
+  $('.title').each(function(){
+    if(this.offsetHeight < this.scrollHeight) {
+      $(this).parent().append('<div class="tooltip">'+ $(this).text() +'</div>');
+    }
+  });
+  $('.title').mouseenter(function(){
+    $(this).parent().find('.tooltip').attr('style', 'display: block');
+  });
+  $('.title').mouseout(function(){
+    $(this).parent().find('.tooltip').attr('style', 'display:none');
+  });
+
   $(window).on('resize', function(){
     topMenuH = ($(window).width() >= 960) ? 76 : 0;
     scrollStop = ($(window).width() >= 960) ? 121 : 40;
