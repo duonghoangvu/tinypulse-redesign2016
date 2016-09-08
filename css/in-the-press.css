@@ -1,0 +1,163 @@
+/* line 1, ../sass/in-the-press.scss */
+.container {
+  padding: 0 13px;
+}
+/* line 3, ../sass/in-the-press.scss */
+.container .contact-info {
+  display: none;
+}
+/* line 7, ../sass/in-the-press.scss */
+.container .contact-info-mobile {
+  display: block;
+  text-align: center;
+  font-family: Lato-Light;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 45px;
+}
+/* line 17, ../sass/in-the-press.scss */
+.container .content .press-releases {
+  display: none;
+}
+/* line 22, ../sass/in-the-press.scss */
+.container .articles {
+  width: 100%;
+}
+/* line 24, ../sass/in-the-press.scss */
+.container .articles .article {
+  width: 100%;
+}
+/* line 26, ../sass/in-the-press.scss */
+.container .articles .article img {
+  width: 100%;
+}
+/* line 29, ../sass/in-the-press.scss */
+.container .articles .article .date {
+  font-family: Lato-Light;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+/* line 35, ../sass/in-the-press.scss */
+.container .articles .article .company {
+  font-family: Lato-SemiBold;
+}
+/* line 38, ../sass/in-the-press.scss */
+.container .articles .article .title {
+  font-family: Lato-Regular;
+  font-size: 20px;
+  color: #1C94EE;
+  line-height: 26px;
+}
+/* line 44, ../sass/in-the-press.scss */
+.container .articles .article .short-content {
+  font-family: Lato-Light;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 35px;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 55, ../sass/in-the-press.scss */
+  .brands {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  /* line 58, ../sass/in-the-press.scss */
+  .brands img {
+    margin-bottom: 30px;
+  }
+
+  /* line 63, ../sass/in-the-press.scss */
+  .container .contact-info {
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+  }
+  /* line 69, ../sass/in-the-press.scss */
+  .container .contact-info-mobile {
+    display: none;
+  }
+  /* line 73, ../sass/in-the-press.scss */
+  .container .content {
+    font-size: 0;
+  }
+  /* line 75, ../sass/in-the-press.scss */
+  .container .content .press-releases {
+    display: inline-block;
+    width: calc( 34% - 80px);
+    vertical-align: top;
+    padding-right: 80px;
+  }
+  /* line 80, ../sass/in-the-press.scss */
+  .container .content .press-releases .title {
+    font-family: Lato-Regular;
+    font-size: 24px;
+    margin-top: 0;
+  }
+  /* line 86, ../sass/in-the-press.scss */
+  .container .content .press-releases .release .date {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-family: Lato-Light;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* line 94, ../sass/in-the-press.scss */
+  .container .content .press-releases .release .title {
+    color: #1C94EE;
+    font-family: Lato-Light;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* line 101, ../sass/in-the-press.scss */
+  .container .content .press-releases hr {
+    margin-top: 86px;
+    margin-bottom: 58px;
+  }
+  /* line 106, ../sass/in-the-press.scss */
+  .container .content .press-releases .award-img, .container .content .press-releases .certification-img {
+    margin-bottom: 20px;
+  }
+  /* line 111, ../sass/in-the-press.scss */
+  .container .content .articles {
+    display: inline-block;
+    width: 66%;
+    font-size: 0;
+  }
+  /* line 115, ../sass/in-the-press.scss */
+  .container .content .articles .article {
+    width: calc( 50% - 20px);
+    margin-left: 20px;
+    display: inline-block;
+  }
+  /* line 119, ../sass/in-the-press.scss */
+  .container .content .articles .article .date {
+    font-family: Lato-Light;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  /* line 125, ../sass/in-the-press.scss */
+  .container .content .articles .article .company {
+    font-family: Lato-SemiBold;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  /* line 131, ../sass/in-the-press.scss */
+  .container .content .articles .article .title {
+    font-family: Lato-Regular;
+    font-size: 16px;
+    color: #1C94EE;
+    line-height: 26px;
+  }
+  /* line 137, ../sass/in-the-press.scss */
+  .container .content .articles .article .short-content {
+    font-family: Lato-Light;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+}

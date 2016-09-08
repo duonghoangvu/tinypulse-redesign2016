@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
     var subnav = $('.subnav'), 
     body = $('body'), 
     topMenuH = 0,
-    scroolStop = 0, 
+    scrollStop = 0, 
     popup = $('#popup');
   
   $('.hamburger').click(function(e) {
@@ -13,7 +13,25 @@ jQuery(document).ready(function($) {
     e.preventDefault();
     $(this).closest('li').toggleClass('expanded');
   });
-  
+
+  var hash = window.location.hash;
+  if ($(hash).length > 0){
+    window.setTimeout(function(){
+        $(window).trigger('hashchange');
+    }, 500)
+  }
+  $('.title').each(function(){
+    if(this.offsetHeight < this.scrollHeight) {
+      $(this).parent().append('<div class="tooltip">'+ $(this).text() +'</div>');
+    }
+  });
+  $('.title').mouseenter(function(){
+    $(this).parent().find('.tooltip').attr('style', 'display: block');
+  });
+  $('.title').mouseout(function(){
+    $(this).parent().find('.tooltip').attr('style', 'display:none');
+  });
+
   $(window).on('resize', function(){
     topMenuH = ($(window).width() >= 960) ? 76 : 0;
     scrollStop = ($(window).width() >= 960) ? 121 : 40;
@@ -28,14 +46,16 @@ jQuery(document).ready(function($) {
       });
     }
     $('.subnav').find('a:not(#sub-nav-trigger)').off('click').on('click', function(e){
-      e.preventDefault();
-      $('.subnav li').removeClass('active');
-      $(this).closest('li').addClass('active');
-      $('#sub-nav-trigger').trigger('click');
-      var content = $(this).data('content'), 
-        block = $('[data-block=' + content + ']').filter(':visible');
-      if (block.length > 0){
-        scrollTo(block);      
+      if ($(this).data('content')){
+        e.preventDefault();
+        $('.subnav li').removeClass('active');
+        $(this).closest('li').addClass('active');
+        $('#sub-nav-trigger').trigger('click');
+        var content = $(this).data('content'), 
+          block = $('[data-block=' + content + ']').filter(':visible');
+        if (block.length > 0){
+          scrollTo(block);      
+        }        
       }
     });
     // alert($(window).height());
@@ -61,6 +81,17 @@ jQuery(document).ready(function($) {
           }
       });      
     }
+  }).on('hashchange', function(e){
+    var hash = window.location.hash;
+      if ($(hash).length > 0){
+        scrollStop = ($(window).width() >= 960) ? 71 : 40;
+        var ele = $(hash);
+        window.setTimeout(function(){
+            $('body, html').animate({
+                scrollTop: ele.offset().top - scrollStop
+            }, 750);
+        }, 500);
+      }
   }).trigger('resize');
 
   if (!localStorage.hidePopup){

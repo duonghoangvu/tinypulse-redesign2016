@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/jobs.css" />
+  <meta name="viewport" content="maximum-scale=1,width=device-width,initial-scale=1,user-scalable=0"> 
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="main-content">
+      <div class="content-block">
+        <div class="container">
+          <p class="block-title">Want in on the zany fun? TINYpulse is hiring!</p>
+          <div class="block-content">
+            <p>Does your workplace have adorable dogs running around the office? What about awesome coworkers that communicate through gifs? TINYpulse is growing, and we're growing fast. Which also means we're on the hunt for some talented people to join our team. But we're huge on culture fit. So before you even take a breeze through the open positions below, ask yourself the following:</p>
+            <ul>
+              <li>On a scale of 1 to 10, how awesome are you?</li>
+              <li>Are you a lifelong learner?</li>
+              <li>Do you like working with people who make you laugh?</li>
+              <li>Are you ready to learn, develop, and gain new skills?</li>
+              <li>Puppies. You just can't get enough of them. (Okay, that's more of a statement.)</li>
+            </ul>
+            <p>If you answered "yes" to all of those, then take a gander at what roles we're looking to fill. And just a heads up — avoid making these dumb mistakes when applying to the jobs. Believe it or not, out of 200 people that applied, only 10 people read the instructions and sent us the requirements. Sigh.</p>
+
+            <div class="jobs">
+              <div class="job expanded">
+                <p class="job-title">Product Manager</p>
+                <div class="job-desc">
+                  <p>For every task assigned, do you own it like a boss? We're looking for a product owner to take charge on managing product features, planning, and executing the product lifecycle. Yes, that includes (but definitely not limited to) prioritizing new feature requests, driving customer research, and defining key metrics for measuring product success. So if you've dabbled in user experience and have worked with design and development, we're ready to chat.</p>
+                  <a href="#">Click here to read the full job description</a>
+                </div>
+              </div>
+              <div class="job">
+                <p class="job-title">CEO</p>
+                <div class="job-desc">
+                  <p>For every task assigned, do you own it like a boss? We're looking for a product owner to take charge on managing product features, planning, and executing the product lifecycle. Yes, that includes (but definitely not limited to) prioritizing new feature requests, driving customer research, and defining key metrics for measuring product success. So if you've dabbled in user experience and have worked with design and development, we're ready to chat.</p>
+                  <a href="#">Click here to read the full job description</a>
+                </div>
+              </div>
+              <div class="job">
+                <p class="job-title">UFO</p>
+                <div class="job-desc">
+                  <p>For every task assigned, do you own it like a boss? We're looking for a product owner to take charge on managing product features, planning, and executing the product lifecycle. Yes, that includes (but definitely not limited to) prioritizing new feature requests, driving customer research, and defining key metrics for measuring product success. So if you've dabbled in user experience and have worked with design and development, we're ready to chat.</p>
+                  <a href="#">Click here to read the full job description</a>
+                </div>
+              </div>
+              <div class="job">
+                <p class="job-title">Some one</p>
+                <div class="job-desc">
+                  <p>For every task assigned, do you own it like a boss? We're looking for a product owner to take charge on managing product features, planning, and executing the product lifecycle. Yes, that includes (but definitely not limited to) prioritizing new feature requests, driving customer research, and defining key metrics for measuring product success. So if you've dabbled in user experience and have worked with design and development, we're ready to chat.</p>
+                  <a href="#">Click here to read the full job description</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/global.js"></script>
+  <script type="text/javascript">
+    var job = $('.job');
+    job.on('click', function(){
+      if ($(this).hasClass('expanded')){
+        $(this).toggleClass('expanded');
+      } else {
+        job.removeClass('expanded');
+        $(this).addClass('expanded');        
+      }
+    })
+  </script>
+</body>
