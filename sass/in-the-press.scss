@@ -52,6 +52,13 @@
 }
 
 @media screen and (min-width: 960px) { 
+  .brands{
+    max-width: 980px;
+    margin: 0 auto;
+    img{
+      margin-bottom: 30px;
+    }
+  }
   .container {
     .contact-info {
       text-align: center;

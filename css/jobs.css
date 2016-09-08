@@ -48,39 +48,36 @@ strong {
 /* line 45, ../sass/jobs.scss */
 .jobs {
   border: 1px solid #DADADA;
-  margin-top: 50px;
-}
-/* line 48, ../sass/jobs.scss */
-.jobs .job {
-  border-top: 1px solid #dadada;
+  margin: 50px 0 70px;
+  display: inline-block;
 }
 /* line 50, ../sass/jobs.scss */
-.jobs .job:first-child {
-  border-top: 0;
+.jobs .job.expanded {
+  border-bottom: 1px solid #DADADA;
 }
-/* line 54, ../sass/jobs.scss */
+/* line 53, ../sass/jobs.scss */
 .jobs .job.expanded .job-title {
   border-color: #dadada;
 }
-/* line 56, ../sass/jobs.scss */
+/* line 55, ../sass/jobs.scss */
 .jobs .job.expanded .job-title:after {
   transform: rotate(0deg);
 }
-/* line 60, ../sass/jobs.scss */
+/* line 59, ../sass/jobs.scss */
 .jobs .job.expanded .job-desc {
   max-height: 800px;
 }
-/* line 64, ../sass/jobs.scss */
+/* line 63, ../sass/jobs.scss */
 .jobs .job .job-title {
   margin: 0;
   font-family: "Lato-Semibold";
   padding: 20px;
   position: relative;
   cursor: pointer;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #dadada;
   transition: all 0.5s;
 }
-/* line 72, ../sass/jobs.scss */
+/* line 71, ../sass/jobs.scss */
 .jobs .job .job-title:after {
   transition: all 0.3s;
   content: "\f078";
@@ -91,7 +88,7 @@ strong {
   -webkit-font-smoothing: antialiased;
   transform: rotate(-90deg);
 }
-/* line 83, ../sass/jobs.scss */
+/* line 82, ../sass/jobs.scss */
 .jobs .job .job-desc {
   max-height: 0;
   overflow: hidden;
@@ -99,14 +96,21 @@ strong {
   text-align: left;
   padding: 0 20px;
 }
-/* line 90, ../sass/jobs.scss */
+/* line 89, ../sass/jobs.scss */
 .jobs .job .job-desc p {
   padding-top: 10px;
 }
-/* line 93, ../sass/jobs.scss */
+/* line 92, ../sass/jobs.scss */
 .jobs .job .job-desc a {
   color: #1C94EE;
   text-align: left;
   display: inline-block;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 104, ../sass/jobs.scss */
+  .content-block .block-content {
+    padding: 0;
+  }
 }

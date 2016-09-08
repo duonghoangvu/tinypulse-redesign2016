@@ -288,7 +288,7 @@
   }
 
   /* line 251, ../sass/contact.scss */
-  .hs_name .input, .hs_phone .input {
+  .hs_name .input, .hs_firstname .input, .hs_phone .input {
     margin-right: 20px !important;
   }
 

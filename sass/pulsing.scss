@@ -80,6 +80,11 @@ strong{
 }
 
 .employees{
+  .video{
+    iframe{
+      border: 1px solid #979797;
+    }
+  }
 	.pie-chart{
 		img{
 			vertical-align: bottom;
@@ -147,6 +152,9 @@ strong{
 }
 
 @media screen and (min-width: 960px){
+	.header-graphics{
+		height: 400px;
+	}
 	.content-block{
 		.block-content{
 			padding: 0;
