@@ -84,7 +84,7 @@
           <div class='glyphicon glyphicon-chevron-up'></div>
         </div>
       </div>
-      <div class="content-block top-overview" data-block="top-overview">
+      <div class="content-block top-overview">
         <div class="container">
           <h2 class="block-title">What it means to be a Top Company</h2>
           <div class="block-content">
@@ -94,20 +94,24 @@
             <div class='content-desc'>
               <p>It's not easy for anyone to open up to anonymous feedback, much less the leader of a company or department. But that's exactly what TINYpulse administrators commit to, and that's why we tell leaders to NOT use TINYpulse unless they are committed to change, sharing feedback, and then taking action based on that feedback.</p>
               <p>We are highlighting the top companies who are passionately dedicated to monitoring and improving their company culture. These organizations are also committed to recognition via Cheers for Peers and responding to virtual suggestions. These companies aren't just winning a once-a-year survey. They are dedicated on a continual basis. Bravo!</p>
-              <a class='overview-recognition' href='#top_company_recognition'>Find out how to become a TINYpulse Top Company</a>
+              <a class='overview-recognition' href='#how-to'>Find out how to become a TINYpulse Top Company</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="content-block customers" data-block="customers">
+      <div class="content-block">
         <div class="container">
           <h2 class="block-title">Recent recipients and why they love TINYpulse</h2>
           <p class="block-desc">
             Click on a company logo to know their story
           </p>
+        </div>
+      </div>
+      <div class="content-block customers" id="customers">
+        <div class="container">
           <div class="block-content logos">
-            <div class='customers-logo'><img src='https://www.tinypulse.com/hubfs/redesign_2016/top-companies/concept-systems.png' /></div>
-            <div class='customers-logo'><img src='https://www.tinypulse.com/hubfs/redesign_2016/top-companies/geeks2u.png' /></div>
+            <div class='customers-logo' data-customer="concept-systems"><img src='https://www.tinypulse.com/hubfs/redesign_2016/top-companies/concept-systems.png' /></div>
+            <div class='customers-logo' data-customer="geek-2u"><img src='https://www.tinypulse.com/hubfs/redesign_2016/top-companies/geeks2u.png' /></div>
             <div class='customers-logo'><img src='https://www.tinypulse.com/hubfs/redesign_2016/top-companies/find-the-best.png' /></div>
             <div class='customers-logo'><img src='https://www.tinypulse.com/hubfs/redesign_2016/top-companies/conversion-rate-expert.png' /></div>
             <div class='customers-logo'><img src='https://www.tinypulse.com/hubfs/redesign_2016/top-companies/killer.png' /></div>
@@ -117,9 +121,8 @@
           </div>
         </div>
       </div>
-        <div class="content-block customer concept-systems" data-block="customers">
+      <div class="content-block customer customer-content concept-systems">
         <div class="container">
-          <h2 class="block-title">Recent recipients and why they love TINYpulse</h2>
           <div class='customer-logo'>
             <img src='https://www.tinypulse.com/hubfs/redesign_2016/top-companies/concept-systems.png' />
           </div>
@@ -145,9 +148,44 @@
               </div>
             </div>
           </div>
+          <div class="other-customers">
+            <a href="#customers">See other recent recipients and why they love TINYpulse</a>
+          </div>
         </div>
       </div>
-      <div class='content-block recognition' data-block="recognition">
+      <div class="content-block customer customer-content geek-2u">
+        <div class="container">
+          <div class='customer-logo'>
+            <img src='https://www.tinypulse.com/hubfs/redesign_2016/top-companies/concept-systems.png' />
+          </div>
+          <div class='customer-video'>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/CBeK44_HgoQ?feature=player_embedded" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+          <hr></hr>
+          <div class='customer-quote'>
+            <div class='content'>
+              <i>"TINYpulse is one of those smart initiatives at Concept that helps us to do a sanity check on happiness factor of people and identify loose ends to tie. "</i>
+            </div>
+            <div class='author'>
+              <div class='name'>Goktug Dazkir, Senior Engineer</div>
+              <div class='company'>Concept Systems Inc.</div>
+            </div>
+          </div>
+          <hr></hr>
+          <div class='employees-quotes'>
+            <div class='employee-quote'>
+              <div class='employee-name'>Goktug Dazkir, Senior Engineer</div>
+              <div class='content'>
+                'I am always impressed with our company's desire to thrive by working really hard to make Concept a likeable place for everyone. TINYpulse is one of those smart initiatives at Concept that helps us to do a sanity check on happiness factor of people and identify loose ends to tie. TINYpulse is easy to use, fun to interact with and a great tool to let everyone know about things you don't like or concerned with anonymously. On the flip side, TINYpulse helps management to develop a thicker skin, easily see some of the common pains around the company and provide with the opportunity to show people that they care about them by taking solid actions to address these issues. I believe TINYpulse will play a key role in preventing having a disconnect between the management and the employees as we grow as a company. Also, Cheers for Peers will help employees to strengthen their relationship with peers by showing appreciation for others.'
+              </div>
+            </div>
+          </div>
+          <div class="other-customers">
+            <a href="#customers">See other recent recipients and why they love TINYpulse</a>
+          </div>
+        </div>
+      </div>
+      <div class='content-block recognition' id="how-to">
         <div class="container">
           <h2 class="block-title">Get recognized for being great</h2>
           <div class='block-content'>
@@ -221,10 +259,5 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/global.js"></script>
-  <script src="js/nav.js"></script>
-  <script src="js/engage.js"></script>
-  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
-  <script type="text/javascript" src="https://www.tinypulse.com/hubfs/lib/jquery.transit.min.js"></script>
-  <script src="https://dl.dropboxusercontent.com/u/913021/touch-slider/idangerous.swiper-2.0.min.js"></script>
 </body>
       

@@ -1,4 +1,9 @@
-@import "_typography";
+$font_regular: 'Lato-Regular';
+$font_semibold: 'Lato-Semibold';
+$font_bold: 'Lato-Bold';
+$font_light: 'Lato-Light';
+$font_thin: 'Lato-Thin';
+
 .clearfix {
   clear: both;
 }
@@ -35,9 +40,15 @@
 }
 .customers {
   padding-bottom: 20px;
+  padding-top: 10px;
   border-bottom: 1px solid #DADADA;
+  display: inline-block;
+  width: 100%;
   .logos {
     font-size: 0;
+    .row-fluid-wrapper{
+      display: inline-block;
+    }
   }
   .customers-logo {
     width: 135px;
@@ -49,6 +60,11 @@
     border: 1px solid #DADADA;
     vertical-align: middle;
     margin: 0px 10px 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    &.active{
+      background: #E8F4FD;
+    }
     img {
       max-width: 100%;
       max-height: 100%;
@@ -68,6 +84,7 @@
   }
   .block-content {
     padding: 0 20px;
+    margin-bottom: 50px;
   }
   .content-title {
     line-height: 26px;
@@ -96,9 +113,12 @@
 .customer {
   .customer-logo {
     width: 250px;
-    margin: 40px auto;
+    margin: 40px auto 40px;
     img{
-      max-width: 100%;
+      max-width: 160px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
     }
   }
   .customer-video {
@@ -130,10 +150,30 @@
   }
   .employees-quotes {
     font-size: 18px;
-    line-height: 26px
+    line-height: 26px;
     font-family: $font_light;
   }
 }
+.customer-content{
+  border-top: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  &.active{
+    transition: max-height 1s;
+    padding: 0 20px 40px;
+    max-height: 2000px;
+    border-bottom: 1px solid #dadada;
+  }
+}
+
+.other-customers{
+  margin-top: 30px;
+  a{
+    color: #1C94EE;
+  }
+}
+
 @media screen and (min-width: 960px){
   .subnav li.top-companies:before {
     transform: scaleX(1);
