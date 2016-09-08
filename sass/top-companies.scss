@@ -115,17 +115,21 @@ $font_thin: 'Lato-Thin';
     width: 250px;
     margin: 40px auto 40px;
     img{
-      max-width: 160px;
+      max-width: 100%;
       height: auto;
       margin: 0 auto;
       display: block;
+    }
+    img.big-img {
+      max-width: 130px;
     }
   }
   .customer-video {
     margin: 0 auto 50px;
     text-align: center;
-    iframe {
+    iframe, video {
       max-width: 350px;
+      width: 100%;
     }
   }
   hr {
@@ -134,7 +138,9 @@ $font_thin: 'Lato-Thin';
   }
   .customer-quote {
     text-align: center;
-    padding: 30px 15px;
+    padding: 30px 0px;
+    max-width: 800px;
+    margin: 0 auto;
     .content {
       font-size: 24px;
       line-height: 29px;
@@ -149,9 +155,23 @@ $font_thin: 'Lato-Thin';
     }
   }
   .employees-quotes {
-    font-size: 18px;
     line-height: 26px;
     font-family: $font_light;
+    margin-top: 50px;
+    font-size: 0;
+    .employee-quote {
+      font-size: 18px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 26px;
+      .employee-name {
+        font-family: $font_semibold;
+        margin-bottom: 30px;
+      }
+      .content {
+        font-family: $font_light;
+      }
+    }
   }
 }
 .customer-content{
@@ -162,7 +182,7 @@ $font_thin: 'Lato-Thin';
   &.active{
     transition: max-height 1s;
     padding: 0 20px 40px;
-    max-height: 2000px;
+    max-height: 100%;
     border-bottom: 1px solid #dadada;
   }
 }
@@ -214,5 +234,32 @@ $font_thin: 'Lato-Thin';
         }
       }
     }
+  }
+  .customer {
+    .customer-video {
+      iframe, video {
+        max-width: 720px;
+        height: 405px;
+      }
+    }
+    .employees-quotes {
+      .employee-quote {
+        display: inline-block;
+        width: 29%;
+        margin: 18px;
+        vertical-align: top;
+        .employee-name {
+          height: 50px;
+        }
+      }
+    }
+    .two-columns {
+      .employee-quote {
+        width: 45%;
+      }
+    }
+  }
+  .other-customers{
+    margin: 18px;
   }
 }
