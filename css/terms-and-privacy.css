@@ -24,11 +24,6 @@
   src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
 }
 /* line 2, ../sass/terms-and-privacy.scss */
-.main-content {
-  margin-bottom: 0px;
-}
-
-/* line 5, ../sass/terms-and-privacy.scss */
 h2 {
   font-size: 36px;
   line-height: 44px;
@@ -36,7 +31,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-/* line 11, ../sass/terms-and-privacy.scss */
+/* line 8, ../sass/terms-and-privacy.scss */
 .content-block {
   max-width: 960px;
   margin: 0 auto;
@@ -45,7 +40,7 @@ h2 {
   padding-right: 20px;
 }
 
-/* line 18, ../sass/terms-and-privacy.scss */
+/* line 15, ../sass/terms-and-privacy.scss */
 .content {
   font-family: "Lato-Regular";
   font-size: 14px;
@@ -59,36 +54,36 @@ h2 {
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-/* line 30, ../sass/terms-and-privacy.scss */
+/* line 27, ../sass/terms-and-privacy.scss */
 .content p {
   margin: 0 0 10px;
 }
-/* line 33, ../sass/terms-and-privacy.scss */
+/* line 30, ../sass/terms-and-privacy.scss */
 .content a {
   color: #08c;
 }
-/* line 36, ../sass/terms-and-privacy.scss */
+/* line 33, ../sass/terms-and-privacy.scss */
 .content ul.terms {
   list-style-type: none;
   padding: 0;
   margin: 0 0 10px 25px;
 }
-/* line 40, ../sass/terms-and-privacy.scss */
+/* line 37, ../sass/terms-and-privacy.scss */
 .content ul.terms li {
   margin-bottom: 5px;
   line-height: 20px;
 }
-/* line 45, ../sass/terms-and-privacy.scss */
+/* line 42, ../sass/terms-and-privacy.scss */
 .content .has-indent {
   margin-left: 25px;
 }
 
-/* line 49, ../sass/terms-and-privacy.scss */
+/* line 46, ../sass/terms-and-privacy.scss */
 strong {
   font-family: "Lato-Bold";
 }
 
-/* line 53, ../sass/terms-and-privacy.scss */
+/* line 50, ../sass/terms-and-privacy.scss */
 #privacy-policy h2 {
   font-size: 24px;
   line-height: 30px;
@@ -98,12 +93,12 @@ strong {
   text-align: left;
   font-family: "Lato-Bold";
 }
-/* line 62, ../sass/terms-and-privacy.scss */
+/* line 59, ../sass/terms-and-privacy.scss */
 #privacy-policy ul, #privacy-policy ol {
   padding: 0;
   margin: 0 0 10px 25px;
 }
-/* line 66, ../sass/terms-and-privacy.scss */
+/* line 63, ../sass/terms-and-privacy.scss */
 #privacy-policy li {
   margin-top: 10px;
   margin-bottom: 10px;
