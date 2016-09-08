@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("fonts/Lato-Regular.eot");
+  src: url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("fonts/Lato-Light.eot");
+  src: url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url("fonts/Lato-Semibold.eot");
+  src: url("fonts/Lato-Semibold.woff2") format("woff2"), url("fonts/Lato-Semibold.woff") format("woff"), url("fonts/Lato-Semibold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("fonts/Lato-Bold.eot");
+  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url("fonts/Lato-Thin.eot");
+  src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
+}
+/* line 2, ../sass/terms-and-privacy.scss */
+.main-content {
+  margin-bottom: 0px;
+}
+
+/* line 5, ../sass/terms-and-privacy.scss */
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 11, ../sass/terms-and-privacy.scss */
+.content-block {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 18, ../sass/terms-and-privacy.scss */
+.content {
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  line-height: 24px;
+  padding: 19px;
+  border: 1px solid #e3e3e3;
+  /* -webkit-border-radius: 4px; */
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+/* line 30, ../sass/terms-and-privacy.scss */
+.content p {
+  margin: 0 0 10px;
+}
+/* line 33, ../sass/terms-and-privacy.scss */
+.content a {
+  color: #08c;
+}
+/* line 36, ../sass/terms-and-privacy.scss */
+.content ul.terms {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+/* line 40, ../sass/terms-and-privacy.scss */
+.content ul.terms li {
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+/* line 45, ../sass/terms-and-privacy.scss */
+.content .has-indent {
+  margin-left: 25px;
+}
+
+/* line 49, ../sass/terms-and-privacy.scss */
+strong {
+  font-family: "Lato-Bold";
+}
+
+/* line 53, ../sass/terms-and-privacy.scss */
+#privacy-policy h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #636466;
+  text-align: left;
+  font-family: "Lato-Bold";
+}
+/* line 62, ../sass/terms-and-privacy.scss */
+#privacy-policy ul, #privacy-policy ol {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+/* line 66, ../sass/terms-and-privacy.scss */
+#privacy-policy li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 20px;
+}
