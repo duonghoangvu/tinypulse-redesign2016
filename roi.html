@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <!-- <link rel="stylesheet" href="css/ion.rangeSlider.css"> -->
+  <!-- <link rel="stylesheet" href="css/ion.rangeSlider.skinSimple.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/rangeSlider.min.css">
+  <link rel="stylesheet" href="css/roi.css" />
+  <meta name="viewport" content="maximum-scale=1,width=device-width,initial-scale=1,user-scalable=0"> 
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="main-content roi-page">
+      <div class="content-block">
+        <div class="container">
+          <p class="block-title">Do The Math: The 'Cost' Of Using TINYpulse</p>
+          <div class="roi-calculation">
+            <img src="images/roi/roi.png">
+            <p class="title-responsive">Do The Math:<br/> The 'Cost' Of Using TINYpulse</p>
+            <div class="roi-form">
+              <div class="form-input">
+                <input type="text" name="numberOfEmployees" id="number-of-employees" value="100">
+                <span class="spn-number-of-employees">Number of employees</span>
+              </div>
+              
+              <div class="form-input">
+                <input type="text" name="averageSalary" id="average-salary" value="53657">
+                <span class="spn-average-salary">Average salary of employees</span>
+              </div>
+
+              <div class="form-input">
+                <input type="text" name="averageYearlyTurnover" id="yearly-turnover" value="16.4">
+                <span class="spn-average-yearly-turnover">Average yearly turnover percentage</span>
+              </div>
+
+              <div class="form-range-slider">
+                <label>Reduction in turnover using TINYpulse</label>
+                <input type="range" id="range-slider" step="1"/>
+                <img class="range-slider" src="images/range-slider.png">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block roi-result">
+        <div class="container">
+          <div class="desc">Annual amount saved using TINYpulse</div>
+          <div class="num" id="annual-save-using-tinypulse">$118,236.27</div>
+        </div>
+      </div>
+
+      <div class="content-block roi-detail">
+        <div class="container">
+          <button class="btn btn-show-detail">Show detail</button>
+          <button class="btn btn-hide-detail">Hide detail</button>
+
+          <div class="details">
+            <div class="detail">
+              <img src="images/roi/cost.png">
+              <div class="number" id="cost-to-rehire">$175,994.96</div>
+              <div class="description">Current cost to rehire new employees</div>
+            </div>
+
+            <div class="detail">
+              <img src="images/roi/TINYlogo.png">
+              <div class="number" id="cost-of-tinypulse">$12,000.00</div>
+              <div class="description">Cost of TINYpulse</div>
+            </div>
+
+            <div class="detail">
+              <img src="images/roi/employees.png">
+              <div class="number" id="number-employees-saved">13</div>
+              <div class="description">Employees saved using TINYpulse</div>
+            </div>
+
+            <div class="detail">
+              <img src="images/roi/reduced_cost.png">
+              <div class="number" id='reduced-cost-to-rehire-with-tinypulse'>$45,758.69</div>
+              <div class="description">Reduced cost to rehire using TINYpulse</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="content-block roi-description">
+        <div class="container">
+          <p>Cost of TINYpulse based on the $10 Per Seat Pricing</p>
+
+          <p>US Median household income is $53,657 based on the <a href="">2014 US Census</a></p>
+
+          <p>Low paying jobs (<$30,000) can cost 16% annual salary to replace. Moderate paying jobs ($30-$75,000) can cost 20% annual salary to replace. High paying jobs (>$75,000) can cost as much as 213% annual salary to replace. Percentages from <a href="">There Are Significant Business Costs to Replacing Employees</a> by Heather Boushey and Sarah Jane Glynn of Center for American Progress</p>
+          
+          <p>The average total turnover rate reported across industries by employers in 2015 is relatively flat at <a href="">16.4 percent</a> according to Compdata Surveys' national survey, BenchmarkPro, surveying 28,000 organizations.</p>
+          
+          <p>Default value for reduced turnover based on the Bersin <a href="">Getting to the Heart of Engagement</a> case study.</p>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/jquery.formatCurrency-1.4.0.min.js"></script>
+  <script src="js/rangeSlider.min.js"></script>
+  <script src="js/roi.js"></script>
+
+</body>

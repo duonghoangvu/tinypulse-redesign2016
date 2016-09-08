@@ -1,0 +1,242 @@
+.block-title {
+  display: none;
+}
+
+.roi-calculation {
+  text-align: center;
+  img {
+    max-width: 500px;
+    width: 100%;
+  }
+  .title-responsive {
+    display: block;
+    font-family: Lato-Regular;
+    font-size: 24px;
+    color: #000000;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .roi-form {
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    .form-input {
+      position: relative;
+      max-width: 315px;
+      margin: auto;
+      input {
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        height: 45px;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: right;
+        outline: none;
+        padding-right: 10px;
+      }
+      span {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        font-family: Lato-Light;
+        font-size: 14px;
+        color: #9B9B9B;
+      }
+    }
+    .form-range-slider {
+      text-align: left;
+      max-width: 315px;
+      margin: auto;
+      label {
+        font-family: Lato-Light;
+        font-size: 14px;
+        color: #9B9B9B;
+        margin-bottom: 10px;
+      }
+      .range-slider {
+        width: 100%;
+      }
+      .rangeSlider {
+        width: 100%;
+        background: #F1F2F1;
+        border-radius: 8px;
+        height: 8px;
+        margin-top: 60px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        .rangeSlider__handle {
+          background: #F37122;
+          box-shadow: 0px 2px 0px 0px #D6611A;
+          border-radius: 4px;
+          width: 14px;
+          height: 24px;
+        }
+        .rangeSlider__handle:after { 
+          background-image: none;
+          background: #1C94EE;
+          box-shadow: 0px 2px 0px 0px #4861A0;
+          color: #FFF;
+          content: attr(data-content) '%';
+          border-radius: 4px;
+          top: -65px;
+          left: -15px;
+          font-size: 12px;
+          padding: 6px 0;
+          width: 38px;
+          text-align: center;
+        }
+        .rangeSlider__handle:before { 
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid #1C94EE;
+          position: absolute;
+          top: -5px;
+          display: block;
+          content: "";
+          z-index: 10;
+        }
+        .rangeSlider__fill {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.roi-result {
+  background-image: linear-gradient(-60deg, rgba(123,32,138,0.82)  0%, #FF5C5C 100%);
+  padding: 20px 35px;
+  color: #FFF;
+  text-align: center;
+  margin-top: 30px;
+  .desc {
+    font-family: Lato-Semibold;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .num {
+    font-family: Lato-Semibold;
+    font-size: 28px;
+  }
+}
+
+.roi-detail {
+  text-align: center;
+  .btn {
+    border: 2px solid #DADADA;
+    border-radius: 3px;
+    padding: 11px 57px;
+    background: #FFF;
+
+    font-family: Lato-Bold;
+    font-size: 18px;
+    color: #9B9B9B;
+    letter-spacing: 0.12px;
+    margin-bottom: 40px;
+
+    outline: none;
+  }
+
+  .btn-hide-detail {
+    display: none;
+  }
+  
+  .details {
+    display: none;
+    .detail {
+      margin-bottom: 40px;
+      .number {
+        font-family: Lato-Bold;
+        font-size: 22px;
+        color: #000000;
+        letter-spacing: 0.15px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+      .description {
+        font-family: Lato-Regular;
+        font-size: 18px;
+        color: #9B9B9B;
+        letter-spacing: 0.12px;
+      }
+    }
+  }
+}
+
+.roi-description {
+  padding: 0 30px 20px;
+  p {
+    font-family: Lato-Light;
+    font-size: 14px;
+    color: #9B9B9B;
+    margin: 0;
+    a {
+      color: #1C94EE;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 960px){ 
+  .block-title {
+    display: block;
+  }
+  .roi-calculation {
+    font-size: 0;
+    img {
+      width: 50%;
+      display: inline-block;
+    }
+
+    .title-responsive {
+      display: none;
+    }
+
+    .roi-form {
+      width: 50%;
+      display: inline-block;
+      margin: 55px 0 0; 
+      vertical-align: top;
+      .form-input {
+        // margin: 0;
+        max-width: 457px;
+
+        input {
+          font-size: 12px;  
+          width: 100%;
+        }
+      }
+      .form-range-slider {
+        text-align: left;
+        max-width: 470px;
+        margin-left: 10px;
+        margin-right: 5px; 
+        label {
+          font-family: Lato-Light;
+          font-size: 14px;
+          color: #9B9B9B;
+          margin-bottom: 10px;
+        }
+
+        input {
+          width: 100%;
+        }
+      }
+
+    }
+
+  }
+  .roi-result { 
+    .desc {
+      display: inline-block;
+    }
+    .num {
+      margin-left: 43px;
+      display: inline-block;
+    }
+  }
+}
