@@ -23,29 +23,40 @@
   margin: 10px 30px 30px;
 }
 
-.term {
-  font-size: 0;
-  margin: 0 30px 15px;
-  .checked {
-    display: inline-block;
-    background: url('../images/checked.png');
-    width: 18px;
-    height: 15px;
-    margin-right: 10px;
-    vertical-align: top;
+.video{
+  position: relative;
+  padding-top: 56%;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  iframe{
+    width: 100%;
+    height: 100%;
+    max-width: 720px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
-  p {
+}
+
+.term {
+  margin-left: 10px;
+  margin-right: 30px;
+  
+  li {
     font-family: Lato-Light;
-    display: inline-block;
     font-size: 18px;
-    width: calc(100% - 28px);
-    margin-top: 0;
+    padding-left: 10px;
+    margin-bottom: 20px;
   }
 }
 
 .feedback {
   font-family: Lato-Light;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.11px;
   margin: 20px 30px 70px;
   display: inline-block;
@@ -57,18 +68,33 @@
       margin-left: 113px;
       margin-right: 113px;
     }
+    .intro {
+      font-size: 16px;
+    }
     .content-block {
       padding-top: 20px;
     }
     .term {
-      font-size: 0;
-      margin: 0 30px 15px;
-      .checked {
-        margin-left: 10px;
+      margin-left: 10px;
+      li {
+        font-family: Lato-Light;
+        font-size: 16px;
+        padding-left: 10px;
+        margin-bottom: 20px;
       }
-      p {
-        width: calc(100% - 38px);        
+    }
+    .video{
+      padding: 0;
+      text-align: center;
+      iframe{
+        position: static;
+
+        width: 720px;
+        height: 405px;
       }
+    }
+    .feedback {
+      font-size: 16px;
     }
   }
 }
