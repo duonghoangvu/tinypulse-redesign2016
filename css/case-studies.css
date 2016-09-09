@@ -198,38 +198,33 @@ svg text {
   .ceo {
     font-size: 0;
   }
-  /* line 178, ../sass/case-studies.scss */
-  .ceo .container {
-    margin-left: 180px;
-    margin-right: 180px;
-  }
-  /* line 181, ../sass/case-studies.scss */
+  /* line 179, ../sass/case-studies.scss */
   .ceo .container .avatar {
     max-width: 175px;
     display: inline-block;
   }
-  /* line 185, ../sass/case-studies.scss */
+  /* line 183, ../sass/case-studies.scss */
   .ceo .container .info {
     width: calc(100% - 205px);
     display: inline-block;
     text-align: left;
     padding-left: 30px;
   }
-  /* line 190, ../sass/case-studies.scss */
+  /* line 188, ../sass/case-studies.scss */
   .ceo .container .info .name {
     font-size: 20px;
     font-weight: bold;
   }
-  /* line 194, ../sass/case-studies.scss */
+  /* line 192, ../sass/case-studies.scss */
   .ceo .container .info .position {
     font-size: 20px;
   }
-  /* line 197, ../sass/case-studies.scss */
+  /* line 195, ../sass/case-studies.scss */
   .ceo .container .info .description {
     font-size: 16px;
   }
 
-  /* line 204, ../sass/case-studies.scss */
+  /* line 202, ../sass/case-studies.scss */
   .specification {
     padding-left: 0;
     padding-right: 0;
