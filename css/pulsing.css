@@ -88,11 +88,15 @@ strong {
 }
 
 /* line 84, ../sass/pulsing.scss */
+.employees .video iframe {
+  border: 1px solid #979797;
+}
+/* line 89, ../sass/pulsing.scss */
 .employees .pie-chart img {
   vertical-align: bottom;
   margin: 40px 0 0 0;
 }
-/* line 88, ../sass/pulsing.scss */
+/* line 93, ../sass/pulsing.scss */
 .employees .pie-chart .legends {
   vertical-align: bottom;
   width: 250px;
@@ -100,7 +104,7 @@ strong {
   margin-top: 30px;
   display: inline-block;
 }
-/* line 94, ../sass/pulsing.scss */
+/* line 99, ../sass/pulsing.scss */
 .employees .pie-chart .legends span {
   position: relative;
   padding-left: 40px;
@@ -110,7 +114,7 @@ strong {
   font-size: 16px;
   color: #9B9B9B;
 }
-/* line 102, ../sass/pulsing.scss */
+/* line 107, ../sass/pulsing.scss */
 .employees .pie-chart .legends span:before {
   content: "";
   width: 20px;
@@ -119,42 +123,42 @@ strong {
   left: 0;
   border-radius: 50%;
 }
-/* line 110, ../sass/pulsing.scss */
+/* line 115, ../sass/pulsing.scss */
 .employees .pie-chart .legends span:first-child:before {
   background-color: #008AD0;
 }
-/* line 113, ../sass/pulsing.scss */
+/* line 118, ../sass/pulsing.scss */
 .employees .pie-chart .legends span:first-child + span:before {
   background-color: #00C26B;
 }
 
-/* line 121, ../sass/pulsing.scss */
+/* line 126, ../sass/pulsing.scss */
 .block-quote {
   max-width: 720px;
   margin: auto;
 }
-/* line 124, ../sass/pulsing.scss */
+/* line 129, ../sass/pulsing.scss */
 .block-quote hr {
   width: 126px;
 }
-/* line 126, ../sass/pulsing.scss */
+/* line 131, ../sass/pulsing.scss */
 .block-quote hr.top {
   margin-top: 40px;
   margin-bottom: 30px;
 }
-/* line 130, ../sass/pulsing.scss */
+/* line 135, ../sass/pulsing.scss */
 .block-quote hr.bottom {
   margin-top: 30px;
   margin-bottom: 40px;
 }
-/* line 135, ../sass/pulsing.scss */
+/* line 140, ../sass/pulsing.scss */
 .block-quote .quote-content {
   font-family: Lato-LightItalic;
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 141, ../sass/pulsing.scss */
+/* line 146, ../sass/pulsing.scss */
 .block-quote .name, .block-quote .position {
   font-family: Lato-Regular;
   font-size: 18px;
@@ -163,37 +167,37 @@ strong {
 }
 
 @media screen and (min-width: 960px) {
-  /* line 150, ../sass/pulsing.scss */
+  /* line 155, ../sass/pulsing.scss */
   .header-graphics {
     height: 400px;
   }
 
-  /* line 154, ../sass/pulsing.scss */
+  /* line 159, ../sass/pulsing.scss */
   .content-block .block-content {
     padding: 0;
   }
 
-  /* line 158, ../sass/pulsing.scss */
+  /* line 163, ../sass/pulsing.scss */
   .video {
     padding: 0;
   }
-  /* line 160, ../sass/pulsing.scss */
+  /* line 165, ../sass/pulsing.scss */
   .video iframe {
     position: static;
     width: 720px;
     height: 405px;
   }
 
-  /* line 167, ../sass/pulsing.scss */
+  /* line 172, ../sass/pulsing.scss */
   .screenshot {
     border: 1px solid #C5C5C5;
     padding: 20px;
   }
-  /* line 171, ../sass/pulsing.scss */
+  /* line 176, ../sass/pulsing.scss */
   .screenshot img.large {
     display: inline-block;
   }
-  /* line 174, ../sass/pulsing.scss */
+  /* line 179, ../sass/pulsing.scss */
   .screenshot img.small {
     display: none;
   }
