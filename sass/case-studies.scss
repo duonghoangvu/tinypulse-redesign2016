@@ -1,0 +1,209 @@
+.cover {
+    height: 350px;
+    text-align: center;
+    background-size: cover;
+}
+
+.company-logo {
+    max-width: 300px;
+    margin-top: 130px;
+}
+
+.company-info {
+    text-align: center;
+    margin-top: 50px !important;
+    .info-group {
+        img {
+            max-height: 70px;
+        }
+        .info-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .info-content {
+            margin-bottom: 50px;
+            font-size: 21px;
+            font-weight: bold;
+        }
+    }
+}
+
+.company-stats {
+    background-color: #F2F2F2;
+    padding-bottom: 50px;
+    .recognition, .response-feedback{
+        max-width: 85%;
+        padding-top: 50px;
+        text-align: center;
+        margin: auto;
+        .title {
+            font-size: 23px;
+            font-weight: 400;
+        }
+        .label {
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    }
+    .response-feedback {
+        font-size: 0;
+        vertical-align: top;
+        .response {
+            width: 50% !important;
+            display: inline-block;
+            text-align: center;
+        }
+        .feedback {
+            width: 50% !important;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+    #recognition, #response, #feedback {
+        margin-top: 40px;
+    }
+     
+}
+
+.cs-quote {
+    max-width: 85% !important;
+    margin: 100px auto !important;
+    font-size: 30px;
+    color: #f37122;
+    font-style: italic;
+    line-height: 40px;
+    text-align: center;
+}
+
+.ceo {
+    background-color: #F2F2F2;
+    padding: 70px 5%;
+    text-align: center;
+    .avatar {
+        max-width: 175px;
+    }
+    .info {
+        .name {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .position {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .description {
+            text-align: left;
+            line-height: 30px;
+        }
+    }
+}
+
+.specification {
+    padding: 20px 5% 40px;
+    .spec {
+        .title {
+            font-size: 20px;
+            line-height: 25px;
+            margin: 30px 0 10px;
+            text-align: center;
+            font-weight: 700;
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+    }
+}
+
+svg {
+    path {
+        &.color0 {
+            fill: #65adc7;
+        }
+        &.color1 {
+            fill: #dae5e8;
+        }
+    }
+    text {
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 38px;
+        fill: #25292a;
+    }
+}
+
+@media screen and (min-width: 960px){  
+    .company-info {
+        .info-group {
+            width: 33%;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    .cs-quote {
+        max-width: 960px !important;
+    }
+    .company-stats {
+        background-color: #F2F2F2;
+        padding-bottom: 50px;
+        .recognition {
+            width: 33%;
+            display: inline-block;
+        }
+
+        .response-feedback {
+            width: 66%;
+            display: inline-block;
+            font-size: 0;
+            vertical-align: top;
+            .response {
+                width: calc(50% - 1px) !important;
+                border-left: 1px solid #dad9db;
+                display: inline-block;
+                text-align: center;
+            }
+            .feedback {
+                width: 50% !important;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+    }
+    .ceo {
+        font-size: 0;
+        .container {
+            margin-left: 180px;
+            margin-right: 180px;
+            .avatar {
+                max-width: 175px;
+                display: inline-block;
+            }
+            .info {
+                width: calc(100% - 205px);
+                display: inline-block;
+                text-align: left;
+                padding-left: 30px;
+                .name {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .position {
+                    font-size: 20px;
+                }
+                .description {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .specification {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
