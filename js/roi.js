@@ -12,8 +12,8 @@ jQuery(document).ready(function(){
   });
 
   function is_numeric(event) {
-    if (event.keyCode == 190){
-          return;
+    if (event.keyCode == 190 || event.keyCode == 8 || event.keyCode == 37 || event.keyCode == 39){
+      return;
     }else {
       // If it's not a number stop the keypress
       if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
