@@ -266,4 +266,20 @@
     margin-left: 43px;
     display: inline-block;
   }
+
+  /* line 244, ../sass/roi.scss */
+  .roi-detail .details {
+    font-size: 0;
+  }
+  /* line 246, ../sass/roi.scss */
+  .roi-detail .details .detail {
+    margin-bottom: 40px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  /* line 251, ../sass/roi.scss */
+  .roi-detail .details .detail .description {
+    min-height: 44px;
+  }
 }
