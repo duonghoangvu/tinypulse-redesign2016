@@ -1,0 +1,100 @@
+.cover {
+    background-image: url("https://cdn2.hubspot.net/hubfs/443262/Case_Studies/indi-hero-image2x.png");
+    height: 74px;
+    width: 100%;
+
+}
+.company {
+    .company-info {
+        text-align: center;
+        margin: 50px 5%;
+        .company-logo {
+            width: 100%;
+        }
+        .company-description {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+        .company-website {
+            font-size: 13px;
+        }
+    }
+    .content {
+        margin: 0 5%;
+        .headline {
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .sub-headline {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        .sub-title {
+            font-size: 16px;
+            font-weight: 700;
+            text-align: justify;
+            margin: 0 0 10px;
+        }
+        p {
+            font-size: 16px;
+            text-align: justify;   
+            margin: 0 0 10px;
+        }
+        .company-quote {
+            font-size: 0;
+            background-color: #f0f0f0;
+            margin: 20px 0;
+            .quote-content, .avatar, .name-position {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .quote-content {
+                width: calc(70% - 30px);
+                color: #fa7431;
+                font-size: 18px;
+                font-style: italic;
+                text-align: center;
+                padding: 15px;
+            }
+            .avatar {
+                width: calc(15% - 20px);
+                padding: 10px;
+            }
+            .name-position {
+                width: 15%;
+                font-size: 14px;
+            }
+        }
+    }    
+}
+
+
+@media screen and (min-width: 960px){
+    .company {
+        font-size: 0;
+        margin: 50px auto !important;
+        .company-info {
+            width: calc(25% - 75px);
+            padding-right: 60px;
+            padding-left: 15px;
+            display: inline-block;
+            text-align: left;
+            vertical-align: top;
+            margin: 0;
+        }
+        .content {
+            display: inline-block;
+            width: calc(75% - 61px);
+            margin: 0;
+            border-left: 1px solid silver;
+            padding-left: 60px;
+        }
+    }
+}

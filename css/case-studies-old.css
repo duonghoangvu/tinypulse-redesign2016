@@ -1,0 +1,116 @@
+/* line 1, ../sass/case-studies-old.scss */
+.cover {
+  background-image: url("https://cdn2.hubspot.net/hubfs/443262/Case_Studies/indi-hero-image2x.png");
+  height: 74px;
+  width: 100%;
+}
+
+/* line 8, ../sass/case-studies-old.scss */
+.company .company-info {
+  text-align: center;
+  margin: 50px 5%;
+}
+/* line 11, ../sass/case-studies-old.scss */
+.company .company-info .company-logo {
+  width: 100%;
+}
+/* line 14, ../sass/case-studies-old.scss */
+.company .company-info .company-description {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+/* line 19, ../sass/case-studies-old.scss */
+.company .company-info .company-website {
+  font-size: 13px;
+}
+/* line 23, ../sass/case-studies-old.scss */
+.company .content {
+  margin: 0 5%;
+}
+/* line 25, ../sass/case-studies-old.scss */
+.company .content .headline {
+  font-size: 36px;
+  font-weight: 700;
+}
+/* line 29, ../sass/case-studies-old.scss */
+.company .content .sub-headline {
+  font-size: 22px;
+  font-weight: 700;
+}
+/* line 33, ../sass/case-studies-old.scss */
+.company .content .title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+/* line 39, ../sass/case-studies-old.scss */
+.company .content .sub-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: justify;
+  margin: 0 0 10px;
+}
+/* line 45, ../sass/case-studies-old.scss */
+.company .content p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 0 0 10px;
+}
+/* line 50, ../sass/case-studies-old.scss */
+.company .content .company-quote {
+  font-size: 0;
+  background-color: #f0f0f0;
+  margin: 20px 0;
+}
+/* line 54, ../sass/case-studies-old.scss */
+.company .content .company-quote .quote-content, .company .content .company-quote .avatar, .company .content .company-quote .name-position {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 58, ../sass/case-studies-old.scss */
+.company .content .company-quote .quote-content {
+  width: calc(70% - 30px);
+  color: #fa7431;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  padding: 15px;
+}
+/* line 66, ../sass/case-studies-old.scss */
+.company .content .company-quote .avatar {
+  width: calc(15% - 20px);
+  padding: 10px;
+}
+/* line 70, ../sass/case-studies-old.scss */
+.company .content .company-quote .name-position {
+  width: 15%;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 80, ../sass/case-studies-old.scss */
+  .company {
+    font-size: 0;
+    margin: 50px auto !important;
+  }
+  /* line 83, ../sass/case-studies-old.scss */
+  .company .company-info {
+    width: calc(25% - 75px);
+    padding-right: 60px;
+    padding-left: 15px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+  }
+  /* line 92, ../sass/case-studies-old.scss */
+  .company .content {
+    display: inline-block;
+    width: calc(75% - 61px);
+    margin: 0;
+    border-left: 1px solid silver;
+    padding-left: 60px;
+  }
+}
