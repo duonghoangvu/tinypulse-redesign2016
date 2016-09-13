@@ -1,0 +1,42 @@
+/* line 2, ../sass/case-study-2-charts.scss */
+.company-stats .recognition {
+  width: 1% !important;
+}
+/* line 5, ../sass/case-study-2-charts.scss */
+.company-stats .response-feedback {
+  width: 99% !important;
+  padding-top: 0 !important;
+}
+/* line 8, ../sass/case-study-2-charts.scss */
+.company-stats .response-feedback .response {
+  border-left: 0 !important;
+  width: 100% !important;
+  display: block;
+}
+/* line 13, ../sass/case-study-2-charts.scss */
+.company-stats .response-feedback .feedback {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 20, ../sass/case-study-2-charts.scss */
+  .company-stats .recognition {
+    width: 1% !important;
+  }
+  /* line 23, ../sass/case-study-2-charts.scss */
+  .company-stats .response-feedback {
+    width: 99% !important;
+    margin-top: 45px;
+  }
+  /* line 26, ../sass/case-study-2-charts.scss */
+  .company-stats .response-feedback .response {
+    border-left: 0 !important;
+    width: 50% !important;
+    display: inline-block;
+  }
+  /* line 31, ../sass/case-study-2-charts.scss */
+  .company-stats .response-feedback .feedback {
+    width: 50% !important;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,37 @@
+.company-stats {
+  .recognition {
+    width: 1% !important;
+  }
+  .response-feedback {
+    width: 99% !important;
+    padding-top: 0 !important;
+    .response {
+      border-left: 0 !important;
+      width: 100% !important;
+      display: block;
+    }
+    .feedback {
+      width: 100% !important;
+    }
+  }
+}
+@media screen and (min-width: 960px){  
+  .company-stats {
+    .recognition {
+      width: 1% !important;
+    }
+    .response-feedback {
+      width: 99% !important;
+      margin-top: 45px;
+      .response {
+        border-left: 0 !important;
+        width: 50% !important;
+        display: inline-block;
+      }
+      .feedback {
+        width: 50% !important;
+        display: inline-block;
+      }
+    }
+  }
+}
