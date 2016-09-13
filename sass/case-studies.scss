@@ -13,26 +13,30 @@
     text-align: center;
     margin-top: 50px !important;
     .info-group {
+        width: 32%;
+        display: inline-block;
+        vertical-align: top;
         img {
-            max-height: 70px;
+            max-height: 39px;
         }
         .info-title {
-            font-size: 14px;
-            font-weight: bold;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            font-family: Lato-Light;
+            font-size: 9px;
+            line-height: 18px;
         }
         .info-content {
+            font-family: Lato-Regular;
             margin-bottom: 50px;
-            font-size: 21px;
-            font-weight: bold;
+            font-size: 12px;
+            line-height: 19px;
         }
     }
 }
 
 .company-stats {
-    background-color: #F2F2F2;
     padding-bottom: 50px;
+    border-top: 1px solid #DADADA;
+
     .recognition, .response-feedback{
         max-width: 85%;
         padding-top: 50px;
@@ -68,34 +72,42 @@
 }
 
 .cs-quote {
-    max-width: 85% !important;
-    margin: 100px auto !important;
-    font-size: 30px;
-    color: #f37122;
-    font-style: italic;
-    line-height: 40px;
-    text-align: center;
+    background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 100%);
+    border: 1px solid #DADADA;
+    .container {
+        max-width: 85% !important;
+        margin: 100px auto !important;
+        font-size: 30px;
+        color: #f37122;
+        font-style: italic;
+        line-height: 40px;
+        text-align: center;
+        font-family: Lato-LightItalic;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
 }
 
 .ceo {
     background-color: #F2F2F2;
-    padding: 70px 5%;
+    padding: 30px 5%;
     text-align: center;
     .avatar {
         max-width: 175px;
+        margin-bottom: 40px;
     }
     .info {
-        .name {
-            font-size: 20px;
+        text-align: left;
+        .name, .position {
+            font-size: 18px;
             font-weight: 700;
-        }
-        .position {
-            font-size: 20px;
-            margin-bottom: 10px;
+            line-height: 24px;
         }
         .description {
             text-align: left;
             line-height: 30px;
+            font-size: 18px;
+            margin-top: 20px;
         }
     }
 }
@@ -104,16 +116,18 @@
     padding: 20px 5% 40px;
     .spec {
         .title {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 25px;
             margin: 30px 0 10px;
             text-align: center;
             font-weight: 700;
+            line-height: 24px;
         }
         p {
-            font-size: 16px;
-            line-height: 30px;
+            font-size: 20px;
+            line-height: 28px;
             margin-top: 30px;
+            font-family: Lato-Light;
         }
     }
 }
@@ -135,21 +149,31 @@ svg {
     }
 }
 
+hr {
+    width: 126px;
+    margin: 40px auto;
+}
 @media screen and (min-width: 960px){  
     .company-info {
-        .info-group {
-            width: 33%;
-            display: inline-block;
-            vertical-align: top;
+        img {
+            max-height: 70px;
+        }
+        .info-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .info-content {
+            margin-bottom: 50px;
+            font-size: 21px;
+            font-weight: bold;
         }
     }
-
-    .cs-quote {
+    .cs-quote .container {
         max-width: 960px !important;
     }
     .company-stats {
-        background-color: #F2F2F2;
-        padding-bottom: 50px;
         .recognition {
             width: 33%;
             display: inline-block;
@@ -179,12 +203,15 @@ svg {
             .avatar {
                 max-width: 175px;
                 display: inline-block;
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
             .info {
-                width: calc(100% - 205px);
+                width: calc(100% - 330px);
                 display: inline-block;
                 text-align: left;
-                padding-left: 30px;
+                padding-left: 155px;
+                vertical-align: top;
                 .name {
                     font-size: 20px;
                     font-weight: bold;
@@ -202,6 +229,23 @@ svg {
     .specification {
         padding-left: 0;
         padding-right: 0;
+    }
+    .insight-result {
+        font-size: 0;
+        .spec {
+            width: calc(50% - 35px);
+            display: inline-block;
+            vertical-align: top;
+        }
+        .insight {
+            margin-right: 35px;
+        }
+        .result {
+            margin-left: 35px;
+        }
+        hr {
+            display: none;
+        }
     }
 }
 
