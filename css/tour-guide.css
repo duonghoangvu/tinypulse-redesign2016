@@ -367,7 +367,12 @@ nav .icon-setting:before {
   max-width: 765px;
 }
 
-/* line 272, ../sass/tour-guide.scss */
+/* line 273, ../sass/tour-guide.scss */
+.response img {
+  max-width: 1160px;
+}
+
+/* line 278, ../sass/tour-guide.scss */
 .vertical-menu {
   background: #ffffff;
   margin-bottom: 20px;
@@ -375,30 +380,30 @@ nav .icon-setting:before {
   border-radius: 6px;
   box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.06);
 }
-/* line 278, ../sass/tour-guide.scss */
+/* line 284, ../sass/tour-guide.scss */
 .vertical-menu a {
   display: inline;
   margin-right: 20px;
   color: #9b9b9b;
 }
-/* line 282, ../sass/tour-guide.scss */
+/* line 288, ../sass/tour-guide.scss */
 .vertical-menu a:hover, .vertical-menu a.active {
   color: #4A4A4A;
 }
-/* line 285, ../sass/tour-guide.scss */
+/* line 291, ../sass/tour-guide.scss */
 .vertical-menu a i {
   position: relative;
   top: -5px;
 }
-/* line 290, ../sass/tour-guide.scss */
+/* line 296, ../sass/tour-guide.scss */
 .vertical-menu a:hover + .dropdown-menu {
   display: block;
 }
-/* line 295, ../sass/tour-guide.scss */
+/* line 301, ../sass/tour-guide.scss */
 .vertical-menu .dropdown {
   position: relative;
 }
-/* line 298, ../sass/tour-guide.scss */
+/* line 304, ../sass/tour-guide.scss */
 .vertical-menu .dropdown-menu {
   border-radius: 3px;
   box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
@@ -412,7 +417,7 @@ nav .icon-setting:before {
   min-width: 180px;
   background: #fff;
 }
-/* line 311, ../sass/tour-guide.scss */
+/* line 317, ../sass/tour-guide.scss */
 .vertical-menu .dropdown-menu li a {
   line-height: 25px;
   margin: 4px;
@@ -422,12 +427,12 @@ nav .icon-setting:before {
   padding: 5px 10px;
 }
 
-/* line 322, ../sass/tour-guide.scss */
+/* line 328, ../sass/tour-guide.scss */
 .main-content {
   padding: 20px 10px 40px;
 }
 
-/* line 326, ../sass/tour-guide.scss */
+/* line 332, ../sass/tour-guide.scss */
 .nav-panel {
   width: 350px;
   position: fixed;
@@ -435,7 +440,7 @@ nav .icon-setting:before {
   bottom: 0;
   right: 20px;
 }
-/* line 332, ../sass/tour-guide.scss */
+/* line 338, ../sass/tour-guide.scss */
 .nav-panel:before {
   content: "";
   position: absolute;
@@ -447,19 +452,19 @@ nav .icon-setting:before {
   z-index: -1;
   opacity: 0.9;
 }
-/* line 343, ../sass/tour-guide.scss */
+/* line 349, ../sass/tour-guide.scss */
 .nav-panel a {
   color: #fff;
   font-size: 16px;
   padding: 20px 20px;
   display: block;
 }
-/* line 351, ../sass/tour-guide.scss */
+/* line 357, ../sass/tour-guide.scss */
 .nav-panel ul li > a {
   padding: 0;
   margin: 0 20px;
 }
-/* line 355, ../sass/tour-guide.scss */
+/* line 361, ../sass/tour-guide.scss */
 .nav-panel ul li .no {
   width: 30px;
   height: 30px;
@@ -471,44 +476,44 @@ nav .icon-setting:before {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 366, ../sass/tour-guide.scss */
+/* line 372, ../sass/tour-guide.scss */
 .nav-panel ul li p {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s;
   line-height: normal;
 }
-/* line 372, ../sass/tour-guide.scss */
+/* line 378, ../sass/tour-guide.scss */
 .nav-panel ul li.active {
   margin-bottom: 20px;
 }
-/* line 374, ../sass/tour-guide.scss */
+/* line 380, ../sass/tour-guide.scss */
 .nav-panel ul li.active a {
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
 }
-/* line 378, ../sass/tour-guide.scss */
+/* line 384, ../sass/tour-guide.scss */
 .nav-panel ul li.active p {
   max-height: 100px;
 }
-/* line 380, ../sass/tour-guide.scss */
+/* line 386, ../sass/tour-guide.scss */
 .nav-panel ul li.active p span {
   display: block;
   margin-top: 10px;
 }
-/* line 385, ../sass/tour-guide.scss */
+/* line 391, ../sass/tour-guide.scss */
 .nav-panel ul li.active .no {
   background: #fff;
   color: #00C26B;
 }
-/* line 392, ../sass/tour-guide.scss */
+/* line 398, ../sass/tour-guide.scss */
 .nav-panel .exit-tour {
   float: left;
   font-size: 12px;
   text-transform: uppercase;
   color: #000000;
 }
-/* line 398, ../sass/tour-guide.scss */
+/* line 404, ../sass/tour-guide.scss */
 .nav-panel .next-step {
   float: right;
   font-size: 12px;
