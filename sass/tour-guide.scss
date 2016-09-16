@@ -248,6 +248,27 @@ nav{
     }
   }
 }
+
+.cheers {
+  .content-left {
+    display: inline-block;
+    vertical-align: top;
+    img {
+      max-width: 368px;
+      display: block;
+      margin-right: 27px;
+      margin-bottom: 30px;
+    }    
+  }
+  .content-right {
+    display: inline-block;
+    img {
+      max-width: 765px;
+    }
+  }
+
+}
+
 .vertical-menu{
   background: #ffffff;
   margin-bottom: 20px;
