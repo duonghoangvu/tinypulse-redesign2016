@@ -54,7 +54,7 @@ header{
 	width: 100%;
 	top: 0;
 	background: #fff;
-	z-index: 9;
+	z-index: 10;
 	.container{
 		padding: 0 10px;
 		box-sizing: border-box;
@@ -69,6 +69,27 @@ header{
 	}
   .content{
     position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    p{
+      font-size: 16px;
+      float: left;
+    }
+    a{
+      float: right;
+      background: #00C26B;
+      border-radius: 3px;
+      font-size: 16px;
+      color: #FFFFFF;
+      letter-spacing: 0px;
+      padding: 10px 20px;
+      margin-top: -8px;
+    }
   }
 }
 
@@ -80,6 +101,7 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9;
 
 	ul{
 		margin-top: 60px;
@@ -144,6 +166,87 @@ nav{
 .content-wrapper{
 	margin-top: 60px;
 	margin-left: 75px;
+  .main-content{
+    max-width: 1160px;
+    min-width: 1160px;
+    margin: 0 auto;
+    .content{
+      font-size: 0;
+    }
+    .block{
+      display: inline-block;
+      width: 50%;
+      box-sizing: border-box;
+      vertical-align: top;
+      margin-bottom: 20px;
+      &:nth-child(2n+1){
+        padding-right: 10px;
+      }
+      &:nth-child(2n){
+        padding-left: 10px;
+      }
+      img{
+        max-width: 100%;
+        margin-bottom: 20px;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      .container{
+        position: relative;
+        &:hover .tooltip{
+          opacity: 1;
+          visibility: visible;
+        }
+        &:hover img{
+          // border: 1px solid #4CC1FC;
+          border-radius: 8px;
+          box-shadow: 2px 2px 10px #333;
+        }
+        .tooltip{
+          font-size: 16px;
+          padding: 10px;
+          color: #fff;
+          background: #4A4A4A;
+          border-radius: 3px;
+          position: absolute;
+          top: -20px;
+          box-shadow: 2px 2px 8px #333;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s;
+          &:before{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 0;
+            border-color: #4A4A4A transparent transparent transparent;
+            border-style: solid;
+            border-width: 10px 7px;
+            bottom: -20px;
+            left: 46%;
+          }
+        }
+      }
+    }
+  }
+  .overview{
+    .content-1 .tooltip{
+      left: 83px;
+    }
+    .content-2 .tooltip{
+      left: 27px;
+    }
+    .content-3 .tooltip{
+      left: 105px;
+    }
+    .content-4 .tooltip{
+      left: -18px;
+    }
+    .content-5 .tooltip{
+      left: 58px;
+    }
+  }
 }
 .vertical-menu{
   background: #ffffff;
@@ -197,4 +300,83 @@ nav{
 }
 .main-content{
 	padding: 20px 10px 40px;
+}
+
+.nav-panel{
+  width: 350px;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 20px;
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 94%);
+    z-index: -1;
+    opacity: 0.9;
+  }
+  a{
+    color: #fff;
+    font-size: 16px;
+    padding: 20px 20px;
+    display: block;
+  }
+  ul{
+    li{   
+      > a{
+        padding: 0;
+        margin: 0 20px;
+      }
+      .no{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      p{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+        line-height: normal;
+      }
+      &.active{
+        margin-bottom: 20px;
+        a{
+          border-bottom: 1px solid #fff;
+          padding-bottom: 20px;
+        }
+        p{
+          max-height: 100px;
+          span{
+            display: block;
+            margin-top: 10px;
+          }
+        }
+        .no{
+          background: #fff;
+          color: #00C26B;
+        }
+      }
+    }
+  }
+  .exit-tour{
+    float: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .next-step{
+    float: right;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }
