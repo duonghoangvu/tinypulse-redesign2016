@@ -1,35 +1,15 @@
 @import "compass/reset";
 
 @font-face {
-  font-family: 'Lato-Regular';
-  src: url("fonts/Lato-Regular.eot");
-  src: url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'Lato-Light';
-  src: url("fonts/Lato-Light.eot");
-  src: url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'Lato-Semibold';
-  src: url("fonts/Lato-Semibold.eot");
-  src: url("fonts/Lato-Semibold.woff2") format("woff2"), url("fonts/Lato-Semibold.woff") format("woff"), url("fonts/Lato-Semibold.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'Lato-Bold';
-  src: url("fonts/Lato-Bold.eot");
-  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'Lato-Thin';
-  src: url("fonts/Lato-Thin.eot");
-  src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
+  font-family: 'SourceSansPro-Regular';
+  src: url("fonts/SourceSansPro-Regular.eot");
+  src: url("fonts/SourceSansPro-Regular.woff2") format("woff2"), url("fonts/SourceSansPro-Regular.woff") format("woff"), url("fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: 'tinyicon';
-    src: url("http://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.eot?6869025");
-    src: url("http://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.eot?6869025#iefix") format("embedded-opentype"), url("http://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.woff2?6869025") format("woff2"), url("http://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.woff?6869025") format("woff"), url("http://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.ttf?6869025") format("truetype"), url("http://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.svg?6869025#fontello") format("svg");
+    src: url("https://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.eot?6869025");
+    src: url("https://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.eot?6869025#iefix") format("embedded-opentype"), url("https://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.woff2?6869025") format("woff2"), url("https://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.woff?6869025") format("woff"), url("https://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.ttf?6869025") format("truetype"), url("https://assets-reskinning-tinypulse.s3.amazonaws.com/assets/fonts/fontello.svg?6869025#fontello") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -40,7 +20,7 @@ html, body, .main-wrapper, .content-wrapper{
 
 body{
 	background: #F3F3F4;
-	font-family: Lato-Regular;
+	font-family: "SourceSansPro-Regular";
 }
 
 a{
