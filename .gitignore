@@ -1,3 +1,4 @@
 .sass-cache/
 css/global.css
-
+.DS_Store
+*/.DS_Store
