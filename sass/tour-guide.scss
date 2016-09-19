@@ -424,3 +424,27 @@ nav{
     }
   }
 }
+
+.content-wrapper {
+  .main-content{
+    .sharing {
+      .block{
+        width: 100%;
+        .container{
+          .tooltip{
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0, 0.8);
+            font-size: 18px;
+            padding: 20px;
+            &:before{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
