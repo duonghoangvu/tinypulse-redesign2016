@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="css/tour-guide.css" />
   <meta name="viewport" content="maximum-scale=1,width=device-width,initial-scale=1,user-scalable=0"> 
 </head>
-<body>
+<body class="nav-panel-opened">
   <div class="main-wrapper">
     <header>
       <div class="container">
@@ -86,7 +86,7 @@
     </div>
   </div>
   <div class="nav-panel">
-    <a href="#" id="nav-panel-trigger">Introduction to TINYpulse</a>
+    <a href="#" class="nav-panel-trigger" id="nav-panel-trigger">Introduction to TINYpulse</a>
     <ul>
       <li class=""><a href="#"><span class="no">1</span><span>Overview</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.<span>Hover over <i>Info Icon</i> to find out more.</span></p></a></li>
       <li class="active"><a href="#"><span class="no">2</span><span>Cheers for Peers</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.<span>Hover over <i>Info Icon</i> to find out more.</span></p></a></li>
@@ -99,4 +99,10 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/global.js"></script>
+  <script type="text/javascript">
+    $('#nav-panel-trigger').on('click', function(e){
+      e.preventDefault();
+      $('body').toggleClass('nav-panel-opened');
+    });
+  </script>
 </body>
