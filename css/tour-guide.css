@@ -533,3 +533,22 @@ nav .icon-setting:before {
 .nav-panel-opened .nav-panel-trigger:after {
   transform: rotate(0);
 }
+
+/* line 431, ../sass/tour-guide.scss */
+.content-wrapper .main-content .sharing .block {
+  width: 100%;
+}
+/* line 434, ../sass/tour-guide.scss */
+.content-wrapper .main-content .sharing .block .container .tooltip {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  padding: 20px;
+}
+/* line 442, ../sass/tour-guide.scss */
+.content-wrapper .main-content .sharing .block .container .tooltip:before {
+  display: none;
+}
