@@ -184,7 +184,7 @@
         viewedContents = viewedContents.split(';');
         $.each(viewedContents, function(i, content){
           if (content !== ''){
-            $('.vertical-menu .' + content).addClass('viewed');            
+            $('.vertical-menu a[href="#' + content + '"]').addClass('viewed');            
           }
         });
       }
