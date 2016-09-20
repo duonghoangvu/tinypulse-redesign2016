@@ -52,27 +52,27 @@
         </ul>
       </nav>
       <div class="main-content">
-        <div class="vertical-menu">
-          <a class="overview active" href="#insights/240283/overview" target="">
+        <div class="vertical-menu" id="vertical-menu">
+          <a class="overview active" href="#overview" target="">
             Overview
           </a>
-          <a class="responses" href="#insights/240283/responses" target="">
+          <a class="responses" href="#responses" target="">
             Responses
           </a>
-          <a class="cheers-for-peers" href="#insights/cheers" target="">
+          <a class="cheers-for-peers" href="#cheers" target="">
             Cheers for Peers
           </a>
-          <a class="suggestions" href="#insights/suggestions" target="">
+          <a class="suggestions" href="#suggestions" target="">
             Suggestions
           </a>
-          <a class="compare" href="#insights/compare" target="">
+          <a class="compare" href="#compare" target="">
             Compare
           </a>
-          <a class="company-iq" href="#insights/spotlight" target="">
-            Company IQ
+          <a class="company-iq" href="#visualize" target="">
+            Visualize<span class="supper">Beta</span>
           </a>
         </div>
-        <div class="content overview">
+        <div class="content overview active">
           <div class="block">
             <div class="container content-1">
               <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-1.png" />   
@@ -102,6 +102,38 @@
             </div>
           </div>
         </div>
+        <div class="content responses non-interactive">
+          <div class="block">
+            <div class="container">
+              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/responses.png" />
+                <div class="tooltip">Want to explore these cool features? Click on the link at the bottom right to Sign Up for free and create your own Dashboard.</div>
+            </div>          
+          </div>
+        </div>
+        <div class="content cheers">
+          <div class="content-left">
+            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-1.png" />
+            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-3.png" />
+            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-5.png" />
+          </div>
+          <div class="content-right">
+            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-2.png" />
+          </div>
+        </div>
+        <div class="content suggestions non-interactive">
+          <div class="block">
+            <div class="container">
+              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/suggestions.png" />          
+            </div>
+          </div>
+        </div>
+        <div class="content visualize non-interactive">
+          <div class="block">
+            <div class="container">
+              <img src="http://www.tinypulse.com/hubfs/redesign_2016/tour-guide/smartpulse.png" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -123,6 +155,28 @@
     $('#nav-panel-trigger').on('click', function(e){
       e.preventDefault();
       $('body').toggleClass('nav-panel-opened');
+    });
+
+    $('#vertical-menu').find('a').on('click', function(e){
+      e.preventDefault();
+      var content = $(this).attr('href').replace('#', '');
+      if (content !== ''){
+        $('#vertical-menu').find('a').removeClass('active');
+        $(this).addClass('active');
+        var contentDom = $('.content.' + content);
+        $('.main-content').find('.content').removeClass('active');
+        contentDom.addClass('active');        
+      }
+    });
+
+    $('.non-interactive').find('img').on('click', function(){
+      var self = $(this);
+      if (!self.hasClass('clicked')){
+        self.closest('.container').addClass('clicked');        
+        window.setTimeout(function(){
+          $('.non-interactive').find('.container').removeClass('clicked');
+        }, 5000);
+      } 
     });
   </script>
 </body>
