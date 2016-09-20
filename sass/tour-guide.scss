@@ -71,6 +71,10 @@ header{
       margin-top: -8px;
     }
   }
+  &.bottom {
+    bottom: 0;
+    top: auto;
+  }
 }
 
 nav{
