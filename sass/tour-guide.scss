@@ -332,6 +332,7 @@ nav{
     }
     .tooltip{
       font-size: 16px;
+      line-height: normal;      
       padding: 10px;
       color: #fff;
       background: #4A4A4A;
@@ -357,6 +358,23 @@ nav{
         top: -20px;
         left: 25px;
       }
+    }
+    &.viewed{
+      &:after{
+        display: none;
+      }
+    }
+    &:after{
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 5px;
+      background: #EA5661;
+      display: inline-block;
+      line-height: 0;
+      border-radius: 50%;
+      vertical-align: top;
+      transition: all 0.3s;
     }
   }
   .dropdown{
@@ -512,12 +530,24 @@ nav{
 
 .content-wrapper {
   .main-content{
+    position: relative;
     .content{
       position: relative;
-      display: none;
+      opacity: 0;
+      visibility: hidden;
+      left: 50px;
+      transition: all 0.75s;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      left: 50px;
       &.active{
-        display: block;
-        animation: slideLeft 1 0.75s;
+        visibility: visible;
+        opacity: 1;
+        left: 0;
+        width: auto;
+        height: auto;
+        overflow: visible;
       }
     }
     .non-interactive {
@@ -545,62 +575,18 @@ nav{
             }
             .tooltip{
               opacity: 0;
-              display: none;
+              visibility: hidden;
+              transition: all 0.5s;
             }
           }
           &.clicked{
             .tooltip{
-              display: block;
-              animation: fadingOut 1 5s;
+              visibility: visible;
+              opacity: 1;
             }
           }
         }
       }
     }
-  }
-}
-
-@keyframes fadingOut{
-  0%{
-    opacity: 1;
-  }
-  70%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes slideLeft {
-  0%{
-    left: 50px;
-    opacity: 0;
-  }
-  100%{
-    left: 0;
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes slideLeft {
-  0%{
-    left: 50px;
-    opacity: 0;
-  }
-  100%{
-    left: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes slideLeft {
-  0%{
-    left: 50px;
-    opacity: 0;
-  }
-  100%{
-    left: 0;
-    opacity: 1;
   }
 }
