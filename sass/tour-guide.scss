@@ -393,6 +393,15 @@ nav{
           color: #00C26B;
         }
       }
+      &.passed{
+        p{
+          max-height: 0;
+        }
+        .no{
+          background: #fff;
+          color: #00C26B;
+        }
+      }
       &.checked-step {
         .no {
           background: #fff;
@@ -427,7 +436,7 @@ nav{
 
 .content-wrapper {
   .main-content{
-    .sharing {
+    .sharing, .responses, .users, .settings {
       .block{
         width: 100%;
         .container{
