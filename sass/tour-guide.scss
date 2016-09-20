@@ -99,13 +99,49 @@ nav{
 		    color: #fff;
 		    display: block;
 		    line-height: 23px;
+        position: relative;
 		    i{
 		    	margin-right: 6px;
 		    }
 		    span{
 		    	display: none;
 		    }
+        &:hover{
+          .tooltip{
+            opacity: 1;
+            visibility: visible;
+          }
+        }
 			}
+      .tooltip{
+        font-size: 16px;
+        padding: 10px;
+        color: #fff;
+        background: #4A4A4A;
+        border-radius: 3px;
+        position: absolute;
+        left: 80px;
+        top: 0;
+        z-index: 9;
+        box-shadow: 2px 2px 3px #333;
+        width: 300px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        text-align: left;
+        &:before{
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+          bottom: 0;
+          border-color: transparent #4A4A4A transparent transparent;
+          border-style: solid;
+          border-width: 7px;
+          top: 15px;
+          left: -13px;
+        }
+      }
     }
 	}
 	[class^="icon-"]:before, [class*=" icon-"]:before {
@@ -277,6 +313,7 @@ nav{
     display: inline;
     margin-right: 20px;
     color: #9b9b9b;
+    position: relative;
     &:hover, &.active{    	
     	color: #4A4A4A;
     }
@@ -288,6 +325,38 @@ nav{
     	&+.dropdown-menu{
     		display: block;
     	}
+      .tooltip{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .tooltip{
+      font-size: 16px;
+      padding: 10px;
+      color: #fff;
+      background: #4A4A4A;
+      border-radius: 3px;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      z-index: 9;
+      box-shadow: 2px 2px 3px #333;
+      width: 300px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      &:before{
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        border-color: transparent transparent #4A4A4A transparent;
+        border-style: solid;
+        border-width: 10px 7px;
+        top: -20px;
+        left: 25px;
+      }
     }
   }
   .dropdown{
