@@ -154,6 +154,23 @@ nav{
             visibility: visible;
           }
         }
+        &.viewed{
+          &:after{
+            display: none;
+          }
+        }
+        &:after{
+          position: absolute;
+          content: "";
+          width: 5px;
+          height: 5px;
+          background: #bb101c;
+          display: inline-block;
+          line-height: 0;
+          border-radius: 50%;
+          vertical-align: top;
+          transition: all 0.3s;
+        }
 			}
       .tooltip{
         font-size: 16px;

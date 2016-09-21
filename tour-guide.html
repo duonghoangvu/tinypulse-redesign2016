@@ -21,7 +21,7 @@
       <nav>
         <ul class="nav" id="side-menu">
           <li class="active" title="" data-toggle="tooltip" data-original-title="Insights">
-            <a href="/redesign-2016-tour-guide-overview-zaqwsxcderfv" data-active-key="insights">
+            <a href="/redesign-2016-tour-guide-overview-zaqwsxcderfv" data-active-key="insights" class='viewed'>
               <i class="icon-gause"></i> <span class="nav-label">Insights</span>
               <p class="tooltip">Lorem ipsum dolor sit amet.</p>
             </a>
@@ -180,7 +180,9 @@
         var viewedContents = '';
         if (localStorage.getItem('viewed-content')){
           viewedContents = localStorage.getItem('viewed-content');
-          viewedContents += content + ';';
+          if (viewedContents.split(';').indexOf(content) < 0) {
+            viewedContents += content + ';';
+          }
         } else {
           viewedContents += content + ';';
         }
@@ -192,7 +194,8 @@
           viewedContents = viewedContents.split(';');
           $.each(viewedContents, function(i, content){
             if (content !== ''){
-              $('.vertical-menu a[href="#' + content + '"]').addClass('viewed');            
+              $('.vertical-menu a[href="#' + content + '"]').addClass('viewed');
+              $('.nav ul li a[data-active-key="' + content + '"]').addClass('viewed');
             }
           });
         }
@@ -218,6 +221,13 @@
           var contentDom = $('.content.' + content);
           $('.main-content').find('.content').removeClass('active');
           contentDom.addClass('active'); 
+        }
+      });
+
+      $('nav ul li').find('a').on('click', function(e){
+        var content = $(this).attr('data-active-key');
+        if (content !== ''){
+          setViewedContent(content);
         }
       });
 
