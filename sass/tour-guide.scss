@@ -71,6 +71,44 @@ header{
       margin-top: -8px;
     }
   }
+}
+
+.start-pulsing-bottom {
+  height: 60px;
+  box-shadow: 0 3px 0px 0 rgba(0,0,0,0.06);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  z-index: 10;
+  .container{
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    p{
+      font-size: 16px;
+      float: left;
+    }
+    a{
+      float: right;
+      background: #00C26B;
+      border-radius: 3px;
+      font-size: 16px;
+      color: #FFFFFF;
+      letter-spacing: 0px;
+      padding: 10px 20px;
+      margin-top: -8px;
+    }
+  }
   &.bottom {
     bottom: 0;
     top: auto;
