@@ -451,6 +451,7 @@ nav{
     display: block;
   }
   ul{
+    height: 320px;
     li{   
       > a{
         padding: 0;
@@ -466,6 +467,9 @@ nav{
         display: inline-block;
         margin-right: 10px;
         margin-bottom: 10px;
+        .fa{
+          display: none;
+        }
       }
       p{
         max-height: 0;
@@ -494,10 +498,17 @@ nav{
       &.passed{
         p{
           max-height: 0;
+          transition: none;
         }
         .no{
           background: #fff;
           color: #00C26B;
+          i{
+            display: none;
+          }
+          .fa{
+            display: inline-block;
+          }
         }
       }
       &.checked-step {
