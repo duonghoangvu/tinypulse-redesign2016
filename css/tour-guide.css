@@ -679,56 +679,51 @@ nav .icon-setting:before {
   color: #00C26B;
 }
 /* line 554, ../sass/tour-guide.scss */
-.nav-panel ul li.passed p {
-  max-height: 0;
-  transition: none;
-}
-/* line 558, ../sass/tour-guide.scss */
 .nav-panel ul li.passed .no {
   background: #fff;
   color: #00C26B;
 }
-/* line 561, ../sass/tour-guide.scss */
+/* line 557, ../sass/tour-guide.scss */
 .nav-panel ul li.passed .no i {
   display: none;
 }
-/* line 564, ../sass/tour-guide.scss */
+/* line 560, ../sass/tour-guide.scss */
 .nav-panel ul li.passed .no .fa {
   display: inline-block;
 }
-/* line 570, ../sass/tour-guide.scss */
+/* line 566, ../sass/tour-guide.scss */
 .nav-panel ul li.checked-step .no {
   background: #fff;
   color: #00C26B;
 }
-/* line 577, ../sass/tour-guide.scss */
+/* line 573, ../sass/tour-guide.scss */
 .nav-panel .exit-tour {
   float: left;
   font-size: 12px;
   text-transform: uppercase;
   color: #000000;
 }
-/* line 583, ../sass/tour-guide.scss */
+/* line 579, ../sass/tour-guide.scss */
 .nav-panel .next-step {
   float: right;
   font-size: 12px;
   text-transform: uppercase;
 }
 
-/* line 591, ../sass/tour-guide.scss */
+/* line 587, ../sass/tour-guide.scss */
 .nav-panel-opened .nav-panel {
   max-height: 500px;
 }
-/* line 595, ../sass/tour-guide.scss */
+/* line 591, ../sass/tour-guide.scss */
 .nav-panel-opened .nav-panel-trigger:after {
   transform: rotate(0);
 }
 
-/* line 602, ../sass/tour-guide.scss */
+/* line 598, ../sass/tour-guide.scss */
 .content-wrapper .main-content {
   position: relative;
 }
-/* line 604, ../sass/tour-guide.scss */
+/* line 600, ../sass/tour-guide.scss */
 .content-wrapper .main-content .content {
   position: relative;
   opacity: 0;
@@ -740,7 +735,7 @@ nav .icon-setting:before {
   overflow: hidden;
   left: 50px;
 }
-/* line 614, ../sass/tour-guide.scss */
+/* line 610, ../sass/tour-guide.scss */
 .content-wrapper .main-content .content.active {
   visibility: visible;
   opacity: 1;
@@ -749,11 +744,11 @@ nav .icon-setting:before {
   height: auto;
   overflow: visible;
 }
-/* line 624, ../sass/tour-guide.scss */
+/* line 620, ../sass/tour-guide.scss */
 .content-wrapper .main-content .non-interactive .block {
   width: 100%;
 }
-/* line 627, ../sass/tour-guide.scss */
+/* line 623, ../sass/tour-guide.scss */
 .content-wrapper .main-content .non-interactive .block .container .tooltip {
   left: 0;
   right: 0;
@@ -766,21 +761,21 @@ nav .icon-setting:before {
   font-size: 16px;
   line-height: normal;
 }
-/* line 638, ../sass/tour-guide.scss */
+/* line 634, ../sass/tour-guide.scss */
 .content-wrapper .main-content .non-interactive .block .container .tooltip:before {
   display: none;
 }
-/* line 643, ../sass/tour-guide.scss */
+/* line 639, ../sass/tour-guide.scss */
 .content-wrapper .main-content .non-interactive .block .container:hover img {
   box-shadow: none;
 }
-/* line 646, ../sass/tour-guide.scss */
+/* line 642, ../sass/tour-guide.scss */
 .content-wrapper .main-content .non-interactive .block .container:hover .tooltip {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
 }
-/* line 653, ../sass/tour-guide.scss */
+/* line 649, ../sass/tour-guide.scss */
 .content-wrapper .main-content .non-interactive .block .container.clicked .tooltip {
   visibility: visible;
   opacity: 1;

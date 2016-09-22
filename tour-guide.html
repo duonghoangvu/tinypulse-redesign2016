@@ -229,11 +229,10 @@
           $('#vertical-menu').find('a').removeClass('active');
           $(this).addClass('active viewed');
           setViewedContent(content);
-          // var navItem = $('#nav-panel').find('a[href="#' + content + '"]');
-          // console.log(navItem.length);
-          // if (!navItem.hasClass('passed')){
-          //   navItem.addClass('active');
-          // }
+          $('#nav-panel').find('li.active').addClass('passed').removeClass('active');
+
+          var navItem = $('#nav-panel').find('a[href="#' + content + '"]');
+          navItem.parent().addClass('active');
           var contentDom = $('.content.' + content);
           $('.main-content').find('.content').removeClass('active');
           contentDom.addClass('active'); 

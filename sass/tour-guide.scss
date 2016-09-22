@@ -551,10 +551,6 @@ nav{
         }
       }
       &.passed{
-        p{
-          max-height: 0;
-          transition: none;
-        }
         .no{
           background: #fff;
           color: #00C26B;
