@@ -94,10 +94,12 @@ jQuery(document).ready(function($) {
       }
   }).trigger('resize');
 
-  if (!localStorage.hidePopup){
-    window.setTimeout(function(){
-      popup.fadeIn(150);
-    }, 2000);
+  if (window.localStorage){
+    if (!localStorage.hidePopup){
+      window.setTimeout(function(){
+        popup.fadeIn(150);
+      }, 2000);
+    }    
   }
 
   popup.find('.overlay').on('click', function(){
@@ -151,7 +153,7 @@ Scroller.prototype = {
     window.addEventListener('scroll', this.onScroll.bind(this), false);
   },
   onScroll: function() {
-    this.latestKnownScrollY = window.scrollY;
+    this.latestKnownScrollY = window.pageYOffset;
     this.requestTick();
   },
   requestTick: function() {
@@ -164,10 +166,10 @@ Scroller.prototype = {
   update: function() {
     var currentScrollY = this.latestKnownScrollY;
     this.ticking       = false;
-    
     /**
      * Do The Dirty Work Here
      */
+      console.log(currentScrollY);
     if (currentScrollY >= this.wHeight - 150){
       this.dom.nav.addClass('sticked');
       this.dom.mobileNav.addClass('sticked');
