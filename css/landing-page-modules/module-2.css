@@ -1,0 +1,94 @@
+/* line 1, ../../sass/landing-page-modules/module-2.scss */
+.inner {
+  padding: 0 2%;
+  font-family: 'Open Sans',sans-serif;
+}
+/* line 4, ../../sass/landing-page-modules/module-2.scss */
+.inner h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+}
+/* line 11, ../../sass/landing-page-modules/module-2.scss */
+.inner .sales-point {
+  background-size: 78px 63px;
+  padding-bottom: 40px;
+  background-position: top left;
+  padding-left: 95px;
+  background-repeat: no-repeat;
+}
+/* line 17, ../../sass/landing-page-modules/module-2.scss */
+.inner .sales-point h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.67px;
+  padding-bottom: 7px;
+}
+/* line 24, ../../sass/landing-page-modules/module-2.scss */
+.inner .sales-point p {
+  line-height: 22px;
+  letter-spacing: .45px;
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+/* line 31, ../../sass/landing-page-modules/module-2.scss */
+.inner .video {
+  width: 100%;
+}
+/* line 33, ../../sass/landing-page-modules/module-2.scss */
+.inner .video #video_home_page {
+  width: 100%;
+  height: auto;
+}
+/* line 38, ../../sass/landing-page-modules/module-2.scss */
+.inner .read-more {
+  background-repeat: no-repeat;
+  background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/blue-arrow.png?t=1466141870599);
+  background-size: 7px 11px;
+  background-position: 100% 62%;
+  padding-right: 15px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #1c94ee;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 73, ../../sass/landing-page-modules/module-2.scss */
+  .innner {
+    padding: 0;
+  }
+
+  /* line 76, ../../sass/landing-page-modules/module-2.scss */
+  .wrapper {
+    padding: 40px 0 25px;
+  }
+  /* line 78, ../../sass/landing-page-modules/module-2.scss */
+  .wrapper .sales-points {
+    width: calc(50% - 25px);
+    padding-right: 25px;
+    float: left;
+    text-align: left;
+  }
+  /* line 84, ../../sass/landing-page-modules/module-2.scss */
+  .wrapper .video {
+    width: 50%;
+    float: left;
+    text-align: right;
+  }
+
+  /* line 90, ../../sass/landing-page-modules/module-2.scss */
+  .learn-more {
+    clear: both;
+    text-align: center;
+  }
+
+  /* line 94, ../../sass/landing-page-modules/module-2.scss */
+  .clear {
+    clear: both;
+    text-align: center;
+  }
+}

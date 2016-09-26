@@ -119,15 +119,18 @@
     }
 }
 @media screen and (min-width: 960px) {
+    .custom-inner {
+        padding: 0;
+    }
     .benefit-section {
         .leading-employee-content {
-            width: calc(55% - 90px);
+            width: calc(50% - 90px);
             float: left;
         }
         .form-signup-content {
             vertical-align: top;
             padding: 0 70px;
-            width: calc(45% - 140px);
+            width: calc(50% - 140px);
             float: right;
         }
     }

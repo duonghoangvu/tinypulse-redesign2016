@@ -133,20 +133,25 @@
 }
 
 @media screen and (min-width: 960px) {
-  /* line 123, ../../sass/landing-page-modules/module-1.scss */
+  /* line 122, ../../sass/landing-page-modules/module-1.scss */
+  .custom-inner {
+    padding: 0;
+  }
+
+  /* line 126, ../../sass/landing-page-modules/module-1.scss */
   .benefit-section .leading-employee-content {
-    width: calc(55% - 90px);
+    width: calc(50% - 90px);
     float: left;
   }
-  /* line 127, ../../sass/landing-page-modules/module-1.scss */
+  /* line 130, ../../sass/landing-page-modules/module-1.scss */
   .benefit-section .form-signup-content {
     vertical-align: top;
     padding: 0 70px;
-    width: calc(45% - 140px);
+    width: calc(50% - 140px);
     float: right;
   }
 
-  /* line 134, ../../sass/landing-page-modules/module-1.scss */
+  /* line 137, ../../sass/landing-page-modules/module-1.scss */
   .logos {
     clear: both;
   }
