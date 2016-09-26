@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* line 1, ../../sass/landing-page-modules/module-1.scss */
+.request-modal {
+  display: none;
+}
+
+/* line 4, ../../sass/landing-page-modules/module-1.scss */
+.hero-area {
+  padding-top: 90px;
+  margin-top: -50px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #FFF;
+  font-family: "Source Sans Pro",sans-serif;
+  letter-spacing: 0.6px;
+}
+
+/* line 13, ../../sass/landing-page-modules/module-1.scss */
+.custom-inner {
+  padding: 0 2%;
+  text-align: center;
+}
+/* line 16, ../../sass/landing-page-modules/module-1.scss */
+.custom-inner h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 12px 0 6px;
+  padding-bottom: 0;
+  line-height: 42px;
+}
+/* line 23, ../../sass/landing-page-modules/module-1.scss */
+.custom-inner h3 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+/* line 33, ../../sass/landing-page-modules/module-1.scss */
+.benefit-section .leading-employee-content-container .leading-employee-content {
+  padding: 25px 45px;
+  background: rgba(28, 148, 238, 0.72);
+  border-radius: 7px;
+  text-align: left;
+}
+/* line 38, ../../sass/landing-page-modules/module-1.scss */
+.benefit-section .leading-employee-content-container .leading-employee-content h2 {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 10px;
+}
+/* line 43, ../../sass/landing-page-modules/module-1.scss */
+.benefit-section .leading-employee-content-container .leading-employee-content ul {
+  padding-left: 0;
+}
+/* line 45, ../../sass/landing-page-modules/module-1.scss */
+.benefit-section .leading-employee-content-container .leading-employee-content ul li {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 4px 0;
+  list-style: none;
+}
+/* line 50, ../../sass/landing-page-modules/module-1.scss */
+.benefit-section .leading-employee-content-container .leading-employee-content ul li:before {
+  content: '✔';
+  margin-right: 15px;
+  color: white;
+}
+
+/* line 63, ../../sass/landing-page-modules/module-1.scss */
+.subscribe .btn-request .request-demo-button {
+  margin-top: 25px;
+  width: auto;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background: #eb742c;
+  color: #fff;
+  border-width: 0;
+  text-shadow: none;
+  padding: 18px 24px;
+  font-size: 24px;
+  border-radius: 5px;
+  display: block;
+  letter-spacing: 1px;
+}
+/* line 78, ../../sass/landing-page-modules/module-1.scss */
+.subscribe .btn-request .request-demo-button:hover {
+  background-color: #d37236;
+}
+/* line 83, ../../sass/landing-page-modules/module-1.scss */
+.subscribe .or-text {
+  display: block;
+  padding: 19px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+}
+/* line 90, ../../sass/landing-page-modules/module-1.scss */
+.subscribe .call-button {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  border: 3px solid #eb742c;
+  color: #fff;
+  text-shadow: none;
+  padding: 12px 45px;
+  font-size: 24px;
+  border-radius: 5px;
+  display: block;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+/* line 104, ../../sass/landing-page-modules/module-1.scss */
+.subscribe .call-button:hover {
+  background-color: rgba(255, 255, 255, 0.19);
+}
+
+/* line 109, ../../sass/landing-page-modules/module-1.scss */
+.logos {
+  padding: 40px 0 55px;
+}
+/* line 111, ../../sass/landing-page-modules/module-1.scss */
+.logos .logo {
+  padding: 10px;
+  height: 55px;
+  display: inline-block;
+}
+/* line 115, ../../sass/landing-page-modules/module-1.scss */
+.logos .logo img {
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 123, ../../sass/landing-page-modules/module-1.scss */
+  .benefit-section .leading-employee-content {
+    width: calc(55% - 90px);
+    float: left;
+  }
+  /* line 127, ../../sass/landing-page-modules/module-1.scss */
+  .benefit-section .form-signup-content {
+    vertical-align: top;
+    padding: 0 70px;
+    width: calc(45% - 140px);
+    float: right;
+  }
+
+  /* line 134, ../../sass/landing-page-modules/module-1.scss */
+  .logos {
+    clear: both;
+  }
+}
