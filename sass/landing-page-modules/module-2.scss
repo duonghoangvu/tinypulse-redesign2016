@@ -35,39 +35,21 @@
             height: auto;
         }
     }
+    .clear {
+        text-align: center;
+    }
     .read-more {
         background-repeat: no-repeat;
         background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/blue-arrow.png?t=1466141870599);
         background-size: 7px 11px;
         background-position: 100% 62%;
         padding-right: 15px;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 40px;
         color: #1c94ee;
         text-decoration: none;
     }
 }
-
-// .scroll_to.grey-circle-button {
-//     background-repeat: no-repeat;
-//     background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/grey-circle-button.png?t=1466141870599);
-//     background-size: 70px 70px;
-//     width: 70px;
-//     height: 70px;
-//     padding-top: 14px;
-//     text-transform: uppercase;
-//     color: #fff;
-//     text-align: center;
-//     font-size: 12px;
-//     line-height: 13px;
-//     top: -35px;
-//     margin-left: -35px;
-//     display: block;
-//     position: absolute;
-//     left: 50%;
-//     font-family: 'Open Sans',sans-serif;
-//     font-weight: 400;
-// }
 
 @media screen and (min-width: 960px) {
     .innner {
