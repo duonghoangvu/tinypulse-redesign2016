@@ -20,7 +20,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -48,7 +47,9 @@ table {
   border-spacing: 0;
 }
 
-
+a{
+  text-decoration: none;
+}
 /* gallery */
 .xs-slider {
   position: relative;
@@ -223,7 +224,7 @@ table {
   min-height: 400px;
   width: 100%;
   background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 100%);
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
 }
 .slide .title, .slide .desc{
@@ -246,7 +247,7 @@ table {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
-  width: 90%;
+  width: 77%;
 }
 .links{
   position: fixed;
@@ -254,7 +255,7 @@ table {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
 }
 .links a{
   color: #fff;
@@ -279,8 +280,11 @@ table {
   line-height: normal;
 }
 @media screen and (min-width: 375px){
-  .links{
-    background: none;
+  .slide{
+    padding: 20px;
+  }
+  .slide img{
+    width: 90%;
   }
 }
 @media screen and (min-width: 414px){
