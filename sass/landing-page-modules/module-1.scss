@@ -118,6 +118,79 @@
         }
     }
 }
+
+.popup-container{
+    .popup{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        left: 0;
+        top: 10%;
+        min-height: 400px;
+        .close-btn{
+            top: 0px;
+            right: 30px;
+            font-size: 40px;
+            font-family: "Lato-Bold";
+            color: #4F4F51;
+        }
+        .popup-content{
+            border-top: 5px solid #eb742c;  
+            border-radius: 5px;
+            font-size: inherit;
+            background: #fff;
+            direction: ltr;
+            padding: 10px;
+            margin: 0 20px;
+            overflow: auto;
+            form{
+                padding: 0 30px;
+                input[type=text], input[type=email], input[type=number], input[type=tel]{
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                    box-shadow: none;
+                    padding: 10px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    max-width: inherit;
+                    height: auto;
+                }
+                .field.hs-form-field{
+                    position: relative;
+                    margin-bottom: 10px;
+                    label{
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        font-weight: normal;
+                    }
+                }
+                .hs-button.primary.large{
+                    background: #eb742c;
+                    box-shadow: none;
+                    text-shadow: 0;
+                    border: 0;
+                    border-radius: 0;
+                    padding: 17px;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                .actions{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .title{
+                color: #eb742c;
+                font-size: 30px;
+                text-align: center;
+                font-family: "Source Sans Pro",sans-serif;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 960px) {
     .custom-inner {
         padding: 0;
@@ -136,5 +209,22 @@
     }
     .logos {
         clear: both;
+    }
+
+    .popup-container{
+        /*padding-top: 20%;*/
+        .popup{
+            width: 450px;
+            left: 50%;
+            margin-left: -225px;
+            min-height: 480px;
+            .popup-content{
+                form{
+                    .actions{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
     }
 }

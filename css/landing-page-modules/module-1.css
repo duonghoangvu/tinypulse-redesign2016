@@ -132,18 +132,98 @@
   vertical-align: middle;
 }
 
+/* line 123, ../../sass/landing-page-modules/module-1.scss */
+.popup-container .popup {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  left: 0;
+  top: 10%;
+  min-height: 400px;
+}
+/* line 130, ../../sass/landing-page-modules/module-1.scss */
+.popup-container .popup .close-btn {
+  top: 0px;
+  right: 30px;
+  font-size: 40px;
+  font-family: "Lato-Bold";
+  color: #4F4F51;
+}
+/* line 137, ../../sass/landing-page-modules/module-1.scss */
+.popup-container .popup .popup-content {
+  border-top: 5px solid #eb742c;
+  border-radius: 5px;
+  font-size: inherit;
+  background: #fff;
+  direction: ltr;
+  padding: 10px;
+  margin: 0 20px;
+  overflow: auto;
+}
+/* line 146, ../../sass/landing-page-modules/module-1.scss */
+.popup-container .popup .popup-content form {
+  padding: 0 30px;
+}
+/* line 148, ../../sass/landing-page-modules/module-1.scss */
+.popup-container .popup .popup-content form input[type=text], .popup-container .popup .popup-content form input[type=email], .popup-container .popup .popup-content form input[type=number], .popup-container .popup .popup-content form input[type=tel] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: none;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: inherit;
+  height: auto;
+}
+/* line 158, ../../sass/landing-page-modules/module-1.scss */
+.popup-container .popup .popup-content form .field.hs-form-field {
+  position: relative;
+  margin-bottom: 10px;
+}
+/* line 161, ../../sass/landing-page-modules/module-1.scss */
+.popup-container .popup .popup-content form .field.hs-form-field label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: normal;
+}
+/* line 168, ../../sass/landing-page-modules/module-1.scss */
+.popup-container .popup .popup-content form .hs-button.primary.large {
+  background: #eb742c;
+  box-shadow: none;
+  text-shadow: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 17px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* line 178, ../../sass/landing-page-modules/module-1.scss */
+.popup-container .popup .popup-content form .actions {
+  margin: 0;
+  padding: 0;
+}
+/* line 183, ../../sass/landing-page-modules/module-1.scss */
+.popup-container .popup .popup-content .title {
+  color: #eb742c;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Source Sans Pro",sans-serif;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 960px) {
-  /* line 122, ../../sass/landing-page-modules/module-1.scss */
+  /* line 195, ../../sass/landing-page-modules/module-1.scss */
   .custom-inner {
     padding: 0;
   }
 
-  /* line 126, ../../sass/landing-page-modules/module-1.scss */
+  /* line 199, ../../sass/landing-page-modules/module-1.scss */
   .benefit-section .leading-employee-content {
     width: calc(50% - 90px);
     float: left;
   }
-  /* line 130, ../../sass/landing-page-modules/module-1.scss */
+  /* line 203, ../../sass/landing-page-modules/module-1.scss */
   .benefit-section .form-signup-content {
     vertical-align: top;
     padding: 0 70px;
@@ -151,8 +231,24 @@
     float: right;
   }
 
-  /* line 137, ../../sass/landing-page-modules/module-1.scss */
+  /* line 210, ../../sass/landing-page-modules/module-1.scss */
   .logos {
     clear: both;
+  }
+
+  /* line 214, ../../sass/landing-page-modules/module-1.scss */
+  .popup-container {
+    /*padding-top: 20%;*/
+  }
+  /* line 216, ../../sass/landing-page-modules/module-1.scss */
+  .popup-container .popup {
+    width: 450px;
+    left: 50%;
+    margin-left: -225px;
+    min-height: 480px;
+  }
+  /* line 223, ../../sass/landing-page-modules/module-1.scss */
+  .popup-container .popup .popup-content form .actions {
+    margin-top: 20px;
   }
 }
