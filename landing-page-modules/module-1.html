@@ -5,7 +5,7 @@
   <meta name="viewport" content="maximum-scale=1,width=device-width,initial-scale=1,user-scalable=0"> 
 </head>
 <body>
-  <div class="hero-area landing-page" style="background-image: url('//cdn2.hubspot.net/hubfs/443262/employee-engagement-surveysB2x.jpg?t=1458105871344')">
+  <div class="hero-area landing-page" style="background-image: url('https://cdn2.hubspot.net/hubfs/443262/employee-engagement-surveysB2x.jpg?t=1458105871344')">
     <div class="content-block makes-better">
       <div class="container custom-inner">
         <h1>Finally, a simple </h1>
@@ -74,7 +74,7 @@
       <div class="popup-content">
         <p class="title">Request a Demo</p>
         <div class="content">
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+          <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
           <script>
             hbspt.forms.create({ 
               portalId: '443262',
@@ -92,6 +92,11 @@
   $('.request-demo-button').on('click', function(e){
     e.preventDefault();
     $('#popup').css('display','block');
-  })
+  });
+  $('#popup').on('focus', '.hs-input', function(event) {
+    $(this).closest('.hs-form-field').addClass('focusing');
+  }).on('focusout', '.hs-input', function(event) {
+    $(this).closest('.hs-form-field').removeClass('focusing');
+  });
   </script>
 </body>

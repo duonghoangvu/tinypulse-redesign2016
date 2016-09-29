@@ -158,11 +158,21 @@
                 .field.hs-form-field{
                     position: relative;
                     margin-bottom: 10px;
-                    label{
+                    > label{
                         position: absolute;
                         top: 10px;
                         left: 10px;
                         font-weight: normal;
+                    }
+                    &.focusing{
+                        > label{
+                            display: none;
+                        }
+                    }
+                }
+                .hs-error-msgs{
+                    label{
+                        color: red;
                     }
                 }
                 .hs-button.primary.large{
