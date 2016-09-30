@@ -1,54 +1,54 @@
-/* line 1, ../../sass/landing-page-modules/module-2.scss */
-.inner {
+/* line 2, ../../sass/landing-page-modules/module-2.scss */
+.module-2 .inner {
   padding: 0 2%;
   font-family: 'Open Sans',sans-serif;
 }
-/* line 4, ../../sass/landing-page-modules/module-2.scss */
-.inner h2 {
+/* line 5, ../../sass/landing-page-modules/module-2.scss */
+.module-2 .inner h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
   font-size: 36px;
   line-height: 40px;
 }
-/* line 11, ../../sass/landing-page-modules/module-2.scss */
-.inner .sales-point {
+/* line 12, ../../sass/landing-page-modules/module-2.scss */
+.module-2 .inner .sales-point {
   background-size: 78px 63px;
   padding-bottom: 40px;
   background-position: top left;
   padding-left: 95px;
   background-repeat: no-repeat;
 }
-/* line 17, ../../sass/landing-page-modules/module-2.scss */
-.inner .sales-point h3 {
+/* line 18, ../../sass/landing-page-modules/module-2.scss */
+.module-2 .inner .sales-point h3 {
   font-size: 20px;
   font-weight: 600;
   line-height: 22px;
   letter-spacing: 0.67px;
   padding-bottom: 7px;
 }
-/* line 24, ../../sass/landing-page-modules/module-2.scss */
-.inner .sales-point p {
+/* line 25, ../../sass/landing-page-modules/module-2.scss */
+.module-2 .inner .sales-point p {
   line-height: 22px;
   letter-spacing: .45px;
   margin: 0 0 10px;
   font-size: 14px;
 }
-/* line 31, ../../sass/landing-page-modules/module-2.scss */
-.inner .video {
+/* line 32, ../../sass/landing-page-modules/module-2.scss */
+.module-2 .inner .video {
   width: 100%;
 }
-/* line 33, ../../sass/landing-page-modules/module-2.scss */
-.inner .video #video_home_page {
+/* line 34, ../../sass/landing-page-modules/module-2.scss */
+.module-2 .inner .video #video_home_page {
   width: 100%;
   height: auto;
 }
-/* line 38, ../../sass/landing-page-modules/module-2.scss */
-.inner .clear {
+/* line 39, ../../sass/landing-page-modules/module-2.scss */
+.module-2 .inner .clear {
   text-align: center;
 }
-/* line 41, ../../sass/landing-page-modules/module-2.scss */
-.inner .read-more {
+/* line 42, ../../sass/landing-page-modules/module-2.scss */
+.module-2 .inner .read-more {
   background-repeat: no-repeat;
   background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/blue-arrow.png?t=1466141870599);
   background-size: 7px 11px;
@@ -61,37 +61,34 @@
 }
 
 @media screen and (min-width: 960px) {
-  /* line 55, ../../sass/landing-page-modules/module-2.scss */
-  .innner {
+  /* line 59, ../../sass/landing-page-modules/module-2.scss */
+  .module-2 .innner {
     padding: 0;
   }
-
-  /* line 58, ../../sass/landing-page-modules/module-2.scss */
-  .wrapper {
+  /* line 62, ../../sass/landing-page-modules/module-2.scss */
+  .module-2 .wrapper {
     padding: 40px 0 25px;
   }
-  /* line 60, ../../sass/landing-page-modules/module-2.scss */
-  .wrapper .sales-points {
+  /* line 64, ../../sass/landing-page-modules/module-2.scss */
+  .module-2 .wrapper .sales-points {
     width: calc(50% - 25px);
     padding-right: 25px;
     float: left;
     text-align: left;
   }
-  /* line 66, ../../sass/landing-page-modules/module-2.scss */
-  .wrapper .video {
+  /* line 70, ../../sass/landing-page-modules/module-2.scss */
+  .module-2 .wrapper .video {
     width: 50%;
     float: left;
     text-align: right;
   }
-
-  /* line 72, ../../sass/landing-page-modules/module-2.scss */
-  .learn-more {
+  /* line 76, ../../sass/landing-page-modules/module-2.scss */
+  .module-2 .learn-more {
     clear: both;
     text-align: center;
   }
-
-  /* line 76, ../../sass/landing-page-modules/module-2.scss */
-  .clear {
+  /* line 80, ../../sass/landing-page-modules/module-2.scss */
+  .module-2 .clear {
     clear: both;
     text-align: center;
   }

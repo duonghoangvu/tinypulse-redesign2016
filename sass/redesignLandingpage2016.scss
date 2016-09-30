@@ -1,0 +1,328 @@
+.module-1 {
+    .request-modal {
+        display: none;
+    }
+    .hero-area {
+        padding-top: 90px;
+        margin-top: -50px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        color: #FFF;
+        font-family: "Source Sans Pro",sans-serif;
+        letter-spacing: 0.6px;
+    }
+    .custom-inner {
+        padding: 0 2%;
+        text-align: center;
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            margin: 12px 0 6px;
+            padding-bottom: 0;
+            line-height: 42px;
+        }
+        h3 {
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: 0;
+            font-weight: 300;
+        }
+    }
+
+    .benefit-section {
+        .leading-employee-content-container {
+            .leading-employee-content {
+                padding: 25px 45px;
+                background: rgba(28,148,238,0.72);
+                border-radius: 7px;
+                text-align: left;
+                h2 {
+                    font-size: 24px;
+                    line-height: 29px;
+                    margin-bottom: 10px;
+                }
+                ul {
+                    padding-left: 0;
+                    li {
+                        font-size: 16px;
+                        line-height: 20px;
+                        padding: 4px 0;
+                        list-style: none;
+                        &:before {
+                            content: '✔';
+                            margin-right: 15px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .subscribe {
+        .btn-request {
+            .request-demo-button {
+                margin-top: 25px;
+                width: auto;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                background: #eb742c;
+                color: #fff;
+                border-width: 0;
+                text-shadow: none;
+                padding: 18px 24px;
+                font-size: 24px;
+                border-radius: 5px;
+                display: block;
+                letter-spacing: 1px;
+                &:hover {
+                    background-color: #d37236;
+                }
+            }
+        }
+        .or-text {
+            display: block;
+            padding: 19px;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 16px;
+        }
+        .call-button {
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            background: transparent;
+            border: 3px solid #eb742c;
+            color: #fff;
+            text-shadow: none;
+            padding: 12px 45px;
+            font-size: 24px;
+            border-radius: 5px;
+            display: block;
+            letter-spacing: 1px;
+            line-height: 30px;
+            &:hover {
+                background-color: rgba(255,255,255,0.19);
+            }
+        }
+    }
+    .logos {
+        padding: 40px 0 55px;
+        .logo {
+            padding: 10px;
+            height: 55px;
+            display: inline-block;
+            img {
+                vertical-align: middle;
+
+            }
+        }
+    }
+
+    .popup-container{
+        .popup{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 0;
+            left: 0;
+            top: 10%;
+            min-height: 400px;
+            .close-btn{
+                top: 0px;
+                right: 30px;
+                font-size: 40px;
+                font-family: "Lato-Bold";
+                color: #4F4F51;
+            }
+            .popup-content{
+                border-top: 5px solid #eb742c;  
+                border-radius: 5px;
+                font-size: inherit;
+                background: #fff;
+                direction: ltr;
+                padding: 10px;
+                margin: 0 20px;
+                overflow: auto;
+                form{
+                    padding: 0 30px;
+                    input[type=text], input[type=email], input[type=number], input[type=tel]{
+                        border: 1px solid #ccc;
+                        border-radius: 3px;
+                        box-shadow: none;
+                        padding: 10px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        max-width: inherit;
+                        height: auto;
+                    }
+                    .field.hs-form-field{
+                        position: relative;
+                        margin-bottom: 10px;
+                        > label{
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            font-weight: normal;
+                        }
+                        &.focusing{
+                            > label{
+                                display: none;
+                            }
+                        }
+                    }
+                    .hs-error-msgs{
+                        label{
+                            color: red;
+                        }
+                    }
+                    .hs-button.primary.large{
+                        background: #eb742c;
+                        box-shadow: none;
+                        text-shadow: 0;
+                        border: 0;
+                        border-radius: 0;
+                        padding: 17px;
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+                    .actions{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                .title{
+                    color: #eb742c;
+                    font-size: 30px;
+                    text-align: center;
+                    font-family: "Source Sans Pro",sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}
+
+.module-2 {
+    .inner {
+        padding: 0 2%;
+        font-family: 'Open Sans',sans-serif;
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 36px;
+            line-height: 40px;
+        }
+        .sales-point {
+            background-size: 78px 63px;
+            padding-bottom: 40px;
+            background-position: top left;
+            padding-left: 95px;
+            background-repeat: no-repeat;
+            h3 {
+                font-size: 20px;
+                font-weight: 600;   
+                line-height: 22px;
+                letter-spacing: 0.67px;
+                padding-bottom: 7px;
+            }
+            p {
+                line-height: 22px;
+                letter-spacing: .45px;
+                margin: 0 0 10px;
+                font-size: 14px;    
+            }
+        }
+        .video {
+            width: 100%;
+            #video_home_page {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .clear {
+            text-align: center;
+        }
+        .read-more {
+            background-repeat: no-repeat;
+            background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/blue-arrow.png?t=1466141870599);
+            background-size: 7px 11px;
+            background-position: 100% 62%;
+            padding-right: 15px;
+            font-size: 16px;
+            line-height: 40px;
+            color: #1c94ee;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .module-1 {
+        .custom-inner {
+            padding: 0;
+        }
+        .benefit-section {
+            .leading-employee-content {
+                width: calc(50% - 90px);
+                float: left;
+            }
+            .form-signup-content {
+                vertical-align: top;
+                padding: 0 70px;
+                width: calc(50% - 140px);
+                float: right;
+            }
+        }
+        .logos {
+            clear: both;
+        }
+
+        .popup-container{
+            /*padding-top: 20%;*/
+            .popup{
+                width: 450px;
+                left: 50%;
+                margin-left: -225px;
+                min-height: 480px;
+                .popup-content{
+                    form{
+                        .actions{
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .module-2 {
+        .innner {
+            padding: 0;
+        }
+        .wrapper {
+            padding: 40px 0 25px;
+            .sales-points {
+                width: calc(50% - 25px);
+                padding-right: 25px;
+                float: left;
+                text-align: left;
+            }
+            .video {
+                width: 50%;
+                float: left;
+                text-align: right;
+            }
+        }
+        .learn-more {
+            clear: both;
+            text-align: center;
+        }
+        .clear {
+            clear: both;
+            text-align: center;
+        }
+    }
+}

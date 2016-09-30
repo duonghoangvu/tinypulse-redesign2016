@@ -1,237 +1,242 @@
-.request-modal {
-    display: none;
-}
-.hero-area {
-    padding-top: 90px;
-    margin-top: -50px;
-    background-repeat: no-repeat;
-    background-position: top center;
-    color: #FFF;
-    font-family: "Source Sans Pro",sans-serif;
-    letter-spacing: 0.6px;
-}
-.custom-inner {
-    padding: 0 2%;
-    text-align: center;
-    h1 {
-        font-size: 30px;
-        font-weight: 600;
-        margin: 12px 0 6px;
-        padding-bottom: 0;
-        line-height: 42px;
+.module-1 {
+    .request-modal {
+        display: none;
     }
-    h3 {
-        font-size: 20px;
-        line-height: 24px;
-        margin-top: 0;
-        font-weight: 300;
+    .hero-area {
+        padding-top: 90px;
+        margin-top: -50px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        color: #FFF;
+        font-family: "Source Sans Pro",sans-serif;
+        letter-spacing: 0.6px;
     }
-}
+    .custom-inner {
+        padding: 0 2%;
+        text-align: center;
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            margin: 12px 0 6px;
+            padding-bottom: 0;
+            line-height: 42px;
+        }
+        h3 {
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: 0;
+            font-weight: 300;
+        }
+    }
 
-.benefit-section {
-    .leading-employee-content-container {
-        .leading-employee-content {
-            padding: 25px 45px;
-            background: rgba(28,148,238,0.72);
-            border-radius: 7px;
-            text-align: left;
-            h2 {
-                font-size: 24px;
-                line-height: 29px;
-                margin-bottom: 10px;
-            }
-            ul {
-                padding-left: 0;
-                li {
-                    font-size: 16px;
-                    line-height: 20px;
-                    padding: 4px 0;
-                    list-style: none;
-                    &:before {
-                        content: '✔';
-                        margin-right: 15px;
-                        color: white;
+    .benefit-section {
+        .leading-employee-content-container {
+            .leading-employee-content {
+                padding: 25px 45px;
+                background: rgba(28,148,238,0.72);
+                border-radius: 7px;
+                text-align: left;
+                h2 {
+                    font-size: 24px;
+                    line-height: 29px;
+                    margin-bottom: 10px;
+                }
+                ul {
+                    padding-left: 0;
+                    li {
+                        font-size: 16px;
+                        line-height: 20px;
+                        padding: 4px 0;
+                        list-style: none;
+                        &:before {
+                            content: '✔';
+                            margin-right: 15px;
+                            color: white;
+                        }
                     }
                 }
             }
         }
     }
-}
 
-.subscribe {
-    .btn-request {
-        .request-demo-button {
-            margin-top: 25px;
-            width: auto;
+    .subscribe {
+        .btn-request {
+            .request-demo-button {
+                margin-top: 25px;
+                width: auto;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                background: #eb742c;
+                color: #fff;
+                border-width: 0;
+                text-shadow: none;
+                padding: 18px 24px;
+                font-size: 24px;
+                border-radius: 5px;
+                display: block;
+                letter-spacing: 1px;
+                &:hover {
+                    background-color: #d37236;
+                }
+            }
+        }
+        .or-text {
+            display: block;
+            padding: 19px;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 16px;
+        }
+        .call-button {
             cursor: pointer;
             text-align: center;
             text-decoration: none;
-            background: #eb742c;
+            background: transparent;
+            border: 3px solid #eb742c;
             color: #fff;
-            border-width: 0;
             text-shadow: none;
-            padding: 18px 24px;
+            padding: 12px 45px;
             font-size: 24px;
             border-radius: 5px;
             display: block;
             letter-spacing: 1px;
+            line-height: 30px;
             &:hover {
-                background-color: #d37236;
+                background-color: rgba(255,255,255,0.19);
             }
-        }
-    }
-    .or-text {
-        display: block;
-        padding: 19px;
-        font-style: italic;
-        font-weight: 300;
-        font-size: 16px;
-    }
-    .call-button {
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        background: transparent;
-        border: 3px solid #eb742c;
-        color: #fff;
-        text-shadow: none;
-        padding: 12px 45px;
-        font-size: 24px;
-        border-radius: 5px;
-        display: block;
-        letter-spacing: 1px;
-        line-height: 30px;
-        &:hover {
-            background-color: rgba(255,255,255,0.19);
-        }
-    }
-}
-.logos {
-    padding: 40px 0 55px;
-    .logo {
-        padding: 10px;
-        height: 55px;
-        display: inline-block;
-        img {
-            vertical-align: middle;
-
-        }
-    }
-}
-
-.popup-container{
-    .popup{
-        width: 100%;
-        margin-left: 0;
-        margin-top: 0;
-        left: 0;
-        top: 10%;
-        min-height: 400px;
-        .close-btn{
-            top: 0px;
-            right: 30px;
-            font-size: 40px;
-            font-family: "Lato-Bold";
-            color: #4F4F51;
-        }
-        .popup-content{
-            border-top: 5px solid #eb742c;  
-            border-radius: 5px;
-            font-size: inherit;
-            background: #fff;
-            direction: ltr;
-            padding: 10px;
-            margin: 0 20px;
-            overflow: auto;
-            form{
-                padding: 0 30px;
-                input[type=text], input[type=email], input[type=number], input[type=tel]{
-                    border: 1px solid #ccc;
-                    border-radius: 3px;
-                    box-shadow: none;
-                    padding: 10px;
-                    width: 100%;
-                    box-sizing: border-box;
-                    max-width: inherit;
-                    height: auto;
-                }
-                .field.hs-form-field{
-                    position: relative;
-                    margin-bottom: 10px;
-                    > label{
-                        position: absolute;
-                        top: 10px;
-                        left: 10px;
-                        font-weight: normal;
-                    }
-                    &.focusing{
-                        > label{
-                            display: none;
-                        }
-                    }
-                }
-                .hs-error-msgs{
-                    label{
-                        color: red;
-                    }
-                }
-                .hs-button.primary.large{
-                    background: #eb742c;
-                    box-shadow: none;
-                    text-shadow: 0;
-                    border: 0;
-                    border-radius: 0;
-                    padding: 17px;
-                    width: 100%;
-                    box-sizing: border-box;
-                }
-                .actions{
-                    margin: 0;
-                    padding: 0;
-                }
-            }
-            .title{
-                color: #eb742c;
-                font-size: 30px;
-                text-align: center;
-                font-family: "Source Sans Pro",sans-serif;
-                font-weight: bold;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 960px) {
-    .custom-inner {
-        padding: 0;
-    }
-    .benefit-section {
-        .leading-employee-content {
-            width: calc(50% - 90px);
-            float: left;
-        }
-        .form-signup-content {
-            vertical-align: top;
-            padding: 0 70px;
-            width: calc(50% - 140px);
-            float: right;
         }
     }
     .logos {
-        clear: both;
+        padding: 40px 0 55px;
+        .logo {
+            padding: 10px;
+            height: 55px;
+            display: inline-block;
+            img {
+                vertical-align: middle;
+
+            }
+        }
     }
 
     .popup-container{
-        /*padding-top: 20%;*/
         .popup{
-            width: 450px;
-            left: 50%;
-            margin-left: -225px;
-            min-height: 480px;
+            width: 100%;
+            margin-left: 0;
+            margin-top: 0;
+            left: 0;
+            top: 10%;
+            min-height: 400px;
+            .close-btn{
+                top: 0px;
+                right: 30px;
+                font-size: 40px;
+                font-family: "Lato-Bold";
+                color: #4F4F51;
+            }
             .popup-content{
+                border-top: 5px solid #eb742c;  
+                border-radius: 5px;
+                font-size: inherit;
+                background: #fff;
+                direction: ltr;
+                padding: 10px;
+                margin: 0 20px;
+                overflow: auto;
                 form{
+                    padding: 0 30px;
+                    input[type=text], input[type=email], input[type=number], input[type=tel]{
+                        border: 1px solid #ccc;
+                        border-radius: 3px;
+                        box-shadow: none;
+                        padding: 10px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        max-width: inherit;
+                        height: auto;
+                    }
+                    .field.hs-form-field{
+                        position: relative;
+                        margin-bottom: 10px;
+                        > label{
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            font-weight: normal;
+                        }
+                        &.focusing{
+                            > label{
+                                display: none;
+                            }
+                        }
+                    }
+                    .hs-error-msgs{
+                        label{
+                            color: red;
+                        }
+                    }
+                    .hs-button.primary.large{
+                        background: #eb742c;
+                        box-shadow: none;
+                        text-shadow: 0;
+                        border: 0;
+                        border-radius: 0;
+                        padding: 17px;
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
                     .actions{
-                        margin-top: 20px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                .title{
+                    color: #eb742c;
+                    font-size: 30px;
+                    text-align: center;
+                    font-family: "Source Sans Pro",sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+    .module-1 {
+        .custom-inner {
+            padding: 0;
+        }
+        .benefit-section {
+            .leading-employee-content {
+                width: calc(50% - 90px);
+                float: left;
+            }
+            .form-signup-content {
+                vertical-align: top;
+                padding: 0 70px;
+                width: calc(50% - 140px);
+                float: right;
+            }
+        }
+        .logos {
+            clear: both;
+        }
+
+        .popup-container{
+            /*padding-top: 20%;*/
+            .popup{
+                width: 450px;
+                left: 50%;
+                margin-left: -225px;
+                min-height: 480px;
+                .popup-content{
+                    form{
+                        .actions{
+                            margin-top: 20px;
+                        }
                     }
                 }
             }
