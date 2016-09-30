@@ -19,7 +19,6 @@
         background-repeat: no-repeat;
         background-position: top center;
         color: #FFF;
-        font-family: "Source Sans Pro",sans-serif;
         letter-spacing: 0.6px;
     }
     .custom-inner {
@@ -206,7 +205,6 @@
                     color: #eb742c;
                     font-size: 30px;
                     text-align: center;
-                    font-family: "Source Sans Pro",sans-serif;
                     font-weight: bold;
                 }
             }
@@ -268,6 +266,111 @@
             text-decoration: none;
         }
     }
+}
+
+.section.delights-section {
+    background-color: #fff;
+    color: #25292a;
+    text-align: center;
+    font-family: Lato-Regular, Arial;
+    font-size: 18px;
+    line-height: 22px;
+}
+.delights-section .inner {
+    padding: 65px 15px 80px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+}
+.section.delights-section a.white-circle-button {
+    background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/white-circle-button2x.png?t=1466141870599);
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    margin-left: -35px;
+    display: block;
+    position: absolute;
+    left: 50%;
+}
+.delights-section a {
+    color: #1c94ee;
+    text-decoration: none;
+    background-color: transparent;
+}
+.delights-section h2 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: inherit;
+}
+.delights {
+    overflow: auto;
+}
+.delight {
+    width: 100%;
+    margin-right: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    float: left;
+    font-size: 18px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.delight .quote {
+    min-height: initial;
+    padding-bottom: 10px;
+    color: #505455;
+    line-height: 30px;
+}
+.delights-section p {
+    margin: 0 0 10px;
+}
+.delight .source {
+    position: relative;
+    height: 70px;
+}
+.delight .source img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    max-width: 100%;
+    border: 0;
+    vertical-align: bottom;
+}
+.delight .source h3 {
+    font-size: 18px;
+    bottom: 20px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    color: inherit;
+}
+.delight .source h3, .delight .source p {
+    line-height: 20px;
+    position: absolute;
+    left: 80px;
+}
+.delight .source p {
+    bottom: 0;
+}
+.delights-section .read-more {
+    background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/blue-arrow2x.png?t=1466141870599);
+    background-repeat: no-repeat;
+    background-size: 7px 11px;
+    background-position: 100% 62%;
+    padding-right: 15px;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 @media screen and (min-width: 960px) {
@@ -343,6 +446,13 @@
             clear: both;
             text-align: center;
         }
+    }
+    .delight {
+        width: 33%;
+        padding: 15px;
+    }
+    .delight .quote{
+        height: 190px;
     }
 }
 
