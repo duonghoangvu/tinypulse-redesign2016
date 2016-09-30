@@ -1,0 +1,19 @@
+.main-content{
+	margin-bottom: 0;
+}
+
+.new-features-page {
+	margin-top: 0;
+	.tp-engage img{
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 960px){
+	.main-wrapper{
+		padding-bottom: 57px;
+	}
+	.new-features-page{
+		margin-top: 0;
+	}
+}
