@@ -284,10 +284,13 @@ nav{
           background: #4A4A4A;
           border-radius: 3px;
           position: absolute;
-          top: -20px;
+          bottom: calc(100% - 10px);
+          left: 10px;
+          right: 10px;
           box-shadow: 2px 2px 8px #333;
           opacity: 0;
           visibility: hidden;
+          line-height: normal;
           transition: all 0.3s;
           &:before{
             content: "";
@@ -299,7 +302,6 @@ nav{
             border-style: solid;
             border-width: 10px 7px;
             bottom: -20px;
-            left: 46%;
           }
         }
       }
@@ -311,20 +313,20 @@ nav{
     }
   }
   .overview{
-    .content-1 .tooltip{
-      left: 83px;
+    .content-1 .tooltip:before{
+      left: 402px;
     }
-    .content-2 .tooltip{
-      left: 27px;
+    .content-2 .tooltip:before{
+      left: 178px;
     }
-    .content-3 .tooltip{
-      left: 105px;
+    .content-3 .tooltip:before{
+      left: 256px;
     }
-    .content-4 .tooltip{
-      left: -18px;
+    .content-4 .tooltip:before{
+      left: 174px;
     }
-    .content-5 .tooltip{
-      left: 58px;
+    .content-5 .tooltip:before{
+      left: 210px;
     }
   }
 }
