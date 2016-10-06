@@ -733,6 +733,93 @@ body {
     text-decoration: none;
     background-color: transparent;
 }
+.new-features-page{
+    .content-block{
+        .block-content{
+            .form-container{
+                margin: 50px 0;
+                &:after{
+                    content: "";
+                    width: 100%;
+                    display: inline-block;
+                    height: 1px;
+                }
+                .graphic{
+                    width: 60%;
+                    float: left;
+                    text-align: center;
+                    img{
+                        max-width: 400px;                        
+                        display: inline-block;
+                    }
+                }
+                .form{
+                    width: 40%;
+                    float: left;
+                }
+                form{
+                    padding: 0 30px;
+                    input[type=text], input[type=email], input[type=number], input[type=tel]{
+                        border: 1px solid #DADADA;
+                        border-radius: 3px;
+                        box-shadow: none;
+                        padding: 10px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        max-width: inherit;
+                        height: auto;
+                    }
+                    .field.hs-form-field{
+                        position: relative;
+                        margin-bottom: 10px;
+                        > label{
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            font-weight: normal;
+                            font-size: 14px;
+                            font-family: Lato-Regular, Arial;
+                            color: #9B9B9B;
+                            width: 100%;
+                            text-align: center;
+                        }
+                        &.focusing{
+                            > label{
+                                display: none;
+                            }
+                        }
+                    }
+                    .hs-error-msgs{
+                        label{
+                            color: red;
+                        }
+                    }
+                    .hs-button.primary.large{
+                        background: #00C26B;
+                        box-shadow: none;
+                        text-shadow: 0;
+                        border: 0;
+                        border-radius: 0;
+                        padding: 17px;
+                        width: 100%;
+                        font-size: 20px;
+                        font-family: Lato-Bold;
+                        text-shadow: none;
+                        box-sizing: border-box;
+                    }
+                    .actions{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content-block.makes-better{
+    padding-bottom: 40px;
+}
 @media screen and (min-width: 960px) {
     .culture-resources .resource, .culture-resources .resource.from-the-blog {
         float: left;
