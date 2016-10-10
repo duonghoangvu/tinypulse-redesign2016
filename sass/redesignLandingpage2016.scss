@@ -756,6 +756,9 @@ body {
                 .form{
                     width: 40%;
                     float: left;
+                    &.signup{
+                        display: none;
+                    }
                 }
                 form{
                     padding: 0 30px;
@@ -782,6 +785,7 @@ body {
                             color: #9B9B9B;
                             width: 100%;
                             text-align: center;
+                            display: none;
                         }
                         &.focusing{
                             > label{
@@ -806,6 +810,7 @@ body {
                         font-family: Lato-Bold;
                         text-shadow: none;
                         box-sizing: border-box;
+                        color: #fff;
                     }
                     .actions{
                         margin: 0;
