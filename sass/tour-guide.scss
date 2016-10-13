@@ -154,6 +154,11 @@ nav{
             visibility: visible;
           }
         }
+        &.not-viewed{
+          &:after{
+            display: inline-block;
+          }
+        }
         &.viewed{
           &:after{
             display: none;
@@ -165,11 +170,11 @@ nav{
           width: 5px;
           height: 5px;
           background: #bb101c;
-          display: inline-block;
           line-height: 0;
           border-radius: 50%;
           vertical-align: top;
           transition: all 0.3s;
+          display: none;
         }
 			}
       .tooltip{
@@ -420,6 +425,11 @@ nav{
         left: 25px;
       }
     }
+    &.not-viewed{
+      &:after{
+        display: inline-block;
+      }
+    }
     &.viewed{
       &:after{
         display: none;
@@ -431,11 +441,11 @@ nav{
       width: 5px;
       height: 5px;
       background: #EA5661;
-      display: inline-block;
       line-height: 0;
       border-radius: 50%;
       vertical-align: top;
       transition: all 0.3s;
+      display: none;
     }
   }
   .dropdown{
@@ -490,6 +500,14 @@ nav{
     background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 94%);
     z-index: -1;
     opacity: 0.9;
+  }
+  a p span i{
+    margin: 0 3px;
+    padding: 0;
+    height: auto;
+    vertical-align: middle;
+    position: relative;
+    top: 2px;
   }
   .nav-panel-trigger{
     &:after{
@@ -621,6 +639,7 @@ nav{
     .non-interactive {
       .block{
         width: 100%;
+        padding: 0;
         .container{
           .tooltip{
             left: 0;
