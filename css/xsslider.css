@@ -265,6 +265,10 @@ a{
 .links .next{
   float: right;
 }
+.links .signup{
+  float: right;
+  display: none;
+}
 .links .exit{
   float: left;
   opacity: 0.5;

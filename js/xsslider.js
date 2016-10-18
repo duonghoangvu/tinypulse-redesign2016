@@ -93,13 +93,27 @@
             if (currentSlide == 0) {
                 activeSlide = 5;
             } else if (currentSlide == 6) {
-                activeSlide = 1;
+                activeSlide = 1;                
             } else {
                 activeSlide = currentSlide;
             }
 
+            if (currentSlide == 5){
+                showLinks();
+            } else {
+                hideLinks();
+            }
+
             $('.indicator').removeClass('active');
             $('#indicator-' + activeSlide).addClass('active');
+        },
+        showLinks = function(){
+            $('.links .next').hide();
+            $('.links .signup').show();
+        },
+        hideLinks = function(){
+            $('.links .next').show();
+            $('.links .signup').hide();
         },
         initTouchEvents = function () {
             var longTouch = false,
