@@ -1,0 +1,104 @@
+/* line 7, ../sass/webinar.scss */
+.sessions {
+  text-align: center;
+  padding-bottom: 50px;
+  margin-top: -50px;
+  display: inline-block;
+  width: 100%;
+}
+/* line 13, ../sass/webinar.scss */
+.sessions .session {
+  margin: 10px 10px 25px 10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  text-align: center;
+  border: 1px solid #dadada;
+  color: #9B9B9B;
+}
+/* line 21, ../sass/webinar.scss */
+.sessions .session > div {
+  padding: 20px;
+}
+/* line 24, ../sass/webinar.scss */
+.sessions .session .title {
+  color: #000;
+}
+/* line 27, ../sass/webinar.scss */
+.sessions .session .desc {
+  font-size: 16px;
+  font-family: "Lato-Semibold";
+}
+/* line 31, ../sass/webinar.scss */
+.sessions .session .session-info {
+  border-bottom: 1px solid #dadada;
+}
+/* line 33, ../sass/webinar.scss */
+.sessions .session .session-info .avatar {
+  border-radius: 50%;
+  margin-top: 5px;
+  width: 64px;
+  height: auto;
+}
+/* line 39, ../sass/webinar.scss */
+.sessions .session .session-info .name {
+  margin: 5px 10px;
+}
+/* line 43, ../sass/webinar.scss */
+.sessions .session .register {
+  padding: 10px 35px;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #00C26B;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+/* line 52, ../sass/webinar.scss */
+.sessions .session > a {
+  display: inline-block;
+  width: 100%;
+  background: #9B9B9B;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+/* line 59, ../sass/webinar.scss */
+.sessions .session > a:after {
+  content: "";
+  border-style: solid;
+  border-width: 5px;
+  border-color: transparent transparent transparent #fff;
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 68, ../sass/webinar.scss */
+.sessions .session .time {
+  margin-top: 5px;
+}
+/* line 71, ../sass/webinar.scss */
+.sessions .session .time-zone {
+  display: inline-block;
+}
+/* line 73, ../sass/webinar.scss */
+.sessions .session .time-zone:after {
+  position: relative;
+  top: 2px;
+  content: "";
+  border-style: solid;
+  border-width: 5px;
+  border-color: #9B9B9B transparent transparent transparent;
+  display: inline-block;
+}
+/* line 82, ../sass/webinar.scss */
+.sessions .session .time-zone select {
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  color: #9B9B9B;
+  font-family: Lato-SemiBold;
+  font-size: 14px;
+  outline: none;
+  margin-left: 20px;
+  width: 73px;
+}
