@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/tour-guide.css" />
+  <meta name="viewport" content="maximum-scale=1,width=device-width,initial-scale=1,user-scalable=0"> 
+</head>
+<body>
+  <div class="main-wrapper">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="images/engage_logo.png" />
+        </div>
+        <div class="content">
+          <p>Free feel to explore your prefilled TINYpulse Dashboard. When you're ready click continue to clear data and start pulsing.</p>
+          <a href="https://app.tinypulse.com/engage/signup">Start using TINYpulse - Engage</a>
+        </div>
+      </div>
+    </header> 
+    <div class="content-wrapper">
+      <nav>
+        <ul class="nav" id="side-menu">
+          <li title="" data-toggle="tooltip" data-original-title="Insights" class="active">
+            <a href="#insights/overview" data-active-key="insights">
+              <i class="icon-gause"></i> <span class="nav-label">Insights</span>
+            </a>
+          </li>
+        
+          <li title="" data-toggle="tooltip" data-original-title="Manage Pulses">
+            <a href="/future_questions" data-active-key="manage-pulses">
+              <i class="icon-pulse"></i> <span class="nav-label">Manage Pulses</span>
+            </a>
+          </li>
+        
+          <li title="" data-toggle="tooltip" data-original-title="Share">
+            <a href="#sharing" data-active-key="sharing">
+              <i class="icon-share"></i> <span class="nav-label">Share</span>
+            </a>
+          </li>
+        
+          <li title="" data-toggle="tooltip" data-original-title="Manage Users">
+            <a href="/employees/add" data-active-key="users">
+              <i class="icon-users"></i> <span class="nav-label">Manage Users</span>
+            </a>
+          </li>
+        
+          <li title="" data-toggle="tooltip" data-original-title="Settings">
+            <a href="/settings" data-active-key="settings">
+              <i class="icon-setting"></i> <span class="nav-label">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-content">
+        <div class="vertical-menu">
+          <a class="overview" href="#insights/240283/overview" target="">
+            Overview
+          </a>
+          <a class="responses" href="#insights/240283/responses" target="">
+            Responses
+          </a>
+          <a class="cheers-for-peers" href="#insights/cheers" target="">
+            Cheers for Peers
+          </a>
+          <a class="suggestions" href="#insights/suggestions" target="">
+            Suggestions
+          </a>
+          <a class="compare" href="#insights/compare" target="">
+            Compare
+          </a>
+          <a class="company-iq active" href="#insights/spotlight" target="">
+            SMARTpulse
+          </a>
+        </div>
+        <div class="content overview">
+          <div class="block fullwidth">
+            <div class="container content-1">
+              <img src="http://www.tinypulse.com/hubfs/redesign_2016/tour-guide/smartpulse.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-panel">
+    <a href="#" class="nav-panel-trigger" id="nav-panel-trigger">Introduction to TINYpulse</a>
+    <ul>
+      <li class="checked-step"><a href="#"><span class="no"><i class="fa fa-check" aria-hidden="true"></i></span><span>Overview</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.<span>Hover over <i>Info Icon</i> to find out more.</span></p></a></li>
+      <li class="checked-step"><a href="#"><span class="no"><i class="fa fa-check" aria-hidden="true"></i></span><span>Cheers for Peers</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.<span>Hover over <i>Info Icon</i> to find out more.</span></p></a></li>
+      <li class="checked-step"><a href="#"><span class="no"><i class="fa fa-check" aria-hidden="true"></i></span><span>Suggestions</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.<span>Hover over <i>Info Icon</i> to find out more.</span></p></a></li>
+      <li class="checked-step"><a href="#"><span class="no"><i class="fa fa-check" aria-hidden="true"></i></span><span>Happiness Trend</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.<span>Hover over <i>Info Icon</i> to find out more.</span></p></a></li>
+      <li class="active"><a href="#"><span class="no">5</span><span>SMARTpulse</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
+    </ul>
+    <a href="#" class="exit-tour">Exit tour</a>
+    <a href="#" class="next-step">FINISH</a>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/global.js"></script>
+  <script type="text/javascript">
+    $('#nav-panel-trigger').on('click', function(e){
+      e.preventDefault();
+      $('body').toggleClass('nav-panel-opened');
+    });
+  </script>
+</body>
+
