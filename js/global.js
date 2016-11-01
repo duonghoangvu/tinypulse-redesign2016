@@ -169,7 +169,6 @@ Scroller.prototype = {
     /**
      * Do The Dirty Work Here
      */
-      console.log(currentScrollY);
     if (currentScrollY >= this.wHeight - 150){
       this.dom.nav.addClass('sticked');
       this.dom.mobileNav.addClass('sticked');

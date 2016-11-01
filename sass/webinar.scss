@@ -78,6 +78,8 @@ $font_thin: 'Lato-Thin';
 	    	border-width: 5px;
 	    	border-color: #9B9B9B transparent transparent transparent;
 	    	display: inline-block;
+	    	z-index: -1;
+    		right: 12px;
 			}
 			select{
 				-webkit-appearance: none;
@@ -87,8 +89,8 @@ $font_thin: 'Lato-Thin';
 		    font-family: Lato-SemiBold;
 		    font-size: 14px;
 		    outline: none;
-		    margin-left: 20px;
-		    width: 73px;
+		    margin-left: 10px;
+		    width: 83px;
 			}
 		}
 	}

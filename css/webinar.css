@@ -89,8 +89,10 @@
   border-width: 5px;
   border-color: #9B9B9B transparent transparent transparent;
   display: inline-block;
+  z-index: -1;
+  right: 12px;
 }
-/* line 82, ../sass/webinar.scss */
+/* line 84, ../sass/webinar.scss */
 .sessions .session .time-zone select {
   -webkit-appearance: none;
   border: none;
@@ -99,6 +101,6 @@
   font-family: Lato-SemiBold;
   font-size: 14px;
   outline: none;
-  margin-left: 20px;
-  width: 73px;
+  margin-left: 10px;
+  width: 83px;
 }
