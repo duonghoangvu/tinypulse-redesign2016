@@ -29,6 +29,7 @@ $font_thin: 'Lato-Thin';
     left: 50%;
     margin-left: -160px;
     margin-top: -250px;
+    overflow-x: scroll;
 	  .close-btn{
 	  	position: absolute;
 	  	top: -10px;
@@ -37,6 +38,7 @@ $font_thin: 'Lato-Thin';
 			color: #fff;
 			transform: rotate(45deg);
 			font-family: $font_light;
+      z-index: 2;
 	  }
 		.popup-content{
 			font-size: 0;
@@ -49,6 +51,7 @@ $font_thin: 'Lato-Thin';
 				background: #fff;
 				box-sizing: border-box;
 				padding: 0 10px;
+        height: auto !important;
 
 				&.image{
 					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
@@ -61,7 +64,7 @@ $font_thin: 'Lato-Thin';
 				img{
 					max-width: 100%;
 					height: auto;
-				}
+        }
 				.title{
 					font-size: 24px;
 					color: #000;
@@ -70,6 +73,7 @@ $font_thin: 'Lato-Thin';
 					font-size: 18px;
 					line-height: 24px;
 					color: #9b9b9b;
+          padding: 0px 20px;
 				}
         .learn-more {
           margin: 36px 10px 30px;
@@ -77,12 +81,13 @@ $font_thin: 'Lato-Thin';
 				a{
 					font-size: 22px;
 			    color: #fff;
-			    width: 280px;
+			    max-width: 280px;
 			    text-align: center;
 			    background: #00C26B;
 			    border-radius: 3px;
           display: block;
           padding: 10px 0px;
+          margin: 20px;
 				}
 			}
 		}
@@ -175,18 +180,26 @@ $font_thin: 'Lato-Thin';
 				.column{
 					width: 480px;
 					vertical-align: top;
-					height: 380px;
+					height: 380px !important;
 					padding: 70px 50px;
 					text-align: left;
 					&.image{
 						padding: 70px 0;
     				text-align: center;
+            position: relative;
 					}
           img {
-            width: 400px
+            width: 400px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
           }
 					a{
 						max-width: 200px;
+            margin: 0;
 						&:hover{
 							opacity: 0.9;
 						}
@@ -197,6 +210,9 @@ $font_thin: 'Lato-Thin';
           .title {
             font-size: 36px;
             margin-top: 0px;
+          }
+          .desc{
+            padding: 0px;
           }
         }
       }

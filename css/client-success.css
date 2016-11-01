@@ -76,13 +76,13 @@
 /* line 42, ../sass/client-success.scss */
 .list-items .cs-content .title {
   font-size: 16px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   line-height: 24px;
 }
 /* line 47, ../sass/client-success.scss */
 .list-items .cs-content .desc {
   font-size: 14px;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   line-height: 24px;
   margin-top: 5px;
 }
@@ -136,7 +136,7 @@
 /* line 96, ../sass/client-success.scss */
 li.active-tab {
   display: inline-block;
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
 }
 
 @media screen and (min-width: 960px) {

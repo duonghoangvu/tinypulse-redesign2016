@@ -55,7 +55,7 @@
 .overview .title {
   color: #1C94EE;
   font-size: 20px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   text-align: left;
   padding: 0 15px;
 }
@@ -63,7 +63,7 @@
 .overview .content-desc {
   font-size: 18px;
   color: #000;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   margin: 15px 0px;
   text-align: left;
   line-height: 25px;
@@ -92,7 +92,7 @@
 .features .feature {
   text-align: left;
   font-size: 16px;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   line-height: 24px;
   padding-bottom: 30px;
   display: block;
@@ -100,7 +100,7 @@
 /* line 68, ../sass/engage.scss */
 .features .content-title {
   font-size: 20px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   padding: 0 15px;
 }
 /* line 73, ../sass/engage.scss */
@@ -140,7 +140,7 @@
 }
 /* line 100, ../sass/engage.scss */
 .features strong {
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
 }
 /* line 103, ../sass/engage.scss */
 .features .mobile-download {
@@ -156,7 +156,7 @@
 .how-it-works .block-content {
   line-height: 24px;
   font-size: 16px;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   display: none;
   height: 570px;
   position: relative;
@@ -173,7 +173,7 @@
 .how-it-works .content-title {
   font-size: 20px;
   color: #1C94EE;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   text-align: left;
   padding: 0 15px;
 }
@@ -205,7 +205,7 @@
 /* line 153, ../sass/engage.scss */
 .why {
   color: #FFF;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   background: -moz-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
@@ -220,7 +220,7 @@
 /* line 163, ../sass/engage.scss */
 .why .content-title {
   font-size: 16px;
-  font-family: "Lato-Semibold";
+  font-family: "Lato-Semibold", Arial;
   line-height: 19px;
 }
 /* line 168, ../sass/engage.scss */
@@ -342,7 +342,7 @@
 .why .speaker {
   /*margin: 0 15px;*/
   line-height: 20px;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   /*display: none;*/
 }
 /* line 269, ../sass/engage.scss */
@@ -378,7 +378,7 @@
 }
 /* line 294, ../sass/engage.scss */
 .why .speaker .speaker-name {
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   line-height: 22px;
 }
 /* line 299, ../sass/engage.scss */
@@ -395,7 +395,7 @@
   padding: 10px;
   border-radius: 2px;
   font-size: 20px;
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
   color: #FFF;
   box-sizing: border-box;
 }
@@ -426,7 +426,7 @@
 .clients .block-title {
   color: #FFF;
   font-size: 30px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   line-height: 36px;
   width: 80%;
   margin-bottom: 7px;
@@ -472,7 +472,7 @@
   color: #000;
   text-align: center;
   margin-bottom: 10px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   font-size: 15px;
 }
 /* line 376, ../sass/engage.scss */
@@ -480,7 +480,7 @@
   width: 100%;
   background: #00C26B;
   color: #fff;
-  font-family: "Lato-Semibold";
+  font-family: "Lato-Semibold", Arial;
   font-size: 16px;
 }
 /* line 382, ../sass/engage.scss */
@@ -572,13 +572,13 @@
   /* line 433, ../sass/engage.scss */
   .overview-desktop .content-desc {
     font-size: 16px;
-    font-family: "Lato-Light";
+    font-family: "Lato-Light", Arial;
     line-height: 24px;
   }
   /* line 438, ../sass/engage.scss */
   .overview-desktop .title {
     font-size: 24px;
-    font-family: "Lato-Regular";
+    font-family: "Lato-Regular", Arial;
     line-height: 29px;
     color: #000;
     margin-bottom: 15px;
@@ -685,7 +685,7 @@
   .features .mobile-download {
     display: block;
     font-size: 18px;
-    font-family: "Lato-Regular";
+    font-family: "Lato-Regular", Arial;
     line-height: 22px;
     color: #9B9B9B;
     padding: 0px 15px;
@@ -825,7 +825,7 @@
   .how-it-works-desktop .block-content .content-title {
     font-size: 20px;
     color: #1C94EE;
-    font-family: "Lato-Regular";
+    font-family: "Lato-Regular", Arial;
     text-align: left;
     padding: 0 15px;
   }
@@ -834,7 +834,7 @@
     text-align: left;
     padding: 0 15px;
     font-size: 16px;
-    font-family: "Lato-Light";
+    font-family: "Lato-Light", Arial;
     line-height: 24px;
   }
   /* line 665, ../sass/engage.scss */

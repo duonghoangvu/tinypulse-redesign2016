@@ -2,81 +2,90 @@
 /* line 1, ../sass/redesignLandingpage2016.scss */
 .main-content {
   margin-bottom: 0;
+  padding-top: 40px;
 }
 
-/* line 5, ../sass/redesignLandingpage2016.scss */
+/* line 6, ../sass/redesignLandingpage2016.scss */
 .new-features-page {
   margin-top: 0;
 }
-/* line 7, ../sass/redesignLandingpage2016.scss */
+/* line 8, ../sass/redesignLandingpage2016.scss */
 .new-features-page .tp-engage img {
   height: auto;
 }
 
 /* line 13, ../sass/redesignLandingpage2016.scss */
+.main-nav {
+  text-align: center;
+}
+/* line 15, ../sass/redesignLandingpage2016.scss */
+.main-nav .logo img {
+  left: 0;
+}
+
+/* line 21, ../sass/redesignLandingpage2016.scss */
 .module-1 .request-modal {
   display: none;
 }
-/* line 16, ../sass/redesignLandingpage2016.scss */
+/* line 24, ../sass/redesignLandingpage2016.scss */
 .module-1 .hero-area {
-  padding-top: 90px;
-  margin-top: -50px;
   background-repeat: no-repeat;
   background-position: top center;
   color: #FFF;
   letter-spacing: 0.6px;
 }
-/* line 24, ../sass/redesignLandingpage2016.scss */
+/* line 30, ../sass/redesignLandingpage2016.scss */
 .module-1 .custom-inner {
   padding: 0 2%;
   text-align: center;
 }
-/* line 27, ../sass/redesignLandingpage2016.scss */
+/* line 33, ../sass/redesignLandingpage2016.scss */
 .module-1 .custom-inner h1 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
   margin: 12px 0 6px;
-  padding-bottom: 0;
+  padding-bottom: 20px;
   line-height: 42px;
 }
-/* line 34, ../sass/redesignLandingpage2016.scss */
+/* line 40, ../sass/redesignLandingpage2016.scss */
 .module-1 .custom-inner h3 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   margin-top: 0;
   font-weight: 300;
 }
-/* line 44, ../sass/redesignLandingpage2016.scss */
+/* line 50, ../sass/redesignLandingpage2016.scss */
 .module-1 .benefit-section .leading-employee-content-container .leading-employee-content {
-  padding: 25px 45px;
   background: rgba(28, 148, 238, 0.72);
   border-radius: 7px;
   text-align: left;
+  padding: 10px 45px;
+  margin-top: 20px;
 }
-/* line 49, ../sass/redesignLandingpage2016.scss */
+/* line 56, ../sass/redesignLandingpage2016.scss */
 .module-1 .benefit-section .leading-employee-content-container .leading-employee-content h2 {
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 10px;
 }
-/* line 54, ../sass/redesignLandingpage2016.scss */
+/* line 61, ../sass/redesignLandingpage2016.scss */
 .module-1 .benefit-section .leading-employee-content-container .leading-employee-content ul {
   padding-left: 0;
 }
-/* line 56, ../sass/redesignLandingpage2016.scss */
+/* line 63, ../sass/redesignLandingpage2016.scss */
 .module-1 .benefit-section .leading-employee-content-container .leading-employee-content ul li {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   padding: 4px 0;
   list-style: none;
 }
-/* line 61, ../sass/redesignLandingpage2016.scss */
+/* line 68, ../sass/redesignLandingpage2016.scss */
 .module-1 .benefit-section .leading-employee-content-container .leading-employee-content ul li:before {
-  content: 'Γ£ö';
+  content: '✔';
   margin-right: 15px;
   color: white;
 }
-/* line 74, ../sass/redesignLandingpage2016.scss */
+/* line 81, ../sass/redesignLandingpage2016.scss */
 .module-1 .subscribe .btn-request .request-demo-button {
   margin-top: 25px;
   width: auto;
@@ -93,11 +102,11 @@
   display: block;
   letter-spacing: 1px;
 }
-/* line 89, ../sass/redesignLandingpage2016.scss */
+/* line 96, ../sass/redesignLandingpage2016.scss */
 .module-1 .subscribe .btn-request .request-demo-button:hover {
   background-color: #d37236;
 }
-/* line 94, ../sass/redesignLandingpage2016.scss */
+/* line 101, ../sass/redesignLandingpage2016.scss */
 .module-1 .subscribe .or-text {
   display: block;
   padding: 19px;
@@ -105,7 +114,7 @@
   font-weight: 300;
   font-size: 16px;
 }
-/* line 101, ../sass/redesignLandingpage2016.scss */
+/* line 108, ../sass/redesignLandingpage2016.scss */
 .module-1 .subscribe .call-button {
   cursor: pointer;
   text-align: center;
@@ -121,25 +130,25 @@
   letter-spacing: 1px;
   line-height: 30px;
 }
-/* line 115, ../sass/redesignLandingpage2016.scss */
+/* line 122, ../sass/redesignLandingpage2016.scss */
 .module-1 .subscribe .call-button:hover {
   background-color: rgba(255, 255, 255, 0.19);
 }
-/* line 120, ../sass/redesignLandingpage2016.scss */
+/* line 127, ../sass/redesignLandingpage2016.scss */
 .module-1 .logos {
   padding: 40px 0 55px;
 }
-/* line 122, ../sass/redesignLandingpage2016.scss */
+/* line 129, ../sass/redesignLandingpage2016.scss */
 .module-1 .logos .logo {
   padding: 10px;
   height: 55px;
   display: inline-block;
 }
-/* line 126, ../sass/redesignLandingpage2016.scss */
+/* line 133, ../sass/redesignLandingpage2016.scss */
 .module-1 .logos .logo img {
   vertical-align: middle;
 }
-/* line 134, ../sass/redesignLandingpage2016.scss */
+/* line 141, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup {
   width: 100%;
   margin-left: 0;
@@ -148,7 +157,7 @@
   top: 10%;
   min-height: 400px;
 }
-/* line 141, ../sass/redesignLandingpage2016.scss */
+/* line 148, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .close-btn {
   top: 0px;
   right: 30px;
@@ -156,7 +165,7 @@
   font-family: "Lato-Bold";
   color: #4F4F51;
 }
-/* line 148, ../sass/redesignLandingpage2016.scss */
+/* line 155, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .popup-content {
   border-top: 5px solid #eb742c;
   border-radius: 5px;
@@ -167,11 +176,11 @@
   margin: 0 20px;
   overflow: auto;
 }
-/* line 157, ../sass/redesignLandingpage2016.scss */
+/* line 164, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .popup-content form {
   padding: 0 30px;
 }
-/* line 159, ../sass/redesignLandingpage2016.scss */
+/* line 166, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .popup-content form input[type=text], .module-1 .popup-container .popup .popup-content form input[type=email], .module-1 .popup-container .popup .popup-content form input[type=number], .module-1 .popup-container .popup .popup-content form input[type=tel] {
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -182,27 +191,27 @@
   max-width: inherit;
   height: auto;
 }
-/* line 169, ../sass/redesignLandingpage2016.scss */
+/* line 176, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .popup-content form .field.hs-form-field {
   position: relative;
   margin-bottom: 10px;
 }
-/* line 172, ../sass/redesignLandingpage2016.scss */
+/* line 179, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .popup-content form .field.hs-form-field > label {
   position: absolute;
   top: 10px;
   left: 10px;
   font-weight: normal;
 }
-/* line 179, ../sass/redesignLandingpage2016.scss */
+/* line 186, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .popup-content form .field.hs-form-field.focusing > label {
   display: none;
 }
-/* line 185, ../sass/redesignLandingpage2016.scss */
+/* line 192, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .popup-content form .hs-error-msgs label {
   color: red;
 }
-/* line 189, ../sass/redesignLandingpage2016.scss */
+/* line 196, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .popup-content form .hs-button.primary.large {
   background: #eb742c;
   box-shadow: none;
@@ -213,12 +222,12 @@
   width: 100%;
   box-sizing: border-box;
 }
-/* line 199, ../sass/redesignLandingpage2016.scss */
+/* line 206, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .popup-content form .actions {
   margin: 0;
   padding: 0;
 }
-/* line 204, ../sass/redesignLandingpage2016.scss */
+/* line 211, ../sass/redesignLandingpage2016.scss */
 .module-1 .popup-container .popup .popup-content .title {
   color: #eb742c;
   font-size: 30px;
@@ -226,56 +235,55 @@
   font-weight: bold;
 }
 
-/* line 217, ../sass/redesignLandingpage2016.scss */
+/* line 224, ../sass/redesignLandingpage2016.scss */
 .module-2 .inner {
   padding: 0 2%;
-  font-family: 'Open Sans',sans-serif;
 }
-/* line 220, ../sass/redesignLandingpage2016.scss */
+/* line 226, ../sass/redesignLandingpage2016.scss */
 .module-2 .inner h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 20px 0;
   text-align: center;
   font-size: 36px;
   line-height: 40px;
 }
-/* line 227, ../sass/redesignLandingpage2016.scss */
+/* line 232, ../sass/redesignLandingpage2016.scss */
 .module-2 .inner .sales-point {
   background-size: 78px 63px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   background-position: top left;
   padding-left: 95px;
   background-repeat: no-repeat;
 }
-/* line 233, ../sass/redesignLandingpage2016.scss */
+/* line 238, ../sass/redesignLandingpage2016.scss */
 .module-2 .inner .sales-point h3 {
   font-size: 20px;
   font-weight: 600;
   line-height: 22px;
   letter-spacing: 0.67px;
-  padding-bottom: 7px;
+  margin: 10px 0;
 }
-/* line 240, ../sass/redesignLandingpage2016.scss */
+/* line 245, ../sass/redesignLandingpage2016.scss */
 .module-2 .inner .sales-point p {
   line-height: 22px;
   letter-spacing: .45px;
   margin: 0 0 10px;
   font-size: 14px;
 }
-/* line 247, ../sass/redesignLandingpage2016.scss */
+/* line 252, ../sass/redesignLandingpage2016.scss */
 .module-2 .inner .video {
   width: 100%;
 }
-/* line 249, ../sass/redesignLandingpage2016.scss */
+/* line 254, ../sass/redesignLandingpage2016.scss */
 .module-2 .inner .video #video_home_page {
   width: 100%;
   height: auto;
+  padding-top: 20px;
 }
-/* line 254, ../sass/redesignLandingpage2016.scss */
+/* line 260, ../sass/redesignLandingpage2016.scss */
 .module-2 .inner .clear {
   text-align: center;
 }
-/* line 257, ../sass/redesignLandingpage2016.scss */
+/* line 263, ../sass/redesignLandingpage2016.scss */
 .module-2 .inner .read-more {
   background-repeat: no-repeat;
   background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/blue-arrow.png?t=1466141870599);
@@ -288,7 +296,7 @@
   text-decoration: none;
 }
 
-/* line 271, ../sass/redesignLandingpage2016.scss */
+/* line 277, ../sass/redesignLandingpage2016.scss */
 .section.delights-section {
   background-color: #fff;
   color: #25292a;
@@ -298,7 +306,7 @@
   line-height: 22px;
 }
 
-/* line 279, ../sass/redesignLandingpage2016.scss */
+/* line 285, ../sass/redesignLandingpage2016.scss */
 .delights-section .inner {
   padding: 65px 15px 80px;
   position: relative;
@@ -306,7 +314,7 @@
   max-width: 960px;
 }
 
-/* line 285, ../sass/redesignLandingpage2016.scss */
+/* line 291, ../sass/redesignLandingpage2016.scss */
 .section.delights-section a.white-circle-button {
   background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/white-circle-button2x.png?t=1466141870599);
   background-repeat: no-repeat;
@@ -322,30 +330,29 @@
   left: 50%;
 }
 
-/* line 299, ../sass/redesignLandingpage2016.scss */
+/* line 305, ../sass/redesignLandingpage2016.scss */
 .delights-section a {
   color: #1c94ee;
   text-decoration: none;
   background-color: transparent;
 }
 
-/* line 304, ../sass/redesignLandingpage2016.scss */
-.delights-section h2 {
+/* line 310, ../sass/redesignLandingpage2016.scss */
+.delights-section.section h2 {
   text-align: center;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: inherit;
 }
 
-/* line 313, ../sass/redesignLandingpage2016.scss */
+/* line 318, ../sass/redesignLandingpage2016.scss */
 .delights {
   overflow: auto;
 }
 
-/* line 316, ../sass/redesignLandingpage2016.scss */
+/* line 321, ../sass/redesignLandingpage2016.scss */
 .delight {
   width: 100%;
   margin-right: 0;
@@ -357,26 +364,26 @@
   box-sizing: border-box;
 }
 
-/* line 326, ../sass/redesignLandingpage2016.scss */
+/* line 331, ../sass/redesignLandingpage2016.scss */
 .delight .quote {
   min-height: initial;
-  padding-bottom: 10px;
   color: #505455;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-/* line 332, ../sass/redesignLandingpage2016.scss */
+/* line 337, ../sass/redesignLandingpage2016.scss */
 .delights-section p {
   margin: 0 0 10px;
 }
 
-/* line 335, ../sass/redesignLandingpage2016.scss */
+/* line 340, ../sass/redesignLandingpage2016.scss */
 .delight .source {
   position: relative;
   height: 70px;
 }
 
-/* line 339, ../sass/redesignLandingpage2016.scss */
+/* line 344, ../sass/redesignLandingpage2016.scss */
 .delight .source img {
   position: absolute;
   left: 0;
@@ -387,7 +394,7 @@
   vertical-align: bottom;
 }
 
-/* line 348, ../sass/redesignLandingpage2016.scss */
+/* line 353, ../sass/redesignLandingpage2016.scss */
 .delight .source h3 {
   font-size: 18px;
   bottom: 20px;
@@ -395,23 +402,22 @@
   letter-spacing: .6px;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: inherit;
   color: inherit;
 }
 
-/* line 358, ../sass/redesignLandingpage2016.scss */
+/* line 362, ../sass/redesignLandingpage2016.scss */
 .delight .source h3, .delight .source p {
   line-height: 20px;
   position: absolute;
   left: 80px;
 }
 
-/* line 363, ../sass/redesignLandingpage2016.scss */
+/* line 367, ../sass/redesignLandingpage2016.scss */
 .delight .source p {
   bottom: 0;
 }
 
-/* line 366, ../sass/redesignLandingpage2016.scss */
+/* line 370, ../sass/redesignLandingpage2016.scss */
 .delights-section .read-more {
   background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/blue-arrow2x.png?t=1466141870599);
   background-repeat: no-repeat;
@@ -422,93 +428,678 @@
   line-height: 40px;
 }
 
+/* line 381, ../sass/redesignLandingpage2016.scss */
+body {
+  margin: 0 auto;
+}
+
+/* line 384, ../sass/redesignLandingpage2016.scss */
+.results-desktop {
+  display: none;
+}
+
+/* line 387, ../sass/redesignLandingpage2016.scss */
+.results-mobile {
+  display: block;
+}
+
+/* line 390, ../sass/redesignLandingpage2016.scss */
+.section.results-section, .section h2 {
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 398, ../sass/redesignLandingpage2016.scss */
+.section.results-section {
+  background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/results-section2x.jpg?t=1466141870599);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #fff;
+  color: #25292a;
+  margin-top: 0;
+}
+
+/* line 407, ../sass/redesignLandingpage2016.scss */
+.results-section .inner {
+  padding: 65px 15px 0px;
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 413, ../sass/redesignLandingpage2016.scss */
+.section.results-section a.white-grey-circle-button {
+  background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/white-grey-circle-button2x.png?t=1466141870599);
+  background-repeat: no-repeat;
+  background-size: 74px 74px;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 74px;
+  height: 74px;
+  top: -37px;
+  margin-left: -37px;
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+
+/* line 427, ../sass/redesignLandingpage2016.scss */
+.results-section a {
+  background-color: transparent;
+  color: #1c94ee;
+  text-decoration: none;
+}
+
+/* line 432, ../sass/redesignLandingpage2016.scss */
+.results-section a:active, .results-section a:hover, .results-section a:focus {
+  outline: 0;
+}
+
+/* line 436, ../sass/redesignLandingpage2016.scss */
+.results-section .callouts {
+  overflow: auto;
+}
+
+/* line 439, ../sass/redesignLandingpage2016.scss */
+.results-section .callout.active {
+  background-color: #eb742c;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* line 444, ../sass/redesignLandingpage2016.scss */
+.results-section .callout h3 {
+  line-height: 22px;
+  letter-spacing: .67px;
+  padding-bottom: 7px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+/* line 454, ../sass/redesignLandingpage2016.scss */
+.results-section p {
+  margin: 0 0 10px;
+}
+
+/* line 458, ../sass/redesignLandingpage2016.scss */
+.results-section .callout {
+  width: 100%;
+  float: none;
+  padding: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* line 467, ../sass/redesignLandingpage2016.scss */
+.results-section .callout p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #505455;
+}
+
+/* line 472, ../sass/redesignLandingpage2016.scss */
+.results-section .callout.active p {
+  color: #fff;
+}
+
+/* line 475, ../sass/redesignLandingpage2016.scss */
+.results-section .callout.active::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #eb742c;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  bottom: -19px;
+}
+
+/* line 488, ../sass/redesignLandingpage2016.scss */
+.results-section .callout.active:first-child::after {
+  left: 80%;
+}
+
+/* line 491, ../sass/redesignLandingpage2016.scss */
+.results-section .screen {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 496, ../sass/redesignLandingpage2016.scss */
+.results-section img {
+  max-width: 350px;
+  width: 100%;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: bottom;
+  height: auto;
+}
+
+/* line 504, ../sass/redesignLandingpage2016.scss */
+.results-section .screen.active {
+  display: block;
+}
+
 @media screen and (min-width: 960px) {
-  /* line 377, ../sass/redesignLandingpage2016.scss */
+  /* line 508, ../sass/redesignLandingpage2016.scss */
+  .results-section .callout {
+    width: 25%;
+    float: left;
+  }
+
+  /* line 512, ../sass/redesignLandingpage2016.scss */
+  .results-section .screen {
+    display: none;
+    width: 796px;
+    height: 392px;
+  }
+
+  /* line 517, ../sass/redesignLandingpage2016.scss */
+  .results-mobile {
+    display: none;
+  }
+
+  /* line 520, ../sass/redesignLandingpage2016.scss */
+  .results-desktop {
+    display: block;
+  }
+
+  /* line 523, ../sass/redesignLandingpage2016.scss */
+  .results-section .dots {
+    padding: 25px 0 30px;
+    font-size: 0;
+  }
+
+  /* line 527, ../sass/redesignLandingpage2016.scss */
+  .results-section .dots a.active {
+    border: 2px solid #eb742c;
+    background-color: transparent;
+  }
+
+  /* line 531, ../sass/redesignLandingpage2016.scss */
+  .results-section .dots a {
+    display: inline-block;
+    background-color: #1c94ee;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-right: 30px;
+  }
+
+  /* line 539, ../sass/redesignLandingpage2016.scss */
+  .results-section img {
+    max-width: 100%;
+  }
+}
+/* line 546, ../sass/redesignLandingpage2016.scss */
+.experience-section {
+  background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/experience-section2x.jpg?t=1466141870599);
+  background-size: cover;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* line 554, ../sass/redesignLandingpage2016.scss */
+.section.experience-section, .section.experience-section h2 {
+  text-align: center;
+}
+
+/* line 557, ../sass/redesignLandingpage2016.scss */
+.experience-section .inner {
+  padding-top: 65px;
+  padding-bottom: 50px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* line 564, ../sass/redesignLandingpage2016.scss */
+.section.experience-section a.white-grey-circle-button {
+  background-image: url(//cdn2.hubspot.net/hubfs/443262/static-pages-images/new-static-pages/white-grey-circle-button2x.png?t=1466141870599);
+  background-repeat: no-repeat;
+  background-size: 74px 74px;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 74px;
+  height: 74px;
+  top: -37px;
+  margin-left: -37px;
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+
+/* line 578, ../sass/redesignLandingpage2016.scss */
+.experience-section a {
+  color: #1c94ee;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 583, ../sass/redesignLandingpage2016.scss */
+.experience-section h2 {
+  padding-bottom: 10px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+/* line 592, ../sass/redesignLandingpage2016.scss */
+.experience-section p {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 0 10px;
+}
+
+/* line 597, ../sass/redesignLandingpage2016.scss */
+.experience-section .signup-form {
+  padding: 40px 0 55px;
+  font-size: 0;
+}
+
+/* line 601, ../sass/redesignLandingpage2016.scss */
+.experience-section .signup-form .input {
+  background-color: transparent;
+  display: inline-block;
+}
+
+/* line 605, ../sass/redesignLandingpage2016.scss */
+.experience-section input {
+  font-weight: 400;
+  font-size: 16px;
+  border: 0;
+}
+
+/* line 610, ../sass/redesignLandingpage2016.scss */
+.experience-section .signup-form .signup-input {
+  border-radius: 2px 2px 0 0;
+  width: 300px;
+  text-indent: 10px;
+  line-height: 46px;
+  height: 46px;
+  color: #25292a;
+  vertical-align: top;
+  padding: 6px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* line 622, ../sass/redesignLandingpage2016.scss */
+.experience-section .signup-form input[type=submit] {
+  min-width: 300px;
+  border-radius: 0 0 2px 2px;
+  -webkit-appearance: none;
+  color: #fff;
+  background-color: #00c26b;
+  padding: 11px 10px;
+  height: 46px;
+  margin: 0;
+  text-transform: none;
+}
+
+/* line 633, ../sass/redesignLandingpage2016.scss */
+.experience-section .signup-form input[type=submit]:active {
+  transform: inherit;
+}
+
+/* line 636, ../sass/redesignLandingpage2016.scss */
+.experience-section p.featured-in {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* line 640, ../sass/redesignLandingpage2016.scss */
+.experience-section .logo {
+  height: 60px;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* line 645, ../sass/redesignLandingpage2016.scss */
+.experience-section .logo:first-child {
+  padding: 10px 10px 10px 0;
+}
+
+/* line 648, ../sass/redesignLandingpage2016.scss */
+.experience-section .logos .logo img {
+  vertical-align: middle;
+  max-width: 100%;
+  border: 0;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 654, ../sass/redesignLandingpage2016.scss */
+  .experience-section .signup-form .signup-input {
+    border-radius: 2px 0 0 2px;
+  }
+
+  /* line 657, ../sass/redesignLandingpage2016.scss */
+  .experience-section .signup-form input[type=submit] {
+    min-width: 150px;
+    border-radius: 0 2px 2px 0;
+  }
+}
+/* line 665, ../sass/redesignLandingpage2016.scss */
+.section.culture-resources {
+  background-color: #fff;
+  color: #25292a;
+  border-bottom: 1px solid #dadada;
+}
+
+/* line 670, ../sass/redesignLandingpage2016.scss */
+.section.culture-resources, .section.culture-resources h2 {
+  text-align: center;
+}
+
+/* line 673, ../sass/redesignLandingpage2016.scss */
+.culture-resources .inner {
+  padding: 65px 15px 0;
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 679, ../sass/redesignLandingpage2016.scss */
+.culture-resources h2 {
+  line-height: 40px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+/* line 686, ../sass/redesignLandingpage2016.scss */
+.culture-resources .wrapper {
+  padding: 35px 0 40px;
+  overflow: auto;
+}
+
+/* line 690, ../sass/redesignLandingpage2016.scss */
+.culture-resources .resource, .culture-resources .resource.from-the-blog {
+  float: none;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-right: 0;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* line 698, ../sass/redesignLandingpage2016.scss */
+.culture-resources p {
+  margin: 0 0 10px;
+}
+
+/* line 701, ../sass/redesignLandingpage2016.scss */
+.culture-resources .resource p.label {
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 0;
+  display: inline;
+  border-radius: .25em;
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-align: center;
+}
+
+/* line 713, ../sass/redesignLandingpage2016.scss */
+.culture-resources .resource h3 {
+  padding: 10px 0 15px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: .6px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 722, ../sass/redesignLandingpage2016.scss */
+.culture-resources .resource p.snippet {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 15px;
+}
+
+/* line 727, ../sass/redesignLandingpage2016.scss */
+.culture-resources .resource a, .culture-resources .social-icons .label {
+  line-height: 40px;
+  font-size: 18px;
+}
+
+/* line 731, ../sass/redesignLandingpage2016.scss */
+.culture-resources a {
+  color: #1c94ee;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 739, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container {
+  margin: 50px 0;
+}
+/* line 741, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  height: 1px;
+}
+/* line 747, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container .graphic {
+  width: 60%;
+  float: left;
+  text-align: center;
+}
+/* line 751, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container .graphic img {
+  max-width: 400px;
+  display: inline-block;
+}
+/* line 756, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container .form {
+  width: 40%;
+  float: left;
+}
+/* line 759, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container .form.signup {
+  display: none;
+}
+/* line 763, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container form {
+  padding: 0 30px;
+}
+/* line 765, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container form input[type=text], .new-features-page .content-block .block-content .form-container form input[type=email], .new-features-page .content-block .block-content .form-container form input[type=number], .new-features-page .content-block .block-content .form-container form input[type=tel] {
+  border: 1px solid #DADADA;
+  border-radius: 3px;
+  box-shadow: none;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: inherit;
+  height: auto;
+}
+/* line 775, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container form .field.hs-form-field {
+  position: relative;
+  margin-bottom: 10px;
+}
+/* line 778, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container form .field.hs-form-field > label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: Lato-Regular, Arial;
+  color: #9B9B9B;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+/* line 791, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container form .field.hs-form-field.focusing > label {
+  display: none;
+}
+/* line 797, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container form .hs-error-msgs label {
+  color: red;
+}
+/* line 801, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container form .hs-button.primary.large {
+  background: #00C26B;
+  box-shadow: none;
+  text-shadow: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 17px;
+  width: 100%;
+  font-size: 20px;
+  font-family: Lato-Bold;
+  text-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+}
+/* line 815, ../sass/redesignLandingpage2016.scss */
+.new-features-page .content-block .block-content .form-container form .actions {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 825, ../sass/redesignLandingpage2016.scss */
+.content-block.makes-better {
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 960px) {
+  /* line 829, ../sass/redesignLandingpage2016.scss */
+  .culture-resources .resource, .culture-resources .resource.from-the-blog {
+    float: left;
+    width: 31%;
+    text-align: left;
+    padding-right: 30px;
+  }
+
+  /* line 835, ../sass/redesignLandingpage2016.scss */
+  .culture-resources .resource.from-the-blog {
+    width: 38%;
+  }
+}
+@media screen and (min-width: 960px) {
+  /* line 842, ../sass/redesignLandingpage2016.scss */
+  .main-content {
+    padding-top: 70px;
+  }
+
+  /* line 845, ../sass/redesignLandingpage2016.scss */
   .main-wrapper {
     padding-bottom: 57px;
   }
 
-  /* line 381, ../sass/redesignLandingpage2016.scss */
+  /* line 849, ../sass/redesignLandingpage2016.scss */
   .new-features-page {
     margin-top: 0;
   }
 
-  /* line 386, ../sass/redesignLandingpage2016.scss */
+  /* line 854, ../sass/redesignLandingpage2016.scss */
   .module-1 .custom-inner {
     padding: 0;
   }
-  /* line 390, ../sass/redesignLandingpage2016.scss */
+  /* line 858, ../sass/redesignLandingpage2016.scss */
   .module-1 .benefit-section .leading-employee-content {
-    width: calc(50% - 90px);
+    width: calc(50% - 50px);
     float: left;
   }
-  /* line 394, ../sass/redesignLandingpage2016.scss */
+  /* line 862, ../sass/redesignLandingpage2016.scss */
   .module-1 .benefit-section .form-signup-content {
     vertical-align: top;
-    padding: 0 70px;
+    padding: 30px 0;
     width: calc(50% - 140px);
     float: right;
   }
-  /* line 401, ../sass/redesignLandingpage2016.scss */
+  /* line 869, ../sass/redesignLandingpage2016.scss */
   .module-1 .logos {
     clear: both;
   }
-  /* line 405, ../sass/redesignLandingpage2016.scss */
+  /* line 873, ../sass/redesignLandingpage2016.scss */
   .module-1 .popup-container {
     /*padding-top: 20%;*/
   }
-  /* line 407, ../sass/redesignLandingpage2016.scss */
+  /* line 875, ../sass/redesignLandingpage2016.scss */
   .module-1 .popup-container .popup {
     width: 450px;
     left: 50%;
     margin-left: -225px;
     min-height: 480px;
   }
-  /* line 414, ../sass/redesignLandingpage2016.scss */
+  /* line 882, ../sass/redesignLandingpage2016.scss */
   .module-1 .popup-container .popup .popup-content form .actions {
     margin-top: 20px;
   }
 
-  /* line 424, ../sass/redesignLandingpage2016.scss */
+  /* line 892, ../sass/redesignLandingpage2016.scss */
   .module-2 .innner {
     padding: 0;
   }
-  /* line 427, ../sass/redesignLandingpage2016.scss */
+  /* line 895, ../sass/redesignLandingpage2016.scss */
   .module-2 .wrapper {
     padding: 40px 0 25px;
   }
-  /* line 429, ../sass/redesignLandingpage2016.scss */
+  /* line 897, ../sass/redesignLandingpage2016.scss */
   .module-2 .wrapper .sales-points {
     width: calc(50% - 25px);
     padding-right: 25px;
     float: left;
     text-align: left;
   }
-  /* line 435, ../sass/redesignLandingpage2016.scss */
+  /* line 903, ../sass/redesignLandingpage2016.scss */
   .module-2 .wrapper .video {
     width: 50%;
     float: left;
     text-align: right;
   }
-  /* line 441, ../sass/redesignLandingpage2016.scss */
+  /* line 909, ../sass/redesignLandingpage2016.scss */
   .module-2 .learn-more {
     clear: both;
     text-align: center;
   }
-  /* line 445, ../sass/redesignLandingpage2016.scss */
+  /* line 913, ../sass/redesignLandingpage2016.scss */
   .module-2 .clear {
     clear: both;
     text-align: center;
   }
 
-  /* line 450, ../sass/redesignLandingpage2016.scss */
+  /* line 918, ../sass/redesignLandingpage2016.scss */
   .delight {
     width: 33%;
     padding: 15px;
   }
 
-  /* line 454, ../sass/redesignLandingpage2016.scss */
+  /* line 922, ../sass/redesignLandingpage2016.scss */
   .delight .quote {
-    height: 190px;
+    height: 160px;
   }
+}
+/* line 927, ../sass/redesignLandingpage2016.scss */
+.landing-top-bar, .section.results-section a.white-grey-circle-button, .section.experience-section a.white-grey-circle-button, .section.delights-section a.white-circle-button {
+  display: none;
 }
