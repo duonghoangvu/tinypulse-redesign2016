@@ -1,0 +1,21 @@
+/* line 1, ../../sass/components/button.scss */
+.btn {
+  padding: 6px 28px;
+  font-family: "SourceSansPro-Regular";
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+/* line 9, ../../sass/components/button.scss */
+.btn-flat-gray {
+  color: #4A4A4A;
+  background-color: #DADADA;
+  border-color: #DADADA;
+}
+/* line 13, ../../sass/components/button.scss */
+.btn-flat-gray:hover {
+  background-color: #C1C1C1;
+  border-color: #BBB;
+}
