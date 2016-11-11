@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button with Arrow Component</title>
+  <link href="../css/components/button_with_arrow.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+  <button class="btn btn-flat-gray dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span>Active</span>
+    <span class="caret"></span>
+  </button>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a href="#">Active</a>
+    </li>
+    <li>
+      <a href="#">Archived</a>
+    </li>
+    <li>
+      <a href="#">Completed</a>
+    </li>
+  </ul>
+  <script type="text/javascript">
+    $(".dropdown-toggle").click(function() {
+      $(".dropdown-menu").toggle();
+    });
+  </script>
+</body>
+</html>
