@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/components.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </head>
+  <body class='modal-open'>
+    <div class="modal fade in" style="display: block;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="">×</span>
+            </button>
+            <h4 class="modal-title pf-text-stronger">
+              New goal
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="card-input pf-mar-top" id="js-input-title">
+                  <input class="js-goal-title" type="text" value="Sprint Goal" tabindex="1" maxlength="50" disabled>
+                  <label>Title</label>
+                  <div class="card-character-count js-title-count">39 / 50</div>
+                </div>
+                <div class="js-text-editor">
+                  <div id="new-goal-desc-editor" class="card-input">
+                    <!--<div class="card-text-editor mce-content-body" tabindex="2" id="mce_8" contenteditable="true" style="position: relative;">-->
+                      <!--<p><span>Finish Sprint Goal every sprint</span></p>-->
+                    <!--</div>-->
+                    <input class="js-goal-title" type="text" value="Finish Sprint Goal every sprint" tabindex="2" disabled>
+                    <label>Description</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-flat-green js-btn-submit text-uppercase" tabindex="3">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-backdrop fade in"></div>
+  </body>
+</html>
