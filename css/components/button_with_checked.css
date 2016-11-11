@@ -1,0 +1,33 @@
+/* line 1, ../../sass/components/button_with_checked.scss */
+.btn {
+  border: 1px solid #4861A0;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 7px 10px;
+  width: 160px;
+  outline: none;
+}
+/* line 8, ../../sass/components/button_with_checked.scss */
+.btn .icon-members {
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 5px;
+}
+/* line 14, ../../sass/components/button_with_checked.scss */
+.btn .icon-members:before {
+  content: "\47";
+}
+
+/* line 19, ../../sass/components/button_with_checked.scss */
+.btn-flat-blue {
+  font-size: 12px;
+  color: #4861A0;
+  background-color: #FFF;
+}
+/* line 23, ../../sass/components/button_with_checked.scss */
+.btn-flat-blue:hover {
+  background-color: #4861A0;
+  color: #FFF;
+}
