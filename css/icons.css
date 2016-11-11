@@ -37,3 +37,18 @@
 .icon-members:before {
   content: "\47";
 }
+
+/* line 42, ../sass/icons.scss */
+.icon-rate-above:before {
+  content: "\76";
+}
+
+/* line 46, ../sass/icons.scss */
+.icon-rate-at:before {
+  content: "\78";
+}
+
+/* line 50, ../sass/icons.scss */
+.icon-rate-below:before {
+  content: "\79";
+}

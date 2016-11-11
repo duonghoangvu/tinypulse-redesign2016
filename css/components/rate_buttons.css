@@ -1,0 +1,7 @@
+/* line 1, ../../sass/components/rate_buttons.scss */
+.rate-button {
+  display: inline-block;
+  color: #DDD;
+  font-size: 40px;
+  cursor: pointer;
+}
