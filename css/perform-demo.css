@@ -83,7 +83,7 @@ html, body, .main-wrapper, .content-wrapper {
 
 /* line 21, ../sass/perform-demo.scss */
 body {
-  background: #F3F3F4;
+  background: #EEF0F1;
   font-family: "SourceSansPro-Regular";
 }
 
@@ -435,488 +435,240 @@ nav .icon-ic_chat_black:before {
 .content-wrapper {
   transition: all 0.3s;
   margin-top: 60px;
-  margin-left: 75px;
-}
-/* line 359, ../sass/perform-demo.scss */
-.content-wrapper .main-content {
-  max-width: 1160px;
-  min-width: 1160px;
-  margin: 0 auto;
-}
-/* line 363, ../sass/perform-demo.scss */
-.content-wrapper .main-content .content {
-  font-size: 0;
-}
-/* line 366, ../sass/perform-demo.scss */
-.content-wrapper .main-content .block {
-  display: inline-block;
-  width: 50%;
-  box-sizing: border-box;
-  vertical-align: top;
-  margin-bottom: 20px;
-}
-/* line 372, ../sass/perform-demo.scss */
-.content-wrapper .main-content .block:nth-child(2n+1) {
-  padding-right: 10px;
-}
-/* line 375, ../sass/perform-demo.scss */
-.content-wrapper .main-content .block:nth-child(2n) {
-  padding-left: 10px;
-}
-/* line 378, ../sass/perform-demo.scss */
-.content-wrapper .main-content .block img {
-  max-width: 100%;
-  margin-bottom: 20px;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-/* line 384, ../sass/perform-demo.scss */
-.content-wrapper .main-content .block .container {
-  position: relative;
-}
-/* line 386, ../sass/perform-demo.scss */
-.content-wrapper .main-content .block .container:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-}
-/* line 390, ../sass/perform-demo.scss */
-.content-wrapper .main-content .block .container:hover img {
-  border-radius: 8px;
-  box-shadow: 2px 2px 10px #333;
-}
-/* line 395, ../sass/perform-demo.scss */
-.content-wrapper .main-content .block .container .tooltip {
-  font-size: 16px;
-  padding: 10px;
-  color: #fff;
-  background: #4A4A4A;
-  border-radius: 3px;
-  position: absolute;
-  bottom: calc(100% - 10px);
-  left: 10px;
-  right: 10px;
-  box-shadow: 2px 2px 8px #333;
-  opacity: 0;
-  visibility: hidden;
-  line-height: normal;
-  transition: all 0.3s;
-}
-/* line 410, ../sass/perform-demo.scss */
-.content-wrapper .main-content .block .container .tooltip:before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 0;
-  border-color: #4A4A4A transparent transparent transparent;
-  border-style: solid;
-  border-width: 10px 7px;
-  bottom: -20px;
-}
-/* line 424, ../sass/perform-demo.scss */
-.content-wrapper .main-content .fullwidth {
-  width: 100%;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-/* line 431, ../sass/perform-demo.scss */
-.content-wrapper .overview .content-1 .tooltip:before {
-  left: 402px;
-}
-/* line 434, ../sass/perform-demo.scss */
-.content-wrapper .overview .content-2 .tooltip:before {
-  left: 178px;
-}
-/* line 437, ../sass/perform-demo.scss */
-.content-wrapper .overview .content-3 .tooltip:before {
-  left: 256px;
-}
-/* line 440, ../sass/perform-demo.scss */
-.content-wrapper .overview .content-4 .tooltip:before {
-  left: 174px;
-}
-/* line 443, ../sass/perform-demo.scss */
-.content-wrapper .overview .content-5 .tooltip:before {
-  left: 210px;
+  margin-left: 50px;
 }
 
-/* line 450, ../sass/perform-demo.scss */
-.cheers .content-left {
-  display: inline-block;
-  vertical-align: top;
-}
-/* line 453, ../sass/perform-demo.scss */
-.cheers .content-left img {
-  max-width: 368px;
-  display: block;
-  margin-right: 27px;
-  margin-bottom: 30px;
-}
-/* line 460, ../sass/perform-demo.scss */
-.cheers .content-right {
-  display: inline-block;
-}
-/* line 462, ../sass/perform-demo.scss */
-.cheers .content-right img {
-  max-width: 765px;
-}
-
-/* line 470, ../sass/perform-demo.scss */
-.response img, .compare img {
-  max-width: 1160px;
-}
-
-/* line 475, ../sass/perform-demo.scss */
-.vertical-menu {
-  background: #ffffff;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.06);
-}
-/* line 481, ../sass/perform-demo.scss */
-.vertical-menu .supper {
-  font-size: 12px;
-  vertical-align: top;
-  line-height: 5px;
-  padding-left: 5px;
-  opacity: 0.6;
-}
-/* line 488, ../sass/perform-demo.scss */
-.vertical-menu a {
-  display: inline;
-  margin-right: 20px;
-  color: #9b9b9b;
-  position: relative;
-}
-/* line 493, ../sass/perform-demo.scss */
-.vertical-menu a:hover, .vertical-menu a.active {
-  color: #4A4A4A;
-}
-/* line 496, ../sass/perform-demo.scss */
-.vertical-menu a i {
-  position: relative;
-  top: -5px;
-}
-/* line 501, ../sass/perform-demo.scss */
-.vertical-menu a:hover + .dropdown-menu {
-  display: block;
-}
-/* line 504, ../sass/perform-demo.scss */
-.vertical-menu a:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-}
-/* line 509, ../sass/perform-demo.scss */
-.vertical-menu a .tooltip {
-  font-size: 16px;
-  line-height: normal;
-  padding: 10px;
-  color: #fff;
-  background: #4A4A4A;
-  border-radius: 3px;
-  position: absolute;
-  top: 35px;
-  left: 0;
-  z-index: 9;
-  box-shadow: 2px 2px 3px #333;
-  width: 300px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-}
-/* line 525, ../sass/perform-demo.scss */
-.vertical-menu a .tooltip:before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 0;
-  border-color: transparent transparent #4A4A4A transparent;
-  border-style: solid;
-  border-width: 10px 7px;
-  top: -20px;
-  left: 25px;
-}
-/* line 539, ../sass/perform-demo.scss */
-.vertical-menu a.not-viewed:after {
-  display: inline-block;
-}
-/* line 544, ../sass/perform-demo.scss */
-.vertical-menu a.viewed:after {
-  display: none;
-}
-/* line 548, ../sass/perform-demo.scss */
-.vertical-menu a:after {
-  position: absolute;
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: #EA5661;
-  line-height: 0;
-  border-radius: 50%;
-  vertical-align: top;
-  transition: all 0.3s;
-  display: none;
-}
-/* line 561, ../sass/perform-demo.scss */
-.vertical-menu .dropdown {
-  position: relative;
-}
-/* line 564, ../sass/perform-demo.scss */
-.vertical-menu .dropdown-menu {
-  border-radius: 3px;
-  box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
-  display: none;
-  left: 0;
-  top: 30px;
-  list-style: none outside none;
-  padding: 0;
-  position: absolute;
-  max-width: 450px;
-  min-width: 180px;
-  background: #fff;
-}
-/* line 577, ../sass/perform-demo.scss */
-.vertical-menu .dropdown-menu li a {
-  line-height: 25px;
-  margin: 4px;
-  font-weight: normal;
-  border-radius: 3px;
-  display: block;
-  padding: 5px 10px;
-}
-
-/* line 588, ../sass/perform-demo.scss */
+/* line 360, ../sass/perform-demo.scss */
 .main-content {
   padding: 20px 10px 40px;
 }
 
-/* line 592, ../sass/perform-demo.scss */
-.nav-panel {
-  width: 350px;
-  position: fixed;
-  z-index: 10;
-  bottom: 0;
-  right: 20px;
-  max-height: 50px;
-  overflow: hidden;
-  transition: max-height 0.3s;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-/* line 603, ../sass/perform-demo.scss */
-.nav-panel:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 94%);
-  z-index: -1;
-  opacity: 0.9;
-}
-/* line 614, ../sass/perform-demo.scss */
-.nav-panel a p span i {
-  margin: 0 3px;
-  padding: 0;
-  height: auto;
-  vertical-align: middle;
-  position: relative;
-  top: 2px;
-}
-/* line 623, ../sass/perform-demo.scss */
-.nav-panel .nav-panel-trigger:after {
-  content: "\2199";
-  float: right;
-  margin-top: -5px;
-  margin-right: -3px;
-  transform: rotate(180deg);
-  transition: all 0.75s;
-}
-/* line 632, ../sass/perform-demo.scss */
-.nav-panel a {
-  color: #fff;
-  font-size: 16px;
-  padding: 20px 20px;
-  display: block;
-}
-/* line 638, ../sass/perform-demo.scss */
-.nav-panel ul {
-  height: 320px;
-}
-/* line 641, ../sass/perform-demo.scss */
-.nav-panel ul li > a {
-  padding: 0;
-  margin: 0 20px;
-}
-/* line 645, ../sass/perform-demo.scss */
-.nav-panel ul li .no {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border: 1px solid;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-/* line 655, ../sass/perform-demo.scss */
-.nav-panel ul li .no .fa {
-  display: none;
-}
-/* line 659, ../sass/perform-demo.scss */
-.nav-panel ul li p {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s;
-  line-height: normal;
-}
-/* line 665, ../sass/perform-demo.scss */
-.nav-panel ul li.active {
-  margin-bottom: 20px;
-}
-/* line 667, ../sass/perform-demo.scss */
-.nav-panel ul li.active a {
-  border-bottom: 1px solid #fff;
-  padding-bottom: 20px;
-}
-/* line 671, ../sass/perform-demo.scss */
-.nav-panel ul li.active p {
-  max-height: 100px;
-}
-/* line 673, ../sass/perform-demo.scss */
-.nav-panel ul li.active p span {
-  display: block;
-  margin-top: 10px;
-}
-/* line 678, ../sass/perform-demo.scss */
-.nav-panel ul li.active .no {
-  background: #fff;
-  color: #00C26B;
-}
-/* line 684, ../sass/perform-demo.scss */
-.nav-panel ul li.passed .no {
-  background: #fff;
-  color: #00C26B;
-}
-/* line 687, ../sass/perform-demo.scss */
-.nav-panel ul li.passed .no i {
-  display: none;
-}
-/* line 690, ../sass/perform-demo.scss */
-.nav-panel ul li.passed .no .fa {
-  display: inline-block;
-}
-/* line 696, ../sass/perform-demo.scss */
-.nav-panel ul li.checked-step .no {
-  background: #fff;
-  color: #00C26B;
-}
-/* line 703, ../sass/perform-demo.scss */
-.nav-panel .exit-tour {
-  float: left;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #000000;
-}
-/* line 709, ../sass/perform-demo.scss */
-.nav-panel .next-step {
-  float: right;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-/* line 717, ../sass/perform-demo.scss */
-.nav-panel-opened .nav-panel {
-  max-height: 500px;
-}
-/* line 721, ../sass/perform-demo.scss */
-.nav-panel-opened .nav-panel-trigger:after {
-  transform: rotate(0);
-}
-
-/* line 728, ../sass/perform-demo.scss */
-.content-wrapper .main-content {
-  position: relative;
-}
-/* line 730, ../sass/perform-demo.scss */
-.content-wrapper .main-content .content {
-  position: relative;
-  opacity: 0;
-  visibility: hidden;
-  left: 50px;
-  transition: all 0.75s;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  left: 50px;
-}
-/* line 740, ../sass/perform-demo.scss */
-.content-wrapper .main-content .content.active {
-  visibility: visible;
-  opacity: 1;
-  left: 0;
-  width: auto;
-  height: auto;
-  overflow: visible;
-}
-/* line 750, ../sass/perform-demo.scss */
-.content-wrapper .main-content .non-interactive .block {
+/* line 370, ../sass/perform-demo.scss */
+.cols {
   width: 100%;
-  padding: 0;
 }
-/* line 754, ../sass/perform-demo.scss */
-.content-wrapper .main-content .non-interactive .block .container .tooltip {
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  width: 330px;
-  margin: 0 auto;
-  top: 20%;
-  bottom: auto;
-  font-size: 16px;
-  line-height: normal;
-}
-/* line 765, ../sass/perform-demo.scss */
-.content-wrapper .main-content .non-interactive .block .container .tooltip:before {
-  display: none;
-}
-/* line 770, ../sass/perform-demo.scss */
-.content-wrapper .main-content .non-interactive .block .container:hover img {
-  box-shadow: none;
-}
-/* line 773, ../sass/perform-demo.scss */
-.content-wrapper .main-content .non-interactive .block .container:hover .tooltip {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-}
-/* line 780, ../sass/perform-demo.scss */
-.content-wrapper .main-content .non-interactive .block .container.clicked .tooltip {
-  visibility: visible;
-  opacity: 1;
+/* line 372, ../sass/perform-demo.scss */
+.cols .col {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 991px) {
-  /* line 792, ../sass/perform-demo.scss */
+  /* line 379, ../sass/perform-demo.scss */
+  .cols {
+    width: 100%;
+  }
+  /* line 381, ../sass/perform-demo.scss */
+  .cols .col {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  /* line 386, ../sass/perform-demo.scss */
+  .cols .col-40 {
+    width: 40%;
+  }
+  /* line 389, ../sass/perform-demo.scss */
+  .cols .col-60 {
+    width: 60%;
+  }
+}
+/* line 398, ../sass/perform-demo.scss */
+.col img {
+  width: 100%;
+}
+
+/* line 404, ../sass/perform-demo.scss */
+.insight-details {
+  padding: 15px;
+  min-height: 200px;
+}
+
+/* line 408, ../sass/perform-demo.scss */
+.flatten-card {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #DDDDDE;
+  color: #4A4A4A;
+  font-family: "SourceSansPro-Regular";
+  position: relative;
+  margin-top: 15px;
+}
+/* line 416, ../sass/perform-demo.scss */
+.flatten-card .card-title {
+  padding: 15px 15px 0 15px;
+  margin-bottom: 5px;
+  font-family: "SourceSansPro-SemiBold";
+  font-size: 18px;
+  color: #4A4A4A;
+  overflow: hidden;
+}
+/* line 424, ../sass/perform-demo.scss */
+.flatten-card .card-hint {
+  color: #9B9B9B;
+  font-size: 14px;
+  width: auto;
+  position: static;
+  display: inline-block;
+  margin-left: 15px;
+  line-height: normal;
+}
+/* line 433, ../sass/perform-demo.scss */
+.flatten-card .card-corner {
+  font-size: 14px;
+  position: absolute;
+  margin-top: 0;
+  top: 20px;
+  right: 15px;
+  width: auto;
+  margin-left: 15px;
+}
+/* line 442, ../sass/perform-demo.scss */
+.flatten-card .nav-tabs.fill-horizontal {
+  display: table;
+  border-bottom: 1px solid #DADADA;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "SourceSansPro-SemiBold";
+}
+/* line 451, ../sass/perform-demo.scss */
+.flatten-card .nav-tabs.fill-horizontal li {
+  display: table-cell;
+  float: none;
+  width: 1000px;
+  margin-bottom: -1px;
+}
+/* line 456, ../sass/perform-demo.scss */
+.flatten-card .nav-tabs.fill-horizontal li a {
+  border: none;
+  color: #9b9b9b;
+  transition: color 300ms ease-in-out;
+  margin: 0;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+/* line 464, ../sass/perform-demo.scss */
+.flatten-card .nav-tabs.fill-horizontal li a:hover {
+  background-color: #ffffff;
+  color: #4861a0;
+}
+/* line 470, ../sass/perform-demo.scss */
+.flatten-card .nav-tabs.fill-horizontal li.active a {
+  cursor: default;
+  color: #4861a0;
+  border: none;
+}
+/* line 475, ../sass/perform-demo.scss */
+.flatten-card .nav-tabs.fill-horizontal li.active:after {
+  width: 100%;
+  background: #4861a0;
+}
+/* line 480, ../sass/perform-demo.scss */
+.flatten-card .nav-tabs.fill-horizontal li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .3s ease;
+}
+/* line 491, ../sass/perform-demo.scss */
+.flatten-card .nav {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* line 498, ../sass/perform-demo.scss */
+.flatten-card .tab-content .tab-pane {
+  display: none;
+}
+/* line 500, ../sass/perform-demo.scss */
+.flatten-card .tab-content .tab-pane.active {
+  display: block;
+}
+/* line 504, ../sass/perform-demo.scss */
+.flatten-card .tab-content .fade {
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+/* line 507, ../sass/perform-demo.scss */
+.flatten-card .tab-content .fade.in {
+  opacity: 1;
+}
+/* line 512, ../sass/perform-demo.scss */
+.flatten-card .panel {
+  margin-bottom: 22px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+/* line 519, ../sass/perform-demo.scss */
+.flatten-card .media-item {
+  display: table;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+/* line 525, ../sass/perform-demo.scss */
+.flatten-card .media-item .media-icon {
+  display: table-cell;
+  vertical-align: top;
+  padding: 11px 15px 15px;
+  color: #DADADA;
+  transition: color 300ms ease-in-out;
+}
+/* line 531, ../sass/perform-demo.scss */
+.flatten-card .media-item .media-icon .icon-2x {
+  font-size: 35px;
+  line-height: 0.7;
+}
+/* line 535, ../sass/perform-demo.scss */
+.flatten-card .media-item .media-icon .icon-members:before {
+  content: '\e815';
+}
+/* line 539, ../sass/perform-demo.scss */
+.flatten-card .media-item .media-header-content {
+  display: table-cell;
+  vertical-align: top;
+  padding: 15px 0;
+  width: 40000px;
+  border-top: 1px solid #DADADA;
+  color: #4A4A4A;
+  transition: color 300ms ease-in-out;
+}
+/* line 548, ../sass/perform-demo.scss */
+.flatten-card .media-item:first-child .media-header-content {
+  border-top: none;
+}
+/* line 551, ../sass/perform-demo.scss */
+.flatten-card .media-item:hover .media-header-content, .flatten-card .media-item:hover .media-icon {
+  color: #4861A0;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 559, ../sass/perform-demo.scss */
   nav {
     width: 170px;
   }
-  /* line 794, ../sass/perform-demo.scss */
+  /* line 561, ../sass/perform-demo.scss */
   nav ul {
     width: 170px;
   }
-  /* line 798, ../sass/perform-demo.scss */
+  /* line 565, ../sass/perform-demo.scss */
   nav ul li a span {
     display: inline-block;
   }
 
-  /* line 805, ../sass/perform-demo.scss */
+  /* line 572, ../sass/perform-demo.scss */
   .content-wrapper {
-    margin-left: 180px;
+    margin-left: 170px;
   }
 }

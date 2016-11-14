@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <head>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/perform-demo.css" />
   <meta name="viewport" content="maximum-scale=1,width=device-width,initial-scale=1,user-scalable=0"> 
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/perform-demo.css" />
 </head>
 <body class="nav-panel-opened">
   <div class="main-wrapper">
@@ -10,11 +11,7 @@
       <div class="container">
         <div class="logo">
           <img src="https://www.tinypulse.com/hubfs/redesign_2016/engage_logo.png" />
-        </div>
-        <div class="content">
-          <p>Free feel to explore your prefilled TINYpulse Dashboard. When you're ready click continue to clear data and start pulsing.</p>
-          <a href="http://app.tinypulse.com/engage/signup">Start using TINYpulse - Engage</a>
-        </div>        
+        </div> 
       </div>
     </header> 
     <div class="content-wrapper">
@@ -65,117 +62,90 @@
         </ul>
       </nav>
       <div class="main-content">
-        <!-- <div class="vertical-menu" id="vertical-menu">
-          <a class="overview active viewed" href="#overview" target="">
-            <span>Overview</span>
-            <p class="tooltip">Get a quick summary of your employees' responses, Cheers, and suggestions for the selected pulse survey.</p>
-          </a>
-          <a class="responses" href="#responses" target="">
-            <span>Responses</span>
-            <p class="tooltip">View and take action on all responses for the current pulse survey as well as past surveys. </p>
-          </a>
-          <a class="cheers-for-peers" href="#cheers" target="">
-            <span>Cheers for Peers</span>
-            <p class="tooltip">View all Cheers being spread around your company. </p>
-          </a>
-          <a class="suggestions" href="#suggestions" target="">
-            <span>Suggestions</span>
-            <p class="tooltip">Review all feedback sent as suggestions. Take further action by starting a dialog via private messaging, tagging, adding notes, and sending the suggestion to the Wall of Wins once it's resolved.</p>
-          </a>
-          <a class="compare" href="#compare" target="">
-            <span>Compare</span>
-            <p class="tooltip">Monitor the happiness of your employees over time and know exactly when to take action to improve their morale. </p>
-          </a>
-          <a class="company-iq" href="#visualize" target="">
-            <span>Visualize<span class="supper">Beta</span></span>
-            <p class="tooltip">Let TINYpulse categorize your feedback into different key culture drivers. Filter results by sentiment and create initiatives to improve categories which have the most negative feedback. </p>
-          </a>
-        </div> -->
-        <div class="content overview active">
-          <div class="block">
-            <div class="container content-1">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-1.png" />   
-              <div class="tooltip">Jump to results from any previous survey and watch the dashboard update in real-time.</div>                    
+        <div class="cols">
+          <div class="col col-60">
+            <div class="card no-style">
+              <img src="images/perform-demo/Overall.png" alt="overall" />
             </div>
           </div>
-          <div class="block">
-            <div class="container content-2">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-2.png" />     
-              <div class="tooltip">See which segments posted the highest scores. </div>         
+          <div class="col col-40">
+            <div class="card no-style">
+              <img src="images/perform-demo/Manage_team.png" alt="overall" />
             </div>
-            <div class="container content-3">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-3.png" />    
-              <div class="tooltip">Check out who sent and received the most Cheers for that survey period. </div>                   
+            <div class="card flatten-card">
+              <div class="card-title">Goals</div>
+              <div class="card-hint">Only showing active</div>
+              <div class="card-corner">
+                <a class="pf-clickable" href="#">See all</a>
+              </div>
+              <div class="card-fill-content">
+                <ul class="fill-horizontal nav nav-tabs" role="tablist">
+                  <li class="js-team-goal-tab">
+                    <a href="#team-goal" aria-controls="team-goal" role="tab" data-toggle="tab" aria-expanded="false">Team</a>
+                  </li>
+                  <li class="js-individual-goal-tab active">
+                    <a href="#individual-goal" aria-controls="individual-goal" role="tab" data-toggle="tab" aria-expanded="true">Self</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="fade tab-pane" id="team-goal" role="tabpanel">
+                    <div id="team-goal-list">
+                      <div class="panel media-item">
+                        <div class="media-header pf-clickable">
+                          <div class="media-icon">
+                            <div class="goal-icon icon-2x icon-members"></div>
+                          </div>
+                          <div class="media-header-content">
+                            <div class="pf-text-semibold">General Performance</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel media-item">
+                        <div class="media-header pf-clickable">
+                          <div class="media-icon">
+                            <div class="goal-icon icon-2x icon-members"></div>
+                          </div>
+                          <div class="media-header-content">
+                            <div class="pf-text-semibold">Launch Project X</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="fade tab-pane active in" id="individual-goal" role="tabpanel">
+                    <div id="my-goal-list">
+                      <div class="panel media-item">
+                        <div class="media-header pf-clickable collapsed" data-toggle="collapse" data-target="#goal-15780" data-parent="#my-goal-list" aria-expanded="false">
+                          <div class="media-icon">
+                          </div>
+                          <div class="media-header-content">
+                            <div class="pf-text-semibold">General Performance</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel media-item">
+                        <div class="media-header pf-clickable collapsed" data-toggle="collapse" data-target="#goal-693" data-parent="#my-goal-list" aria-expanded="false">
+                          <div class="media-icon">
+                          </div>
+                          <div class="media-header-content">
+                            <div class="pf-text-semibold">Launch Sales Campaign</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="block">
-            <div class="container content-4">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-4.png" />    
-              <div class="tooltip">Get a boost by seeing the three responses with the highest score for that survey.</div>                 
-            </div>
-          </div>
-          <div class="block">
-            <div class="container content-5">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-5.png" />              
-              <div class="tooltip">Never fall behind by viewing new suggestions as they're submitted.</div>         
-            </div>
-          </div>
-        </div>
-        <div class="content responses non-interactive">
-          <div class="block">
-            <div class="container">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/responses.png" />
-                <div class="tooltip">Want to explore these cool features? Click on the link at the bottom right to Sign Up for free and create your own Dashboard.</div>
-            </div>          
-          </div>
-        </div>
-        <div class="content cheers">
-          <div class="content-left">
-            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-1.png" />
-            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-3.png" />
-            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-5.png" />
-          </div>
-          <div class="content-right">
-            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-2.png" />
-          </div>
-        </div>
-        <div class="content suggestions non-interactive">
-          <div class="block">
-            <div class="container">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/suggestions.png" />          
-            </div>
-          </div>
-        </div>
-        <div class="content compare non-interactive">
-          <div class="block">
-            <div class="container">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/compare-1.png" />          
-            </div>
-          </div>
-        </div>
-        <div class="content visualize non-interactive">
-          <div class="block">
-            <div class="container">
-              <img src="http://www.tinypulse.com/hubfs/redesign_2016/tour-guide/smartpulse.png" />
-            </div>
-          </div>
+          </div>            
         </div>
       </div>
     </div>
   </div>
-  <!-- <div class="nav-panel" id="nav-panel">
-    <a href="#" class="nav-panel-trigger" id="nav-panel-trigger">Introduction to TINYpulse</a>
-    <ul>
-      <li class="active"><a href="#overview"><span class="no"><i>1</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Overview</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.<span>Hover over <i><img src="images/tour-guide/ic_info.png" /></i> to find out more.</span></p></a></li>
-      <li class=""><a href="#cheers"><span class="no"><i>2</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Cheers for Peers</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
-      <li><a href="#suggestions"><span class="no"><i>3</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Suggestions</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
-      <li><a href="#compare"><span class="no"><i>4</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Happiness Trend</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
-      <li><a href="#visualize"><span class="no"><i>5</i><i class="fa fa-check" aria-hidden="true"></i></span><span>SMARTpulse</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
-    </ul>
-    <a href="#" class="exit-tour">Exit tour</a>
-    <a href="#" class="next-step" id="next-content">Next</a>
-  </div> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="js/global.js"></script>
   <script type="text/javascript">
     $(document).ready(function(e){
