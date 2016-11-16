@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/components.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class='col-md-5 col-sm-12 insight-details'>
+      <div class="flatten-card">
+        <div class="card-title">Goals</div>
+        <div class="card-hint">Only showing active</div>
+        <div class="card-corner">
+          <a class="pf-clickable" href="#">See all</a>
+        </div>
+        <div class="card-fill-content">
+          <ul class="fill-horizontal nav nav-tabs" role="tablist">
+            <li class="js-team-goal-tab">
+              <a href="#team-goal" aria-controls="team-goal" role="tab" data-toggle="tab" aria-expanded="false">Team</a>
+            </li>
+            <li class="js-individual-goal-tab active">
+              <a href="#individual-goal" aria-controls="individual-goal" role="tab" data-toggle="tab" aria-expanded="true">Self</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="fade tab-pane" id="team-goal" role="tabpanel">
+              <div id="team-goal-list">
+                <div class="panel media-item">
+                  <div class="media-header pf-clickable">
+                    <div class="media-icon">
+                      <div class="goal-icon icon-2x icon-members"></div>
+                    </div>
+                    <div class="media-header-content">
+                      <div class="pf-text-semibold">General Performance</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel media-item">
+                  <div class="media-header pf-clickable">
+                    <div class="media-icon">
+                      <div class="goal-icon icon-2x icon-members"></div>
+                    </div>
+                    <div class="media-header-content">
+                      <div class="pf-text-semibold">Launch Project X</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="fade tab-pane active in" id="individual-goal" role="tabpanel">
+              <div id="my-goal-list">
+                <div class="panel media-item">
+                  <div class="media-header pf-clickable collapsed" data-toggle="collapse" data-target="#goal-15780" data-parent="#my-goal-list" aria-expanded="false">
+                    <div class="media-icon">
+                    </div>
+                    <div class="media-header-content">
+                      <div class="pf-text-semibold">General Performance</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel media-item">
+                  <div class="media-header pf-clickable collapsed" data-toggle="collapse" data-target="#goal-693" data-parent="#my-goal-list" aria-expanded="false">
+                    <div class="media-icon">
+                    </div>
+                    <div class="media-header-content">
+                      <div class="pf-text-semibold">Launch Sales Campaign</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

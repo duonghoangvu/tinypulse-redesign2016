@@ -1,0 +1,337 @@
+/* line 1, ../sass/perform-demo-goals.scss */
+.container-fluid {
+  max-width: 1280px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+/* line 6, ../sass/perform-demo-goals.scss */
+.row {
+  margin-left: -11px;
+  margin-right: -11px;
+}
+
+/* line 10, ../sass/perform-demo-goals.scss */
+.pd-lr-11 {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+/* line 14, ../sass/perform-demo-goals.scss */
+.mg-t-15 {
+  margin-top: 15px;
+}
+
+/* line 17, ../sass/perform-demo-goals.scss */
+.mg-b-15 {
+  margin-bottom: 15px;
+}
+
+/* line 20, ../sass/perform-demo-goals.scss */
+.top-menu {
+  position: relative;
+  width: 100%;
+}
+/* line 23, ../sass/perform-demo-goals.scss */
+.top-menu .leftside {
+  position: relative;
+}
+/* line 27, ../sass/perform-demo-goals.scss */
+.top-menu .btn {
+  padding: 6px 28px;
+  font-family: "SourceSansPro-Regular";
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  outline: none;
+}
+/* line 36, ../sass/perform-demo-goals.scss */
+.top-menu .btn-flat-gray {
+  color: #4A4A4A;
+  background-color: #DADADA;
+  border-color: #DADADA;
+}
+/* line 40, ../sass/perform-demo-goals.scss */
+.top-menu .btn-flat-gray:hover {
+  background-color: #C1C1C1;
+  border-color: #BBB;
+}
+/* line 44, ../sass/perform-demo-goals.scss */
+.top-menu .btn-flat-gray .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+/* line 56, ../sass/perform-demo-goals.scss */
+.top-menu .dropdown-menu {
+  position: absolute;
+  z-index: 2;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 16px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  left: initial;
+  display: none;
+}
+/* line 72, ../sass/perform-demo-goals.scss */
+.top-menu .dropdown-menu li {
+  font-size: 16px;
+}
+/* line 74, ../sass/perform-demo-goals.scss */
+.top-menu .dropdown-menu li:hover {
+  background-color: #ebf7fe;
+}
+/* line 77, ../sass/perform-demo-goals.scss */
+.top-menu .dropdown-menu li a {
+  text-decoration: none;
+  color: #262626;
+  padding: 3px 20px;
+  line-height: 1.5;
+}
+
+/* line 88, ../sass/perform-demo-goals.scss */
+.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+/* line 91, ../sass/perform-demo-goals.scss */
+.fade.in {
+  opacity: 1;
+}
+
+/* line 95, ../sass/perform-demo-goals.scss */
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+/* line 106, ../sass/perform-demo-goals.scss */
+.modal.in .modal-dialog {
+  transform: translate(0, 0);
+}
+/* line 109, ../sass/perform-demo-goals.scss */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}
+/* line 112, ../sass/perform-demo-goals.scss */
+.modal .modal-dialog {
+  width: 600px;
+  margin: 30px auto;
+  position: relative;
+}
+
+/* line 118, ../sass/perform-demo-goals.scss */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+/* line 126, ../sass/perform-demo-goals.scss */
+.modal-backdrop.in {
+  opacity: 0.5;
+}
+
+/* line 130, ../sass/perform-demo-goals.scss */
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 134, ../sass/perform-demo-goals.scss */
+.modal-content {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+/* line 143, ../sass/perform-demo-goals.scss */
+.modal-header {
+  padding: 15px 15px 0 25px;
+  border-bottom: 0;
+}
+/* line 146, ../sass/perform-demo-goals.scss */
+.modal-header .close {
+  margin-top: -2px;
+}
+/* line 149, ../sass/perform-demo-goals.scss */
+.modal-header h4 {
+  font-size: 20px;
+}
+/* line 152, ../sass/perform-demo-goals.scss */
+.modal-header button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+}
+/* line 165, ../sass/perform-demo-goals.scss */
+.modal-header button.close:hover, .modal-header button.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 174, ../sass/perform-demo-goals.scss */
+.pf-text-stronger {
+  font-family: "SourceSansPro-Bold";
+}
+
+/* line 177, ../sass/perform-demo-goals.scss */
+.modal-title {
+  margin: 0;
+  line-height: 1.42857;
+}
+
+/* line 181, ../sass/perform-demo-goals.scss */
+.modal-body {
+  padding: 0 25px 10px 25px;
+  max-height: 500px;
+  overflow: auto;
+  position: relative;
+}
+
+/* line 187, ../sass/perform-demo-goals.scss */
+.card-input {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+/* line 191, ../sass/perform-demo-goals.scss */
+.card-input input {
+  border: 0;
+  width: 100%;
+  font-family: "SourceSansPro-Regular";
+  font-size: 16px;
+  overflow: hidden;
+  border-bottom: 1px solid #DADADA;
+  padding: 8px 0;
+}
+/* line 199, ../sass/perform-demo-goals.scss */
+.card-input input:focus {
+  outline: none;
+  border-bottom: 2px solid #1C94EE;
+}
+/* line 202, ../sass/perform-demo-goals.scss */
+.card-input input:focus ~ .card-character-count, .card-input input:focus ~ label {
+  color: #1C94EE;
+}
+/* line 207, ../sass/perform-demo-goals.scss */
+.card-input label {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  color: #9B9B9B;
+  font-weight: normal;
+  margin: 0;
+  top: 6px;
+  opacity: 1;
+  font-size: 12px;
+}
+
+/* line 220, ../sass/perform-demo-goals.scss */
+.pf-mar-top {
+  margin-top: 15px;
+}
+
+/* line 223, ../sass/perform-demo-goals.scss */
+.card-character-count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 18px;
+  margin: auto;
+  color: #9B9B9B;
+  font-size: 12px;
+}
+
+/* line 232, ../sass/perform-demo-goals.scss */
+.modal-footer {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #e5e5e5;
+}
+/* line 236, ../sass/perform-demo-goals.scss */
+.modal-footer .btn-flat-green {
+  color: #ffffff;
+  background-color: #00C26B;
+  border-color: #00C26B;
+}
+/* line 240, ../sass/perform-demo-goals.scss */
+.modal-footer .btn-flat-green:hover {
+  background-color: #008f4f;
+  border-color: #008549;
+}
+/* line 245, ../sass/perform-demo-goals.scss */
+.modal-footer .btn {
+  padding: 6px 28px;
+  font-family: "SourceSansPro-Regular";
+  -webkit-appearance: button;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border-radius: 2px;
+  user-select: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* line 255, ../sass/perform-demo-goals.scss */
+.modal-footer .btn:focus {
+  outline: none;
+}
+
+/* line 260, ../sass/perform-demo-goals.scss */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* line 266, ../sass/perform-demo-goals.scss */
+.goal-list img, .top-img img {
+  width: 100%;
+}
+
+/* line 271, ../sass/perform-demo-goals.scss */
+.cross-line {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #DADADA;
+}

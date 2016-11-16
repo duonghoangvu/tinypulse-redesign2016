@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,47 +21,385 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* line 1, ../sass/perform-demo-goals.scss */
+.container-fluid {
+  max-width: 1280px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+/* line 6, ../sass/perform-demo-goals.scss */
+.row {
+  margin-left: -11px;
+  margin-right: -11px;
+}
+
+/* line 10, ../sass/perform-demo-goals.scss */
+.pd-lr-11 {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+/* line 14, ../sass/perform-demo-goals.scss */
+.mg-t-15 {
+  margin-top: 15px;
+}
+
+/* line 17, ../sass/perform-demo-goals.scss */
+.mg-b-15 {
+  margin-bottom: 15px;
+}
+
+/* line 20, ../sass/perform-demo-goals.scss */
+.top-menu {
+  position: relative;
+  width: 100%;
+}
+/* line 23, ../sass/perform-demo-goals.scss */
+.top-menu .leftside {
+  position: relative;
+}
+/* line 27, ../sass/perform-demo-goals.scss */
+.top-menu .btn {
+  padding: 6px 28px;
+  font-family: "SourceSansPro-Regular";
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  outline: none;
+}
+/* line 36, ../sass/perform-demo-goals.scss */
+.top-menu .btn-flat-gray {
+  color: #4A4A4A;
+  background-color: #DADADA;
+  border-color: #DADADA;
+}
+/* line 40, ../sass/perform-demo-goals.scss */
+.top-menu .btn-flat-gray:hover {
+  background-color: #C1C1C1;
+  border-color: #BBB;
+}
+/* line 44, ../sass/perform-demo-goals.scss */
+.top-menu .btn-flat-gray .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+/* line 56, ../sass/perform-demo-goals.scss */
+.top-menu .dropdown-menu {
+  position: absolute;
+  z-index: 2;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 16px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  left: initial;
+  display: none;
+}
+/* line 72, ../sass/perform-demo-goals.scss */
+.top-menu .dropdown-menu li {
+  font-size: 16px;
+}
+/* line 74, ../sass/perform-demo-goals.scss */
+.top-menu .dropdown-menu li:hover {
+  background-color: #ebf7fe;
+}
+/* line 77, ../sass/perform-demo-goals.scss */
+.top-menu .dropdown-menu li a {
+  text-decoration: none;
+  color: #262626;
+  padding: 3px 20px;
+  line-height: 1.5;
+}
+
+/* line 88, ../sass/perform-demo-goals.scss */
+.fade {
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+/* line 91, ../sass/perform-demo-goals.scss */
+.fade.in {
+  opacity: 1;
+}
+
+/* line 95, ../sass/perform-demo-goals.scss */
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+/* line 106, ../sass/perform-demo-goals.scss */
+.modal.in .modal-dialog {
+  transform: translate(0, 0);
+}
+/* line 109, ../sass/perform-demo-goals.scss */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}
+/* line 112, ../sass/perform-demo-goals.scss */
+.modal .modal-dialog {
+  width: 600px;
+  margin: 30px auto;
+  position: relative;
+}
+
+/* line 118, ../sass/perform-demo-goals.scss */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+/* line 126, ../sass/perform-demo-goals.scss */
+.modal-backdrop.in {
+  opacity: 0.5;
+}
+
+/* line 130, ../sass/perform-demo-goals.scss */
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 134, ../sass/perform-demo-goals.scss */
+.modal-content {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  background-clip: padding-box;
+  outline: 0;
+}
+
+/* line 143, ../sass/perform-demo-goals.scss */
+.modal-header {
+  padding: 15px 15px 0 25px;
+  border-bottom: 0;
+}
+/* line 146, ../sass/perform-demo-goals.scss */
+.modal-header .close {
+  margin-top: -2px;
+}
+/* line 149, ../sass/perform-demo-goals.scss */
+.modal-header h4 {
+  font-size: 20px;
+}
+/* line 152, ../sass/perform-demo-goals.scss */
+.modal-header button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+}
+/* line 165, ../sass/perform-demo-goals.scss */
+.modal-header button.close:hover, .modal-header button.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 174, ../sass/perform-demo-goals.scss */
+.pf-text-stronger {
+  font-family: "SourceSansPro-Bold";
+}
+
+/* line 177, ../sass/perform-demo-goals.scss */
+.modal-title {
+  margin: 0;
+  line-height: 1.42857;
+}
+
+/* line 181, ../sass/perform-demo-goals.scss */
+.modal-body {
+  padding: 0 25px 10px 25px;
+  max-height: 500px;
+  overflow: auto;
+  position: relative;
+}
+
+/* line 187, ../sass/perform-demo-goals.scss */
+.card-input {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+/* line 191, ../sass/perform-demo-goals.scss */
+.card-input input {
+  border: 0;
+  width: 100%;
+  font-family: "SourceSansPro-Regular";
+  font-size: 16px;
+  overflow: hidden;
+  border-bottom: 1px solid #DADADA;
+  padding: 8px 0;
+}
+/* line 199, ../sass/perform-demo-goals.scss */
+.card-input input:focus {
+  outline: none;
+  border-bottom: 2px solid #1C94EE;
+}
+/* line 202, ../sass/perform-demo-goals.scss */
+.card-input input:focus ~ .card-character-count, .card-input input:focus ~ label {
+  color: #1C94EE;
+}
+/* line 207, ../sass/perform-demo-goals.scss */
+.card-input label {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  color: #9B9B9B;
+  font-weight: normal;
+  margin: 0;
+  top: 6px;
+  opacity: 1;
+  font-size: 12px;
+}
+
+/* line 220, ../sass/perform-demo-goals.scss */
+.pf-mar-top {
+  margin-top: 15px;
+}
+
+/* line 223, ../sass/perform-demo-goals.scss */
+.card-character-count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 18px;
+  margin: auto;
+  color: #9B9B9B;
+  font-size: 12px;
+}
+
+/* line 232, ../sass/perform-demo-goals.scss */
+.modal-footer {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #e5e5e5;
+}
+/* line 236, ../sass/perform-demo-goals.scss */
+.modal-footer .btn-flat-green {
+  color: #ffffff;
+  background-color: #00C26B;
+  border-color: #00C26B;
+}
+/* line 240, ../sass/perform-demo-goals.scss */
+.modal-footer .btn-flat-green:hover {
+  background-color: #008f4f;
+  border-color: #008549;
+}
+/* line 245, ../sass/perform-demo-goals.scss */
+.modal-footer .btn {
+  padding: 6px 28px;
+  font-family: "SourceSansPro-Regular";
+  -webkit-appearance: button;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  border-radius: 2px;
+  user-select: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* line 255, ../sass/perform-demo-goals.scss */
+.modal-footer .btn:focus {
+  outline: none;
+}
+
+/* line 260, ../sass/perform-demo-goals.scss */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* line 266, ../sass/perform-demo-goals.scss */
+.goal-list img, .top-img img {
+  width: 100%;
+}
+
+/* line 271, ../sass/perform-demo-goals.scss */
+.cross-line {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #DADADA;
 }
 
 @font-face {
@@ -71,28 +409,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @font-face {
   font-family: "perform-icon";
-  src: url("https://d1i5ulwvtra6uh.cloudfront.net/assets/perform-icon-bcbde06e780b7143b030df929d7f7d76.eot");
-  src: url("https://d1i5ulwvtra6uh.cloudfront.net/assets/perform-icon-bcbde06e780b7143b030df929d7f7d76.eot?#iefix") format("embedded-opentype"), url("https://d1i5ulwvtra6uh.cloudfront.net/assets/perform-icon-25b9039addfa26ce2d9dd621debc4b3c.woff") format("woff"), url("https://d1i5ulwvtra6uh.cloudfront.net/assets/perform-icon-99a597adc44949b396324998eb0090ab.ttf") format("truetype"), url("https://d1i5ulwvtra6uh.cloudfront.net/assets/perform-icon-9bef96aae9a917d9fd24f7bfcc891104.svg#perform-icon") format("svg");
+  src: url("https://d1i5ulwvtra6uh.cloudfront.net/assets/perform-icon.eot");
+  src: url("https://d1i5ulwvtra6uh.cloudfront.net/assets/perform-icon.eot?#iefix") format("embedded-opentype"), url("https://d1i5ulwvtra6uh.cloudfront.net/assets/perform-icon.woff") format("woff"), url("https://d1i5ulwvtra6uh.cloudfront.net/assets/perform-icon.ttf") format("truetype"), url("https://d1i5ulwvtra6uh.cloudfront.net/assets/perform-icon.svg#perform-icon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-/* line 17, ../sass/perform-demo.scss */
+/* line 18, ../sass/perform-demo.scss */
 html, body, .main-wrapper, .content-wrapper {
   height: 100%;
 }
 
-/* line 21, ../sass/perform-demo.scss */
+/* line 22, ../sass/perform-demo.scss */
 body {
   background: #EEF0F1;
   font-family: "SourceSansPro-Regular";
 }
 
-/* line 26, ../sass/perform-demo.scss */
+/* line 27, ../sass/perform-demo.scss */
 a {
   text-decoration: none;
 }
 
-/* line 30, ../sass/perform-demo.scss */
+/* line 31, ../sass/perform-demo.scss */
 header {
   height: 60px;
   box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.06);
@@ -102,22 +440,22 @@ header {
   background: #fff;
   z-index: 10;
 }
-/* line 38, ../sass/perform-demo.scss */
+/* line 39, ../sass/perform-demo.scss */
 header .container {
   padding: 0 10px;
   box-sizing: border-box;
 }
-/* line 42, ../sass/perform-demo.scss */
+/* line 43, ../sass/perform-demo.scss */
 header .logo {
   line-height: 80px;
   height: 60px;
 }
-/* line 45, ../sass/perform-demo.scss */
+/* line 46, ../sass/perform-demo.scss */
 header .logo img {
   width: 250px;
   height: auto;
 }
-/* line 50, ../sass/perform-demo.scss */
+/* line 51, ../sass/perform-demo.scss */
 header .content {
   position: absolute;
   top: 0;
@@ -128,12 +466,12 @@ header .content {
   right: 0;
   padding: 20px;
 }
-/* line 59, ../sass/perform-demo.scss */
+/* line 60, ../sass/perform-demo.scss */
 header .content p {
   font-size: 16px;
   float: left;
 }
-/* line 63, ../sass/perform-demo.scss */
+/* line 64, ../sass/perform-demo.scss */
 header .content a {
   float: right;
   background: #00C26B;
@@ -145,7 +483,7 @@ header .content a {
   margin-top: -8px;
 }
 
-/* line 76, ../sass/perform-demo.scss */
+/* line 77, ../sass/perform-demo.scss */
 nav {
   box-shadow: none;
   width: 50px;
@@ -157,23 +495,23 @@ nav {
   z-index: 9;
   transition: all 0.3s;
 }
-/* line 88, ../sass/perform-demo.scss */
+/* line 89, ../sass/perform-demo.scss */
 nav ul {
   margin-top: 60px;
   padding-left: 0;
   list-style: none;
   width: 50px;
 }
-/* line 93, ../sass/perform-demo.scss */
+/* line 94, ../sass/perform-demo.scss */
 nav ul li {
   position: relative;
   display: block;
 }
-/* line 96, ../sass/perform-demo.scss */
+/* line 97, ../sass/perform-demo.scss */
 nav ul li.active, nav ul li:hover {
   background: #37465C;
 }
-/* line 99, ../sass/perform-demo.scss */
+/* line 100, ../sass/perform-demo.scss */
 nav ul li a {
   padding: 15px 0px 15px 15px;
   color: #fff;
@@ -181,32 +519,32 @@ nav ul li a {
   line-height: 23px;
   position: relative;
 }
-/* line 105, ../sass/perform-demo.scss */
+/* line 106, ../sass/perform-demo.scss */
 nav ul li a i {
   margin-right: 8px;
   display: inline-block;
   font-size: 24px;
   vertical-align: middle;
 }
-/* line 111, ../sass/perform-demo.scss */
+/* line 112, ../sass/perform-demo.scss */
 nav ul li a span {
   display: none;
   vertical-align: middle;
 }
-/* line 116, ../sass/perform-demo.scss */
+/* line 117, ../sass/perform-demo.scss */
 nav ul li a:hover .tooltip {
   opacity: 1;
   visibility: visible;
 }
-/* line 122, ../sass/perform-demo.scss */
+/* line 123, ../sass/perform-demo.scss */
 nav ul li a.not-viewed:after {
   display: inline-block;
 }
-/* line 127, ../sass/perform-demo.scss */
+/* line 128, ../sass/perform-demo.scss */
 nav ul li a.viewed:after {
   display: none;
 }
-/* line 131, ../sass/perform-demo.scss */
+/* line 132, ../sass/perform-demo.scss */
 nav ul li a:after {
   position: absolute;
   content: "";
@@ -219,7 +557,7 @@ nav ul li a:after {
   transition: all 0.3s;
   display: none;
 }
-/* line 144, ../sass/perform-demo.scss */
+/* line 145, ../sass/perform-demo.scss */
 nav ul li .tooltip {
   font-size: 16px;
   padding: 10px;
@@ -237,7 +575,7 @@ nav ul li .tooltip {
   transition: all 0.3s;
   text-align: left;
 }
-/* line 160, ../sass/perform-demo.scss */
+/* line 161, ../sass/perform-demo.scss */
 nav ul li .tooltip:before {
   content: "";
   width: 0;
@@ -250,7 +588,7 @@ nav ul li .tooltip:before {
   top: 15px;
   left: -13px;
 }
-/* line 175, ../sass/perform-demo.scss */
+/* line 176, ../sass/perform-demo.scss */
 nav [class^="icon-"]:before, nav [class*=" icon-"]:before {
   font-family: "perform-icon" !important;
   font-style: normal !important;
@@ -262,229 +600,229 @@ nav [class^="icon-"]:before, nav [class*=" icon-"]:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 186, ../sass/perform-demo.scss */
+/* line 187, ../sass/perform-demo.scss */
 nav .icon-add-member:before {
   content: "";
 }
-/* line 190, ../sass/perform-demo.scss */
+/* line 191, ../sass/perform-demo.scss */
 nav .icon-archive:before {
   content: "";
 }
-/* line 194, ../sass/perform-demo.scss */
+/* line 195, ../sass/perform-demo.scss */
 nav .icon-delete:before {
   content: "";
 }
-/* line 198, ../sass/perform-demo.scss */
+/* line 199, ../sass/perform-demo.scss */
 nav .icon-exclamation:before {
   content: "";
 }
-/* line 202, ../sass/perform-demo.scss */
+/* line 203, ../sass/perform-demo.scss */
 nav .icon-hamburger:before {
   content: "";
 }
-/* line 206, ../sass/perform-demo.scss */
+/* line 207, ../sass/perform-demo.scss */
 nav .icon-share:before {
   content: "";
 }
-/* line 210, ../sass/perform-demo.scss */
+/* line 211, ../sass/perform-demo.scss */
 nav .icon-more:before {
   content: "";
 }
-/* line 214, ../sass/perform-demo.scss */
+/* line 215, ../sass/perform-demo.scss */
 nav .icon-tick:before {
   content: "";
 }
-/* line 218, ../sass/perform-demo.scss */
+/* line 219, ../sass/perform-demo.scss */
 nav .icon-edit-o:before {
   content: "";
 }
-/* line 222, ../sass/perform-demo.scss */
+/* line 223, ../sass/perform-demo.scss */
 nav .icon-delete-o:before {
   content: "";
 }
-/* line 226, ../sass/perform-demo.scss */
+/* line 227, ../sass/perform-demo.scss */
 nav .icon-x:before {
   content: "";
 }
-/* line 230, ../sass/perform-demo.scss */
+/* line 231, ../sass/perform-demo.scss */
 nav .icon-angle-left:before {
   content: "";
 }
-/* line 234, ../sass/perform-demo.scss */
+/* line 235, ../sass/perform-demo.scss */
 nav .icon-calendar-o:before {
   content: "";
 }
-/* line 238, ../sass/perform-demo.scss */
+/* line 239, ../sass/perform-demo.scss */
 nav .icon-archive-o:before {
   content: "";
 }
-/* line 242, ../sass/perform-demo.scss */
+/* line 243, ../sass/perform-demo.scss */
 nav .icon-unarchive-o:before {
   content: "";
 }
-/* line 246, ../sass/perform-demo.scss */
+/* line 247, ../sass/perform-demo.scss */
 nav .icon-rate-below-o:before {
   content: "";
 }
-/* line 250, ../sass/perform-demo.scss */
+/* line 251, ../sass/perform-demo.scss */
 nav .icon-rate-at-o:before {
   content: "";
 }
-/* line 254, ../sass/perform-demo.scss */
+/* line 255, ../sass/perform-demo.scss */
 nav .icon-rate-above-o:before {
   content: "";
 }
-/* line 258, ../sass/perform-demo.scss */
+/* line 259, ../sass/perform-demo.scss */
 nav .icon-angle-up:before {
   content: "";
 }
-/* line 262, ../sass/perform-demo.scss */
+/* line 263, ../sass/perform-demo.scss */
 nav .icon-angle-down:before {
   content: "";
 }
-/* line 266, ../sass/perform-demo.scss */
+/* line 267, ../sass/perform-demo.scss */
 nav .icon-suitcase:before {
   content: "";
 }
-/* line 270, ../sass/perform-demo.scss */
+/* line 271, ../sass/perform-demo.scss */
 nav .icon-members:before {
   content: "";
 }
-/* line 274, ../sass/perform-demo.scss */
+/* line 275, ../sass/perform-demo.scss */
 nav .icon-paperclip:before {
   content: "";
 }
-/* line 278, ../sass/perform-demo.scss */
+/* line 279, ../sass/perform-demo.scss */
 nav .icon-angle-right:before {
   content: "";
 }
-/* line 282, ../sass/perform-demo.scss */
+/* line 283, ../sass/perform-demo.scss */
 nav .icon-lightbulb:before {
   content: "";
 }
-/* line 286, ../sass/perform-demo.scss */
+/* line 287, ../sass/perform-demo.scss */
 nav .icon-exclamation-triangle:before {
   content: "";
 }
-/* line 290, ../sass/perform-demo.scss */
+/* line 291, ../sass/perform-demo.scss */
 nav .icon-chrome:before {
   content: "";
 }
-/* line 294, ../sass/perform-demo.scss */
+/* line 295, ../sass/perform-demo.scss */
 nav .icon-snapshot:before {
   content: "";
 }
-/* line 298, ../sass/perform-demo.scss */
+/* line 299, ../sass/perform-demo.scss */
 nav .icon-speed:before {
   content: "";
 }
-/* line 302, ../sass/perform-demo.scss */
+/* line 303, ../sass/perform-demo.scss */
 nav .icon-arrow-up:before {
   content: "";
 }
-/* line 306, ../sass/perform-demo.scss */
+/* line 307, ../sass/perform-demo.scss */
 nav .icon-goal:before {
   content: "";
 }
-/* line 310, ../sass/perform-demo.scss */
+/* line 311, ../sass/perform-demo.scss */
 nav .icon-list:before {
   content: "";
 }
-/* line 314, ../sass/perform-demo.scss */
+/* line 315, ../sass/perform-demo.scss */
 nav .icon-plus:before {
   content: "";
 }
-/* line 318, ../sass/perform-demo.scss */
+/* line 319, ../sass/perform-demo.scss */
 nav .icon-setting:before {
   content: "";
 }
-/* line 322, ../sass/perform-demo.scss */
+/* line 323, ../sass/perform-demo.scss */
 nav .icon-help-circled:before {
   content: "";
 }
-/* line 326, ../sass/perform-demo.scss */
+/* line 327, ../sass/perform-demo.scss */
 nav .icon-tick2:before {
   content: "";
 }
-/* line 330, ../sass/perform-demo.scss */
+/* line 331, ../sass/perform-demo.scss */
 nav .icon-circle-dashed:before {
   content: "";
 }
-/* line 334, ../sass/perform-demo.scss */
+/* line 335, ../sass/perform-demo.scss */
 nav .icon-rate-above:before {
   content: "";
 }
-/* line 338, ../sass/perform-demo.scss */
+/* line 339, ../sass/perform-demo.scss */
 nav .icon-rate-at:before {
   content: "";
 }
-/* line 342, ../sass/perform-demo.scss */
+/* line 343, ../sass/perform-demo.scss */
 nav .icon-rate-below:before {
   content: "";
 }
-/* line 346, ../sass/perform-demo.scss */
+/* line 347, ../sass/perform-demo.scss */
 nav .icon-tick-o:before {
   content: "";
 }
-/* line 350, ../sass/perform-demo.scss */
+/* line 351, ../sass/perform-demo.scss */
 nav .icon-ic_chat_black:before {
   content: "";
 }
 
-/* line 355, ../sass/perform-demo.scss */
+/* line 356, ../sass/perform-demo.scss */
 .content-wrapper {
   transition: all 0.3s;
   margin-top: 60px;
   margin-left: 50px;
 }
 
-/* line 360, ../sass/perform-demo.scss */
+/* line 361, ../sass/perform-demo.scss */
 .main-content {
   padding: 20px 10px 40px;
 }
 
-/* line 370, ../sass/perform-demo.scss */
+/* line 371, ../sass/perform-demo.scss */
 .cols {
   width: 100%;
 }
-/* line 372, ../sass/perform-demo.scss */
+/* line 373, ../sass/perform-demo.scss */
 .cols .col {
   width: 100%;
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 991px) {
-  /* line 379, ../sass/perform-demo.scss */
+  /* line 380, ../sass/perform-demo.scss */
   .cols {
     width: 100%;
   }
-  /* line 381, ../sass/perform-demo.scss */
+  /* line 382, ../sass/perform-demo.scss */
   .cols .col {
     float: left;
     padding: 10px;
     box-sizing: border-box;
   }
-  /* line 386, ../sass/perform-demo.scss */
+  /* line 387, ../sass/perform-demo.scss */
   .cols .col-40 {
     width: 40%;
   }
-  /* line 389, ../sass/perform-demo.scss */
+  /* line 390, ../sass/perform-demo.scss */
   .cols .col-60 {
     width: 60%;
   }
 }
-/* line 398, ../sass/perform-demo.scss */
+/* line 399, ../sass/perform-demo.scss */
 .col img {
   width: 100%;
 }
 
-/* line 404, ../sass/perform-demo.scss */
+/* line 405, ../sass/perform-demo.scss */
 .insight-details {
   padding: 15px;
   min-height: 200px;
 }
 
-/* line 408, ../sass/perform-demo.scss */
+/* line 409, ../sass/perform-demo.scss */
 .flatten-card {
   background: #fff;
   border-radius: 3px;
@@ -494,7 +832,19 @@ nav .icon-ic_chat_black:before {
   position: relative;
   margin-top: 15px;
 }
-/* line 416, ../sass/perform-demo.scss */
+/* line 418, ../sass/perform-demo.scss */
+.flatten-card [class^="icon-"]:before, .flatten-card [class*=" icon-"]:before {
+  font-family: "perform-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 429, ../sass/perform-demo.scss */
 .flatten-card .card-title {
   padding: 15px 15px 0 15px;
   margin-bottom: 5px;
@@ -503,7 +853,7 @@ nav .icon-ic_chat_black:before {
   color: #4A4A4A;
   overflow: hidden;
 }
-/* line 424, ../sass/perform-demo.scss */
+/* line 437, ../sass/perform-demo.scss */
 .flatten-card .card-hint {
   color: #9B9B9B;
   font-size: 14px;
@@ -513,7 +863,7 @@ nav .icon-ic_chat_black:before {
   margin-left: 15px;
   line-height: normal;
 }
-/* line 433, ../sass/perform-demo.scss */
+/* line 446, ../sass/perform-demo.scss */
 .flatten-card .card-corner {
   font-size: 14px;
   position: absolute;
@@ -523,7 +873,7 @@ nav .icon-ic_chat_black:before {
   width: auto;
   margin-left: 15px;
 }
-/* line 442, ../sass/perform-demo.scss */
+/* line 455, ../sass/perform-demo.scss */
 .flatten-card .nav-tabs.fill-horizontal {
   display: table;
   border-bottom: 1px solid #DADADA;
@@ -534,14 +884,14 @@ nav .icon-ic_chat_black:before {
   font-size: 15px;
   font-family: "SourceSansPro-SemiBold";
 }
-/* line 451, ../sass/perform-demo.scss */
+/* line 464, ../sass/perform-demo.scss */
 .flatten-card .nav-tabs.fill-horizontal li {
   display: table-cell;
   float: none;
   width: 1000px;
   margin-bottom: -1px;
 }
-/* line 456, ../sass/perform-demo.scss */
+/* line 469, ../sass/perform-demo.scss */
 .flatten-card .nav-tabs.fill-horizontal li a {
   border: none;
   color: #9b9b9b;
@@ -551,23 +901,23 @@ nav .icon-ic_chat_black:before {
   display: block;
   padding: 10px 15px;
 }
-/* line 464, ../sass/perform-demo.scss */
+/* line 477, ../sass/perform-demo.scss */
 .flatten-card .nav-tabs.fill-horizontal li a:hover {
   background-color: #ffffff;
   color: #4861a0;
 }
-/* line 470, ../sass/perform-demo.scss */
+/* line 483, ../sass/perform-demo.scss */
 .flatten-card .nav-tabs.fill-horizontal li.active a {
   cursor: default;
   color: #4861a0;
   border: none;
 }
-/* line 475, ../sass/perform-demo.scss */
+/* line 488, ../sass/perform-demo.scss */
 .flatten-card .nav-tabs.fill-horizontal li.active:after {
   width: 100%;
   background: #4861a0;
 }
-/* line 480, ../sass/perform-demo.scss */
+/* line 493, ../sass/perform-demo.scss */
 .flatten-card .nav-tabs.fill-horizontal li:after {
   content: '';
   display: block;
@@ -577,31 +927,31 @@ nav .icon-ic_chat_black:before {
   background: transparent;
   transition: width .3s ease, background-color .3s ease;
 }
-/* line 491, ../sass/perform-demo.scss */
+/* line 504, ../sass/perform-demo.scss */
 .flatten-card .nav {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
   list-style: none;
 }
-/* line 498, ../sass/perform-demo.scss */
+/* line 511, ../sass/perform-demo.scss */
 .flatten-card .tab-content .tab-pane {
   display: none;
 }
-/* line 500, ../sass/perform-demo.scss */
+/* line 513, ../sass/perform-demo.scss */
 .flatten-card .tab-content .tab-pane.active {
   display: block;
 }
-/* line 504, ../sass/perform-demo.scss */
+/* line 517, ../sass/perform-demo.scss */
 .flatten-card .tab-content .fade {
   opacity: 0;
   transition: opacity 0.15s linear;
 }
-/* line 507, ../sass/perform-demo.scss */
+/* line 520, ../sass/perform-demo.scss */
 .flatten-card .tab-content .fade.in {
   opacity: 1;
 }
-/* line 512, ../sass/perform-demo.scss */
+/* line 525, ../sass/perform-demo.scss */
 .flatten-card .panel {
   margin-bottom: 22px;
   background-color: #fff;
@@ -609,7 +959,7 @@ nav .icon-ic_chat_black:before {
   border-radius: 2px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-/* line 519, ../sass/perform-demo.scss */
+/* line 532, ../sass/perform-demo.scss */
 .flatten-card .media-item {
   display: table;
   margin: 0;
@@ -617,7 +967,7 @@ nav .icon-ic_chat_black:before {
   box-shadow: none;
   border-radius: 0;
 }
-/* line 525, ../sass/perform-demo.scss */
+/* line 538, ../sass/perform-demo.scss */
 .flatten-card .media-item .media-icon {
   display: table-cell;
   vertical-align: top;
@@ -625,16 +975,16 @@ nav .icon-ic_chat_black:before {
   color: #DADADA;
   transition: color 300ms ease-in-out;
 }
-/* line 531, ../sass/perform-demo.scss */
+/* line 544, ../sass/perform-demo.scss */
 .flatten-card .media-item .media-icon .icon-2x {
   font-size: 35px;
   line-height: 0.7;
 }
-/* line 535, ../sass/perform-demo.scss */
+/* line 548, ../sass/perform-demo.scss */
 .flatten-card .media-item .media-icon .icon-members:before {
   content: '\e815';
 }
-/* line 539, ../sass/perform-demo.scss */
+/* line 552, ../sass/perform-demo.scss */
 .flatten-card .media-item .media-header-content {
   display: table-cell;
   vertical-align: top;
@@ -644,30 +994,30 @@ nav .icon-ic_chat_black:before {
   color: #4A4A4A;
   transition: color 300ms ease-in-out;
 }
-/* line 548, ../sass/perform-demo.scss */
+/* line 561, ../sass/perform-demo.scss */
 .flatten-card .media-item:first-child .media-header-content {
   border-top: none;
 }
-/* line 551, ../sass/perform-demo.scss */
+/* line 564, ../sass/perform-demo.scss */
 .flatten-card .media-item:hover .media-header-content, .flatten-card .media-item:hover .media-icon {
   color: #4861A0;
 }
 
 @media screen and (min-width: 991px) {
-  /* line 559, ../sass/perform-demo.scss */
+  /* line 572, ../sass/perform-demo.scss */
   nav {
     width: 170px;
   }
-  /* line 561, ../sass/perform-demo.scss */
+  /* line 574, ../sass/perform-demo.scss */
   nav ul {
     width: 170px;
   }
-  /* line 565, ../sass/perform-demo.scss */
+  /* line 578, ../sass/perform-demo.scss */
   nav ul li a span {
     display: inline-block;
   }
 
-  /* line 572, ../sass/perform-demo.scss */
+  /* line 585, ../sass/perform-demo.scss */
   .content-wrapper {
     margin-left: 170px;
   }
