@@ -63,11 +63,10 @@
       </nav>
       <div class="main-content">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-xs-12 col-md-8 pd-lr-11 mg-b-15 top-img">
+          <div class="row top-img">
+            <div class="col-xs-12 col-md-8 pd-lr-11 mg-b-15">
               <img src="images/perform-demo/top-vertical-nav.png" />
             </div>
-            <div class="col-md-4 cross-line"></div>
           </div>
         </div>
         <div class="container-fluid top-menu">
@@ -94,11 +93,11 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-              <li class="disabled">
-                <a href="#">Team Goal</a>
-              </li>
               <li>
-                <a href="#" id='personal-goal' data-toggle="modal" data-target="#new-goal">Personal Goal</a>
+                <a href="#" id='team-goal' data-toggle="modal" data-target="#new-goal">Team Goal</a>
+              </li>
+              <li class="disabled">
+                <a href="#" id='personal-goal'>Personal Goal</a>
               </li>
             </ul>
           </div>
@@ -260,7 +259,7 @@
         $(this).parent().find(".dropdown-menu").toggle();
       });
 
-      $("#personal-goal").click(function() {
+      $("#team-goal").click(function() {
         $(this).parents('.dropdown-menu').toggle();
       });
 
