@@ -3,8 +3,8 @@
 
 @font-face {
   font-family: 'SourceSansPro-Regular';
-  src: url("fonts/SourceSansPro-Regular.eot");
-  src: url("fonts/SourceSansPro-Regular.woff2") format("woff2"), url("fonts/SourceSansPro-Regular.woff") format("woff"), url("fonts/SourceSansPro-Regular.ttf") format("truetype");
+  src: url("https://d1i5ulwvtra6uh.cloudfront.net/assets/fonts/SourceSansPro-Regular.eot");
+  src: url("https://d1i5ulwvtra6uh.cloudfront.net/assets/fonts/SourceSansPro-Regular.woff2") format("woff2"), url("https://d1i5ulwvtra6uh.cloudfront.net/assets/fonts/SourceSansPro-Regular.woff") format("woff"), url("https://d1i5ulwvtra6uh.cloudfront.net/assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -20,7 +20,7 @@ html, body, .main-wrapper, .content-wrapper{
 }
 
 body{
-  background: #EEF0F1;
+  background: #EEF0F1!important;
   font-family: "SourceSansPro-Regular";
 }
 
@@ -34,11 +34,13 @@ header{
 	position: fixed;
 	width: 100%;
 	top: 0;
+    left: 0;
 	background: #fff;
 	z-index: 10;
 	.container{
 		padding: 0 10px;
 		box-sizing: border-box;
+        width: 100%!important;
 	}
 	.logo{
     line-height: 80px;
@@ -46,6 +48,7 @@ header{
 		img{
 			width: 250px;
 			height: auto;
+            vertical-align: baseline;
 		}
 	}
   .content{
@@ -75,7 +78,7 @@ header{
 }
 
 nav{
-	box-shadow: none;
+  box-shadow: none;
   width: 50px;
   background-color: #49629E;
   height: 100%;
@@ -112,6 +115,7 @@ nav{
 		    span{
           display: none;
           vertical-align: middle;
+              font-family: "SourceSansPro-Regular";
 		    }
         &:hover{
           .tooltip{
@@ -578,6 +582,9 @@ nav{
           span{
             display: inline-block;
           }
+        }
+        .tooltip{
+          display: none;
         }
       }
     }
