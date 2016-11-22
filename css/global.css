@@ -23,10 +23,9 @@
   src: url("fonts/Lato-Thin.eot");
   src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
 }
-/* line 1, ../sass/_header.scss */
 .banner {
   width: 100%;
-  font-family: "Lato-Semibold";
+  font-family: "Lato-Semibold", Arial;
   letter-spacing: 4px;
   line-height: 23px;
   vertical-align: text-bottom;
@@ -38,23 +37,19 @@
   position: fixed;
   display: none;
 }
-/* line 14, ../sass/_header.scss */
 .banner a {
   color: #FFF;
 }
-/* line 16, ../sass/_header.scss */
 .banner a:hover {
   text-decoration: underline;
 }
 
-/* line 21, ../sass/_header.scss */
 .close-button {
   position: absolute;
   top: 0;
   right: 8px;
 }
 
-/* line 27, ../sass/_header.scss */
 header .overlay {
   position: absolute;
   top: 0;
@@ -68,7 +63,6 @@ header .overlay {
   display: none;
 }
 
-/* line 37, ../sass/_header.scss */
 .main-nav-container {
   display: none;
   height: 56px;
@@ -85,20 +79,16 @@ header .overlay {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   transform: translate3d(0, 0, 0);
 }
-/* line 50, ../sass/_header.scss */
 .main-nav-container.sticked {
   background: rgba(0, 0, 0, 0.6);
   border-bottom: 1px solid #DADADA;
 }
-/* line 58, ../sass/_header.scss */
 .main-nav-container.sticked .main-nav nav ul li:hover, .main-nav-container.sticked .main-nav nav ul li.active {
   background: rgba(115, 115, 115, 0.3);
 }
-/* line 61, ../sass/_header.scss */
 .main-nav-container.sticked .main-nav nav ul li a {
   color: #4A4A4A;
 }
-/* line 66, ../sass/_header.scss */
 .main-nav-container.sticked .main-nav nav .sub {
   background: #fff;
   border-color: #DADADA;
@@ -108,40 +98,33 @@ header .overlay {
   top: 52px;
 }
 
-/* line 79, ../sass/_header.scss */
 .main-nav {
   max-width: 1220px;
   margin: 0 auto;
   padding: 20px 10px 0;
   position: relative;
 }
-/* line 85, ../sass/_header.scss */
 .main-nav:after {
   content: "";
   width: 100%;
   height: 1px;
   display: inline-block;
 }
-/* line 91, ../sass/_header.scss */
 .main-nav .logo {
   display: inline-block;
   width: 99px;
 }
-/* line 94, ../sass/_header.scss */
 .main-nav .logo img {
   width: 100%;
   height: auto;
 }
-/* line 99, ../sass/_header.scss */
 .main-nav nav {
   float: right;
 }
-/* line 101, ../sass/_header.scss */
 .main-nav nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 104, ../sass/_header.scss */
 .main-nav nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -150,16 +133,13 @@ header .overlay {
   transition: all 0.3s;
   border-radius: 3px;
 }
-/* line 111, ../sass/_header.scss */
 .main-nav nav ul li:hover, .main-nav nav ul li.active {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 113, ../sass/_header.scss */
 .main-nav nav ul li:hover .sub, .main-nav nav ul li.active .sub {
   height: inherit;
   opacity: 1;
 }
-/* line 119, ../sass/_header.scss */
 .main-nav nav ul li.has-sub:before {
   content: "";
   height: 70px;
@@ -168,44 +148,37 @@ header .overlay {
   position: absolute;
   z-index: 0;
 }
-/* line 127, ../sass/_header.scss */
 .main-nav nav ul li.has-sub:hover:before {
   display: block;
 }
-/* line 131, ../sass/_header.scss */
 .main-nav nav ul li.contact-sales {
   position: relative;
   top: 3px;
 }
-/* line 134, ../sass/_header.scss */
 .main-nav nav ul li.contact-sales a {
   font-size: 24px;
   padding: 0 10px;
 }
-/* line 139, ../sass/_header.scss */
 .main-nav nav ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
   padding: 4px 10px 6px;
   font-size: 16px;
-  font-family: "Lato-Semibold";
+  font-family: "Lato-Semibold", Arial;
   transition: all 0.3s;
   position: relative;
 }
-/* line 148, ../sass/_header.scss */
 .main-nav nav ul li a.signup {
   border: 2px solid #fff;
   border-radius: 3px;
   padding: 6px 20px 8px;
   line-height: normal;
 }
-/* line 153, ../sass/_header.scss */
 .main-nav nav ul li a.signup:hover {
   background: #fff;
   color: #000;
 }
-/* line 161, ../sass/_header.scss */
 .main-nav nav .sub {
   transition: opacity 0.3s;
   opacity: 0;
@@ -217,7 +190,6 @@ header .overlay {
   top: 45px;
   left: 0;
 }
-/* line 172, ../sass/_header.scss */
 .main-nav nav .sub li {
   border-radius: 0;
   margin-left: 0;
@@ -225,33 +197,26 @@ header .overlay {
   width: 100%;
   min-width: 150px;
 }
-/* line 178, ../sass/_header.scss */
 .main-nav nav .sub li a {
   padding: 8px 10px 10px;
 }
 
-/* line 186, ../sass/_header.scss */
 .main-mobile-nav-container {
   transition: all 0.3s;
 }
-/* line 189, ../sass/_header.scss */
 .main-mobile-nav-container.sticked .triggers {
   background: white;
   box-shadow: 0 0 5px #333;
 }
-/* line 193, ../sass/_header.scss */
 .main-mobile-nav-container.sticked .triggers .hamburger span {
   background: #000;
 }
-/* line 199, ../sass/_header.scss */
 .main-mobile-nav-container.sticked .logo .color {
   opacity: 1;
 }
-/* line 202, ../sass/_header.scss */
 .main-mobile-nav-container.sticked .logo .white {
   opacity: 0;
 }
-/* line 207, ../sass/_header.scss */
 .main-mobile-nav-container .triggers {
   padding: 10px 15px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
@@ -270,14 +235,12 @@ header .overlay {
   left: 0;
   right: 0;
 }
-/* line 221, ../sass/_header.scss */
 .main-mobile-nav-container .banner {
   top: 43px;
   z-index: 8;
   font-size: 15px;
   padding: 0 15px;
 }
-/* line 227, ../sass/_header.scss */
 .main-mobile-nav-container .logo {
   display: inline-block;
   width: 120px;
@@ -285,7 +248,6 @@ header .overlay {
   z-index: 10;
   position: relative;
 }
-/* line 233, ../sass/_header.scss */
 .main-mobile-nav-container .logo img {
   transition: all 0.3s;
   width: 100%;
@@ -293,17 +255,14 @@ header .overlay {
   position: absolute;
   top: 2px;
 }
-/* line 240, ../sass/_header.scss */
 .main-mobile-nav-container .logo .color {
   opacity: 0;
 }
-/* line 244, ../sass/_header.scss */
 .main-mobile-nav-container .hamburger {
   position: absolute;
   right: 15px;
   top: 13px;
 }
-/* line 248, ../sass/_header.scss */
 .main-mobile-nav-container .hamburger span {
   width: 25px;
   height: 3px;
@@ -312,7 +271,6 @@ header .overlay {
   display: block;
   transition: all 0.3s;
 }
-/* line 257, ../sass/_header.scss */
 .main-mobile-nav-container .cross {
   background: none;
   position: absolute;
@@ -330,7 +288,6 @@ header .overlay {
   display: none;
   margin: 0;
 }
-/* line 274, ../sass/_header.scss */
 .main-mobile-nav-container nav {
   position: fixed;
   z-index: 9;
@@ -345,7 +302,6 @@ header .overlay {
   transition: all 0.3s;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 287, ../sass/_header.scss */
 .main-mobile-nav-container nav:before {
   content: "";
   position: absolute;
@@ -358,7 +314,6 @@ header .overlay {
   -moz-filter: blur(15px);
   filter: blur(15px);
 }
-/* line 299, ../sass/_header.scss */
 .main-mobile-nav-container nav:after {
   content: "";
   position: absolute;
@@ -368,7 +323,6 @@ header .overlay {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 308, ../sass/_header.scss */
 .main-mobile-nav-container nav ul {
   margin: 0;
   padding: 0;
@@ -377,7 +331,6 @@ header .overlay {
   overflow: auto;
   height: 100%;
 }
-/* line 316, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -387,7 +340,6 @@ header .overlay {
   border-radius: 3px;
   margin-bottom: 15px;
 }
-/* line 325, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub:before {
   content: "\f078";
   color: #fff;
@@ -399,40 +351,33 @@ header .overlay {
   -webkit-font-smoothing: antialiased;
   transition: all 0.3s;
 }
-/* line 337, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub.expanded > a {
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
 }
-/* line 340, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub.expanded .sub {
   max-height: 300px;
 }
-/* line 343, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.has-sub.expanded:before {
   transform: rotate(180deg);
 }
-/* line 348, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.contact-sales {
   position: relative;
   top: 3px;
 }
-/* line 351, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li.contact-sales a {
   font-size: 24px;
   padding: 0 10px;
 }
-/* line 356, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
   padding: 4px 10px 6px;
   font-size: 20px;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   transition: all 0.3s;
   position: relative;
 }
-/* line 365, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li a.signup {
   border-radius: 3px;
   padding: 6px 20px 8px;
@@ -441,50 +386,40 @@ header .overlay {
   text-align: center;
   margin-top: 20px;
 }
-/* line 372, ../sass/_header.scss */
 .main-mobile-nav-container nav ul li a.signup:hover {
   background: #fff;
   color: #00C26B;
 }
-/* line 380, ../sass/_header.scss */
 .main-mobile-nav-container nav .sub {
   transition: max-height 0.3s;
   overflow: hidden;
   max-height: 0;
 }
-/* line 384, ../sass/_header.scss */
 .main-mobile-nav-container nav .sub li {
   margin-top: 10px;
   margin-bottom: 0;
   margin-left: 20px;
 }
-/* line 388, ../sass/_header.scss */
 .main-mobile-nav-container nav .sub li a {
   font-size: 18px;
 }
 
-/* line 401, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container .triggers .hamburger span:first-child {
   transform: rotate(39deg) translateY(5px) translateX(3px);
 }
-/* line 403, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container .triggers .hamburger span:first-child + span {
   transform: scale(0);
 }
-/* line 407, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container .triggers .hamburger span:last-child {
   transform: rotate(-39deg) translateY(-7px) translateX(5px);
 }
-/* line 416, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container.sticked .triggers .hamburger span {
   background: #000;
 }
-/* line 422, ../sass/_header.scss */
 .mobile-nav-opened .main-mobile-nav-container nav {
   transform: translateX(0);
 }
 
-/* line 428, ../sass/_header.scss */
 .header-graphics {
   background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/header-bg.png);
   background-size: cover;
@@ -495,7 +430,6 @@ header .overlay {
   display: inline-block;
   width: 100%;
 }
-/* line 437, ../sass/_header.scss */
 .header-graphics .content {
   position: relative;
   display: block;
@@ -503,12 +437,11 @@ header .overlay {
   margin: 0 auto;
   margin-top: 30px;
 }
-/* line 443, ../sass/_header.scss */
 .header-graphics .content h1 {
   font-size: 20px;
   text-align: center;
   color: #fff;
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
   font-weight: normal;
   font-size: 36px;
   color: #ffffff;
@@ -516,20 +449,17 @@ header .overlay {
   text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
   text-align: center;
 }
-/* line 456, ../sass/_header.scss */
 .header-graphics .content .sub-headline {
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   font-size: 16px;
   color: #FFFFFF;
   margin-top: -10px;
   text-align: center;
 }
-/* line 463, ../sass/_header.scss */
 .header-graphics .content .hbspt-form {
   height: 0;
   overflow: hidden;
 }
-/* line 467, ../sass/_header.scss */
 .header-graphics .content .try-it-form {
   background: rgba(0, 0, 0, 0.6);
   padding: 25px;
@@ -538,7 +468,6 @@ header .overlay {
   max-width: 325px;
   margin: 70px auto 50px;
 }
-/* line 474, ../sass/_header.scss */
 .header-graphics .content .try-it-form input, .header-graphics .content .try-it-form button {
   display: inline-block;
   vertical-align: top;
@@ -553,36 +482,31 @@ header .overlay {
   min-height: inherit;
   text-transform: none;
 }
-/* line 488, ../sass/_header.scss */
 .header-graphics .content .try-it-form input {
   width: 100%;
   color: #000;
   text-align: center;
   margin-bottom: 10px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   font-size: 15px;
 }
-/* line 496, ../sass/_header.scss */
 .header-graphics .content .try-it-form button {
   width: 100%;
   background: #00C26B;
   color: #fff;
-  font-family: "Lato-Semibold";
+  font-family: "Lato-Semibold", Arial;
   font-size: 16px;
 }
-/* line 502, ../sass/_header.scss */
 .header-graphics .content .try-it-form button:hover {
   opacity: 0.9;
   cursor: pointer;
 }
 
-/* line 511, ../sass/_header.scss */
 .subnav {
   text-align: left;
   height: 40px;
   position: relative;
 }
-/* line 515, ../sass/_header.scss */
 .subnav .container {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100
 background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
@@ -593,7 +517,6 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 522, ../sass/_header.scss */
 .subnav ul {
   margin: 0;
   padding: 0;
@@ -602,42 +525,34 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   overflow: hidden;
   transition: max-height 0.75s;
 }
-/* line 529, ../sass/_header.scss */
 .subnav ul.expanded {
   max-height: 300px;
 }
-/* line 531, ../sass/_header.scss */
 .subnav ul.expanded li {
   display: inline-block;
 }
-/* line 533, ../sass/_header.scss */
 .subnav ul.expanded li:first-child {
   height: 0;
 }
-/* line 535, ../sass/_header.scss */
 .subnav ul.expanded li:first-child a:after {
   content: "\f077";
 }
-/* line 542, ../sass/_header.scss */
 .subnav li {
   list-style: none;
   display: none;
   width: 100%;
 }
-/* line 546, ../sass/_header.scss */
 .subnav li:first-child {
   position: absolute;
   top: 0;
   bottom: 0;
   display: block;
 }
-/* line 551, ../sass/_header.scss */
 .subnav li:first-child a {
   display: block;
   padding: 0;
   height: 100%;
 }
-/* line 555, ../sass/_header.scss */
 .subnav li:first-child a:after {
   content: "\f078";
   position: absolute;
@@ -646,25 +561,21 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
   font: normal normal normal 14px/1 FontAwesome;
   -webkit-font-smoothing: antialiased;
 }
-/* line 565, ../sass/_header.scss */
 .subnav li.active {
   display: inline-block;
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
 }
-/* line 570, ../sass/_header.scss */
 .subnav a {
   display: block;
   font-size: 16px;
   color: #FFF;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   padding: 8px 15px 13px;
 }
 
-/* line 579, ../sass/_header.scss */
 .subnav-sticked .main-mobile-nav-container {
   transform: translateY(-50px);
 }
-/* line 583, ../sass/_header.scss */
 .subnav-sticked .subnav .container {
   position: fixed;
   top: 0;
@@ -673,12 +584,10 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
 }
 
 @media screen and (min-width: 960px) {
-  /* line 594, ../sass/_header.scss */
   header .overlay {
     display: block;
   }
 
-  /* line 598, ../sass/_header.scss */
   .banner {
     z-index: 8;
     font-size: 24px;
@@ -687,94 +596,76 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     position: static;
   }
 
-  /* line 605, ../sass/_header.scss */
   .close-button {
     right: 15px;
   }
 
-  /* line 608, ../sass/_header.scss */
   .main-nav-container {
     height: 76px;
     display: block;
   }
-  /* line 611, ../sass/_header.scss */
   .main-nav-container.sticked {
     background: #fff;
     height: auto;
   }
-  /* line 617, ../sass/_header.scss */
   .main-nav-container.sticked nav ul li a {
     color: #000;
   }
-  /* line 619, ../sass/_header.scss */
   .main-nav-container.sticked nav ul li a.signup {
     border-color: #00C26B;
     color: #00C26B;
   }
-  /* line 622, ../sass/_header.scss */
   .main-nav-container.sticked nav ul li a.signup:hover {
     background: #00C26B;
     color: #fff;
   }
-  /* line 633, ../sass/_header.scss */
   .main-nav-container.sticked .main-nav .logo .color {
     opacity: 1;
   }
-  /* line 636, ../sass/_header.scss */
   .main-nav-container.sticked .main-nav .logo .white {
     opacity: 0;
   }
 
-  /* line 644, ../sass/_header.scss */
   .main-nav .logo {
     width: 150px;
     height: 28px;
     margin-top: 0;
     position: relative;
   }
-  /* line 649, ../sass/_header.scss */
   .main-nav .logo img {
     transition: all 0.3s;
     position: absolute;
   }
-  /* line 653, ../sass/_header.scss */
   .main-nav .logo .color {
     opacity: 0;
   }
-  /* line 657, ../sass/_header.scss */
   .main-nav nav {
     display: block;
     margin-top: -5px;
   }
 
-  /* line 663, ../sass/_header.scss */
   .main-mobile-nav-container {
     display: none;
   }
 
-  /* line 667, ../sass/_header.scss */
   .header-graphics {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/large/header-bg.png);
     height: 620px;
   }
-  /* line 670, ../sass/_header.scss */
   .header-graphics .content {
     position: relative;
     top: 5%;
     margin-top: 110px;
     max-width: 600px;
   }
-  /* line 675, ../sass/_header.scss */
   .header-graphics .content h1 {
     font-size: 48px;
     margin-bottom: 50px;
   }
-  /* line 679, ../sass/_header.scss */
   .header-graphics .content .sub-headline {
     font-size: 22px;
     letter-spacing: 1px;
   }
-  /* line 683, ../sass/_header.scss */
   .header-graphics .content .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
@@ -782,29 +673,24 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     font-size: 0;
     margin-top: 40px;
   }
-  /* line 689, ../sass/_header.scss */
   .header-graphics .content .try-it-form input {
     width: 68%;
     border-radius: 4px 0 0 4px;
     margin: 0;
     text-align: left;
   }
-  /* line 695, ../sass/_header.scss */
   .header-graphics .content .try-it-form button {
     width: 32%;
     border-radius: 0 4px 4px 0;
     font-size: 18px;
   }
-  /* line 701, ../sass/_header.scss */
   .header-graphics .content .meet-consultant {
     padding-top: 120px;
   }
-  /* line 703, ../sass/_header.scss */
   .header-graphics .content .meet-consultant a {
     font-size: 24px;
   }
 
-  /* line 709, ../sass/_header.scss */
   .subnav {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
     background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -817,24 +703,20 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     /* IE6-9 fallback on horizontal gradient */
     height: 50px;
   }
-  /* line 716, ../sass/_header.scss */
   .subnav .container {
     max-width: 960px;
     margin: 0 auto;
     background: none;
   }
-  /* line 721, ../sass/_header.scss */
   .subnav ul {
     text-align: center;
     max-height: inherit;
   }
-  /* line 724, ../sass/_header.scss */
   .subnav ul li {
     display: inline-block;
     width: 200px;
     position: relative;
   }
-  /* line 728, ../sass/_header.scss */
   .subnav ul li:before {
     content: "";
     position: absolute;
@@ -846,25 +728,20 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     background: #fff;
     transform: scaleX(0);
   }
-  /* line 739, ../sass/_header.scss */
   .subnav ul li:first-child {
     display: none;
   }
-  /* line 743, ../sass/_header.scss */
   .subnav ul li.active:before, .subnav ul li:hover:before {
     transform: scaleX(1);
   }
-  /* line 746, ../sass/_header.scss */
   .subnav ul li.active a, .subnav ul li:hover a {
-    font-family: "Lato-Bold";
+    font-family: "Lato-Bold", Arial;
   }
-  /* line 750, ../sass/_header.scss */
   .subnav ul li a {
     font-size: 16px;
     padding: 14px 15px 17px;
   }
 
-  /* line 759, ../sass/_header.scss */
   .subnav-sticked .subnav .container {
     background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
     /* FF3.6-15 */
@@ -878,55 +755,46 @@ background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0
     max-width: inherit;
   }
 }
-/* line 1, ../sass/_content.scss */
 body {
   background: #fff;
   padding: 0;
   margin: 0;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
 }
 
-/* line 7, ../sass/_content.scss */
 .row-fluid [class*="span"] {
   min-height: inherit;
 }
 
-/* line 10, ../sass/_content.scss */
 a {
   text-decoration: none;
 }
 
-/* line 13, ../sass/_content.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 16, ../sass/_content.scss */
 .body-container-wrapper {
   position: relative;
   z-index: 2;
   background: transparent;
 }
 
-/* line 21, ../sass/_content.scss */
 .footer-container-wrapper {
   position: relative;
   z-index: 0;
 }
 
-/* line 25, ../sass/_content.scss */
 .main-wrapper {
   transition: all 0.5s;
 }
 
-/* line 28, ../sass/_content.scss */
 .main-content {
   background: #fff;
   box-shadow: 0 0 10px #666;
   margin-bottom: 10px;
 }
 
-/* line 33, ../sass/_content.scss */
 .brands {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -940,7 +808,6 @@ a {
   padding: 30px 10px 20px 10px;
   text-align: center;
 }
-/* line 41, ../sass/_content.scss */
 .brands img {
   display: inline-block;
   vertical-align: middle;
@@ -949,71 +816,61 @@ a {
   margin: 10px;
 }
 
-/* line 50, ../sass/_content.scss */
 .content-block {
   padding-top: 30px;
 }
-/* line 52, ../sass/_content.scss */
 .content-block .container {
   max-width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
 }
-/* line 57, ../sass/_content.scss */
 .content-block .block-title {
   text-align: center;
   margin: 0 0 10px 0;
   padding: 0 30px;
   font-weight: normal;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   font-size: 24px;
   color: #000000;
   letter-spacing: 0.75px;
   text-align: center;
   font-weight: normal;
 }
-/* line 69, ../sass/_content.scss */
 .content-block .block-desc {
   margin: 0 0 40px 0;
   padding: 0 30px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   font-size: 18px;
   font-weight: normal;
   color: #9b9b9b;
   letter-spacing: 0px;
   text-align: center;
 }
-/* line 79, ../sass/_content.scss */
 .content-block .block-content {
   text-align: center;
 }
 
-/* line 83, ../sass/_content.scss */
 .content-block-no-hero {
   padding-top: 70px;
 }
 
-/* line 88, ../sass/_content.scss */
 .features .tile {
   display: inline-block;
   max-width: 320px;
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 93, ../sass/_content.scss */
 .features .tile a {
   display: block;
   cursor: default;
   transition: all 0.3s;
   padding: 0 15px;
 }
-/* line 99, ../sass/_content.scss */
 .features .tile .title {
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   color: #000;
   margin-bottom: 20px;
 }
-/* line 104, ../sass/_content.scss */
 .features .tile .icon {
   width: 59px;
   height: 65px;
@@ -1023,45 +880,36 @@ a {
   background-position: 0 0;
   background-size: 554px;
 }
-/* line 113, ../sass/_content.scss */
 .features .tile .feature-2 {
   background-position: -99px 0;
 }
-/* line 116, ../sass/_content.scss */
 .features .tile .feature-3 {
   background-position: -198px 0;
 }
-/* line 119, ../sass/_content.scss */
 .features .tile .feature-4 {
   background-position: -297px 0;
 }
-/* line 122, ../sass/_content.scss */
 .features .tile .feature-5 {
   background-position: -396px 0;
 }
-/* line 125, ../sass/_content.scss */
 .features .tile .feature-6 {
   background-position: -495px 0;
 }
-/* line 128, ../sass/_content.scss */
 .features .tile p {
-  font-family: "Lato-Thin";
+  font-family: "Lato-Thin", Arial;
   font-size: 18px;
   color: #9b9b9b;
   letter-spacing: 0px;
   text-align: center;
 }
 
-/* line 138, ../sass/_content.scss */
 .products-desktop {
   display: none;
 }
 
-/* line 142, ../sass/_content.scss */
 .products-mobile {
   display: block;
 }
-/* line 144, ../sass/_content.scss */
 .products-mobile .content {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1070,17 +918,14 @@ a {
   padding: 0px 15px;
   position: relative;
 }
-/* line 152, ../sass/_content.scss */
 .products-mobile .mask-1 {
   padding: 30px 15px;
   background-image: url(//www.tinypulse.com/hubfs/redesign_2016/engage-bg-small.png);
 }
-/* line 156, ../sass/_content.scss */
 .products-mobile .mask-2 {
   padding: 30px 15px;
   background-image: url(//www.tinypulse.com/hubfs/redesign_2016/Perform_mobile.png);
 }
-/* line 160, ../sass/_content.scss */
 .products-mobile .text {
   color: #FFF;
   height: 100%;
@@ -1088,7 +933,6 @@ a {
   display: inline-block;
   position: relative;
 }
-/* line 166, ../sass/_content.scss */
 .products-mobile .text .title {
   font-size: 24px;
   line-height: 32px;
@@ -1097,14 +941,12 @@ a {
   letter-spacing: 0.75px;
   margin: 0;
 }
-/* line 174, ../sass/_content.scss */
 .products-mobile .text .desc {
   font-size: 17px;
   text-shadow: 0 2px 10px #333;
   width: 290px;
   font-family: 'Lato-Light';
 }
-/* line 180, ../sass/_content.scss */
 .products-mobile .text a {
   margin-top: 20px;
   display: inline-block;
@@ -1121,13 +963,11 @@ a {
   text-align: center;
   max-width: 300px;
 }
-/* line 195, ../sass/_content.scss */
 .products-mobile .text a:hover {
   background: #fff;
   color: #333;
 }
 
-/* line 205, ../sass/_content.scss */
 .success-stories .story {
   display: inline-block;
   max-width: 320px;
@@ -1136,43 +976,36 @@ a {
   vertical-align: top;
   padding: 0 20px;
 }
-/* line 212, ../sass/_content.scss */
 .success-stories .story p, .success-stories .story span {
   font-size: 14px;
   color: #9B9B9B;
   display: block;
   text-align: left;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
 }
-/* line 219, ../sass/_content.scss */
 .success-stories .story p {
   color: #000;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 224, ../sass/_content.scss */
 .success-stories .story span {
   font-size: 18px;
   color: #9b9b9b;
   line-height: 24px;
   text-align: left;
 }
-/* line 230, ../sass/_content.scss */
 .success-stories .story strong {
   display: block;
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
 }
-/* line 235, ../sass/_content.scss */
 .success-stories .story .icon img {
   width: 180px;
   height: 180px;
 }
-/* line 241, ../sass/_content.scss */
 .success-stories .more-stories {
   text-align: center;
   margin: 40px 0 80px;
 }
-/* line 244, ../sass/_content.scss */
 .success-stories .more-stories a {
   padding: 5px 20px 7px;
   border: 1px solid #dadada;
@@ -1181,13 +1014,11 @@ a {
   color: #9B9B9B;
   transition: all 0.3s;
 }
-/* line 251, ../sass/_content.scss */
 .success-stories .more-stories a:hover {
   background: #dadada;
   color: #fff;
 }
 
-/* line 259, ../sass/_content.scss */
 .ctas {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -1200,18 +1031,15 @@ a {
   /* IE6-9 fallback on horizontal gradient */
   padding: 30px 10px;
 }
-/* line 266, ../sass/_content.scss */
 .ctas .block-title {
   color: #fff;
   padding: 0 20px;
 }
-/* line 270, ../sass/_content.scss */
 .ctas div {
   text-align: center;
   padding: 0 15px;
   margin: 50px 0 30px 0;
 }
-/* line 275, ../sass/_content.scss */
 .ctas a {
   display: inline-block;
   color: #fff;
@@ -1221,19 +1049,17 @@ a {
   transition: all 0.3s;
   margin: 10px 0;
   width: 100%;
-  font-family: "Lato-Semibold";
+  font-family: "Lato-Semibold", Arial;
   font-size: 20px;
   color: #ffffff;
   letter-spacing: 0.14px;
   text-align: center;
 }
-/* line 291, ../sass/_content.scss */
 .ctas a:hover {
   background: #fff;
   color: #333;
 }
 
-/* line 298, ../sass/_content.scss */
 .quote {
   padding: 20px 0;
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -1245,22 +1071,19 @@ a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 304, ../sass/_content.scss */
 .quote .block-title {
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   color: #fff;
   font-size: 20px;
   padding: 0 10px;
 }
-/* line 310, ../sass/_content.scss */
 .quote .block-desc {
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   color: #fff;
   margin: 0;
   font-size: 16px;
 }
 
-/* line 317, ../sass/_content.scss */
 .press {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -1274,16 +1097,14 @@ a {
   padding: 30px 10px 20px 10px;
   text-align: center;
 }
-/* line 325, ../sass/_content.scss */
 .press .title {
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   font-size: 18px;
   color: #ffffff;
   letter-spacing: 0px;
   line-height: 30px;
   text-align: center;
 }
-/* line 333, ../sass/_content.scss */
 .press img {
   display: inline-block;
   vertical-align: middle;
@@ -1292,80 +1113,65 @@ a {
   margin: 10px;
 }
 
-/* line 342, ../sass/_content.scss */
 .new-features-page {
   margin-top: 40px;
 }
-/* line 344, ../sass/_content.scss */
 .new-features-page .content-block {
   padding-bottom: 50px;
   border-bottom: 1px solid #DADADA;
 }
-/* line 347, ../sass/_content.scss */
 .new-features-page .content-block .block-title {
   margin-bottom: 20px;
 }
-/* line 349, ../sass/_content.scss */
 .new-features-page .content-block .block-title .super {
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   color: #FE2851;
   font-size: 12px;
   position: relative;
   top: -13px;
   left: 3px;
 }
-/* line 358, ../sass/_content.scss */
 .new-features-page .content-block .block-desc {
   margin-bottom: 10px;
 }
-/* line 361, ../sass/_content.scss */
 .new-features-page .content-block .block-content {
   padding: 0 15px;
 }
-/* line 363, ../sass/_content.scss */
 .new-features-page .content-block .block-content img {
   max-width: 100%;
   margin: 40px 0;
 }
-/* line 367, ../sass/_content.scss */
 .new-features-page .content-block .block-content p {
   text-align: left;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   line-height: 26px;
   font-size: 18px;
 }
-/* line 376, ../sass/_content.scss */
 .new-features-page .tp-engage img {
   width: 496px;
   max-width: 496px;
 }
-/* line 381, ../sass/_content.scss */
 .new-features-page .download {
   text-align: center;
   margin-top: 30px;
 }
-/* line 384, ../sass/_content.scss */
 .new-features-page .download span {
   display: block;
   margin-bottom: 10px;
   color: #9B9B9B;
 }
-/* line 389, ../sass/_content.scss */
 .new-features-page .download a {
   display: inline-block;
   clear: both;
   vertical-align: middle;
 }
-/* line 393, ../sass/_content.scss */
 .new-features-page .download a img {
   max-width: 150px !important;
   margin: 10px 0 !important;
 }
-/* line 398, ../sass/_content.scss */
 .new-features-page .download a.apple-store {
   margin-right: 20px;
 }
-/* line 401, ../sass/_content.scss */
 .new-features-page .download .store {
   width: 100px;
   height: 34px;
@@ -1373,21 +1179,17 @@ a {
   margin-right: 8px;
   background: url(http://www.tinypulse.com/hubfs/redesign_2016/stores.png) no-repeat;
 }
-/* line 408, ../sass/_content.scss */
 .new-features-page .download .google-store {
   background-position: -110px 0;
 }
-/* line 412, ../sass/_content.scss */
 .new-features-page .try-it-now {
   border: 1px solid #dadada;
   margin: 30px 0;
   padding: 20px;
 }
-/* line 416, ../sass/_content.scss */
 .new-features-page .try-it-now p {
   margin: 0 0 20px 0;
 }
-/* line 419, ../sass/_content.scss */
 .new-features-page .try-it-now a {
   background: #00C26B;
   border-radius: 3px;
@@ -1403,18 +1205,15 @@ a {
 }
 
 @media screen and (min-width: 960px) {
-  /* line 436, ../sass/_content.scss */
   .header-graphics, .main-content {
     position: relative;
     z-index: 1;
   }
 
-  /* line 440, ../sass/_content.scss */
   .main-wrapper {
     padding-bottom: 266px;
   }
 
-  /* line 444, ../sass/_content.scss */
   .brands img {
     margin-left: 20px;
     margin-right: 20px;
@@ -1424,48 +1223,38 @@ a {
     display: inline-block;
   }
 
-  /* line 453, ../sass/_content.scss */
   .content-block {
     padding-top: 50px;
   }
-  /* line 455, ../sass/_content.scss */
   .content-block .block-title {
     font-size: 36px;
   }
 
-  /* line 459, ../sass/_content.scss */
   .content-block-no-hero {
     padding-top: 90px;
   }
 
-  /* line 463, ../sass/_content.scss */
   .features .tile {
     max-width: 300px;
   }
-  /* line 465, ../sass/_content.scss */
   .features .tile a {
     padding: 30px 15px;
     cursor: pointer;
   }
-  /* line 468, ../sass/_content.scss */
   .features .tile a:hover {
     background: #E8F4FD;
   }
-  /* line 470, ../sass/_content.scss */
   .features .tile a:hover .icon {
     background-position-y: -90px;
   }
-  /* line 475, ../sass/_content.scss */
   .features .tile p {
     font-size: 14px;
   }
 
-  /* line 480, ../sass/_content.scss */
   .products-mobile {
     display: none;
   }
 
-  /* line 483, ../sass/_content.scss */
   .products-desktop {
     display: block;
     height: 1620px;
@@ -1474,7 +1263,6 @@ a {
     position: relative;
     transition: background-color 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  /* line 490, ../sass/_content.scss */
   .products-desktop .content {
     height: 810px;
     width: 100%;
@@ -1482,14 +1270,12 @@ a {
     position: relative;
     z-index: 2;
   }
-  /* line 496, ../sass/_content.scss */
   .products-desktop .content .container {
     max-width: 920px;
     margin: 0 auto;
     height: 100%;
     position: relative;
   }
-  /* line 502, ../sass/_content.scss */
   .products-desktop .content .text {
     top: 0;
     left: 0;
@@ -1499,18 +1285,15 @@ a {
     top: 50%;
     margin-top: -150px;
   }
-  /* line 510, ../sass/_content.scss */
   .products-desktop .content .text .title {
     font-size: 36px;
     line-height: 48px;
     text-shadow: 0 2px 10px #333;
   }
-  /* line 515, ../sass/_content.scss */
   .products-desktop .content .text .desc {
     font-size: 20px;
     text-shadow: 0 0 10px #333;
   }
-  /* line 519, ../sass/_content.scss */
   .products-desktop .content .text a {
     margin-top: 20px;
     display: inline-block;
@@ -1520,16 +1303,13 @@ a {
     color: #fff;
     transition: all 0.3s;
   }
-  /* line 527, ../sass/_content.scss */
   .products-desktop .content .text a:hover {
     background: #fff;
     color: #333;
   }
-  /* line 533, ../sass/_content.scss */
   .products-desktop .content .text-1 {
     left: 0;
   }
-  /* line 537, ../sass/_content.scss */
   .products-desktop .masked-images {
     position: absolute;
     top: 0;
@@ -1537,7 +1317,6 @@ a {
     transform: matrix(1, 0, 0, 1, 0, 0);
     width: 100%;
   }
-  /* line 543, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image {
     position: absolute;
     top: 0;
@@ -1546,7 +1325,6 @@ a {
     overflow: hidden;
     height: 810px;
   }
-  /* line 550, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image div {
     position: absolute;
     top: 0;
@@ -1561,26 +1339,21 @@ a {
     background-position: center;
     height: 810px;
   }
-  /* line 566, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image-1 div {
     background-image: url(//www.tinypulse.com/hubfs/Client_logo/Perform.png);
   }
-  /* line 571, ../sass/_content.scss */
   .products-desktop .masked-images .masked-image-2 div {
     background-image: url(//www.tinypulse.com/hubfs/redesign_2016/engage-bg.png);
   }
 
-  /* line 578, ../sass/_content.scss */
   .success-stories .story {
     max-width: 300px;
     padding: 0 20px;
     box-sizing: border-box;
   }
-  /* line 582, ../sass/_content.scss */
   .success-stories .story .icon {
     margin: 10px 0 50px 0;
   }
-  /* line 585, ../sass/_content.scss */
   .success-stories .story p, .success-stories .story span {
     text-align: left;
     display: block;
@@ -1588,38 +1361,31 @@ a {
     line-height: 20px;
   }
 
-  /* line 594, ../sass/_content.scss */
   .ctas .block-title {
     font-size: 30px;
     color: #fff;
   }
-  /* line 598, ../sass/_content.scss */
   .ctas a {
     padding: 7px 30px;
     font-size: 14px;
     width: auto;
   }
-  /* line 602, ../sass/_content.scss */
   .ctas a:nth-child(2) {
     margin-left: 50px;
     margin-right: 50px;
   }
-  /* line 607, ../sass/_content.scss */
   .ctas div {
     margin: 0;
     padding: 0;
   }
 
-  /* line 612, ../sass/_content.scss */
   .quote {
     padding: 30px;
   }
-  /* line 614, ../sass/_content.scss */
   .quote .block-title {
     font-size: 26px;
   }
 
-  /* line 618, ../sass/_content.scss */
   .press img {
     margin-left: 20px;
     margin-right: 20px;
@@ -1629,19 +1395,15 @@ a {
     display: inline-block;
   }
 
-  /* line 627, ../sass/_content.scss */
   .new-features-page {
     margin-top: 70px;
   }
-  /* line 630, ../sass/_content.scss */
   .new-features-page .content-block .block-content {
     padding: 0;
   }
-  /* line 632, ../sass/_content.scss */
   .new-features-page .content-block .block-content.image-right {
     direction: rtl;
   }
-  /* line 635, ../sass/_content.scss */
   .new-features-page .content-block .block-content .column {
     display: inline-block;
     width: 49%;
@@ -1649,36 +1411,29 @@ a {
     vertical-align: top img;
     vertical-align-margin-top: 0px;
   }
-  /* line 644, ../sass/_content.scss */
   .new-features-page .content-block .block-content p {
     direction: ltr;
     font-size: 16px;
     line-height: 24px;
   }
-  /* line 651, ../sass/_content.scss */
   .new-features-page .left-side {
     text-align: left;
     float: left;
     padding-right: 5px;
   }
-  /* line 656, ../sass/_content.scss */
   .new-features-page .right-side {
     float: right;
     padding-left: 5px;
   }
-  /* line 660, ../sass/_content.scss */
   .new-features-page .livepulse-content {
     margin-top: 18px;
   }
-  /* line 663, ../sass/_content.scss */
   .new-features-page .admin-dashboard {
     margin-top: 15%;
   }
-  /* line 666, ../sass/_content.scss */
   .new-features-page .smartpulse {
     margin-top: 10%;
   }
-  /* line 669, ../sass/_content.scss */
   .new-features-page .try-it-now {
     display: inline-block;
     width: 100%;
@@ -1686,7 +1441,6 @@ a {
     padding: 30px 15px;
     box-sizing: border-box;
   }
-  /* line 675, ../sass/_content.scss */
   .new-features-page .try-it-now p {
     vertical-align: middle;
     width: 720px;
@@ -1694,31 +1448,25 @@ a {
     margin: 0 20px 0 0;
     line-height: 24px;
   }
-  /* line 681, ../sass/_content.scss */
   .new-features-page .try-it-now p span {
     display: block;
   }
-  /* line 685, ../sass/_content.scss */
   .new-features-page .try-it-now a {
     vertical-align: middle;
     width: 152px;
     display: inline-block;
   }
-  /* line 691, ../sass/_content.scss */
   .new-features-page .download {
     text-align: left;
   }
-  /* line 693, ../sass/_content.scss */
   .new-features-page .download span {
     display: inline-block;
     margin-right: 15px;
   }
 }
-/* line 2, ../sass/_footer.scss */
 footer .container {
   padding: 20px 30px;
 }
-/* line 5, ../sass/_footer.scss */
 footer ul {
   margin: 0;
   padding: 0;
@@ -1727,12 +1475,10 @@ footer ul {
   box-sizing: border-box;
   border-bottom: 1px solid #f1f2f2;
 }
-/* line 12, ../sass/_footer.scss */
 footer ul:last-child {
   border-bottom: 0;
   margin: 0;
 }
-/* line 16, ../sass/_footer.scss */
 footer ul li {
   font-size: 18px;
   list-style-type: none;
@@ -1741,17 +1487,14 @@ footer ul li {
   cursor: pointer;
   line-height: normal;
 }
-/* line 24, ../sass/_footer.scss */
 footer ul li:first-child {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 28, ../sass/_footer.scss */
 footer ul li:first-child:focus {
   outline: none;
 }
-/* line 31, ../sass/_footer.scss */
 footer ul li:first-child:after {
   content: "+";
   color: #9B9B9B;
@@ -1759,48 +1502,40 @@ footer ul li:first-child:after {
   right: 0;
   top: -7px;
   font-size: 30px;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
 }
-/* line 41, ../sass/_footer.scss */
 footer ul li strong {
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
   margin-bottom: 5px;
   display: inline-block;
 }
-/* line 46, ../sass/_footer.scss */
 footer ul li a {
   color: #000000;
   text-decoration: none;
 }
-/* line 52, ../sass/_footer.scss */
 footer ul.expanded li:first-child:after {
   content: "-";
   font-size: 50px;
   top: -22px;
 }
-/* line 57, ../sass/_footer.scss */
 footer ul.expanded li {
   display: block;
 }
-/* line 62, ../sass/_footer.scss */
 footer .copyright {
   background: #F1F2F1;
   text-align: center;
   line-height: 30px;
 }
-/* line 66, ../sass/_footer.scss */
 footer .copyright .container {
   padding: 10px;
   box-sizing: border-box;
 }
-/* line 70, ../sass/_footer.scss */
 footer .copyright span {
   display: block;
   font-size: 14px;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 79, ../sass/_footer.scss */
   footer {
     padding: 0;
     position: fixed;
@@ -1809,49 +1544,39 @@ footer .copyright span {
     bottom: 0;
     transform: translate3d(0, 0, 0);
   }
-  /* line 86, ../sass/_footer.scss */
   footer .container {
     max-width: 960px;
     margin: 0 auto;
   }
-  /* line 90, ../sass/_footer.scss */
   footer ul {
     display: inline-block;
     vertical-align: top;
     margin: 0;
     border: 0;
   }
-  /* line 95, ../sass/_footer.scss */
   footer ul:nth-child(1) {
     width: 25%;
   }
-  /* line 98, ../sass/_footer.scss */
   footer ul:nth-child(2) {
     width: 35%;
   }
-  /* line 101, ../sass/_footer.scss */
   footer ul:nth-child(3) {
     width: 24%;
   }
-  /* line 104, ../sass/_footer.scss */
   footer ul:nth-child(4) {
     width: 13%;
   }
-  /* line 107, ../sass/_footer.scss */
   footer ul li {
     margin-bottom: 5px;
     font-size: 14px;
     display: block;
   }
-  /* line 112, ../sass/_footer.scss */
   footer ul li:first-child:after {
     display: none;
   }
-  /* line 116, ../sass/_footer.scss */
   footer ul li a {
-    font-family: "Lato-Light";
+    font-family: "Lato-Light", Arial;
   }
-  /* line 121, ../sass/_footer.scss */
   footer .copyright {
     display: inline-block;
     width: 100%;
@@ -1860,30 +1585,24 @@ footer .copyright span {
     font-size: 0;
     line-height: normal;
   }
-  /* line 128, ../sass/_footer.scss */
   footer .copyright .container {
     padding: 20px 0;
   }
-  /* line 131, ../sass/_footer.scss */
   footer .copyright span {
     display: inline-block;
   }
-  /* line 133, ../sass/_footer.scss */
   footer .copyright span:first-child {
     width: 25%;
     text-align: left;
   }
-  /* line 137, ../sass/_footer.scss */
   footer .copyright span:first-child + span {
     width: 50%;
     text-align: center;
   }
-  /* line 141, ../sass/_footer.scss */
   footer .copyright span:first-child + span + span {
     width: 25%;
   }
 }
-/* line 7, ../sass/_popup.scss */
 .popup-container {
   position: fixed;
   top: 0;
@@ -1894,7 +1613,6 @@ footer .copyright span {
   z-index: 999;
   display: none;
 }
-/* line 16, ../sass/_popup.scss */
 .popup-container .overlay {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -1903,7 +1621,6 @@ footer .copyright span {
   bottom: 0;
   left: 0;
 }
-/* line 24, ../sass/_popup.scss */
 .popup-container .popup {
   width: 320px;
   height: 500px;
@@ -1913,7 +1630,6 @@ footer .copyright span {
   margin-left: -160px;
   margin-top: -250px;
 }
-/* line 32, ../sass/_popup.scss */
 .popup-container .popup .close-btn {
   position: absolute;
   top: -10px;
@@ -1923,12 +1639,10 @@ footer .copyright span {
   transform: rotate(45deg);
   font-family: "Lato-Light";
 }
-/* line 41, ../sass/_popup.scss */
 .popup-container .popup .popup-content {
   font-size: 0;
   height: 100%;
 }
-/* line 44, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column {
   direction: ltr;
   display: inline-block;
@@ -1938,7 +1652,6 @@ footer .copyright span {
   box-sizing: border-box;
   padding: 0 10px;
 }
-/* line 53, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column.image {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
@@ -1951,27 +1664,22 @@ footer .copyright span {
   /* IE6-9 fallback on horizontal gradient */
   padding: 40px 30px;
 }
-/* line 61, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column img {
   max-width: 100%;
   height: auto;
 }
-/* line 65, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column .title {
   font-size: 24px;
   color: #000;
 }
-/* line 69, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column .desc {
   font-size: 18px;
   line-height: 24px;
   color: #9b9b9b;
 }
-/* line 74, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column .learn-more {
   margin: 36px 10px 30px;
 }
-/* line 77, ../sass/_popup.scss */
 .popup-container .popup .popup-content .column a {
   font-size: 22px;
   color: #fff;
@@ -2047,11 +1755,9 @@ footer .copyright span {
 /*}*/
 /*}*/
 @media screen and (min-width: 960px) {
-  /* line 161, ../sass/_popup.scss */
   .popup-container {
     /*padding-top: 20%;*/
   }
-  /* line 163, ../sass/_popup.scss */
   .popup-container .popup {
     height: 380px;
     max-height: inherit;
@@ -2063,11 +1769,9 @@ footer .copyright span {
     margin-left: -480px;
     margin-top: -190px;
   }
-  /* line 173, ../sass/_popup.scss */
   .popup-container .popup .popup-content {
     direction: rtl;
   }
-  /* line 175, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column {
     width: 480px;
     vertical-align: top;
@@ -2075,41 +1779,33 @@ footer .copyright span {
     padding: 70px 50px;
     text-align: left;
   }
-  /* line 181, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column.image {
     padding: 70px 0;
     text-align: center;
   }
-  /* line 185, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column img {
     width: 400px;
   }
-  /* line 188, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column a {
     max-width: 200px;
   }
-  /* line 190, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column a:hover {
     opacity: 0.9;
   }
-  /* line 194, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column .learn-more {
     margin: 55px 0px 0px;
   }
-  /* line 197, ../sass/_popup.scss */
   .popup-container .popup .popup-content .column .title {
     font-size: 36px;
     margin-top: 0px;
   }
 }
-/* line 7, ../sass/global.scss */
 body {
   font-family: "Lato-Regular";
   padding: 0;
   margin: 0;
 }
 
-/* line 13, ../sass/global.scss */
 a {
   text-decoration: none;
 }

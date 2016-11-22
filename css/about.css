@@ -1,30 +1,23 @@
-/* line 7, ../sass/about.scss */
 strong {
   font-family: "Lato-Bold";
 }
 
-/* line 11, ../sass/about.scss */
 .content-block {
   padding-bottom: 50px;
 }
-/* line 13, ../sass/about.scss */
 .content-block .block-title {
   margin-bottom: 20px;
 }
-/* line 16, ../sass/about.scss */
 .content-block .block-desc {
   margin-bottom: 10px;
 }
-/* line 19, ../sass/about.scss */
 .content-block .block-content {
   padding: 0 15px;
 }
-/* line 21, ../sass/about.scss */
 .content-block .block-content img {
   max-width: 100%;
   margin: 40px 0;
 }
-/* line 25, ../sass/about.scss */
 .content-block .block-content p {
   text-align: left;
   font-family: "Lato-Light";
@@ -32,7 +25,6 @@ strong {
   font-size: 18px;
 }
 
-/* line 34, ../sass/about.scss */
 .delight {
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
   /* FF3.6-15 */
@@ -43,16 +35,13 @@ strong {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
-/* line 40, ../sass/about.scss */
 .delight .block-title, .delight .block-desc, .delight .block-content p {
   color: #fff;
   text-align: center;
 }
-/* line 44, ../sass/about.scss */
 .delight .values {
   margin: 30px 0;
 }
-/* line 46, ../sass/about.scss */
 .delight .values .value {
   width: 220px;
   text-align: center;
@@ -62,54 +51,43 @@ strong {
   padding: 0 20px;
   box-sizing: border-box;
 }
-/* line 55, ../sass/about.scss */
 .delight .values .icon {
   width: 92px;
   height: 90px;
   background-image: url(//www.tinypulse.com/hubfs/redesign_2016/about/delight.png);
   background-repeat: no-repeat;
 }
-/* line 60, ../sass/about.scss */
 .delight .values .icon.icon-2 {
   background-position: -126px 0;
 }
-/* line 63, ../sass/about.scss */
 .delight .values .icon.icon-3 {
   background-position: -230px 0;
 }
-/* line 66, ../sass/about.scss */
 .delight .values .icon.icon-4 {
   background-position: -332px 0;
 }
-/* line 69, ../sass/about.scss */
 .delight .values .icon.icon-5 {
   background-position: -432px 0;
 }
-/* line 72, ../sass/about.scss */
 .delight .values .icon.icon-6 {
   background-position: -522px 0;
 }
-/* line 75, ../sass/about.scss */
 .delight .values .icon.icon-7 {
   background-position: -622px 0;
 }
-/* line 79, ../sass/about.scss */
 .delight .values .text {
   color: #fff;
   font-family: "Lato-Light";
   font-size: 16px;
   line-height: 24px;
 }
-/* line 84, ../sass/about.scss */
 .delight .values .text:first-letter {
   font-family: "Lato-Semibold";
 }
-/* line 88, ../sass/about.scss */
 .delight .values span {
   display: inline-block;
 }
 
-/* line 96, ../sass/about.scss */
 .donation .activities .activity {
   width: 300px;
   display: inline-block;
@@ -117,24 +95,20 @@ strong {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 102, ../sass/about.scss */
 .donation .activities .activity .icon {
   display: inline-block;
 }
-/* line 104, ../sass/about.scss */
 .donation .activities .activity .icon img {
   max-width: 200px;
   height: auto;
   margin-bottom: 20px;
 }
-/* line 110, ../sass/about.scss */
 .donation .activities .activity .text {
   display: block;
   font-size: 16px;
   line-height: normal;
 }
 
-/* line 119, ../sass/about.scss */
 .behind-the-curtain {
   background: -moz-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
   /* FF3.6-15 */
@@ -143,11 +117,9 @@ strong {
   background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
   padding-bottom: 80px;
 }
-/* line 124, ../sass/about.scss */
 .behind-the-curtain .block-title, .behind-the-curtain .block-desc, .behind-the-curtain p {
   color: #fff;
 }
-/* line 127, ../sass/about.scss */
 .behind-the-curtain .block-title {
   margin-bottom: 50px;
 }

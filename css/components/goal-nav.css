@@ -5,19 +5,16 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 9, ../../sass/components/goal-nav.scss */
 body {
   background: #f5f6f5;
   font-size: 16px;
 }
 
-/* line 13, ../../sass/components/goal-nav.scss */
 a {
   color: #1C94EE;
   text-decoration: none;
 }
 
-/* line 17, ../../sass/components/goal-nav.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "perform-icon" !important;
   font-style: normal !important;

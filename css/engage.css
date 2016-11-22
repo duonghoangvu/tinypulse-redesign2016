@@ -23,189 +23,155 @@
   src: url("fonts/Lato-Thin.eot");
   src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
 }
-/* line 3, ../sass/engage.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 6, ../sass/engage.scss */
 .header-graphics {
   background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage-header-mobile-bg.png);
 }
-/* line 9, ../sass/engage.scss */
 .header-graphics .content h1 {
   margin-top: 80px;
 }
-/* line 12, ../sass/engage.scss */
 .header-graphics .content .try-it-form {
   margin: 35px auto 50px;
 }
 
-/* line 17, ../sass/engage.scss */
 .active {
   display: block;
 }
 
-/* line 20, ../sass/engage.scss */
 .overview-desktop {
   display: none;
 }
 
-/* line 24, ../sass/engage.scss */
 .overview .title {
   color: #1C94EE;
   font-size: 20px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   text-align: left;
   padding: 0 15px;
 }
-/* line 31, ../sass/engage.scss */
 .overview .content-desc {
   font-size: 18px;
   color: #000;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   margin: 15px 0px;
   text-align: left;
   line-height: 25px;
   padding: 0 15px;
 }
-/* line 41, ../sass/engage.scss */
 .overview .slide-icon img {
   width: 85px;
   margin: 30px;
 }
-/* line 47, ../sass/engage.scss */
 .overview .overview-img img {
   width: 100%;
   border-bottom: 1px solid #DADADA;
 }
-/* line 52, ../sass/engage.scss */
 .overview .block-content {
   display: none;
 }
-/* line 55, ../sass/engage.scss */
 .overview .active {
   display: block !important;
 }
 
-/* line 60, ../sass/engage.scss */
 .features .feature {
   text-align: left;
   font-size: 16px;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   line-height: 24px;
   padding-bottom: 30px;
   display: block;
 }
-/* line 68, ../sass/engage.scss */
 .features .content-title {
   font-size: 20px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   padding: 0 15px;
 }
-/* line 73, ../sass/engage.scss */
 .features p {
   padding: 0 15px;
 }
-/* line 76, ../sass/engage.scss */
 .features .icon {
   text-align: center;
 }
-/* line 79, ../sass/engage.scss */
 .features img {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 83, ../sass/engage.scss */
 .features .feature-1 img {
   max-width: 450px;
 }
-/* line 86, ../sass/engage.scss */
 .features .feature-2 img {
   max-width: 298px;
 }
-/* line 89, ../sass/engage.scss */
 .features .feature-2, .features .feature-3 {
   border-top: 1px solid #DADADA;
 }
-/* line 92, ../sass/engage.scss */
 .features .feature-3 img {
   margin-top: 20px;
   max-width: 395px;
 }
-/* line 96, ../sass/engage.scss */
 .features .feature-desc {
   max-width: 570px;
   margin: 0 auto;
 }
-/* line 100, ../sass/engage.scss */
 .features strong {
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
 }
-/* line 103, ../sass/engage.scss */
 .features .mobile-download {
   display: none;
 }
 
-/* line 107, ../sass/engage.scss */
 .how-it-works-desktop {
   display: none;
 }
 
-/* line 111, ../sass/engage.scss */
 .how-it-works .block-content {
   line-height: 24px;
   font-size: 16px;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   display: none;
   height: 570px;
   position: relative;
   max-width: 570px;
   margin: 0 auto;
 }
-/* line 121, ../sass/engage.scss */
 .how-it-works img {
   width: 70px;
   margin-bottom: 30px;
   margin-top: 15px;
 }
-/* line 126, ../sass/engage.scss */
 .how-it-works .content-title {
   font-size: 20px;
   color: #1C94EE;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   text-align: left;
   padding: 0 15px;
 }
-/* line 133, ../sass/engage.scss */
 .how-it-works p {
   text-align: left;
   padding: 0 15px;
 }
-/* line 137, ../sass/engage.scss */
 .how-it-works .slide-icon {
   position: absolute;
   bottom: 0px;
   width: 100%;
 }
-/* line 141, ../sass/engage.scss */
 .how-it-works .slide-icon img {
   width: 135px;
 }
-/* line 145, ../sass/engage.scss */
 .how-it-works .active {
   display: block !important;
 }
-/* line 148, ../sass/engage.scss */
 .how-it-works .icon {
   height: 150px;
   max-height: 150px;
 }
 
-/* line 153, ../sass/engage.scss */
 .why {
   color: #FFF;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   background: -moz-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
@@ -213,36 +179,29 @@
   background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 98%);
   padding-bottom: 40px;
 }
-/* line 160, ../sass/engage.scss */
 .why .block-desc, .why .block-title {
   color: #FFF;
 }
-/* line 163, ../sass/engage.scss */
 .why .content-title {
   font-size: 16px;
-  font-family: "Lato-Semibold";
+  font-family: "Lato-Semibold", Arial;
   line-height: 19px;
 }
-/* line 168, ../sass/engage.scss */
 .why .icon img {
   width: 60px;
   margin: 20px 0px;
 }
-/* line 172, ../sass/engage.scss */
 .why .content-desc {
   max-width: 200px;
   margin: 0 auto 40px;
   font-size: 14px;
 }
-/* line 177, ../sass/engage.scss */
 .why .nav-blocked .xs-slider-nav:before {
   display: block;
 }
-/* line 180, ../sass/engage.scss */
 .why .touch-blocked:before {
   display: block;
 }
-/* line 183, ../sass/engage.scss */
 .why .speakers {
   width: 100%;
   overflow: hidden;
@@ -253,7 +212,6 @@
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/* line 192, ../sass/engage.scss */
 .why .speakers:before {
   display: none;
   content: "";
@@ -264,47 +222,38 @@
   bottom: 0;
   z-index: 1;
 }
-/* line 202, ../sass/engage.scss */
 .why .speakers .slider-nav {
   position: absolute;
   top: 33%;
   font-size: 0;
   width: 100%;
 }
-/* line 207, ../sass/engage.scss */
 .why .speakers .slider-nav .control-nav {
   position: absolute;
   cursor: pointer;
 }
-/* line 211, ../sass/engage.scss */
 .why .speakers .slider-nav .prev {
   left: 0;
 }
-/* line 214, ../sass/engage.scss */
 .why .speakers .slider-nav .next {
   right: 0;
 }
-/* line 217, ../sass/engage.scss */
 .why .speakers .slider-nav img {
   height: 45px;
 }
-/* line 221, ../sass/engage.scss */
 .why .speakers .speaker-container {
   -webkit-backface-visibility: hidden;
   height: 100%;
 }
-/* line 224, ../sass/engage.scss */
 .why .speakers .speaker-container:after {
   content: "";
   width: 100%;
   height: 1px;
   display: inline-block;
 }
-/* line 230, ../sass/engage.scss */
 .why .speakers .speaker-container .speaker {
   float: left;
 }
-/* line 235, ../sass/engage.scss */
 .why .indicator {
   width: 12px;
   height: 12px;
@@ -315,11 +264,9 @@
   border: 2px solid #FFF;
   transition: all 0.3s;
 }
-/* line 245, ../sass/engage.scss */
 .why .indicator.active {
   background-color: #FFF;
 }
-/* line 248, ../sass/engage.scss */
 .why .indicators-wrapper {
   width: 85px;
   padding: 10px 0 7px 0;
@@ -328,64 +275,52 @@
   border-radius: 19px;
   text-align: center;
 }
-/* line 256, ../sass/engage.scss */
 .why .xs-slider-indicators {
   display: block;
   margin-top: 30px;
   margin-bottom: 40px;
 }
-/* line 261, ../sass/engage.scss */
 .why .slider-nav {
   display: none;
 }
-/* line 264, ../sass/engage.scss */
 .why .speaker {
   /*margin: 0 15px;*/
   line-height: 20px;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   /*display: none;*/
 }
-/* line 269, ../sass/engage.scss */
 .why .speaker .speaker-content {
   background-color: rgba(255, 255, 255, 0.2);
   height: 500px;
   max-width: 300px;
   margin: 0 auto;
 }
-/* line 275, ../sass/engage.scss */
 .why .speaker .speaker-desc {
   font-size: 14px;
 }
-/* line 278, ../sass/engage.scss */
 .why .speaker img {
   width: 100%;
   display: block;
   max-width: 300px;
 }
-/* line 283, ../sass/engage.scss */
 .why .speaker p {
   padding: 5px 15px;
 }
-/* line 286, ../sass/engage.scss */
 .why .speaker .slide-icon {
   text-align: center;
   margin: 30px 0px;
 }
-/* line 289, ../sass/engage.scss */
 .why .speaker .slide-icon img {
   width: 85px;
   margin: 0 auto;
 }
-/* line 294, ../sass/engage.scss */
 .why .speaker .speaker-name {
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   line-height: 22px;
 }
-/* line 299, ../sass/engage.scss */
 .why .read-more-section {
   margin: 0 15px;
 }
-/* line 302, ../sass/engage.scss */
 .why .read-more {
   width: 100%;
   max-width: 300px;
@@ -395,17 +330,15 @@
   padding: 10px;
   border-radius: 2px;
   font-size: 20px;
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
   color: #FFF;
   box-sizing: border-box;
 }
-/* line 314, ../sass/engage.scss */
 .why .read-more:hover {
   background: #fff;
   color: #333;
 }
 
-/* line 320, ../sass/engage.scss */
 .clients {
   background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
   /* FF3.6-15 */
@@ -418,32 +351,27 @@
   font-size: 0;
   padding: 30px 10px 20px 10px;
 }
-/* line 327, ../sass/engage.scss */
 .clients .container {
   max-width: 100%;
 }
-/* line 330, ../sass/engage.scss */
 .clients .block-title {
   color: #FFF;
   font-size: 30px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   line-height: 36px;
   width: 80%;
   margin-bottom: 7px;
 }
-/* line 338, ../sass/engage.scss */
 .clients .client-logos {
   padding: 30px 15px;
   text-align: center;
 }
-/* line 342, ../sass/engage.scss */
 .clients img {
   margin: 10px 20px;
   width: 100px;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 348, ../sass/engage.scss */
 .clients .try-it-form {
   padding: 17px 20px;
   font-size: 0;
@@ -451,7 +379,6 @@
   max-width: 380px;
   margin: 0 auto 50px;
 }
-/* line 354, ../sass/engage.scss */
 .clients .try-it-form input, .clients .try-it-form button {
   display: inline-block;
   vertical-align: top;
@@ -466,65 +393,54 @@
   min-height: inherit;
   text-transform: none;
 }
-/* line 368, ../sass/engage.scss */
 .clients .try-it-form input {
   width: 100%;
   color: #000;
   text-align: center;
   margin-bottom: 10px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   font-size: 15px;
 }
-/* line 376, ../sass/engage.scss */
 .clients .try-it-form button {
   width: 100%;
   background: #00C26B;
   color: #fff;
-  font-family: "Lato-Semibold";
+  font-family: "Lato-Semibold", Arial;
   font-size: 16px;
 }
-/* line 382, ../sass/engage.scss */
 .clients .try-it-form button:hover {
   opacity: 0.9;
   cursor: pointer;
 }
-/* line 387, ../sass/engage.scss */
 .clients .try-it-form .hbspt-form {
   height: 0;
   overflow: hidden;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 394, ../sass/engage.scss */
   .header-graphics {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
     height: 400px;
   }
-  /* line 397, ../sass/engage.scss */
   .header-graphics:before {
     display: none;
   }
-  /* line 400, ../sass/engage.scss */
   .header-graphics .content {
     top: 0;
     margin-top: 30px;
   }
-  /* line 403, ../sass/engage.scss */
   .header-graphics .content .try-it-form {
     margin: 0 auto;
   }
 
-  /* line 408, ../sass/engage.scss */
   .main-content {
     overflow: hidden;
   }
 
-  /* line 411, ../sass/engage.scss */
   .overview {
     display: none;
   }
 
-  /* line 414, ../sass/engage.scss */
   .overview-desktop {
     display: block;
     font-size: 0px;
@@ -550,13 +466,11 @@
     /*transition: all .3s;*/
     /*}*/
   }
-  /* line 417, ../sass/engage.scss */
   .overview-desktop .overview-content {
     position: relative;
     height: 600px;
     border-bottom: 1px solid #DADADA;
   }
-  /* line 422, ../sass/engage.scss */
   .overview-desktop .block-content {
     text-align: left;
     padding: 15px;
@@ -565,25 +479,21 @@
     vertical-align: top;
     border-radius: 3px;
   }
-  /* line 429, ../sass/engage.scss */
   .overview-desktop .block-content:hover {
     cursor: pointer;
   }
-  /* line 433, ../sass/engage.scss */
   .overview-desktop .content-desc {
     font-size: 16px;
-    font-family: "Lato-Light";
+    font-family: "Lato-Light", Arial;
     line-height: 24px;
   }
-  /* line 438, ../sass/engage.scss */
   .overview-desktop .title {
     font-size: 24px;
-    font-family: "Lato-Regular";
+    font-family: "Lato-Regular", Arial;
     line-height: 29px;
     color: #000;
     margin-bottom: 15px;
   }
-  /* line 445, ../sass/engage.scss */
   .overview-desktop .right-side {
     width: 48%;
     display: inline-block;
@@ -592,7 +502,6 @@
     position: absolute;
     top: 0;
   }
-  /* line 452, ../sass/engage.scss */
   .overview-desktop .right-side .overview-img {
     height: 600px;
     width: 900px;
@@ -601,101 +510,80 @@
     background-position: top;
     display: none;
   }
-  /* line 460, ../sass/engage.scss */
   .overview-desktop .right-side .img-1 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/overview1.png);
   }
-  /* line 463, ../sass/engage.scss */
   .overview-desktop .right-side .img-2 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/overview2.png);
   }
-  /* line 466, ../sass/engage.scss */
   .overview-desktop .right-side .img-3 {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/overview3.png);
   }
-  /* line 470, ../sass/engage.scss */
   .overview-desktop .overview-default .block-content {
     margin-top: 30px;
   }
-  /* line 474, ../sass/engage.scss */
   .overview-desktop .overview-block.selected .overview-img {
     display: block;
     transition: all ease .5s;
   }
-  /* line 478, ../sass/engage.scss */
   .overview-desktop .overview-block.selected .block-content {
     background-color: rgba(28, 148, 238, 0.1);
     transition: all .3s;
   }
-  /* line 481, ../sass/engage.scss */
   .overview-desktop .overview-block.selected .block-content .title {
     color: #1C94EE;
   }
 
-  /* line 508, ../sass/engage.scss */
   .features {
     font-size: 0;
   }
-  /* line 510, ../sass/engage.scss */
   .features .icon {
     display: inline-block;
     width: 50%;
   }
-  /* line 514, ../sass/engage.scss */
   .features .feature-desc {
     display: inline-block;
     width: 50%;
   }
-  /* line 518, ../sass/engage.scss */
   .features .feature-2 {
     float: right;
     text-align: center;
   }
-  /* line 522, ../sass/engage.scss */
   .features .feature-desc-1 {
     float: right;
     margin-top: 20px;
   }
-  /* line 526, ../sass/engage.scss */
   .features .feature-desc-2 {
     border-top: 1px solid #DADADA;
   }
-  /* line 528, ../sass/engage.scss */
   .features .feature-desc-2 .content-title {
     margin-top: 90px;
   }
-  /* line 532, ../sass/engage.scss */
   .features .feature-3 img {
     margin-top: 100px;
   }
-  /* line 535, ../sass/engage.scss */
   .features .feature-desc-3 {
     float: right;
     border-top: 1px solid #DADADA;
   }
-  /* line 538, ../sass/engage.scss */
   .features .feature-desc-3 .content-title {
     margin-top: 120px;
   }
-  /* line 542, ../sass/engage.scss */
   .features p {
     padding: 10px 15px;
   }
-  /* line 545, ../sass/engage.scss */
   .features .mobile-download {
     display: block;
     font-size: 18px;
-    font-family: "Lato-Regular";
+    font-family: "Lato-Regular", Arial;
     line-height: 22px;
     color: #9B9B9B;
     padding: 0px 15px;
   }
-  /* line 552, ../sass/engage.scss */
   .features .mobile-download span {
     vertical-align: middle;
     margin-right: 20px;
   }
-  /* line 556, ../sass/engage.scss */
   .features .mobile-download img {
     max-width: 100px;
     margin-bottom: 0;
@@ -704,26 +592,21 @@
     vertical-align: middle;
   }
 
-  /* line 566, ../sass/engage.scss */
   .why .block-content {
     display: inline-block;
     width: 33%;
     text-align: center;
     font-size: 0;
   }
-  /* line 572, ../sass/engage.scss */
   .why .speakers {
     text-align: center;
   }
-  /* line 575, ../sass/engage.scss */
   .why .speakers .speaker .slide-icon {
     display: none;
   }
-  /* line 578, ../sass/engage.scss */
   .why .speakers .speaker .speaker-img {
     display: inline-block;
   }
-  /* line 581, ../sass/engage.scss */
   .why .speakers .speaker .speaker-desc {
     max-width: 500px;
     display: inline-block;
@@ -732,24 +615,20 @@
     position: relative;
     text-align: left;
   }
-  /* line 588, ../sass/engage.scss */
   .why .speakers .speaker .speaker-desc .speaker-name {
     position: absolute;
     right: 0;
     bottom: 0;
   }
-  /* line 594, ../sass/engage.scss */
   .why .speakers .speaker .speaker-content {
     max-width: 800px;
     font-size: 0;
     height: 200px;
     display: inline-block;
   }
-  /* line 599, ../sass/engage.scss */
   .why .speakers .speaker .speaker-content p {
     padding: 0 15px;
   }
-  /* line 605, ../sass/engage.scss */
   .why .prev-speaker, .why .next-speaker {
     display: inline-block;
     position: relative;
@@ -758,34 +637,27 @@
     top: 50%;
     transform: translate(0, 35%);
   }
-  /* line 613, ../sass/engage.scss */
   .why .prev-speaker {
     margin-right: 15px;
   }
-  /* line 616, ../sass/engage.scss */
   .why .next-speaker {
     margin-left: 15px;
   }
-  /* line 619, ../sass/engage.scss */
   .why .read-more {
     margin-top: 50px;
   }
-  /* line 623, ../sass/engage.scss */
   .why .control-button:hover {
     cursor: pointer;
   }
-  /* line 626, ../sass/engage.scss */
   .why .control-button img {
     display: inline-block;
     max-width: 30px;
   }
 
-  /* line 632, ../sass/engage.scss */
   .how-it-works {
     display: none;
   }
 
-  /* line 635, ../sass/engage.scss */
   .how-it-works-desktop {
     display: block;
     padding-left: 15px;
@@ -808,11 +680,9 @@
     /*transition: all .3s;*/
     /*}*/
   }
-  /* line 640, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content:hover {
     cursor: pointer;
   }
-  /* line 643, ../sass/engage.scss */
   .how-it-works-desktop .block-content {
     margin-bottom: 100px;
     margin-top: 60px;
@@ -821,23 +691,20 @@
     left: 0;
     display: none;
   }
-  /* line 650, ../sass/engage.scss */
   .how-it-works-desktop .block-content .content-title {
     font-size: 20px;
     color: #1C94EE;
-    font-family: "Lato-Regular";
+    font-family: "Lato-Regular", Arial;
     text-align: left;
     padding: 0 15px;
   }
-  /* line 657, ../sass/engage.scss */
   .how-it-works-desktop .block-content p {
     text-align: left;
     padding: 0 15px;
     font-size: 16px;
-    font-family: "Lato-Light";
+    font-family: "Lato-Light", Arial;
     line-height: 24px;
   }
-  /* line 665, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons {
     padding-left: 15px;
     padding-right: 15px;
@@ -845,18 +712,15 @@
     font-size: 0px;
     position: relative;
   }
-  /* line 671, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-content {
     display: inline-block;
     width: 20%;
     vertical-align: top;
   }
-  /* line 676, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-icon {
     text-align: center;
     position: relative;
   }
-  /* line 680, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .icon {
     width: 63px;
     height: 94px;
@@ -864,27 +728,21 @@
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/engage/how-it-works/hiw-small-sprite.png);
     background-repeat: no-repeat;
   }
-  /* line 687, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-1 {
     background-position: 0 0;
   }
-  /* line 690, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-2 {
     background-position: -85px 0;
   }
-  /* line 693, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-3 {
     background-position: -168px 0;
   }
-  /* line 696, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-4 {
     background-position: -253px 0;
   }
-  /* line 699, ../sass/engage.scss */
   .how-it-works-desktop .hiw-icons .hiw-5 {
     background-position: -338px 0;
   }
-  /* line 703, ../sass/engage.scss */
   .how-it-works-desktop .hiw-wrapper {
     width: 90px;
     height: 90px;
@@ -895,35 +753,28 @@
     left: 0;
     right: 0;
   }
-  /* line 714, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content.selected .icon {
     background-position-y: -117px;
   }
-  /* line 717, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content.selected .block-content {
     display: block;
     transition: all .3s;
   }
-  /* line 721, ../sass/engage.scss */
   .how-it-works-desktop .hiw-content.selected .hiw-wrapper {
     background-color: rgba(28, 148, 238, 0.1);
   }
 
-  /* line 743, ../sass/engage.scss */
   .clients .client {
     width: 15%;
     text-align: center;
   }
-  /* line 747, ../sass/engage.scss */
   .clients .client-logos {
     text-align: center;
   }
-  /* line 750, ../sass/engage.scss */
   .clients .block-title {
     width: 100%;
     margin-top: 20px;
   }
-  /* line 754, ../sass/engage.scss */
   .clients img {
     margin-left: 20px;
     margin-right: 20px;
@@ -932,14 +783,12 @@
     width: 100px;
     display: inline-block;
   }
-  /* line 762, ../sass/engage.scss */
   .clients .try-it-form {
     max-width: 450px;
     box-sizing: border-box;
     margin: 0 auto;
     padding-bottom: 30px;
   }
-  /* line 767, ../sass/engage.scss */
   .clients .try-it-form input {
     font-size: 14px;
     padding: 7px 17px;
@@ -947,7 +796,6 @@
     border-radius: 4px 0 0 4px;
     text-align: left;
   }
-  /* line 774, ../sass/engage.scss */
   .clients .try-it-form button {
     font-size: 14px;
     line-height: 19px;
@@ -956,12 +804,10 @@
     border-radius: 0 4px 4px 0;
   }
 
-  /* line 783, ../sass/engage.scss */
   .slider-nav {
     display: block !important;
   }
 
-  /* line 786, ../sass/engage.scss */
   .xs-slider-indicators {
     display: none !important;
   }

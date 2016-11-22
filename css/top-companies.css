@@ -1,33 +1,26 @@
-/* line 7, ../sass/top-companies.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 10, ../sass/top-companies.scss */
 .subnav li.top-companies {
   display: inline-block;
   font-family: "Lato-Bold";
 }
 
-/* line 14, ../sass/top-companies.scss */
 .top-overview {
   border-bottom: 1px solid #DADADA;
 }
-/* line 16, ../sass/top-companies.scss */
 .top-overview .block-title {
   width: 260px;
   margin: 0px auto 40px;
 }
-/* line 20, ../sass/top-companies.scss */
 .top-overview .top-companies-logo {
   width: 200px;
   margin: 0 auto;
 }
-/* line 23, ../sass/top-companies.scss */
 .top-overview .top-companies-logo img {
   width: 100%;
 }
-/* line 27, ../sass/top-companies.scss */
 .top-overview .content-desc {
   text-align: left;
   font-size: 18px;
@@ -37,13 +30,11 @@
   padding: 20px;
   margin-bottom: 40px;
 }
-/* line 36, ../sass/top-companies.scss */
 .top-overview .overview-recognition {
   font-family: "Lato-Semibold";
   color: #1C94EE;
 }
 
-/* line 41, ../sass/top-companies.scss */
 .customers {
   padding-bottom: 20px;
   padding-top: 10px;
@@ -51,15 +42,12 @@
   display: inline-block;
   width: 100%;
 }
-/* line 47, ../sass/top-companies.scss */
 .customers .logos {
   font-size: 0;
 }
-/* line 49, ../sass/top-companies.scss */
 .customers .logos .row-fluid-wrapper {
   display: inline-block;
 }
-/* line 53, ../sass/top-companies.scss */
 .customers .customers-logo {
   width: 135px;
   height: 80px;
@@ -73,11 +61,9 @@
   transition: all 0.3s;
   cursor: pointer;
 }
-/* line 65, ../sass/top-companies.scss */
 .customers .customers-logo.active {
   background: #E8F4FD;
 }
-/* line 68, ../sass/top-companies.scss */
 .customers .customers-logo img {
   max-width: 100%;
   max-height: 100%;
@@ -85,136 +71,113 @@
   cursor: pointer;
 }
 
-/* line 76, ../sass/top-companies.scss */
 .recognition {
   font-size: 18px;
   color: #000;
   padding-bottom: 30px;
 }
-/* line 80, ../sass/top-companies.scss */
 .recognition .block-title {
   margin-bottom: 30px;
   font-size: 24px;
   line-height: 29px;
 }
-/* line 85, ../sass/top-companies.scss */
 .recognition .block-content {
   padding: 0 20px;
   margin-bottom: 50px;
 }
-/* line 89, ../sass/top-companies.scss */
 .recognition .content-title {
   line-height: 26px;
   font-family: "Lato-Semibold";
   text-align: left;
 }
-/* line 94, ../sass/top-companies.scss */
 .recognition .content-desc {
   line-height: 30px;
   font-family: "Lato-Light";
 }
-/* line 97, ../sass/top-companies.scss */
 .recognition .content-desc li {
   text-align: left;
   font-size: 36px;
   margin-bottom: 20px;
 }
-/* line 101, ../sass/top-companies.scss */
 .recognition .content-desc li span {
   font-size: 18px;
   vertical-align: top;
 }
-/* line 105, ../sass/top-companies.scss */
 .recognition .content-desc li a {
   color: #1C94EE;
   font-family: "Lato-Semibold";
   vertical-align: top;
 }
 
-/* line 114, ../sass/top-companies.scss */
 .customer .customer-logo {
   width: 250px;
   margin: 40px auto 40px;
 }
-/* line 117, ../sass/top-companies.scss */
 .customer .customer-logo img {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
   display: block;
 }
-/* line 123, ../sass/top-companies.scss */
 .customer .customer-logo img.big-img {
   max-width: 130px;
 }
-/* line 127, ../sass/top-companies.scss */
 .customer .customer-video {
   margin: 0 auto 50px;
   text-align: center;
 }
-/* line 130, ../sass/top-companies.scss */
 .customer .customer-video iframe, .customer .customer-video video {
   max-width: 350px;
   width: 100%;
 }
-/* line 135, ../sass/top-companies.scss */
 .customer hr {
   color: #979797;
   width: 130px;
 }
-/* line 139, ../sass/top-companies.scss */
 .customer .customer-quote {
   text-align: center;
   padding: 30px 0px;
   max-width: 800px;
   margin: 0 auto;
 }
-/* line 144, ../sass/top-companies.scss */
 .customer .customer-quote .content {
   font-size: 24px;
   line-height: 29px;
   font-family: "Lato-Light";
   margin-bottom: 20px;
 }
-/* line 150, ../sass/top-companies.scss */
 .customer .customer-quote .author {
   font-size: 18px;
   line-height: 22px;
   color: #9B9B9B;
   font-family: "Lato-Regular";
 }
-/* line 157, ../sass/top-companies.scss */
 .customer .employees-quotes {
   line-height: 26px;
   font-family: "Lato-Light";
   margin-top: 50px;
   font-size: 0;
 }
-/* line 162, ../sass/top-companies.scss */
 .customer .employees-quotes .employee-quote {
   font-size: 18px;
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 26px;
 }
-/* line 167, ../sass/top-companies.scss */
 .customer .employees-quotes .employee-quote .employee-name {
   font-family: "Lato-Semibold";
   margin-bottom: 30px;
 }
-/* line 171, ../sass/top-companies.scss */
 .customer .employees-quotes .employee-quote .content {
   font-family: "Lato-Light";
 }
 
-/* line 177, ../sass/top-companies.scss */
 .customer-content {
   border-top: 0;
   max-height: 0;
   overflow: hidden;
   padding: 0;
 }
-/* line 182, ../sass/top-companies.scss */
 .customer-content.active {
   transition: max-height 1s;
   padding: 0 20px 40px;
@@ -222,88 +185,71 @@
   border-bottom: 1px solid #dadada;
 }
 
-/* line 190, ../sass/top-companies.scss */
 .other-customers {
   margin-top: 30px;
 }
-/* line 192, ../sass/top-companies.scss */
 .other-customers a {
   color: #1C94EE;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 198, ../sass/top-companies.scss */
   .subnav li.top-companies:before {
     transform: scaleX(1);
   }
 
-  /* line 202, ../sass/top-companies.scss */
   .top-overview .block-title {
     width: 100%;
   }
-  /* line 205, ../sass/top-companies.scss */
   .top-overview .content-desc {
     padding-top: 30px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  /* line 211, ../sass/top-companies.scss */
   .customers {
     border-bottom: 1px solid #DADADA;
     padding-bottom: 40px;
   }
-  /* line 214, ../sass/top-companies.scss */
   .customers .block-desc {
     font-size: 24px;
   }
-  /* line 217, ../sass/top-companies.scss */
   .customers .logos {
     font-size: 0;
   }
-  /* line 220, ../sass/top-companies.scss */
   .customers .customers-logo {
     width: 180px;
     height: 110px;
     line-height: 110px;
   }
 
-  /* line 226, ../sass/top-companies.scss */
   .recognition {
     font-size: 16px;
     line-height: 24px;
   }
-  /* line 230, ../sass/top-companies.scss */
   .recognition .content-desc li {
     font-size: 32px;
   }
-  /* line 232, ../sass/top-companies.scss */
   .recognition .content-desc li span {
     font-size: 16px;
   }
 
-  /* line 240, ../sass/top-companies.scss */
   .customer .customer-video iframe, .customer .customer-video video {
     max-width: 720px;
     height: 405px;
   }
-  /* line 246, ../sass/top-companies.scss */
   .customer .employees-quotes .employee-quote {
     display: inline-block;
     width: 29%;
     margin: 18px;
     vertical-align: top;
   }
-  /* line 251, ../sass/top-companies.scss */
   .customer .employees-quotes .employee-quote .employee-name {
     height: 50px;
   }
-  /* line 257, ../sass/top-companies.scss */
   .customer .two-columns .employee-quote {
     width: 45%;
   }
 
-  /* line 262, ../sass/top-companies.scss */
   .other-customers {
     margin: 18px;
   }

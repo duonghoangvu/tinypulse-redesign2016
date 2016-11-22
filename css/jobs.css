@@ -1,42 +1,33 @@
-/* line 7, ../sass/jobs.scss */
 strong {
   font-family: "Lato-Bold";
 }
 
-/* line 11, ../sass/jobs.scss */
 .content-block {
   padding-bottom: 50px;
 }
-/* line 13, ../sass/jobs.scss */
 .content-block .block-title {
   margin-bottom: 50px;
 }
-/* line 16, ../sass/jobs.scss */
 .content-block .block-desc {
   margin-bottom: 10px;
 }
-/* line 19, ../sass/jobs.scss */
 .content-block .block-content {
   padding: 0 15px;
 }
-/* line 21, ../sass/jobs.scss */
 .content-block .block-content img {
   max-width: 100%;
   margin: 40px 0;
 }
-/* line 25, ../sass/jobs.scss */
 .content-block .block-content p {
   text-align: left;
   font-family: "Lato-Light";
   line-height: 26px;
   font-size: 18px;
 }
-/* line 31, ../sass/jobs.scss */
 .content-block .block-content ul {
   padding: 0;
   margin: 0 0 0 18px;
 }
-/* line 34, ../sass/jobs.scss */
 .content-block .block-content ul li {
   text-align: left;
   font-size: 18px;
@@ -45,29 +36,23 @@ strong {
   margin-bottom: 5px;
 }
 
-/* line 45, ../sass/jobs.scss */
 .jobs {
   border: 1px solid #DADADA;
   margin: 50px 0 70px;
   display: inline-block;
 }
-/* line 50, ../sass/jobs.scss */
 .jobs .job.expanded {
   border-bottom: 1px solid #DADADA;
 }
-/* line 53, ../sass/jobs.scss */
 .jobs .job.expanded .job-title {
   border-color: #dadada;
 }
-/* line 55, ../sass/jobs.scss */
 .jobs .job.expanded .job-title:after {
   transform: rotate(0deg);
 }
-/* line 59, ../sass/jobs.scss */
 .jobs .job.expanded .job-desc {
   max-height: 800px;
 }
-/* line 63, ../sass/jobs.scss */
 .jobs .job .job-title {
   margin: 0;
   font-family: "Lato-Semibold";
@@ -77,7 +62,6 @@ strong {
   border-bottom: 1px solid #dadada;
   transition: all 0.5s;
 }
-/* line 71, ../sass/jobs.scss */
 .jobs .job .job-title:after {
   transition: all 0.3s;
   content: "\f078";
@@ -88,7 +72,6 @@ strong {
   -webkit-font-smoothing: antialiased;
   transform: rotate(-90deg);
 }
-/* line 82, ../sass/jobs.scss */
 .jobs .job .job-desc {
   max-height: 0;
   overflow: hidden;
@@ -96,11 +79,9 @@ strong {
   text-align: left;
   padding: 0 20px;
 }
-/* line 89, ../sass/jobs.scss */
 .jobs .job .job-desc p {
   padding-top: 10px;
 }
-/* line 92, ../sass/jobs.scss */
 .jobs .job .job-desc a {
   color: #1C94EE;
   text-align: left;
@@ -109,7 +90,6 @@ strong {
 }
 
 @media screen and (min-width: 960px) {
-  /* line 104, ../sass/jobs.scss */
   .content-block .block-content {
     padding: 0;
   }

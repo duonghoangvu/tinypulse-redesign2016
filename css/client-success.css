@@ -23,49 +23,40 @@
   src: url("fonts/Lato-Thin.eot");
   src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
 }
-/* line 3, ../sass/client-success.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 6, ../sass/client-success.scss */
 .header-graphics {
   background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage-header-mobile-bg.png);
 }
-/* line 9, ../sass/client-success.scss */
 .header-graphics .content h1 {
   margin-top: 80px;
 }
-/* line 12, ../sass/client-success.scss */
 .header-graphics .content .try-it-form {
   margin: 35px auto 50px;
 }
 
-/* line 17, ../sass/client-success.scss */
 .list-items {
   padding: 30px;
   text-align: center;
 }
-/* line 20, ../sass/client-success.scss */
 .list-items .block-container {
   border: 1px solid #DADADA;
   margin: 0 auto 20px;
   transition: all .2s ease-in-out;
   max-width: 315px;
 }
-/* line 26, ../sass/client-success.scss */
 .list-items .cs-logo {
   height: 100px;
   padding: 20px;
   line-height: 100px;
 }
-/* line 30, ../sass/client-success.scss */
 .list-items .cs-logo img {
   max-width: 100%;
   max-height: 100%;
   vertical-align: middle;
 }
-/* line 36, ../sass/client-success.scss */
 .list-items .cs-content {
   padding: 20px;
   background-color: #e1e1e1;
@@ -73,28 +64,23 @@
   text-align: left;
   position: relative;
 }
-/* line 42, ../sass/client-success.scss */
 .list-items .cs-content .title {
   font-size: 16px;
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", Arial;
   line-height: 24px;
 }
-/* line 47, ../sass/client-success.scss */
 .list-items .cs-content .desc {
   font-size: 14px;
-  font-family: "Lato-Light";
+  font-family: "Lato-Light", Arial;
   line-height: 24px;
   margin-top: 5px;
 }
-/* line 52, ../sass/client-success.scss */
 .list-items .cs-content .desc .video {
   float: right;
 }
-/* line 54, ../sass/client-success.scss */
 .list-items .cs-content .desc .video img {
   vertical-align: bottom;
 }
-/* line 59, ../sass/client-success.scss */
 .list-items .cs-content .tooltip {
   position: absolute;
   top: -32px;
@@ -110,7 +96,6 @@
   text-align: center;
   transition: all 0.2 ease-in-out;
 }
-/* line 73, ../sass/client-success.scss */
 .list-items .cs-content .tooltip:before {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
@@ -121,7 +106,6 @@
   bottom: -9px;
   margin-left: -7px;
 }
-/* line 83, ../sass/client-success.scss */
 .list-items .cs-content .tooltip:after {
   margin-left: -7px;
   border-left: 7px solid transparent;
@@ -133,45 +117,37 @@
   position: absolute;
 }
 
-/* line 96, ../sass/client-success.scss */
 li.active-tab {
   display: inline-block;
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", Arial;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 101, ../sass/client-success.scss */
   .subnav ul li.active-tab:before {
     transform: scaleX(1);
   }
 
-  /* line 104, ../sass/client-success.scss */
   .content-block .block-title {
     margin-bottom: 30px;
   }
 
-  /* line 107, ../sass/client-success.scss */
   .list-items {
     padding: 15px;
     font-size: 0;
     text-align: left;
   }
-  /* line 111, ../sass/client-success.scss */
   .list-items .block-container {
     margin-bottom: 30px;
   }
-  /* line 113, ../sass/client-success.scss */
   .list-items .block-container:hover {
     transform: scale(1.1);
   }
-  /* line 117, ../sass/client-success.scss */
   .list-items .block-content {
     width: 30%;
     display: inline-block;
     vertical-align: top;
     margin: 0 15px;
   }
-  /* line 124, ../sass/client-success.scss */
   .list-items .cs-content .title {
     height: 48px;
     display: -webkit-box;

@@ -1,9 +1,7 @@
 @charset "UTF-8";
-/* line 2, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .request-modal {
   display: none;
 }
-/* line 5, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .hero-area {
   padding-top: 90px;
   margin-top: -50px;
@@ -13,12 +11,10 @@
   font-family: "Source Sans Pro",sans-serif;
   letter-spacing: 0.6px;
 }
-/* line 14, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .custom-inner {
   padding: 0 2%;
   text-align: center;
 }
-/* line 17, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .custom-inner h1 {
   font-size: 30px;
   font-weight: 600;
@@ -26,44 +22,37 @@
   padding-bottom: 0;
   line-height: 42px;
 }
-/* line 24, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .custom-inner h3 {
   font-size: 20px;
   line-height: 24px;
   margin-top: 0;
   font-weight: 300;
 }
-/* line 34, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .benefit-section .leading-employee-content-container .leading-employee-content {
   padding: 25px 45px;
   background: rgba(28, 148, 238, 0.72);
   border-radius: 7px;
   text-align: left;
 }
-/* line 39, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .benefit-section .leading-employee-content-container .leading-employee-content h2 {
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 10px;
 }
-/* line 44, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .benefit-section .leading-employee-content-container .leading-employee-content ul {
   padding-left: 0;
 }
-/* line 46, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .benefit-section .leading-employee-content-container .leading-employee-content ul li {
   font-size: 16px;
   line-height: 20px;
   padding: 4px 0;
   list-style: none;
 }
-/* line 51, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .benefit-section .leading-employee-content-container .leading-employee-content ul li:before {
   content: '✔';
   margin-right: 15px;
   color: white;
 }
-/* line 64, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .subscribe .btn-request .request-demo-button {
   margin-top: 25px;
   width: auto;
@@ -80,11 +69,9 @@
   display: block;
   letter-spacing: 1px;
 }
-/* line 79, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .subscribe .btn-request .request-demo-button:hover {
   background-color: #d37236;
 }
-/* line 84, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .subscribe .or-text {
   display: block;
   padding: 19px;
@@ -92,7 +79,6 @@
   font-weight: 300;
   font-size: 16px;
 }
-/* line 91, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .subscribe .call-button {
   cursor: pointer;
   text-align: center;
@@ -108,25 +94,20 @@
   letter-spacing: 1px;
   line-height: 30px;
 }
-/* line 105, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .subscribe .call-button:hover {
   background-color: rgba(255, 255, 255, 0.19);
 }
-/* line 110, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .logos {
   padding: 40px 0 55px;
 }
-/* line 112, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .logos .logo {
   padding: 10px;
   height: 55px;
   display: inline-block;
 }
-/* line 116, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .logos .logo img {
   vertical-align: middle;
 }
-/* line 124, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup {
   width: 100%;
   margin-left: 0;
@@ -135,7 +116,6 @@
   top: 10%;
   min-height: 400px;
 }
-/* line 131, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .close-btn {
   top: 0px;
   right: 30px;
@@ -143,7 +123,6 @@
   font-family: "Lato-Bold";
   color: #4F4F51;
 }
-/* line 138, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .popup-content {
   border-top: 5px solid #eb742c;
   border-radius: 5px;
@@ -154,11 +133,9 @@
   margin: 0 20px;
   overflow: auto;
 }
-/* line 147, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .popup-content form {
   padding: 0 30px;
 }
-/* line 149, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .popup-content form input[type=text], .module-1 .popup-container .popup .popup-content form input[type=email], .module-1 .popup-container .popup .popup-content form input[type=number], .module-1 .popup-container .popup .popup-content form input[type=tel] {
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -169,27 +146,22 @@
   max-width: inherit;
   height: auto;
 }
-/* line 159, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .popup-content form .field.hs-form-field {
   position: relative;
   margin-bottom: 10px;
 }
-/* line 162, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .popup-content form .field.hs-form-field > label {
   position: absolute;
   top: 10px;
   left: 10px;
   font-weight: normal;
 }
-/* line 169, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .popup-content form .field.hs-form-field.focusing > label {
   display: none;
 }
-/* line 175, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .popup-content form .hs-error-msgs label {
   color: red;
 }
-/* line 179, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .popup-content form .hs-button.primary.large {
   background: #eb742c;
   box-shadow: none;
@@ -200,12 +172,10 @@
   width: 100%;
   box-sizing: border-box;
 }
-/* line 189, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .popup-content form .actions {
   margin: 0;
   padding: 0;
 }
-/* line 194, ../../sass/landing-page-modules/module-1.scss */
 .module-1 .popup-container .popup .popup-content .title {
   color: #eb742c;
   font-size: 30px;
@@ -215,38 +185,31 @@
 }
 
 @media screen and (min-width: 960px) {
-  /* line 209, ../../sass/landing-page-modules/module-1.scss */
   .module-1 .custom-inner {
     padding: 0;
   }
-  /* line 213, ../../sass/landing-page-modules/module-1.scss */
   .module-1 .benefit-section .leading-employee-content {
     width: calc(50% - 90px);
     float: left;
   }
-  /* line 217, ../../sass/landing-page-modules/module-1.scss */
   .module-1 .benefit-section .form-signup-content {
     vertical-align: top;
     padding: 0 70px;
     width: calc(50% - 140px);
     float: right;
   }
-  /* line 224, ../../sass/landing-page-modules/module-1.scss */
   .module-1 .logos {
     clear: both;
   }
-  /* line 228, ../../sass/landing-page-modules/module-1.scss */
   .module-1 .popup-container {
     /*padding-top: 20%;*/
   }
-  /* line 230, ../../sass/landing-page-modules/module-1.scss */
   .module-1 .popup-container .popup {
     width: 450px;
     left: 50%;
     margin-left: -225px;
     min-height: 480px;
   }
-  /* line 237, ../../sass/landing-page-modules/module-1.scss */
   .module-1 .popup-container .popup .popup-content form .actions {
     margin-top: 20px;
   }

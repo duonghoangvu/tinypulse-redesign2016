@@ -1,18 +1,14 @@
-/* line 1, ../sass/roi.scss */
 .block-title {
   display: none;
 }
 
-/* line 5, ../sass/roi.scss */
 .roi-calculation {
   text-align: center;
 }
-/* line 7, ../sass/roi.scss */
 .roi-calculation img {
   max-width: 500px;
   width: 100%;
 }
-/* line 11, ../sass/roi.scss */
 .roi-calculation .title-responsive {
   display: block;
   font-family: Lato-Regular;
@@ -23,19 +19,16 @@
   text-align: center;
   margin-top: 0;
 }
-/* line 22, ../sass/roi.scss */
 .roi-calculation .roi-form {
   text-align: center;
   margin-left: 30px;
   margin-right: 30px;
 }
-/* line 26, ../sass/roi.scss */
 .roi-calculation .roi-form .form-input {
   position: relative;
   max-width: 315px;
   margin: auto;
 }
-/* line 30, ../sass/roi.scss */
 .roi-calculation .roi-form .form-input input {
   background: #FFFFFF;
   border: 1px solid #DADADA;
@@ -46,7 +39,6 @@
   outline: none;
   padding-right: 10px;
 }
-/* line 40, ../sass/roi.scss */
 .roi-calculation .roi-form .form-input span {
   position: absolute;
   top: 15px;
@@ -55,24 +47,20 @@
   font-size: 14px;
   color: #9B9B9B;
 }
-/* line 49, ../sass/roi.scss */
 .roi-calculation .roi-form .form-range-slider {
   text-align: left;
   max-width: 315px;
   margin: auto;
 }
-/* line 53, ../sass/roi.scss */
 .roi-calculation .roi-form .form-range-slider label {
   font-family: Lato-Light;
   font-size: 14px;
   color: #9B9B9B;
   margin-bottom: 10px;
 }
-/* line 59, ../sass/roi.scss */
 .roi-calculation .roi-form .form-range-slider .range-slider {
   width: 100%;
 }
-/* line 62, ../sass/roi.scss */
 .roi-calculation .roi-form .form-range-slider .rangeSlider {
   width: 100%;
   background: #F1F2F1;
@@ -82,7 +70,6 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 70, ../sass/roi.scss */
 .roi-calculation .roi-form .form-range-slider .rangeSlider .rangeSlider__handle {
   background: #F37122;
   box-shadow: 0px 2px 0px 0px #D6611A;
@@ -90,7 +77,6 @@
   width: 14px;
   height: 24px;
 }
-/* line 77, ../sass/roi.scss */
 .roi-calculation .roi-form .form-range-slider .rangeSlider .rangeSlider__handle:after {
   background-image: none;
   background: #1C94EE;
@@ -105,7 +91,6 @@
   width: 38px;
   text-align: center;
 }
-/* line 91, ../sass/roi.scss */
 .roi-calculation .roi-form .form-range-slider .rangeSlider .rangeSlider__handle:before {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
@@ -116,12 +101,10 @@
   content: "";
   z-index: 10;
 }
-/* line 101, ../sass/roi.scss */
 .roi-calculation .roi-form .form-range-slider .rangeSlider .rangeSlider__fill {
   display: none;
 }
 
-/* line 109, ../sass/roi.scss */
 .roi-result {
   background-image: linear-gradient(-60deg, rgba(123, 32, 138, 0.82) 0%, #FF5C5C 100%);
   padding: 20px 35px;
@@ -129,23 +112,19 @@
   text-align: center;
   margin-top: 30px;
 }
-/* line 115, ../sass/roi.scss */
 .roi-result .desc {
   font-family: Lato-Semibold;
   font-size: 18px;
   margin-bottom: 15px;
 }
-/* line 120, ../sass/roi.scss */
 .roi-result .num {
   font-family: Lato-Semibold;
   font-size: 28px;
 }
 
-/* line 126, ../sass/roi.scss */
 .roi-detail {
   text-align: center;
 }
-/* line 128, ../sass/roi.scss */
 .roi-detail .btn {
   border: 2px solid #DADADA;
   border-radius: 3px;
@@ -158,19 +137,15 @@
   margin-bottom: 40px;
   outline: none;
 }
-/* line 143, ../sass/roi.scss */
 .roi-detail .btn-hide-detail {
   display: none;
 }
-/* line 147, ../sass/roi.scss */
 .roi-detail .details {
   display: none;
 }
-/* line 149, ../sass/roi.scss */
 .roi-detail .details .detail {
   margin-bottom: 40px;
 }
-/* line 151, ../sass/roi.scss */
 .roi-detail .details .detail .number {
   font-family: Lato-Bold;
   font-size: 22px;
@@ -179,7 +154,6 @@
   margin-top: 20px;
   margin-bottom: 15px;
 }
-/* line 159, ../sass/roi.scss */
 .roi-detail .details .detail .description {
   font-family: Lato-Regular;
   font-size: 18px;
@@ -187,98 +161,80 @@
   letter-spacing: 0.12px;
 }
 
-/* line 169, ../sass/roi.scss */
 .roi-description {
   padding: 0 30px 20px;
 }
-/* line 171, ../sass/roi.scss */
 .roi-description p {
   font-family: Lato-Light;
   font-size: 14px;
   color: #9B9B9B;
   margin: 0;
 }
-/* line 176, ../sass/roi.scss */
 .roi-description p a {
   color: #1C94EE;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 185, ../sass/roi.scss */
   .block-title {
     display: block;
   }
 
-  /* line 188, ../sass/roi.scss */
   .roi-calculation {
     font-size: 0;
   }
-  /* line 190, ../sass/roi.scss */
   .roi-calculation img {
     width: 50%;
     display: inline-block;
   }
-  /* line 195, ../sass/roi.scss */
   .roi-calculation .title-responsive {
     display: none;
   }
-  /* line 199, ../sass/roi.scss */
   .roi-calculation .roi-form {
     width: 50%;
     display: inline-block;
     margin: 55px 0 0;
     vertical-align: top;
   }
-  /* line 204, ../sass/roi.scss */
   .roi-calculation .roi-form .form-input {
     max-width: 457px;
   }
-  /* line 208, ../sass/roi.scss */
   .roi-calculation .roi-form .form-input input {
     font-size: 12px;
     width: 100%;
   }
-  /* line 213, ../sass/roi.scss */
   .roi-calculation .roi-form .form-range-slider {
     text-align: left;
     max-width: 470px;
     margin-left: 10px;
     margin-right: 5px;
   }
-  /* line 218, ../sass/roi.scss */
   .roi-calculation .roi-form .form-range-slider label {
     font-family: Lato-Light;
     font-size: 14px;
     color: #9B9B9B;
     margin-bottom: 10px;
   }
-  /* line 225, ../sass/roi.scss */
   .roi-calculation .roi-form .form-range-slider input {
     width: 100%;
   }
 
-  /* line 234, ../sass/roi.scss */
   .roi-result .desc {
     display: inline-block;
   }
-  /* line 237, ../sass/roi.scss */
   .roi-result .num {
     margin-left: 43px;
     display: inline-block;
   }
 
-  /* line 244, ../sass/roi.scss */
   .roi-detail .details {
     font-size: 0;
   }
-  /* line 246, ../sass/roi.scss */
   .roi-detail .details .detail {
     margin-bottom: 40px;
     width: 25%;
     display: inline-block;
     vertical-align: bottom;
   }
-  /* line 251, ../sass/roi.scss */
   .roi-detail .details .detail .description {
     min-height: 44px;
   }

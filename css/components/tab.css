@@ -5,19 +5,16 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 9, ../../sass/components/tab.scss */
 body {
   background: #f5f6f5;
   font-size: 16px;
 }
 
-/* line 13, ../../sass/components/tab.scss */
 a {
   color: #1C94EE;
   text-decoration: none;
 }
 
-/* line 17, ../../sass/components/tab.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "perform-icon" !important;
   font-style: normal !important;
@@ -30,23 +27,19 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 28, ../../sass/components/tab.scss */
 .pf-text-semibold {
   font-family: "SourceSansPro-SemiBold";
 }
 
-/* line 31, ../../sass/components/tab.scss */
 .pf-clickable {
   cursor: pointer;
 }
 
-/* line 34, ../../sass/components/tab.scss */
 .insight-details {
   padding: 15px;
   min-height: 200px;
 }
 
-/* line 38, ../../sass/components/tab.scss */
 .flatten-card {
   background-color: #ffffff;
   border-radius: 3px;
@@ -56,7 +49,6 @@ a {
   margin-top: 15px;
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.07);
 }
-/* line 46, ../../sass/components/tab.scss */
 .flatten-card .card-title {
   padding: 15px 15px 0 15px;
   margin-bottom: 5px;
@@ -65,7 +57,6 @@ a {
   color: #4A4A4A;
   overflow: hidden;
 }
-/* line 54, ../../sass/components/tab.scss */
 .flatten-card .card-hint {
   color: #9B9B9B;
   font-size: 14px;
@@ -74,7 +65,6 @@ a {
   display: inline-block;
   margin-left: 15px;
 }
-/* line 62, ../../sass/components/tab.scss */
 .flatten-card .card-corner {
   font-size: 14px;
   position: absolute;
@@ -84,7 +74,6 @@ a {
   width: auto;
   margin-left: 15px;
 }
-/* line 71, ../../sass/components/tab.scss */
 .flatten-card .nav-tabs.fill-horizontal {
   display: table;
   border-bottom: 1px solid #DADADA;
@@ -95,14 +84,12 @@ a {
   font-size: 15px;
   font-family: "SourceSansPro-SemiBold";
 }
-/* line 80, ../../sass/components/tab.scss */
 .flatten-card .nav-tabs.fill-horizontal li {
   display: table-cell;
   float: none;
   width: 1000px;
   margin-bottom: -1px;
 }
-/* line 85, ../../sass/components/tab.scss */
 .flatten-card .nav-tabs.fill-horizontal li a {
   border: none;
   color: #9b9b9b;
@@ -112,23 +99,19 @@ a {
   display: block;
   padding: 10px 15px;
 }
-/* line 93, ../../sass/components/tab.scss */
 .flatten-card .nav-tabs.fill-horizontal li a:hover {
   background-color: #ffffff;
   color: #4861a0;
 }
-/* line 99, ../../sass/components/tab.scss */
 .flatten-card .nav-tabs.fill-horizontal li.active a {
   cursor: default;
   color: #4861a0;
   border: none;
 }
-/* line 104, ../../sass/components/tab.scss */
 .flatten-card .nav-tabs.fill-horizontal li.active:after {
   width: 100%;
   background: #4861a0;
 }
-/* line 109, ../../sass/components/tab.scss */
 .flatten-card .nav-tabs.fill-horizontal li:after {
   content: '';
   display: block;
@@ -138,31 +121,25 @@ a {
   background: transparent;
   transition: width .3s ease, background-color .3s ease;
 }
-/* line 120, ../../sass/components/tab.scss */
 .flatten-card .nav {
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
   list-style: none;
 }
-/* line 127, ../../sass/components/tab.scss */
 .flatten-card .tab-content .tab-pane {
   display: none;
 }
-/* line 129, ../../sass/components/tab.scss */
 .flatten-card .tab-content .tab-pane.active {
   display: block;
 }
-/* line 133, ../../sass/components/tab.scss */
 .flatten-card .tab-content .fade {
   opacity: 0;
   transition: opacity 0.15s linear;
 }
-/* line 136, ../../sass/components/tab.scss */
 .flatten-card .tab-content .fade.in {
   opacity: 1;
 }
-/* line 141, ../../sass/components/tab.scss */
 .flatten-card .panel {
   margin-bottom: 22px;
   background-color: #fff;
@@ -170,7 +147,6 @@ a {
   border-radius: 2px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-/* line 148, ../../sass/components/tab.scss */
 .flatten-card .media-item {
   display: table;
   margin: 0;
@@ -178,7 +154,6 @@ a {
   box-shadow: none;
   border-radius: 0;
 }
-/* line 154, ../../sass/components/tab.scss */
 .flatten-card .media-item .media-icon {
   display: table-cell;
   vertical-align: top;
@@ -186,16 +161,13 @@ a {
   color: #DADADA;
   transition: color 300ms ease-in-out;
 }
-/* line 160, ../../sass/components/tab.scss */
 .flatten-card .media-item .media-icon .icon-2x {
   font-size: 35px;
   line-height: 0.7;
 }
-/* line 164, ../../sass/components/tab.scss */
 .flatten-card .media-item .media-icon .icon-members:before {
   content: '\e815';
 }
-/* line 168, ../../sass/components/tab.scss */
 .flatten-card .media-item .media-header-content {
   display: table-cell;
   vertical-align: top;
@@ -205,11 +177,9 @@ a {
   color: #4A4A4A;
   transition: color 300ms ease-in-out;
 }
-/* line 177, ../../sass/components/tab.scss */
 .flatten-card .media-item:first-child .media-header-content {
   border-top: none;
 }
-/* line 180, ../../sass/components/tab.scss */
 .flatten-card .media-item:hover .media-header-content, .flatten-card .media-item:hover .media-icon {
   color: #4861A0;
 }
