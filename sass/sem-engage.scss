@@ -400,9 +400,10 @@ footer{
   .overview-desktop {
     display: block;
     font-size: 0px;
+    overflow: hidden;
     .overview-content {
       position: relative;
-      height: 600px;
+      height: 582px;
     }
     .block-content {
       text-align: left;
@@ -469,7 +470,9 @@ footer{
       }
     }
   }
+  
   .features {
+    padding-top: 0;
     .feature{
       font-size: 0;
       width: 100%;
@@ -514,8 +517,8 @@ footer{
         }
         .graphics{
           img{
-            max-width: 300px;
-            margin: 0 auto;
+            max-width: 400px;
+            margin: 40px auto;
           }
         }
       }
