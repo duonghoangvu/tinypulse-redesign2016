@@ -1,0 +1,700 @@
+.clearfix {
+  clear: both;
+}
+
+.main-nav nav {
+  display: none;
+}
+
+.main-mobile-nav-container .hamburger {
+  display: none;
+}
+
+.header-graphics {
+  background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage-header-mobile-bg.png);
+}
+.header-graphics .content h1 {
+  margin-top: 70px;
+  font-size: 30px;
+}
+.header-graphics .content .sub-headline {
+  font-size: 15px;
+  font-family: "Lato-Light";
+  text-shadow: 0 2px 2px black;
+}
+.header-graphics .content .try-it-form {
+  margin: 25px auto 50px;
+  background: none;
+}
+.header-graphics .content .try-it-form input[type=submit] {
+  margin-bottom: 0;
+  background: #1EC879;
+  -webkit-appearance: none;
+  color: #fff;
+  text-align: center;
+}
+
+.main-content {
+  margin-bottom: 0;
+}
+
+footer > .container {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.overview-desktop {
+  display: none;
+}
+
+.overview .title {
+  color: #1C94EE;
+  font-size: 20px;
+  font-family: "Lato-Regular";
+  text-align: left;
+  padding: 0 15px;
+}
+.overview .content-desc {
+  font-size: 18px;
+  color: #000;
+  font-family: "Lato-Light";
+  margin: 15px 0px;
+  text-align: left;
+  line-height: 25px;
+  padding: 0 15px;
+}
+.overview .slide-icon img {
+  width: 85px;
+  margin: 30px;
+}
+.overview .overview-img img {
+  width: 100%;
+  border-bottom: 1px solid #DADADA;
+}
+.overview .block-content {
+  display: none;
+}
+.overview .active {
+  display: block !important;
+}
+
+.features .feature {
+  text-align: left;
+  font-size: 16px;
+  font-family: "Lato-Light";
+  line-height: 24px;
+  padding-bottom: 30px;
+  display: inline-block;
+  width: 100%;
+}
+.features .feature.feature-1 {
+  background: #F6F5F6;
+  padding-bottom: 0;
+}
+.features .feature .feature-desc .content-title {
+  font-size: 20px;
+  font-family: "Lato-Regular";
+  padding: 0 15px;
+  margin-top: 30px;
+}
+.features .feature .feature-desc p {
+  padding: 0 15px;
+}
+.features .feature .graphics img {
+  max-width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+.features strong {
+  font-family: "Lato-Bold";
+}
+.features .mobile-download {
+  display: none;
+}
+
+.how-it-works-desktop {
+  display: none;
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+}
+
+.how-it-works {
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+}
+.how-it-works .block-title {
+  color: #fff;
+  text-transform: capitalize;
+}
+.how-it-works .block-desc {
+  color: #fff;
+  font-family: "Lato-Light";
+}
+.how-it-works .block-content {
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "Lato-Light";
+  display: none;
+  height: 570px;
+  position: relative;
+  max-width: 570px;
+  margin: 0 auto;
+}
+.how-it-works img {
+  width: 70px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.how-it-works .content-title {
+  font-size: 20px;
+  color: #1C94EE;
+  font-family: "Lato-Regular";
+  text-align: left;
+  padding: 0 15px;
+  color: #fff;
+}
+.how-it-works p {
+  color: #fff;
+  text-align: left;
+  padding: 0 15px;
+  font-family: "Lato-Thin";
+}
+.how-it-works p strong {
+  font-family: "Lato-Regular";
+}
+.how-it-works .slide-icon {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.how-it-works .slide-icon img {
+  width: 135px;
+}
+.how-it-works .active {
+  display: block !important;
+}
+.how-it-works .icon {
+  height: 150px;
+  max-height: 150px;
+}
+
+.clients {
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  font-size: 0;
+  padding: 30px 10px 20px 10px;
+}
+.clients .container {
+  max-width: 100%;
+}
+.clients .block-title {
+  color: #FFF;
+  font-size: 30px;
+  font-family: "Lato-Regular";
+  line-height: 36px;
+  width: 80%;
+  margin-bottom: 7px;
+}
+.clients .client-logos {
+  text-align: center;
+}
+.clients .client-logos span {
+  font-size: 14px;
+  display: block;
+  color: #fff;
+  font-family: "Lato-Thin";
+  margin-bottom: 20px;
+}
+.clients .client-logos img {
+  margin: 10px 20px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.clients .try-it-form {
+  padding: 17px 20px;
+  font-size: 0;
+  border-radius: 5px;
+  max-width: 380px;
+  margin: 0 auto 50px;
+}
+.clients .try-it-form input, .clients .try-it-form button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  border-radius: 4px;
+  margin: 0;
+  border: 0;
+  transition: width 0.3s;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 0 10px;
+  min-height: inherit;
+  text-transform: none;
+}
+.clients .try-it-form input {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Lato-Regular";
+  font-size: 15px;
+}
+.clients .try-it-form button {
+  width: 100%;
+  background: #00C26B;
+  color: #fff;
+  font-family: "Lato-Semibold";
+  font-size: 16px;
+}
+.clients .try-it-form button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.clients .try-it-form .hbspt-form {
+  height: 0;
+  overflow: hidden;
+}
+
+.try-it-now {
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+  padding-bottom: 40px;
+}
+.try-it-now .block-title {
+  color: #fff;
+  font-size: 16px;
+}
+.try-it-now .try-it-form {
+  font-size: 0;
+  text-align: center;
+  margin: 20px 0;
+}
+.try-it-now .try-it-form input {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  transition: width 0.3s;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 0 10px;
+  min-height: inherit;
+  text-transform: none;
+}
+.try-it-now .try-it-form input {
+  width: 170px;
+  color: #000;
+  text-align: left;
+  margin-bottom: 10px;
+  font-family: "Lato-Regular";
+  font-size: 15px;
+  border-radius: 3px 0 0 3px;
+  border: 1px solid #dadada;
+  outline: none;
+}
+.try-it-now .try-it-form input[type=submit] {
+  width: 130px;
+  background: #00C26B;
+  color: #fff;
+  font-family: "Lato-Semibold";
+  font-size: 16px;
+  border-radius: 0 3px 3px 0;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  text-align: center;
+  border: 0;
+}
+.try-it-now .try-it-form input[type=submit]:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.try-it-now .reviews > div {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.try-it-now .reviews .client-logo {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.try-it-now .reviews .client-logo img {
+  width: 200px;
+}
+.try-it-now .reviews .review-text {
+  color: #fff;
+  font-family: "Lato-Thin";
+  font-style: italic;
+  font-size: 14px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 960px) {
+  .main-nav {
+    text-align: center;
+  }
+  .main-nav .logo {
+    margin-left: -150px;
+  }
+
+  .main-wrapper {
+    padding-bottom: 50px;
+  }
+
+  .header-graphics {
+    background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
+    height: 400px;
+  }
+  .header-graphics:before {
+    display: none;
+  }
+  .header-graphics .content {
+    top: 0;
+    margin-top: 30px;
+  }
+  .header-graphics .content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .header-graphics .content .sub-headline {
+    font-size: 20px;
+    max-width: 530px;
+    margin: 0 auto;
+  }
+  .header-graphics .content .try-it-form {
+    margin: 30px auto 0;
+  }
+  .header-graphics .content .try-it-form input[type=submit] {
+    width: 125px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .main-content {
+    overflow: hidden;
+  }
+
+  .overview {
+    display: none;
+  }
+
+  .overview-desktop {
+    display: block;
+    font-size: 0px;
+    overflow: hidden;
+  }
+  .overview-desktop .overview-content {
+    position: relative;
+    height: 582px;
+  }
+  .overview-desktop .block-content {
+    text-align: left;
+    padding: 15px;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 3px;
+  }
+  .overview-desktop .block-content:hover {
+    cursor: pointer;
+  }
+  .overview-desktop .content-desc {
+    font-size: 16px;
+    font-family: "Lato-Light";
+    line-height: 24px;
+  }
+  .overview-desktop .title {
+    font-size: 24px;
+    font-family: "Lato-Regular";
+    line-height: 29px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .overview-desktop .right-side {
+    width: 48%;
+    display: inline-block;
+    float: right;
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+  .overview-desktop .right-side .overview-img {
+    height: 600px;
+    width: 900px;
+    background-size: 900px auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: none;
+  }
+  .overview-desktop .right-side .img-1 {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/overview1.png);
+  }
+  .overview-desktop .right-side .img-2 {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/overview2.png);
+  }
+  .overview-desktop .right-side .img-3 {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage/overview/overview3.png);
+  }
+  .overview-desktop .overview-default .block-content {
+    margin-top: 30px;
+  }
+  .overview-desktop .overview-block.selected .overview-img {
+    display: block;
+    transition: all ease .5s;
+  }
+  .overview-desktop .overview-block.selected .block-content {
+    background-color: rgba(28, 148, 238, 0.1);
+    transition: all .3s;
+  }
+  .overview-desktop .overview-block.selected .block-content .title {
+    color: #1C94EE;
+  }
+
+  .features {
+    padding-top: 0;
+  }
+  .features .feature {
+    font-size: 0;
+    width: 100%;
+  }
+  .features .feature .feature-desc, .features .feature .graphics {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .features .feature .feature-desc {
+    font-size: 16px;
+    direction: ltr;
+  }
+  .features .feature .feature-desc .content-title {
+    font-size: 28px;
+    line-height: normal;
+  }
+  .features .feature.feature-1 {
+    direction: rtl;
+    padding-top: 70px;
+  }
+  .features .feature.feature-1 .feature-desc .content-title {
+    margin-top: 0;
+  }
+  .features .feature.feature-1 .graphics img {
+    max-width: 280px;
+  }
+  .features .feature.feature-2 {
+    direction: ltr;
+    padding: 30px 0;
+  }
+  .features .feature.feature-2 .feature-desc, .features .feature.feature-2 .graphics {
+    vertical-align: middle;
+  }
+  .features .feature.feature-2 .feature-desc {
+    margin: 0;
+  }
+  .features .feature.feature-2 .feature-desc .content-title {
+    margin: 0;
+  }
+  .features .feature.feature-2 .graphics img {
+    max-width: 400px;
+    margin: 40px auto;
+  }
+  .features .mobile-download {
+    background: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Lato-Regular";
+    line-height: 22px;
+    color: #9B9B9B;
+    padding: 10px 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+  .features .mobile-download span {
+    vertical-align: middle;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  .features .mobile-download img {
+    max-width: 100px;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  .how-it-works {
+    display: none;
+  }
+
+  .how-it-works-desktop {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 500px;
+  }
+  .how-it-works-desktop .hiw-content:hover {
+    cursor: pointer;
+  }
+  .how-it-works-desktop .block-content {
+    margin-bottom: 100px;
+    margin-top: 60px;
+    width: 100%;
+    max-width: inherit;
+    position: absolute;
+    left: 0;
+    display: none;
+  }
+  .how-it-works-desktop .block-content .content-title {
+    font-size: 20px;
+    font-family: "Lato-Regular";
+    text-align: left;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .how-it-works-desktop .block-content p {
+    text-align: center;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .how-it-works-desktop .hiw-icons {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-size: 0px;
+    position: relative;
+  }
+  .how-it-works-desktop .hiw-icons .hiw-content {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+  }
+  .how-it-works-desktop .hiw-icons .hiw-icon {
+    text-align: center;
+    position: relative;
+  }
+  .how-it-works-desktop .hiw-icons .icon {
+    width: 63px;
+    height: 94px;
+    display: inline-block;
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/sem/engage/hiw-small-sprite.png);
+    background-repeat: no-repeat;
+  }
+  .how-it-works-desktop .hiw-icons .hiw-1 {
+    background-position: 0 0;
+  }
+  .how-it-works-desktop .hiw-icons .hiw-2 {
+    background-position: -85px 0;
+  }
+  .how-it-works-desktop .hiw-icons .hiw-3 {
+    background-position: -168px 0;
+  }
+  .how-it-works-desktop .hiw-icons .hiw-4 {
+    background-position: -253px 0;
+  }
+  .how-it-works-desktop .hiw-icons .hiw-5 {
+    background-position: -338px 0;
+  }
+  .how-it-works-desktop .hiw-wrapper {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .how-it-works-desktop .hiw-wrapper:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    height: 2px;
+    transform: scale(0);
+    transition: all 0.3s;
+  }
+  .how-it-works-desktop .hiw-content.selected .icon {
+    background-position-y: 0 !important;
+  }
+  .how-it-works-desktop .hiw-content.selected .hiw-wrapper:after {
+    transform: scale(1);
+  }
+  .how-it-works-desktop .hiw-content.selected .block-content {
+    display: block;
+    transition: all .3s;
+  }
+
+  .clients .client {
+    width: 15%;
+    text-align: center;
+  }
+  .clients .client-logos {
+    text-align: center;
+  }
+  .clients .client-logos img, .clients .client-logos span {
+    margin: 10px 20px;
+    width: 90px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .clients .client-logos span {
+    margin: 0;
+  }
+
+  .slider-nav {
+    display: block !important;
+  }
+
+  .xs-slider-indicators {
+    display: none !important;
+  }
+
+  .try-it-now .block-title {
+    font-size: 30px;
+  }
+  .try-it-now .try-it-form {
+    margin: 20px 0;
+  }
+  .try-it-now .try-it-form input {
+    width: 220px;
+  }
+  .try-it-now .reviews {
+    font-size: 0;
+    text-align: center;
+  }
+  .try-it-now .reviews > div {
+    width: 30%;
+  }
+  .try-it-now .reviews .review-text {
+    width: 350px;
+    line-height: normal;
+    text-align: left;
+  }
+}
