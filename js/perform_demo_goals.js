@@ -1,116 +1,39 @@
-var widthOfList = function(){
-  var itemsWidth = 0;
-  $('.list li').each(function(){
-    var itemWidth = $(this).outerWidth() + 22;
-    itemsWidth+=itemWidth;
-  });
-  return itemsWidth;
-};
-
-var getLeftPosi = function(){
-  return $('.list').position().left;
-};
-
-var widthOfWrapper = function(){
-  return $('.wrapper').outerWidth();
-}
-$(window).on('resize',function(e){
-  showTabNav(Math.abs(getLeftPosi()));
-  setWrapperPosition($('.list li.active'));
-});
-
-var showGoalNav = function(current_tab){
-  first_tab = $('.list li a')[0];
-  last_tab = $('.list li a').last()[0];
-  if(current_tab == first_tab){
-    $('.next-goal').show();
-    $('.previous-goal').hide();
-  }else if(current_tab == last_tab){
-    $('.next-goal').hide();
-    $('.previous-goal').show();
-  }else{
-    $('.next-goal').show();
-    $('.previous-goal').show();
-  }
-}
-
-var showTabNav = function(endPoint){
-  showRightNav(endPoint);
-  showLeftNav(endPoint);
-}
-
-var showLeftNav = function(endPoint){
-  if(endPoint == 0){
-    $('.scroller-left').hide();
-  }else{
-    $('.scroller-left').show();
-  }
-}
-
-var showRightNav = function(endPoint){
-  console.log('endPoint '+endPoint);
-  console.log('wrapper '+ widthOfWrapper());
-  console.log('list '+ widthOfList());
-  if((endPoint + widthOfWrapper()) >= widthOfList()){
-    $('.scroller-right').hide();
-  }else{
-    $('.scroller-right').show();
-  }
-}
-
-var setWrapperPosition = function(element){
-  activePosition = element.position().left;
-  leftPosi = Math.abs(getLeftPosi());
-  wrapperLength = widthOfWrapper();
-  fullActive = activePosition + element.width();
-  console.log(wrapperLength);
-
-  if (!(activePosition >= leftPosi && fullActive <= (leftPosi + wrapperLength))){
-    $('.list').animate({left:"-"+activePosition+"px"},'slow',function(){
+$(document).ready(function(e){
+    var newGoal = function(goal_id){
+        return "<div class='col-lg-4 col-md-6 pd-lr-11 mg-t-15 goal' data-goal='sales-campaign-" + goal_id + "'>" +
+          "<img class='sample-goal' src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/goal-launch-sales-campaign.png' alt='Launch Sales Campaign' />" +
+          "<img class='sample-goal' style='display:none;' src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/goal-launch-sales-campaign-rated.png' alt='Launch Sales Campaign' />" +
+          "</div>";
+    };
+    var loadDemoGoal = function(){
+        var demo_goals = localStorage.getItem('total-demo-goals');
+        if(demo_goals){
+            for (i = 1; i <= parseInt(demo_goals); i++){
+                new_goal = newGoal(i);
+                $(".goal-list .row").append(new_goal);
+            }    
+        }
+    };
+    loadDemoGoal();
+    
+    $(".dropdown-toggle").click(function() {
+        $(this).parent().find(".dropdown-menu").toggle();
     });
-    showTabNav(activePosition);
-  }
-}
-
-showGoalNav($('.list li.active a')[0]);
-//setWrapperPosition($('.list li.active'));
-//reAdjust();
-
-$('.list li').click(function(e){
-  setWrapperPosition($(this));
-});
-
-$('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
-  showGoalNav(e.target);
-  setWrapperPosition($(e.target).parent());
-});
-
-$('.previous-goal').click(function(e){
-  prevTab = $('.list li.active').prev().find('a');
-  prevTab.tab('show');
-});
-
-$('.next-goal').click(function(e){
-  nextTab = $('.list li.active').next().find('a');
-  nextTab.tab('show');
-});
-
-$('.scroller-right').click(function() {
-  endPoint = Math.abs(getLeftPosi()) + widthOfWrapper();
-  $('.list').animate({left:"-"+endPoint+"px"},'slow',function(){
-  });
-  showTabNav(endPoint);
-});
-
-$('.scroller-left').click(function() {
-  leftPosi = Math.abs(getLeftPosi());
-  wrapperLength = widthOfWrapper();
-  if(leftPosi < wrapperLength){
-    endPoint = 0;
-  } else {
-    endPoint = leftPosi - wrapperLength;
-  }
-  $('.list').animate({left:"-"+endPoint+"px"},'slow',function(){
-  });
-  showTabNav(endPoint);
+    
+    $("#team-goal").click(function() {
+        $(this).parents('.dropdown-menu').toggle();
+    });
+    
+    $(".js-btn-submit").click(function() { 
+        var total_demo_goals = (localStorage.getItem('total-demo-goals')) ? localStorage.getItem('total-demo-goals') : "0" ;
+        current_goals = parseInt(total_demo_goals) + 1;
+        localStorage.setItem('total-demo-goals', current_goals);
+        new_goal = newGoal(current_goals);
+        $(".goal-list .row").append(new_goal);
+        $('#new-goal').modal('hide');
+    });
+    
+    $(".goal").click(function(){
+        window.location.href = "/perform-demo-goals-detail.html#"+ $(this).data('goal'); 
+    });
 });

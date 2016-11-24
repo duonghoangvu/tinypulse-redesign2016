@@ -65,7 +65,7 @@
         <div class="container-fluid">
           <div class="row top-img">
             <div class="col-xs-12 col-md-8 pd-lr-11 mg-b-15">
-              <img src="images/perform-demo/top-vertical-nav.png" />
+              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/top-vertical-nav.png" />
             </div>
           </div>
         </div>
@@ -104,11 +104,11 @@
         </div>
         <div class="container-fluid goal-list">
           <div class="row">
-            <div class="col-lg-4 col-md-6 pd-lr-11 mg-t-15">
-              <img src="images/perform-demo/goal-general-performance.png" alt="General Performance" />
+            <div class="col-lg-4 col-md-6 pd-lr-11 mg-t-15 goal" data-goal="general-performance">
+              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/goal-general-performance.png" alt="General Performance" />
             </div>
-            <div class="col-lg-4 col-md-6 pd-lr-11 mg-t-15">
-              <img src="images/perform-demo/goal-launch-projectx.png" alt="Launch Project X" />
+            <div class="col-lg-4 col-md-6 pd-lr-11 mg-t-15 goal" data-goal="launch-projectx">
+              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/goal-launch-projectx.png" alt="Launch Project X" />
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@
     </div>
   </div>
 
-  <div class="modal fade" id="new-goal">
+  <div class="modal" id="new-goal">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -153,124 +153,108 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="js/global.js"></script>
+  <script src="js/perform_demo_goals.js"></script>
   <script type="text/javascript">
-    $(document).ready(function(e){
-      var setViewedContent = function(content){
-        var viewedContents = '';
-        if (localStorage.getItem('viewed-content')){
-          viewedContents = localStorage.getItem('viewed-content');
-          if (viewedContents.split(';').indexOf(content) < 0) {
-            viewedContents += content + ';';
-          }
-        } else {
-          viewedContents += content + ';';
-        }
-        localStorage.setItem('viewed-content', viewedContents);
-      },
-      loadViewContents = function(){
-        var viewedContents = localStorage.getItem('viewed-content');
-        if (viewedContents !== null){
-          viewedContents = viewedContents.split(';');
-          $.each(viewedContents, function(i, content){
-            if (content !== ''){
-              var viewedItem = $('.vertical-menu a[href="#' + content + '"]').addClass('viewed');
-              $('.vertical-menu a').not(viewedItem).addClass('not-viewed');
-              viewedItem = $('nav ul li a[data-active-key="' + content + '"]').addClass('viewed');
-              $('nav ul li a').not(viewedItem).addClass('not-viewed');
-            }
-          });
-        }
-      },
-      initVerticalViewed = function() {
-        viewedContents =  $('#vertical-menu').find('a.viewed');
-        $.each(viewedContents, function(i, viewed){
-          content = $(viewed).attr('href').replace('#', '');
-          setViewedContent(content);
-        });
-      };
-      initNavViewed = function() {
-        viewedContents =  $('nav ul li').find('a.viewed');
-        $.each(viewedContents, function(i, viewed){
-          content = $(viewed).attr('data-active-key');
-          setViewedContent(content);
-        });
-      };
-      loadViewContents();
-      initNavViewed();
-      initVerticalViewed();
-      $('#nav-panel-trigger').on('click', function(e){
-        e.preventDefault();
-        $('body').toggleClass('nav-panel-opened');
-      });
-
-      $('#vertical-menu').find('a').on('click', function(e){
-        e.preventDefault();
-        var content = $(this).attr('href').replace('#', '');
+$(document).ready(function(e){
+  var setViewedContent = function(content){
+    var viewedContents = '';
+    if (localStorage.getItem('viewed-content')){
+      viewedContents = localStorage.getItem('viewed-content');
+      if (viewedContents.split(';').indexOf(content) < 0) {
+        viewedContents += content + ';';
+      }
+    } else {
+      viewedContents += content + ';';
+    }
+    localStorage.setItem('viewed-content', viewedContents);
+  },
+  loadViewContents = function(){
+    var viewedContents = localStorage.getItem('viewed-content');
+    if (viewedContents !== null){
+      viewedContents = viewedContents.split(';');
+      $.each(viewedContents, function(i, content){
         if (content !== ''){
-          $('#vertical-menu').find('a').removeClass('active');
-          $(this).addClass('active viewed');
-          setViewedContent(content);
-          $('#nav-panel').find('li.active').addClass('passed').removeClass('active');
-
-          var navItem = $('#nav-panel').find('a[href="#' + content + '"]');
-          navItem.parent().addClass('active');
-          var contentDom = $('.content.' + content);
-          $('.main-content').find('.content').removeClass('active');
-          contentDom.addClass('active'); 
-
-          if (content === 'visualize'){
-            $('#next-content').hide();
-          } else {
-            $('#next-content').show();
-          }
+          var viewedItem = $('.vertical-menu a[href="#' + content + '"]').addClass('viewed');
+          $('.vertical-menu a').not(viewedItem).addClass('not-viewed');
+          viewedItem = $('nav ul li a[data-active-key="' + content + '"]').addClass('viewed');
+          $('nav ul li a').not(viewedItem).addClass('not-viewed');
         }
       });
-
-      $('nav ul li').find('a').on('click', function(e){
-        var content = $(this).attr('data-active-key');
-        if (content !== ''){
-          setViewedContent(content);
-        }
-      });
-
-      $('.non-interactive').find('img').on('click', function(){
-        var self = $(this);
-        if (!self.hasClass('clicked')){
-          self.closest('.container').addClass('clicked');        
-          window.setTimeout(function(){
-            $('.non-interactive').find('.container').removeClass('clicked');
-          }, 5000);
-        } 
-      });
-
-      $('#next-content').on('click', function(e){
-        e.preventDefault();
-        if ($('#nav-panel').find('.active').next().length > 0){
-          var content = $('#nav-panel').find('.active').next().find('a').attr('href').replace('#','');
-          $('#nav-panel').find('.active').removeClass('active').addClass('passed').next().addClass('active');
-          $('#vertical-menu').find('a[href="#' + content + '"]').trigger('click');
-          if (content === 'visualize'){
-            $('#next-content').hide();
-          }
-        }
-      });
-
-      $(".dropdown-toggle").click(function() {
-        $(this).parent().find(".dropdown-menu").toggle();
-      });
-
-      $("#team-goal").click(function() {
-        $(this).parents('.dropdown-menu').toggle();
-      });
-
-      $(".js-btn-submit").click(function() {
-        $('#new-goal').modal('hide');
-        var new_goal = "<div class='col-lg-4 col-md-6 pd-lr-11 mg-t-15'>" +
-              "<img class='sample-goal' src='images/perform-demo/goal-launch-sales-campaign.png' alt='Launch Sales Campaign' />" +
-              "<img class='sample-goal' style='display:none;' src='images/perform-demo/goal-launch-sales-campaign-rated.png' alt='Launch Sales Campaign' />" +
-              "</div>";
-        $(".goal-list .row").append(new_goal);
-      });
+    }
+  },
+  initVerticalViewed = function() {
+    viewedContents =  $('#vertical-menu').find('a.viewed');
+    $.each(viewedContents, function(i, viewed){
+      content = $(viewed).attr('href').replace('#', '');
+      setViewedContent(content);
     });
+  };
+  initNavViewed = function() {
+    viewedContents =  $('nav ul li').find('a.viewed');
+    $.each(viewedContents, function(i, viewed){
+      content = $(viewed).attr('data-active-key');
+      setViewedContent(content);
+    });
+  };
+  loadViewContents();
+  initNavViewed();
+  initVerticalViewed();
+  $('#nav-panel-trigger').on('click', function(e){
+    e.preventDefault();
+    $('body').toggleClass('nav-panel-opened');
+  });
+
+  $('#vertical-menu').find('a').on('click', function(e){
+    e.preventDefault();
+    var content = $(this).attr('href').replace('#', '');
+    if (content !== ''){
+      $('#vertical-menu').find('a').removeClass('active');
+      $(this).addClass('active viewed');
+      setViewedContent(content);
+      $('#nav-panel').find('li.active').addClass('passed').removeClass('active');
+
+      var navItem = $('#nav-panel').find('a[href="#' + content + '"]');
+      navItem.parent().addClass('active');
+      var contentDom = $('.content.' + content);
+      $('.main-content').find('.content').removeClass('active');
+      contentDom.addClass('active'); 
+
+      if (content === 'visualize'){
+        $('#next-content').hide();
+      } else {
+        $('#next-content').show();
+      }
+    }
+  });
+
+  $('nav ul li').find('a').on('click', function(e){
+    var content = $(this).attr('data-active-key');
+    if (content !== ''){
+      setViewedContent(content);
+    }
+  });
+
+  $('.non-interactive').find('img').on('click', function(){
+    var self = $(this);
+    if (!self.hasClass('clicked')){
+      self.closest('.container').addClass('clicked');        
+      window.setTimeout(function(){
+        $('.non-interactive').find('.container').removeClass('clicked');
+      }, 5000);
+    } 
+  });
+
+  $('#next-content').on('click', function(e){
+    e.preventDefault();
+    if ($('#nav-panel').find('.active').next().length > 0){
+      var content = $('#nav-panel').find('.active').next().find('a').attr('href').replace('#','');
+      $('#nav-panel').find('.active').removeClass('active').addClass('passed').next().addClass('active');
+      $('#vertical-menu').find('a[href="#' + content + '"]').trigger('click');
+      if (content === 'visualize'){
+        $('#next-content').hide();
+      }
+    }
+  });
+});
   </script>
 </body>
