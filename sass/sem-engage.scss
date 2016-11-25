@@ -22,12 +22,22 @@ $font_thin: 'Lato-Thin';
     }
     .sub-headline{
       font-size: 15px;
+      margin-bottom: 20px;
       font-family: $font_light;
       text-shadow: 0 2px 2px rgba(0,0,0,01);
     }
     .try-it-form {
       margin: 25px auto 50px;
       background: none;
+      label{
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: Lato-Light;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+      }
       input[type=submit]{
         margin-bottom: 0;
         background: #1EC879;
@@ -366,7 +376,7 @@ footer{
   }
   .header-graphics{
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
-    height: 400px;
+    height: 500px;
     &:before{
       display: none;
     }
@@ -376,6 +386,7 @@ footer{
       h1{
         font-size: 36px;
         margin-bottom: 20px;
+        margin-top: 130px;
       }
       .sub-headline{
         font-size: 20px;
@@ -579,6 +590,8 @@ footer{
         padding: 0 15px;
         font-size: 16px;
         line-height: 24px;
+        max-width: 650px;
+        margin: 10px auto;
       }
     }
     .hiw-icons {
@@ -678,6 +691,8 @@ footer{
     display: none !important;
   }
   .try-it-now{
+    padding-bottom: 70px;
+    padding-top: 70px;
     .block-title{
       font-size: 30px;
     }
