@@ -19,12 +19,22 @@
 }
 .header-graphics .content .sub-headline {
   font-size: 15px;
+  margin-bottom: 20px;
   font-family: "Lato-Light";
   text-shadow: 0 2px 2px black;
 }
 .header-graphics .content .try-it-form {
   margin: 25px auto 50px;
   background: none;
+}
+.header-graphics .content .try-it-form label {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Lato-Light;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
 }
 .header-graphics .content .try-it-form input[type=submit] {
   margin-bottom: 0;
@@ -369,7 +379,7 @@ footer > .container {
 
   .header-graphics {
     background-image: url(http://www.tinypulse.com/hubfs/redesign_2016/large/engage-header-bg-1.png);
-    height: 400px;
+    height: 500px;
   }
   .header-graphics:before {
     display: none;
@@ -381,6 +391,7 @@ footer > .container {
   .header-graphics .content h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    margin-top: 130px;
   }
   .header-graphics .content .sub-headline {
     font-size: 20px;
@@ -580,6 +591,8 @@ footer > .container {
     padding: 0 15px;
     font-size: 16px;
     line-height: 24px;
+    max-width: 650px;
+    margin: 10px auto;
   }
   .how-it-works-desktop .hiw-icons {
     padding-left: 15px;
@@ -676,6 +689,10 @@ footer > .container {
     display: none !important;
   }
 
+  .try-it-now {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
   .try-it-now .block-title {
     font-size: 30px;
   }
