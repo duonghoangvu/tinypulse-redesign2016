@@ -1,0 +1,724 @@
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("fonts/Lato-Regular.eot");
+  src: url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("fonts/Lato-Light.eot");
+  src: url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url("fonts/Lato-Semibold.eot");
+  src: url("fonts/Lato-Semibold.woff2") format("woff2"), url("fonts/Lato-Semibold.woff") format("woff"), url("fonts/Lato-Semibold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("fonts/Lato-Bold.eot");
+  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url("fonts/Lato-Thin.eot");
+  src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
+}
+body {
+  font-family: "Lato-Regular", Arial;
+  padding: 0;
+  margin: 0;
+}
+
+.row-fluid [class*="span"] {
+  min-height: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0;
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.main-nav-container {
+  display: none;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  transform: translate3d(0, 0, 0);
+}
+.main-nav-container.sticked {
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #DADADA;
+}
+
+.main-nav {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 20px 10px 0;
+  position: relative;
+}
+.main-nav:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+}
+.main-nav .logo {
+  display: inline-block;
+  width: 99px;
+}
+.main-nav .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.main-mobile-nav-container {
+  transition: all 0.3s;
+}
+.main-mobile-nav-container.sticked .triggers {
+  background: white;
+  box-shadow: 0 0 5px #333;
+}
+.main-mobile-nav-container.sticked .logo .color {
+  opacity: 1;
+}
+.main-mobile-nav-container.sticked .logo .white {
+  opacity: 0;
+}
+.main-mobile-nav-container .triggers {
+  padding: 10px 15px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */
+  transition: all 0.3s;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.main-mobile-nav-container .logo {
+  display: inline-block;
+  width: 120px;
+  height: 20px;
+  z-index: 10;
+  position: relative;
+}
+.main-mobile-nav-container .logo img {
+  transition: all 0.3s;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 2px;
+}
+.main-mobile-nav-container .logo .color {
+  opacity: 0;
+}
+
+.header-graphics {
+  background: -moz-linear-gradient(360deg, #3AADEB 0%, #475FA2 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(360deg, #3AADEB 0%, #475FA2 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(360deg, #3AADEB 0%, #475FA2 100%);
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.header-graphics .container {
+  max-width: 960px;
+  box-sizing: border-box;
+  margin: 0 15px;
+}
+.header-graphics .container .header-content {
+  color: #FFF;
+  top: 5%;
+  margin-top: 70px;
+  padding: 0 15px;
+  text-align: center;
+}
+.header-graphics .container .header-content h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+.header-graphics .container .header-content .desc {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Lato-Light';
+}
+.header-graphics .container .header-img {
+  padding: 65px 30px;
+  text-align: center;
+}
+.header-graphics .container .header-img img {
+  width: 100%;
+  max-width: 300px;
+}
+.header-graphics .content {
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.header-graphics .content h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: "Lato-Bold", Arial;
+  font-weight: normal;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.header-graphics .content .sub-headline {
+  font-family: "Lato-Regular", Arial;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-top: -10px;
+  text-align: center;
+}
+.header-graphics .content .hbspt-form {
+  height: 0;
+  overflow: hidden;
+}
+.header-graphics .content .try-it-form {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  font-size: 0;
+  border-radius: 5px;
+  max-width: 325px;
+  margin: 70px auto 50px;
+}
+.header-graphics .content .try-it-form input, .header-graphics .content .try-it-form button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  border-radius: 4px;
+  margin: 0;
+  border: 0;
+  transition: width 0.3s;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 0 10px;
+  min-height: inherit;
+  text-transform: none;
+}
+.header-graphics .content .try-it-form input {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Lato-Regular", Arial;
+  font-size: 15px;
+}
+.header-graphics .content .try-it-form button {
+  width: 100%;
+  background: #00C26B;
+  color: #fff;
+  font-family: "Lato-Semibold", Arial;
+  font-size: 16px;
+}
+.header-graphics .content .try-it-form button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.body-container-wrapper {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
+
+.footer-container-wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.main-wrapper {
+  transition: all 0.5s;
+}
+
+.main-content {
+  background: #fff;
+  box-shadow: 0 0 10px #666;
+}
+
+.download-info {
+  width: 100%;
+  display: block;
+  position: relative;
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  text-align: center;
+}
+.download-info .container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px 15px 0;
+  overflow: auto;
+}
+.download-info .container .title {
+  color: #FFF;
+  margin-bottom: 25px;
+  font-family: 'Lato-Light';
+}
+.download-info .container .submitted-message, .download-info .container .submitted-message a {
+  color: #FFF;
+  font-family: 'Lato-Light';
+}
+.download-info .container .submitted-message a {
+  text-decoration: underline;
+}
+.download-info .container .has-interactive-form .submitted-message {
+  margin-bottom: 30px;
+  margin-top: -30px;
+}
+.download-info .container .form-container form input[type=text],
+.download-info .container .form-container form input[type=email],
+.download-info .container .form-container form input[type=number],
+.download-info .container .form-container form input[type=tel] {
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  box-shadow: none;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: inherit;
+  height: auto;
+  -webkit-appearance: none;
+}
+.download-info .container .has-interactive-form {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.download-info .container .form-container .form.interactive-form {
+  width: 100%;
+  margin-top: 20px;
+  display: none;
+}
+.download-info .container .form-container .form.interactive-form form {
+  padding: 0;
+  position: relative;
+  height: 130px;
+  overflow: hidden;
+}
+.download-info .container .form-container .form.interactive-form .field.hs-form-field {
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  transition: all 1s;
+  top: 0;
+}
+.download-info .container .form-container .form.interactive-form .field.hs-form-field > label {
+  display: block;
+  position: static;
+  text-align: left;
+}
+.download-info .container .form-container .form.interactive-form .field.hs-form-field input {
+  border: 0;
+  outline: 0;
+  padding: 10px 60px 10px 0;
+}
+.download-info .container .form-container .form.interactive-form .next-button {
+  position: absolute;
+  z-index: 2;
+  right: 3px;
+  left: 3px;
+  width: auto;
+  top: auto;
+  height: 40px;
+  bottom: 3px;
+}
+.download-info .container .form-container .form.interactive-form .next-button input {
+  background: #1dc06e;
+  border: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+.download-info .container .form-container form {
+  padding: 0 15px;
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.download-info .container .form-container form .field.hs-form-field > label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: Lato-Regular,Arial;
+  color: #9b9b9b;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.download-info .container .form-container form .field.hs-form-field {
+  position: relative;
+  margin-bottom: 10px;
+}
+.download-info .container .form-container form .hs-button.primary.large {
+  background: #00c26b;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+  padding: 17px;
+  width: 100%;
+  font-size: 20px;
+  font-family: Lato-Bold;
+  text-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  -webkit-appearance: none;
+}
+.download-info .container .form-container form .actions {
+  margin: 0;
+  padding: 0;
+}
+
+.inside {
+  text-align: center;
+}
+.inside .container {
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.inside .container h1 {
+  margin: 0;
+}
+.inside .container .desc {
+  font-family: 'Lato-Light';
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.inside .container p {
+  font-family: 'Lato-Light';
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+footer {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c5c+0,982c81+100&1+0,0.86+100 */
+  background: -moz-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c5c', endColorstr='#db982c81',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: #FFF;
+  line-height: 20px;
+}
+footer .container {
+  padding: 20px 30px;
+}
+footer .brands {
+  padding: 30px 10px 20px 10px;
+  text-align: center;
+}
+footer .brands img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 110px;
+  height: auto;
+  margin: 10px;
+}
+footer .brands .title {
+  width: 100%;
+  display: block;
+  color: white;
+  font-family: 'Lato-Light';
+  line-height: 22px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+footer .footer-about .about-title {
+  font-size: 18px;
+  font-family: 'Lato-Bold';
+  margin-bottom: 15px;
+}
+footer .footer-about .desc {
+  font-size: 14px;
+  font-family: 'Lato-Light';
+}
+footer .copyright {
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+footer .copyright .content {
+  box-sizing: border-box;
+}
+footer .copyright span {
+  display: block;
+  font-size: 14px;
+  font-family: 'Lato-Light';
+}
+footer .copyright span.copyright-title {
+  font-family: "Lato-Bold";
+}
+
+@media screen and (min-width: 960px) {
+  header .overlay {
+    display: block;
+  }
+
+  .main-nav-container {
+    height: 76px;
+    display: block;
+  }
+  .main-nav-container.sticked {
+    background: #fff;
+    height: auto;
+  }
+  .main-nav-container.sticked .main-nav .logo .color {
+    opacity: 1;
+  }
+  .main-nav-container.sticked .main-nav .logo .white {
+    opacity: 0;
+  }
+
+  .main-nav .logo {
+    width: 150px;
+    height: 28px;
+    margin-top: 0;
+    position: relative;
+  }
+  .main-nav .logo img {
+    transition: all 0.3s;
+    position: absolute;
+  }
+  .main-nav .logo .color {
+    opacity: 0;
+  }
+
+  .main-mobile-nav-container {
+    display: none;
+  }
+
+  .header-graphics {
+    background: -moz-linear-gradient(45deg, #3AADEB 0%, #446FB2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #3AADEB 0%, #446FB2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #3AADEB 0%, #446FB2 100%);
+  }
+  .header-graphics .container {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .header-graphics .container .header-content {
+    width: 40%;
+    color: #FFF;
+    top: 5%;
+    text-align: left;
+    margin: 110px 80px;
+  }
+  .header-graphics .container .header-content h1 {
+    letter-spacing: 2px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .header-graphics .container .header-img {
+    display: inline-block;
+    position: absolute;
+    right: 80px;
+    bottom: -270px;
+    z-index: 3;
+  }
+  .header-graphics .container .header-img img {
+    max-width: 375px;
+  }
+  .header-graphics .content {
+    position: relative;
+    top: 5%;
+    margin-top: 110px;
+    max-width: 600px;
+  }
+  .header-graphics .content h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  .header-graphics .content .sub-headline {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+  .header-graphics .content .try-it-form {
+    max-width: 450px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 0;
+    margin-top: 40px;
+  }
+  .header-graphics .content .try-it-form input {
+    width: 68%;
+    border-radius: 4px 0 0 4px;
+    margin: 0;
+    text-align: left;
+  }
+  .header-graphics .content .try-it-form button {
+    width: 32%;
+    border-radius: 0 4px 4px 0;
+    font-size: 18px;
+  }
+
+  .inside {
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  .inside .container {
+    padding: 30px 60px;
+  }
+
+  .download-info {
+    text-align: left;
+  }
+  .download-info .container {
+    padding: 30px 98px 0;
+    max-width: 1220px;
+  }
+  .download-info .container .has-interactive-form {
+    display: none;
+  }
+  .download-info .container .form-container .form.interactive-form {
+    width: 50%;
+    float: none;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    display: block;
+  }
+  .download-info .container .form-container .form.interactive-form form {
+    height: 71px;
+    max-width: 630px;
+    margin: 10px auto;
+    box-sizing: initial;
+  }
+  .download-info .container .form-container .form.interactive-form .field.hs-form-field > label {
+    font-size: 14px;
+    max-width: inherit;
+  }
+  .download-info .container .form-container .form.interactive-form .field.hs-form-field input {
+    font-size: 16px;
+  }
+  .download-info .container .form-container .form.interactive-form .next-button {
+    height: 72px;
+    width: 150px;
+    left: auto;
+    top: 0px;
+    right: 0px;
+  }
+  .download-info .container .form-container .form.interactive-form .next-button input {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .download-info .container .form-container .form.interactive-form .field.hs-form-field.faded {
+    top: -120px;
+    opacity: 0;
+  }
+
+  footer {
+    padding: 0;
+    /*position: fixed;*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  footer .container {
+    max-width: 1220px;
+    margin: 0 auto;
+    position: relative;
+  }
+  footer .brands {
+    padding: 30px;
+    text-align: left;
+  }
+  footer .brands img {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    width: 100px;
+    display: inline-block;
+  }
+  footer .brands .title {
+    width: 100px;
+    display: inline-block;
+    text-align: left;
+    float: left;
+  }
+  footer .brands .brand-logos {
+    display: inline-block;
+    width: calc( 100% - 100px );
+  }
+  footer .footer-about {
+    font-size: 0;
+    width: 50%;
+    display: inline-block;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  footer .copyright {
+    clear: both;
+    text-align: right;
+    float: right;
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px 80px 50px;
+  }
+}

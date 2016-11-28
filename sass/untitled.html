@@ -1,0 +1,130 @@
+<div class="new-features-page">
+  <div class="content-block with-form" id="reskin">
+    <div class="container">
+      <div class="block-content tp-engage">
+        <div class="form-container">
+          <div class="forms">
+            <div class="form download has-interactive-form">
+              <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
+              <script>
+                hbspt.forms.create({ 
+                  portalId: '443262',
+                  formId: 'beb7f12b-3e76-46e5-97ab-9a5db3f133e9', 
+                  onFormSubmit: function(){
+                    var anchor = document.createElement('a');
+                    anchor.href = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
+                    anchor.download = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
+
+                    var userAgent = window.navigator.userAgent;
+                    if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)){
+                      anchor.click();   
+                    }
+                  },
+                  onFormReady: function(){
+                    var userAgent = window.navigator.userAgent;
+                    if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+                      if ($('.submitted-message').length > 0){
+                        var anchor = document.createElement('a');
+                        anchor.href = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
+                        anchor.download = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
+                        anchor.click(); 
+                      }
+                    }
+                  }
+                });
+              </script>
+            </div>
+            <div class="form interactive-form">
+              <form action="https://app.tinypulse.com/engage/signup" method="GET" class="hs-form stacked">
+               <div class="hs_phone field hs-form-field">
+                 <label for="phone">Last question, what's your phone number?</label>
+                 <div class="input">
+                  <input class="hs-input" name="phone" type="tel" value=""/>
+                </div>
+              </div>
+              <div class="hs_phone field hs-form-field">
+                <label for="numberofemployees_number">How many employees are in your company?</label>
+                <div class="input">
+                  <input class="hs-input" name="numberofemployees_number" type="number" value=""/>
+                </div>
+              </div>
+              <div class="hs_firstname field hs-form-field">
+                <label for="fullname">What's your full name?</label>
+                <div class="input">
+                  <input class="hs-input" name="fullname" type="text" value=""/>
+                </div>
+              </div>
+              <div class="hs_email field hs-form-field">
+                <label for="email">What’s your work email?</label>
+                <div class="input">
+                  <input class="hs-input" name="email" required type="email" value=""/>
+                </div>
+              </div>
+              <div class="next-button">
+                <input type="submit" value="Next" />
+              </div>
+            </form>
+          </div>    
+          <script>
+            (function($){
+              $(document).ready(function(){
+                var interactiveForm = $('.interactive-form'), 
+                hbsptForm = $('.hbspt-form');
+                var fillData = function(){
+                  var email = interactiveForm.find('input[name=email]').val(),
+                  fullName = interactiveForm.find('input[name=fullname]').val(),
+                  employees = interactiveForm.find('input[name=numberofemployees_number]').val(),
+                  phone = interactiveForm.find('input[name=phone]').val();
+                  hbsptForm = $('.hbspt-form');
+                  hbsptForm.find('input[name=email]').val(email);
+                  hbsptForm.find('input[name=firstname]').val(fullName);
+                  hbsptForm.find('input[name=phone]').val(phone);
+                  hbsptForm.find('input[name=numberofemployees_number_]').val(employees);
+                };
+
+                interactiveForm.find('form').on('submit', function(e){
+                  e.preventDefault();
+                  fillData();
+                  if ($('.faded').length == 2){
+                    $(this).find('input[type=submit]').attr('value', 'Download'); 
+                    nextField();
+                  } else {
+                    nextField();
+                    if ($(this).find('input[type=submit]').attr('value') == 'Download'){
+                      var anchor = document.createElement('a');
+                      anchor.href = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
+                      anchor.download = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
+
+                      var userAgent = window.navigator.userAgent;
+                      if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)){
+                       anchor.click();   
+                     }
+                   }
+                 }
+                 hbsptForm.find('form').submit();
+               });
+
+                var nextField = function(){
+                  if ($('.faded').length == 3){
+                    return;
+                  }
+                  interactiveForm.find('.field').not('.faded').last().addClass('faded'); 
+                  interactiveForm.find('.field').not('.faded').last().find('input').attr('required', 'required'); 
+                };        
+              });
+            })(jQuery);
+          </script>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    window.setTimeout(function(){
+      $('input[name=numberofemployees_number_]').attr('placeholder','Number of employees*');
+    }, 1000);    
+  });
+</script>
