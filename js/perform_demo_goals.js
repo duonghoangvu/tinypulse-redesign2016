@@ -21,7 +21,12 @@ $(document).ready(function(e){
     });
     
     $("#team-goal").click(function() {
-        $(this).parents('.dropdown-menu').toggle();
+//        $(this).parents('.dropdown-menu').toggle();
+    });
+  
+    $("#new-goal-btn").click(function(){
+      updateWtStepData(2);
+      updateWtStep();
     });
     
     $(".js-btn-submit").click(function() { 
@@ -31,9 +36,31 @@ $(document).ready(function(e){
         new_goal = newGoal(current_goals);
         $(".goal-list .row").append(new_goal);
         $('#new-goal').modal('hide');
+        updateWtStepData(3);
+        updateWtStep();
     });
     
     $(".goal").click(function(){
         window.location.href = "/perform-demo-goals-detail.html#"+ $(this).data('goal'); 
     });
+  
+    var updateWtStep = function(){
+      var step = 'wt-step-' + (localStorage.getItem('wt-step') || 1);
+      $('body').removeClass('wt-step-1 wt-step-2 wt-step-3').addClass('wt-on ' + step);
+      if (step == 'wt-step-3'){
+        $('body').removeClass('wt-on');
+      }
+    },
+    updateWtStepData = function(step){
+      localStorage.setItem('wt-step', step);
+    };
+  
+    if (!localStorage.getItem('walkthrough-done')){
+      var step = 'wt-step-' + (localStorage.getItem('wt-step') || 1);
+      if (step == 'wt-step-2'){
+        $('#new-goal-btn').click();
+      }
+      updateWtStep();
+    }
+  
 });

@@ -12,6 +12,9 @@
         <div class="logo">
           <img src="https://www.tinypulse.com/hubfs/redesign_2016/engage_logo.png" />
         </div> 
+        <div class="content">
+          <p>This is a demonstration page only. All information will not be recorded.</p>
+        </div>
       </div>
     </header> 
     <div class="content-wrapper">
@@ -88,18 +91,43 @@
             </ul>
           </div>
           <div class="btn-group pull-right">
-            <button class="btn btn-flat-gray dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="wt-overlay"></div>
+            <div class="wt-content-wrapper wt-step-1">
+              <div class="content">
+                <h3 class="title">Create New Goal</h3>
+                <div class="instruction">
+                  <p>To get started, click on NEW GOAL button to create a goal for your employee.</p>
+                  <p>We’ll be creating goal for one of our virtual employees, Aaron.</p>
+                </div>
+                <div class="buttons">
+                  <a href="/perform">Skip</a>
+                  <div class="indicators">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span> 
+                  </div>
+                </div>
+              </div>
+            </div>      
+            <div class="wt-content-wrapper wt-step-2">
+              <div class="content">
+                <h3 class="title">Create New Goal</h3>
+                <div class="instruction">
+                  <p>Now we already created a new goal for your employee. Go ahead and click on SAVE CHANGES to save it.</p>
+                </div>
+                <div class="buttons">
+                  <a href="/perform">Skip</a>
+                  <div class="indicators">
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span> 
+                  </div>
+                </div>
+              </div>
+            </div>              
+            <button class="btn btn-flat-gray new-goal-btn" data-toggle="modal" data-target="#new-goal" aria-haspopup="true" aria-expanded="false" id="new-goal-btn">
               <span>New Goal</span>
-              <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="#" id='team-goal' data-toggle="modal" data-target="#new-goal">Team Goal</a>
-              </li>
-              <li class="disabled">
-                <a href="#" id='personal-goal'>Personal Goal</a>
-              </li>
-            </ul>
           </div>
         </div>
         <div class="container-fluid goal-list">
@@ -116,8 +144,8 @@
     </div>
   </div>
 
-  <div class="modal" id="new-goal">
-    <div class="modal-dialog">
+  <div class="modal new-goal-modal" id="new-goal">
+    <!--<div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button class="close" data-dismiss="modal" aria-label="Close">
@@ -141,6 +169,27 @@
                   <label>Description</label>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-flat-green js-btn-submit text-uppercase" tabindex="3">Save Changes</button>
+        </div>
+    </div>-->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" aria-label="Close">
+            <span>×</span>
+          </button>
+          <h4 class="modal-title pf-text-stronger">
+            New goal
+          </h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/new-goal-sample.png" alt="">
             </div>
           </div>
         </div>
