@@ -23,6 +23,9 @@ header{
     display: none;
   }
 }
+.hidden {
+  display: none !important;
+}
 .main-nav-container{
   display: none;
   // background: #333;
@@ -256,6 +259,17 @@ header{
       color: #FFF;
       margin-bottom: 25px;
       font-family: 'Lato-Light';
+    }
+    .submitted-message, .submitted-message a {
+      color: #FFF;
+      font-family: 'Lato-Light';
+    }
+    .submitted-message a {
+      text-decoration: underline;
+    }
+    .has-interactive-form .submitted-message {
+      margin-bottom: 30px;
+      margin-top: -30px;
     }
     .form-container form input[type=text],
     .form-container form input[type=email],
@@ -592,14 +606,14 @@ footer{
           box-sizing: initial;
         }
         .field.hs-form-field>label {
-          font-size: 18px;
+          font-size: 14px;
           max-width: inherit;
         }
         .field.hs-form-field input {
           font-size: 16px;
         }
         .next-button {
-          height: 71px;
+          height: 72px;
           width: 150px;
           left: auto;
           top: 0px;

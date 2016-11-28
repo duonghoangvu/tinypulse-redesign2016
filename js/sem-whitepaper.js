@@ -28,8 +28,11 @@ $(document).ready(function(){
 
         var userAgent = window.navigator.userAgent;
         if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)){
-          anchor.click();   
+          anchor.click();
         }
+        $(this).addClass('hidden');
+        $(this).parent().find('.submitted-message').removeClass('hidden');
+        $(this).parent().find('.title').addClass('hidden');
       }
     }
     hbsptForm.find('form').submit();
@@ -41,6 +44,7 @@ $(document).ready(function(){
     }
     interactiveForm.find('.field').not('.faded').last().addClass('faded'); 
     interactiveForm.find('.field').not('.faded').last().find('input').attr('required', 'required'); 
+    interactiveForm.find('.field').not('.faded').last().find('input').focus();
   };
   window.setTimeout(function(){
     $('input[name=numberofemployees_number_]').attr('placeholder','Number of employees*');

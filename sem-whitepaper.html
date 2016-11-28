@@ -41,10 +41,10 @@
     <div class="main-content">
       <div class="download-info">
         <div class="container">
-          <div class="title">DOWNLOAD YOUR FREE COPY NOW:</div>
           <div class="form-container">
             <div class="forms">
               <div class="form download has-interactive-form">
+                <div class="title">DOWNLOAD YOUR FREE COPY NOW:</div>
                 <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
                 <script>
                   hbspt.forms.create({ 
@@ -59,6 +59,7 @@
                       if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)){
                         anchor.click();   
                       }
+                      $('.has-interactive-form .title').addClass('hidden');
                     },
                     onFormReady: function(){
                       var userAgent = window.navigator.userAgent;
@@ -75,6 +76,7 @@
                 </script>
               </div>
               <div class="form interactive-form">
+                <div class="title">DOWNLOAD YOUR FREE COPY NOW:</div>
                 <form action="https://app.tinypulse.com/engage/signup" method="GET" class="hs-form stacked">
                   <div class="hs_phone field hs-form-field">
                     <label for="phone">Last question, what's your phone number?</label>
@@ -97,13 +99,15 @@
                   <div class="hs_email field hs-form-field">
                     <label for="email">What's your work email?</label>
                     <div class="input">
-                      <input class="hs-input" name="email" required type="email" value=""/>
+                      <input class="hs-input" name="email" required type="email" value="" autofocus/>
                     </div>
                   </div>
                   <div class="next-button">
                     <input type="submit" value="Next" />
                   </div>
                 </form>
+                <div class="submitted-message hidden">Thank you for downloading our report.
+                  Visit <a href="https://www.tinypulse.com/">TINYpulse website</a> for more resources!</div>
               </div>
             </div>
           </div>

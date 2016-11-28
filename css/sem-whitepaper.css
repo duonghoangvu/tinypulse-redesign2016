@@ -50,6 +50,10 @@ header .overlay {
   display: none;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .main-nav-container {
   display: none;
   height: 56px;
@@ -294,6 +298,17 @@ header .overlay {
   color: #FFF;
   margin-bottom: 25px;
   font-family: 'Lato-Light';
+}
+.download-info .container .submitted-message, .download-info .container .submitted-message a {
+  color: #FFF;
+  font-family: 'Lato-Light';
+}
+.download-info .container .submitted-message a {
+  text-decoration: underline;
+}
+.download-info .container .has-interactive-form .submitted-message {
+  margin-bottom: 30px;
+  margin-top: -30px;
 }
 .download-info .container .form-container form input[type=text],
 .download-info .container .form-container form input[type=email],
@@ -632,14 +647,14 @@ footer .copyright span.copyright-title {
     box-sizing: initial;
   }
   .download-info .container .form-container .form.interactive-form .field.hs-form-field > label {
-    font-size: 18px;
+    font-size: 14px;
     max-width: inherit;
   }
   .download-info .container .form-container .form.interactive-form .field.hs-form-field input {
     font-size: 16px;
   }
   .download-info .container .form-container .form.interactive-form .next-button {
-    height: 71px;
+    height: 72px;
     width: 150px;
     left: auto;
     top: 0px;
