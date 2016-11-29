@@ -1,4 +1,26 @@
 $(document).ready(function(){
+  //walkthrough
+  var updateWtStep = function(){
+    var step = 'wt-step-' + (localStorage.getItem('wt-step') || 3);
+    $('body').removeClass('wt-step-1 wt-step-2 wt-step-3 wt-step-4').addClass('wt-on ' + step);
+  },
+  updateWtStepData = function(step){
+    localStorage.setItem('wt-step', step);
+  };
+
+  if (!localStorage.getItem('walkthrough-done')){
+    var step = 'wt-step-' + (localStorage.getItem('wt-step') || 3);
+    updateWtStep();
+  }
+  
+  $('body').on('click', '#rate-now', function(e){
+    e.preventDefault();
+    updateWtStepData(4);
+    updateWtStep();
+  });
+  
+  
+  
 var widthOfList = function(){
   var itemsWidth = 0;
   $('.list li').each(function(){
@@ -70,14 +92,17 @@ var setWrapperPosition = function(element){
 
 var getCurrentActiveGoal = function(){
    activeGoal = window.location.hash.substr(1);
-   $("a[href='#"+ activeGoal +"']").tab('show');
+   if (activeGoal != ''){
+    $("a[href='#"+ activeGoal +"']").tab('show');     
+   }
 }
 
 var goalDetail = function(goalID){
     return "<li class='active'><a data-toggle='pill' href='#sales-campaign-"+ goalID +"'><span class='icon-members'></span>Launch Sales Campaign<span class='icon-tick'></span></a></li>";
 }
 var goalContent = function(goalID){
-    return  "<div id='sales-campaign-"+goalID+"' class='tab-pane active first-pane'>" +
+  var wtContent = '<div class="wt-content-wrapper wt-step-3"><div class="content"><h3 class="title">RATE YOUR GOAL</h3><div class="instruction"><p>Select <i class="icon icon-arrow-up"></i> to rate <span class="above">Above</span> expectation.</p><p>You will be able to rate your employees\' goal with 3 simple options: <span class="below">Below</span> expectation, At expectation and <span class="above">Above</span> expectation.<a href="#" id="rate-now">RATE</a></p></div><div class="buttons"><a href="/perform">Skip</a><div class="indicators"><span></span><span class="active"></span><span></span> </div></div></div></div>';
+  return  wtContent + "<div id='sales-campaign-"+goalID+"' class='tab-pane active first-pane'>" +
                 "<img src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/launch-sales-campaign-dashboard.png' alt='General Performance Dashboard' />"+
                 "<div class='card flatten-card'>"+
                   "<div class='card-fill-content'>"+
@@ -164,4 +189,6 @@ $('.scroller-left').click(function() {
   showTabNav(endPoint);
 });
 });
+
+
 
