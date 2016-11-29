@@ -107,7 +107,6 @@ var goalContent = function(goalID){
               "<div class='icon-rate-at rate-button' data-placement='auto top' data-toggle='tooltip' data-original-title='At Expectation'></div>"+
               "<div class='icon-rate-above rate-button "+rated+"' data-placement='auto top' data-toggle='tooltip' data-original-title='Above Expectation'></div>"+
               "<div class='rating-title'>Launch Sales Campaign</div>"+
-              "<button class='next-goal-rating'>Next</button>"+
             "</div>"+ rated_image +
           "</div>";
 }
