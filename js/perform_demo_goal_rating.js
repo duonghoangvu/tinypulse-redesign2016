@@ -70,54 +70,73 @@ var setWrapperPosition = function(element){
 
 var getCurrentActiveGoal = function(){
    activeGoal = window.location.hash.substr(1);
-   $("a[href='#"+ activeGoal +"']").tab('show');
+   if(activeGoal){
+     $("a[href='#"+ activeGoal +"']").tab('show');
+   }else {
+     $('.list li').last().addClass('active');
+     $('.list li a[data-toggle=pill]').tab('show');
+   }
+   showGoalNav($('.list li.active a')[0]);
 }
 
 var goalDetail = function(goalID){
-    return "<li class='active'><a data-toggle='pill' href='#sales-campaign-"+ goalID +"'><span class='icon-members'></span>Launch Sales Campaign<span class='icon-tick'></span></a></li>";
+  var rated_goals = localStorage.getItem('rated-goals');
+  var activeIcon = '';
+  if(rated_goals != null){
+    rated_goals = rated_goals.split(',');
+    if(rated_goals.indexOf('sales-campaign-'+goalID) > -1){
+      activeIcon = 'active';
+    }
+  }
+  return "<li><a data-toggle='pill' href='#sales-campaign-"+ goalID +"'><span class='icon-members'></span>Launch Sales Campaign<span class='icon-tick "+activeIcon+"'></span></a></li>";
 }
 var goalContent = function(goalID){
-    return  "<div id='sales-campaign-"+goalID+"' class='tab-pane active first-pane'>" +
-                "<img src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/launch-sales-campaign-dashboard.png' alt='General Performance Dashboard' />"+
-                "<div class='card flatten-card'>"+
-                  "<div class='card-fill-content'>"+
-                    "<ul class='fill-horizontal nav nav-tabs' role='tablist'>"+
-                      "<li class='active'>"+
-                        "<a href='#sales-campaign-"+goalID+"-rating' aria-controls='sales-campaign-rating' role='tab' data-toggle='tab' aria-expanded='true'>RATING</a>"+
-                      "</li>"+
-                      "<li>"+
-                        "<a href='#sales-campaign-"+goalID+"-activities' aria-controls='sales-campaign-activities' role='tab' data-toggle='tab' aria-expanded='false'>ACTIVITIES</a>"+
-                      "</li>"+
-                    "</ul>"+
-                    "<div class='tab-content'>"+
-                      "<div class='tab-pane active in' id=sales-campaign-'"+goalID+"-rating' role='tabpanel'>"+
-                        "<img src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/launch-sales-campaign-rating.png' alt='Rating' />"+
-                        "<img class='rated' src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/rating.png' alt='Rating' />"+
-                        "<div class='clearfix'></div>"+
-                      "</div>"+
-                      "<div class='tab-pane' id='sales-campaign-"+goalID+"-activities' role='tabpanel'>"+
-                        "<img src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/launch-sales-campaign-activities.png' alt='Activities' />"+
-                        "<img class='rated' src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/activities.png' alt='Activities' />"+
-                        "<div class='clearfix'></div>"+
-                      "</div>"+
-                    "</div>"+
-                  "</div>"+
-                "</div>"+
-              "</div>";
+  var rated_goals = localStorage.getItem('rated-goals');
+  var rated = '';
+  var rated_image = "<img src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/rate-launch-sales-campaign.png' alt='Launch Sales Campaign' />"
+  if(rated_goals != null){
+    rated_goals = rated_goals.split(',');
+    if(rated_goals.indexOf('sales-campaign-'+goalID) > -1){
+      rated = 'rated';
+      rated_image = "<img src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/rated-goal-details.png' alt='Launch Sales Campaign' />"
+    }
+  }
+  return  "<div id='sales-campaign-"+goalID+"' class='tab-pane first-pane'>" +
+            "<div class='rate-buttons'>"+
+              "<div class='icon-rate-below rate-button' title='' data-placement='auto top' data-toggle='tooltip' data-original-title='Below Expectation'></div>"+
+              "<div class='icon-rate-at rate-button' data-placement='auto top' data-toggle='tooltip' data-original-title='At Expectation'></div>"+
+              "<div class='icon-rate-above rate-button "+rated+"' data-placement='auto top' data-toggle='tooltip' data-original-title='Above Expectation'></div>"+
+              "<div class='rating-title'>Launch Sales Campaign</div>"+
+              "<button class='next-goal-rating'>Next</button>"+
+            "</div>"+ rated_image +
+          "</div>";
 }
 var loadDemoGoal = function(){
-    var demo_goals = localStorage.getItem('total-demo-goals');
-    if(demo_goals){
-        for (i = 1; i <= parseInt(demo_goals); i++){
-            goalDetail = goalDetail(i);
-            $(".goal-details .row .wrapper ul.list").append(goalDetail);
-            goalContent = goalContent(i);
-            $(".goal-details .row .goal-contents").append(goalContent);
-        }    
+  var demo_goals = localStorage.getItem('total-demo-goals');
+  if(demo_goals){
+    for (i = 1; i <= parseInt(demo_goals); i++){
+      goalDetails = goalDetail(i);
+      $(".goal-details .row .wrapper ul.list").append(goalDetails);
+      goalContents = goalContent(i);
+      $(".goal-details .row .goal-contents").append(goalContents);
+      $('.icon-rate-above').click(function(e){
+        $(this).addClass('rated');
+        $('.list li.active').find('span.icon-tick').addClass('active');
+        var rated_goals = localStorage.getItem('rated-goals');
+        if(rated_goals == null) {
+          localStorage.setItem('rated-goals', $(this).parents('.first-pane.active').attr('id'));
+        } else {
+          localStorage.setItem('rated-goals', rated_goals +','+$(this).parents('.first-pane.active').attr('id'));
+          $(this).parents('.first-pane.active').find('img').attr("style", "display:none");
+          $(this).parents('.first-pane.active').append("<img src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/rated-goal-details.png' alt='Launch Sales Campaign' />");
+        }
+      });
     }
-    getCurrentActiveGoal();
+  }
+  getCurrentActiveGoal();
 };
 loadDemoGoal();
+$(".rate-button").tooltip();
 //showGoalNav($('.list li.active a')[0]);
 //setWrapperPosition($('.list li.active'));
 

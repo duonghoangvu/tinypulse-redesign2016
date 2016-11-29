@@ -427,6 +427,57 @@ body {
     left: -26px;
   }
 }
+.rate-buttons {
+  position: relative;
+  background-color: #FFF;
+  padding: 30px;
+  .rate-button {
+    display: inline-block;
+    color: #DDD;
+    font-size: 40px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  .rating-title {
+    word-wrap: break-word;
+    color: #4A4A4A;
+    font-size: 1.5rem;
+    font-family: "SourceSansPro-SemiBold";
+    line-height: 40px;
+    vertical-align: top;
+  }
+  .next-goal-rating {
+    display: none;
+  }
+  .icon-rate-above.rated {
+    color: #00C26B;
+  }
+}
+
+.icon-rate-above:before {
+  content: '\e825'
+}
+
+.icon-rate-at:before {
+  content: '\e826'
+}
+
+.icon-rate-below:before {
+  content: '\e827'
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "perform-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @media screen and (min-width: 481px) {
   .goal-details {
     .tab-content {
@@ -458,6 +509,30 @@ body {
 
     .previous-goal {
       left: -20px;
+    }
+  }
+}
+@media screen and (min-width: 960px) {
+  .rate-buttons {
+    .rating-title {
+      margin-left: 20px;
+      display: inline-block;
+    }
+    .next-goal-rating {
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 22px;
+      color: #4A4A4A;
+      background-color: #DADADA;
+      border-color: #DADADA;
+      border-width: 0;
+      font-family: "SourceSansPro-Bold";
+      font-size: 0.875rem;
+      padding: 9px 20px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
     }
   }
 }
