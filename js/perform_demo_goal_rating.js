@@ -1,4 +1,18 @@
 $(document).ready(function(){
+    //walkthrough
+  var updateWtStep = function(){
+    var step = 'wt-step-' + (localStorage.getItem('wt-step') || 3);
+    $('body').removeClass('wt-step-1 wt-step-2 wt-step-3 wt-step-4').addClass('wt-on ' + step);
+  },
+  updateWtStepData = function(step){
+    localStorage.setItem('wt-step', step);
+  };
+
+  if (!localStorage.getItem('walkthrough-done')){
+    var step = 'wt-step-' + (localStorage.getItem('wt-step') || 3);
+    updateWtStep();
+  }    
+    
 var widthOfList = function(){
   var itemsWidth = 0;
   $('.list li').each(function(){
@@ -101,14 +115,17 @@ var goalContent = function(goalID){
       rated_image = "<img src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/rated-goal-details.png' alt='Launch Sales Campaign' />"
     }
   }
+  var wtContent = '<div class="wt-content-wrapper wt-step-3"><div class="content"><h3 class="title">RATE YOUR GOAL</h3><div class="instruction"><p>Select <i class="icon icon-arrow-up"></i> to rate <span class="above">Above</span> expectation.</p><p>You will be able to rate your employees\' goal with 3 simple options: <span class="below">Below</span> expectation, At expectation and <span class="above">Above</span> expectation.</p></div><div class="buttons"><a href="/perform">Skip</a><div class="indicators"><span></span><span class="active"></span><span></span> </div></div></div></div>';
   return  "<div id='sales-campaign-"+goalID+"' class='tab-pane first-pane'>" +
+            wtContent +
             "<div class='rate-buttons'>"+
-              "<div class='icon-rate-below rate-button' title='' data-placement='auto top' data-toggle='tooltip' data-original-title='Below Expectation'></div>"+
-              "<div class='icon-rate-at rate-button' data-placement='auto top' data-toggle='tooltip' data-original-title='At Expectation'></div>"+
-              "<div class='icon-rate-above rate-button "+rated+"' data-placement='auto top' data-toggle='tooltip' data-original-title='Above Expectation'></div>"+
+              "<div class='buttons'><div class='icon-rate-below rate-button' title='Below Expectation' data-placement='auto top' data-toggle='tooltip' data-original-title='Below Expectation'></div>"+
+              "<div class='icon-rate-at rate-button' data-placement='auto top' data-toggle='tooltip' title='At Expectation' data-original-title='At Expectation'></div>"+
+              "<div class='icon-rate-above rate-button "+rated+"' data-placement='auto top' data-toggle='tooltip' data-original-title='Above Expectation' title='Above Expectation'></div></div>"+
               "<div class='rating-title'>Launch Sales Campaign</div>"+
             "</div>"+ rated_image +
           "</div>";
+
 }
 var loadDemoGoal = function(){
   var demo_goals = localStorage.getItem('total-demo-goals');
@@ -128,6 +145,10 @@ var loadDemoGoal = function(){
           localStorage.setItem('rated-goals', rated_goals +','+$(this).parents('.first-pane.active').attr('id'));
           $(this).parents('.first-pane.active').find('img').attr("style", "display:none");
           $(this).parents('.first-pane.active').append("<img src='https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/rated-goal-details.png' alt='Launch Sales Campaign' />");
+        }
+        if (localStorage.getItem('walkthrough-done') != 'true'){
+            updateWtStepData(4);
+            updateWtStep();   
         }
       });
     }
@@ -182,4 +203,3 @@ $('.scroller-left').click(function() {
   showTabNav(endPoint);
 });
 });
-

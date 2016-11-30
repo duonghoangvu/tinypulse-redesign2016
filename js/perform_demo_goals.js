@@ -47,7 +47,7 @@ $(document).ready(function(e){
     var updateWtStep = function(){
       var step = 'wt-step-' + (localStorage.getItem('wt-step') || 1);
       $('body').removeClass('wt-step-1 wt-step-2 wt-step-3').addClass('wt-on ' + step);
-      if (step == 'wt-step-3'){
+      if (parseInt(localStorage.getItem('wt-step')) > 2){
         $('body').removeClass('wt-on');
       }
     },
