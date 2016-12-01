@@ -611,6 +611,16 @@ body {
 .wt-on.wt-step-2 .wt-step-2 {
   transform: scale(1);
 }
+.wt-on.wt-step-3 .wt-step-3 {
+  transform: scale(1);
+}
+.wt-on.wt-step-4 .wt-step-4 {
+  transform: scale(1);
+}
+.wt-on .dashboard-menu-item {
+  background: #4861A0;
+  z-index: 10;
+}
 
 .wt-overlay {
   visibility: hidden;
@@ -640,8 +650,22 @@ body {
   right: -30px;
   width: 350px;
 }
-.wt-content-wrapper.wt-step-2 .content:after {
-  display: none;
+.wt-content-wrapper.wt-step-3 .content:after {
+  left: -34px;
+  right: auto;
+  border-color: transparent #fff transparent transparent;
+}
+.wt-content-wrapper.wt-step-4 .content {
+  top: 60px;
+  left: 80px;
+}
+.wt-content-wrapper.wt-step-4 .content:after {
+  top: -43px;
+  bottom: auto;
+  left: 20px;
+  right: auto;
+  border-color: transparent transparent #fff transparent;
+  border-width: 30px;
 }
 .wt-content-wrapper .content {
   height: 200px;
@@ -663,6 +687,12 @@ body {
   right: -34px;
   display: block;
   top: 30px;
+}
+.wt-content-wrapper .content .above {
+  color: #00CA7E;
+}
+.wt-content-wrapper .content .below {
+  color: #FF6359;
 }
 .wt-content-wrapper .content .title {
   text-transform: uppercase;
@@ -712,6 +742,7 @@ body {
   height: 8px;
   border-radius: 100%;
   display: inline-block;
+  margin-right: 5px;
 }
 .wt-content-wrapper .content .buttons .indicators span.active {
   background: #4861A0;
@@ -726,6 +757,211 @@ body {
 .new-goal-modal .modal-body img {
   max-width: 100%;
   width: 440px;
+}
+
+.main-content .content-360 {
+  font-size: 0;
+  position: relative;
+  margin-top: 15px;
+}
+.main-content .content-360 .block {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+.main-content .content-360 .block .block-content {
+  position: relative;
+}
+.main-content .content-360 .block .block-content .tooltip {
+  font-size: 16px;
+  padding: 10px;
+  color: #fff;
+  background: #4a4a4a;
+  border-radius: 3px;
+  position: absolute;
+  bottom: calc(100% - 10px);
+  left: 10px;
+  right: 10px;
+  box-shadow: 2px 2px 8px #333;
+  opacity: 0;
+  visibility: hidden;
+  line-height: normal;
+  transition: all .3s;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-content .content-360 .block .block-content .tooltip:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  border-color: #4a4a4a transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px 7px;
+  bottom: -20px;
+}
+.main-content .content-360 .block .block-content img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  transition: all .3s;
+  cursor: pointer;
+}
+.main-content .content-360 .block .content-2 .tooltip:before {
+  left: 80px;
+}
+.main-content .content-360 .block .block-content:hover img {
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px #333;
+}
+.main-content .content-360 .block .block-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.main-content .content-360 .block-3 {
+  width: 30%;
+}
+.main-content .content-360 .block-7 {
+  width: 70%;
+}
+.main-content .content-360 .block:nth-child(2n+1) {
+  padding-right: 10px;
+}
+.main-content .content-360 .block:nth-child(2n) {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 960px) {
+  .main-content .content-360 .block .block-content .tooltip {
+    max-width: 50%;
+  }
+  .main-content .content-360 .block .content-2 .tooltip:before {
+    left: 178px;
+  }
+}
+nav ul li a.not-viewed:after {
+  display: inline-block;
+}
+
+nav ul li a.viewed:after {
+  display: none;
+}
+
+.perform-demo-static {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.perform-demo-static .vertical-menu {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.perform-demo-static .vertical-menu a {
+  display: inline;
+  margin-right: 20px;
+  color: #9b9b9b;
+  position: relative;
+  text-decoration: none;
+}
+.perform-demo-static .vertical-menu a:hover, .perform-demo-static .vertical-menu a.active {
+  color: #4a4a4a;
+}
+.perform-demo-static .vertical-menu a:after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #ea5661;
+  line-height: 0;
+  border-radius: 50%;
+  vertical-align: top;
+  transition: all .3s;
+  display: none;
+}
+.perform-demo-static .vertical-menu a.not-viewed:after {
+  display: inline-block;
+}
+.perform-demo-static .vertical-menu a.viewed:after {
+  display: none;
+}
+.perform-demo-static .company .block {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+.perform-demo-static .company .block img.unclickable {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.perform-demo-static .content {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  left: 50px;
+  transition: all .75s;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  left: 50px;
+  font-size: 0;
+}
+.perform-demo-static .content.active {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+.perform-demo-static .content .block-content {
+  position: relative;
+}
+.perform-demo-static .content .block-content img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.perform-demo-static .content .block-content .tooltip {
+  font-size: 16px;
+  padding: 10px;
+  color: #fff;
+  background: #4a4a4a;
+  border-radius: 3px;
+  position: absolute;
+  left: 200px;
+  top: -45px;
+  z-index: 9;
+  box-shadow: 2px 2px 3px #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+  text-align: left;
+  width: auto;
+  white-space: nowrap;
+}
+.perform-demo-static .content .block-content .tooltip:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  border-color: #4a4a4a transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px 7px;
+  bottom: -20px;
+  left: 60px;
+}
+.perform-demo-static .content .block-content:hover img {
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px #333;
+}
+.perform-demo-static .content .block-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
 }
 
 @font-face {
@@ -800,6 +1036,186 @@ header .content a {
   letter-spacing: 0px;
   padding: 10px 20px;
   margin-top: -8px;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "perform-icon" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add-member:before {
+  content: "";
+}
+
+.icon-archive:before {
+  content: "";
+}
+
+.icon-delete:before {
+  content: "";
+}
+
+.icon-exclamation:before {
+  content: "";
+}
+
+.icon-hamburger:before {
+  content: "";
+}
+
+.icon-share:before {
+  content: "";
+}
+
+.icon-more:before {
+  content: "";
+}
+
+.icon-tick:before {
+  content: "";
+}
+
+.icon-edit-o:before {
+  content: "";
+}
+
+.icon-delete-o:before {
+  content: "";
+}
+
+.icon-x:before {
+  content: "";
+}
+
+.icon-angle-left:before {
+  content: "";
+}
+
+.icon-calendar-o:before {
+  content: "";
+}
+
+.icon-archive-o:before {
+  content: "";
+}
+
+.icon-unarchive-o:before {
+  content: "";
+}
+
+.icon-rate-below-o:before {
+  content: "";
+}
+
+.icon-rate-at-o:before {
+  content: "";
+}
+
+.icon-rate-above-o:before {
+  content: "";
+}
+
+.icon-angle-up:before {
+  content: "";
+}
+
+.icon-angle-down:before {
+  content: "";
+}
+
+.icon-suitcase:before {
+  content: "";
+}
+
+.icon-members:before {
+  content: "";
+}
+
+.icon-paperclip:before {
+  content: "";
+}
+
+.icon-angle-right:before {
+  content: "";
+}
+
+.icon-lightbulb:before {
+  content: "";
+}
+
+.icon-exclamation-triangle:before {
+  content: "";
+}
+
+.icon-chrome:before {
+  content: "";
+}
+
+.icon-snapshot:before {
+  content: "";
+}
+
+.icon-speed:before {
+  content: "";
+}
+
+.icon-arrow-up:before {
+  content: "";
+}
+
+.icon-goal:before {
+  content: "";
+}
+
+.icon-list:before {
+  content: "";
+}
+
+.icon-plus:before {
+  content: "";
+}
+
+.icon-setting:before {
+  content: "";
+}
+
+.icon-help-circled:before {
+  content: "";
+}
+
+.icon-tick2:before {
+  content: "";
+}
+
+.icon-circle-dashed:before {
+  content: "";
+}
+
+.icon-rate-above:before {
+  content: "";
+}
+
+.icon-rate-at:before {
+  content: "";
+}
+
+.icon-rate-below:before {
+  content: "";
+}
+
+.icon-tick-o:before {
+  content: "";
+}
+
+.icon-ic_chat_black:before {
+  content: "";
 }
 
 nav {
@@ -894,143 +1310,6 @@ nav ul li .tooltip:before {
   border-width: 7px;
   top: 15px;
   left: -13px;
-}
-nav [class^="icon-"]:before, nav [class*=" icon-"]:before {
-  font-family: "perform-icon" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-nav .icon-add-member:before {
-  content: "";
-}
-nav .icon-archive:before {
-  content: "";
-}
-nav .icon-delete:before {
-  content: "";
-}
-nav .icon-exclamation:before {
-  content: "";
-}
-nav .icon-hamburger:before {
-  content: "";
-}
-nav .icon-share:before {
-  content: "";
-}
-nav .icon-more:before {
-  content: "";
-}
-nav .icon-tick:before {
-  content: "";
-}
-nav .icon-edit-o:before {
-  content: "";
-}
-nav .icon-delete-o:before {
-  content: "";
-}
-nav .icon-x:before {
-  content: "";
-}
-nav .icon-angle-left:before {
-  content: "";
-}
-nav .icon-calendar-o:before {
-  content: "";
-}
-nav .icon-archive-o:before {
-  content: "";
-}
-nav .icon-unarchive-o:before {
-  content: "";
-}
-nav .icon-rate-below-o:before {
-  content: "";
-}
-nav .icon-rate-at-o:before {
-  content: "";
-}
-nav .icon-rate-above-o:before {
-  content: "";
-}
-nav .icon-angle-up:before {
-  content: "";
-}
-nav .icon-angle-down:before {
-  content: "";
-}
-nav .icon-suitcase:before {
-  content: "";
-}
-nav .icon-members:before {
-  content: "";
-}
-nav .icon-paperclip:before {
-  content: "";
-}
-nav .icon-angle-right:before {
-  content: "";
-}
-nav .icon-lightbulb:before {
-  content: "";
-}
-nav .icon-exclamation-triangle:before {
-  content: "";
-}
-nav .icon-chrome:before {
-  content: "";
-}
-nav .icon-snapshot:before {
-  content: "";
-}
-nav .icon-speed:before {
-  content: "";
-}
-nav .icon-arrow-up:before {
-  content: "";
-}
-nav .icon-goal:before {
-  content: "";
-}
-nav .icon-list:before {
-  content: "";
-}
-nav .icon-plus:before {
-  content: "";
-}
-nav .icon-setting:before {
-  content: "";
-}
-nav .icon-help-circled:before {
-  content: "";
-}
-nav .icon-tick2:before {
-  content: "";
-}
-nav .icon-circle-dashed:before {
-  content: "";
-}
-nav .icon-rate-above:before {
-  content: "";
-}
-nav .icon-rate-at:before {
-  content: "";
-}
-nav .icon-rate-below:before {
-  content: "";
-}
-nav .icon-tick-o:before {
-  content: "";
-}
-nav .icon-ic_chat_black:before {
-  content: "";
 }
 
 .content-wrapper {

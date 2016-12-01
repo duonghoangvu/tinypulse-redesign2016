@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <meta name="viewport" content="maximum-scale=1,width=device-width,initial-scale=1,user-scalable=0"> 
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/perform-demo.css" />
+</head>
+<body class="nav-panel-opened">
+  <div class="main-wrapper">
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="https://www.tinypulse.com/hubfs/redesign_2016/engage_logo.png" />
+        </div> 
+      </div>
+    </header> 
+    <div class="content-wrapper">
+      <nav>
+        <ul class="nav" id="side-menu">
+          <li>
+            <a href="/perform-demo.html">
+              <i class="icon icon-speed"></i> <span class="nav-label">Dashboard</span>
+              <p class="tooltip">Lorem ipsum dolor sit amet.</p>
+            </a>
+          </li>
+          <li>
+            <a href="/perform-demo-goals.html">
+              <i class="icon icon-goal"></i> <span class="nav-label">Goals</span>
+              <p class="tooltip">Lorem ipsum dolor sit amet.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon icon-arrow-up"></i> <span class="nav-label">Rate</span>
+              <p class="tooltip">Lorem ipsum dolor sit amet.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon icon-chrome"></i> <span class="nav-label">360</span>
+              <p class="tooltip">Lorem ipsum dolor sit amet.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon icon-snapshot"></i> <span class="nav-label">Reporting</span>
+              <p class="tooltip">Lorem ipsum dolor sit amet.</p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">
+              <i class="icon icon-setting"></i> <span class="nav-label">Settings</span>
+              <p class="tooltip">Lorem ipsum dolor sit amet.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="icon icon-help-circled"></i> <span class="nav-label">Help Center</span>
+              <p class="tooltip">Lorem ipsum dolor sit amet.</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-content perform-demo-static">
+        <div class="vertical-menu" id="vertical-menu">
+          <a class="general" href="#general" target="">
+            <span>General</span>
+          </a>
+          <a class="users active viewed" href="#users" target="">
+            <span>Users</span>
+          </a>
+        </div>
+        <div class="content general">
+          <div class="block">
+            <div class="block-content">
+              <img class="clickable" src="http://cdn2.hubspot.net/hubfs/443262/redesign_2016/tour-guide/perform/settings-general.png" />
+            </div>          
+          </div>
+        </div>
+        <div class="content users active">
+          <div class="block">
+            <div class="block-content">
+              <img class="clickable" src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/perform/settings-users.png" />   
+              <div class="tooltip">Your activity log will be shown here.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="js/global.js"></script>
+  <script type="text/javascript">
+$(document).ready(function(e){
+  var setViewedContent = function(content){
+    var viewedContents = '';
+    if (localStorage.getItem('viewed-content')){
+      viewedContents = localStorage.getItem('viewed-content');
+      if (viewedContents.split(';').indexOf(content) < 0) {
+        viewedContents += content + ';';
+      }
+    } else {
+      viewedContents += content + ';';
+    }
+    localStorage.setItem('viewed-content', viewedContents);
+  },
+  loadViewContents = function(){
+    var viewedContents = localStorage.getItem('viewed-content');
+    if (viewedContents !== null){
+      viewedContents = viewedContents.split(';');
+      $.each(viewedContents, function(i, content){
+        if (content !== ''){
+          var viewedItem = $('.vertical-menu a[href="#' + content + '"]').addClass('viewed');
+          $('.vertical-menu a').not(viewedItem).addClass('not-viewed');
+          viewedItem = $('nav ul li a[data-active-key="' + content + '"]').addClass('viewed');
+          $('nav ul li a').not(viewedItem).addClass('not-viewed');
+        }
+      });
+    }
+  },
+  initVerticalViewed = function() {
+    viewedContents =  $('#vertical-menu').find('a.viewed');
+    $.each(viewedContents, function(i, viewed){
+      content = $(viewed).attr('href').replace('#', '');
+      setViewedContent(content);
+    });
+  };
+  initNavViewed = function() {
+    viewedContents =  $('nav ul li').find('a.viewed');
+    $.each(viewedContents, function(i, viewed){
+      content = $(viewed).attr('data-active-key');
+      setViewedContent(content);
+    });
+  };
+  loadViewContents();
+  initNavViewed();
+  initVerticalViewed();
+  $('#nav-panel-trigger').on('click', function(e){
+    e.preventDefault();
+    $('body').toggleClass('nav-panel-opened');
+  });
+
+  $('#vertical-menu').find('a').on('click', function(e){
+    e.preventDefault();
+    var content = $(this).attr('href').replace('#', '');
+    if (content !== ''){
+      $('#vertical-menu').find('a').removeClass('active');
+      $(this).addClass('active viewed');
+      setViewedContent(content);
+      $('#nav-panel').find('li.active').addClass('passed').removeClass('active');
+
+      var navItem = $('#nav-panel').find('a[href="#' + content + '"]');
+      navItem.parent().addClass('active');
+      var contentDom = $('.content.' + content);
+      $('.main-content').find('.content').removeClass('active');
+      contentDom.addClass('active'); 
+
+      if (content === 'visualize'){
+        $('#next-content').hide();
+      } else {
+        $('#next-content').show();
+      }
+    }
+  });
+
+  $('nav ul li').find('a').on('click', function(e){
+    var content = $(this).attr('data-active-key');
+    if (content !== ''){
+      setViewedContent(content);
+    }
+  });
+
+  $('.non-interactive').find('img').on('click', function(){
+    var self = $(this);
+    if (!self.hasClass('clicked')){
+      self.closest('.container').addClass('clicked');        
+      window.setTimeout(function(){
+        $('.non-interactive').find('.container').removeClass('clicked');
+      }, 5000);
+    } 
+  });
+
+  $('#next-content').on('click', function(e){
+    e.preventDefault();
+    if ($('#nav-panel').find('.active').next().length > 0){
+      var content = $('#nav-panel').find('.active').next().find('a').attr('href').replace('#','');
+      $('#nav-panel').find('.active').removeClass('active').addClass('passed').next().addClass('active');
+      $('#vertical-menu').find('a[href="#' + content + '"]').trigger('click');
+      if (content === 'visualize'){
+        $('#next-content').hide();
+      }
+    }
+  });
+});
+  </script>
+</body>
