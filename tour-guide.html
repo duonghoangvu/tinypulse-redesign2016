@@ -24,6 +24,12 @@ hbspt.forms.create({
       $form.submit();
       $('#popup').fadeOut(400);
       localStorage.setItem('email-entered', 'true');
+      localStorage.setItem('engage-email-entered', email);
+      $('#vertical-menu').find('a[href="#overview"]').trigger('click');
+      $('#vertical-menu').find('a').removeClass('active');
+      $('#vertical-menu').find('a[href="#overview"]').addClass('active');
+      $('.main-content > .content').removeClass('active');
+      $('.overview').addClass('active');
     });
   }, 
   onFormSubmit: function(){
@@ -106,7 +112,7 @@ hbspt.forms.create({
     </nav>
     <div class="main-content">
       <div class="vertical-menu" id="vertical-menu">
-        <a class="overview active viewed" href="#overview" target="">
+        <a class="overview" href="#overview" target="">
           <span>Overview</span>
           <p class="tooltip">Get a quick summary of your employees' responses, Cheers, and suggestions for the selected pulse survey.</p>
         </a>
@@ -131,7 +137,7 @@ hbspt.forms.create({
           <p class="tooltip">Let TINYpulse categorize your feedback into different key culture drivers. Filter results by sentiment and create initiatives to improve categories which have the most negative feedback. </p>
         </a>
       </div>
-      <div class="content overview active">
+      <div class="content overview">
         <div class="block">
           <div class="wt-content-wrapper wt-step-1">
             <div class="wt-content">
@@ -295,9 +301,15 @@ $(document).ready(function(e){
   var stepOrder = ["", "", "cheers", "suggestions", "compare", "visualize"];
   if (localStorage.getItem('email-entered') != 'true' || localStorage.getItem('email-entered') == undefined){
     document.getElementById('popup').style = "display: block;"
+  } else {
+    $('#vertical-menu').find('a[href="#overview"]').trigger('click');
+    $('#vertical-menu').find('a').removeClass('active');
+    $('#vertical-menu').find('a[href="#overview"]').addClass('active');
+    $('.main-content > .content').removeClass('active');
+    $('.overview').addClass('active');
   };
   if (!localStorage.getItem('walkthrough-engage-done')){
-    if (localStorage.getItem('wte-step') == 4){
+    if (localStorage.getItem('wte-step') == 5){
       $('body').removeClass('wt-step-0 wt-step-1 wt-step-2 wt-step-3 wt-step-4 wt-step-5').addClass('wt-on wt-step-5');
       $('#vertical-menu').find('a').removeClass('active');
       $('#vertical-menu').find('a[href="#visualize"]').addClass('active');
@@ -339,7 +351,7 @@ $(document).ready(function(e){
   $('body').on('click', '.wt-content-wrapper.wt-step-5 .buttons .finish', function(e){
     e.preventDefault();
     localStorage.setItem('walkthrough-engage-done', 'true'); 
-    window.location = 'https://app.tinypulse.com/engage/signup';
+    window.location = 'https://app.tinypulse.com/engage/signup?email='+localStorage.getItem('engage-email-entered');
   });
   $('body').on('click', '.wt-content-wrapper.wt-step-5 .buttons .continue-explore', function(e){
     e.preventDefault();
