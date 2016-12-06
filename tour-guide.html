@@ -4,272 +4,448 @@
   <link rel="stylesheet" href="css/tour-guide.css" />
   <meta name="viewport" content="maximum-scale=1,width=device-width,initial-scale=1,user-scalable=0"> 
 </head>
-<body class="nav-panel-opened">
-  <div class="main-wrapper">
-    <header>
-      <div class="container">
-        <div class="logo">
-          <img src="https://www.tinypulse.com/hubfs/redesign_2016/engage_logo.png" />
-        </div>
-        <div class="content">
-          <p>Free feel to explore your prefilled TINYpulse Dashboard. When you're ready click continue to clear data and start pulsing.</p>
-          <a href="http://app.tinypulse.com/engage/signup">Start using TINYpulse - Engage</a>
-        </div>        
+<div class="popup-container" id="popup" style="display; none;">
+  <div class="popup-content">
+    <div style="display: none;">
+      <!-- [if lte IE 8] -->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <!-- [endif] -->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+hbspt.forms.create({ 
+  portalId: '443262',
+  formId: '0ff498c5-b943-4a11-b858-d5a7cc8fd6cc',
+  onFormReady: function($form){
+    $('#start-demo-form').on('submit', function(e){
+      e.preventDefault();
+      var form = $(this), 
+      email = form.find('input[name=email]').val();
+      $('#email-0ff498c5-b943-4a11-b858-d5a7cc8fd6cc').val(email);
+      $form.submit();
+      $('#popup').fadeOut(400);
+      localStorage.setItem('email-entered', 'true');
+    });
+  }, 
+  onFormSubmit: function(){
+  }
+});
+      </script>
+    </div>
+    <h3 class="title">Your demo is just one step away.</h3>
+    <form id="start-demo-form">
+      <input type="email" class="email" name="email" required placeholder="Enter your work email" />
+      <input type="submit" class="submit gtm-engage-start-demo" value="START DEMO" />
+    </form>
+  </div>
+</div>
+<div class="main-wrapper">
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="https://www.tinypulse.com/hubfs/redesign_2016/engage_logo.png" />
       </div>
-    </header> 
-    <div class="content-wrapper">
-      <nav>
-        <ul class="nav" id="side-menu">
-          <li class="active" title="" data-toggle="tooltip" data-original-title="Insights">
-            <a href="/redesign-2016-tour-guide-overview-zaqwsxcderfv" data-active-key="insights" class='viewed'>
-              <i class="icon-gause"></i> <span class="nav-label">Insights</span>
-              <p class="tooltip">Lorem ipsum dolor sit amet.</p>
-            </a>
-          </li>
-        
-          <li title="" data-toggle="tooltip" data-original-title="Manage Pulses">
-            <a href="/redesign-2016-tour-guide-managepulse-zaqwsxcderfv" data-active-key="manage-pulses">
-              <i class="icon-pulse"></i> <span class="nav-label">Manage Pulses</span>
-              <p class="tooltip"> Schedule your questions in advance and watch the feedback roll in.</p>
-            </a>
-          </li>
-        
-          <li title="" data-toggle="tooltip" data-original-title="Share">
-            <a href="/redesign-2016-tour-guide-sharing-zaqwsxcderfv" data-active-key="sharing">
-              <i class="icon-share"></i> <span class="nav-label">Share</span>
-              <p class="tooltip">Share results with your teams or executive leadership once the results are in.</p>
-            </a>
-          </li>
-        
-          <li title="" data-toggle="tooltip" data-original-title="Manage Users">
-            <a href="/redesign-2016-tour-guide-users-zaqwsxcderfv" data-active-key="users">
-              <i class="icon-users"></i> <span class="nav-label">Manage Users</span>
-              <p class="tooltip">Invite or deactivate  your employees to TINYpulse, and set additional administrators.</p>
-            </a>
-          </li>
-        
-          <li title="" data-toggle="tooltip" data-original-title="Settings">
-            <a href="/redesign-2016-tour-guide-settings-zaqwsxcderfv" data-active-key="settings">
-              <i class="icon-setting"></i> <span class="nav-label">Settings</span>
-              <p class="tooltip">Make updates to your account, integrate with some of our awesome partners, and more!</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="main-content">
-        <div class="vertical-menu" id="vertical-menu">
-          <a class="overview active viewed" href="#overview" target="">
-            <span>Overview</span>
-            <p class="tooltip">Get a quick summary of your employees' responses, Cheers, and suggestions for the selected pulse survey.</p>
+      <div class="content">
+        <p>Free feel to explore your prefilled TINYpulse Dashboard. When you're ready click continue to clear data and start pulsing.</p>
+        <a href="http://app.tinypulse.com/engage/signup">Start using TINYpulse - Engage</a>
+      </div>        
+    </div>
+  </header> 
+  <div class="wt-overlay"></div>
+  <div class="wt-content-wrapper wt-step-0">
+    <div class="wt-content">
+      <h3 class="wt-title">Welcome to Engage!</h3>
+      <hr>
+      <div class="instruction">
+        <p>TINYpulse gives leaders the tools to improve culture, employee performance, and engagement.</p>
+        <p>Our aim is to help creating a better workplace.</p>
+      </div>
+      <div class="buttons">
+        <a class="skip gtm_engage_skip_welcome" href="/engage">Skip</a>
+        <a class="get-started" id="open-wt-step-1" href="#">Get Started</a>
+      </div>
+    </div>
+  </div>
+  <div class="content-wrapper">
+    <nav>
+      <ul class="nav" id="side-menu">
+        <li class="active" title="" data-toggle="tooltip" data-original-title="Insights">
+          <a href="/redesign-2016-tour-guide-overview-zaqwsxcderfv" data-active-key="insights" class='viewed'>
+            <i class="icon-gause"></i> <span class="nav-label">Insights</span>
+            <p class="tooltip">Lorem ipsum dolor sit amet.</p>
           </a>
-          <a class="responses" href="#responses" target="">
-            <span>Responses</span>
-            <p class="tooltip">View and take action on all responses for the current pulse survey as well as past surveys. </p>
+        </li>
+
+        <li title="" data-toggle="tooltip" data-original-title="Manage Pulses">
+          <a href="/redesign-2016-tour-guide-managepulse-zaqwsxcderfv" data-active-key="manage-pulses">
+            <i class="icon-pulse"></i> <span class="nav-label">Manage Pulses</span>
+            <p class="tooltip"> Schedule your questions in advance and watch the feedback roll in.</p>
           </a>
-          <a class="cheers-for-peers" href="#cheers" target="">
-            <span>Cheers for Peers</span>
-            <p class="tooltip">View all Cheers being spread around your company. </p>
+        </li>
+
+        <li title="" data-toggle="tooltip" data-original-title="Share">
+          <a href="/redesign-2016-tour-guide-sharing-zaqwsxcderfv" data-active-key="sharing">
+            <i class="icon-share"></i> <span class="nav-label">Share</span>
+            <p class="tooltip">Share results with your teams or executive leadership once the results are in.</p>
           </a>
-          <a class="suggestions" href="#suggestions" target="">
-            <span>Suggestions</span>
-            <p class="tooltip">Review all feedback sent as suggestions. Take further action by starting a dialog via private messaging, tagging, adding notes, and sending the suggestion to the Wall of Wins once it's resolved.</p>
+        </li>
+
+        <li title="" data-toggle="tooltip" data-original-title="Manage Users">
+          <a href="/redesign-2016-tour-guide-users-zaqwsxcderfv" data-active-key="users">
+            <i class="icon-users"></i> <span class="nav-label">Manage Users</span>
+            <p class="tooltip">Invite or deactivate  your employees to TINYpulse, and set additional administrators.</p>
           </a>
-          <a class="compare" href="#compare" target="">
-            <span>Compare</span>
-            <p class="tooltip">Monitor the happiness of your employees over time and know exactly when to take action to improve their morale. </p>
+        </li>
+
+        <li title="" data-toggle="tooltip" data-original-title="Settings">
+          <a href="/redesign-2016-tour-guide-settings-zaqwsxcderfv" data-active-key="settings">
+            <i class="icon-setting"></i> <span class="nav-label">Settings</span>
+            <p class="tooltip">Make updates to your account, integrate with some of our awesome partners, and more!</p>
           </a>
-          <a class="company-iq" href="#visualize" target="">
-            <span>Visualize<span class="supper">Beta</span></span>
-            <p class="tooltip">Let TINYpulse categorize your feedback into different key culture drivers. Filter results by sentiment and create initiatives to improve categories which have the most negative feedback. </p>
-          </a>
-        </div>
-        <div class="content overview active">
-          <div class="block">
-            <div class="container content-1">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-1.png" />   
-              <div class="tooltip">Jump to results from any previous survey and watch the dashboard update in real-time.</div>                    
+        </li>
+      </ul>
+    </nav>
+    <div class="main-content">
+      <div class="vertical-menu" id="vertical-menu">
+        <a class="overview active viewed" href="#overview" target="">
+          <span>Overview</span>
+          <p class="tooltip">Get a quick summary of your employees' responses, Cheers, and suggestions for the selected pulse survey.</p>
+        </a>
+        <a class="responses" href="#responses" target="">
+          <span>Responses</span>
+          <p class="tooltip">View and take action on all responses for the current pulse survey as well as past surveys. </p>
+        </a>
+        <a class="cheers-for-peers" href="#cheers" target="">
+          <span>Cheers for Peers</span>
+          <p class="tooltip">View all Cheers being spread around your company. </p>
+        </a>
+        <a class="suggestions" href="#suggestions" target="">
+          <span>Suggestions</span>
+          <p class="tooltip">Review all feedback sent as suggestions. Take further action by starting a dialog via private messaging, tagging, adding notes, and sending the suggestion to the Wall of Wins once it's resolved.</p>
+        </a>
+        <a class="compare" href="#compare" target="">
+          <span>Compare</span>
+          <p class="tooltip">Monitor the happiness of your employees over time and know exactly when to take action to improve their morale. </p>
+        </a>
+        <a class="company-iq" href="#visualize" target="">
+          <span>Visualize<span class="supper">Beta</span></span>
+          <p class="tooltip">Let TINYpulse categorize your feedback into different key culture drivers. Filter results by sentiment and create initiatives to improve categories which have the most negative feedback. </p>
+        </a>
+      </div>
+      <div class="content overview active">
+        <div class="block">
+          <div class="wt-content-wrapper wt-step-1">
+            <div class="wt-content">
+              <h3 class="wt-title">Overview</h3>
+              <hr>
+              <div class="instruction">
+                <p>View pulsing survey results at a glance and watch dashboard update in real-time.</p>
+              </div>
+              <div class="buttons">
+                <a class="skip gtm_engage_skip1" href="/engage">Skip</a>
+                <a class="next gtm_engage_next1" id="open-wt-step-2" href="#">Next</a>
+              </div>
             </div>
           </div>
-          <div class="block">
-            <div class="container content-2">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-2.png" />     
-              <div class="tooltip">See which segments posted the highest scores. </div>         
-            </div>
-            <div class="container content-3">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-3.png" />    
-              <div class="tooltip">Check out who sent and received the most Cheers for that survey period. </div>                   
-            </div>
-          </div>
-          <div class="block">
-            <div class="container content-4">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-4.png" />    
-              <div class="tooltip">Get a boost by seeing the three responses with the highest score for that survey.</div>                 
-            </div>
-          </div>
-          <div class="block">
-            <div class="container content-5">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-5.png" />              
-              <div class="tooltip">Never fall behind by viewing new suggestions as they're submitted.</div>         
-            </div>
-          </div>
-        </div>
-        <div class="content responses non-interactive">
-          <div class="block">
-            <div class="container">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/responses.png" />
-                <div class="tooltip">Want to explore these cool features? Click on the link at the bottom right to Sign Up for free and create your own Dashboard.</div>
-            </div>          
-          </div>
-        </div>
-        <div class="content cheers">
-          <div class="content-left">
-            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-1.png" />
-            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-3.png" />
-            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-5.png" />
-          </div>
-          <div class="content-right">
-            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-2.png" />
+          <div class="container content-1 showup">
+            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-1.png" />   
+            <div class="tooltip">Jump to results from any previous survey and watch the dashboard update in real-time.</div>                    
           </div>
         </div>
-        <div class="content suggestions non-interactive">
-          <div class="block">
-            <div class="container">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/suggestions.png" />          
-            </div>
+        <div class="block">
+          <div class="container content-2">
+            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-2.png" />     
+            <div class="tooltip">See which segments posted the highest scores. </div>         
+          </div>
+          <div class="container content-3">
+            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-3.png" />    
+            <div class="tooltip">Check out who sent and received the most Cheers for that survey period. </div>                   
           </div>
         </div>
-        <div class="content compare non-interactive">
-          <div class="block">
-            <div class="container">
-              <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/compare-1.png" />          
-            </div>
+        <div class="block">
+          <div class="container content-4">
+            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-4.png" />    
+            <div class="tooltip">Get a boost by seeing the three responses with the highest score for that survey.</div>                 
           </div>
         </div>
-        <div class="content visualize non-interactive">
-          <div class="block">
-            <div class="container">
-              <img src="http://www.tinypulse.com/hubfs/redesign_2016/tour-guide/smartpulse.png" />
+        <div class="block">
+          <div class="container content-5">
+            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/overview-5.png" />              
+            <div class="tooltip">Never fall behind by viewing new suggestions as they're submitted.</div>         
+          </div>
+        </div>
+      </div>
+      <div class="content responses non-interactive">
+        <div class="block">
+          <div class="container">
+            <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/responses.png" />
+            <div class="tooltip">Want to explore these cool features? Click on the link at the bottom right to Sign Up for free and create your own Dashboard.</div>
+          </div>          
+        </div>
+      </div>
+      <div class="content cheers">
+        <div class="content-left">
+          <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-1.png" />
+          <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-3.png" />
+          <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-5.png" />
+        </div>
+        <div class="content-right">
+          <div class="wt-content-wrapper wt-step-2">
+            <div class="wt-content">
+              <h3 class="wt-title">Cheers for Peers</h3>
+              <hr>
+              <div class="instruction">
+                <p>View pulsing survey results at a glance and watch dashboard update in real-time.</p>
+              </div>
+              <div class="buttons">
+                <a class="skip gtm_engage_skip2" href="/engage">Skip</a>
+                <a class="next gtm_engage_next2" id="open-wt-step-3" href="#">Next</a>
+              </div>
             </div>
+          </div>
+          <img class="showup" src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/cheer-2.png" />
+        </div>
+      </div>
+      <div class="content suggestions non-interactive">
+        <div class="content-left">
+          <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/suggestion-1.png" />
+        </div>
+        <div class="content-right">
+          <div class="wt-content-wrapper wt-step-3">
+            <div class="wt-content">
+              <h3 class="wt-title">Suggestions</h3>
+              <hr>
+              <div class="instruction">
+                <p>Review all feedback sent as suggestions. Take further action by starting a dialog via private messaging, tagging, adding notes, and sending the suggestion to the Wall of Wins once it's resolved.</p>
+              </div>
+              <div class="buttons">
+                <a class="skip gtm_engage_skip3" href="/engage">Skip</a>
+                <a class="next gtm_engage_next3" id="open-wt-step-4" href="#">Next</a>
+              </div>
+            </div>
+          </div>
+          <img class="showup" src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/suggestion-2.png" />
+        </div>
+      </div>
+      <div class="content compare non-interactive">
+        <div class="content-left">
+          <img src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/compare-3.png" />
+        </div>
+        <div class="content-right">
+          <div class="wt-content-wrapper wt-step-4">
+            <div class="wt-content">
+              <h3 class="wt-title">Compare Happiness</h3>
+              <hr>
+              <div class="instruction">
+                <p>Monitor the happiness of your employees over time. Know exactly when to take action to improve overall happiness and celebrate improvements related to TINYpulse feedback.</p>
+              </div>
+              <div class="buttons">
+                <a class="skip gtm_engage_skip4" href="/engage">Skip</a>
+                <a class="next gtm_engage_next4" id="open-wt-step-5" href="#">Next</a>
+              </div>
+            </div>
+          </div>
+          <img class="showup" src="https://www.tinypulse.com/hubfs/redesign_2016/tour-guide/compare-2.png" />
+        </div>
+      </div>
+      <div class="content visualize non-interactive">
+        <div class="block">
+          <div class="container">
+          <div class="wt-content-wrapper wt-step-5">
+            <div class="wt-content">
+              <h3 class="wt-title">Visualize</h3>
+              <hr>
+              <div class="instruction">
+                <p>Let us do the work for you. We’ll categorize your data to let you know exactly which areas need improvement.</p>
+              </div>
+              <div class="buttons">
+                <a class="continue-explore gtm_engage_continue" href="#">Continue to explore demo</a>
+                <a class="finish" href="https://app.tinypulse.com/engage/signup">FINISH</a>
+              </div>
+            </div>
+          </div>
+            <img class="half showup" src="http://www.tinypulse.com/hubfs/redesign_2016/tour-guide/smartpulse-t1.png" />
+            <img class="half" src="http://www.tinypulse.com/hubfs/redesign_2016/tour-guide/smartpulse-t2.png" />
+          </div>
+        </div>
+        <div class="block">
+          <div class="container">
+            <img src="http://www.tinypulse.com/hubfs/redesign_2016/tour-guide/smartpulse-b.png" />
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="nav-panel" id="nav-panel">
-    <a href="#" class="nav-panel-trigger" id="nav-panel-trigger">Introduction to TINYpulse</a>
-    <ul>
-      <li class="active"><a href="#overview"><span class="no"><i>1</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Overview</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.<span>Hover over <i><img src="images/tour-guide/ic_info.png" /></i> to find out more.</span></p></a></li>
-      <li class=""><a href="#cheers"><span class="no"><i>2</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Cheers for Peers</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
-      <li><a href="#suggestions"><span class="no"><i>3</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Suggestions</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
-      <li><a href="#compare"><span class="no"><i>4</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Happiness Trend</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
-      <li><a href="#visualize"><span class="no"><i>5</i><i class="fa fa-check" aria-hidden="true"></i></span><span>SMARTpulse</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
-    </ul>
-    <a href="#" class="exit-tour">Exit tour</a>
-    <a href="#" class="next-step" id="next-content">Next</a>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/global.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(e){
-      var setViewedContent = function(content){
-        var viewedContents = '';
-        if (localStorage.getItem('viewed-content')){
-          viewedContents = localStorage.getItem('viewed-content');
-          if (viewedContents.split(';').indexOf(content) < 0) {
-            viewedContents += content + ';';
-          }
-        } else {
-          viewedContents += content + ';';
-        }
-        localStorage.setItem('viewed-content', viewedContents);
-      },
-      loadViewContents = function(){
-        var viewedContents = localStorage.getItem('viewed-content');
-        if (viewedContents !== null){
-          viewedContents = viewedContents.split(';');
-          $.each(viewedContents, function(i, content){
-            if (content !== ''){
-              var viewedItem = $('.vertical-menu a[href="#' + content + '"]').addClass('viewed');
-              $('.vertical-menu a').not(viewedItem).addClass('not-viewed');
-              viewedItem = $('nav ul li a[data-active-key="' + content + '"]').addClass('viewed');
-              $('nav ul li a').not(viewedItem).addClass('not-viewed');
-            }
-          });
-        }
-      },
-      initVerticalViewed = function() {
-        viewedContents =  $('#vertical-menu').find('a.viewed');
-         $.each(viewedContents, function(i, viewed){
-           content = $(viewed).attr('href').replace('#', '');
-           setViewedContent(content);
-         });
-      };
-      initNavViewed = function() {
-        viewedContents =  $('nav ul li').find('a.viewed');
-         $.each(viewedContents, function(i, viewed){
-           content = $(viewed).attr('data-active-key');
-           setViewedContent(content);
-         });
-      };
-      loadViewContents();
-      initNavViewed();
-      initVerticalViewed();
-      $('#nav-panel-trigger').on('click', function(e){
-        e.preventDefault();
-        $('body').toggleClass('nav-panel-opened');
-      });
+</div>
+<div class="nav-panel" id="nav-panel">
+  <a href="#" class="nav-panel-trigger" id="nav-panel-trigger">Introduction to TINYpulse</a>
+  <ul>
+    <li class="active"><a href="#overview"><span class="no"><i>1</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Overview</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.<span>Hover over <i><img src="images/tour-guide/ic_info.png" /></i> to find out more.</span></p></a></li>
+    <li class=""><a href="#cheers"><span class="no"><i>2</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Cheers for Peers</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
+    <li><a href="#suggestions"><span class="no"><i>3</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Suggestions</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
+    <li><a href="#compare"><span class="no"><i>4</i><i class="fa fa-check" aria-hidden="true"></i></span><span>Happiness Trend</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
+    <li><a href="#visualize"><span class="no"><i>5</i><i class="fa fa-check" aria-hidden="true"></i></span><span>SMARTpulse</span><p>Summary of your employee's responses, cheers and feedback of the chosen pulse.</p></a></li>
+  </ul>
+  <a href="#" class="exit-tour">Exit tour</a>
+  <a href="#" class="next-step" id="next-content">Next</a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!--<script src="js/global.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function(e){
+  var stepOrder = ["", "", "cheers", "suggestions", "compare", "visualize"];
+  if (localStorage.getItem('email-entered') != 'true' || localStorage.getItem('email-entered') == undefined){
+    document.getElementById('popup').style = "display: block;"
+  };
+  if (!localStorage.getItem('walkthrough-engage-done')){
+    if (localStorage.getItem('wte-step') == 4){
+      $('body').removeClass('wt-step-0 wt-step-1 wt-step-2 wt-step-3 wt-step-4 wt-step-5').addClass('wt-on wt-step-5');
+      $('#vertical-menu').find('a').removeClass('active');
+      $('#vertical-menu').find('a[href="#visualize"]').addClass('active');
+      $('.main-content > .content').removeClass('active');
+      $('.visualize').addClass('active');
+    } else {
+      $('body').removeClass('wt-step-0 wt-step-1 wt-step-2 wt-step-3 wt-step-4 wt-step-5').addClass('wt-on wt-step-0');
+    }
+  };
+  $('body').on('click', '.get-started', function(e){
+    if (localStorage.getItem('walkthrough-engage-done') != 'true'){
+      updateWtStepData(1);
+      updateWtStep();
+      $('body').removeClass('wt-step-0 wt-step-1 wt-step-2 wt-step-3 wt-step-4 wt-step-5').addClass("wt-on wt-step-1");
+    }
+  });
+  $('body').on('click', '.next', function(e){
+    if (localStorage.getItem('walkthrough-engage-done') != 'true'){
+      btn_id = this.id;
+      btn_id = btn_id.replace('open-wt-step-', '');
+      if(parseInt(btn_id) > 1) {
+        $('#vertical-menu').find('a[href="#'+stepOrder[btn_id]+'"]').trigger('click');
+      }
+      updateWtStepData(btn_id);
+      updateWtStep();
+      $('body').removeClass('wt-step-0 wt-step-1 wt-step-2 wt-step-3 wt-step-4 wt-step-5').addClass("wt-on wt-step-"+btn_id);
+    }
+  });
+  var updateWtStep = function(){
+    var step = 'wt-step-' + (localStorage.getItem('wte-step') || 0);
+    $('body').removeClass('wt-step-1 wt-step-2 wt-step-3').addClass('wt-on ' + step);
+    if (step != 'wt-step-0' && step != 'wt-step-1'){
+      $('body').removeClass('wt-on');
+    }
+  },
+  updateWtStepData = function(step){
+    localStorage.setItem('wte-step', step);
+  };
+  $('body').on('click', '.wt-content-wrapper.wt-step-5 .buttons .finish', function(e){
+    e.preventDefault();
+    localStorage.setItem('walkthrough-engage-done', 'true'); 
+    window.location = 'https://app.tinypulse.com/engage/signup';
+  });
+  $('body').on('click', '.wt-content-wrapper.wt-step-5 .buttons .continue-explore', function(e){
+    e.preventDefault();
+    localStorage.setItem('walkthrough-engage-done', 'true'); 
+    $('body').removeClass('wt-on');
+  });
 
-      $('#vertical-menu').find('a').on('click', function(e){
-        e.preventDefault();
-        var content = $(this).attr('href').replace('#', '');
+  var setViewedContent = function(content){
+    var viewedContents = '';
+    if (localStorage.getItem('viewed-content')){
+      viewedContents = localStorage.getItem('viewed-content');
+      if (viewedContents.split(';').indexOf(content) < 0) {
+        viewedContents += content + ';';
+      }
+    } else {
+      viewedContents += content + ';';
+    }
+    localStorage.setItem('viewed-content', viewedContents);
+  },
+  loadViewContents = function(){
+    var viewedContents = localStorage.getItem('viewed-content');
+    if (viewedContents !== null){
+      viewedContents = viewedContents.split(';');
+      $.each(viewedContents, function(i, content){
         if (content !== ''){
-          $('#vertical-menu').find('a').removeClass('active');
-          $(this).addClass('active viewed');
-          setViewedContent(content);
-          $('#nav-panel').find('li.active').addClass('passed').removeClass('active');
-
-          var navItem = $('#nav-panel').find('a[href="#' + content + '"]');
-          navItem.parent().addClass('active');
-          var contentDom = $('.content.' + content);
-          $('.main-content').find('.content').removeClass('active');
-          contentDom.addClass('active'); 
-
-          if (content === 'visualize'){
-            $('#next-content').hide();
-          } else {
-            $('#next-content').show();
-          }
+          var viewedItem = $('.vertical-menu a[href="#' + content + '"]').addClass('viewed');
+          $('.vertical-menu a').not(viewedItem).addClass('not-viewed');
+          viewedItem = $('nav ul li a[data-active-key="' + content + '"]').addClass('viewed');
+          $('nav ul li a').not(viewedItem).addClass('not-viewed');
         }
       });
-
-      $('nav ul li').find('a').on('click', function(e){
-        var content = $(this).attr('data-active-key');
-        if (content !== ''){
-          setViewedContent(content);
-        }
-      });
-
-      $('.non-interactive').find('img').on('click', function(){
-        var self = $(this);
-        if (!self.hasClass('clicked')){
-          self.closest('.container').addClass('clicked');        
-          window.setTimeout(function(){
-            $('.non-interactive').find('.container').removeClass('clicked');
-          }, 5000);
-        } 
-      });
-
-      $('#next-content').on('click', function(e){
-        e.preventDefault();
-        if ($('#nav-panel').find('.active').next().length > 0){
-          var content = $('#nav-panel').find('.active').next().find('a').attr('href').replace('#','');
-          $('#nav-panel').find('.active').removeClass('active').addClass('passed').next().addClass('active');
-          $('#vertical-menu').find('a[href="#' + content + '"]').trigger('click');
-          if (content === 'visualize'){
-            $('#next-content').hide();
-          }
-        }
-      });
+    }
+  },
+  initVerticalViewed = function() {
+    viewedContents =  $('#vertical-menu').find('a.viewed');
+    $.each(viewedContents, function(i, viewed){
+      content = $(viewed).attr('href').replace('#', '');
+      setViewedContent(content);
     });
-  </script>
+  };
+  initNavViewed = function() {
+    viewedContents =  $('nav ul li').find('a.viewed');
+    $.each(viewedContents, function(i, viewed){
+      content = $(viewed).attr('data-active-key');
+      setViewedContent(content);
+    });
+  };
+  loadViewContents();
+  initNavViewed();
+  initVerticalViewed();
+  $('#nav-panel-trigger').on('click', function(e){
+    e.preventDefault();
+    $('body').toggleClass('nav-panel-opened');
+  });
+
+  $('#vertical-menu').find('a').on('click', function(e){
+    e.preventDefault();
+    var content = $(this).attr('href').replace('#', '');
+    if (content !== ''){
+      $('#vertical-menu').find('a').removeClass('active');
+      $(this).addClass('active viewed');
+      setViewedContent(content);
+      $('#nav-panel').find('li.active').addClass('passed').removeClass('active');
+
+      var navItem = $('#nav-panel').find('a[href="#' + content + '"]');
+      navItem.parent().addClass('active');
+      var contentDom = $('.content.' + content);
+      $('.main-content').find('.content').removeClass('active');
+      contentDom.addClass('active'); 
+
+      if (content === 'visualize'){
+        $('#next-content').hide();
+      } else {
+        $('#next-content').show();
+      }
+    }
+  });
+
+  $('nav ul li').find('a').on('click', function(e){
+    var content = $(this).attr('data-active-key');
+    if (content !== ''){
+      setViewedContent(content);
+    }
+  });
+
+  $('.non-interactive').find('img').on('click', function(){
+    var self = $(this);
+    if (!self.hasClass('clicked')){
+      self.closest('.container').addClass('clicked');        
+      window.setTimeout(function(){
+        $('.non-interactive').find('.container').removeClass('clicked');
+      }, 5000);
+    } 
+  });
+
+  $('#next-content').on('click', function(e){
+    e.preventDefault();
+    if ($('#nav-panel').find('.active').next().length > 0){
+      var content = $('#nav-panel').find('.active').next().find('a').attr('href').replace('#','');
+      $('#nav-panel').find('.active').removeClass('active').addClass('passed').next().addClass('active');
+      $('#vertical-menu').find('a[href="#' + content + '"]').trigger('click');
+      if (content === 'visualize'){
+        $('#next-content').hide();
+      }
+    }
+  });
+});
+</script>
 </body>
