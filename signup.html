@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/signup.css" />
+  <meta name="viewport" content="maximum-scale=1,width=device-width,initial-scale=1,user-scalable=0"> 
+</head>
+<body>
+  <div class="main-mobile-nav-container">
+    <div class="triggers">
+      <a href="#" class="logo">
+        <img class="white" src="images/tinypulse-logo.svg" alt="Logo">
+        <img class="color" src="http://tinypulse.com/hubfs/redesign_2016/tinypulse-logo.png" alt="Logo">
+      </a>
+    </div>
+  </div>
+  <div class="main-wrapper">
+    <header>
+      <div class="main-nav-container">
+        <div id="main-nav" class="main-nav">
+          <a href="#" class="logo">
+            <img class="white" src="images/tinypulse-logo.svg" alt="Logo">
+            <img class="color" src="http://tinypulse.com/hubfs/redesign_2016/tinypulse-logo.png" alt="Logo">
+          </a>
+        </div>
+      </div>
+    </header>  
+    <div class="main-content">
+      <div class="download-info">
+        <div class="container">
+          <div class="form-container">
+            <div class="forms">
+              <div class="form download has-interactive-form">
+                <div class="title">Let's get started</div>
+                <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
+                <script>
+hbspt.forms.create({ 
+  portalId: '443262',
+  formId: 'beb7f12b-3e76-46e5-97ab-9a5db3f133e9', 
+  onFormSubmit: function(){
+    var anchor = document.createElement('a');
+    anchor.href = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
+    anchor.download = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
+
+    var userAgent = window.navigator.userAgent;
+    if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)){
+      anchor.click();   
+    }
+    $('.has-interactive-form .title').addClass('hidden');
+  },
+  onFormReady: function(){
+    var userAgent = window.navigator.userAgent;
+    if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+      if ($('.submitted-message').length > 0){
+        var anchor = document.createElement('a');
+        anchor.href = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
+        anchor.download = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
+        anchor.click(); 
+      }
+    }
+  }
+});
+                </script>
+              </div>
+              <div class="form interactive-form">
+                <div class="title">Let's get started</div>
+                <div class="subtitle">Just a few questions to customize your TINYpulse Engage experience:</div>
+                <form action="https://app.tinypulse.com/engage/signup" method="GET" class="hs-form stacked">
+                  <div class="hs_password field hs-form-field">
+                    <label for="password">One last step, please type your password:</label>
+                    <div class="input">
+                      <input class="hs-input" name="password" type="password" value=""/>
+                    </div>
+                  </div>
+                  <div class="hs_phone field hs-form-field">
+                    <label for="phone">What's your phone number?</label>
+                    <div class="input">
+                      <input class="hs-input" name="phone" type="tel" value=""/>
+                    </div>
+                  </div>
+                  <div class="hs_phone field hs-form-field">
+                    <label for="numberofemployees_number">How many employees are in your company?</label>
+                    <div class="input">
+                      <input class="hs-input" name="numberofemployees_number" type="number" value=""/>
+                    </div>
+                  </div>
+                  <div class="hs_companyname field hs-form-field">
+                    <label for="fullname">What's your company name?</label>
+                    <div class="input">
+                      <input class="hs-input" name="company" type="text" value=""/>
+                    </div>
+                  </div>
+                  <div class="hs_firstname field hs-form-field">
+                    <label for="fullname">What's your full name?</label>
+                    <div class="input">
+                      <input class="hs-input" name="fullname" type="text" value=""/>
+                    </div>
+                  </div>
+                  <div class="hs_email field hs-form-field">
+                    <label for="email">What's your work email?</label>
+                    <div class="input">
+                      <input class="hs-input" name="email" required type="email" value="" autofocus/>
+                    </div>
+                  </div>
+                  <div class="next-button">
+                    <input type="submit" value="Next" />
+                  </div>
+                </form>
+                <div class="terms">By clicking on Next, you are indicating that you have read and agree to the <a href="https://www/terms-of-use">Terms of Use</a>.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="signup-quote">
+        <div class="desc"><i>"This Revolutionary Tool Can Help Keep Employees Happy, Engaged, And On Your Side"</i></div>
+        <div class="fast-logo"><img src="https://www.tinypulse.com/hs-fs/hubfs/static-pages-images/new-static-pages/white-logos/fast-company2x.png" /></div>
+      </div>
+
+    </div>
+    <footer id="site-footer">
+      <div class="copyright">
+        <div class="container">
+          <span>+1 (206) 455 9424</span>
+          <span>200 West Thomas St. Seattle, WA 98119</span>
+          <span>Copyright &copy; 2016 TINYpulse &reg;</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/signup.js"></script>
+  <script src="js/global.js"></script>
+</body>
