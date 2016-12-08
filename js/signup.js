@@ -25,18 +25,9 @@ $(document).ready(function(){
       nextField();
     } else {
       nextField();
-      if ($(this).find('input[type=submit]').attr('value') == 'Download'){
-        var anchor = document.createElement('a');
-        anchor.href = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
-        anchor.download = 'https://www.tinypulse.com/hubfs/TINYpulse_Employee_Retention_Report.pdf';
-
-        var userAgent = window.navigator.userAgent;
-        if (!userAgent.match(/iPad/i) && !userAgent.match(/iPhone/i)){
-          anchor.click();
-        }
-        $(this).addClass('hidden');
-        $(this).parent().find('.submitted-message').removeClass('hidden');
-        $(this).parent().find('.title').addClass('hidden');
+      if ($(this).find('input[type=submit]').attr('value') == 'SUBMIT'){
+        window.location = "https://app.tinypulse.com/engage";
+        return false;
       }
     }
     hbsptForm.find('form').submit();
@@ -44,8 +35,7 @@ $(document).ready(function(){
 
   var nextField = function(e){
     if ($('.faded').length == 5){
-      window.location = "http://google.com";
-      return false;
+      return;
     }
     interactiveForm.find('.field').not('.faded').last().addClass('faded'); 
     interactiveForm.find('.field').not('.faded').last().find('input').attr('required', 'required'); 
