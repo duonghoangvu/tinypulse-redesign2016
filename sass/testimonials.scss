@@ -1,0 +1,28 @@
+@import "_typography";
+
+.clearfix {
+  clear: both;
+}
+.header-graphics {
+  background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/engage-header-mobile-bg.png);
+  .content {
+    h1 {
+      margin-top: 80px;
+    }
+    .try-it-form {
+      margin: 35px auto 50px;
+    }
+  }
+}
+.block-subtitle {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Lato-Light';
+  font-size: 18px;
+  line-height: 22px;
+  a {
+    color: #000000;
+    text-decoration: underline;
+  }
+}
