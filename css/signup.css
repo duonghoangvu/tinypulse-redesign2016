@@ -23,6 +23,10 @@
   src: url("fonts/Lato-Thin.eot");
   src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
 }
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "Lato-Regular", Arial;
   padding: 0;
@@ -271,6 +275,7 @@ header .overlay {
 .main-wrapper {
   transition: all 0.5s;
   padding-bottom: 57px;
+  height: 100%;
 }
 
 .main-content {
@@ -282,6 +287,7 @@ header .overlay {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #ff5c5c 0%, rgba(152, 44, 129, 0.86) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  height: 100%;
 }
 
 .signup-quote {
@@ -319,7 +325,7 @@ header .overlay {
 .download-info .container {
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 30px 15px 0;
+  /*padding: 30px 15px 0;*/
   overflow: auto;
 }
 .download-info .container .title {
@@ -382,7 +388,7 @@ header .overlay {
   background-color: #FFF;
   padding: 70px 50px;
   color: #666666;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   text-align: center;
   box-sizing: border-box;
 }
@@ -625,8 +631,11 @@ header .overlay {
     text-align: left;
   }
   .download-info .container {
-    padding: 30px 98px 0;
     max-width: 1220px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .download-info .container .has-interactive-form {
     display: none;
