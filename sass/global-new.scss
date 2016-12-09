@@ -1,0 +1,676 @@
+@import "compass/reset";
+@import "typography";
+@import "footer";
+body{
+	font-family: $font-regular;
+}
+
+header{
+	position: relative;
+}
+
+.main-nav-container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	&.sticked{
+		position: fixed;
+		top: 0;
+	}
+}
+
+.main-nav{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 20px 10px 0; 
+  position: relative;
+  border: 1px solid #ECEBEB;
+  background-color: #fff;
+  
+  &:after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+  }
+  .logo{
+    // display: inline-block;
+    width: 160px;
+    float: left;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  nav{
+    float: left;
+    margin-left: 20px;
+    ul{
+      margin: 0;
+      padding: 0;
+      li{
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 10px;
+        position: relative;
+        transition: all 0.3s;
+        border-radius: 3px;
+        &:hover, &.active{  
+          // background: rgba(0,0,0,0.5);
+          color: #EA7149;
+          .sub{
+            height: inherit;
+            opacity: 1;
+            display: none;
+          }
+        }
+        &.has-sub{
+          &:before{
+            content: "";
+            height: 70px;
+            width: 100%;
+            display: none;
+            position: absolute;
+            z-index: 0;
+          }
+          &:hover:before{
+            // display: block;
+          }
+        }
+        a{
+          color: #637280;
+          text-decoration: none;
+          display: block;
+          padding: 4px 10px 6px;
+          font-size: 16px;
+          font-family: $font_semibold;
+          transition: all 0.3s;
+          position: relative;
+          &:hover{
+            // background: #fff;
+        		color: #EA7149;
+          }
+          &.sign-up{
+            border: 2px solid;
+            border-radius: 3px;
+            padding: 6px 20px 8px;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .sub{
+      transition: opacity 0.3s;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+      background: rgba(0,0,0,0.5);
+      border-radius: 3px;
+      top: 45px;
+      left: 0;
+
+      li{
+        border-radius: 0;
+        margin-left: 0;
+        display: inline-block;
+        width: 100%;
+        min-width: 150px;
+        a{
+          padding: 8px 10px 10px;
+        }
+      }
+    }
+  }
+  nav:last-child{
+  	margin-top: -9px;
+  	float: right;
+  }
+}
+
+.header-graphics{
+	background: url(../images/hp-new/header-bg.png);
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	.overlay{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+		background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0.9) 40%, rgba(255,255,255,0) 80%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,0.9) 40%,rgba(255,255,255,0) 80%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(135deg,  rgba(255,255,255,0.9) 40%,rgba(255,255,255,0) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+	.content{
+		position: relative;
+	}
+	.words{
+		display: inline-block;
+		height: 40px;
+		overflow: hidden;
+    line-height: 36px;
+    vertical-align: top;
+    .words-container{
+    	transition: all 0.3s;
+    }
+		.word{
+			display: block;
+		}
+	}
+	.background-video{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		video{
+			width: 100%;
+		}
+	}
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.brands{
+	background: #EC7142;
+	padding: 30px 10px 20px 10px;
+	text-align: center;
+	img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 90px;
+    height: auto;
+    margin: 10px;
+	}
+}
+
+.benefits{
+	width: 100%;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 200px;
+	position: relative;
+	overflow: hidden;
+	.block-content{
+		// position: absolute;
+		// top: 70px;
+		// left: 0;
+		// right: 0;
+		// transition: all 0.3s;
+		// z-index: 1;
+	}
+	h1,h3{
+		transition: all 1s;
+	}
+	h1{
+		font-size: 36px;
+		color: #EA7149;
+		text-align: center;
+		font-family: $font-semibold;
+		margin-bottom: 10px;
+	}
+	h3{
+		font-size: 18px;
+		text-align: center;
+		color: #637280;
+		margin-bottom: 30px;
+	}
+	ul{
+		text-align: center;
+		margin-top: 50px;
+		position: relative;
+		li{
+			display: inline-block;
+			a{
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background: #EA7149;
+				margin: 0 10px;
+				color: #fff;
+				display: block;
+				text-decoration: none;
+				
+				background-repeat: no-repeat;
+				font-size: 0;
+		    transition: all 0.3s;
+		    position: relative;
+		    z-index: 0;
+		    &:after{
+		    	content: "";
+		    	background-image: url(../images/hp-new/benefits.png);
+					position: absolute;
+					top: 0;
+					right: 0;
+					left: 0;
+					bottom: 0;
+					background-repeat: no-repeat;
+			    background-size: 370px;
+			    background-position: 10px 13px;
+		    }
+		    &:before{
+		    	content: "";
+		    	width: 70px;
+		    	height: 70px;
+		    	position: absolute;
+		    	top: 0;
+		    	left: 0;
+		    	right: 0;
+		    	background: #fff;
+		    	border-radius: 50%;
+		    	margin: 0 auto;
+		    	top: 5px;
+		    	transform: scale(0);
+		    	transition: all 0.3s;
+		    	z-index: -1;
+		    }
+		    &.b2:after{
+		    	background-position: -52px 13px;
+		    }
+		    &.b3:after{
+		    	background-position: -112px 13px;
+		    }
+		    &.b4:after{
+		    	background-position: -172px 13px;
+		    }
+		    &.b5:after{
+		    	background-position: -235px 13px;
+		    }
+		    &.b6:after{
+		    	background-position: -295px 13px;
+		    }
+		    &:hover, &.active{
+		    	&:after{
+		    		background-image: url(../images/hp-new/benefits-hover.png);
+		    	}
+		    	&:before{
+		    		transform: scale(1);
+		    	}
+		    }
+			}
+			span{
+				position: absolute;
+				width: 400px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				bottom: -100px;
+				color: #637280;
+				font-size: 20px;
+			}
+		}
+	}
+	.contents{
+		.content{
+			height: 500px;
+		}
+	}
+	// .circle{
+	// 	position: absolute;
+ //    background: #E8714F;
+ //    width: 4000px;
+ //    height: 4000px;
+ //    left: -1280px;
+ //    border-radius: 50%;
+ //    transition: all 1s;
+ //    transform: scale(0);
+ //    top: -2010px;
+ //    z-index: -1;
+	// }
+}
+.sticked-content{
+	.benefits{
+		h1, h3{
+			color: #fff;
+		}
+	}
+	// .circle{
+	// 	transform: scale(1);
+	// }
+}
+
+.quotes{
+	background: #EE713A;
+	height: 120px;
+	.quote{
+		display: none;
+		text-align: center;
+		position: relative;
+		&.active{
+			display: block;
+		}
+		img{	
+			width: 160px;
+			position: absolute;
+			left: -600px;
+			right: 0;
+			top: -20px;
+			margin: 0 auto;
+	    border-radius: 50%;
+    	box-shadow: 1px 1px 5px #999;
+		}
+		p{
+			display: inline-block;
+			vertical-align: middle;
+			color: #fff;
+			text-align: left;
+	    line-height: normal;
+	    margin-top: 25px;
+			span{
+				display: block;
+				font-family: $font-light;
+			}
+			&:last-child{
+				margin-left: 15px;
+			}
+			&.quote-text{
+				width: 510px;
+		    margin: 0 auto;
+		    background: #fff;
+		    box-sizing: border-box;
+		    display: inline-block;
+		    margin-top: 30px;
+		    color: #637280;
+		    padding: 10px 10px 10px 45px;
+		    margin-left: 180px;
+		    // box-shadow: 1px 1px 3px #888;
+		    text-align: center;
+			}
+		}
+	}
+}
+
+.how-it-works{
+	padding-top: 50px;
+	padding-bottom: 100px;
+	h1{
+		font-size: 36px;
+		color: #EA7149;
+		text-align: center;
+		font-family: $font-semibold;
+		margin-bottom: 10px;
+	}
+	.content{
+		background-image: url(../images/hp-new/hiw.png);
+		background-repeat: no-repeat;
+		height: 310px;
+    background-size: contain;
+    width: 960px;
+    margin: 60px auto;
+    position: relative;
+    .step{
+    	position: relative;
+    }
+		.step-1{
+			background-image: url(../images/hp-new/step-1.png);
+			position: absolute;
+			width: 210px;
+			height: 104px;
+			background-size: cover;
+			top: 106px;
+			background-repeat: no-repeat;
+			left: 200px;
+    	overflow: hidden;
+		}
+		.step-2{
+			background-image: url(../images/hp-new/step-2.png);
+			position: absolute;
+			width: 160px;
+			height: 64px;
+			background-size: cover;
+			top: 141px;
+			background-repeat: no-repeat;
+			left: 570px;
+			.data{
+				top: 60px;
+				span{
+					background: #EA7149;
+					margin: 0;
+			    top: 0;
+			    position: absolute;
+			    width: 5px;
+			    height: 6px;
+			    &:first-child{
+			    	animation: moving1 2s 0.2s infinite linear;
+			    }
+			    &:first-child+span{
+			    	animation: moving2 2s 1s infinite linear;
+			    }
+			    &:first-child+span+span{
+			    	animation: moving3 2s 0.5s infinite linear;
+			    }
+			    &:first-child+span+span+span{
+			    	animation: moving4 2s 1.5s infinite linear;
+			    }
+				}
+			}
+		}
+		.data{
+			position: absolute;
+			width: 3px;
+			font-size: 0;
+			span{
+				width: 3px;
+				height: 3px;
+				display: inline-block;
+				background: #494949;
+				margin: -1px 0 3px 0;
+			}
+			&.data-1{
+				animation: transfering 2s infinite linear;
+			}
+			&.data-2{
+				top: 47px;
+				animation: transfering 2.5s 1s infinite linear;
+			}
+			&.data-3{
+				top: 92px;
+				animation: transfering 3s 0.5s infinite linear;
+			}
+		}
+	}
+}
+@keyframes transfering{
+	0%{
+		left: 0;
+	}
+	100%{
+		left: 100%;
+	}
+}
+@keyframes moving1{
+	0%{
+		left: 0;
+	}
+	50%{
+		left: 96px;
+		top: 0;
+	}
+	70%{
+		top: -62px;
+		left: 96px;
+	}
+	99%{
+		opacity: 1;
+	}
+	100%{
+		top: -62px;
+		left: 162px;
+		opacity: 0;
+	}
+}
+@keyframes moving2{
+	0%{
+		left: 0;
+	}
+	50%{
+		left: 102px;
+		top: 0;
+	}
+	70%{
+		top: -52px;
+		left: 102px;
+	}
+	99%{
+		opacity: 1;
+	}
+	100%{
+		top: -52px;
+		left: 170px;
+		opacity: 0;
+	}
+}
+@keyframes moving3{
+	0%{
+		left: 0;
+	}
+	50%{
+		left: 108px;
+		top: 0;
+	}
+	70%{
+		top: -46px;
+		left: 108px;
+	}
+	99%{
+		opacity: 1;
+	}
+	100%{
+		top: -46px;
+		left: 170px;
+		opacity: 0;
+	}
+}
+@keyframes moving4{
+	0%{
+		left: 0;
+	}
+	50%{
+		left: 112px;
+		top: 0;
+	}
+	70%{
+		top: -42px;
+		left: 112px;
+	}
+	99%{
+		opacity: 1;
+	}
+	100%{
+		top: -42px;
+		left: 160px;
+		opacity: 0;
+	}
+}
+@media screen and (min-width: 991px){
+	.container{
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	.meta-header{
+		background-color: #EE713A;
+		text-align: right;
+		padding: 10px 0;
+		p, a{
+			display: inline-block;
+			color: #fff;
+		}
+		span{
+			font-family: $font-light;
+		}
+		a{
+			text-decoration: none;
+			padding: 5px 15px;
+			border: 2px solid;
+			border-radius: 3px;
+			margin-left: 50px;
+		}
+	}
+	.header-graphics{
+		.content{
+			padding-top: 160px;
+			h1{
+				font-family: $font-semibold;
+				font-size: 36px;
+				color: #f17130;
+			}
+			.sub-headline{
+				color: #637280;
+				width: 480px;
+				margin: 12px 0;
+				line-height: normal;
+				font-size: 18px;
+			}
+			form{
+				font-size: 0;
+				margin-top: 30px;
+			}
+			input{
+				display: inline-block;
+				vertical-align: top;
+			}
+			input[type=email]{
+				padding: 12px;
+		    width: 260px;
+		    box-sizing: border-box;
+		    border: 1px solid #e8e8e8;
+		    border-radius: 3px 0 0 3px;
+		    background: rgba(255, 255, 255, 0.7);
+		    font-size: 14px;
+		    height: 43px;
+		    color: #637280;
+			}
+			input[type=submit]{
+				background: #2BBE71;
+				height: 43px;
+				margin: 0;
+				border: 0;
+				color: #fff;
+				font-size: 18px;
+				line-height: 0;
+				box-sizing: border-box;
+				padding: 0 40px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1440px){
+	.container{
+		max-width: 1220px;
+	}
+	.header-graphics{
+		.container{
+			max-width: 960px;
+		}
+	}
+}
+
+footer{
+	display: none;
+}
