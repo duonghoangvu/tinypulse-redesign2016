@@ -16,6 +16,12 @@ $(document).ready(function(){
           hbsptForm.find('input[name=company]').val(company);
           hbsptForm.find('input[name=password]').val(password);
   };
+  var queryString = window.location.search || '';
+  queryString = queryString.substr(1);
+  if(queryString.length != 0){
+    var signupEmail = queryString.replace('email=', '');
+    interactiveForm.find('input[name=email]').val(decodeURIComponent(signupEmail));
+  };
 
   interactiveForm.find('form').on('submit', function(e){
     e.preventDefault();

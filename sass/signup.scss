@@ -1,5 +1,7 @@
 @import "_typography";
-
+html, body {
+  height: 100%
+}
 body{
   font-family: $font_regular;
   padding: 0;
@@ -239,6 +241,7 @@ header{
 .main-wrapper{
   transition: all 0.5s;
   padding-bottom: 57px;
+  height: 100%;
 }
 .main-content{
   background: #fff;
@@ -246,6 +249,7 @@ header{
   background: -moz-linear-gradient(45deg,  rgba(255,92,92,1) 0%, rgba(152,44,129,0.86) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg,  rgba(255,92,92,1) 0%,rgba(152,44,129,0.86) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  height: 100%;
 }
 .signup-quote {
   color: #FFF;
@@ -280,7 +284,7 @@ header{
   .container {
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 30px 15px 0;
+    /*padding: 30px 15px 0;*/
     overflow:auto;
     .title {
       color: #000;
@@ -342,7 +346,7 @@ header{
       background-color: #FFF;
       padding: 70px 50px;
       color: #666666;
-      margin-top: 40px;
+      /*margin-top: 40px;*/
       text-align: center;
       box-sizing: border-box;
     }
@@ -589,8 +593,11 @@ header{
   .download-info {
     text-align: left;
     .container {
-      padding: 30px 98px 0;
       max-width: 1220px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       .has-interactive-form {
         display: none;
       }
