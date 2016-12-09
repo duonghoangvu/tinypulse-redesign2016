@@ -9,6 +9,19 @@ header{
 	position: relative;
 }
 
+.header-graphics, .main-content{
+		position: relative;
+		z-index: 1;
+	}
+.main-wrapper{
+	padding-bottom: 210px;
+}
+
+.main-content{
+	background: #fff;
+	box-shadow: 2px 0 8px #666;
+}
+
 .main-nav-container{
 	position: absolute;
 	top: 0;
@@ -132,7 +145,7 @@ header{
 
 .header-graphics{
 	background: url(../images/hp-new/header-bg.png);
-	height: 500px;
+	height: 550px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -408,7 +421,6 @@ header{
 
 .how-it-works{
 	padding-top: 50px;
-	padding-bottom: 100px;
 	h1{
 		font-size: 36px;
 		color: #EA7149;
@@ -596,7 +608,7 @@ header{
 	.meta-header{
 		background-color: #EE713A;
 		text-align: right;
-		padding: 10px 0;
+		padding: 5px 0;
 		p, a{
 			display: inline-block;
 			color: #fff;
@@ -662,7 +674,7 @@ header{
 }
 @media screen and (min-width: 1440px){
 	.container{
-		max-width: 1220px;
+		max-width: 1380px;
 	}
 	.header-graphics{
 		.container{
@@ -672,5 +684,5 @@ header{
 }
 
 footer{
-	display: none;
+	// display: none;
 }

@@ -23,8 +23,20 @@ jQuery(document).ready(function($) {
 
 
   var position = Math.round(Math.random()*2);
-  console.log(position);
   $('.quote').get(position).className = "quote active";
+
+
+  var video = ["japan", "health", "manufacturing", "trade"];
+  var ip = ["1.1.1.1", "2.2.2.2", "3.3.3.3", "4.4.4.4"];
+
+  var testIP = window.localStorage.getItem('test-ip');
+  var videoName = video[ip.indexOf(testIP)];
+  $('#video').attr('src', '/images/video/' + videoName + '.mp4');
 });
+
+function setIP(ip){
+  window.localStorage.setItem('test-ip', ip);
+  window.location = ('http://localhost:8000/index-new.html');
+}
 
 
