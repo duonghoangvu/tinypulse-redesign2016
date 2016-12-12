@@ -113,11 +113,21 @@
 }
 .list-big-items .items-container .video-bottom .video-desc {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 20px;
+}
+.list-big-items .items-container .video-bottom .video-desc .company-quote {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .list-big-items .items-container .video-bottom .video-desc .company-info {
   font-size: 12px;
   margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .list-big-items .items-container .video-bottom .video-logo {
   box-sizing: border-box;
@@ -169,12 +179,17 @@
 .list-small-items .items-container .item-content .video-bottom {
   color: #000;
   font-size: 14px;
-  padding: 20px 30px;
+  padding: 20px;
   border: 1px solid #979797;
 }
 .list-small-items .items-container .item-content .video-bottom .company-quote {
   margin-bottom: 20px;
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .list-small-items .items-container .item-content .video-bottom .company-info {
   font-size: 0;
@@ -187,10 +202,15 @@
   padding: 5px 15px 5px 0px;
   border-right: 1px solid #000;
   color: #000;
-  font-size: 14px;
+  font-size: 12px;
   box-sizing: border-box;
   text-align: right;
   vertical-align: middle;
+}
+.list-small-items .items-container .item-content .video-bottom .author-info .author-name, .list-small-items .items-container .item-content .video-bottom .author-info .author-position {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .list-small-items .items-container .item-content .video-bottom .video-logo {
   display: table-cell;
@@ -211,6 +231,7 @@
   }
   .list-big-items .items-container .video-bottom .video-desc {
     font-size: 18px;
+    line-height: 24px;
     width: 65%;
     display: table-cell;
   }

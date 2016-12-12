@@ -84,10 +84,20 @@
       text-align: center;
       .video-desc {
         font-size: 14px;
-        line-height: 24px;
+        line-height: 20px;
+        .company-quote {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
         .company-info {
           font-size: 12px;
           margin-top: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
       .video-logo {
@@ -143,11 +153,16 @@
       .video-bottom {
         color: #000;
         font-size: 14px;
-        padding: 20px 30px;
+        padding: 20px;
         border: 1px solid #979797;
         .company-quote {
           margin-bottom: 20px;
           text-align: center;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
         }
         .company-info {
           font-size: 0;
@@ -160,10 +175,15 @@
           padding: 5px 15px 5px 0px;
           border-right: 1px solid #000;
           color: #000;
-          font-size: 14px;
+          font-size: 12px;
           box-sizing: border-box;
           text-align: right;
           vertical-align: middle;
+          .author-name, .author-position {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
         }
         .video-logo {
           display: table-cell;
@@ -188,6 +208,7 @@
         text-align: left;
         .video-desc {
           font-size: 18px;
+          line-height: 24px;
           width: 65%;
           display: table-cell;
           .company-info {
