@@ -66,7 +66,7 @@ jQuery(document).ready(function($) {
     var scrollTop = $(window).scrollTop();
     // *********************************************** subnav
     if (sumary.length > 0){
-      if (scrollTop + 100 >= sumary.offset().top){
+      if (scrollTop - 5 >= sumary.offset().top){
         if ($(window).width() < 960){
           $('.main-mobile-nav-container').attr('style', 'display:block');
         } else {
@@ -112,7 +112,7 @@ jQuery(document).ready(function($) {
   });
   $('.scrolldown img').on('click',function(){
     $('html, body').animate({
-      scrollTop: $('.startup-sumary').offset().top - 96
+      scrollTop: $('.startup-sumary').offset().top + 5
     }, 1000);
   });
 });
