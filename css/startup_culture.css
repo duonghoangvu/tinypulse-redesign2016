@@ -1091,6 +1091,187 @@ footer .copyright span {
     margin-top: 0px;
   }
 }
+.c3 svg {
+  font: 10px sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c3 line, .c3 path {
+  fill: none;
+  stroke: #000;
+}
+
+.c3 text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.c3-bars path, .c3-event-rect, .c3-legend-item-tile, .c3-xgrid-focus, .c3-ygrid {
+  shape-rendering: crispEdges;
+}
+
+.c3-chart-arc path {
+  stroke: #fff;
+}
+
+.c3-chart-arc text {
+  fill: #fff;
+  font-size: 13px;
+}
+
+.c3-grid line {
+  stroke: #aaa;
+}
+
+.c3-grid text {
+  fill: #aaa;
+}
+
+.c3-xgrid, .c3-ygrid {
+  stroke-dasharray: 3 3;
+}
+
+.c3-text.c3-empty {
+  fill: gray;
+  font-size: 2em;
+}
+
+.c3-line {
+  stroke-width: 1px;
+}
+
+.c3-circle._expanded_ {
+  stroke-width: 1px;
+  stroke: #fff;
+}
+
+.c3-selected-circle {
+  fill: #fff;
+  stroke-width: 2px;
+}
+
+.c3-bar {
+  stroke-width: 0;
+}
+
+.c3-bar._expanded_ {
+  fill-opacity: .75;
+}
+
+.c3-target.c3-focused {
+  opacity: 1;
+}
+
+.c3-target.c3-focused path.c3-line, .c3-target.c3-focused path.c3-step {
+  stroke-width: 2px;
+}
+
+.c3-target.c3-defocused {
+  opacity: 0.3 !important;
+}
+
+.c3-region {
+  fill: #4682b4;
+  fill-opacity: .1;
+}
+
+.c3-brush .extent {
+  fill-opacity: .1;
+}
+
+.c3-legend-item {
+  font-size: 12px;
+}
+
+.c3-legend-item-hidden {
+  opacity: .15;
+}
+
+.c3-legend-background {
+  opacity: .75;
+  fill: #fff;
+  stroke: #d3d3d3;
+  stroke-width: 1;
+}
+
+.c3-title {
+  font: 14px sans-serif;
+}
+
+.c3-tooltip-container {
+  z-index: 10;
+}
+
+.c3-tooltip {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #fff;
+  empty-cells: show;
+  -webkit-box-shadow: 7px 7px 12px -9px #777;
+  -moz-box-shadow: 7px 7px 12px -9px #777;
+  box-shadow: 7px 7px 12px -9px #777;
+  opacity: .9;
+}
+
+.c3-tooltip tr {
+  border: 1px solid #CCC;
+}
+
+.c3-tooltip th {
+  background-color: #aaa;
+  font-size: 14px;
+  padding: 2px 5px;
+  text-align: left;
+  color: #FFF;
+}
+
+.c3-tooltip td {
+  font-size: 13px;
+  padding: 3px 6px;
+  background-color: #fff;
+  border-left: 1px dotted #999;
+}
+
+.c3-tooltip td > span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+}
+
+.c3-tooltip td.value {
+  text-align: right;
+}
+
+.c3-area {
+  stroke-width: 0;
+  opacity: .2;
+}
+
+.c3-chart-arcs-title {
+  dominant-baseline: middle;
+  font-size: 1.3em;
+}
+
+.c3-chart-arcs .c3-chart-arcs-background {
+  fill: #e0e0e0;
+  stroke: none;
+}
+
+.c3-chart-arcs .c3-chart-arcs-gauge-unit {
+  fill: #000;
+  font-size: 16px;
+}
+
+.c3-chart-arcs .c3-chart-arcs-gauge-max, .c3-chart-arcs .c3-chart-arcs-gauge-min {
+  fill: #777;
+}
+
+.c3-chart-arc .c3-gauge-value {
+  fill: #000;
+}
+
 body {
   font-family: "Lato-Regular";
   padding: 0;
@@ -1548,5 +1729,275 @@ a {
     padding: 8px;
     width: 33%;
     border-radius: 0 4px 4px 0;
+  }
+}
+.chart h3 {
+  text-align: center;
+  font-family: Lato-Light;
+  font-size: 14px;
+  color: #606060;
+  margin-top: 30px;
+}
+.chart h3 span:first-child {
+  color: #F37122;
+}
+.chart h3 span:last-child {
+  color: #D843B4;
+}
+.chart .c3-axis-x text {
+  font-family: Lato-Regular;
+  font-size: 13px;
+  line-height: 26px !important;
+  fill: #606060;
+}
+.chart .c3-axis-x .tick line {
+  display: none;
+}
+.chart .c3-axis-y text {
+  fill: #606060;
+}
+.chart .c3-axis-y .tick line {
+  stroke: none;
+}
+.chart .domain {
+  stroke: #A4A4A4 !important;
+}
+.chart .c3-xgrid, .chart .c3-ygrid {
+  stroke-dasharray: 0;
+  stroke: #EEEEEE;
+}
+
+.chart-glassdoor .c3-chart-text.c3-target.c3-target-other,
+.chart-glassdoor .c3-chart-bar.c3-target.c3-target-other {
+  transform: translate(-1px, -8px);
+}
+.chart-glassdoor .c3-chart-text.c3-target.c3-target-other path,
+.chart-glassdoor .c3-chart-bar.c3-target.c3-target-other path {
+  stroke: #fff !important;
+  stroke-width: 1.5;
+}
+.chart-glassdoor .c3-text {
+  fill: #fff !important;
+  transform: translateX(-37px);
+  font-size: 15px;
+}
+
+.chart-management {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 100px;
+}
+.chart-management .c3-chart-bars {
+  transform: translateX(25px);
+}
+.chart-management .c3-chart-text.c3-target.c3-target-all {
+  transform: translateX(25px);
+}
+.chart-management .c3-chart-text.c3-target.c3-target-all text {
+  fill: #606060 !important;
+  font-size: 14px;
+}
+.chart-management .c3-chart-text.c3-target.c3-target-emp {
+  transform: translate(-57px, 20px);
+}
+.chart-management .c3-chart-text.c3-target.c3-target-emp text {
+  fill: #fff !important;
+  font-size: 14px;
+}
+.chart-management .c3-chart-text.c3-target.c3-target-mgr2 {
+  transform: translate(10px, 20px);
+}
+.chart-management .c3-chart-text.c3-target.c3-target-mgr2 text {
+  fill: #fff !important;
+  font-size: 14px;
+}
+.chart-management .c3-chart-bar.c3-target.c3-target-emp path {
+  transform: translateX(-45px);
+  stroke: #fff !important;
+  stroke-width: 1.5;
+}
+.chart-management .c3-chart-bar.c3-target.c3-target-mgr2 path {
+  transform: translateX(-15px);
+}
+.chart-management .c3-texts.c3-texts-mgr {
+  display: none;
+}
+.chart-management .legend {
+  position: absolute;
+  top: 380px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  font-family: Lato-Light;
+  text-align: center;
+}
+.chart-management .legend:after {
+  content: '1 = low, 10 = high';
+  font-size: 12px;
+  color: #606060;
+  text-align: right;
+  display: block;
+  margin-top: 5px;
+}
+.chart-management .legend span {
+  display: inline-block;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #606060;
+  box-sizing: border-box;
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  margin-right: 20px;
+}
+.chart-management .legend span i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+.chart-culture {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 120px;
+}
+.chart-culture .c3-chart-bar.c3-target.c3-target-10---10 {
+  transform: translateX(-20px);
+}
+.chart-culture .c3-chart-bar.c3-target.c3-target-10---10 path {
+  stroke: #fff !important;
+  stroke-width: 1.5;
+}
+.chart-culture .c3-axis-x-label, .chart-culture .c3-axis-y-label {
+  font-size: 14px;
+  font-family: Lato-Regular;
+}
+.chart-culture .c3-axis-y-label {
+  transform: translate(-50px, 85px) rotate(-90deg);
+}
+.chart-culture .c3-axis-x-label {
+  transform: translate(-50px, 50px);
+}
+.chart-culture .c3-texts.c3-texts-8-or-9---10 text {
+  fill: #fff !important;
+  transform: translateY(20px);
+  font-size: 14px;
+}
+.chart-culture .c3-texts.c3-texts-10---10 text {
+  fill: #fff !important;
+  transform: translate(-20px, 17px);
+  font-size: 14px;
+}
+.chart-culture .legend {
+  position: absolute;
+  top: 380px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  font-family: Lato-Light;
+  text-align: center;
+}
+.chart-culture .legend:before {
+  content: 'Importance of Culture';
+  font-size: 12px;
+  color: #606060;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.chart-culture .legend:after {
+  content: '1 = low, 10 = high';
+  font-size: 12px;
+  color: #606060;
+  text-align: right;
+  display: block;
+  margin-top: 5px;
+}
+.chart-culture .legend span {
+  display: inline-block;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #606060;
+  box-sizing: border-box;
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  margin-right: 20px;
+}
+.chart-culture .legend span i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 660px) {
+  .chart {
+    width: 580px;
+    margin: 0 auto;
+  }
+
+  .chart-management {
+    width: 580px;
+    margin-bottom: 120px;
+  }
+  .chart-management .c3-chart-bar.c3-target.c3-target-emp path {
+    transform: translateX(-82px);
+  }
+
+  .chart-culture {
+    margin-bottom: 150px;
+  }
+  .chart-culture h3 {
+    padding-left: 110px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .chart-management {
+    margin-bottom: 0;
+  }
+  .chart-management .legend {
+    position: absolute;
+    top: 0;
+    right: -150px;
+    left: auto;
+    width: 130px;
+    border: 1px solid #D9D9D9;
+    background: #fff;
+  }
+  .chart-management .legend span {
+    display: block;
+    margin-right: 0;
+  }
+
+  .chart-culture {
+    margin-bottom: 0;
+  }
+  .chart-culture .c3-axis-x-label {
+    transform: translate(-150px, 50px);
+  }
+  .chart-culture .legend {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: auto;
+    width: 130px;
+    border: 1px solid #D9D9D9;
+    background: #fff;
+  }
+  .chart-culture .legend span {
+    display: block;
+    margin-right: 0;
   }
 }
