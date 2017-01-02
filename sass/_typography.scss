@@ -4,7 +4,7 @@ $font_bold: 'Lato-Bold', Arial;
 $font_light: 'Lato-Light', Arial;
 $font_thin: 'Lato-Thin', Arial;
 
-$font-url: 'fonts/';
+$font-url: 'http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/';
 @font-face {
   font-family: 'Lato-Regular';
   src: url($font-url + 'Lato-Regular.eot');
@@ -44,3 +44,5 @@ $font-url: 'fonts/';
   url($font-url + 'Lato-Thin.woff') format('woff'),
   url($font-url + 'Lato-Thin.ttf') format('truetype');
 }
+
+

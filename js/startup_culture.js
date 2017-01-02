@@ -711,7 +711,98 @@ c3.chart.internal.fn.getTooltipContent = function (d, defaultTitleFormat, defaul
 // ----------------------------- End -------------------------------
 
 
+jQuery(document).ready(function($) {
+  var columns = [
+    ['x', 'One', 'Two \nor More'],
+    ['0-20', 0, 0, 0],
+    ['20-200', 0, 0, 0],
+  ];
+  var chart = c3.generate({
+    bindto: '#chart-growth',
+    padding: {
+      left: 96
+    },
+    data: {
+      x: 'x',
+      columns: columns,
+      type: 'bar',
+      labels: {
+        format: function(v, id, i, j){
+          return v;
+        }
+      }
+    },
+    tooltip: {
+      show: false
+    },
+    axis: {
+      rotated: true,
+      x: {
+        type: 'category',
+        label: 'Number of Founders'
+      }, 
+      y: {
+        tick: {
+          count: 4,
+          format: function (d) {
+            return parseInt(d);
+          }
+        }
+      }
+    },
+    color: {
+      pattern: ['#D843B4', '#4882D8']
+    },
+    bar: {
+      width: {
+        ratio: 0.7
+      }
+    },
+    legend: {
+      show: false
+    },
+    grid: {
+      y: {
+          show: true
+      }
+    }
+  });
 
+  d3.select('.chart-growth').insert('div', '.chart-custom-legend').attr('class', 'legend')
+  .selectAll('span')
+  .data(['0-20', '20-200'])
+  .enter().append('span')
+    .on('mouseover', function (id) {
+        chart.focus(id);
+    })
+    .on('mouseout', function (id) {
+        chart.revert();
+    })
+    .on('click', function (id) {
+        chart.toggle(id);
+    })
+    .attr('data-id', function (id) { return id; })
+    .html(function (id) { 
+      return id;
+    })
+    .append('i')
+    .each(function (id) {
+        d3.select(this).style('background-color', chart.color(id));
+    });
+
+  $(window).on('scroll', function(){
+    var scrollTop = $(window).scrollTop(), 
+      windowH = $(window).height();
+    if (scrollTop + windowH/2 > $('#chart-growth').offset().top){
+      var columns = [
+        ['x', 'One', 'Two \nor More'],
+        ['0-20', 22, 21],
+        ['20-200', 18, 28],
+      ];
+      chart.load({columns: columns})
+    }
+  }).trigger('scroll');
+});
 
 jQuery(document).ready(function($) {
   var columns = [
@@ -783,7 +874,6 @@ jQuery(document).ready(function($) {
   }).trigger('scroll');
 });
 
-
 jQuery(document).ready(function($) {
   var columns = [
     ['x', 'Transparency', 'Valued', 'Happiness'],
@@ -828,7 +918,7 @@ jQuery(document).ready(function($) {
     },
     bar: {
       width: {
-        ratio: 0.8
+        ratio: 1
       }
     },
     legend: {
