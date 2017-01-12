@@ -4,6 +4,7 @@ body {
 
 .main-wrapper {
   padding: 0;
+  margin-top: -35px;
 }
 
 .main-content {
@@ -16,12 +17,42 @@ body {
 }
 .content-block.intro-block {
   text-align: center;
+  padding-top: 0px;
 }
 .content-block.intro-block h1 {
   font-size: 50px;
 }
 .content-block.intro-block p {
   font-size: 24px;
+}
+.content-block.intro-block .container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.content-block.intro-block .container .logo {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content-block.intro-block .container .logo img {
+  max-width: 300px;
+}
+.content-block.intro-block .container .vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.content-block.intro-block .container .instruction {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 75px;
+  cursor: pointer;
+}
+.content-block.intro-block .container .instruction img {
+  width: 25px;
 }
 .content-block.centered-content .content {
   width: 100%;
@@ -45,8 +76,8 @@ body {
   font-size: 32px;
 }
 .content-block .content p {
-  margin: 0;
   font-size: 20px;
+  margin: 25px 0;
 }
 .content-block .content img {
   max-width: 100%;

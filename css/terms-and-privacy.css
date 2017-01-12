@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'Lato-Regular';
-  src: url("fonts/Lato-Regular.eot");
-  src: url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Regular.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Regular.woff2") format("woff2"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Regular.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Lato-Light';
-  src: url("fonts/Lato-Light.eot");
-  src: url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Light.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Light.woff2") format("woff2"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Light.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Light.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Lato-Semibold';
-  src: url("fonts/Lato-Semibold.eot");
-  src: url("fonts/Lato-Semibold.woff2") format("woff2"), url("fonts/Lato-Semibold.woff") format("woff"), url("fonts/Lato-Semibold.ttf") format("truetype");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Semibold.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Semibold.woff2") format("woff2"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Semibold.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Semibold.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Lato-Bold';
-  src: url("fonts/Lato-Bold.eot");
-  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Bold.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Bold.woff2") format("woff2"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Bold.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Lato-Thin';
-  src: url("fonts/Lato-Thin.eot");
-  src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Thin.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Thin.woff2") format("woff2"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Thin.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Thin.ttf") format("truetype");
 }
 h2 {
   font-size: 36px;
