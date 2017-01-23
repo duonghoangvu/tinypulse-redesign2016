@@ -11,6 +11,11 @@ body{
 }
 .content-block{
 	font-size: 0;
+	h2{
+		font-family: Helvetica Neue;
+		font-size: 48px;
+		direction: ltr;
+	}
 	&.intro-block{
 		text-align: center;
     padding-top: 0px;
