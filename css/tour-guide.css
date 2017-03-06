@@ -528,7 +528,7 @@ nav .icon-setting:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(0deg, #1C94EE 0%, #00C26B 94%);
+  background-image: linear-gradient(0deg, #1c94ee 0%, #00c26b 94%);
   z-index: -1;
   opacity: 0.9;
 }
@@ -1123,4 +1123,176 @@ body.wt-on.wt-step-1 .content-wrapper .showup, body.wt-on.wt-step-2 .content-wra
 
 .wt-content-wrapper.wt-step-5 .wt-content .buttons a:hover {
   background: #D6611A;
+}
+
+.wt-content-wrapper .wt-content .buttons a.get-started, .wt-content-wrapper .wt-content .buttons a.next, .wt-content-wrapper.wt-step-5 .wt-content .buttons a.finish {
+  overflow: hidden;
+  position: relative;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+
+.anim {
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.anim:before {
+  position: relative;
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+.anim:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+}
+
+.anim {
+  -moz-animation: anim-out 1s infinite;
+  -webkit-animation: anim-out 1s infinite;
+  animation: anim-out 1s infinite;
+}
+.anim:after {
+  -moz-animation: anim-out-pseudo 1s infinite;
+  -webkit-animation: anim-out-pseudo 1s infinite;
+  animation: anim-out-pseudo 1s infinite;
+}
+
+@-webkit-keyframes anim-in {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes anim-in {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-ms-keyframes anim-in {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes anim-in {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes anim-in-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@-moz-keyframes anim-in-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@-ms-keyframes anim-in-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes anim-in-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@-webkit-keyframes anim-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes anim-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-ms-keyframes anim-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes anim-out {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes anim-out-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@-moz-keyframes anim-out-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@-ms-keyframes anim-out-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes anim-out-pseudo {
+  0% {
+    background: rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    background: transparent;
+  }
 }

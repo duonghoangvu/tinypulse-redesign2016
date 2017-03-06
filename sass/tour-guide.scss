@@ -1,4 +1,8 @@
 @import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/animation";
+@import "compass/css3/appearance";
+@import "compass/css3/transition";
 
 @font-face {
   font-family: 'SourceSansPro-Regular';
@@ -1070,4 +1074,74 @@ body.wt-on.wt-step-1, body.wt-on.wt-step-2,body.wt-on.wt-step-3,body.wt-on.wt-st
 }
 .wt-content-wrapper.wt-step-5 .wt-content .buttons a:hover{
     background: #D6611A;
+}
+.wt-content-wrapper .wt-content .buttons a.get-started, .wt-content-wrapper .wt-content .buttons a.next, .wt-content-wrapper.wt-step-5 .wt-content .buttons a.finish {
+  overflow: hidden;
+  position: relative;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+.anim {
+  @include transform(translateY(-50%) translateX(-50%));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // The ':before' psuedo element is a spacing ghost to make the 
+  // ':after' psuedo element a square, with width & height 
+  // automatically equal to the parent's width.
+  &:before {
+    position: relative;
+    content: '';
+    display: block;
+    margin-top: 100%;
+  }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+  }
+}
+.anim {
+  @include animation(anim-out 1s infinite);
+  &:after { @include animation(anim-out-pseudo 1s infinite); }
+}
+// Keyframes mixin
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content; 
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	} 
+}
+
+@include keyframes(anim-in) {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@include keyframes(anim-in-pseudo) {
+  0% { background: rgba(#000,0.25); }
+  100% { background: rgba(#000,0); }
+}
+
+@include keyframes(anim-out) {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@include keyframes(anim-out-pseudo) {
+  0% { background: rgba(#000,0.25); }
+  100% { background: rgba(#000,0); }
 }
