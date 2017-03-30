@@ -368,15 +368,35 @@ body{
 	}
 }
 
-@media screen and (min-width: 960px){
+@media screen and (min-width: 990px){
 	.content-block{
 		min-height: 680px;
 		h2{
 			margin: 30px 0 20px 0;
 			font-size: 40px;
 		}
+		.hero{
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			max-width: 960px;
+			margin: 0 auto;
+			background-size: cover;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		}
 	}
 	.block-3{
+		background-image: none;
+		position: relative;
+		.container{
+			position: relative;
+		}
+		.hero{
+			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-3-bg.jpg);
+		}
 		p{
 			max-width: 600px;
 			img{
@@ -388,8 +408,14 @@ body{
 		}
 	}
 	.block-4{
-		background-size: cover;
-		background-position: center;
+		background-image: none;
+		position: relative;
+		.container{
+			position: relative;
+		}
+		.hero{
+			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-4-bg.jpg);
+		}
 		p{
 			img{
 				width: 450px;
@@ -399,8 +425,14 @@ body{
 		}
 	}
 	.block-5{
-		background-size: cover;
-		background-position: center;
+		background-image: none;
+		position: relative;
+		.container{
+			position: relative;
+		}
+		.hero{
+			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-5-bg.jpg);
+		}
 		p{
 			max-width: 600px;
 			img{
@@ -412,6 +444,14 @@ body{
 		}
 	}
 	.block-7{
+		background-image: none;
+		position: relative;
+		.container{
+			position: relative;
+		}
+		.hero{
+			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-7-bg.jpg);
+		}
 		h2{
 			max-width: 670px;
 		}
@@ -419,12 +459,19 @@ body{
 			max-width: 600px;
 			img{
 				margin-left: 40px;
+				float: none;
 			}
 		}
 	}
 	.block-8{
-		background-size: cover;
-		background-position: center;
+		background-image: none;
+		position: relative;
+		.container{
+			position: relative;
+		}
+		.hero{
+			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-8-bg.jpg);
+		}
 		p{
 			img{
 				width: auto;
