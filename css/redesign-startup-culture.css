@@ -40,6 +40,7 @@ body {
 .intro-block h1 {
   color: #fff;
   font-size: 65px;
+  font-weight: 'Lato-Bold';
   text-transform: uppercase;
   letter-spacing: 1px;
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
@@ -463,7 +464,7 @@ body {
     left: 45%;
   }
   .intro-block h1 {
-    font-size: 75px;
+    font-size: 110px;
   }
   .intro-block h2 {
     font-size: 36px;
