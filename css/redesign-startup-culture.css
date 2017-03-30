@@ -17,6 +17,7 @@ body {
 }
 .content-block h1, .content-block h2, .content-block h3 {
   margin: 0;
+  font-family: "Lato-Light", Arial;
 }
 .content-block p {
   line-height: 22px;
@@ -185,6 +186,7 @@ body {
   float: left;
   margin-top: 0;
   max-width: 410px;
+  max-height: 340px;
 }
 
 .block-9 {
@@ -214,10 +216,10 @@ body {
   background-size: auto 280px;
 }
 .block-10 h2 {
-  color: #fff;
+  color: #074D69;
 }
 .block-10 p {
-  color: #fff;
+  color: #074D69;
 }
 .block-10 p img {
   width: 100%;
@@ -300,6 +302,11 @@ body {
 }
 
 @media screen and (min-width: 660px) {
+  .block-9 {
+    background-size: cover;
+    background-position: center;
+  }
+
   .block-10 {
     background-size: cover;
     background-position: center;
@@ -328,14 +335,114 @@ body {
   .intro-block h3 {
     font-size: 15px;
   }
+
+  .block-6 p img {
+    margin-top: 80px;
+  }
+
+  .block-7 {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .block-8 p img {
+    width: auto;
+    max-width: inherit;
+    margin: 0;
+  }
+
+  .block-10 p img {
+    float: left;
+  }
 }
 @media screen and (min-width: 960px) {
   .content-block {
     min-height: 700px;
   }
   .content-block h2 {
-    margin: 20px 0 40px 0;
-    font-size: 45px;
+    margin: 30px 0 20px 0;
+    font-size: 40px;
+  }
+
+  .block-3 p {
+    max-width: 600px;
+  }
+  .block-3 p img {
+    max-width: inherit;
+    width: 350px;
+    margin-left: 40px;
+    margin-top: 80px;
+  }
+
+  .block-4 {
+    background-size: cover;
+    background-position: center;
+  }
+  .block-4 p img {
+    width: 450px;
+    max-width: inherit;
+    margin-left: 40px;
+  }
+
+  .block-5 {
+    background-size: cover;
+    background-position: center;
+  }
+  .block-5 p {
+    max-width: 600px;
+  }
+  .block-5 p img {
+    width: 500px;
+    max-width: inherit;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+
+  .block-7 h2 {
+    max-width: 670px;
+  }
+  .block-7 p {
+    max-width: 600px;
+  }
+  .block-7 p img {
+    margin-left: 40px;
+  }
+
+  .block-8 {
+    background-size: cover;
+    background-position: center;
+  }
+  .block-8 p img {
+    width: auto;
+    max-width: inherit;
+    max-height: 400px;
+    margin: 0 0 0 40px;
+  }
+
+  .block-9 h2 {
+    text-align: center;
+  }
+  .block-9 p {
+    color: #074D69;
+    text-align: center;
+  }
+  .block-9 p img {
+    width: 400px;
+    max-width: inherit;
+    float: left;
+    margin: 0 0 0 40px;
+  }
+
+  .block-10 h2 {
+    text-align: center;
+  }
+  .block-10 p {
+    text-align: center;
+  }
+  .block-10 p img {
+    width: 550px;
+    max-width: inherit;
+    float: left;
   }
 
   .block-11 {
