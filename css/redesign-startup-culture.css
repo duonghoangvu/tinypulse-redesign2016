@@ -19,7 +19,7 @@ body {
   margin: 0;
 }
 .content-block p {
-  line-height: normal;
+  line-height: 22px;
 }
 .content-block p img {
   max-width: 300px;
@@ -206,7 +206,7 @@ body {
 }
 
 .block-10 {
-  background-color: #F8C52D;
+  background-color: #FCC802;
   background-image: url(../images/startup-culture-report/block-10-bg.jpg);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -245,11 +245,83 @@ body {
   max-width: 410px;
 }
 
+.signup-form {
+  margin: 50px auto;
+  max-width: 400px;
+}
+.signup-form p {
+  text-align: center;
+}
+.signup-form form {
+  font-size: 0;
+}
+.signup-form form input, .signup-form form button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  transition: width 0.3s;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 0 10px;
+  min-height: inherit;
+  text-transform: none;
+}
+.signup-form form input {
+  border-radius: 3px 0 0 3px;
+  width: 70%;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Lato-Regular", Arial;
+  font-size: 15px;
+}
+.signup-form form button {
+  border-radius: 0 3px 3px 0;
+  width: 30%;
+  background: #00C26B;
+  color: #fff;
+  font-family: "Lato-Semibold", Arial;
+  font-size: 16px;
+}
+
+.logos {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.logos img {
+  max-width: 60px;
+  max-height: 50px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 660px) {
+  .block-10 {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .block-11 {
+    background-image: url(../images/startup-culture-report/large/block-11-bg.jpg);
+  }
+}
 @media screen and (min-width: 990px) {
   .content-block {
-    min-height: 800px;
+    min-height: 700px;
   }
-  .content-block .content {
-    width: 50%;
+  .content-block h2 {
+    font-size: 50px;
+    margin: 20px 0 40px 0;
+  }
+
+  .block-11 {
+    background-position: center;
+  }
+  .block-11 p {
+    font-size: 21px;
+    line-height: 30px;
   }
 }
