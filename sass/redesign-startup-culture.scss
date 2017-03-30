@@ -37,23 +37,24 @@ body{
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
+  min-height: 520px;
 	h1{
 		color: #fff;
-		font-size: 54px;
+		font-size: 65px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		text-shadow: 4px 4px 5px rgba(0,0,0,0.1);
+		text-shadow: 4px 4px 5px rgba(0,0,0,0.2);
 	}
 	h2{
 		color: #fff;
-		font-size: 28px;
+		font-size: 32px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 	}
 	h3{
 		color: #115771;
-		font-size: 14px;
-		margin-top: 20px;
+		font-size: 16px;
+    margin-top: 10px;
 	}
 }
 
@@ -311,12 +312,32 @@ body{
 	}
 }
 
-@media screen and (min-width: 990px){
+@media screen and (min-width: 568px){
+  .intro-block{
+    background-image: url(../images/startup-culture-report/intro-large-bg.jpg);
+    position: relative;
+    .container {
+      position: absolute;
+      top: 150px;
+      left: 40%;
+    }
+    h1 {
+      font-size: 65px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (min-width: 960px){
 	.content-block{
 		min-height: 700px;
 		h2{
-			font-size: 50px;
 			margin: 20px 0 40px 0;
+			font-size: 45px;
 		}
 	}
 	.signup-form{
@@ -329,4 +350,22 @@ body{
 			line-height: 30px;
 		}
 	}
+  .intro-block{
+    background-image: url(../images/startup-culture-report/intro-large-bg.jpg);
+    position: relative;
+    .container {
+      position: absolute;
+      top: 225px;
+      left: 45%;
+    }
+    h1 {
+      font-size: 75px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+  }
 }
