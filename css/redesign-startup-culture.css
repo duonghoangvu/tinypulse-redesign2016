@@ -34,24 +34,25 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  min-height: 520px;
 }
 .intro-block h1 {
   color: #fff;
-  font-size: 54px;
+  font-size: 65px;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
 }
 .intro-block h2 {
   color: #fff;
-  font-size: 28px;
+  font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 .intro-block h3 {
   color: #115771;
-  font-size: 14px;
-  margin-top: 20px;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .block-2 {
@@ -245,11 +246,50 @@ body {
   max-width: 410px;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 568px) {
+  .intro-block {
+    background-image: url(../images/startup-culture-report/intro-large-bg.jpg);
+    position: relative;
+  }
+  .intro-block .container {
+    position: absolute;
+    top: 150px;
+    left: 40%;
+  }
+  .intro-block h1 {
+    font-size: 65px;
+  }
+  .intro-block h2 {
+    font-size: 32px;
+  }
+  .intro-block h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 960px) {
   .content-block {
     min-height: 800px;
   }
   .content-block .content {
     width: 50%;
+  }
+
+  .intro-block {
+    background-image: url(../images/startup-culture-report/intro-large-bg.jpg);
+    position: relative;
+  }
+  .intro-block .container {
+    position: absolute;
+    top: 225px;
+    left: 45%;
+  }
+  .intro-block h1 {
+    font-size: 75px;
+  }
+  .intro-block h2 {
+    font-size: 36px;
+  }
+  .intro-block h3 {
+    font-size: 18px;
   }
 }
