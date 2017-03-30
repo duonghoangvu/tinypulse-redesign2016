@@ -1,10 +1,9 @@
 body {
-  background: #4B4EA0;
+  font-family: "Lato-Regular", Arial;
 }
 
 .main-wrapper {
   padding: 0;
-  margin-top: -35px;
 }
 
 .main-content {
@@ -13,79 +12,237 @@ body {
 }
 
 .content-block {
-  font-size: 0;
+  padding: 30px 20px;
+  min-height: 450px;
 }
-.content-block h2 {
-  font-family: Helvetica Neue;
-  font-size: 48px;
-  direction: ltr;
+.content-block h1, .content-block h2, .content-block h3 {
+  margin: 0;
 }
-.content-block.intro-block {
-  text-align: center;
-  padding-top: 0px;
+.content-block p {
+  line-height: normal;
 }
-.content-block.intro-block h1 {
-  font-size: 50px;
-}
-.content-block.intro-block p {
-  font-size: 24px;
-}
-.content-block.intro-block .container {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-.content-block.intro-block .container .logo {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.content-block.intro-block .container .logo img {
+.content-block p img {
   max-width: 300px;
+  margin: 30px auto;
+  display: block;
 }
-.content-block.intro-block .container .vertical-center {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+
+.intro-block {
+  background-color: #7ADFEF;
+  text-align: center;
+  background-image: url(../images/startup-culture-report/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }
-.content-block.intro-block .container .instruction {
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
-  bottom: 75px;
-  cursor: pointer;
+.intro-block h1 {
+  color: #fff;
+  font-size: 54px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
 }
-.content-block.intro-block .container .instruction img {
-  width: 25px;
+.intro-block h2 {
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-.content-block.centered-content .content {
-  width: 100%;
+.intro-block h3 {
+  color: #115771;
+  font-size: 14px;
+  margin-top: 20px;
 }
-.content-block.light-text h1, .content-block.light-text h2, .content-block.light-text p {
+
+.block-2 {
+  background-color: #22D0CF;
+  background-image: url(../images/startup-culture-report/waves.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
+}
+.block-2 h2 {
   color: #fff;
 }
-.content-block.dark-text h1, .content-block.dark-text h2, .content-block.dark-text p {
-  color: #000;
+.block-2 p {
+  color: #115771;
 }
-.content-block.rtl {
-  direction: rtl;
+
+.block-3 {
+  background-color: #2899B1;
+  background-image: url(../images/startup-culture-report/block-3-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100% auto;
 }
-.content-block .content {
-  display: inline-block;
+.block-3 h2 {
+  color: #fff;
+}
+.block-3 p {
+  color: #fff;
+}
+.block-3 p img {
+  width: 210px;
+  float: left;
+  margin-top: 0;
+}
+
+.block-4 {
+  background-color: #0A5779;
+  background-image: url(../images/startup-culture-report/block-4-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 280px;
+}
+.block-4 h2 {
+  color: #fff;
+}
+.block-4 p {
+  color: #fff;
+}
+.block-4 p img {
+  width: 80%;
+  float: left;
+  margin-top: 20px;
+  max-width: 410px;
+}
+
+.block-5 {
+  background-color: #9D5C9F;
+  background-image: url(../images/startup-culture-report/block-5-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 280px;
+}
+.block-5 h2 {
+  color: #fff;
+}
+.block-5 p {
+  color: #fff;
+}
+.block-5 p img {
+  width: 80%;
+  float: left;
+  margin-top: 20px;
+  max-width: 410px;
+}
+
+.block-6 {
+  background-color: #6C4A87;
+  background-image: url(../images/startup-culture-report/waves.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
+}
+.block-6 h2 {
+  color: #fff;
+}
+.block-6 p {
+  color: #fff;
+}
+.block-6 p img {
   width: 100%;
-  vertical-align: top;
-  direction: ltr;
+  margin-top: 40px;
+  max-width: 410px;
 }
-.content-block .content .title {
-  font-size: 32px;
+
+.block-7 {
+  background-color: #4B3660;
+  background-image: url(../images/startup-culture-report/block-7-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 280px;
 }
-.content-block .content p {
-  font-size: 20px;
-  margin: 25px 0;
+.block-7 h2 {
+  color: #fff;
 }
-.content-block .content img {
-  max-width: 100%;
+.block-7 p {
+  color: #fff;
+}
+.block-7 p img {
+  width: 80%;
+  float: left;
+  margin-top: 40px;
+  max-width: 410px;
+}
+
+.block-8 {
+  background-color: #835433;
+  background-image: url(../images/startup-culture-report/block-8-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 280px;
+}
+.block-8 h2 {
+  color: #fff;
+}
+.block-8 p {
+  color: #fff;
+}
+.block-8 p img {
+  width: 50%;
+  float: left;
+  margin-top: 0;
+  max-width: 410px;
+}
+
+.block-9 {
+  background-color: #FF931E;
+  background-image: url(../images/startup-culture-report/block-9-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 280px;
+  padding-bottom: 100px;
+}
+.block-9 h2 {
+  color: #fff;
+}
+.block-9 p {
+  color: #fff;
+}
+.block-9 p img {
+  width: 80%;
+  max-width: 410px;
+}
+
+.block-10 {
+  background-color: #F8C52D;
+  background-image: url(../images/startup-culture-report/block-10-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 280px;
+}
+.block-10 h2 {
+  color: #fff;
+}
+.block-10 p {
+  color: #fff;
+}
+.block-10 p img {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 150px;
+  max-width: 410px;
+}
+
+.block-11 {
+  background-image: url(../images/startup-culture-report/block-11-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+}
+.block-11 h2 {
+  text-align: center;
+  color: #074D69;
+}
+.block-11 p {
+  color: #074D69;
+}
+.block-11 p img {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 150px;
+  max-width: 410px;
 }
 
 @media screen and (min-width: 990px) {

@@ -1,92 +1,249 @@
+$font_regular: 'Lato-Regular', Arial;
+$font_semibold: 'Lato-Semibold', Arial;
+$font_bold: 'Lato-Bold', Arial;
+$font_light: 'Lato-Light', Arial;
+$font_thin: 'Lato-Thin', Arial;
+
 body{
-	background: #4B4EA0;
+	// background: #4B4EA0;
+	font-family: $font_regular;
 }
 .main-wrapper{
 	padding: 0;
-  margin-top: -35px;
 }
 .main-content{
 	background: none!important;
 	margin-bottom: 0;
 }
 .content-block{
-	font-size: 0;
-	h2{
-		font-family: Helvetica Neue;
-		font-size: 48px;
-		direction: ltr;
+	padding: 30px 20px;
+	min-height: 450px;
+	h1, h2, h3{
+		margin: 0;
 	}
-	&.intro-block{
-		text-align: center;
-    padding-top: 0px;
-		h1{
-			font-size: 50px;
-		}
-		p{
-			font-size: 24px;
-		}
-    .container {
-      width: 100vw;
-      height: 100vh;
-      position: relative;
-      .logo {
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        img{
-          max-width: 300px;
-        }
-      }
-      .vertical-center {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-      .instruction {
-        position: absolute;
-        transform: translateX(-50%);
-        left: 50%;
-        bottom: 75px;
-        cursor: pointer;
-        img {
-          width: 25px;
-        }
-      }
-    }
-	}
-	&.centered-content{
-		.content{
-			width: 100%;
-		}
-	}
-	&.light-text{
-		h1, h2, p{
-			color: #fff;
-		}
-	}
-	&.dark-text{
-		h1, h2, p{
-			color: #000;
-		}
-	}
-	&.rtl{
-		direction: rtl;
-	}
-	.content{
-		display: inline-block;
-		width: 100%;
-		vertical-align: top;
-		direction: ltr;
-		.title{
-			font-size: 32px;
-		}
-		p{
-			font-size: 20px;
-      margin: 25px 0;
-		}
+	p{
+		line-height: normal;
 		img{
-			max-width: 100%;
+			max-width: 300px;
+			margin: 30px auto;
+			display: block;
+		}
+	}
+}
+.intro-block{
+	background-color: #7ADFEF;
+	text-align: center;
+	background-image: url(../images/startup-culture-report/intro-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	h1{
+		color: #fff;
+		font-size: 54px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		text-shadow: 4px 4px 5px rgba(0,0,0,0.1);
+	}
+	h2{
+		color: #fff;
+		font-size: 28px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	h3{
+		color: #115771;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+}
+
+.block-2{
+	background-color: #22D0CF;
+	background-image: url(../images/startup-culture-report/waves.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100% auto;
+	h2{
+		color: #fff;
+	}
+	p{
+		color: #115771;
+	}
+}
+
+.block-3{
+	background-color: #2899B1;
+	background-image: url(../images/startup-culture-report/block-3-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 100% auto;
+	h2{
+		color: #fff;
+	}
+	p{
+		color: #fff;
+		img{
+			width: 210px;
+	    float: left;
+	    margin-top: 0;
+		}
+	}
+}
+
+.block-4{
+	background-color: #0A5779;
+	background-image: url(../images/startup-culture-report/block-4-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: auto 280px;
+	h2{
+		color: #fff;
+	}
+	p{
+		color: #fff;
+		img{
+			width: 80%;
+	    float: left;
+	    margin-top: 20px;
+	    max-width: 410px;
+		}
+	}
+}
+
+.block-5{
+	background-color: #9D5C9F;
+	background-image: url(../images/startup-culture-report/block-5-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: auto 280px;
+	h2{
+		color: #fff;
+	}
+	p{
+		color: #fff;
+		img{
+			width: 80%;
+	    float: left;
+	    margin-top: 20px;
+	    max-width: 410px;
+		}
+	}
+}
+
+.block-6{
+	background-color: #6C4A87;
+	background-image: url(../images/startup-culture-report/waves.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100% auto;
+	h2{
+		color: #fff;
+	}
+	p{
+		color: #fff;
+		img{
+			width: 100%;
+	    margin-top: 40px;
+	    max-width: 410px;
+		}
+	}
+}
+
+.block-7{
+	background-color: #4B3660;
+	background-image: url(../images/startup-culture-report/block-7-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: auto 280px;
+	h2{
+		color: #fff;
+	}
+	p{
+		color: #fff;
+		img{
+			width: 80%;
+			float: left;
+	    margin-top: 40px;
+	    max-width: 410px;
+		}
+	}
+}
+
+.block-8{
+	background-color: #835433;
+	background-image: url(../images/startup-culture-report/block-8-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: auto 280px;
+	h2{
+		color: #fff;
+	}
+	p{
+		color: #fff;
+		img{
+			width: 50%;
+			float: left;
+	    margin-top: 0;
+	    max-width: 410px;
+		}
+	}
+}
+
+.block-9{
+	background-color: #FF931E;
+	background-image: url(../images/startup-culture-report/block-9-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: auto 280px;
+	padding-bottom: 100px;
+	h2{
+		color: #fff;
+	}
+	p{
+		color: #fff;
+		img{
+			width: 80%;
+	    max-width: 410px;
+		}
+	}
+}
+
+.block-10{
+	background-color: #F8C52D;
+	background-image: url(../images/startup-culture-report/block-10-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: auto 280px;
+	h2{
+		color: #fff;
+	}
+	p{
+		color: #fff;
+		img{
+			width: 100%;
+	    margin-top: 0;
+	    margin-bottom: 150px;
+	    max-width: 410px;
+		}
+	}
+}
+
+.block-11{
+	background-image: url(../images/startup-culture-report/block-11-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: cover;
+	h2{
+		text-align: center;
+		color: #074D69;
+	}
+	p{
+		color: #074D69;
+		img{
+			width: 100%;
+	    margin-top: 0;
+	    margin-bottom: 150px;
+	    max-width: 410px;
 		}
 	}
 }
