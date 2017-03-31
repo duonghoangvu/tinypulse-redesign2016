@@ -453,7 +453,9 @@ body {
     position: relative;
   }
   .block-4 .hero {
-    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-4-bg.jpg);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-4-hero.png);
+    background-size: 500px auto;
+    background-position: right bottom;
   }
   .block-4 p img {
     width: 450px;
@@ -469,7 +471,9 @@ body {
     position: relative;
   }
   .block-5 .hero {
-    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-5-bg.jpg);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-5-hero.png);
+    background-size: 600px auto;
+    background-position: right bottom;
   }
   .block-5 p {
     max-width: 600px;
@@ -489,7 +493,7 @@ body {
     position: relative;
   }
   .block-7 .hero {
-    background-image: url(../images/startup-culture-report/block-7-hero.png);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-7-hero.png);
     background-size: 600px auto;
     background-position: right bottom;
   }
@@ -512,7 +516,7 @@ body {
     position: relative;
   }
   .block-8 .hero {
-    background-image: url(../images/startup-culture-report/block-8-hero.png);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-8-hero.png);
     background-size: 600px auto;
     background-position: right bottom;
   }
@@ -524,7 +528,7 @@ body {
   }
 
   .block-9 {
-    background-image: url(../images/startup-culture-report/wave3.png);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave3.png);
     background-position: center bottom;
     background-size: contain;
     position: relative;
@@ -533,14 +537,14 @@ body {
     position: relative;
   }
   .block-9 .hero {
-    background-image: url(../images/startup-culture-report/block-9-chest.png);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-9-chest.png);
     background-size: 490px auto;
     background-position: right bottom;
     margin-left: 24%;
     margin-top: -70px;
   }
   .block-9 .secondary-bg {
-    background-image: url(../images/startup-culture-report/wave2.png);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave2.png);
     background-position: center bottom;
     background-size: contain;
     max-width: inherit;
@@ -562,7 +566,7 @@ body {
 
   .block-10 {
     height: 750px;
-    background-image: url(../images/startup-culture-report/wave3.png);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave3.png);
     background-position: center bottom;
     background-size: contain;
     position: relative;
@@ -571,14 +575,14 @@ body {
     position: relative;
   }
   .block-10 .hero {
-    background-image: url(../images/startup-culture-report/block-10-boat.png);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-10-boat.png);
     background-size: 490px auto;
     background-position: right bottom;
     margin-left: 24%;
     margin-top: -70px;
   }
   .block-10 .secondary-bg {
-    background-image: url(../images/startup-culture-report/wave2.png);
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave2.png);
     background-position: center bottom;
     background-size: contain;
     max-width: inherit;
@@ -597,7 +601,7 @@ body {
   }
 
   .block-11 {
-    background-position: center;
+    background-position: center bottom;
   }
   .block-11 p {
     font-size: 21px;
