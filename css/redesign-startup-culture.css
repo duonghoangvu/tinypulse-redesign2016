@@ -190,10 +190,7 @@ body {
 
 .block-6 {
   background-color: #6C4A87;
-  background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/waves.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 100% auto;
+  position: relative;
 }
 .block-6 h2 {
   color: #fff;
@@ -497,6 +494,10 @@ body {
     max-width: inherit;
     margin-left: 40px;
     margin-top: 40px;
+  }
+
+  .block-6 p img {
+    max-width: 530px;
   }
 
   .block-7 {
