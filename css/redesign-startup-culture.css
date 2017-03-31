@@ -21,6 +21,7 @@ body {
 .content-block h1, .content-block h2, .content-block h3 {
   margin: 0;
   font-family: "Lato-Regular", Arial;
+  font-size: 28px;
 }
 .content-block p {
   line-height: 22px;
@@ -29,6 +30,7 @@ body {
   max-width: 300px;
   margin: 30px auto;
   display: block;
+  font-size: 22px;
 }
 
 .bottom-waves {
@@ -64,7 +66,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  min-height: 520px;
+  min-height: 445px;
   max-width: 360px;
 }
 .intro-block h1 {
@@ -92,17 +94,18 @@ body {
 .block-2 {
   background-color: #22D0CF;
   position: relative;
+  min-height: 420px;
 }
 .block-2 h2 {
   color: #fff;
 }
 .block-2 p {
   color: #115771;
-  line-height: 30px;
-  font-size: 22px;
+  font-size: 17px;
+  line-height: 22px;
 }
 .block-2 p img {
-  max-width: 370px;
+  max-width: 200px;
 }
 .block-2 .bottom-waves {
   min-height: 85px;
@@ -110,21 +113,21 @@ body {
 
 .block-3 {
   background-color: #2899B1;
-  min-height: 560px;
   position: relative;
   overflow: hidden;
+  min-height: 420px;
 }
 .block-3 .hero {
   margin: 0 auto;
   background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-3-hero.png);
   background-size: contain;
-  max-height: 290px;
+  max-height: 160px;
   height: 100%;
   display: block;
   position: absolute;
-  max-width: 355px;
+  max-width: 200px;
   top: auto;
-  right: -60px;
+  right: -200px;
   left: 0;
   bottom: -3px;
   background-repeat: no-repeat;
@@ -134,16 +137,15 @@ body {
 }
 .block-3 p {
   color: #fff;
-  font-family: "Lato-Light", Arial;
-  max-width: 760px;
-  font-size: 19px;
-  line-height: 24px;
+  font-family: "Lato-Regular", Arial;
+  max-width: 880px;
   letter-spacing: 1px;
 }
 .block-3 p img {
   max-width: 58%;
   float: left;
   margin-top: 0;
+  margin-bottom: 0px;
 }
 
 .block-4 {
@@ -359,13 +361,14 @@ body {
 }
 
 @media screen and (min-width: 568px) {
-  .block-3 {
-    min-height: 700px;
-  }
   .block-3 .hero {
-    max-height: 460px;
+    max-height: 215px;
     max-width: 100%;
-    right: -20%;
+    right: -60%;
+    width: 260px;
+  }
+  .block-3 p img {
+    max-width: 320px;
   }
 
   .block-6 p img {
@@ -388,15 +391,6 @@ body {
   }
 }
 @media screen and (min-width: 660px) {
-  .block-3 {
-    min-height: 700px;
-  }
-  .block-3 .hero {
-    max-height: 460px;
-    max-width: 100%;
-    right: -50%;
-  }
-
   .block-9 {
     background-size: cover;
     background-position: center;
@@ -413,16 +407,17 @@ body {
 }
 @media screen and (min-width: 990px) {
   .content-block {
-    min-height: 680px;
+    min-height: 708px;
   }
   .content-block h2 {
     margin: 30px 0 20px 0;
     font-size: 44px;
-    font-family: "Lato-Light", Arial;
+    font-family: "Lato-Regular", Arial;
   }
   .content-block p {
-    font-size: 18px;
-    font-family: "Lato-Light", Arial;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "Lato-Regular", Arial;
   }
   .content-block .hero, .content-block .secondary-bg {
     position: absolute;
@@ -445,18 +440,19 @@ body {
     position: relative;
   }
   .block-3 .hero {
-    max-height: 550px;
     height: 100%;
+    max-height: 570px;
     bottom: -5px;
     left: 0;
     top: auto;
     right: -375px;
-    max-width: 670px;
+    max-width: 700px;
+    width: 100%;
   }
   .block-3 p img {
     max-width: inherit;
     width: 435px;
-    margin-top: 95px;
+    margin-top: 100px;
   }
 
   .block-4 {
@@ -653,18 +649,21 @@ body {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/intro-wave.png);
   }
 
+  .intro-block {
+    min-height: 738px;
+  }
   .intro-block .container {
     background-color: #7ADFEF;
     text-align: center;
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/intro-large-no-waves.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     top: 0;
     left: 0;
     max-width: 1180px;
-    min-height: 680px;
+    min-height: 650px;
   }
   .intro-block .container .content {
     position: absolute;
@@ -683,17 +682,24 @@ body {
     margin-top: 30px;
   }
 
+  .block-2 {
+    min-height: 708px;
+  }
   .block-2 .bottom-waves {
     min-height: 170px;
   }
+  .block-2 p {
+    font-size: 22px;
+    line-height: 30px;
+  }
   .block-2 p img {
-    max-width: 500px;
-    margin-top: 45px;
+    max-width: 370px;
+    margin-top: 70px;
   }
 }
 @media screen and (min-width: 1200px) {
   .intro-block .container .content {
     left: 45%;
-    top: 140px;
+    top: 170px;
   }
 }
