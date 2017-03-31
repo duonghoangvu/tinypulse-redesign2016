@@ -279,7 +279,6 @@ body{
 		img{
 			width: 100%;
 	    margin-top: 0;
-	    margin-bottom: 150px;
 	    max-width: 410px;
 		}
 	}
@@ -308,12 +307,13 @@ body{
 .signup-form{
 	margin: 50px auto;
 	max-width: 450px;
+	min-height: 120px;
 	p{
 		text-align: center;
 	}
 	form{
 		font-size: 0;
-		input, button{
+		input{
 			display: inline-block;
 	    vertical-align: top;
 	    padding: 0;
@@ -326,7 +326,7 @@ body{
 	    min-height: inherit;
 	    text-transform: none;
 		}
-		input{
+		input[type=email]{
 			border-radius: 3px 0 0 3px;
 			width: 70%;
 	    color: #000;
@@ -335,7 +335,7 @@ body{
 	    font-family: "Lato-Regular", Arial;
 	    font-size: 15px;
 		}
-		button{
+		input[type=submit]{
 			border-radius: 0 3px 3px 0;
 			width: 30%;
 			background: #00C26B;
