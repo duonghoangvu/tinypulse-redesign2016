@@ -31,6 +31,17 @@ body{
 		}
 	}
 }
+.bottom-waves {
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  min-height: 65px;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-size: contain;
+  background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/intro-wave-mobile.png);
+}
 .intro-block{
 	background-color: #7ADFEF;
   padding-bottom: 0px;
@@ -47,15 +58,6 @@ body{
     left: 0;
     min-height: 520px;
     max-width: 360px;
-  }
-  .bottom-waves {
-    position: absolute;
-    left:0;
-    bottom: 0;
-    width: 100%;
-    background-repeat: repeat-x;
-    background-position: center bottom;
-    background-size: contain;
   }
 	h1{
 		color: #fff;
@@ -82,16 +84,22 @@ body{
 
 .block-2{
 	background-color: #22D0CF;
-	background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/waves.png);
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-size: 100% auto;
+  position: relative;
 	h2{
 		color: #fff;
+    font-family: 'Lato-Regular';
 	}
 	p{
 		color: #115771;
+    line-height: 30px;
+    font-size: 22px;
+    img {
+      max-width: 350px;
+    }
 	}
+  .bottom-waves {
+    min-height: 85px;
+  }
 }
 
 .block-3{
@@ -516,6 +524,10 @@ body{
 			line-height: 30px;
 		}
 	}
+  .bottom-waves {
+    min-height: 195px;
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/intro-wave.png);
+  }
   .intro-block {
     .container {
       background-color: #7ADFEF;
@@ -535,10 +547,6 @@ body{
         top: 175px;
       }
     }
-    .bottom-waves {
-      min-height: 195px;
-      background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/intro-wave.png);
-    }
     h1 {
       font-size: 100px;
     }
@@ -549,6 +557,16 @@ body{
     h3 {
       font-size: 27px;
       margin-top: 30px;
+    }
+  }
+  .block-2 {
+    .bottom-waves {
+      min-height: 170px;
+    }
+    p {
+      img {
+        max-width: 420px;
+      }
     }
   }
 }
