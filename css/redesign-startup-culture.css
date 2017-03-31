@@ -236,7 +236,7 @@ body {
   position: absolute;
   max-width: 225px;
   top: auto;
-  right: -175px;
+  right: -56%;
   left: 0;
   bottom: -3px;
   background-repeat: no-repeat;
@@ -535,15 +535,6 @@ body {
     margin-top: 30px;
   }
 
-  /*.block-6{*/
-  /*p{*/
-  /*img{*/
-  /*max-width: inherit;*/
-  /*width: 550px;*/
-  /*margin-bottom: 200px;*/
-  /*}*/
-  /*}*/
-  /*}*/
   .block-6 p img {
     max-width: 530px;
   }
@@ -562,7 +553,7 @@ body {
     left: 0;
     top: auto;
     right: -350px;
-    max-width: 570px;
+    max-width: 610px;
     width: 100%;
   }
   .block-7 h2 {
