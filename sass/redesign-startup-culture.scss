@@ -416,9 +416,12 @@ body{
 		h2{
 			margin: 30px 0 20px 0;
 			font-size: 44px;
+			font-family: $font_light;
+			// font-weight: normal;
 		}
 		p{
 			font-size: 18px;
+			font-family: $font_light;
 		}
 		.hero, .secondary-bg{
 			position: absolute;
@@ -508,7 +511,10 @@ body{
 			background-position: right bottom;
 		}
 		h2{
-			max-width: 670px;
+			max-width: 710px;
+			&+p{
+				max-width: 460px;
+			}
 		}
 		p{
 			max-width: 600px;
@@ -577,7 +583,7 @@ body{
 				width: 400px;
 				max-width: inherit;
 				float: left;
-		    margin: 0 0 0 40px; 
+		    margin: 0; 
 			}
 		}
 	}
