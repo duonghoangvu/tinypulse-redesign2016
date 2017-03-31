@@ -310,7 +310,7 @@ body{
 
 .signup-form{
 	margin: 50px auto;
-	max-width: 400px;
+	max-width: 450px;
 	p{
 		text-align: center;
 	}
@@ -568,6 +568,8 @@ body{
 		}
 	}
 	.block-9{
+		min-height: 708px;
+		padding-bottom: 40px;
 		background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave3.png);
 		background-position: center bottom;
 		background-size: contain;
@@ -607,11 +609,12 @@ body{
 				max-width: inherit;
 				float: left;
 		    margin: 0; 
+		    margin-top: -70px;
 			}
 		}
 	}
 	.block-10{
-		height: 750px;
+		height: 708px;
 		background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave3.png);
 		background-position: center bottom;
 		background-size: contain;
@@ -647,6 +650,7 @@ body{
 				width: 550px;
 				max-width: inherit;
 				float: left;
+				margin-top: -50px;
 			}
 		}
 	}
