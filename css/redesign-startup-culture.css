@@ -357,7 +357,7 @@ body {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/large/block-11-bg.jpg);
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 990px) {
   .content-block {
     min-height: 680px;
   }
@@ -365,7 +365,29 @@ body {
     margin: 30px 0 20px 0;
     font-size: 40px;
   }
+  .content-block .hero, .content-block .secondary-bg {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 960px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
+  .block-3 {
+    background-image: none;
+    position: relative;
+  }
+  .block-3 .container {
+    position: relative;
+  }
+  .block-3 .hero {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-3-bg.jpg);
+  }
   .block-3 p {
     max-width: 600px;
   }
@@ -377,8 +399,14 @@ body {
   }
 
   .block-4 {
-    background-size: cover;
-    background-position: center;
+    background-image: none;
+    position: relative;
+  }
+  .block-4 .container {
+    position: relative;
+  }
+  .block-4 .hero {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-4-bg.jpg);
   }
   .block-4 p img {
     width: 450px;
@@ -387,8 +415,14 @@ body {
   }
 
   .block-5 {
-    background-size: cover;
-    background-position: center;
+    background-image: none;
+    position: relative;
+  }
+  .block-5 .container {
+    position: relative;
+  }
+  .block-5 .hero {
+    background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-5-bg.jpg);
   }
   .block-5 p {
     max-width: 600px;
@@ -400,6 +434,18 @@ body {
     margin-top: 40px;
   }
 
+  .block-7 {
+    background-image: none;
+    position: relative;
+  }
+  .block-7 .container {
+    position: relative;
+  }
+  .block-7 .hero {
+    background-image: url(../images/startup-culture-report/block-7-hero.png);
+    background-size: 600px auto;
+    background-position: right bottom;
+  }
   .block-7 h2 {
     max-width: 670px;
   }
@@ -408,11 +454,20 @@ body {
   }
   .block-7 p img {
     margin-left: 40px;
+    float: none;
   }
 
   .block-8 {
-    background-size: cover;
-    background-position: center;
+    background-image: none;
+    position: relative;
+  }
+  .block-8 .container {
+    position: relative;
+  }
+  .block-8 .hero {
+    background-image: url(../images/startup-culture-report/block-8-hero.png);
+    background-size: 600px auto;
+    background-position: right bottom;
   }
   .block-8 p img {
     width: auto;
@@ -421,6 +476,29 @@ body {
     margin: 0 0 0 40px;
   }
 
+  .block-9 {
+    background-image: url(../images/startup-culture-report/wave3.png);
+    background-position: center bottom;
+    background-size: contain;
+    position: relative;
+  }
+  .block-9 .container {
+    position: relative;
+  }
+  .block-9 .hero {
+    background-image: url(../images/startup-culture-report/block-9-chest.png);
+    background-size: 490px auto;
+    background-position: right bottom;
+    margin-left: 24%;
+    margin-top: -70px;
+  }
+  .block-9 .secondary-bg {
+    background-image: url(../images/startup-culture-report/wave2.png);
+    background-position: center bottom;
+    background-size: contain;
+    max-width: inherit;
+    z-index: 1;
+  }
   .block-9 h2 {
     text-align: center;
   }
@@ -435,6 +513,30 @@ body {
     margin: 0 0 0 40px;
   }
 
+  .block-10 {
+    height: 750px;
+    background-image: url(../images/startup-culture-report/wave3.png);
+    background-position: center bottom;
+    background-size: contain;
+    position: relative;
+  }
+  .block-10 .container {
+    position: relative;
+  }
+  .block-10 .hero {
+    background-image: url(../images/startup-culture-report/block-10-boat.png);
+    background-size: 490px auto;
+    background-position: right bottom;
+    margin-left: 24%;
+    margin-top: -70px;
+  }
+  .block-10 .secondary-bg {
+    background-image: url(../images/startup-culture-report/wave2.png);
+    background-position: center bottom;
+    background-size: contain;
+    max-width: inherit;
+    z-index: 1;
+  }
   .block-10 h2 {
     text-align: center;
   }

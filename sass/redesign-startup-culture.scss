@@ -375,7 +375,7 @@ body{
 			margin: 30px 0 20px 0;
 			font-size: 40px;
 		}
-		.hero{
+		.hero, .secondary-bg{
 			position: absolute;
 			height: 100%;
 			top: 0;
@@ -384,8 +384,8 @@ body{
 			max-width: 960px;
 			margin: 0 auto;
 			background-size: cover;
-		    background-position: center;
-		    background-repeat: no-repeat;
+	    background-position: center;
+	    background-repeat: no-repeat;
 		}
 	}
 	.block-3{
@@ -450,7 +450,9 @@ body{
 			position: relative;
 		}
 		.hero{
-			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-7-bg.jpg);
+			background-image: url(../images/startup-culture-report/block-7-hero.png);
+			background-size: 600px auto;
+			background-position: right bottom;
 		}
 		h2{
 			max-width: 670px;
@@ -470,7 +472,9 @@ body{
 			position: relative;
 		}
 		.hero{
-			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-8-bg.jpg);
+			background-image: url(../images/startup-culture-report/block-8-hero.png);
+			background-size: 600px auto;
+			background-position: right bottom;
 		}
 		p{
 			img{
@@ -482,6 +486,27 @@ body{
 		}
 	}
 	.block-9{
+		background-image: url(../images/startup-culture-report/wave3.png);
+		background-position: center bottom;
+		background-size: contain;
+		position: relative;
+		.container{
+			position: relative;
+		}
+		.hero{
+			background-image: url(../images/startup-culture-report/block-9-chest.png);
+			background-size: 490px auto;
+			background-position: right bottom;
+			margin-left: 24%;
+			margin-top: -70px;
+		}
+		.secondary-bg{
+			background-image: url(../images/startup-culture-report/wave2.png);
+			background-position: center bottom;
+			background-size: contain;
+			max-width: inherit;
+			z-index: 1;
+		}
 		h2{
 			text-align: center;
 		}
@@ -497,6 +522,28 @@ body{
 		}
 	}
 	.block-10{
+		height: 750px;
+		background-image: url(../images/startup-culture-report/wave3.png);
+		background-position: center bottom;
+		background-size: contain;
+		position: relative;
+		.container{
+			position: relative;
+		}
+		.hero{
+			background-image: url(../images/startup-culture-report/block-10-boat.png);
+			background-size: 490px auto;
+			background-position: right bottom;
+			margin-left: 24%;
+			margin-top: -70px;
+		}
+		.secondary-bg{
+			background-image: url(../images/startup-culture-report/wave2.png);
+			background-position: center bottom;
+			background-size: contain;
+			max-width: inherit;
+			z-index: 1;
+		}
 		h2{
 			text-align: center;
 		}
