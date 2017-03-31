@@ -25,10 +25,11 @@ body{
 	h1, h2, h3{
 		margin: 0;
 		font-family: $font_regular;
-    font-size: 28px;
+    font-size: 26px;
 	}
 	p{
-		line-height: 22px;
+		line-height: 20px;
+		font-size: 15px;
 		img{
 			max-width: 300px;
 			margin: 30px auto;
@@ -198,7 +199,7 @@ body{
     max-width: 880px;
     letter-spacing: 1px;
 		img{
-			max-width: 58%;
+			max-width: 75%;
 	    float: left;
 	    margin-top: 0;
       margin-bottom: 0px;
@@ -284,10 +285,10 @@ body{
 	background-size: auto 280px;
 	padding-bottom: 100px;
 	h2{
-		color: #fff;
+		color: #074D69;
 	}
 	p{
-		color: #fff;
+		color: #074D69;
 		img{
 			width: 80%;
 	    max-width: 410px;
@@ -358,7 +359,7 @@ body{
 		}
 		input[type=email]{
 			border-radius: 3px 0 0 3px;
-			width: 70%;
+			width: 65%;
 	    color: #000;
 	    text-align: center;
 	    margin-bottom: 10px;
@@ -367,11 +368,12 @@ body{
 		}
 		input[type=submit]{
 			border-radius: 0 3px 3px 0;
-			width: 30%;
-			background: #00C26B;
+			width: 35%;
+			background: #FD7E23;
 			color: #fff;
 			font-family: "Lato-Semibold", Arial;
 			font-size: 16px;
+			-webkit-appearance: none;
 		}
 	}
 }
@@ -462,12 +464,12 @@ body{
     min-height: 598px;
 		h2{
 			margin: 30px 0 20px 0;
-			font-size: 44px;
+			font-size: 40px;
 			font-family: $font_regular;
 			// font-weight: normal;
 		}
 		p{
-			font-size: 22px;
+			font-size: 20px;
       line-height: 30px;
 			font-family: $font_regular;
 		}
@@ -556,8 +558,11 @@ body{
   .block-6 {
     p {
       img {
-        max-width: 530px;
+        max-width: 500px;
       }
+    }
+    .bottom-waves{
+    	background-position: center 60px;
     }
   }
 	.block-7{
@@ -615,10 +620,10 @@ body{
 		}
 	}
 	.block-9{
-		min-height: 708px;
+		min-height: 588px;
 		padding-bottom: 40px;
 		background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave3.png);
-		background-position: center bottom;
+		background-position: center 125%;
 		background-size: contain;
 		position: relative;
 		.container{
@@ -630,10 +635,11 @@ body{
 			background-position: right bottom;
 			margin-left: 24%;
 			margin-top: -70px;
+			top: 30px;
 		}
 		.secondary-bg{
 			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave2.png);
-			background-position: center bottom;
+			background-position: center 106%;
 			background-size: contain;
 			max-width: inherit;
 			z-index: 1;
@@ -643,7 +649,7 @@ body{
 			max-width: 700px;
 			margin: 30px auto 20px;
 			&+p{
-				max-width: 680px;
+				max-width: 625px;
 				margin: 0 auto;
 				text-align: left;
 			}
@@ -652,7 +658,7 @@ body{
 			color: #074D69;
 			text-align: center;
 			img{
-				width: 400px;
+				width: 370px;
 				max-width: inherit;
 				float: left;
 		    margin: 0; 
@@ -661,9 +667,9 @@ body{
 		}
 	}
 	.block-10{
-		height: 708px;
+		height: 598px;
 		background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave3.png);
-		background-position: center bottom;
+		background-position: center 120%;
 		background-size: contain;
 		position: relative;
 		.container{
@@ -674,11 +680,11 @@ body{
 			background-size: 490px auto;
 			background-position: right bottom;
 			margin-left: 24%;
-			margin-top: -70px;
+			margin-top: -20px;
 		}
 		.secondary-bg{
 			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave2.png);
-			background-position: center bottom;
+			background-position: center 110%;
 			background-size: contain;
 			max-width: inherit;
 			z-index: 1;
@@ -694,10 +700,11 @@ body{
 			text-align: center;
 			margin: 0 auto;
 			img{
-				width: 550px;
+				width: 520px;
 				max-width: inherit;
 				float: left;
-				margin-top: -50px;
+				margin-top: -70px;
+				margin-left: 40px;
 			}
 		}
 	}
@@ -708,6 +715,10 @@ body{
 			margin: 0 auto;
 			line-height: 30px;
 			text-align: justify;
+			font-size: 22px;
+		}
+		h2{
+			font-size: 44px;
 		}
 		.signup-form{
 			p{
@@ -774,4 +785,10 @@ body{
       }
     }
   }
+}
+
+@media screen and (max-width: 375px){
+	.block-10 p img{
+		margin-bottom: 140px;
+	}
 }
