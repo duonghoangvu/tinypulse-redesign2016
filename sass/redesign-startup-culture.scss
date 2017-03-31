@@ -488,6 +488,7 @@ body{
 			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-5-hero.png);
 			background-size: 600px auto;
 			background-position: right bottom;
+			max-width: 1100px;
 		}
 		p{
 			max-width: 600px;
@@ -513,7 +514,7 @@ body{
 		h2{
 			max-width: 710px;
 			&+p{
-				max-width: 460px;
+				max-width: 460px
 			}
 		}
 		p{
@@ -534,6 +535,7 @@ body{
 			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-8-hero.png);
 			background-size: 600px auto;
 			background-position: right bottom;
+			max-width: 1100px;
 		}
 		p{
 			img{
