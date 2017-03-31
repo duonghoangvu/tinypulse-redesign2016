@@ -417,7 +417,12 @@ body {
   }
   .content-block h2 {
     margin: 30px 0 20px 0;
-    font-size: 40px;
+    font-size: 44px;
+    font-family: "Lato-Light", Arial;
+  }
+  .content-block p {
+    font-size: 18px;
+    font-family: "Lato-Light", Arial;
   }
   .content-block .hero, .content-block .secondary-bg {
     position: absolute;
@@ -486,6 +491,7 @@ body {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-5-hero.png);
     background-size: 600px auto;
     background-position: right bottom;
+    max-width: 1100px;
   }
   .block-5 p {
     max-width: 600px;
@@ -510,7 +516,10 @@ body {
     background-position: right bottom;
   }
   .block-7 h2 {
-    max-width: 670px;
+    max-width: 710px;
+  }
+  .block-7 h2 + p {
+    max-width: 460px;
   }
   .block-7 p {
     max-width: 600px;
@@ -531,6 +540,7 @@ body {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/block-8-hero.png);
     background-size: 600px auto;
     background-position: right bottom;
+    max-width: 1100px;
   }
   .block-8 p img {
     width: auto;
@@ -564,6 +574,13 @@ body {
   }
   .block-9 h2 {
     text-align: center;
+    max-width: 700px;
+    margin: 30px auto 20px;
+  }
+  .block-9 h2 + p {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: left;
   }
   .block-9 p {
     color: #074D69;
@@ -573,7 +590,7 @@ body {
     width: 400px;
     max-width: inherit;
     float: left;
-    margin: 0 0 0 40px;
+    margin: 0;
   }
 
   .block-10 {
@@ -603,8 +620,13 @@ body {
   .block-10 h2 {
     text-align: center;
   }
+  .block-10 h2 + p {
+    max-width: 500px;
+    text-align: left;
+  }
   .block-10 p {
     text-align: center;
+    margin: 0 auto;
   }
   .block-10 p img {
     width: 550px;
@@ -616,8 +638,14 @@ body {
     background-position: center bottom;
   }
   .block-11 p {
-    font-size: 21px;
+    max-width: 550px;
+    margin: 0 auto;
     line-height: 30px;
+    text-align: justify;
+  }
+  .block-11 .signup-form p {
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .bottom-waves {
