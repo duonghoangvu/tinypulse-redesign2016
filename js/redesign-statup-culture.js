@@ -27,6 +27,8 @@ function scroll() {
   el.style['background-color'] = ['hsl(', h, ', ', s+'%, ', l, '%)'].join('');
 }
 
-el.onscroll = scroll;  
-(function(){
-})();
+el.onscroll = scroll;
+
+jQuery(document).ready(function($) {
+  $(window).trigger('scroll');
+});
