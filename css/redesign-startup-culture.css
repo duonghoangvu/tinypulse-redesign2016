@@ -35,6 +35,18 @@ body {
   display: block;
   font-size: 22px;
 }
+.content-block .hero {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+}
 
 .bottom-waves {
   position: absolute;
@@ -115,19 +127,7 @@ body {
   min-height: 420px;
 }
 .block-3 .hero {
-  margin: 0 auto;
   background-image: url(../images/startup-culture-report/block-3-hero.png);
-  background-size: contain;
-  max-height: 160px;
-  height: 100%;
-  display: block;
-  position: absolute;
-  max-width: 200px;
-  top: auto;
-  right: -200px;
-  left: 0;
-  bottom: -3px;
-  background-repeat: no-repeat;
 }
 .block-3 h2 {
   color: #fff;
@@ -139,18 +139,17 @@ body {
   letter-spacing: 1px;
 }
 .block-3 p img {
-  max-width: 65%;
+  max-width: 100%;
   float: left;
   margin-top: 0;
   margin-bottom: 0px;
 }
 
 .block-4 {
-  background-color: #0A5779;
-  background-image: url(../images/startup-culture-report/block-4-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: auto 280px;
+  position: relative;
+}
+.block-4 .hero {
+  background-image: url(../images/startup-culture-report/block-4-hero.png);
 }
 .block-4 h2 {
   color: #fff;
@@ -171,19 +170,7 @@ body {
   min-height: 420px;
 }
 .block-5 .hero {
-  margin: 0 auto;
   background-image: url(../images/startup-culture-report/block-5-hero.png);
-  background-size: contain;
-  max-height: 135px;
-  height: 100%;
-  display: block;
-  position: absolute;
-  max-width: 225px;
-  top: auto;
-  right: -152px;
-  left: 0;
-  bottom: -3px;
-  background-repeat: no-repeat;
 }
 .block-5 h2 {
   color: #fff;
@@ -204,6 +191,7 @@ body {
 .block-6 {
   background-color: #6C4A87;
   position: relative;
+  min-height: inherit;
 }
 .block-6 h2 {
   color: #fff;
@@ -223,19 +211,7 @@ body {
   min-height: 420px;
 }
 .block-7 .hero {
-  margin: 0 auto;
   background-image: url(../images/startup-culture-report/block-7-hero.png);
-  background-size: contain;
-  max-height: 195px;
-  height: 100%;
-  display: block;
-  position: absolute;
-  max-width: 225px;
-  top: auto;
-  right: -56%;
-  left: 0;
-  bottom: -3px;
-  background-repeat: no-repeat;
 }
 .block-7 h2 {
   color: #fff;
@@ -251,11 +227,10 @@ body {
 }
 
 .block-8 {
-  background-color: #835433;
-  background-image: url(../images/startup-culture-report/block-8-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: auto 280px;
+  position: relative;
+}
+.block-8 .hero {
+  background-image: url(../images/startup-culture-report/block-8-hero.png);
 }
 .block-8 h2 {
   color: #fff;
@@ -272,12 +247,30 @@ body {
 }
 
 .block-9 {
-  background-color: #FF931E;
-  background-image: url(../images/startup-culture-report/block-9-bg.jpg);
+  padding-bottom: 40px;
+  background-image: url(../images/startup-culture-report/wave3.png);
+  background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.block-9 .container {
+  position: relative;
+}
+.block-9 .hero {
+  background-image: url(../images/startup-culture-report/block-9-chest.png);
+  background-size: 490px auto;
   background-position: right bottom;
-  background-size: auto 280px;
-  padding-bottom: 100px;
+  margin-left: 24%;
+  margin-top: -70px;
+  top: 30px;
+}
+.block-9 .secondary-bg {
+  background-image: url(../images/startup-culture-report/wave2.png);
+  background-position: center 106%;
+  background-size: contain;
+  max-width: inherit;
+  z-index: 1;
 }
 .block-9 h2 {
   color: #fff;
@@ -385,46 +378,6 @@ body {
   vertical-align: middle;
 }
 
-@media screen and (min-width: 568px) {
-  .block-3 .hero {
-    max-height: 215px;
-    max-width: 100%;
-    right: -60%;
-    width: 260px;
-  }
-  .block-3 p img {
-    max-width: 320px;
-  }
-
-  .block-5 .hero {
-    max-height: 215px;
-    max-width: 100%;
-    right: -50%;
-    width: 350px;
-  }
-  .block-5 p img {
-    max-width: 320px;
-  }
-
-  .block-6 p img {
-    margin-top: 80px;
-  }
-
-  .block-7 {
-    background-position: center;
-    background-size: cover;
-  }
-
-  .block-8 p img {
-    width: auto;
-    max-width: inherit;
-    margin: 0;
-  }
-
-  .block-10 p img {
-    float: left;
-  }
-}
 @media screen and (min-width: 660px) {
   .block-9 {
     background-size: cover;
@@ -508,6 +461,8 @@ body {
     background-image: url(../images/startup-culture-report/block-4-hero.png);
     background-size: 500px auto;
     background-position: right bottom;
+    width: 960px;
+    max-height: inherit;
   }
   .block-4 p img {
     width: 460px;
