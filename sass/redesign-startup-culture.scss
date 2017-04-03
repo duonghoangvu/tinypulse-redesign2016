@@ -49,6 +49,18 @@ body{
     right: 0;
     bottom: 0;
 	}
+	.secondary-bg{
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin: 0 auto;
+		background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+	}
 }
 .bottom-waves {
   position: absolute;
@@ -259,17 +271,10 @@ body{
 	}
 	.hero{
 		background-image: url(../images/startup-culture-report/block-9-chest.png);
-		background-size: 490px auto;
-		background-position: right bottom;
-		margin-left: 24%;
-		margin-top: -70px;
-		top: 30px;
 	}
 	.secondary-bg{
 		background-image: url(../images/startup-culture-report/wave2.png);
-		background-position: center 106%;
 		background-size: contain;
-		max-width: inherit;
 		z-index: 1;
 	}
 	h2{
@@ -278,18 +283,32 @@ body{
 	p{
 		color: #fff;
 		img{
-			width: 80%;
+			width: 70%;
 	    max-width: 410px;
+	    margin: 0;
 		}
 	}
 }
 
 .block-10{
-	background-color: #FCC802;
-	background-image: url(../images/startup-culture-report/block-10-bg.jpg);
+	padding-bottom: 40px;
+	background-image: url(../images/startup-culture-report/wave3.png);
+	background-position: center bottom;
 	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-size: auto 280px;
+	background-size: contain;
+	position: relative;
+	min-height: 520px;
+	.container{
+		position: relative;
+	}
+	.hero{
+		background-image: url(../images/startup-culture-report/block-10-boat.png);
+	}
+	.secondary-bg{
+		background-image: url(../images/startup-culture-report/wave2.png);
+		background-size: contain;
+		z-index: 1;
+	}
 	h2{
 		color: #074D69;
 	}
@@ -297,7 +316,7 @@ body{
 		color: #074D69;
 		img{
 			width: 100%;
-	    margin-top: 0;
+	    margin: 0;
 	    max-width: 410px;
 		}
 	}
@@ -435,17 +454,17 @@ body{
 }
 
 @media screen and (min-width: 660px){
-	.block-9{
-		background-size: cover;
-		background-position: center;
-	}
-	.block-10{
-		background-size: cover;
-		background-position: center;
-	}
-	.block-11{
-		background-image: url(../images/startup-culture-report/large/block-11-bg.jpg);
-	}
+	// .block-9{
+	// 	background-size: cover;
+	// 	background-position: center;
+	// }
+	// .block-10{
+	// 	background-size: cover;
+	// 	background-position: center;
+	// }
+	// .block-11{
+	// 	background-image: url(../images/startup-culture-report/large/block-11-bg.jpg);
+	// }
 }
 
 @media screen and (min-width: 990px){
@@ -469,6 +488,7 @@ body{
 		.hero, .secondary-bg{
 			position: absolute;
 			height: 100%;
+			width: 100%;
 			top: 0;
 			left: 0;
 			right: 0;
