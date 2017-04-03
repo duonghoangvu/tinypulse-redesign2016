@@ -80,7 +80,7 @@ body{
   position: relative;
   /*min-height: 480px;*/
   margin-top: 20px;
-  min-height: 540px;
+  min-height: 520px;
   .container {
     background-color: #7ADFEF;
     text-align: center;
@@ -281,6 +281,7 @@ body{
 	}
 	.hero{
 		background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report-b/block-9-chest.png);
+    bottom: 5px;
 	}
 	.secondary-bg{
 		background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report-b/wave2.png);
@@ -297,7 +298,7 @@ body{
       width: 90%;
 	    max-width: 410px;
 	    margin: 0;
-      margin-top: 40px;
+      margin-top: 10px;
 		}
 	}
 }
@@ -457,7 +458,7 @@ body{
     .hero {
       height: 100%;
       max-height: 465px;
-      bottom: 0;
+      bottom: 50px;
       left: 0;
       top: auto;
       right: -440px;
@@ -521,13 +522,14 @@ body{
     }
   }
   .block-6 {
+    min-height: 600px;
     p {
       img {
         max-width: 500px;
       }
     }
     .bottom-waves{
-    	background-position: center 60px;
+    	background-position: center 10px;
     }
   }
 	.block-7{
@@ -581,15 +583,15 @@ body{
 				width: auto;
 		    max-width: inherit;
 		    max-height: 400px;
-		    margin: 0 0 0 40px; 
+		    margin: 30px 0 0 40px; 
 			}
 		}
 	}
 	.block-9{
-		min-height: 588px;
+		min-height: 625px;
 		padding-bottom: 40px;
 		background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report-b/wave3.png);
-		background-position: center 125%;
+		background-position: center 115%;
 		background-size: contain;
 		position: relative;
 		.container{
@@ -605,7 +607,7 @@ body{
 		}
 		.secondary-bg{
 			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report-b/wave2.png);
-			background-position: center 106%;
+			background-position: center 105%;
 			background-size: contain;
 			max-width: inherit;
 			z-index: 1;
@@ -628,14 +630,14 @@ body{
 				max-width: inherit;
 				float: left;
 		    margin: 0; 
-		    margin-top: -70px;
+		    margin-top: -40px;
 			}
 		}
 	}
 	.block-10{
 		height: 598px;
 		background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report-b/wave3.png);
-		background-position: center 120%;
+		background-position: center 115%;
 		background-size: contain;
 		position: relative;
 		.container{
@@ -646,11 +648,11 @@ body{
 			background-size: 490px auto;
 			background-position: right bottom;
 			margin-left: 24%;
-			margin-top: -20px;
+			margin-top: -40px;
 		}
 		.secondary-bg{
 			background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report-b/wave2.png);
-			background-position: center 110%;
+			background-position: center 105%;
 			background-size: contain;
 			max-width: inherit;
 			z-index: 1;
