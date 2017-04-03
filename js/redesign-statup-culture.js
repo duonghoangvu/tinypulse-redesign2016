@@ -1,3 +1,10 @@
+var blocks = document.getElementsByClassName('content-block'),
+  windowH = document.documentElement.clientHeight;
+
+for (var i = 0; i < blocks.length; i++){
+  // blocks[i].style.height = windowH + 'px';
+};
+
 // HSL Colors
 var colors = [
   [188, 79, 71],
@@ -12,7 +19,6 @@ var colors = [
   [48, 98, 50],
   [187, 85, 80]
 ],
-
 el = document.getElementsByTagName('body')[0], // Element to be scrolled
 length = colors.length,                        // Number of colors
 height = Math.round(el.offsetHeight / length); // Height of the segment between two colors
