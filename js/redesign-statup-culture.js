@@ -10,7 +10,7 @@ var colors = [
   [25, 44, 36],
   [31, 100, 56],
   [48, 98, 50],
-  [187, 85, 80]
+  [48, 98, 50]
 ],
 el = document.getElementsByTagName('body')[0], // Element to be scrolled
 length = colors.length,                        // Number of colors
