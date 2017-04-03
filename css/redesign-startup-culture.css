@@ -449,7 +449,7 @@ body {
   .content-block p {
     font-size: 20px;
     line-height: 30px;
-    font-family: "Lato-Regular", Arial;
+    font-family: "Lato-Light", Arial;
   }
   .content-block .hero, .content-block .secondary-bg {
     position: absolute;
