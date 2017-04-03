@@ -16,16 +16,16 @@ body {
 .content-block {
   padding: 30px 20px;
   min-height: 450px;
-  box-shadow: 0px 0px 5px 1px #888888;
   overflow: hidden;
 }
 .content-block h1, .content-block h2, .content-block h3 {
   margin: 0;
   font-family: "Lato-Regular", Arial;
-  font-size: 28px;
+  font-size: 26px;
 }
 .content-block p {
-  line-height: 22px;
+  line-height: 20px;
+  font-size: 15px;
 }
 .content-block p img {
   max-width: 300px;
@@ -44,12 +44,6 @@ body {
   background-position: center bottom;
   background-size: contain;
   background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/intro-wave-mobile.png);
-}
-
-.break-slide {
-  width: 100%;
-  height: 10px;
-  background-color: #cacaca;
 }
 
 .intro-block {
@@ -143,7 +137,7 @@ body {
   letter-spacing: 1px;
 }
 .block-3 p img {
-  max-width: 58%;
+  max-width: 65%;
   float: left;
   margin-top: 0;
   margin-bottom: 0px;
@@ -199,7 +193,7 @@ body {
   letter-spacing: 1px;
 }
 .block-5 p img {
-  max-width: 58%;
+  max-width: 75%;
   float: left;
   margin-top: 0;
   margin-bottom: 0px;
@@ -268,7 +262,7 @@ body {
   color: #fff;
 }
 .block-8 p img {
-  width: 50%;
+  width: 43%;
   float: left;
   margin-top: 0;
   max-width: 410px;
@@ -284,10 +278,10 @@ body {
   padding-bottom: 100px;
 }
 .block-9 h2 {
-  color: #fff;
+  color: #074D69;
 }
 .block-9 p {
-  color: #fff;
+  color: #074D69;
 }
 .block-9 p img {
   width: 80%;
@@ -310,7 +304,6 @@ body {
 .block-10 p img {
   width: 100%;
   margin-top: 0;
-  margin-bottom: 150px;
   max-width: 410px;
 }
 
@@ -335,8 +328,9 @@ body {
 }
 
 .signup-form {
-  margin: 50px auto;
+  margin: 50px auto 10px;
   max-width: 450px;
+  min-height: 120px;
 }
 .signup-form p {
   text-align: center;
@@ -344,7 +338,7 @@ body {
 .signup-form form {
   font-size: 0;
 }
-.signup-form form input, .signup-form form button {
+.signup-form form input {
   display: inline-block;
   vertical-align: top;
   padding: 0;
@@ -357,27 +351,28 @@ body {
   min-height: inherit;
   text-transform: none;
 }
-.signup-form form input {
+.signup-form form input[type=email] {
   border-radius: 3px 0 0 3px;
-  width: 70%;
+  width: 65%;
   color: #000;
   text-align: center;
   margin-bottom: 10px;
   font-family: "Lato-Regular", Arial;
   font-size: 15px;
 }
-.signup-form form button {
+.signup-form form input[type=submit] {
   border-radius: 0 3px 3px 0;
-  width: 30%;
-  background: #00C26B;
+  width: 35%;
+  background: #FD7E23;
   color: #fff;
   font-family: "Lato-Semibold", Arial;
   font-size: 16px;
+  -webkit-appearance: none;
 }
 
 .logos {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 .logos img {
   max-width: 60px;
@@ -448,11 +443,11 @@ body {
   }
   .content-block h2 {
     margin: 30px 0 20px 0;
-    font-size: 44px;
+    font-size: 40px;
     font-family: "Lato-Regular", Arial;
   }
   .content-block p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
     font-family: "Lato-Regular", Arial;
   }
@@ -536,7 +531,10 @@ body {
   }
 
   .block-6 p img {
-    max-width: 530px;
+    max-width: 500px;
+  }
+  .block-6 .bottom-waves {
+    background-position: center 60px;
   }
 
   .block-7 {
@@ -594,10 +592,10 @@ body {
   }
 
   .block-9 {
-    min-height: 708px;
+    min-height: 588px;
     padding-bottom: 40px;
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave3.png);
-    background-position: center bottom;
+    background-position: center 125%;
     background-size: contain;
     position: relative;
   }
@@ -610,10 +608,11 @@ body {
     background-position: right bottom;
     margin-left: 24%;
     margin-top: -70px;
+    top: 30px;
   }
   .block-9 .secondary-bg {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave2.png);
-    background-position: center bottom;
+    background-position: center 106%;
     background-size: contain;
     max-width: inherit;
     z-index: 1;
@@ -624,7 +623,7 @@ body {
     margin: 30px auto 20px;
   }
   .block-9 h2 + p {
-    max-width: 680px;
+    max-width: 625px;
     margin: 0 auto;
     text-align: left;
   }
@@ -633,7 +632,7 @@ body {
     text-align: center;
   }
   .block-9 p img {
-    width: 400px;
+    width: 370px;
     max-width: inherit;
     float: left;
     margin: 0;
@@ -641,9 +640,9 @@ body {
   }
 
   .block-10 {
-    height: 708px;
+    height: 598px;
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave3.png);
-    background-position: center bottom;
+    background-position: center 120%;
     background-size: contain;
     position: relative;
   }
@@ -655,11 +654,11 @@ body {
     background-size: 490px auto;
     background-position: right bottom;
     margin-left: 24%;
-    margin-top: -70px;
+    margin-top: -20px;
   }
   .block-10 .secondary-bg {
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report/wave2.png);
-    background-position: center bottom;
+    background-position: center 110%;
     background-size: contain;
     max-width: inherit;
     z-index: 1;
@@ -676,10 +675,11 @@ body {
     margin: 0 auto;
   }
   .block-10 p img {
-    width: 550px;
+    width: 520px;
     max-width: inherit;
     float: left;
-    margin-top: -50px;
+    margin-top: -70px;
+    margin-left: 40px;
   }
 
   .block-11 {
@@ -690,6 +690,10 @@ body {
     margin: 0 auto;
     line-height: 30px;
     text-align: justify;
+    font-size: 22px;
+  }
+  .block-11 h2 {
+    font-size: 44px;
   }
   .block-11 .signup-form p {
     text-align: center;
@@ -749,5 +753,10 @@ body {
   .intro-block .container .content {
     left: 45%;
     top: 160px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .block-10 p img {
+    margin-bottom: 140px;
   }
 }
