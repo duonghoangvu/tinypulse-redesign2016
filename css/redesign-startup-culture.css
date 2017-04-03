@@ -674,9 +674,11 @@ body {
   }
 
   .block-11 {
+    background-color: #7ADFEF !important;
     background-position: center 120%;
     background-size: contain;
     margin-bottom: 0;
+    margin-top: 0;
     padding-bottom: 80px;
     background-image: url(https://www.tinypulse.com/hubfs/redesign_2016/startup-culture-report-b/intro-wave.png);
   }
