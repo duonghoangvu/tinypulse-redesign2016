@@ -280,10 +280,10 @@ body{
 	background-size: auto 280px;
 	padding-bottom: 100px;
 	h2{
-		color: #074D69;
+		color: #fff;
 	}
 	p{
-		color: #074D69;
+		color: #fff;
 		img{
 			width: 80%;
 	    max-width: 410px;
@@ -656,7 +656,7 @@ body{
 			}
 		}
 		p{
-			color: #074D69;
+			color: #fff;
 			text-align: center;
 			img{
 				width: 370px;
@@ -710,14 +710,17 @@ body{
 		}
 	}
 	.block-11{
-		background-position: center bottom;
-		background: none;
+		background-position: center 120%;
+		background-size: contain;
+		margin-bottom: 0;
+		padding-bottom: 80px;
+		background-image: url(../images/startup-culture-report/intro-wave.png);
 		p{
-			max-width: 550px;
+			max-width: 650px;
 			margin: 0 auto;
 			line-height: 30px;
 			text-align: justify;
-			font-size: 22px;
+			font-size: 20px;
 		}
 		h2{
 			font-size: 44px;
@@ -726,6 +729,27 @@ body{
 			p{
 				text-align: center;
 				margin-bottom: 20px;
+			}
+		}
+		.container{
+			position: relative;
+			&:before, &:after{
+				content: '';
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				background-size: contain;
+				background-repeat: no-repeat;
+				top: 0;
+			}
+			&:before{
+				background-image: url(../images/startup-culture-report/cloud.png);
+				right: 72%;
+				top: -30px;
+			}
+			&:after{
+				background-image: url(../images/startup-culture-report/balloon.png); 
+				left: 80%;
 			}
 		}
 	}
@@ -776,6 +800,14 @@ body{
         max-width: 300px;
       }
     }
+  }
+  .logos{
+  	margin-bottom: 90px;
+  	img{
+  		max-width: 100px;
+  		max-height: 45px;
+  		margin: 10px 15px;
+  	}
   }
 }
 @media screen and (min-width: 1200px){
