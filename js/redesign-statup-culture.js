@@ -31,4 +31,21 @@ el.onscroll = scroll;
 
 jQuery(document).ready(function($) {
   $(window).trigger('scroll');
+  var lazyImages = $('.lazy-load'), 
+    imageOffsets = [];
+  lazyImages.each(function(index, image){
+    imageOffsets.push($(image).offset().top);
+    $(image).on('load', function(){
+      $(this).css('opacity', '1');
+    });
+  });
+  $(window).on('scroll', function(){
+    var scrollTop = $(window).scrollTop();
+    var viewport = ($(window).height()*2) + scrollTop;
+    $.each(imageOffsets, function(i, offset){
+      if (offset < viewport){
+        $(lazyImages[i]).attr('src', $(lazyImages[i]).attr('data-src'));
+      }
+    });
+  });
 });
