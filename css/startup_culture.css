@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'Lato-Regular';
-  src: url("fonts/Lato-Regular.eot");
-  src: url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Regular.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Regular.woff2") format("woff2"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Regular.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Lato-Light';
-  src: url("fonts/Lato-Light.eot");
-  src: url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.ttf") format("truetype");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Light.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Light.woff2") format("woff2"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Light.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Light.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Lato-Semibold';
-  src: url("fonts/Lato-Semibold.eot");
-  src: url("fonts/Lato-Semibold.woff2") format("woff2"), url("fonts/Lato-Semibold.woff") format("woff"), url("fonts/Lato-Semibold.ttf") format("truetype");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Semibold.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Semibold.woff2") format("woff2"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Semibold.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Semibold.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Lato-Bold';
-  src: url("fonts/Lato-Bold.eot");
-  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Bold.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Bold.woff2") format("woff2"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Bold.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Lato-Thin';
-  src: url("fonts/Lato-Thin.eot");
-  src: url("fonts/Lato-Thin.woff2") format("woff2"), url("fonts/Lato-Thin.woff") format("woff"), url("fonts/Lato-Thin.ttf") format("truetype");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Thin.eot");
+  src: url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Thin.woff2") format("woff2"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Thin.woff") format("woff"), url("http://cdn2.hubspot.net/hubfs/443262/redesign_2016/fonts/Lato-Thin.ttf") format("truetype");
 }
 .banner {
   width: 100%;
@@ -1799,7 +1799,7 @@ a {
   font-size: 14px;
 }
 .chart-management .c3-chart-text.c3-target.c3-target-emp {
-  transform: translate(-57px, 20px);
+  transform: translate(-75px, 20px);
 }
 .chart-management .c3-chart-text.c3-target.c3-target-emp text {
   fill: #fff !important;
@@ -1942,6 +1942,107 @@ a {
   border-radius: 2px;
 }
 
+.chart-growth {
+  position: relative;
+}
+.chart-growth h3 {
+  text-transform: uppercase;
+}
+.chart-growth .c3-shapes.c3-shapes-20-200.c3-bars.c3-bars-20-200 path {
+  stroke: #fff !important;
+  stroke-width: 1.5;
+  transform: translateY(-10px);
+}
+.chart-growth .c3-texts.c3-texts-20-200 text {
+  transform: translateY(-10px);
+}
+.chart-growth .c3-chart-texts .c3-chart-text {
+  transform: translateX(-30px);
+}
+.chart-growth .c3-chart-texts .c3-chart-text text {
+  fill: #fff !important;
+  font-size: 16px;
+}
+.chart-growth .c3-axis-x .c3-axis-x-label {
+  transform: translate(-80px, 70px) rotate(-90deg);
+  text-transform: uppercase;
+}
+.chart-growth .legend {
+  position: absolute;
+  top: 360px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  font-family: Lato-Light;
+  text-align: center;
+}
+.chart-growth .legend:before {
+  content: 'Growth Rate';
+  font-size: 12px;
+  color: #606060;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.chart-growth .legend span {
+  display: inline-block;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #606060;
+  box-sizing: border-box;
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  margin-right: 20px;
+}
+.chart-growth .legend span i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 375px) {
+  .chart-culture .c3-chart-bar.c3-target.c3-target-10---10 {
+    transform: translateX(-5px);
+  }
+
+  .chart-culture .c3-texts.c3-texts-10---10 text {
+    transform: translate(-5px, 17px);
+  }
+
+  .chart-management .c3-chart-bar.c3-target.c3-target-mgr2 path {
+    transform: translateX(-5px);
+  }
+
+  .chart-management .c3-chart-text.c3-target.c3-target-mgr2 {
+    transform: translate(20px, 20px);
+  }
+
+  .chart-management .c3-chart-bar.c3-target.c3-target-emp path {
+    transform: translateX(-51px);
+  }
+
+  .chart-management .c3-chart-text.c3-target.c3-target-emp {
+    transform: translate(-26px, 20px);
+  }
+
+  .chart-management .c3-chart-text text {
+    font-size: 12px !important;
+  }
+
+  .chart-management .c3-chart-text.c3-target.c3-target-all {
+    transform: translateX(25px);
+  }
+
+  .chart-management .c3-axis-x text {
+    transform: translateX(10px);
+  }
+}
 @media screen and (min-width: 660px) {
   .chart {
     width: 580px;
@@ -1953,7 +2054,7 @@ a {
     margin-bottom: 120px;
   }
   .chart-management .c3-chart-bar.c3-target.c3-target-emp path {
-    transform: translateX(-82px);
+    transform: translateX(-100px);
   }
 
   .chart-culture {
@@ -1997,6 +2098,20 @@ a {
     background: #fff;
   }
   .chart-culture .legend span {
+    display: block;
+    margin-right: 0;
+  }
+
+  .chart-growth .legend {
+    position: absolute;
+    top: 30px;
+    right: -50px;
+    left: auto;
+    width: 130px;
+    border: 1px solid #D9D9D9;
+    background: #fff;
+  }
+  .chart-growth .legend span {
     display: block;
     margin-right: 0;
   }

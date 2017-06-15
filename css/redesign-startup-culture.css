@@ -14,6 +14,12 @@ body {
   background-color: #cacaca;
 }
 
+.content-block .container {
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .content-block {
   padding: 30px 20px;
   min-height: 450px;
@@ -488,6 +494,7 @@ body {
     background-position: right bottom;
     width: 960px;
     max-height: inherit;
+    height: 95%;
   }
   .block-4 p img {
     width: 460px;
@@ -771,7 +778,7 @@ body {
     margin-bottom: 90px;
   }
   .logos img {
-    max-width: 100px;
+    max-width: 95px;
     max-height: 45px;
     margin: 10px 15px;
   }
@@ -786,4 +793,8 @@ body {
   .block-10 p img {
     margin-bottom: 140px;
   }
+}
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.3s;
 }
